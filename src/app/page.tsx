@@ -30,31 +30,34 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="border-b border-border bg-surface">
-        <div className="container-page py-20 md:py-28">
-          <p className="text-xs font-medium tracking-[0.18em] text-teal uppercase">
-            Gemstone Knowledge • Tools • Origins
-          </p>
-          <h1 className="mt-4 max-w-2xl font-serif text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-            Understand the world of gemstones.
-          </h1>
-          <p className="mt-5 max-w-xl text-base text-muted md:text-lg">
-            Explore gemstone characteristics, origins, treatments, certification, buying
-            knowledge and practical tools — all in one place.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/gemstones"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white hover:bg-accent-strong transition-colors"
-            >
-              Explore Gemstones <ArrowRight size={15} />
-            </Link>
-            <Link
-              href="/tools"
-              className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:border-accent hover:text-accent transition-colors"
-            >
-              Explore Tools
-            </Link>
+      <section className="luxury-hero overflow-hidden">
+        <div className="container-page relative py-20 md:py-28 lg:py-32">
+          <div className="luxury-hero-orb luxury-hero-orb-one" />
+          <div className="luxury-hero-orb luxury-hero-orb-two" />
+          <div className="relative max-w-4xl">
+            <div className="luxury-eyebrow"><span /> THE DIGITAL WORLD OF GEMSTONES</div>
+            <h1 className="mt-6 max-w-4xl font-serif text-5xl font-semibold leading-[0.98] tracking-[-0.035em] md:text-7xl lg:text-8xl">
+              Discover the{" "}
+              <span className="luxury-gradient-text">beauty</span>
+              <br />behind every gem.
+            </h1>
+            <p className="mt-7 max-w-2xl text-base leading-7 text-muted md:text-lg">
+              Explore gemstones, origins, treatments, certification and practical tools through a refined,
+              educational guide built for curious collectors and modern buyers.
+            </p>
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <Link href="/gemstones" className="luxury-button luxury-button-primary">
+                Explore Gemstones <ArrowRight size={16} />
+              </Link>
+              <Link href="/learn" className="luxury-button luxury-button-secondary">
+                Start Learning
+              </Link>
+            </div>
+            <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-xs text-muted">
+              <span><strong className="text-foreground">8+</strong> gemstone profiles</span>
+              <span><strong className="text-foreground">5</strong> practical tools</span>
+              <span><strong className="text-foreground">100%</strong> educational focus</span>
+            </div>
           </div>
         </div>
       </section>
