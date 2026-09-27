@@ -11,33 +11,27 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
-      <div className="container-page flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-baseline gap-1 font-serif text-lg font-semibold tracking-tight">
-          GemologyX
+    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/80 backdrop-blur-xl">
+      <div className="container-page flex h-[72px] items-center justify-between">
+        <Link href="/" className="group flex items-center gap-2.5">
+          <span className="brand-mark" aria-hidden="true"><i /><b /><em /></span>
+          <span className="font-serif text-xl font-semibold tracking-tight">Gemology<span className="text-accent">X</span></span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-7 text-sm text-foreground/80">
+        <nav className="hidden md:flex items-center gap-8 text-[13px] font-medium text-foreground/70">
           {NAV.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-accent transition-colors">
+            <Link key={item.href} href={item.href} className="nav-link hover:text-accent">
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <Link
-            href="/search"
-            aria-label="Search GemologyX"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground/70 hover:border-accent hover:text-accent transition-colors"
-          >
+        <div className="flex items-center gap-2.5">
+          <Link href="/search" aria-label="Search GemologyX" className="luxury-icon-button">
             <Search size={16} />
           </Link>
-          <button
-            aria-label="Open menu"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground/70 md:hidden"
-          >
-            <Menu size={16} />
+          <button aria-label="Open menu" className="luxury-icon-button md:hidden">
+            <Menu size={17} />
           </button>
         </div>
       </div>
