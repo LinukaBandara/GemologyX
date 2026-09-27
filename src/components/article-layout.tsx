@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { ArrowLeft, ArrowUpRight, Clock3 } from "lucide-react";
 import { AdSlot } from "@/components/ad-slot";
 
 export function ArticleLayout({
@@ -20,34 +21,42 @@ export function ArticleLayout({
   related?: { label: string; href: string }[];
 }) {
   return (
-    <article className="container-page max-w-2xl py-14">
-      <nav className="text-xs text-muted">
-        <Link href="/learn" className="hover:text-accent">Learn</Link>
-        <span className="mx-1.5">/</span>
-        <Link href={crumbHref} className="hover:text-accent">{crumbLabel}</Link>
+    <article className="container-page max-w-3xl py-12 md:py-16">
+      <nav className="luxury-breadcrumb">
+        <Link href="/learn">Learn</Link>
+        <span>/</span>
+        <Link href={crumbHref}>{crumbLabel}</Link>
       </nav>
 
-      <p className="mt-3 text-xs uppercase tracking-wide text-teal">{category} · {readTime}</p>
-      <h1 className="mt-2 font-serif text-3xl font-semibold tracking-tight md:text-4xl">{title}</h1>
+      <header className="article-hero">
+        <div className="luxury-eyebrow">
+          <span /> {category}
+        </div>
+        <div className="article-meta"><Clock3 size={13} /> {readTime}</div>
+        <h1>{title}</h1>
+      </header>
 
-      <div className="prose-content mt-8 space-y-6 text-sm leading-relaxed text-foreground/90 md:text-base">
+      <div className="prose-content mt-9 space-y-6 text-sm leading-relaxed text-foreground/90 md:text-base">
         {children}
       </div>
 
       <AdSlot variant="in-content" />
 
       {related && related.length > 0 && (
-        <div className="mt-6 flex flex-wrap gap-3 border-t border-border pt-6 text-sm">
-          {related.map((r) => (
-            <Link key={r.href} href={r.href} className="rounded-full border border-border px-3 py-1 hover:border-accent hover:text-accent">
-              {r.label} →
-            </Link>
-          ))}
+        <div className="luxury-related">
+          <p>Continue exploring</p>
+          <div>
+            {related.map((r) => (
+              <Link key={r.href} href={r.href}>
+                {r.label} <ArrowUpRight size={14} />
+              </Link>
+            ))}
+          </div>
         </div>
       )}
 
-      <Link href="/learn" className="mt-8 inline-block text-sm font-medium text-accent hover:text-accent-strong">
-        &larr; Back to Learn
+      <Link href="/learn" className="luxury-back-link">
+        <ArrowLeft size={14} /> Back to Learn
       </Link>
     </article>
   );
