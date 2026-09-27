@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowUpRight, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Gemstone Tools",
@@ -16,28 +17,23 @@ const tools = [
 
 export default function ToolsPage() {
   return (
-    <div className="container-page py-14">
-      <p className="text-xs font-medium tracking-[0.16em] text-teal uppercase">Tools</p>
-      <h1 className="mt-2 font-serif text-3xl font-semibold tracking-tight md:text-4xl">
-        Gemstone Tools
-      </h1>
-      <p className="mt-3 max-w-2xl text-sm text-muted md:text-base">
-        Practical calculators for everyday gemstone questions. Results are estimates for reference —
-        not a substitute for professional gemological measurement.
-      </p>
-
-      <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2">
-        {tools.map((t) => (
-          <Link
-            key={t.slug}
-            href={`/tools/${t.slug}`}
-            className="card-hover flex flex-col rounded-xl border border-border bg-surface p-5"
-          >
-            <h2 className="font-serif text-lg font-semibold">{t.name}</h2>
-            <p className="mt-2 text-sm text-muted">{t.blurb}</p>
+    <div className="container-page py-12 md:py-16">
+      <header className="directory-hero">
+        <div className="luxury-eyebrow"><span /> PRACTICAL GEMOLOGY</div>
+        <h1>Gemstone Tools</h1>
+        <p>Simple, useful calculators for everyday gemstone questions. Results are estimates for reference.</p>
+      </header>
+      <div className="tool-grid mt-10">
+        {tools.map((t, i) => (
+          <Link key={t.slug} href={`/tools/${t.slug}`} className="tool-card card-hover">
+            <div className="tool-card-top"><span>0{i + 1}</span><span className="tool-card-icon"><Sparkles size={14} /></span></div>
+            <h2>{t.name}</h2>
+            <p>{t.blurb}</p>
+            <span className="tool-card-link">Open tool <ArrowUpRight size={14} /></span>
           </Link>
         ))}
       </div>
+      <p className="mt-8 text-xs leading-relaxed text-muted">These tools are educational references and are not a substitute for professional gemological measurement.</p>
     </div>
   );
 }
