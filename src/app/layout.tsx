@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { SiteLoader } from "@/components/site-loader";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gemologyx.com"),
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <SiteLoader />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
