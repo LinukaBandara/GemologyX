@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import { Search, Menu } from "lucide-react";
+import { Search, Menu, X, Sparkles } from "lucide-react";
+import { useState } from "react";
 
 const NAV = [
   { label: "Explore", href: "/gemstones" },
@@ -10,37 +13,29 @@ const NAV = [
 ];
 
 export function SiteHeader() {
+  const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
-      <div className="container-page flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-baseline gap-1 font-serif text-lg font-semibold tracking-tight">
-          GemologyX
+    <header className="site-header">
+      <div className="container-page header-inner">
+        <Link href="/" className="brand" onClick={() => setOpen(false)}>
+          <span className="brand-gem"><Sparkles size={13} /></span>
+          <span>Gemology<span>X</span></span>
         </Link>
-
-        <nav className="hidden md:flex items-center gap-7 text-sm text-foreground/80">
-          {NAV.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-accent transition-colors">
-              {item.label}
-            </Link>
-          ))}
+        <nav className="desktop-nav" aria-label="Primary navigation">
+          {NAV.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
         </nav>
-
-        <div className="flex items-center gap-3">
-          <Link
-            href="/search"
-            aria-label="Search GemologyX"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground/70 hover:border-accent hover:text-accent transition-colors"
-          >
-            <Search size={16} />
-          </Link>
-          <button
-            aria-label="Open menu"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground/70 md:hidden"
-          >
-            <Menu size={16} />
+        <div className="header-actions">
+          <Link href="/search" aria-label="Search GemologyX" className="header-icon"><Search size={17} /></Link>
+          <button type="button" aria-label={open ? "Close menu" : "Open menu"} className="header-icon mobile-menu-button" onClick={() => setOpen((v) => !v)}>
+            {open ? <X size={18} /> : <Menu size={18} />}
           </button>
         </div>
       </div>
+      {open && (
+        <nav className="mobile-nav" aria-label="Mobile navigation">
+          {NAV.map((item) => <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</Link>)}
+        </nav>
+      )}
     </header>
   );
 }
