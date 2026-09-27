@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/search"],
     },
-    sitemap: "https://gemologyx.example/sitemap.xml",
+    sitemap: "https://gemologyx.com/sitemap.xml",
   };
 }
