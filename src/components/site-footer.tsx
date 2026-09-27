@@ -38,31 +38,25 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-border bg-[#24152f] text-white">
-      <div className="container-page py-14">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
-          <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="font-serif text-xl font-semibold tracking-tight">
-              GemologyX
+    <footer className="site-footer">
+      <div className="container-page py-14 md:py-16">
+        <div className="footer-top">
+          <div className="footer-brand">
+            <Link href="/" className="footer-brand-name">
+              <span className="brand-mark" aria-hidden="true"><i /><b /><em /></span>
+              Gemology<span>X</span>
             </Link>
-            <p className="mt-2 max-w-[180px] text-sm text-white/60">
-              The Digital Guide to Gemstones
-            </p>
-            <div className="mt-5 h-px w-12 bg-[#c9a66b]" />
+            <p>The digital guide to gemstones, origins, science and practical gemology.</p>
+            <div className="footer-gold-line" />
           </div>
 
           {COLUMNS.map((col) => (
             <div key={col.title}>
-              <p className="text-sm font-medium text-white">{col.title}</p>
-              <ul className="mt-3 space-y-2">
+              <p className="footer-column-title">{col.title}</p>
+              <ul className="mt-4 space-y-2.5">
                 {col.links.map((l) => (
                   <li key={l.href}>
-                    <Link
-                      href={l.href}
-                      className="text-sm text-white/55 hover:text-white"
-                    >
-                      {l.label}
-                    </Link>
+                    <Link href={l.href} className="footer-link">{l.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -70,24 +64,17 @@ export function SiteFooter() {
           ))}
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <p className="text-xs text-white/45">
-              © 2026 GemologyX. Educational information; not a substitute for professional gemological examination.
-            </p>
-            <div className="flex gap-4 text-xs text-white/50">
-              <Link href="/privacy" className="hover:text-white">Privacy</Link>
-              <Link href="/terms" className="hover:text-white">Terms</Link>
-              <Link href="/disclaimer" className="hover:text-white">Disclaimer</Link>
-            </div>
+        <div className="footer-bottom">
+          <p>© 2026 GemologyX. Educational information; not a substitute for professional gemological examination.</p>
+          <div>
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
+            <Link href="/disclaimer">Disclaimer</Link>
           </div>
+        </div>
 
-          <div className="mt-8 flex items-center justify-center border-t border-white/10 pt-5 text-center">
-            <p className="text-xs tracking-wide text-white/40">
-              Crafted &amp; developed by{" "}
-              <span className="font-medium text-[#c9a66b]">RK II</span>
-            </p>
-          </div>
+        <div className="footer-credit">
+          <span /> Crafted &amp; developed by <strong>ARK II</strong> <span />
         </div>
       </div>
     </footer>
