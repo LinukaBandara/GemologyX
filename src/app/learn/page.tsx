@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Learn Gemology",
@@ -7,74 +8,51 @@ export const metadata: Metadata = {
 };
 
 const categories = [
-  {
-    name: "Sapphire",
-    items: [
-      { title: "What Is Ceylon Sapphire?", href: "/learn/sapphire/what-is-ceylon-sapphire", ready: true },
-      { title: "What Makes a Sapphire Valuable?", href: "/learn/sapphire/sapphire-value-factors", ready: true },
-      { title: "Natural vs Synthetic Sapphire", href: "/learn/natural-vs-synthetic-gemstones", ready: true },
-      { title: "Heated vs Unheated Sapphire", href: "/learn/heated-vs-unheated", ready: true },
-      { title: "What Is Padparadscha Sapphire?", href: "#", ready: false },
-    ],
-  },
-  {
-    name: "Gemstone Basics",
-    items: [
-      { title: "Natural vs Synthetic Gemstones", href: "/learn/natural-vs-synthetic-gemstones", ready: true },
-      { title: "Heated vs Unheated Gemstones", href: "/learn/heated-vs-unheated", ready: true },
-      { title: "Understanding Gemstone Inclusions", href: "#", ready: false },
-    ],
-  },
-  {
-    name: "Buying Guides",
-    items: [
-      { title: "How Gemstone Certification Works", href: "/learn/gemstone-certification", ready: true },
-      { title: "How to Read a Gemstone Report", href: "/learn/how-to-read-a-gemstone-report", ready: true },
-      { title: "How to Care for Gemstones", href: "/learn/gemstone-care", ready: true },
-      { title: "Questions to Ask a Gem Dealer", href: "#", ready: false },
-    ],
-  },
-  {
-    name: "Science",
-    items: [
-      { title: "What Is the Mohs Hardness Scale?", href: "/tools/mohs-hardness", ready: true },
-      { title: "What Is Refractive Index?", href: "#", ready: false },
-      { title: "What Is Pleochroism?", href: "#", ready: false },
-    ],
-  },
+  { name:"Sapphire", label:"01", items:[
+    ["What Is Ceylon Sapphire?","/learn/sapphire/what-is-ceylon-sapphire",true],
+    ["What Makes a Sapphire Valuable?","/learn/sapphire/sapphire-value-factors",true],
+    ["Natural vs Synthetic Sapphire","/learn/natural-vs-synthetic-gemstones",true],
+    ["Heated vs Unheated Sapphire","/learn/heated-vs-unheated",true],
+    ["What Is Padparadscha Sapphire?","#",false],
+  ]},
+  { name:"Gemstone Basics", label:"02", items:[
+    ["Natural vs Synthetic Gemstones","/learn/natural-vs-synthetic-gemstones",true],
+    ["Heated vs Unheated Gemstones","/learn/heated-vs-unheated",true],
+    ["Understanding Gemstone Inclusions","#",false],
+  ]},
+  { name:"Buying Guides", label:"03", items:[
+    ["How Gemstone Certification Works","/learn/gemstone-certification",true],
+    ["How to Read a Gemstone Report","/learn/how-to-read-a-gemstone-report",true],
+    ["How to Care for Gemstones","/learn/gemstone-care",true],
+    ["Questions to Ask a Gem Dealer","#",false],
+  ]},
+  { name:"Science", label:"04", items:[
+    ["What Is the Mohs Hardness Scale?","/tools/mohs-hardness",true],
+    ["What Is Refractive Index?","#",false],
+    ["What Is Pleochroism?","#",false],
+  ]},
 ];
 
 export default function LearnPage() {
-  return (
-    <div className="container-page py-14">
-      <p className="text-xs font-medium tracking-[0.16em] text-teal uppercase">Education</p>
-      <h1 className="mt-2 font-serif text-3xl font-semibold tracking-tight md:text-4xl">
-        Learn Gemology
-      </h1>
-      <p className="mt-3 max-w-2xl text-sm text-muted md:text-base">
-        Clear, sourced explanations of gemstone basics, buying knowledge, and the science behind
-        identification. New guides are added on an ongoing basis — quality over quantity.
-      </p>
-
-      <div className="mt-10 space-y-10">
-        {categories.map((cat) => (
-          <div key={cat.name}>
-            <h2 className="font-serif text-xl font-semibold">{cat.name}</h2>
-            <ul className="mt-3 divide-y divide-border rounded-lg border border-border bg-surface">
-              {cat.items.map((item) => (
-                <li key={item.title} className="flex items-center justify-between px-4 py-3 text-sm">
-                  {item.ready ? (
-                    <Link href={item.href} className="font-medium hover:text-accent">{item.title}</Link>
-                  ) : (
-                    <span className="text-muted">{item.title}</span>
-                  )}
-                  {!item.ready && <span className="text-xs text-muted">In progress</span>}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+  return <div className="container-page py-12 md:py-16">
+    <header className="directory-hero">
+      <div className="luxury-eyebrow"><span /> THE GEMOLOGY JOURNAL</div>
+      <h1>Learn Gemology</h1>
+      <p>Clear, sourced explanations covering gemstone basics, buying knowledge, identification, and the science behind gems.</p>
+    </header>
+    <div className="learn-grid mt-10">
+      {categories.map(cat => <section key={cat.name} className="learn-section">
+        <div className="learn-section-heading"><span>{cat.label}</span><h2>{cat.name}</h2></div>
+        <div className="learn-list">
+          {cat.items.map(([title,href,ready],i) => ready ? (
+            <Link key={title} href={href as string} className="learn-item">
+              <span className="learn-index">{String(i+1).padStart(2,"0")}</span><span>{title}</span><ArrowUpRight size={16}/>
+            </Link>
+          ) : <div key={title} className="learn-item learn-disabled">
+            <span className="learn-index">{String(i+1).padStart(2,"0")}</span><span>{title}</span><small>COMING SOON</small>
+          </div>)}
+        </div>
+      </section>)}
     </div>
-  );
+  </div>;
 }
