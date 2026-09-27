@@ -1,216 +1,134 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles, Gem, Compass, BookOpen, Calculator, Search } from "lucide-react";
 import { gemstones } from "@/data/gemstones";
 import { origins } from "@/data/origins";
 import { GemstoneCard } from "@/components/gemstone-card";
 import { AdSlot } from "@/components/ad-slot";
 
 const GUIDES = [
-  { title: "Natural vs Synthetic Gemstones", href: "/learn/natural-vs-synthetic-gemstones" },
-  { title: "Heated vs Unheated Gemstones", href: "/learn/heated-vs-unheated" },
-  { title: "How Gemstone Certification Works", href: "/learn/gemstone-certification" },
-  { title: "How to Read a Gemstone Report", href: "/learn/how-to-read-a-gemstone-report" },
-  { title: "What Makes a Sapphire Valuable?", href: "/learn/sapphire/sapphire-value-factors" },
-  { title: "How to Care for Gemstones", href: "/learn/gemstone-care" },
+  ["Natural vs Synthetic Gemstones", "/learn/natural-vs-synthetic-gemstones"],
+  ["Heated vs Unheated Gemstones", "/learn/heated-vs-unheated"],
+  ["How Gemstone Certification Works", "/learn/gemstone-certification"],
+  ["How to Read a Gemstone Report", "/learn/how-to-read-a-gemstone-report"],
+  ["What Makes a Sapphire Valuable?", "/learn/sapphire/sapphire-value-factors"],
+  ["How to Care for Gemstones", "/learn/gemstone-care"],
 ];
 
 const TOOLS = [
-  { title: "Carat to Gram Converter", href: "/tools/carat-to-gram" },
-  { title: "Gemstone Size Calculator", href: "/tools/gemstone-size" },
-  { title: "Ring Size Converter", href: "/tools/ring-size" },
-  { title: "Mohs Hardness Reference", href: "/tools/mohs-hardness" },
-  { title: "Birthstone Finder", href: "/tools/birthstones" },
+  ["Carat to Gram Converter", "/tools/carat-to-gram"],
+  ["Gemstone Size Calculator", "/tools/gemstone-size"],
+  ["Ring Size Converter", "/tools/ring-size"],
+  ["Mohs Hardness Reference", "/tools/mohs-hardness"],
+  ["Birthstone Finder", "/tools/birthstones"],
 ];
 
 const CEYLON_GEMS = ["Ceylon Sapphire", "Padparadscha", "Star Sapphire", "Yellow Sapphire", "Ruby", "Alexandrite", "Cat's Eye", "Spinel"];
-
 const GLOSSARY_PREVIEW = ["Asterism", "Cabochon", "Carat", "Clarity", "Corundum", "Geuda", "Inclusion", "Padparadscha", "Pleochroism", "Refractive Index"];
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="border-b border-border bg-surface">
-        <div className="container-page py-20 md:py-28">
-          <p className="text-xs font-medium tracking-[0.18em] text-teal uppercase">
-            Gemstone Knowledge • Tools • Origins
-          </p>
-          <h1 className="mt-4 max-w-2xl font-serif text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-            Understand the world of gemstones.
-          </h1>
-          <p className="mt-5 max-w-xl text-base text-muted md:text-lg">
-            Explore gemstone characteristics, origins, treatments, certification, buying
-            knowledge and practical tools — all in one place.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/gemstones"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white hover:bg-accent-strong transition-colors"
-            >
-              Explore Gemstones <ArrowRight size={15} />
-            </Link>
-            <Link
-              href="/tools"
-              className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:border-accent hover:text-accent transition-colors"
-            >
-              Explore Tools
-            </Link>
+      <section className="hero">
+        <div className="hero-orb hero-orb-one" />
+        <div className="hero-orb hero-orb-two" />
+        <div className="container-page hero-inner">
+          <div className="hero-copy">
+            <div className="eyebrow"><Sparkles size={13} /> THE MODERN GEMSTONE REFERENCE</div>
+            <h1>Every gem has a story.<br /><em>Learn to see it.</em></h1>
+            <p>Discover the science, beauty, origins and language behind the world&apos;s most fascinating gemstones — thoughtfully organized for curious minds.</p>
+            <div className="hero-actions">
+              <Link href="/gemstones" className="button button-primary">Explore the collection <ArrowRight size={16} /></Link>
+              <Link href="/learn" className="button button-ghost">Start learning</Link>
+            </div>
+            <div className="hero-trust"><span /><span /><span /> Research-led. Practical. Beautifully simple.</div>
+          </div>
+          <div className="hero-gem" aria-hidden="true">
+            <div className="gem-halo" />
+            <div className="gem-orbit orbit-one" /><div className="gem-orbit orbit-two" />
+            <div className="hero-crystal"><div className="crystal-top" /><div className="crystal-left" /><div className="crystal-right" /><div className="crystal-bottom" /><div className="crystal-glow" /></div>
+            <div className="floating-note note-top"><Gem size={15} /> GEMOLOGY</div>
+            <div className="floating-note note-bottom"><Compass size={15} /> ORIGINS • TREATMENTS • VALUE</div>
+          </div>
+        </div>
+        <div className="hero-scroll">SCROLL TO EXPLORE <ArrowRight size={13} /></div>
+      </section>
+
+      <section className="intro-strip">
+        <div className="container-page intro-grid">
+          <div><span className="intro-number">01</span><strong>Know the stone.</strong><p>Clear reference pages for characteristics, hardness, colour and more.</p></div>
+          <div><span className="intro-number">02</span><strong>Trace its story.</strong><p>Explore origins, treatments, terminology and how laboratories assess gems.</p></div>
+          <div><span className="intro-number">03</span><strong>Use the tools.</strong><p>Practical calculators and converters designed for everyday decisions.</p></div>
+        </div>
+      </section>
+
+      <section className="container-page section-space">
+        <SectionHeading eyebrow="The collection" title="Meet the gemstones" href="/gemstones" cta="View the full reference" />
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {gemstones.slice(0, 6).map((gem) => <GemstoneCard key={gem.slug} gem={gem} />)}
+        </div>
+      </section>
+
+      <section className="feature-band">
+        <div className="container-page feature-grid">
+          <div className="feature-copy">
+            <div className="eyebrow"><Compass size={13} /> ORIGIN MATTERS</div>
+            <h2>Where did your gemstone begin?</h2>
+            <p>Origin can add context to a gemstone&apos;s story. Explore producing regions and understand what laboratories can — and cannot — determine scientifically.</p>
+            <Link href="/origins" className="text-link">Explore gemstone origins <ArrowRight size={15} /></Link>
+          </div>
+          <div className="origin-cards">
+            {origins.slice(0, 8).map((o, i) => <Link key={o.slug} href={`/origins/${o.slug}`} className="origin-card"><span>0{i + 1}</span>{o.name}<ArrowRight size={14} /></Link>)}
           </div>
         </div>
       </section>
 
-      {/* Explore Gemstones */}
-      <section className="container-page py-16">
-        <SectionHeading eyebrow="Reference" title="Explore Gemstones" href="/gemstones" cta="View all gemstones" />
-        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {gemstones.slice(0, 6).map((gem) => (
-            <GemstoneCard key={gem.slug} gem={gem} />
-          ))}
+      <section className="container-page section-space">
+        <SectionHeading eyebrow="The journal" title="Learn without the jargon" href="/learn" cta="Browse all guides" />
+        <div className="guide-grid">
+          {GUIDES.map(([title, href], i) => <Link key={href} href={href} className="guide-card"><span className="guide-index">0{i + 1}</span><BookOpen size={17} /><h3>{title}</h3><span className="guide-arrow"><ArrowRight size={15} /></span></Link>)}
         </div>
       </section>
 
-      {/* Origins */}
-      <section className="border-y border-border bg-surface">
-        <div className="container-page py-16">
-          <SectionHeading eyebrow="Geography" title="Where do gemstones come from?" href="/origins" cta="Explore origins" />
-          <p className="mt-3 max-w-2xl text-sm text-muted">
-            Geographic origin can, in some cases, be scientifically assessed by a gemological
-            laboratory — but it cannot reliably be determined from appearance alone.
-          </p>
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
-            {origins.map((o) => (
-              <Link
-                key={o.slug}
-                href={`/origins/${o.slug}`}
-                className="card-hover rounded-lg border border-border bg-background px-4 py-4 text-sm font-medium"
-              >
-                {o.name}
-              </Link>
-            ))}
+      <div className="container-page"><AdSlot variant="leaderboard" /></div>
+
+      <section className="tools-band">
+        <div className="container-page section-space">
+          <SectionHeading eyebrow="Practical tools" title="Small tools. Useful answers." href="/tools" cta="See every tool" />
+          <div className="tools-grid">
+            {TOOLS.map(([title, href]) => <Link key={href} href={href} className="tool-card"><span className="tool-icon"><Calculator size={17} /></span><span>{title}</span><ArrowRight size={15} /></Link>)}
           </div>
         </div>
       </section>
 
-      {/* Guides */}
-      <section className="container-page py-16">
-        <SectionHeading eyebrow="Education" title="Popular Guides" href="/learn" cta="Browse all guides" />
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {GUIDES.map((g) => (
-            <Link
-              key={g.href}
-              href={g.href}
-              className="card-hover flex items-center justify-between rounded-lg border border-border bg-surface px-5 py-4 text-sm font-medium"
-            >
-              {g.title}
-              <ArrowRight size={15} className="text-muted" />
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <div className="container-page">
-        <AdSlot variant="leaderboard" />
-      </div>
-
-      {/* Tools */}
-      <section className="border-y border-border bg-teal-soft">
-        <div className="container-page py-16">
-          <SectionHeading eyebrow="Practical" title="Tools" href="/tools" cta="View all tools" />
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
-            {TOOLS.map((t) => (
-              <Link
-                key={t.href}
-                href={t.href}
-                className="card-hover rounded-lg border border-border bg-surface px-4 py-5 text-sm font-medium leading-snug"
-              >
-                {t.title}
-              </Link>
-            ))}
+      <section className="container-page section-space">
+        <div className="ceylon-panel">
+          <div className="ceylon-copy">
+            <div className="eyebrow"><Sparkles size={13} /> FROM SRI LANKA</div>
+            <h2>Discover the Ceylon story.</h2>
+            <p>Sri Lanka has a remarkable history of coloured gemstones. Explore the stones associated with the island and the terminology behind them.</p>
+            <Link href="/origins/sri-lanka" className="button button-dark">Explore Sri Lanka <ArrowRight size={15} /></Link>
           </div>
+          <div className="ceylon-list">{CEYLON_GEMS.map((name, i) => <Link key={name} href="/origins/sri-lanka"><span>{String(i + 1).padStart(2, "0")}</span>{name}</Link>)}</div>
         </div>
       </section>
 
-      {/* Ceylon */}
-      <section className="container-page py-16">
-        <SectionHeading eyebrow="Sri Lanka" title="Discover Ceylon Gemstones" href="/origins/sri-lanka" cta="Explore Sri Lankan gemstones" />
-        <p className="mt-3 max-w-2xl text-sm text-muted">
-          Sri Lanka has one of the longest continuous histories of gemstone mining in the
-          world, and remains a significant source of sapphire and other coloured gemstones.
-        </p>
-        <div className="mt-8 flex flex-wrap gap-2">
-          {CEYLON_GEMS.map((name) => (
-            <span key={name} className="rounded-full border border-border bg-surface px-4 py-2 text-sm">
-              {name}
-            </span>
-          ))}
+      <section className="glossary-band">
+        <div className="container-page section-space">
+          <SectionHeading eyebrow="The language of gems" title="A glossary worth knowing" href="/glossary" cta="Open the glossary" />
+          <div className="term-cloud">{GLOSSARY_PREVIEW.map((term) => <Link key={term} href={`/glossary/${term.toLowerCase().replace(/\s+/g, "-")}`}>{term}</Link>)}</div>
         </div>
       </section>
 
-      {/* Glossary */}
-      <section className="border-t border-border bg-surface">
-        <div className="container-page py-16">
-          <SectionHeading eyebrow="Terminology" title="Glossary" href="/glossary" cta="Browse glossary" />
-          <div className="mt-8 flex flex-wrap gap-2">
-            {GLOSSARY_PREVIEW.map((term) => (
-              <Link
-                key={term}
-                href={`/glossary/${term.toLowerCase().replace(/\s+/g, "-")}`}
-                className="rounded-full border border-border px-4 py-2 text-sm hover:border-accent hover:text-accent transition-colors"
-              >
-                {term}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter */}
-      <section className="container-page py-16">
-        <div className="rounded-2xl border border-border bg-accent-soft px-6 py-10 text-center md:px-16">
-          <h2 className="font-serif text-2xl font-semibold">Learn something new about gemstones.</h2>
-          <p className="mx-auto mt-2 max-w-md text-sm text-muted">
-            Occasional updates on new guides, tools and gemstone reference pages.
-          </p>
-          <form className="mx-auto mt-6 flex max-w-sm gap-2">
-            <input
-              type="email"
-              placeholder="you@example.com"
-              className="w-full rounded-full border border-border bg-surface px-4 py-2.5 text-sm outline-none focus:border-accent"
-              aria-label="Email address"
-            />
-            <button
-              type="submit"
-              className="rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white hover:bg-accent-strong transition-colors"
-            >
-              Subscribe
-            </button>
-          </form>
+      <section className="container-page section-space">
+        <div className="newsletter-panel">
+          <div><div className="eyebrow"><Search size={13} /> KEEP EXPLORING</div><h2>New knowledge, once in a while.</h2><p>Occasional updates when new gemstone guides, tools and reference pages are published.</p></div>
+          <form className="newsletter-form"><input type="email" placeholder="Your email address" aria-label="Email address" /><button type="submit">Subscribe <ArrowRight size={15} /></button></form>
         </div>
       </section>
     </>
   );
 }
 
-function SectionHeading({
-  eyebrow,
-  title,
-  href,
-  cta,
-}: {
-  eyebrow: string;
-  title: string;
-  href: string;
-  cta: string;
-}) {
-  return (
-    <div className="flex flex-wrap items-end justify-between gap-4">
-      <div>
-        <p className="text-xs font-medium tracking-[0.16em] text-teal uppercase">{eyebrow}</p>
-        <h2 className="mt-2 font-serif text-2xl font-semibold tracking-tight md:text-3xl">{title}</h2>
-      </div>
-      <Link href={href} className="text-sm font-medium text-accent hover:text-accent-strong">
-        {cta} →
-      </Link>
-    </div>
-  );
+function SectionHeading({ eyebrow, title, href, cta }: { eyebrow: string; title: string; href: string; cta: string }) {
+  return <div className="section-heading"><div><p className="eyebrow">{eyebrow}</p><h2>{title}</h2></div><Link href={href} className="text-link">{cta} <ArrowRight size={14} /></Link></div>;
 }
