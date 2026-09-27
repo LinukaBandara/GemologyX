@@ -1,24 +1,16 @@
 import Link from "next/link";
+import { ArrowUpRight, Sparkles } from "lucide-react";
 import type { Gemstone } from "@/data/gemstones";
 
 export function GemstoneCard({ gem }: { gem: Gemstone }) {
   return (
-    <Link
-      href={`/gemstones/${gem.slug}`}
-      className="card-hover group flex flex-col rounded-xl border border-border bg-surface p-5"
-    >
-      <div className="flex items-center justify-between">
-        <h3 className="font-serif text-lg font-semibold">{gem.name}</h3>
-        <span className="rounded-full bg-accent-soft px-2.5 py-0.5 text-[11px] font-medium text-accent">
-          {gem.category}
-        </span>
-      </div>
-      <p className="mt-2 text-sm text-muted line-clamp-3">{gem.description}</p>
-      <div className="mt-4 flex items-center justify-between text-xs text-muted">
-        <span>Mohs {gem.hardness}</span>
-        <span className="text-accent opacity-0 transition-opacity group-hover:opacity-100">
-          Explore →
-        </span>
+    <Link href={`/gemstones/${gem.slug}`} className="gem-card group">
+      <div className="gem-card-art"><div className="mini-gem"><i /><b /><em /></div><span className="gem-card-category">{gem.category}</span></div>
+      <div className="gem-card-body">
+        <div><p className="gem-card-kicker"><Sparkles size={11} /> GEMSTONE</p><h3>{gem.name}</h3></div>
+        <ArrowUpRight size={18} className="gem-card-arrow" />
+        <p className="gem-card-description">{gem.description}</p>
+        <div className="gem-card-meta"><span>MOHS {gem.hardness}</span><span>EXPLORE PROFILE</span></div>
       </div>
     </Link>
   );
