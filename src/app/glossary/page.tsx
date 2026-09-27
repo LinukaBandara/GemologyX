@@ -7,16 +7,12 @@ export const metadata: Metadata = {
 };
 
 export default function GlossaryPage() {
-  return (
-    <div className="container-page py-14">
-      <p className="text-xs font-medium tracking-[0.16em] text-teal uppercase">Reference</p>
-      <h1 className="mt-2 font-serif text-3xl font-semibold tracking-tight md:text-4xl">Glossary</h1>
-      <p className="mt-3 max-w-2xl text-sm text-muted md:text-base">
-        Gemological terminology, from asterism to treatment.
-      </p>
-      <div className="mt-6">
-        <GlossaryBrowser />
-      </div>
-    </div>
-  );
+  return <div className="container-page py-12 md:py-16">
+    <header className="directory-hero">
+      <div className="luxury-eyebrow"><span /> GEMOLOGICAL REFERENCE</div>
+      <h1>Glossary</h1>
+      <p>A clear reference for the terminology used to describe, identify, and study gemstones.</p>
+    </header>
+    <div className="mt-10"><GlossaryBrowser /></div>
+  </div>;
 }
