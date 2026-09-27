@@ -3,7 +3,7 @@ import { gemstones } from "@/data/gemstones";
 import { origins } from "@/data/origins";
 import { glossaryTerms } from "@/data/glossary";
 
-const BASE_URL = "https://gemologyx.example";
+const BASE_URL = "https://gemologyx.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
