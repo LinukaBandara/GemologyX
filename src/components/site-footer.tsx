@@ -6,15 +6,15 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     links: [
       { label: "Gemstones", href: "/gemstones" },
       { label: "Origins", href: "/origins" },
-      { label: "Compare", href: "/compare" },
+      { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
     ],
   },
   {
     title: "Learn",
     links: [
       { label: "Guides", href: "/learn" },
-      { label: "Journal", href: "/journal" },
       { label: "Glossary", href: "/glossary" },
+      { label: "Gemstone Certification", href: "/learn/gemstone-certification" },
     ],
   },
   {
