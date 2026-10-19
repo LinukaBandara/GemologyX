@@ -179,6 +179,23 @@ export default function SriLankaMiningPage() {
           </div>
         </section>
 
+
+        <section>
+          <h2>Explore focused mining guides</h2>
+          <p>Continue into the main methods, environmental and licensing topics. Each guide explains its scope and links to relevant official or research sources.</p>
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+            <Link href="/sri-lanka-mining/methods" className="rounded-lg border border-border bg-surface p-4 hover:border-accent">
+              <span className="block font-medium">Mining methods</span><span className="mt-2 block text-sm leading-6 text-muted">Compare common approaches and their site-specific considerations.</span><span className="mt-3 flex items-center gap-2 text-sm text-accent">Read guide <ArrowRight size={14}/></span>
+            </Link>
+            <Link href="/sri-lanka-mining/environment" className="rounded-lg border border-border bg-surface p-4 hover:border-accent">
+              <span className="block font-medium">Environment & rehabilitation</span><span className="mt-2 block text-sm leading-6 text-muted">Understand research findings and restoration principles.</span><span className="mt-3 flex items-center gap-2 text-sm text-accent">Read guide <ArrowRight size={14}/></span>
+            </Link>
+            <Link href="/sri-lanka-mining/licensing" className="rounded-lg border border-border bg-surface p-4 hover:border-accent">
+              <span className="block font-medium">Licensing & official process</span><span className="mt-2 block text-sm leading-6 text-muted">Find current NGJA procedures and questions to verify.</span><span className="mt-3 flex items-center gap-2 text-sm text-accent">Read guide <ArrowRight size={14}/></span>
+            </Link>
+          </div>
+        </section>
+
         <section id="official-resources">
           <h2>Official Sri Lankan mining resources</h2>
           <p>
