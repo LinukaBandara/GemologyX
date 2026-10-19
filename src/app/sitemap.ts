@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/how-to-read-a-gemstone-report",
     "/learn/gemstone-care",
     "/origins",
+    "/sri-lanka-mining",
     "/tools",
     "/tools/carat-to-gram",
     "/tools/gemstone-size",
@@ -31,24 +32,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy",
     "/terms",
     "/disclaimer",
-  ].map((path) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: new Date(),
-  }));
+  ].map((path) => ({ url: `${BASE_URL}${path}` }));
 
   const gemstoneRoutes = gemstones.map((g) => ({
     url: `${BASE_URL}/gemstones/${g.slug}`,
-    lastModified: new Date(),
   }));
 
   const originRoutes = origins.map((o) => ({
     url: `${BASE_URL}/origins/${o.slug}`,
-    lastModified: new Date(),
   }));
 
   const glossaryRoutes = glossaryTerms.map((t) => ({
     url: `${BASE_URL}/glossary/${t.slug}`,
-    lastModified: new Date(),
   }));
 
   return [...staticRoutes, ...gemstoneRoutes, ...originRoutes, ...glossaryRoutes];
