@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/gemstone-care",
     "/origins",
     "/sri-lanka-mining",
+    "/sri-lanka-trade-export",
     "/sri-lanka-mining/methods",
     "/sri-lanka-mining/environment",
     "/sri-lanka-mining/licensing",
