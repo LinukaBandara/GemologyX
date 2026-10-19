@@ -7,6 +7,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "Gemstones", href: "/gemstones" },
       { label: "Origins", href: "/origins" },
       { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
+      { label: "Sri Lanka Trade & Export", href: "/sri-lanka-trade-export" },
     ],
   },
   {
