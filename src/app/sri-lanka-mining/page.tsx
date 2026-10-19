@@ -225,6 +225,7 @@ export default function SriLankaMiningPage() {
             <Link href="/origins/sri-lanka" className="luxury-button luxury-button-secondary">Sri Lanka gemstone origins <ArrowRight size={15} /></Link>
             <Link href="/learn/sapphire/what-is-ceylon-sapphire" className="luxury-button luxury-button-secondary">Ceylon sapphire guide <ArrowRight size={15} /></Link>
             <Link href="/learn/gemstone-certification" className="luxury-button luxury-button-secondary">Gemstone reports <ArrowRight size={15} /></Link>
+            <Link href="/sri-lanka-trade-export" className="luxury-button luxury-button-secondary">Trade & export guide <ArrowRight size={15} /></Link>
           </div>
         </section>
 
