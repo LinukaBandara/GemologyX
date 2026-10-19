@@ -109,6 +109,7 @@ export default function HomePage() {
               </p>
             </div>
             <Link href="/sri-lanka-mining" className="luxury-button luxury-button-primary">Explore mining guide <ArrowRight size={16} /></Link>
+            <Link href="/sri-lanka-trade-export" className="luxury-button luxury-button-secondary">Trade & export guide <ArrowRight size={16} /></Link>
           </div>
         </div>
       </section>
