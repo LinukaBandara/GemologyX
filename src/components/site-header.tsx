@@ -10,6 +10,7 @@ const NAV = [
   { label: "Tools", href: "/tools" },
   { label: "Origins", href: "/origins" },
   { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
+  { label: "Trade & Export", href: "/sri-lanka-trade-export" },
   { label: "Glossary", href: "/glossary" },
 ];
 
