@@ -21,7 +21,7 @@ export default function Page() {
     >
       <ArticleSection heading="Hardness isn't the whole story">
         <p>
-          A gemstone's Mohs hardness describes scratch resistance, not overall toughness. Some hard
+          A gemstone&apos;s Mohs hardness describes scratch resistance, not overall toughness. Some hard
           gemstones (like topaz or emerald) can still chip or fracture more easily than softer ones,
           due to cleavage planes or included fractures. Treat hardness as one factor among several,
           not a complete durability rating.
@@ -43,8 +43,8 @@ export default function Page() {
       </ArticleSection>
       <ArticleSection heading="When in doubt, ask a professional">
         <p>
-          If you're unsure whether a specific stone has been treated in a way that affects cleaning,
-          a jeweller or gemologist can advise based on the stone's known treatment history or a
+          If you&apos;re unsure whether a specific stone has been treated in a way that affects cleaning,
+          a jeweller or gemologist can advise based on the stone&apos;s known treatment history or a
           laboratory report.
         </p>
       </ArticleSection>
