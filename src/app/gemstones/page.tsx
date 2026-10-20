@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { allGemstones as gemstones } from "@/data/all-gemstones";
-import { GemstoneCard } from "@/components/gemstone-card";
+import { GemstoneDirectory } from "@/components/gemstone-directory";
 
 export const metadata: Metadata = {
   title: "Gemstone Directory",
