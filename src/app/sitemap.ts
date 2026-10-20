@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/si/learn/star-sapphire-guide",
     "/si/learn/rough-blue-sapphire-value",
     "/si/learn/blue-sapphire-value-factors",
+    "/si/learn/blue-sapphire-price-per-carat",
     "/si/learn/avoid-gemstone-scams",
     "/si/learn/rough-sapphire-inclusions",
     "/si/learn/gemstone-buying-checklist",
