@@ -9,16 +9,22 @@ export const metadata: Metadata = {
 };
 
 const guides = [
-  { title: "නිල්මැණික් හඳුනාගැනීම", description: "නිල් පැහැති ගලක් නිල්මැණිකක් බව තහවුරු කිරීමේ මූලික කරුණු.", href: "/si/learn/identify-sapphire" },
-  { title: "වටිනාකමට බලපාන සාධක", description: "වර්ණය, පැහැදිලි බව, කැපීම, බර සහ ප්‍රතිකාර.", href: "/si/learn/blue-sapphire-value-factors" },
-  { title: "ශ්‍රී ලංකාවේ නිල්මැණික්", description: "Ceylon sapphire නාමය සහ මූලාරම්භය පිළිබඳ ප්‍රකාශ.", href: "/si/learn/sri-lankan-blue-sapphire" },
-  { title: "උණුසුම් ප්‍රතිකාර", description: "ප්‍රතිකාර පිළිබඳ හෙළිදරව් කිරීම සහ වාර්තා කියවීම.", href: "/si/learn/heated-sapphire-guide" },
-  { title: "රළු ගලක ඇතුළත ලක්ෂණ", description: "ඉරිතැලීම්, ඇතුළත් ද්‍රව්‍ය සහ කැපීමේ අවදානම්.", href: "/si/learn/rough-sapphire-inclusions" },
-  { title: "ස්වභාවික සහ කෘත්‍රිම ගල්", description: "පෙනුම සමාන වුවත් වෙනස් දේවල් වෙන්කර තේරුම් ගැනීම.", href: "/si/learn/natural-vs-synthetic-gemstones" },
-  { title: "පරීක්ෂණ වාර්තාව කියවීම", description: "ගල් වර්ගය, ප්‍රතිකාර සහ වාර්තා සීමාවන් පරීක්ෂා කිරීම.", href: "/si/learn/how-to-read-gem-report" },
-  { title: "මිලදී ගැනීමේ පරීක්ෂණ ලැයිස්තුව", description: "ගනුදෙනුවකට පෙර ලිඛිතව තහවුරු කරගත යුතු කරුණු.", href: "/si/learn/gemstone-buying-checklist" },
-  { title: "වංචා අවදානම් හඳුනාගැනීම", description: "අතිශය සහතික, පීඩනයෙන් විකිණීම සහ ලේඛන පිළිබඳ සැලකිලිමත් වන්න.", href: "/si/learn/avoid-gemstone-scams" },
-  { title: "ප්‍රතිකාර තොරතුරු හෙළි කිරීම", description: "විකුණුම්කරුගෙන් පැහැදිලි සහ ලිඛිත තොරතුරු ලබාගැනීම.", href: "/si/learn/gemstone-treatment-disclosure" },
+  { title: "නිල්මැණික් හඳුනාගැනීම", description: "නිල් පැහැති ගලක් නිල්මැණිකක් බව පෙනුමෙන් පමණක් තීරණය නොකළ යුත්තේ ඇයි?", href: "/si/learn/identify-sapphire" },
+  { title: "වර්ණය සහ ගුණාත්මකභාවය", description: "වර්ණ ස්වරය, තීව්‍රතාව, ආලෝකය සහ වර්ණයේ ඒකාකාර බව.", href: "/si/learn/blue-sapphire-colour-quality" },
+  { title: "වටිනාකමට බලපාන සාධක", description: "වර්ණය, පැහැදිලි බව, කැපීම, බර සහ ප්‍රතිකාර එකට සලකා බලන්න.", href: "/si/learn/blue-sapphire-value-factors" },
+  { title: "රළු නිල්මැණික් ගලක වටිනාකම", description: "ඉරිතැලීම්, කැපීමේ අවදානම සහ කැපූ පසු ලැබිය හැකි බර.", href: "/si/learn/rough-blue-sapphire-value" },
+  { title: "රළු ගලක ඇතුළත ලක්ෂණ", description: "ඇතුළත් ද්‍රව්‍ය, ඉරිතැලීම් සහ පරීක්ෂාවේ සීමාවන්.", href: "/si/learn/rough-sapphire-inclusions" },
+  { title: "උණුසුම් කළ නිල්මැණික්", description: "උණුසුම් ප්‍රතිකාරය සහ එය හෙළිදරව් කිරීම.", href: "/si/learn/heated-sapphire-guide" },
+  { title: "Heated සහ unheated නිල්මැණික්", description: "ප්‍රතිකාර තත්ත්වය තහවුරු කරන වාර්තා කියවන ආකාරය.", href: "/si/learn/heated-vs-unheated-blue-sapphire" },
+  { title: "තරු නිල්මැණික්", description: "තරු ආචරණය, cabochon කැපීම සහ පරීක්ෂා කළ යුතු කරුණු.", href: "/si/learn/star-sapphire-guide" },
+  { title: "ශ්‍රී ලංකාවේ නිල්මැණික්", description: "Ceylon sapphire නාමය සහ මූලාරම්භ ප්‍රකාශ පරීක්ෂා කිරීම.", href: "/si/learn/sri-lankan-blue-sapphire" },
+  { title: "ස්වභාවික සහ කෘත්‍රිම ගල්", description: "ස්වභාවික, රසායනාගාරයේ නිපදවූ සහ අනුකරණ ගල් අතර වෙනස්කම්.", href: "/si/learn/natural-vs-synthetic-gemstones" },
+  { title: "මැණික් පරීක්ෂණ වාර්තාව කියවීම", description: "ගල් වර්ගය, ප්‍රතිකාර, වාර්තා අංකය සහ සීමාවන්.", href: "/si/learn/how-to-read-gem-report" },
+  { title: "වාර්තාවක ප්‍රධාන තොරතුරු", description: "බර, මානයන්, විස්තර සහ ගල සමඟ වාර්තාව ගැළපේද යන්න.", href: "/si/learn/gem-lab-report-details" },
+  { title: "ප්‍රතිකාර තොරතුරු හෙළි කිරීම", description: "විකුණුම්කරුගෙන් පැහැදිලි සහ ලිඛිත තොරතුරු ලබාගන්න.", href: "/si/learn/gemstone-treatment-disclosure" },
+  { title: "මිලදී ගැනීමේ පරීක්ෂණ ලැයිස්තුව", description: "ගනුදෙනුවකට පෙර ලේඛන, මිල සහ කොන්දේසි තහවුරු කරගන්න.", href: "/si/learn/gemstone-buying-checklist" },
+  { title: "මැණික් ගනුදෙනුවල වංචා අවදානම්", description: "අතිශය සහතික, පීඩනයෙන් විකිණීම සහ සැක සහිත ප්‍රකාශ.", href: "/si/learn/avoid-gemstone-scams" },
+  { title: "රළු මැණික් මිලදී ගැනීම", description: "රළු ගලක් තෝරාගැනීම, අවදානම් සහ ගනුදෙනු කොන්දේසි.", href: "/si/learn/buying-rough-gemstones" },
 ];
 
 export default function Page() {
