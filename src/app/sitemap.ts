@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { gemstones } from "@/data/gemstones";
+import { allGemstones as gemstones } from "@/data/all-gemstones";
 import { origins } from "@/data/origins";
 import { glossaryTerms } from "@/data/glossary";
 
@@ -18,6 +18,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/how-to-read-a-gemstone-report",
     "/learn/gemstone-care",
     "/learn/questions-to-ask-gem-dealer",
+    "/si/learn/rough-yellow-sapphire-value",
+    "/si/learn/how-to-read-gem-report",
+    "/si/learn/carat-vs-gram",
+    "/si/learn/buying-rough-gemstones",
+    "/si/learn/natural-vs-synthetic-gemstones",
+    "/si/learn/blue-sapphire-complete-guide",
+    "/si/learn/blue-sapphire-colour-quality",
+    "/si/learn/heated-vs-unheated-blue-sapphire",
+    "/si/learn/star-sapphire-guide",
+    "/si/learn/rough-blue-sapphire-value",
+    "/si/learn/blue-sapphire-value-factors",
+    "/si/learn/blue-sapphire-price-per-carat",
+    "/si/learn/avoid-gemstone-scams",
+    "/si/learn/rough-sapphire-inclusions",
+    "/si/learn/gemstone-buying-checklist",
+    "/si/learn/heated-sapphire-guide",
+    "/si/learn/gem-lab-report-details",
+    "/si/learn/sri-lankan-blue-sapphire",
+    "/si/learn/identify-sapphire",
+    "/si/learn/ruby-vs-spinel",
+    "/si/learn/yellow-sapphire-vs-topaz",
+    "/si/learn/natural-synthetic-imitation-gems",
+    "/si/learn/gemstone-treatment-disclosure",
     "/origins",
     "/sri-lanka-mining",
     "/sri-lanka-trade-export",

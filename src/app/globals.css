@@ -334,3 +334,27 @@ a.search-result:hover{border-color:rgba(118,81,168,.4);background:#fcf9ff;transf
   .mobile-nav,.mobile-nav-link{transition:none;}
   .mobile-nav-link{transform:none;}
 }
+
+
+/* Interactive gemstone directory */
+.directory-controls{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.75rem;align-items:center}
+.directory-search,.directory-sort{display:flex;align-items:center;gap:.7rem;min-height:50px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.88);padding:0 1rem;color:var(--muted);box-shadow:0 6px 22px rgba(58,32,78,.035);transition:border-color .2s ease,box-shadow .2s ease}
+.directory-search:focus-within,.directory-sort:focus-within{border-color:var(--accent);box-shadow:0 0 0 4px rgba(118,81,168,.09)}
+.directory-search input{width:100%;min-width:0;outline:none;background:transparent;color:var(--foreground);font-size:.86rem}
+.directory-search input::placeholder{color:#958b9c}
+.directory-search input:focus,.directory-sort select:focus{box-shadow:none}
+.directory-clear{display:grid;place-items:center;flex:0 0 auto;width:28px;height:28px;border-radius:50%;color:var(--muted)}
+.directory-clear:hover{background:var(--accent-soft);color:var(--accent)}
+.directory-sort select{max-width:100%;outline:none;background:transparent;color:var(--foreground);font-size:.8rem;cursor:pointer}
+.directory-filters{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem;margin-top:1rem}
+.directory-filter{border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.7);padding:.55rem .95rem;color:var(--muted);font-size:.76rem;font-weight:650;transition:all .2s ease}
+.directory-filter:hover{border-color:rgba(118,81,168,.45);color:var(--accent)}
+.directory-filter.is-active{border-color:var(--accent);background:var(--plum);color:#fff;box-shadow:0 5px 16px rgba(58,32,78,.12)}
+.directory-result-count{margin-left:auto;color:var(--muted);font-size:.76rem}
+.directory-result-count strong{color:var(--foreground)}
+.directory-empty{display:flex;min-height:260px;flex-direction:column;align-items:center;justify-content:center;margin-top:1.5rem;border:1px dashed var(--border);border-radius:1.25rem;background:rgba(255,255,255,.6);padding:2rem;text-align:center}
+.directory-empty-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--accent-soft);color:var(--accent)}
+.directory-empty h2{margin-top:1rem;font-family:var(--font-serif);font-size:1.5rem;color:var(--foreground)}
+.directory-empty p{margin-top:.4rem;margin-bottom:1rem;color:var(--muted);font-size:.85rem}
+@media(max-width:640px){.directory-controls{grid-template-columns:1fr}.directory-search{min-height:48px}.directory-sort{min-height:44px;justify-content:flex-start}.directory-sort select{flex:1}.directory-filters{gap:.4rem}.directory-filter{padding:.5rem .75rem}.directory-result-count{width:100%;margin:.3rem 0 0}.directory-search input{font-size:.8rem}}
+@media(prefers-reduced-motion:reduce){.directory-search,.directory-sort,.directory-filter{transition:none}}

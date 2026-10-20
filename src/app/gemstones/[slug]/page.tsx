@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Sparkles } from "lucide-react";
-import { gemstones, getGemstoneBySlug } from "@/data/gemstones";
+import { allGemstones } from "@/data/all-gemstones";
 import { AdSlot } from "@/components/ad-slot";
 
-export function generateStaticParams(){return gemstones.map(g=>({slug:g.slug}));}
+export function generateStaticParams(){return allGemstones.map(g=>({slug:g.slug}));}
 type Params=Promise<{slug:string}>;
-export async function generateMetadata({params}:{params:Params}):Promise<Metadata>{const {slug}=await params;const gem=getGemstoneBySlug(slug);return gem?{title:gem.name,description:gem.description}:{};}
+export async function generateMetadata({params}:{params:Params}):Promise<Metadata>{const {slug}=await params;const gem=allGemstones.find((g)=>g.slug===slug);return gem?{title:gem.name,description:gem.description}:{};}
 
 function Fact({label,value}:{label:string;value:string}){return <div className="gem-fact"><dt>{label}</dt><dd>{value}</dd></div>}
 
 export default async function GemstonePage({params}:{params:Params}){
- const {slug}=await params;const gem=getGemstoneBySlug(slug);if(!gem)notFound();const d=gem.detail;
+ const {slug}=await params;const gem=allGemstones.find((item)=>item.slug===slug);if(!gem)notFound();const d=gem.detail;
  return <article className="container-page max-w-4xl py-12 md:py-16">
   <nav className="luxury-breadcrumb"><Link href="/gemstones">Gemstones</Link><span>/</span><span>{gem.name}</span></nav>
   <header className="profile-hero">
