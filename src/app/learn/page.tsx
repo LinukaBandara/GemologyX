@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const sinhalaGuides = [
   {
+    title: "නිල්මැණික් ගැන සම්පූර්ණ මාර්ගෝපදේශය",
+    description: "හඳුනාගැනීමේ සිට ගුණාත්මකභාවය, ප්‍රතිකාර සහ ආරක්ෂිත මිලදී ගැනීම දක්වා සියලුම නිල්මැණික් ලිපි.",
+    href: "/si/learn/blue-sapphire-complete-guide",
+    readTime: "මිනිත්තු 8",
+  },
+
+  {
     title: "පුෂ්පරාග රළු මැණික් ගලක මිල තක්සේරු කිරීම",
     description: "රළු ගලක වටිනාකමට බලපාන කරුණු සහ මිලදී ගැනීමට පෙර කළ යුතු පරීක්ෂා.",
     href: "/si/learn/rough-yellow-sapphire-value",
@@ -38,6 +45,30 @@ const sinhalaGuides = [
     description: "ස්වභාවික, රසායනාගාරයේ නිපදවූ සහ අනුකරණ ගල් අතර වෙනස්කම් ඉගෙන ගන්න.",
     href: "/si/learn/natural-vs-synthetic-gemstones",
     readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "නිල්මැණික් වර්ණය සහ ගුණාත්මකභාවය",
+    description: "වර්ණ ස්වරය, තීව්‍රතාව, ආලෝකය සහ වර්ණයේ ඒකාකාර බව තේරුම් ගන්න.",
+    href: "/si/learn/blue-sapphire-colour-quality",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "උණුසුම් කළ සහ නොකළ නිල්මැණික් අතර වෙනස",
+    description: "ප්‍රතිකාර තත්ත්වය, පරීක්ෂණ වාර්තා සහ මිලදී ගැනීමේදී අසන්න ඕනෑ දේ.",
+    href: "/si/learn/heated-vs-unheated-blue-sapphire",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "තරු නිල්මැණික් හඳුනාගැනීම සහ මිලදී ගැනීම",
+    description: "තරු ආචරණය, cabochon කැපීම සහ ගල පරීක්ෂා කරන ආකාරය.",
+    href: "/si/learn/star-sapphire-guide",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "රළු නිල්මැණික් ගලක වටිනාකම තක්සේරු කිරීම",
+    description: "ඉරිතැලීම්, කැපීමේ අවදානම සහ අවසාන බර පිළිබඳ සැලකිලිමත් වන්න.",
+    href: "/si/learn/rough-blue-sapphire-value",
+    readTime: "මිනිත්තු 6",
   },
   {
     title: "නිල් නිල්මැණිකක වටිනාකමට බලපාන කරුණු",
