@@ -59,14 +59,14 @@ export default function SriLankaTradeExportPage() {
         <section>
           <h2>Understand the mine-to-market chain</h2>
           <p>
-            Sri Lanka's coloured-stone sector connects mining, sorting, local trading, cutting
+            Sri Lanka&apos;s coloured-stone sector connects mining, sorting, local trading, cutting
             and polishing, treatment disclosure, gemological examination, jewellery production
             and international trade. Not every stone follows the same route, and the records
             available can differ by transaction and stage.
           </p>
           <p>
             A credible trade record should distinguish what is known from what is claimed.
-            A seller's description, a purchase receipt, a laboratory report and a documented
+            A seller&apos;s description, a purchase receipt, a laboratory report and a documented
             geographic-origin opinion are different forms of evidence; none should be presented
             as a substitute for the others.
           </p>
@@ -102,11 +102,11 @@ export default function SriLankaTradeExportPage() {
           <div className="mb-3 flex items-center gap-3 text-accent"><ShieldCheck size={21} /><h2 className="!mt-0">A responsible gemstone-trade checklist</h2></div>
           <p>Use this as a due-diligence prompt, not a legal checklist or guarantee that a transaction is compliant.</p>
           <ul>
-            <li><strong>Identify the goods:</strong> record the seller's description, stone variety, quantity and any known treatments without presenting unverified claims as facts.</li>
+            <li><strong>Identify the goods:</strong> record the seller&apos;s description, stone variety, quantity and any known treatments without presenting unverified claims as facts.</li>
             <li><strong>Keep transaction records:</strong> retain invoices, receipts and other records required for your transaction; confirm applicable recordkeeping rules with the relevant authority.</li>
-            <li><strong>Separate identification from origin:</strong> a stone's identity, treatment status and geographic origin are different questions and may require different evidence.</li>
+            <li><strong>Separate identification from origin:</strong> a stone&apos;s identity, treatment status and geographic origin are different questions and may require different evidence.</li>
             <li><strong>Review reports carefully:</strong> check the issuing laboratory, report number, scope, limitations and whether the report corresponds to the exact stone being offered.</li>
-            <li><strong>Confirm rights and permissions:</strong> do not assume that possession, purchase or a seller's verbal assurance proves that every later trade or export step is permitted.</li>
+            <li><strong>Confirm rights and permissions:</strong> do not assume that possession, purchase or a seller&apos;s verbal assurance proves that every later trade or export step is permitted.</li>
             <li><strong>Verify before shipping:</strong> check current export requirements and destination-country import, customs and tax rules with official sources or a qualified professional.</li>
           </ul>
         </section>
@@ -155,7 +155,7 @@ export default function SriLankaTradeExportPage() {
             </Link>
             <Link href="/origins/sri-lanka" className="rounded-lg border border-border bg-surface p-4 hover:border-accent">
               <span className="block font-medium">Sri Lanka gemstone origins</span>
-              <span className="mt-2 block text-sm leading-6 text-muted">Explore Sri Lanka's gemstone identity and origin context.</span>
+              <span className="mt-2 block text-sm leading-6 text-muted">Explore Sri Lanka&apos;s gemstone identity and origin context.</span>
               <span className="mt-3 flex items-center gap-2 text-sm text-accent">Read guide <ArrowRight size={14} /></span>
             </Link>
             <Link href="/learn/gemstone-certification" className="rounded-lg border border-border bg-surface p-4 hover:border-accent">
@@ -175,10 +175,10 @@ export default function SriLankaTradeExportPage() {
           <h2>Frequently asked questions</h2>
           <h3>Can I export gemstones using this guide alone?</h3>
           <p>No. Use the current NGJA instructions and confirm the requirements for your exact transaction. This page is educational and is not an authorization or legal opinion.</p>
-          <h3>Does a laboratory report prove a gemstone's origin?</h3>
-          <p>Not every report includes an origin opinion. Read the report's stated scope and limitations, and do not infer origin from identification alone.</p>
+          <h3>Does a laboratory report prove a gemstone&apos;s origin?</h3>
+          <p>Not every report includes an origin opinion. Read the report&apos;s stated scope and limitations, and do not infer origin from identification alone.</p>
           <h3>Do export statistics show the current price of a sapphire?</h3>
-          <p>No. Aggregate export data and an individual stone's market value measure different things. Stone-specific evaluation requires relevant gemological and commercial details.</p>
+          <p>No. Aggregate export data and an individual stone&apos;s market value measure different things. Stone-specific evaluation requires relevant gemological and commercial details.</p>
         </section>
       </div>
 
