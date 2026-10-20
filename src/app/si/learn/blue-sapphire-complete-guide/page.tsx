@@ -12,6 +12,7 @@ const guides = [
   { title: "නිල්මැණික් හඳුනාගැනීම", description: "නිල් පැහැති ගලක් නිල්මැණිකක් බව පෙනුමෙන් පමණක් තීරණය නොකළ යුත්තේ ඇයි?", href: "/si/learn/identify-sapphire" },
   { title: "වර්ණය සහ ගුණාත්මකභාවය", description: "වර්ණ ස්වරය, තීව්‍රතාව, ආලෝකය සහ වර්ණයේ ඒකාකාර බව.", href: "/si/learn/blue-sapphire-colour-quality" },
   { title: "වටිනාකමට බලපාන සාධක", description: "වර්ණය, පැහැදිලි බව, කැපීම, බර සහ ප්‍රතිකාර එකට සලකා බලන්න.", href: "/si/learn/blue-sapphire-value-factors" },
+  { title: "කැරට් එකකට මිල තේරුම් ගැනීම", description: "කැරට් බර, ගුණාත්මකභාවය සහ විකුණුම් කොන්දේසි එකට සසඳන්න.", href: "/si/learn/blue-sapphire-price-per-carat" },
   { title: "රළු නිල්මැණික් ගලක වටිනාකම", description: "ඉරිතැලීම්, කැපීමේ අවදානම සහ කැපූ පසු ලැබිය හැකි බර.", href: "/si/learn/rough-blue-sapphire-value" },
   { title: "රළු ගලක ඇතුළත ලක්ෂණ", description: "ඇතුළත් ද්‍රව්‍ය, ඉරිතැලීම් සහ පරීක්ෂාවේ සීමාවන්.", href: "/si/learn/rough-sapphire-inclusions" },
   { title: "උණුසුම් කළ නිල්මැණික්", description: "උණුසුම් ප්‍රතිකාරය සහ එය හෙළිදරව් කිරීම.", href: "/si/learn/heated-sapphire-guide" },
