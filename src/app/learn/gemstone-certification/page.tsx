@@ -33,7 +33,7 @@ export default function Page() {
           laboratories are recognized internationally for stringent standards, particularly for
           origin and treatment determinations on high-value coloured stones, while other reports
           may reflect a more basic level of testing. It is worth knowing which laboratory issued a
-          given report and, where possible, researching that laboratory's standing.
+          given report and, where possible, researching that laboratory&apos;s standing.
         </p>
       </ArticleSection>
       <ArticleSection heading="What certification does not guarantee">
