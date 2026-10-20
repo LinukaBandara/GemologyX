@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ArrowLeft, Sparkles } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export function ToolShell({
   title,
@@ -15,27 +15,35 @@ export function ToolShell({
 }) {
   return (
     <div className="container-page max-w-3xl py-12 md:py-16">
-      <nav className="luxury-breadcrumb">
-        <Link href="/tools">Tools</Link>
-        <span>/</span>
-        <span>{title}</span>
+      <nav className="flex items-center gap-2 text-sm text-muted">
+        <Link href="/tools" className="hover:text-accent transition-colors">Tools</Link>
+        <span className="text-border">/</span>
+        <span className="text-foreground">{title}</span>
       </nav>
 
-      <header className="tool-hero">
-        <div className="luxury-eyebrow"><span /> GEMOLOGY TOOL</div>
-        <h1>{title}</h1>
-        <p>{intro}</p>
+      <header className="mt-6 border-b border-border pb-8">
+        <div className="gx-eyebrow"><span /> Gemology Tool</div>
+        <h1 className="mt-3 font-serif text-3xl font-semibold tracking-tight md:text-4xl">
+          {title}
+        </h1>
+        <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted md:text-base">
+          {intro}
+        </p>
       </header>
 
-      <div className="tool-panel">
-        <div className="tool-panel-mark"><Sparkles size={15} /></div>
+      <div className="mt-8 rounded-2xl border border-border bg-white p-6 shadow-sm md:p-8">
         {children}
       </div>
 
-      {note && <p className="mt-5 text-xs leading-relaxed text-muted">{note}</p>}
+      {note && (
+        <p className="mt-5 text-xs leading-relaxed text-muted">{note}</p>
+      )}
 
-      <Link href="/tools" className="luxury-back-link">
-        <ArrowLeft size={14} /> Back to all tools
+      <Link
+        href="/tools"
+        className="mt-10 inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-strong transition-colors"
+      >
+        <ArrowLeft size={15} /> Back to all tools
       </Link>
     </div>
   );
