@@ -57,6 +57,30 @@ const sinhalaGuides = [
     href: "/si/learn/rough-sapphire-inclusions",
     readTime: "මිනිත්තු 4",
   },
+  {
+    title: "මැණික් මිලදී ගැනීමට පෙර පරීක්ෂා කළ යුතු ලැයිස්තුව",
+    description: "අනන්‍යතාව, ප්‍රතිකාර, වාර්තා, මිල සහ ගනුදෙනු කොන්දේසි සඳහා ප්‍රායෝගික පරීක්ෂණ ලැයිස්තුවක්.",
+    href: "/si/learn/gemstone-buying-checklist",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "උණුසුම් ප්‍රතිකාර කළ නිල්මැණික් ගැන දැනගත යුතු දේ",
+    description: "ප්‍රතිකාර තත්ත්වය හඳුනාගැනීමේ සීමා සහ වාර්තා පරීක්ෂා කරන ආකාරය.",
+    href: "/si/learn/heated-sapphire-guide",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "මැණික් පරීක්ෂණ වාර්තාවක ප්‍රධාන තොරතුරු",
+    description: "ගල් වර්ගය, බර, මානයන්, ප්‍රතිකාර සටහන් සහ වාර්තා අංකය පරීක්ෂා කරන්න.",
+    href: "/si/learn/gem-lab-report-details",
+    readTime: "මිනිත්තු 4",
+  },
+  {
+    title: "ශ්‍රී ලංකාවේ නිල්මැණික් ගැන මූලික දැනුම",
+    description: "Ceylon sapphire නාමය, මූලාරම්භ ප්‍රකාශ සහ ස්වාධීන පරීක්ෂණ ගැන දැනගන්න.",
+    href: "/si/learn/sri-lankan-blue-sapphire",
+    readTime: "මිනිත්තු 5",
+  },
 ] as const;
 
 const categories = [
