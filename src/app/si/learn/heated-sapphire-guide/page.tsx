@@ -12,8 +12,8 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="උණුසුම් ප්‍රතිකාර කළ නිල්මැණික් ගැන දැනගත යුතු දේ"
-      crumbHref="/learn"
-      crumbLabel="Learn Gemology"
+      crumbHref="/si/learn/blue-sapphire-complete-guide"
+      crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       related={[
         { label: "රළු මැණික් ගලක් මිලදී ගැනීමට පෙර", href: "/si/learn/buying-rough-gemstones" },
         { label: "මැණික් පරීක්ෂණ වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
