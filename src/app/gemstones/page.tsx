@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { gemstones } from "@/data/gemstones";
-import { GemstoneCard } from "@/components/gemstone-card";
+import { GemstoneDirectory } from "@/components/gemstone-directory";
 
 export const metadata: Metadata = {
   title: "Gemstone Directory",
-  description: "Browse a reference directory of gemstones with mineral family, hardness, colour range, and key characteristics for each.",
+  description: "Explore gemstone profiles by name, colour, mineral family, hardness, and category. Learn about gemstone properties, treatments, and origins.",
 };
 
 export default function GemstonesPage() {
@@ -13,11 +13,11 @@ export default function GemstonesPage() {
       <header className="directory-hero">
         <div className="luxury-eyebrow"><span /> REFERENCE LIBRARY</div>
         <h1>Gemstone Directory</h1>
-        <p>Explore gemstone profiles covering mineral family, hardness, colour range, and key characteristics.</p>
+        <p>Explore the details that make every gemstone unique. Search by colour, mineral family, hardness, or name.</p>
         <div className="directory-rule"><span /> {gemstones.length} profiles <span /></div>
       </header>
-      <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {gemstones.map((gem) => <GemstoneCard key={gem.slug} gem={gem} />)}
+      <div className="mt-10">
+        <GemstoneDirectory gemstones={gemstones} />
       </div>
     </div>
   );
