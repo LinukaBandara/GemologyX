@@ -22,7 +22,7 @@ export default function Page() {
     >
       <ArticleSection heading="Why heat treatment is so widespread">
         <p>
-          Heat treatment is applied to improve a gemstone's colour and, in some cases, clarity, by
+          Heat treatment is applied to improve a gemstone&apos;s colour and, in some cases, clarity, by
           heating it to controlled temperatures — sometimes with specific chemical additives — over
           a period of hours or days. The great majority of sapphire and ruby on the market today has
           been heat-treated, along with much aquamarine, tanzanite, and other coloured stones.
@@ -48,7 +48,7 @@ export default function Page() {
       <ArticleSection heading="How treatment status is confirmed">
         <p>
           A gemological laboratory can often determine heat treatment through examination of
-          internal features altered by heat — such as partially dissolved or 'healed' inclusions —
+          internal features altered by heat — such as partially dissolved or &apos;healed&apos; inclusions —
           though in some cases treatment can be difficult to detect with full certainty. A
           laboratory report should state treatment status explicitly rather than leaving it
           assumed.

@@ -21,7 +21,7 @@ export default function Page() {
     >
       <ArticleSection heading="Identity and species">
         <p>
-          The report should state the gemstone's species (e.g., corundum) and variety (e.g.,
+          The report should state the gemstone&apos;s species (e.g., corundum) and variety (e.g.,
           sapphire), along with whether it is natural or synthetic. This is the most fundamental
           line on the report.
         </p>
@@ -34,7 +34,7 @@ export default function Page() {
       </ArticleSection>
       <ArticleSection heading="Colour and clarity characteristics">
         <p>
-          Colour is typically described qualitatively (e.g., "vivid blue"), and clarity
+          Colour is typically described qualitatively (e.g., &quot;vivid blue&quot;), and clarity
           characteristics — the inclusions observed — are noted, sometimes with a diagram.
         </p>
       </ArticleSection>
