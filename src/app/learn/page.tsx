@@ -15,6 +15,12 @@ const sinhalaGuides = [
     href: "/si/learn/blue-sapphire-complete-guide",
     readTime: "මිනිත්තු 8",
   },
+  {
+    title: "නිල්මැණික් කැරට් එකක මිල තේරුම් ගැනීම",
+    description: "කැරට් බර පමණක් නොව ගුණාත්මකභාවය, ප්‍රතිකාර සහ වාර්තා මත මිල සසඳන්න.",
+    href: "/si/learn/blue-sapphire-price-per-carat",
+    readTime: "මිනිත්තු 6",
+  },
 
   {
     title: "පුෂ්පරාග රළු මැණික් ගලක මිල තක්සේරු කිරීම",
