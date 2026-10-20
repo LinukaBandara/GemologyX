@@ -36,8 +36,8 @@ export default function Page() {
       </ArticleSection>
       <ArticleSection heading="Cut quality">
         <p>
-          A well-proportioned cut maximizes a sapphire's colour and brilliance; an poorly cut stone
-          can look dull or display uneven colour ("windowing" or dark extinction) even with good
+          A well-proportioned cut maximizes a sapphire&apos;s colour and brilliance; an poorly cut stone
+          can look dull or display uneven colour (&quot;windowing&quot; or dark extinction) even with good
           rough material to start.
         </p>
       </ArticleSection>
