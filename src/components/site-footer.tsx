@@ -2,20 +2,21 @@ import Link from "next/link";
 
 const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
-    title: "Explore",
-    links: [
-      { label: "Gemstones", href: "/gemstones" },
-      { label: "Origins", href: "/origins" },
-      { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
-      { label: "Sri Lanka Trade & Export", href: "/sri-lanka-trade-export" },
-    ],
-  },
-  {
     title: "Learn",
     links: [
       { label: "Guides", href: "/learn" },
       { label: "Glossary", href: "/glossary" },
       { label: "Gemstone Certification", href: "/learn/gemstone-certification" },
+      { label: "How to Read a Report", href: "/learn/how-to-read-a-gemstone-report" },
+    ],
+  },
+  {
+    title: "Explore",
+    links: [
+      { label: "Gemstones", href: "/gemstones" },
+      { label: "Origins", href: "/origins" },
+      { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
+      { label: "Trade & Export", href: "/sri-lanka-trade-export" },
     ],
   },
   {
@@ -30,9 +31,10 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "About",
     links: [
-      { label: "About", href: "/about" },
+      { label: "About Us", href: "/about" },
       { label: "Editorial Standards", href: "/editorial-standards" },
       { label: "Contact", href: "/contact" },
+      { label: "Disclaimer", href: "/disclaimer" },
     ],
   },
 ];
@@ -47,7 +49,9 @@ export function SiteFooter() {
               <span className="brand-mark" aria-hidden="true"><i /><b /><em /></span>
               Gemology<span>X</span>
             </Link>
-            <p>The digital guide to gemstones, origins, science and practical gemology.</p>
+            <p>
+              Empowering minds with accurate, accessible gemology education for a more informed world.
+            </p>
             <div className="footer-gold-line" />
           </div>
 
@@ -69,13 +73,13 @@ export function SiteFooter() {
           <p>© 2026 GemologyX. Educational information; not a substitute for professional gemological examination.</p>
           <div>
             <Link href="/privacy">Privacy</Link>
-            <Link href="/terms">Terms</Link>
             <Link href="/disclaimer">Disclaimer</Link>
+            <Link href="/editorial-standards">Standards</Link>
           </div>
         </div>
 
         <div className="footer-credit">
-          <span /> Crafted &amp; developed by <strong>ARK II</strong> <span />
+          <span /> Crafted with care · Knowledge · Science · Integrity <span />
         </div>
       </div>
     </footer>
