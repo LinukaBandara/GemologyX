@@ -12,8 +12,8 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="මැණික් ප්‍රතිකාර පිළිබඳ නිවැරදි තොරතුරු හෙළි කිරීම"
-      crumbHref="/learn"
-      crumbLabel="Learn Gemology"
+      crumbHref="/si/learn/blue-sapphire-complete-guide"
+      crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       related={[
         { label: "ස්වභාවික සහ කෘත්‍රිම මැණික් අතර වෙනස", href: "/si/learn/natural-vs-synthetic-gemstones" },
         { label: "මැණික් පරීක්ෂණ වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
