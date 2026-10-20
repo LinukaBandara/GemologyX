@@ -9,6 +9,8 @@ const NAV = [
   { label: "Learn", href: "/learn" },
   { label: "Tools", href: "/tools" },
   { label: "Origins", href: "/origins" },
+  { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
+  { label: "Trade & Export", href: "/sri-lanka-trade-export" },
   { label: "Glossary", href: "/glossary" },
 ];
 
@@ -22,7 +24,7 @@ export function SiteHeader() {
           <span className="brand-mark" aria-hidden="true"><i /><b /><em /></span>
           <span className="font-serif text-xl font-semibold tracking-tight">Gemology<span className="text-accent">X</span></span>
         </Link>
-        <nav className="hidden md:flex items-center gap-8 text-[13px] font-medium text-foreground/70">
+        <nav className="hidden md:flex items-center gap-5 text-[13px] font-medium text-foreground/70">
           {NAV.map((item) => <Link key={item.href} href={item.href} className="nav-link hover:text-accent">{item.label}</Link>)}
         </nav>
         <div className="flex items-center gap-2.5">

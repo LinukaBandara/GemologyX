@@ -26,7 +26,7 @@ export default async function GemstonePage({params}:{params:Params}){
    {gem.crystalSystem&&<Fact label="Crystal system" value={gem.crystalSystem}/>}
    <Fact label="Typical colours" value={gem.colors.join(", ")}/>
    {gem.birthstoneMonth&&<Fact label="Birthstone" value={gem.birthstoneMonth}/>}
-   {gem.commonTreatments&&<Fact label="Common treatments" value={gem.commonTreatments.join(", ")}/>
+   {gem.commonTreatments&&<Fact label="Common treatments" value={gem.commonTreatments.join(", ")}/>}
   </dl>
   {d?<div className="profile-content">
    {[

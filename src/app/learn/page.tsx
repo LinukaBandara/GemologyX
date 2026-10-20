@@ -31,7 +31,7 @@ const categories = [
     ["What Is Refractive Index?","#",false],
     ["What Is Pleochroism?","#",false],
   ]},
-];
+] as const;
 
 export default function LearnPage() {
   return <div className="container-page py-12 md:py-16">
