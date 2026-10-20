@@ -33,6 +33,30 @@ const sinhalaGuides = [
     href: "/si/learn/buying-rough-gemstones",
     readTime: "මිනිත්තු 5",
   },
+  {
+    title: "ස්වභාවික සහ කෘත්‍රිම මැණික් අතර වෙනස",
+    description: "ස්වභාවික, රසායනාගාරයේ නිපදවූ සහ අනුකරණ ගල් අතර වෙනස්කම් ඉගෙන ගන්න.",
+    href: "/si/learn/natural-vs-synthetic-gemstones",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "නිල් නිල්මැණිකක වටිනාකමට බලපාන කරුණු",
+    description: "වර්ණය, පැහැදිලි බව, කැපීම සහ ප්‍රතිකාර ගැන මූලික දැනුම.",
+    href: "/si/learn/blue-sapphire-value-factors",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "මැණික් ගනුදෙනුවල වංචා අවදානම්",
+    description: "අනතුරු ඇඟවීම් හඳුනාගෙන ආරක්ෂිත ගනුදෙනුවක් සඳහා සූදානම් වන්න.",
+    href: "/si/learn/avoid-gemstone-scams",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "රළු නිල්මැණික් ගලක ඇතුළත ලක්ෂණ",
+    description: "ඇතුළත ලක්ෂණ, ඉරිතැලීම් සහ පරීක්ෂාවේ සීමාවන් ගැන දැනගන්න.",
+    href: "/si/learn/rough-sapphire-inclusions",
+    readTime: "මිනිත්තු 4",
+  },
 ] as const;
 
 const categories = [
