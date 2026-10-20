@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල් නිල්මැණිකක වටිනාකමට බලපාන කරුණු",
-  description: "නිල් නිල්මැණිකක වර්ණය, පැහැදිලි බව, කැපීම, ප්‍රතිකාර සහ වාර්තා වටිනාකමට බලපාන ආකාරය.",
+  title: "නිල්මැණිකක වටිනාකමට බලපාන කරුණු",
+  description: "නිල්මැණිකක වර්ණය, පැහැදිලි බව, කැපීම, ප්‍රතිකාර සහ වාර්තා වටිනාකමට බලපාන ආකාරය.",
 };
 
 export default function Page() {
@@ -11,13 +11,13 @@ export default function Page() {
     <ArticleLayout
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
-      title="නිල් නිල්මැණිකක වටිනාකමට බලපාන කරුණු"
+      title="නිල්මැණිකක වටිනාකමට බලපාන කරුණු"
       crumbHref="/learn"
       crumbLabel="Learn Gemology"
       related={[
-        { label: "මැණික් පරීක්ෂණ වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
-        { label: "රළු මැණික් ගලක් මිලදී ගැනීමට පෙර", href: "/si/learn/buying-rough-gemstones" },
-        { label: "පුෂ්පරාග රළු ගලක මිල", href: "/si/learn/rough-yellow-sapphire-value" },
+        { label: "නිල්මැණික් සම්පූර්ණ මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },
+        { label: "නිල්මැණික් වර්ණය සහ ගුණාත්මකභාවය", href: "/si/learn/blue-sapphire-colour-quality" },
+        { label: "රළු නිල්මැණික් ගලක වටිනාකම", href: "/si/learn/rough-blue-sapphire-value" },
       ]}
     >
       <ArticleSection heading="එකම බර ඇති ගල්වල මිල වෙනස් වන්නේ ඇයි?">
