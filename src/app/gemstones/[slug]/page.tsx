@@ -12,7 +12,7 @@ export async function generateMetadata({params}:{params:Params}):Promise<Metadat
 function Fact({label,value}:{label:string;value:string}){return <div className="gem-fact"><dt>{label}</dt><dd>{value}</dd></div>}
 
 export default async function GemstonePage({params}:{params:Params}){
- const {slug}=await params;const gem=getGemstoneBySlug(slug);if(!gem)notFound();const d=gem.detail;
+ const {slug}=await params;const gem=allGemstones.find((item)=>item.slug===slug);if(!gem)notFound();const d=gem.detail;
  return <article className="container-page max-w-4xl py-12 md:py-16">
   <nav className="luxury-breadcrumb"><Link href="/gemstones">Gemstones</Link><span>/</span><span>{gem.name}</span></nav>
   <header className="profile-hero">
