@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { gemstones } from "@/data/gemstones";
+import { allGemstones as gemstones } from "@/data/all-gemstones";
 import { origins } from "@/data/origins";
 import { glossaryTerms } from "@/data/glossary";
 
