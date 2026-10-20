@@ -12,6 +12,7 @@ const GUIDES = [
   { title: "How to Read a Gemstone Report", href: "/learn/how-to-read-a-gemstone-report" },
   { title: "What Makes a Sapphire Valuable?", href: "/learn/sapphire/sapphire-value-factors" },
   { title: "How to Care for Gemstones", href: "/learn/gemstone-care" },
+  { title: "Questions to Ask a Gem Dealer", href: "/learn/questions-to-ask-gem-dealer" },
 ];
 
 const TOOLS = [
