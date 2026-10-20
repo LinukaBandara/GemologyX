@@ -81,6 +81,36 @@ const sinhalaGuides = [
     href: "/si/learn/sri-lankan-blue-sapphire",
     readTime: "මිනිත්තු 5",
   },
+  {
+    title: "නිල්මැණික් හඳුනාගැනීමේ මූලික කරුණු",
+    description: "වර්ණය, භෞතික ලක්ෂණ සහ වෘත්තීය පරීක්ෂණවල වැදගත්කම.",
+    href: "/si/learn/identify-sapphire",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "රතු මැණික් සහ රතු ස්පිනල් අතර වෙනස",
+    description: "සමාන පෙනුම සහ නිවැරදි හඳුනාගැනීමේ සීමා.",
+    href: "/si/learn/ruby-vs-spinel",
+    readTime: "මිනිත්තු 4",
+  },
+  {
+    title: "පුෂ්පරාග සහ කහ ටොපාස් අතර වෙනස",
+    description: "ඛනිජ වෙනස, සමාන පෙනුම සහ මිලදී ගැනීමේ උපදෙස්.",
+    href: "/si/learn/yellow-sapphire-vs-topaz",
+    readTime: "මිනිත්තු 4",
+  },
+  {
+    title: "ස්වභාවික, කෘත්‍රිම සහ අනුකරණ මැණික්",
+    description: "මෙම වර්ග තුන අතර වැදගත් වෙනස්කම්.",
+    href: "/si/learn/natural-synthetic-imitation-gems",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "මැණික් ප්‍රතිකාර පිළිබඳ තොරතුරු හෙළි කිරීම",
+    description: "ප්‍රතිකාර තත්ත්වය, විකුණුම්කරුගේ ප්‍රකාශ සහ වාර්තා.",
+    href: "/si/learn/gemstone-treatment-disclosure",
+    readTime: "මිනිත්තු 4",
+  }
 ] as const;
 
 const categories = [
