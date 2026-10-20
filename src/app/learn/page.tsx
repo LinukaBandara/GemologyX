@@ -71,7 +71,7 @@ const sinhalaGuides = [
     readTime: "මිනිත්තු 6",
   },
   {
-    title: "නිල් නිල්මැණිකක වටිනාකමට බලපාන කරුණු",
+    title: "නිල්මැණිකක වටිනාකමට බලපාන කරුණු",
     description: "වර්ණය, පැහැදිලි බව, කැපීම සහ ප්‍රතිකාර ගැන මූලික දැනුම.",
     href: "/si/learn/blue-sapphire-value-factors",
     readTime: "මිනිත්තු 5",
