@@ -26,6 +26,9 @@ const categories = [
     ["How to Care for Gemstones","/learn/gemstone-care",true],
     ["Questions to Ask a Gem Dealer","/learn/questions-to-ask-gem-dealer",true],
     ["සිංහල: පුෂ්පරාග රළු ගලක මිල","/si/learn/rough-yellow-sapphire-value",true],
+    ["සිංහල: මැණික් වාර්තාවක් කියවන්නේ කෙසේද?","/si/learn/how-to-read-gem-report",true],
+    ["සිංහල: කැරට් සහ ග්‍රෑම් අතර වෙනස","/si/learn/carat-vs-gram",true],
+    ["සිංහල: රළු මැණික් මිලදී ගැනීම","/si/learn/buying-rough-gemstones",true],
   ]},
   { name:"Science", label:"04", items:[
     ["What Is the Mohs Hardness Scale?","/tools/mohs-hardness",true],
