@@ -126,7 +126,7 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
             }}
             className="gx-btn gx-btn-secondary mt-5"
           >
-            Clear filters filters
+            Clear filters
           </button>
         </div>
       )}
