@@ -20,6 +20,7 @@ const guides = [
   { title: "තරු නිල්මැණික්", description: "තරු ආචරණය, cabochon කැපීම සහ පරීක්ෂා කළ යුතු කරුණු.", href: "/si/learn/star-sapphire-guide" },
   { title: "ශ්‍රී ලංකාවේ නිල්මැණික්", description: "Ceylon sapphire නාමය සහ මූලාරම්භ ප්‍රකාශ පරීක්ෂා කිරීම.", href: "/si/learn/sri-lankan-blue-sapphire" },
   { title: "ස්වභාවික සහ කෘත්‍රිම ගල්", description: "ස්වභාවික, රසායනාගාරයේ නිපදවූ සහ අනුකරණ ගල් අතර වෙනස්කම්.", href: "/si/learn/natural-vs-synthetic-gemstones" },
+  { title: "මැණික් වෙළෙඳාමේ පද තේරුම් ගනිමු", description: "Natural, lab-grown, imitation සහ assembled stones වැනි වචන නිවැරදිව තේරුම් ගෙන විකුණුම් ප්‍රකාශ පරීක්ෂා කරන්න.", href: "/si/learn/natural-synthetic-imitation-gems" },
   { title: "මැණික් පරීක්ෂණ වාර්තාව කියවීම", description: "ගල් වර්ගය, ප්‍රතිකාර, වාර්තා අංකය සහ සීමාවන්.", href: "/si/learn/how-to-read-gem-report" },
   { title: "වාර්තාවක ප්‍රධාන තොරතුරු", description: "බර, මානයන්, විස්තර සහ ගල සමඟ වාර්තාව ගැළපේද යන්න.", href: "/si/learn/gem-lab-report-details" },
   { title: "ප්‍රතිකාර තොරතුරු හෙළි කිරීම", description: "විකුණුම්කරුගෙන් පැහැදිලි සහ ලිඛිත තොරතුරු ලබාගන්න.", href: "/si/learn/gemstone-treatment-disclosure" },
