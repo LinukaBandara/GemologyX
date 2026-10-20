@@ -199,7 +199,7 @@ export default function SriLankaMiningPage() {
         <section id="official-resources">
           <h2>Official Sri Lankan mining resources</h2>
           <p>
-            Use the relevant authority's current guidance for legal and procedural questions.
+            Use the relevant authority&apos;s current guidance for legal and procedural questions.
             Requirements can change, and the summary on this page is not a replacement for
             official instructions or qualified professional advice.
           </p>
