@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/how-to-read-a-gemstone-report",
     "/learn/gemstone-care",
     "/learn/questions-to-ask-gem-dealer",
+    "/si/learn/rough-yellow-sapphire-value",
     "/origins",
     "/sri-lanka-mining",
     "/sri-lanka-trade-export",
