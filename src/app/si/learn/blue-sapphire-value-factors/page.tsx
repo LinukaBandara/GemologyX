@@ -12,8 +12,8 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="නිල්මැණිකක වටිනාකමට බලපාන කරුණු"
-      crumbHref="/learn"
-      crumbLabel="Learn Gemology"
+      crumbHref="/si/learn/blue-sapphire-complete-guide"
+      crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       related={[
         { label: "නිල්මැණික් සම්පූර්ණ මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },
         { label: "නිල්මැණික් වර්ණය සහ ගුණාත්මකභාවය", href: "/si/learn/blue-sapphire-colour-quality" },
