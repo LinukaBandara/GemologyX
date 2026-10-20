@@ -24,7 +24,7 @@ const categories = [
     ["How Gemstone Certification Works","/learn/gemstone-certification",true],
     ["How to Read a Gemstone Report","/learn/how-to-read-a-gemstone-report",true],
     ["How to Care for Gemstones","/learn/gemstone-care",true],
-    ["Questions to Ask a Gem Dealer","#",false],
+    ["Questions to Ask a Gem Dealer","/learn/questions-to-ask-gem-dealer",true],
   ]},
   { name:"Science", label:"04", items:[
     ["What Is the Mohs Hardness Scale?","/tools/mohs-hardness",true],

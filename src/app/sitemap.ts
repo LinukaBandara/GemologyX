@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/gemstone-certification",
     "/learn/how-to-read-a-gemstone-report",
     "/learn/gemstone-care",
+    "/learn/questions-to-ask-gem-dealer",
     "/origins",
     "/sri-lanka-mining",
     "/sri-lanka-trade-export",
