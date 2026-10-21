@@ -66,6 +66,26 @@ const guides = [
     href: "/si/learn/sri-lankan-blue-sapphire",
   },
   {
+    title: "නිල්මැණික් lab report එකක බලන්න ඕනේ දේ",
+    description: "ප්‍රතිකාර සටහන්, origin notes සහ වාර්තාව ගල සමඟ ගැළපේද යන්න.",
+    href: "/si/learn/blue-sapphire-lab-report",
+  },
+  {
+    title: "නිල්මැණික් මිලදී ගැනීමේ checklist",
+    description: "අනන්‍යතාව, වර්ණය, ප්‍රතිකාර, වාර්තා සහ ගනුදෙනු කොන්දේසි.",
+    href: "/si/learn/blue-sapphire-buying-checklist",
+  },
+  {
+    title: "නිල්මැණික් red flags",
+    description: "අතිශය සහතික, පීඩනය, ලේඛන ගැටලු සහ සැක සහිත මිල.",
+    href: "/si/learn/blue-sapphire-red-flags",
+  },
+  {
+    title: "නිල්මැණික් රැකවරණය",
+    description: "පිරිසිදු කිරීම, ගබඩා කිරීම සහ එදිනෙදා භාවිතයේදී රැකගන්නා ආකාරය.",
+    href: "/si/learn/blue-sapphire-care",
+  },
+  {
     title: "ස්වභාවික සහ කෘත්‍රිම ගල්",
     description: "ස්වභාවික, රසායනාගාරයේ නිපදවූ සහ අනුකරණ ගල් අතර වෙනස්කම්.",
     href: "/si/learn/natural-vs-synthetic-gemstones",
@@ -121,7 +141,7 @@ export default function Page() {
         { label: "නිල්මැණික් හඳුනාගැනීම", href: "/si/learn/identify-sapphire" },
         { label: "නිල්මැණිකක වටිනාකමට බලපාන කරුණු", href: "/si/learn/blue-sapphire-value-factors" },
         { label: "Heated vs Unheated", href: "/si/learn/heated-vs-unheated-blue-sapphire" },
-        { label: "ශ්‍රී ලංකාවේ නිල්මැණික්", href: "/si/learn/sri-lankan-blue-sapphire" },
+        { label: "නිල්මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/blue-sapphire-buying-checklist" },
       ]}
     >
       <QuickAnswer>
