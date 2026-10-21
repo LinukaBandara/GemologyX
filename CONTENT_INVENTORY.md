@@ -8,21 +8,25 @@
 
 ## 1. Current Snapshot
 
-### Sinhala Guides (`/si/learn/`) — 23 pages
+### Sinhala Guides (`/si/learn/`) — 27 pages
 
 | Slug | Topic cluster | Status |
 |------|---------------|--------|
-| blue-sapphire-complete-guide | Blue Sapphire | Exists — needs quality pass |
-| blue-sapphire-colour-quality | Blue Sapphire | Exists |
-| blue-sapphire-value-factors | Blue Sapphire | Exists |
-| blue-sapphire-price-per-carat | Blue Sapphire | Exists |
-| heated-vs-unheated-blue-sapphire | Blue Sapphire | Exists |
-| heated-sapphire-guide | Blue Sapphire | Exists |
-| sri-lankan-blue-sapphire | Blue Sapphire / Sri Lanka | Exists |
-| identify-sapphire | Blue Sapphire | Exists |
-| star-sapphire-guide | Blue Sapphire | Exists |
-| rough-blue-sapphire-value | Rough / Blue Sapphire | Exists |
-| rough-sapphire-inclusions | Rough / Blue Sapphire | Exists |
+| blue-sapphire-complete-guide | Blue Sapphire | **Quality-pass done** (hub) |
+| blue-sapphire-colour-quality | Blue Sapphire | **Quality-pass done** |
+| blue-sapphire-value-factors | Blue Sapphire | **Quality-pass done** |
+| blue-sapphire-price-per-carat | Blue Sapphire | **Quality-pass done** |
+| heated-vs-unheated-blue-sapphire | Blue Sapphire | **Quality-pass done** |
+| heated-sapphire-guide | Blue Sapphire | **Quality-pass done** |
+| sri-lankan-blue-sapphire | Blue Sapphire / Sri Lanka | **Quality-pass done** |
+| identify-sapphire | Blue Sapphire | **Quality-pass done** |
+| star-sapphire-guide | Blue Sapphire | **Quality-pass done** |
+| rough-blue-sapphire-value | Rough / Blue Sapphire | **Quality-pass done** |
+| rough-sapphire-inclusions | Rough / Blue Sapphire | **Quality-pass done** |
+| blue-sapphire-buying-checklist | Blue Sapphire / Buying | **New — 2026-10-21** |
+| blue-sapphire-lab-report | Blue Sapphire / Reports | **New — 2026-10-21** |
+| blue-sapphire-care | Blue Sapphire / Care | **New — 2026-10-21** |
+| blue-sapphire-red-flags | Blue Sapphire / Risk | **New — 2026-10-21** |
 | rough-yellow-sapphire-value | Rough / Yellow Sapphire | Exists |
 | yellow-sapphire-vs-topaz | Identification | Exists |
 | ruby-vs-spinel | Identification | Exists |
@@ -63,25 +67,25 @@ Mapped to the 10 categories we agreed:
 |---|----------|--------|------------------|----------|
 | 01 | මැණික් පිළිබඳ මූලික දැනුම | 10 | 1–2 | Medium |
 | 02 | මැණික් හඳුනාගැනීම | 12 | 3–4 | High |
-| 03 | වර්ණය සහ ගුණාත්මකභාවය | 10 | 2–3 (mostly sapphire) | High |
+| 03 | වර්ණය සහ ගුණාත්මකභාවය | 10 | 3–4 (mostly sapphire) | High |
 | 04 | ප්‍රතිකාර සහ කෘත්‍රිම ගල් | 10 | 3–4 | High |
-| 05 | මිල සහ වටිනාකම | 12 | 2–3 | High |
-| 06 | මිලදී ගැනීම සහ විකිණීම | 12 | 2–3 | **Highest** |
+| 05 | මිල සහ වටිනාකම | 12 | 3–4 | High |
+| 06 | මිලදී ගැනීම සහ විකිණීම | 12 | 4–5 | **Highest** |
 | 07 | රළු මැණික් සහ කැපීම | 10 | 3–4 | High |
-| 08 | Lab reports සහ gem testing | 8 | 2 | High |
+| 08 | Lab reports සහ gem testing | 8 | 3–4 | High |
 | 09 | ශ්‍රී ලංකාවේ මැණික් කර්මාන්තය | 8 | 1–2 | High |
-| 10 | රැකවරණය, වංචා සහ tools | 8 | 2 | Medium |
-| **Total** | | **100** | **~23** | |
+| 10 | රැකවරණය, වංචා සහ tools | 8 | 3–4 | Medium |
+| **Total** | | **100** | **~27** | |
 
 ---
 
-## 3. Blue Sapphire Cluster (First complete unit)
+## 3. Blue Sapphire Cluster — COMPLETE (showcase unit)
 
-**Goal:** Make the Blue Sapphire cluster the showcase of quality — fully linked, accurate, consistent tone, sources where needed.
+**Status:** Quality-pass finished 2026-10-21. Hub + 11 existing pages upgraded + 4 gap pages added. Fully linked.
 
-### Existing pages to quality-pass
+### Core pages (quality-pass done)
 
-1. `blue-sapphire-complete-guide`
+1. `blue-sapphire-complete-guide` — hub
 2. `blue-sapphire-colour-quality`
 3. `blue-sapphire-value-factors`
 4. `blue-sapphire-price-per-carat`
@@ -93,24 +97,26 @@ Mapped to the 10 categories we agreed:
 10. `rough-blue-sapphire-value`
 11. `rough-sapphire-inclusions`
 
-### Suggested additions to complete the cluster
+### Gap pages added (2026-10-21)
 
-- Blue Sapphire buying checklist (Sinhala)
-- Blue Sapphire lab report — what to look for
-- Ceylon vs Kashmir vs Madagascar (careful, no overclaim)
-- Blue Sapphire care & durability
-- Common Blue Sapphire scams / red flags
+12. `blue-sapphire-buying-checklist`
+13. `blue-sapphire-lab-report`
+14. `blue-sapphire-care`
+15. `blue-sapphire-red-flags`
 
-### Quality checklist for every page in the cluster
+### Optional future addition (lower priority)
 
-- [ ] Clear primary search intent
-- [ ] Quick Answer block at top
-- [ ] Practical checklist or comparison table where useful
-- [ ] Misconceptions / limitations section
-- [ ] Related guides links (to other sapphire pages + general buying/reports)
-- [ ] Sources or “based on established gemological standards” note
-- [ ] Last reviewed date
-- [ ] Consistent Sinhala + English term pairing (e.g. ඇතුළත ලක්ෂණ (Inclusions))
+- Ceylon vs Kashmir vs Madagascar comparison (careful wording, no overclaim on origin from appearance)
+
+### Quality standard applied to every page in the cluster
+
+- [x] Clear primary search intent
+- [x] Quick Answer block at top
+- [x] Practical checklist where useful
+- [x] Misconceptions / limitations section
+- [x] Related guides links
+- [x] Last reviewed date
+- [x] Consistent trust-first tone (no overclaim on origin / treatment / value)
 
 ---
 
@@ -119,7 +125,6 @@ Mapped to the 10 categories we agreed:
 Prioritise pages people actually search when they are about to spend money:
 
 **Buying & Risk**
-- නිල්මැණික් ගලක් මිලදී ගැනීමට පෙර දැනගත යුතු දේ (if not already covered strongly)
 - රළු මැණික් මිලදී ගන්නා විට අසන්න ඕනේ ප්‍රශ්න
 - Gem dealer එක්ක negotiate කරන හැටි
 - Online vs local market buying risks
@@ -130,7 +135,7 @@ Prioritise pages people actually search when they are about to spend money:
 - Which labs are commonly accepted (careful wording)
 
 **Treatments**
-- Heat treatment — what it is and why it matters for value
+- Heat treatment — what it is and why it matters for value (general, beyond sapphire)
 - Diffusion and other less common treatments
 - Disclosure rules / what sellers should tell you
 
@@ -161,10 +166,10 @@ Prioritise pages people actually search when they are about to spend money:
 
 ## 7. Immediate Next Actions
 
-1. Quality-pass the existing Blue Sapphire Sinhala cluster (structure + links + Quick Answer / Checklist where missing).
-2. Add 3–5 missing Blue Sapphire supporting pages.
-3. Lock the Article template usage across all new Sinhala guides.
-4. Build the next highest-intent batch (Buying + Reports + Treatments).
+1. ~~Quality-pass the existing Blue Sapphire Sinhala cluster~~ **DONE**
+2. ~~Add missing Blue Sapphire supporting pages~~ **DONE** (4 pages)
+3. Lock the Article template usage across all new Sinhala guides (ongoing)
+4. **Build the next highest-intent batch** (Buying + Reports + Treatments + Sri Lanka market)
 
 ---
 
