@@ -2,63 +2,43 @@
 
 **Last updated:** 2026-10-21  
 **Goal:** Sinhala educational guides → 100 · English gemstone profiles → 100  
-**Principle:** Knowledge system, not random blog posts.
+**Progress:** **~51 / 100 ≈ 51%**
 
 ---
 
 ## Snapshot
 
-**Sinhala guides: ~45**
-
 ### Blue Sapphire cluster — COMPLETE (15)
 
-### Bulk batch 1 — DONE
-questions-to-ask-gem-dealer · origin-opinion-vs-guarantee · sri-lanka-gem-trade-intro · heat-treatment-guide · online-vs-local-gem-buying · rough-gem-questions
-
-### Bulk batch 2 — DONE
-diffusion-treatment-guide · sri-lanka-gem-terms · negotiate-gem-price · ruby-vs-garnet · padparadscha-intro · gemstone-care-general
-
-### Bulk batch 3 — DONE
-|Slug|Topic|
-|---|---|
-|fracture-filling-guide|Fracture / glass filling|
-|gem-labs-overview|Labs — careful overview|
-|emerald-intro|Emerald basics|
-|spinel-intro|Spinel basics|
-|mohs-hardness-guide|Mohs scale|
-|gemstone-inclusions-guide|Inclusions general|
+### Bulk batches completed
+1. Buying / origin / heat / SL / online / rough questions  
+2. Diffusion · geuda terms · negotiate · ruby-vs-garnet · padparadscha · care  
+3. Fracture filling · labs · emerald · spinel · mohs · inclusions  
+4. **Peridot · tanzanite · opal · jewelry-with-gems · amethyst · topaz** ← just done
 
 ---
 
 ## Category progress (approx)
 
-|Category|Target|~Current|
-|---|---|---|
-|Buying & Risk|12|10+|
-|Treatments|10|9|
-|Reports / Labs|8|6|
-|Sri Lanka market|8|5|
-|Identification|12|9|
-|Care / Science|8|7|
-|**Total**|**100**|**~45**|
+| Category | Target | ~Current |
+|----------|--------|----------|
+| Buying & Risk | 12 | 11 |
+| Treatments | 10 | 9 |
+| Reports / Labs | 8 | 6 |
+| Sri Lanka | 8 | 5 |
+| Identification / Species intros | 25+ | ~18 |
+| Care / Science | 10 | 8 |
+| **Total** | **100** | **~51** |
 
 ---
 
-## Next priorities
+## Next roadmap priorities
 
-- More species intros (peridot, tanzanite, opal…)
-- Jewelry-with-gems buying
-- English profile expansion
-- Learn index full sync of newest pages
+- More species (aquamarine, citrine, garnet intro, jade…)
+- Deeper buying scenarios
+- Learn index full sync
+- English profiles expansion
 
 ---
 
-## Working rules
-
-1. No duplicate intent  
-2. Link or die  
-3. Trust first — no overclaim  
-4. Bulk batches of 5–8  
-5. lastReviewed on every page  
-
-*Living map.*
+*Living map. Trust-first. Bulk batches.*
