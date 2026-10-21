@@ -27,11 +27,11 @@ const guides = [
   },
   {
     title: "වටිනාකමට බලපාන සාධක",
-    description: "වර්ණය, පැහැදිලි බවව, කැපීම, බර සහ ප්‍රතිකාර එකට සලකා බලන්න.",
+    description: "වර්ණය, පැහැදිලි බව, කැපීම, බර සහ ප්‍රතිකාර එකට සලකා බලන්න.",
     href: "/si/learn/blue-sapphire-value-factors",
   },
   {
-    title: "කැකැරට් එකකට මිල තේරුම් ගැනීම",
+    title: "කැරට් එකකට මිල තේරුම් ගැනීම",
     description: "කැරට් බර, ගුණාත්මකභාවය සහ විකුණුම් කොන්දේසි එකට සසඳන්න.",
     href: "/si/learn/blue-sapphire-price-per-carat",
   },
