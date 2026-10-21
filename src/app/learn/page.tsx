@@ -22,6 +22,12 @@ const sinhalaGuides = [
     readTime: "මිනිත්තු 7",
   },
   {
+    title: "මැණික් මිල සාකච්ඡා කරන ආකාරය",
+    description: "තොරතුරු සහිත සාකච්ඡාව, budget සහ ආරක්ෂිත සීමා.",
+    href: "/si/learn/negotiate-gem-price",
+    readTime: "මිනිත්තු 6",
+  },
+  {
     title: "නිල්මැණික් මිලදී ගැනීමේ checklist",
     description: "නිල්මැණික් ගලක් මිලදී ගැනීමට පෙර පරීක්ෂා කළ යුතු සම්පූර්ණ ලැයිස්තුව.",
     href: "/si/learn/blue-sapphire-buying-checklist",
@@ -46,9 +52,21 @@ const sinhalaGuides = [
     readTime: "මිනිත්තු 7",
   },
   {
+    title: "Diffusion ප්‍රතිකාරය",
+    description: "Diffusion treatment, heat සමඟ වෙනස සහ හෙළිදරව් කිරීම.",
+    href: "/si/learn/diffusion-treatment-guide",
+    readTime: "මිනිත්තු 6",
+  },
+  {
     title: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාම — හැඳින්වීම",
     description: "දේශීය වෙළෙඳපොළ, ගනුදෙනු වර්ග සහ ගැනුම්කරුවන් දැනගත යුතු කරුණු.",
     href: "/si/learn/sri-lanka-gem-trade-intro",
+    readTime: "මිනිත්තු 7",
+  },
+  {
+    title: "ශ්‍රී ලංකාවේ මැණික් පද — Geuda",
+    description: "Geuda, රළු ගල් සහ දේශීය වෙළෙඳ පද තේරුම් ගනිමු.",
+    href: "/si/learn/sri-lanka-gem-terms",
     readTime: "මිනිත්තු 7",
   },
   {
@@ -61,6 +79,24 @@ const sinhalaGuides = [
     title: "රළු මැණික් මිලදී ගන්නා විට අසන්න ඕනේ ප්‍රශ්න",
     description: "ඉරිතැලීම්, කැපීමේ අවදානම, බර සහ කොන්දේසි.",
     href: "/si/learn/rough-gem-questions",
+    readTime: "මිනිත්තු 6",
+  },
+  {
+    title: "Padparadscha sapphire යනු කුමක්ද?",
+    description: "වර්ණ පරාසය, හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීම.",
+    href: "/si/learn/padparadscha-intro",
+    readTime: "මිනිත්තු 6",
+  },
+  {
+    title: "රතු මැණික් සහ ගානට්",
+    description: "Ruby vs Garnet — ඛනිජ වෙනස සහ හඳුනාගැනීමේ සීමා.",
+    href: "/si/learn/ruby-vs-garnet",
+    readTime: "මිනිත්තු 5",
+  },
+  {
+    title: "මැණික් රැකවරණය — සාමාන්‍ය මාර්ගෝපදේශය",
+    description: "පිරිසිදු කිරීම, ගබඩා කිරීම සහ එදිනෙදා භාවිතය.",
+    href: "/si/learn/gemstone-care-general",
     readTime: "මිනිත්තු 6",
   },
   {
@@ -218,7 +254,7 @@ const categories = [
       ["What Makes a Sapphire Valuable?", "/learn/sapphire/sapphire-value-factors", true],
       ["Natural vs Synthetic Sapphire", "/learn/natural-vs-synthetic-gemstones", true],
       ["Heated vs Unheated Sapphire", "/learn/heated-vs-unheated", true],
-      ["What Is Padparadscha Sapphire?", "#", false],
+      ["What Is Padparadscha Sapphire?", "/si/learn/padparadscha-intro", true],
     ],
   },
   {
@@ -263,7 +299,7 @@ export default function LearnPage() {
           behind gemstones.
         </p>
         <div className="directory-rule">
-          <span /> ENGLISH &amp; සිංහල <span />
+          <span /> ENGLISH & සිංහල <span />
         </div>
       </header>
 
