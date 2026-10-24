@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-10-24  
 **Goal:** Sinhala educational guides → 100  
-**Progress:** **~63 / 100 ≈ 63%**
+**Progress:** **~69 / 100 ≈ 69%**
 
 ---
 
@@ -13,18 +13,18 @@
 3. Fracture filling · labs · emerald · spinel · mohs · inclusions  
 4. Peridot · tanzanite · opal · jewelry · amethyst · topaz  
 5. Aquamarine · citrine · garnet · jade · morganite · tourmaline  
-6. **Zircon · kunzite · alexandrite · chrysoberyl · moonstone · lapis** ← just done
+6. Zircon · kunzite · alexandrite · chrysoberyl · moonstone · lapis  
+7. **Turquoise · amber · pearl · coral · fluorite · quartz-family** ← just done
 
-**Quality-pass:** All older thin pages upgraded (QuickAnswer + Checklist + Misconceptions)
-
+**Quality-pass:** Older thin pages upgraded  
 Blue Sapphire cluster: COMPLETE (15)
 
 ---
 
 ## Next priorities
 
-- More species / practical guides toward 100  
-- Learn index sync of batch 6  
+- More practical / comparison guides toward 100  
+- Learn index sync batches 6–7  
 - English profiles  
 
 ---
