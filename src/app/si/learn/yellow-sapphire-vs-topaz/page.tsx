@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
-import { ArticleLayout, ArticleSection } from "@/components/article-layout";
+import {
+  ArticleLayout,
+  ArticleSection,
+  QuickAnswer,
+  PracticalChecklist,
+  Misconceptions,
+} from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "පුෂ්පරාග සහ කහ ටොපාස් අතර වෙනස",
-  description: "කහ පැහැති පුෂ්පරාග සහ ටොපාස් ගල්වල ඛනිජ වෙනස, සමාන පෙනුම සහ මිලදී ගැනීමේදී සැලකිලිමත් විය යුතු දේ.",
+  title: "පුෂ්පරාග සහ කහ ටොපාස් අතර වෙනස | GemologyX",
+  description:
+    "කහ sapphire (පුෂ්පරාග) සහ yellow topaz අතර ඛනිජ වෙනස, සමාන පෙනුම සහ මිලදී ගැනීමේ උපදෙස්.",
 };
 
 export default function Page() {
@@ -12,32 +19,52 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="පුෂ්පරාග සහ කහ ටොපාස් අතර වෙනස"
-      crumbHref="/learn"
-      crumbLabel="Learn Gemology"
+      crumbHref="/si/learn/topaz-intro"
+      crumbLabel="Topaz හැඳින්වීම"
+      lastReviewed="2026-10-24"
       related={[
-        { label: "ස්වභාවික සහ කෘත්‍රිම මැණික් අතර වෙනස", href: "/si/learn/natural-vs-synthetic-gemstones" },
-        { label: "මැණික් පරීක්ෂණ වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
-        { label: "මැණික් මිලදී ගැනීමට පෙර පරීක්ෂා කළ යුතු ලැයිස්තුව", href: "/si/learn/gemstone-buying-checklist" },
+        { label: "Topaz හැඳින්වීම", href: "/si/learn/topaz-intro" },
+        { label: "Citrine හැඳින්වීම", href: "/si/learn/citrine-intro" },
+        { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
       ]}
     >
-      <ArticleSection heading="වර්ණය එකම වුණත් ගල එකම නොවේ">
-        <p>කහ පැහැති පුෂ්පරාග සහ කහ ටොපාස් දෘශ්‍යමය වශයෙන් සමාන විය හැකි නමුත් ඒවා වෙනස් ඛනිජ වේ. වර්ණය පමණක් මත නම තීරණය නොකළ යුතුයි.</p>
+      <QuickAnswer>
+        <p>
+          පුෂ්පරාග / yellow sapphire = corundum (Mohs 9). Yellow topaz = වෙනම
+          ඛනිජයකි (Mohs 8, cleavage තිබිය හැකියි). පෙනුමෙන් පමණක් වෙනස් කළ
+          නොහැකියි. නම ලිඛිතව විමසන්න.
+        </p>
+      </QuickAnswer>
+
+      <ArticleSection heading="ඛනිජ වෙනස">
+        <p>Sapphire = corundum. Topaz = aluminium silicate. දෘඪතාව සහ cleavage වෙනස්.</p>
       </ArticleSection>
 
-      <ArticleSection heading="භෞතික ගුණාංග">
-        <p>කොරන්ඩම් සහ ටොපාස්වල දෘඪතාව හා වෙනත් ගුණාංග වෙනස් වේ. එහෙත් ගල සීරීම වැනි ගෙදර පරීක්ෂණ මඟින් අනන්‍යතාව තහවුරු කිරීමට උත්සාහ කිරීමෙන් හානි සිදුවිය හැකියි.</p>
+      <ArticleSection heading="පෙනුම">
+        <p>කහ පැහැය දෙකටම තිබිය හැකියි. Citrine (quartz) ද සමාන පෙනුමක් දක්වයි.</p>
       </ArticleSection>
 
-      <ArticleSection heading="නාමකරණය සහ ලේඛන">
-        <p>මිලදී ගැනීමේදී ගලේ නිවැරදි ඛනිජ නම ලිඛිතව සඳහන් කරවා ගන්න. වාර්තාවක් තිබේ නම් එහි ගලේ විස්තර සහ වාර්තා අංකය පරීක්ෂා කරන්න.</p>
+      <ArticleSection heading="මිලදී ගැනීමේදී">
+        <p>නිවැරදි නම ලිඛිතව. ප්‍රතිකාර තත්ත්වය. වාර්තාවේ species. මිල ඉහළ නම් ස්වාධීන පරීක්ෂාව.</p>
       </ArticleSection>
 
-      <ArticleSection heading="මිල තක්සේරුව">
-        <p>ගල් දෙකක වර්ණය සමාන වුවත් ඒවායේ වටිනාකම එකම නොවේ. අනන්‍යතාව, ගුණාත්මකභාවය, ප්‍රතිකාර, කැපීම සහ වෙළෙඳපොළ ඉල්ලුම වෙන වෙනම සලකා බලන්න.</p>
-      </ArticleSection>
+      <PracticalChecklist
+        items={[
+          "ගලේ නම (sapphire / topaz) ලිඛිතව තියෙනවාද?",
+          "ප්‍රතිකාර තත්ත්වය විමසුවාද?",
+          "වර්ණය පමණක් මත තීරණය නොකළාද?",
+        ]}
+      />
 
-      <ArticleSection heading="ආරක්ෂිත තීරණය">
-        <p>සැකයක් ඇත්නම් ගලට හානි කළ හැකි පරීක්ෂණ නොකර ස්වාධීන විශේෂඥ පරීක්ෂාවක් ලබාගන්න.</p>
+      <Misconceptions
+        items={[
+          "කහ පැහැය = sapphire — නැහැ; topaz සහ citrine ද තියෙනවා.",
+          "දෘඪතාව 8 නම් sapphire තරම්ම — cleavage නිසා බිඳීමේ අවදානම්.",
+        ]}
+      />
+
+      <ArticleSection heading="මතක තබාගන්න">
+        <p>මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. නිශ්චිත ගලක් හඳුනාගැනීමේ සහතිකයක් නොවේ.</p>
       </ArticleSection>
     </ArticleLayout>
   );

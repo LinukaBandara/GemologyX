@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
-import { ArticleLayout, ArticleSection } from "@/components/article-layout";
+import {
+  ArticleLayout,
+  ArticleSection,
+  QuickAnswer,
+  PracticalChecklist,
+  Misconceptions,
+} from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "රතු මැණික් සහ රතු ස්පිනල් අතර වෙනස",
-  description: "රතු කොරන්ඩම් සහ ස්පිනල්වල වෙනස්කම්, සමාන පෙනුම සහ නිවැරදි හඳුනාගැනීමේ සීමා ගැන ඉගෙන ගන්න.",
+  title: "රතු මැණික් සහ රතු ස්පිනල් අතර වෙනස | GemologyX",
+  description:
+    "Ruby (corundum) සහ red spinel අතර ඛනිජ වෙනස, සමාන පෙනුම සහ හඳුනාගැනීමේ සීමා.",
 };
 
 export default function Page() {
@@ -12,32 +19,52 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="රතු මැණික් සහ රතු ස්පිනල් අතර වෙනස"
-      crumbHref="/learn"
-      crumbLabel="Learn Gemology"
+      crumbHref="/si/learn/spinel-intro"
+      crumbLabel="Spinel හැඳින්වීම"
+      lastReviewed="2026-10-24"
       related={[
-        { label: "ස්වභාවික සහ කෘත්‍රිම මැණික් අතර වෙනස", href: "/si/learn/natural-vs-synthetic-gemstones" },
-        { label: "මැණික් පරීක්ෂණ වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
-        { label: "මැණික් මිලදී ගැනීමට පෙර පරීක්ෂා කළ යුතු ලැයිස්තුව", href: "/si/learn/gemstone-buying-checklist" },
+        { label: "Spinel හැඳින්වීම", href: "/si/learn/spinel-intro" },
+        { label: "Ruby vs Garnet", href: "/si/learn/ruby-vs-garnet" },
+        { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
       ]}
     >
-      <ArticleSection heading="පෙනුමෙන් සමාන විය හැකියි">
-        <p>රූබි සහ රතු ස්පිනල් දෙකම ආකර්ෂණීය රතු පැහැයෙන් පෙනිය හැකියි. පැහැය පමණක් මත ඒවා වෙන්කර හඳුනාගැනීම විශ්වාසදායක ක්‍රමයක් නොවේ.</p>
-      </ArticleSection>
+      <QuickAnswer>
+        <p>
+          Ruby = red corundum. Spinel = වෙනම ඛනිජයකි. රතු පැහැය දෙකටම තිබිය
+          හැකි නිසා පෙනුමෙන් පමණක් වෙනස් කළ නොහැකියි. නම ලිඛිතව විමසන්න;
+          වාර්තාවේ species කියවන්න.
+        </p>
+      </QuickAnswer>
 
       <ArticleSection heading="ඛනිජ වෙනස">
-        <p>රූබි යනු කොරන්ඩම් ඛනිජයේ රතු ප්‍රභේදයයි. ස්පිනල් වෙනම ඛනිජයකි. ඒවායේ භෞතික හා දෘශ්‍ය ගුණාංග වෙනස් වුවත් නිවැරදිව පරීක්ෂා කිරීමට විශේෂඥ දැනුම අවශ්‍ය විය හැකියි.</p>
+        <p>Ruby = corundum (Mohs 9). Spinel = වෙනම mineral (Mohs ~8). භෞතික ගුණාංග වෙනස්.</p>
+      </ArticleSection>
+
+      <ArticleSection heading="පෙනුම සමාන විය හැකියි">
+        <p>ඉතිහාසයේ සමහර “ruby” පසුව spinel ලෙස හඳුනාගත් අවස්ථා තිබේ. වර්ණය පමණක් ප්‍රමාණවත් නොවේ.</p>
       </ArticleSection>
 
       <ArticleSection heading="මිලදී ගැනීමේදී">
-        <p>විකුණුම්කරුගේ නාමකරණය පමණක් විශ්වාස නොකරන්න. ලිඛිත විස්තර, බර, ප්‍රතිකාර තත්ත්වය සහ අවශ්‍ය නම් ස්වාධීන පරීක්ෂණ වාර්තාවක් ඉල්ලන්න.</p>
+        <p>නිවැරදි නම ලිඛිතව. වාර්තාවේ species. මිල ඉහළ නම් ස්වාධීන පරීක්ෂාවක්.</p>
       </ArticleSection>
 
-      <ArticleSection heading="ප්‍රතිකාර සහ අනුකරණ">
-        <p>රතු පැහැති වීදුරු හෝ වෙනත් අනුකරණ ද්‍රව්‍යද වෙළෙඳපොළේ තිබිය හැකියි. ඡායාරූප හෝ වීඩියෝවක් මත පමණක් ගලේ අනන්‍යතාව තහවුරු කළ නොහැකියි.</p>
-      </ArticleSection>
+      <PracticalChecklist
+        items={[
+          "ගලේ නම (ruby / spinel) ලිඛිතව තියෙනවාද?",
+          "වාර්තාවේ species කියවුවාද?",
+          "වර්ණය පමණක් මත තීරණය නොකළාද?",
+        ]}
+      />
 
-      <ArticleSection heading="අවසාන උපදෙස්">
-        <p>ගලේ වටිනාකමට අනන්‍යතාව වැදගත් නම්, ගනුදෙනුව අවසන් කිරීමට පෙර සුදුසුකම් ලත් මැණික් විශේෂඥයකුගෙන් පරීක්ෂාවක් ලබාගන්න.</p>
+      <Misconceptions
+        items={[
+          "රතු පැහැය = ruby — නැහැ; spinel ද තියෙනවා.",
+          "ඇසින් පහසුවෙන් වෙනස් කළ හැකියි — බොහෝ විට නැහැ.",
+        ]}
+      />
+
+      <ArticleSection heading="මතක තබාගන්න">
+        <p>මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. නිශ්චිත ගලක් හඳුනාගැනීමේ සහතිකයක් නොවේ.</p>
       </ArticleSection>
     </ArticleLayout>
   );

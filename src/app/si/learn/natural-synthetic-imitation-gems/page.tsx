@@ -1,51 +1,75 @@
 import type { Metadata } from "next";
-import { ArticleLayout, ArticleSection } from "@/components/article-layout";
+import {
+  ArticleLayout,
+  ArticleSection,
+  QuickAnswer,
+  PracticalChecklist,
+  Misconceptions,
+} from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් විකිණීමේදී භාවිත වන පද තේරුම් ගනිමු | GemologyX",
-  description: "ස්වභාවික, lab-grown, synthetic, imitation සහ assembled ගල් ගැන විකුණුම්කරුගෙන් පැහැදිලිව විමසිය යුතු දේ සිංහලෙන් ඉගෙන ගන්න.",
+  title: "ස්වභාවික, කෘත්‍රිම සහ අනුකරණ මැණික් පද | GemologyX",
+  description:
+    "Natural, lab-grown, synthetic, imitation සහ assembled ගල් ගැන වෙළෙඳාමේ පද තේරුම් ගනිමු.",
 };
 
 export default function Page() {
   return (
     <ArticleLayout
       category="සිංහල මැණික් දැනුම"
-      readTime="මිනිත්තු 5"
+      readTime="මිනිත්තු 6"
       title="මැණික් විකිණීමේදී භාවිත වන පද තේරුම් ගනිමු"
-      crumbHref="/learn"
-      crumbLabel="Learn Gemology"
+      crumbHref="/si/learn/natural-vs-synthetic-gemstones"
+      crumbLabel="ස්වභාවික vs කෘත්‍රිම"
+      lastReviewed="2026-10-24"
       related={[
-        { label: "ස්වභාවික සහ කෘත්‍රිම මැණික් අතර විද්‍යාත්මක වෙනස", href: "/si/learn/natural-vs-synthetic-gemstones" },
-        { label: "මැණික් පරීක්ෂණ වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
-        { label: "මැණික් මිලදී ගැනීමට පෙර පරීක්ෂා කළ යුතු ලැයිස්තුව", href: "/si/learn/gemstone-buying-checklist" },
+        { label: "ස්වභාවික vs කෘත්‍රිම", href: "/si/learn/natural-vs-synthetic-gemstones" },
+        { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
+        { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
       ]}
     >
-      <ArticleSection heading="වචන පැහැදිලිව වෙන් කරගන්න">
-        <p><strong>ස්වභාවික (natural):</strong> ස්වභාවික භූගර්භීය ක්‍රියාවලීන් මඟින් සෑදුණු ගලක්. එය පසුව ප්‍රතිකාර කර තිබිය හැකි නිසා “natural” යන වචනය පමණක් ප්‍රතිකාර නොකළ බවට සාක්ෂියක් නොවේ.</p>
-        <p><strong>රසායනාගාරයේ නිපදවූ (lab-grown / synthetic):</strong> මැණික් වර්ගයට අදාළ ද්‍රව්‍යමය සහ ස්ඵටික ගුණාංග බොහොමයක් ස්වභාවික සමාන ගලකට සමාන විය හැකි නමුත් එය රසායනාගාරයක නිපදවා ඇත.</p>
-        <p><strong>අනුකරණ (imitation / simulant):</strong> වෙනත් ගලක් මෙන් පෙනීමට භාවිත කරන ද්‍රව්‍යයකි. එය වීදුරු හෝ වෙනත් මැණික් වර්ගයක් විය හැකියි; පෙනුම සමාන වීමෙන් එය එකම මැණික් වර්ගය නොවේ.</p>
+      <QuickAnswer>
+        <p>
+          Natural = ස්වභාවික. Lab-grown / synthetic = රසායනාගාරයේ නිපදවූ.
+          Imitation = පෙනුමෙන් සමාන වෙනත් ද්‍රව්‍යයක්. Assembled = කොටස් දෙකක්
+          හෝ වැඩි ගණනක් එකතු කළ (doublet / triplet). පදයක් අසන විට අර්ථය
+          ලිඛිතව පැහැදිලි කරගන්න.
+        </p>
+      </QuickAnswer>
+
+      <ArticleSection heading="Natural">
+        <p>පෘථිවියේ සෑදුණු. ප්‍රතිකාර කර තිබිය හැකියි — එය වෙනම කාරණයකි.</p>
       </ArticleSection>
 
-      <ArticleSection heading="එකතු කළ හෝ ස්ථර ගල් ගැනත් අසන්න">
-        <p>සමහර ගල් කොටස් දෙකක් හෝ කිහිපයක් එකට සවි කර සකස් කර තිබිය හැකියි. මෙවැනි assembled stones, doublets හෝ triplets පිළිබඳ විස්තර විකුණුම්කරුගෙන් පැහැදිලිව අසන්න. පෙනුමෙන් පමණක් ගල තනි ස්ඵටිකයක්ද, එකතු කළ නිෂ්පාදනයක්ද යන්න නිශ්චිතව තීරණය කළ නොහැකියි.</p>
+      <ArticleSection heading="Lab-grown / Synthetic">
+        <p>රසායනාගාරයේ නිපදවූ; බොහෝ විට රසායනිකව සමාන. Imitation නොවේ.</p>
       </ArticleSection>
 
-      <ArticleSection heading="වෙළෙඳ දැන්වීමක වචන පමණක් විශ්වාස නොකරන්න">
-        <p>“Ceylon”, “natural”, “untreated”, “certified” හෝ “premium” වැනි වචන ඇසූ විට ඒවාට අදාළ සාක්ෂි මොනවාදැයි විමසන්න. “Ceylon” යන නාමය පමණක් ගලේ නිශ්චිත භූගෝලීය මූලාරම්භය තහවුරු නොකරයි. වාර්තාවක් තිබේ නම් එය නිකුත් කළ ආයතනය, වාර්තා අංකය, ගලේ විස්තර සහ ප්‍රතිකාර සටහන් පරීක්ෂා කරන්න.</p>
+      <ArticleSection heading="Imitation">
+        <p>පෙනුමෙන් සමාන වෙනත් ද්‍රව්‍යයක් (උදා: වීදුරු). Species එකම නොවේ.</p>
       </ArticleSection>
 
-      <ArticleSection heading="විකුණුම්කරුගෙන් ලිඛිතව අසන්න">
-        <ul>
-          <li>ගලේ නිශ්චිත වර්ගය කුමක්ද? ස්වභාවිකද, රසායනාගාරයේ නිපදවූද, අනුකරණයක්ද?</li>
-          <li>දන්නා ප්‍රතිකාර හෝ එකතු කළ කොටස් තිබේද?</li>
-          <li>මූලාරම්භය පිළිබඳ ප්‍රකාශයක් කරන්නේ නම් එයට ඇති සාක්ෂිය කුමක්ද?</li>
-          <li>වාර්තාවක් තිබේද, එහි අංකය නිකුත් කළ ආයතනයෙන් තහවුරු කළ හැකිද?</li>
-          <li>රිසිට්පතේ ගලේ වර්ගය, බර, ප්‍රතිකාර සහ ආපසු භාරදීමේ කොන්දේසි සඳහන් කරනවාද?</li>
-        </ul>
+      <ArticleSection heading="Assembled (doublet / triplet)">
+        <p>කොටස් කිහිපයක් එකතු කළ ගල්. විශේෂයෙන් opal වෙළෙඳපොළේ බහුල විය හැකියි.</p>
       </ArticleSection>
+
+      <PracticalChecklist
+        items={[
+          "පදයේ අර්ථය ලිඛිතව පැහැදිලිද?",
+          "Natural / synthetic / imitation වෙනස තේරුම් ගත්තාද?",
+          "වාර්තාවේ terminology කියවුවාද?",
+        ]}
+      />
+
+      <Misconceptions
+        items={[
+          "Synthetic = ව්‍යාජ / වීදුරු — නැහැ.",
+          "පදයක් දන්නවා නම් ගලේ වටිනාකම තීරණය කළ හැකියි — නැහැ.",
+        ]}
+      />
 
       <ArticleSection heading="මතක තබාගන්න">
-        <p>ඡායාරූපයක්, වර්ණයක් හෝ විකුණුම්කරුගේ ප්‍රකාශයක් පමණක් ගල හඳුනාගැනීමට ප්‍රමාණවත් නොවේ. මිල අධික ගනුදෙනුවකට පෙර සුදුසුකම් ලත් ස්වාධීන මැණික් පරීක්ෂණාගාරයකින් පරීක්ෂාවක් සලකා බලන්න. මෙම ලිපිය අධ්‍යාපනික තොරතුරු සඳහා පමණි; ගලක අනන්‍යතාව හෝ වටිනාකම සහතික නොකරයි.</p>
+        <p>මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. නිශ්චිත ගලක් හඳුනාගැනීමේ සහතිකයක් නොවේ.</p>
       </ArticleSection>
     </ArticleLayout>
   );

@@ -1,47 +1,75 @@
 import type { Metadata } from "next";
-import { ArticleLayout, ArticleSection } from "@/components/article-layout";
+import {
+  ArticleLayout,
+  ArticleSection,
+  QuickAnswer,
+  PracticalChecklist,
+  Misconceptions,
+} from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් පරීක්ෂණ වාර්තාවක තිබිය යුතු ප්‍රධාන තොරතුරු",
-  description: "මැණික් වාර්තාවක ගල් වර්ගය, බර, මානයන්, ප්‍රතිකාර සටහන්, වාර්තා අංකය සහ පරීක්ෂණ සීමාවන් පරීක්ෂා කරන ආකාරය.",
+  title: "මැණික් පරීක්ෂණ වාර්තාවක ප්‍රධාන තොරතුරු | GemologyX",
+  description:
+    "වාර්තාවක ගල් වර්ගය, බර, මානයන්, ප්‍රතිකාර සටහන්, වාර්තා අංකය සහ සීමාවන් පරීක්ෂා කරන ආකාරය.",
 };
 
 export default function Page() {
   return (
     <ArticleLayout
       category="සිංහල මැණික් දැනුම"
-      readTime="මිනිත්තු 6"
+      readTime="මිනිත්තු 5"
       title="මැණික් පරීක්ෂණ වාර්තාවක තිබිය යුතු ප්‍රධාන තොරතුරු"
-      crumbHref="/si/learn/blue-sapphire-complete-guide"
-      crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
+      crumbHref="/si/learn/how-to-read-gem-report"
+      crumbLabel="වාර්තාවක් කියවීම"
+      lastReviewed="2026-10-24"
       related={[
-        { label: "මැණික් පරීක්ෂණ වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
-        { label: "ප්‍රතිකාර තොරතුරු හෙළි කිරීම", href: "/si/learn/gemstone-treatment-disclosure" },
-        { label: "මැණික් මිලදී ගැනීමට පෙර පරීක්ෂා කළ යුතු ලැයිස්තුව", href: "/si/learn/gemstone-buying-checklist" },
+        { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
+        { label: "Labs මූලික", href: "/si/learn/gem-labs-overview" },
+        { label: "Origin opinion vs guarantee", href: "/si/learn/origin-opinion-vs-guarantee" },
       ]}
     >
-      <ArticleSection heading="වාර්තාවේ විෂය පථය මුලින්ම කියවන්න">
-        <p>මැණික් පරීක්ෂණ වාර්තාවකින් තහවුරු කිරීමට උත්සාහ කළේ කුමක්දැයි බලන්න. සමහර වාර්තා ගලේ අනන්‍යතාව සහ හඳුනාගත් ප්‍රතිකාර ගැන අවධානය යොමු කරන අතර, ඒවා සෑම විටම වෙළෙඳපොළ මිලක් හෝ ගලේ සියලු ගුණාංග පිළිබඳ තක්සේරුවක් නොවේ. වාර්තාවේ සීමාවන් කියවීමත් ප්‍රධාන තොරතුරු කියවීම තරම්ම වැදගත්ය.</p>
+      <QuickAnswer>
+        <p>
+          ප්‍රධාන කරුණු: වාර්තා අංකය, species / variety, natural vs synthetic,
+          බර, මානයන්, හැඩය, ප්‍රතිකාර notes, (තිබේ නම්) origin opinion. අංකය
+          සත්‍යාපනය කර ගල සමඟ ගැළපේද බලන්න.
+        </p>
+      </QuickAnswer>
+
+      <ArticleSection heading="වාර්තා අංකය සහ දිනය">
+        <p>නිල මාර්ගයෙන් සත්‍යාපනය කරන්න. පැරණි වාර්තාවක් නම් නව පරීක්ෂාවක් සලකා බලන්න.</p>
       </ArticleSection>
-      <ArticleSection heading="ගල් වර්ගය සහ අනන්‍යතාව">
-        <p>වාර්තාවේ සඳහන් ගල් නම සහ natural, laboratory-grown හෝ imitation වැනි පද කියවන්න. “නිල් පැහැති ගලක්” සහ “නිල්මැණික්” එකම ප්‍රකාශයක් නොවේ. වාර්තාවේ වචන තේරුම් නොගන්නේ නම් නිකුත් කළ ආයතනයෙන් පැහැදිලි කිරීමක් ඉල්ලන්න.</p>
+
+      <ArticleSection heading="ගල් වර්ගය සහ ස්වභාවික බව">
+        <p>Species, variety, natural / laboratory-grown / synthetic වචන කියවන්න.</p>
       </ArticleSection>
-      <ArticleSection heading="බර, මානයන් සහ ගලට ගැළපීම">
-        <p>වාර්තා අංකය, පරීක්ෂා කළ දිනය, බර, හැඩය සහ මානයන් තිබේ නම් ඒවා ගල සමඟ සසඳන්න. ඡායාරූපයක් හෝ සුවිශේෂී ලක්ෂණ සටහන් කර තිබේ නම් ඒවාද බලන්න. වාර්තාවේ විස්තර ගලට නොගැළපේ නම් එය නොසලකා ගනුදෙනුව ඉදිරියට ගෙන නොයන්න; නිකුත් කළ ආයතනයෙන් තහවුරු කරගන්න.</p>
+
+      <ArticleSection heading="බර, මානයන්, හැඩය">
+        <p>ඔබේ ගලේ බර සහ මානයන් වාර්තාවට ගැළපේද බලන්න. නොගැළපේ නම් පැහැදිලි කිරීමක් ඉල්ලන්න.</p>
       </ArticleSection>
-      <ArticleSection heading="ප්‍රතිකාර සහ සොයාගත් දේ">
-        <p>වාර්තාවේ ප්‍රතිකාර පිළිබඳ ප්‍රකාශය නිවැරදිව කියවන්න. “ප්‍රතිකාරයක් හඳුනා නොගන්නා ලදී” වැනි වචන සියලු හැකි ප්‍රතිකාර කිසිසේත්ම නොමැති බවට අසීමිත සහතිකයක් ලෙස නොකියවිය යුතුය. පරීක්ෂණ ක්‍රම සහ වාර්තාවේ සීමාවන් අනුව නිගමනය වෙනස් විය හැකියි.</p>
+
+      <ArticleSection heading="ප්‍රතිකාර සහ origin">
+        <p>Treatment notes සහ origin opinion (තිබේ නම්) — opinion ද guarantee ද තේරුම් ගන්න.</p>
       </ArticleSection>
-      <ArticleSection heading="වාර්තා අංකය නිල මාර්ගයෙන් සත්‍යාපනය කරන්න">
-        <ul>
-          <li>වාර්තාව නිකුත් කළ ආයතනයේ නිල වෙබ් අඩවිය හෝ සත්‍යාපන ක්‍රමය ඔබම සොයාගන්න.</li>
-          <li>වාර්තා අංකය, නම, දිනය සහ පවතින විස්තර එකිනෙකට ගැළපෙනවාද බලන්න.</li>
-          <li>විකුණුම්කරු එවන ලද රූපයක් හෝ සබැඳියක් පමණක් මත රඳා නොසිටින්න.</li>
-          <li>සත්‍යාපනය කළ නොහැකි නම් හෝ තොරතුරු ගැළපෙන්නේ නැත්නම්, නිකුත් කළ ආයතනයෙන් සෘජුව විමසන්න.</li>
-        </ul>
-      </ArticleSection>
-      <ArticleSection heading="වාර්තාවක් ඔබට නොකියන දේ">
-        <p>වාර්තාවක් තිබීමෙන් ගලේ සාධාරණ මිල, අනාගත ඉල්ලුම, නැවත විකිණීමේ හැකියාව හෝ ලාභය ස්වයංක්‍රීයව තහවුරු නොවේ. වාර්තාවේ විෂය පථයෙන් පිටත කරුණු ගැන අනුමාන නොකරන්න. මිල අධික ගනුදෙනුවකදී වාර්තාව තහවුරු කරගැනීමට අමතරව, ගල සහ ගනුදෙනු කොන්දේසි ස්වාධීනව පරීක්ෂා කරන්න.</p>
+
+      <PracticalChecklist
+        items={[
+          "වාර්තා අංකය සත්‍යාපනය කළාද?",
+          "Species / natural-synthetic කියවුවාද?",
+          "බර / මානයන් ගලට ගැළපේද?",
+          "Treatment සහ origin notes බැලුවාද?",
+        ]}
+      />
+
+      <Misconceptions
+        items={[
+          "වාර්තාවේ සියල්ල absolute fact — සමහර notes opinions.",
+          "ඡායාරූපයක් තියෙනවා නම් ගල එකමයි — බර/මානයන්ද බලන්න.",
+        ]}
+      />
+
+      <ArticleSection heading="මතක තබාගන්න">
+        <p>මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. වාර්තාවක් මිල සහතික නොකරයි.</p>
       </ArticleSection>
     </ArticleLayout>
   );
