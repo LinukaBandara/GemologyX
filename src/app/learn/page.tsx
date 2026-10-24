@@ -67,6 +67,12 @@ const sinhalaGuides = [
   { title: "Citrine", description: "කහ quartz, heat-treated amethyst.", href: "/si/learn/citrine-intro", readTime: "මිනිත්තු 5" },
   { title: "Topaz", description: "Blue topaz treatments, cleavage.", href: "/si/learn/topaz-intro", readTime: "මිනිත්තු 5" },
   { title: "Jade — Jadeite සහ Nephrite", description: "වර්ග දෙක, treatments, හඳුනාගැනීම.", href: "/si/learn/jade-intro", readTime: "මිනිත්තු 7" },
+  { title: "Zircon (සර්කන්)", description: "Natural zircon vs cubic zirconia, heat.", href: "/si/learn/zircon-intro", readTime: "මිනිත්තු 5" },
+  { title: "Kunzite", description: "රෝස spodumene, light sensitivity.", href: "/si/learn/kunzite-intro", readTime: "මිනිත්තු 5" },
+  { title: "Alexandrite", description: "Colour-change chrysoberyl, synthetic.", href: "/si/learn/alexandrite-intro", readTime: "මිනිත්තු 6" },
+  { title: "Chrysoberyl", description: "Alexandrite සහ cat’s-eye පවුල.", href: "/si/learn/chrysoberyl-intro", readTime: "මිනිත්තු 5" },
+  { title: "Moonstone", description: "Adularescence, රැකවරණය.", href: "/si/learn/moonstone-intro", readTime: "මිනිත්තු 5" },
+  { title: "Lapis lazuli", description: "Rock vs mineral, dye, රැකවරණය.", href: "/si/learn/lapis-lazuli-intro", readTime: "මිනිත්තු 5" },
 
   // —— Comparisons & basics ——
   { title: "රතු මැණික් සහ රතු ස්පිනල්", description: "සමාන පෙනුම සහ හඳුනාගැනීමේ සීමා.", href: "/si/learn/ruby-vs-spinel", readTime: "මිනිත්තු 4" },
