@@ -15,20 +15,27 @@
 6–8. More species, diamond/ruby, colour/clarity/carat  
 9–10. Care, settings, insurance, photo/secondhand, SL day tips  
 11. Certification myths, treatment compare, geuda, export, fake reports, Ceylon  
-12. **Auction · pawn/resale · UV myths · cutting yield · dealer types · glossary 20** ← final
+12. Auction · pawn/resale · UV myths · cutting yield · dealer types · glossary 20
 
 Blue Sapphire cluster: COMPLETE  
-Quality-pass: Older thin pages upgraded to full template
+Quality-pass: Older thin pages upgraded to full template  
+Learn index: full sync commit on main
+
+---
+
+## Deploy note
+
+Production must track latest `main` (not batch-8-only deploy).  
+Redeploy trigger: 2026-10-25
 
 ---
 
 ## Next priorities (post-100)
 
-1. **Learn index full sync** (all batches visible on `/learn`)  
-2. Internal linking pass on hubs  
+1. Confirm Production = latest main  
+2. Hub internal-link pass  
 3. English profiles for top intents  
 4. GSC-driven gap pages  
-5. Ruby / emerald mini-clusters depth  
 
 ---
 
