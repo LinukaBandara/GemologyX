@@ -2,16 +2,14 @@
 
 **Last updated:** 2026-10-25  
 **Goal:** Sinhala educational guides → 100  
-**Progress:** **~75 / 100 ≈ 75%**
+**Progress:** **~81 / 100 ≈ 81%**
 
 ---
 
 ## Completed bulk batches
 
-1–5. Buying, treatments, SL, species clusters  
-6. Zircon · kunzite · alexandrite · chrysoberyl · moonstone · lapis  
-7. Turquoise · amber · pearl · coral · fluorite · quartz-family  
-8. **Ruby intro · diamond basics · sapphire vs tanzanite · colour · clarity · carat weight** ← just done
+1–8. Core buying, treatments, species, comparisons, diamond/ruby, colour/clarity/carat  
+9. **Cut shapes · settings · insurance/appraisal · cleaning · travel · gift-buying** ← just done
 
 Blue Sapphire cluster: COMPLETE  
 Quality-pass: Older thin pages done
@@ -20,7 +18,7 @@ Quality-pass: Older thin pages done
 
 ## Next
 
-- ~25 more practical / comparison / care guides  
+- ~19 more guides to 100  
 - Learn index full sync  
 - English profiles  
 
