@@ -1,30 +1,27 @@
 # GemologyX — Master Content Inventory
 
-**Last updated:** 2026-10-24  
+**Last updated:** 2026-10-25  
 **Goal:** Sinhala educational guides → 100  
-**Progress:** **~69 / 100 ≈ 69%**
+**Progress:** **~75 / 100 ≈ 75%**
 
 ---
 
 ## Completed bulk batches
 
-1. Buying / origin / heat / SL / online / rough  
-2. Diffusion · geuda · negotiate · ruby-vs-garnet · padparadscha · care  
-3. Fracture filling · labs · emerald · spinel · mohs · inclusions  
-4. Peridot · tanzanite · opal · jewelry · amethyst · topaz  
-5. Aquamarine · citrine · garnet · jade · morganite · tourmaline  
+1–5. Buying, treatments, SL, species clusters  
 6. Zircon · kunzite · alexandrite · chrysoberyl · moonstone · lapis  
-7. **Turquoise · amber · pearl · coral · fluorite · quartz-family** ← just done
+7. Turquoise · amber · pearl · coral · fluorite · quartz-family  
+8. **Ruby intro · diamond basics · sapphire vs tanzanite · colour · clarity · carat weight** ← just done
 
-**Quality-pass:** Older thin pages upgraded  
-Blue Sapphire cluster: COMPLETE (15)
+Blue Sapphire cluster: COMPLETE  
+Quality-pass: Older thin pages done
 
 ---
 
-## Next priorities
+## Next
 
-- More practical / comparison guides toward 100  
-- Learn index sync batches 6–7  
+- ~25 more practical / comparison / care guides  
+- Learn index full sync  
 - English profiles  
 
 ---
