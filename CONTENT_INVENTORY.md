@@ -2,14 +2,14 @@
 
 **Last updated:** 2026-10-25  
 **Goal:** Sinhala educational guides → 100  
-**Progress:** **~81 / 100 ≈ 81%**
+**Progress:** **~87 / 100 ≈ 87%**
 
 ---
 
 ## Completed bulk batches
 
-1–8. Core buying, treatments, species, comparisons, diamond/ruby, colour/clarity/carat  
-9. **Cut shapes · settings · insurance/appraisal · cleaning · travel · gift-buying** ← just done
+1–9. Core library + practical care/buying  
+10. **Birthstones · synthetic sapphire · glass vs gem · photo buying · secondhand · SL buying day** ← just done
 
 Blue Sapphire cluster: COMPLETE  
 Quality-pass: Older thin pages done
@@ -18,7 +18,7 @@ Quality-pass: Older thin pages done
 
 ## Next
 
-- ~19 more guides to 100  
+- ~13 more to 100  
 - Learn index full sync  
 - English profiles  
 
