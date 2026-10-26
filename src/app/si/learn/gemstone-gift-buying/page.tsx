@@ -38,11 +38,17 @@ export default function Page() {
       </QuickAnswer>
 
       <ArticleSection heading="Lifestyle fit">
-        <p>Daily wear → harder stones (sapphire, ruby, diamond). Soft / sensitive (opal, pearl, emerald) → occasional or protective setting.</p>
+        <p>
+          Daily wear → harder stones (sapphire, ruby, diamond). Soft / sensitive
+          (opal, pearl, emerald) → occasional or protective setting.
+        </p>
       </ArticleSection>
 
       <ArticleSection heading="Budget honesty">
-        <p>Quality over size. Small well-chosen stone > large treated / unclear identity piece at same price.</p>
+        <p>
+          Quality over size. Small well-chosen stone is better than a large
+          treated or unclear-identity piece at the same price.
+        </p>
       </ArticleSection>
 
       <ArticleSection heading="Practical gift tips">
@@ -71,7 +77,10 @@ export default function Page() {
       />
 
       <ArticleSection heading="මතක තබාගන්න">
-        <p>මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. නිශ්චිත ගලක මිල හෝ suitability සහතික නොකරයි.</p>
+        <p>
+          මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. නිශ්චිත ගලක මිල හෝ suitability
+          සහතික නොකරයි.
+        </p>
       </ArticleSection>
     </ArticleLayout>
   );
