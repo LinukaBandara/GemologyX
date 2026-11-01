@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "ස්වභාවික සහ කෘත්‍රිම මැණික් අතර වෙනස | GemologyX",
   description:
     "ස්වභාවික, lab-grown / synthetic සහ imitation මැණික් අතර වෙනස — හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීමේ උපදෙස්.",
+  alternates: { canonical: "/si/learn/natural-vs-synthetic-gemstones" },
 };
 
 export default function Page() {
