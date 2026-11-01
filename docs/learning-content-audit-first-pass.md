@@ -146,3 +146,23 @@ The following source files were inspected directly after the initial 30-page pas
 ### Next review batch
 
 Continue with the remaining gemstone introductions and rough-stone pages, especially `rough-blue-sapphire-value`, `rough-yellow-sapphire-value`, `rough-sapphire-inclusions`, `rough-gem-questions`, `buying-rough-gemstones`, and `buying-geuda`. Then review Sri Lankan mining/trade, care, comparisons and utility pages. No merge, redirect, deletion or page rewrite is authorized by this audit alone.
+
+
+## 6. Third review batch — 8 additional Sinhala gemstone pages
+
+This batch directly reviewed 8 further page sources. Cumulative direct review is now **62 of 109 learning page files** (47 remain).
+
+| Page | Initial decision | Direct-source finding / next action |
+|---|---|---|
+| `/si/learn/padparadscha-intro` | Keep + substantially improve | Distinct high-intent sapphire variety. The page correctly notes that colour boundaries and lab nomenclature may differ. Add attributed lab terminology, colour-range visuals and treatment/report caveats; do not imply a universal definition where sources differ. |
+| `/si/learn/pearl-intro` | Keep + improve | Natural vs cultured vs imitation is useful. Expand freshwater/saltwater and common pearl types, nacre/coating quality, matching and care; distinguish “cultured” from “imitation” precisely. |
+| `/si/learn/peridot-intro` | Keep + improve | Clear olivine identity and emerald comparison. Add property table, inclusions/colour discussion and practical care/setting advice. |
+| `/si/learn/quartz-family-intro` | Keep as family hub + improve | Useful parent page for amethyst/citrine and other quartz varieties. Add a clear variety table and route users to individual guides without repeating their full content. |
+| `/si/learn/ruby-intro` | Keep + improve | Useful red corundum, treatment and look-alike overview. Add ruby colour terminology, treatment categories, fracture/glass-filling disclosure and ruby-vs-spinel/garnet comparison with references. |
+| `/si/learn/spinel-intro` | Keep + improve | Distinct mineral and ruby-confusion intent. Expand properties, colour range, treatments and a comparison table; historical anecdotes need a reliable source if retained. |
+| `/si/learn/tanzanite-intro` | Keep + improve | Clear zoisite identity, heat treatment and durability. Add pleochroism, stability/care and origin-context detail with sources; avoid implying that every stone's treatment can be inferred visually. |
+| `/si/learn/topaz-intro` | Keep + improve | Useful topaz vs sapphire and blue-topaz treatment intent. Explain irradiation/heat disclosure, cleavage vs hardness, colour-name trade terms and care with a property table. |
+
+### Additional cross-cutting note
+
+These eight pages retain the same concise ArticleLayout pattern and generally provide a useful entry-level answer, but most need deeper reference material before they can stand alone as authoritative guides. Prioritize comparison tables, diagrams, sourced property ranges, treatment notes and practical buyer/care examples. No page was modified beyond this audit document.
