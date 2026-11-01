@@ -1,72 +1,59 @@
 import type { Metadata } from "next";
-import {
-  ArticleLayout,
-  ArticleSection,
-  QuickAnswer,
-  PracticalChecklist,
-  Misconceptions,
-} from "@/components/article-layout";
+import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Synthetic / Lab-grown Sapphire | GemologyX",
-  description:
-    "Lab-grown sapphire යනු කුමක්ද, natural සමඟ වෙනස, disclosure සහ මිලදී ගැනීමේ උපදෙස්.",
+  title: "Synthetic Sapphire / Lab-grown නිල්මැණික් මාර්ගෝපදේශය | GemologyX",
+  description: "Laboratory-grown sapphire යනු කුමක්ද, natural sapphire සමඟ වෙනස, disclosure සහ report wording.",
+  alternates: { canonical: "/si/learn/synthetic-sapphire-guide" },
 };
 
 export default function Page() {
   return (
     <ArticleLayout
       category="සිංහල මැණික් දැනුම"
-      readTime="මිනිත්තු 6"
-      title="Synthetic / Lab-grown Sapphire — මූලික"
+      readTime="මිනිත්තු 7"
+      title="Synthetic Sapphire / Lab-grown Sapphire"
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
-      crumbLabel="ස්වභාවික vs කෘත්‍රිම"
-      lastReviewed="2026-10-25"
+      crumbLabel="Natural vs lab-grown"
+      lastReviewed="2026-11-02"
       related={[
-        { label: "ස්වභාවික vs කෘත්‍රිම", href: "/si/learn/natural-vs-synthetic-gemstones" },
-        { label: "නිල්මැණික් මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },
-        { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
+        { label: "Natural සහ synthetic අතර වෙනස", href: "/si/learn/natural-vs-synthetic-gemstones" },
+        { label: "මැණික් පද reference", href: "/si/learn/natural-synthetic-imitation-gems" },
+        { label: "නිල්මැණික් report guide", href: "/si/learn/blue-sapphire-lab-report" },
       ]}
     >
       <QuickAnswer>
-        <p>
-          Lab-grown / synthetic sapphire = chemically corundum, lab හි
-          වර්ධනය වූ. Natural sapphire නොවේ; glass හෝ CZ ද නොවේ. Mohs 9 —
-          durability සමාන විය හැකියි. මිල සහ rarity expectations වෙනස්. නම
-          ලිඛිතව “laboratory-grown” / “synthetic” ලෙස හෙළි කළ යුතුය.
-        </p>
+        <p>Synthetic sapphire යනු laboratory-grown corundum වේ. එය natural sapphire නොවන නමුත් glass imitation එකකට සමානද නොවේ. Material එකේ ගුණාංග බොහෝ දුරට සමාන විය හැකි අතර origin, rarity, market demand සහ price context වෙනස් විය හැකියි. Natural හෝ lab-grown යන්න මිලදී ගැනීමට පෙර පැහැදිලිව තහවුරු කරගන්න.</p>
       </QuickAnswer>
 
-      <ArticleSection heading="Same mineral, different origin">
-        <p>Flame-fusion, hydrothermal, other methods. Visual separation often needs lab equipment.</p>
+      <ArticleSection heading="එය sapphire ද?">
+        <p>Sapphire යනු corundum mineral එකේ gem variety එකකි. Laboratory-grown sapphire එකක් ද corundum විය හැකි නමුත් එය පෘථිවියේ ස්වභාවිකව වර්ධනය වූ ගලක් නොවේ. “Synthetic” යන gemological පදය “fake” යන්නට සමාන නොවේ; එය material එකේ laboratory-grown origin එක විස්තර කරයි.</p>
       </ArticleSection>
 
-      <ArticleSection heading="Disclosure">
-        <p>“Sapphire” alone can mislead if synthetic. Ask in writing. Report should state laboratory-grown when applicable.</p>
+      <ArticleSection heading="වර්ධන ක්‍රම සහ හඳුනාගැනීම">
+        <p>Flame-fusion සහ වෙනත් laboratory growth methods භාවිත විය හැකියි. විවිධ ක්‍රමවලින් ඇතිවන growth features පරීක්ෂණයේදී ප්‍රයෝජනවත් විය හැකි නමුත්, ඒවා නිවැරදිව අර්ථකථනය කිරීමට gemological expertise සහ සුදුසු උපකරණ අවශ්‍ය විය හැකියි. සාමාන්‍ය phone photo එකකින් natural/synthetic status එක විශ්වාසයෙන් තීරණය කළ නොහැකියි.</p>
       </ArticleSection>
 
-      <ArticleSection heading="Value context">
-        <p>Usually lower price than comparable natural. Resale / collectible markets differ. Not “fake” — different category.</p>
+      <ArticleSection heading="Durability සහ value">
+        <p>Synthetic sapphire එකකට corundum හි ඉහළ hardness වැනි ගුණාංග තිබිය හැකි නමුත් hardness එක පමණක් ගලේ identity හෝ quality තහවුරු නොකරයි. මිල තීරණය material origin, quality, size, treatment, demand සහ වෙළෙඳපොළ අනුව වෙනස් වේ. Natural sapphire එකකට සමාන පෙනුමක් තිබීමෙන් සමාන rarity හෝ resale value එකක් අදහස් නොවේ.</p>
       </ArticleSection>
 
-      <PracticalChecklist
-        items={[
-          "Natural / lab-grown ලිඛිතව පැහැදිලිද?",
-          "වාර්තාවේ wording කියවුවාද?",
-          "Price expectations natural සමඟ පටලවා නැද්ද?",
-        ]}
-      />
-
-      <Misconceptions
-        items={[
-          "Synthetic sapphire = glass — නැහැ; real corundum.",
-          "පෙනුමෙන් natural කියලා කිව හැකියි — බොහෝ විට නැහැ.",
-        ]}
-      />
-
-      <ArticleSection heading="මතක තබාගන්න">
-        <p>මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. නිශ්චිත ගලක් හඳුනාගැනීමේ සහතිකයක් නොවේ.</p>
+      <ArticleSection heading="විස්තර සහ වාර්තාව">
+        <p>Invoice, product listing හෝ seller description එකේ “laboratory-grown” හෝ “synthetic sapphire” ලෙස පැහැදිලිව සඳහන් කර තිබේද බලන්න. Report එකක් තිබේ නම් material identification සහ laboratory-grown wording කියවන්න; report number එක issuing laboratory එකෙන් verify කරන්න. නිශ්චිත disclosure නීති වෙළෙඳපොළ අනුව වෙනස් විය හැකි බැවින් මෙය නීති උපදෙස් නොවේ.</p>
       </ArticleSection>
+
+      <PracticalChecklist items={[
+        "Natural ද laboratory-grown ද යන්න ලිඛිතව සඳහන් කර තිබේද?",
+        "Price comparison එක natural සහ lab-grown stones අතර පැහැදිලිද?",
+        "Report එකක් තිබේ නම් verify කර details ගලට ගැළපේද බලන්න.",
+        "Return policy සහ invoice එකේ material description එක තබාගන්න.",
+      ]} />
+
+      <Misconceptions items={[
+        "Synthetic sapphire කියන්නේ glass — නැහැ; synthetic sapphire යනු lab-grown corundum විය හැකියි.",
+        "Synthetic කියන්නේ අනිවාර්යයෙන්ම දුර්වල — material properties සහ product quality වෙනම සලකා බලන්න.",
+        "Natural වගේ පෙනෙන නිසා natural — පෙනුම පමණක් ප්‍රමාණවත් නැහැ.",
+      ]} />
     </ArticleLayout>
   );
 }

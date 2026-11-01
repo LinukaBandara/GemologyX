@@ -1,78 +1,95 @@
+import { readdirSync } from "node:fs";
+import { join } from "node:path";
 import type { MetadataRoute } from "next";
 import { allGemstones as gemstones } from "@/data/all-gemstones";
 import { origins } from "@/data/origins";
 import { glossaryTerms } from "@/data/glossary";
 
 const BASE_URL = "https://gemologyx.com";
+const APP_ROOT = join(process.cwd(), "src", "app");
+
+// Discover concrete App Router pages so new static articles are not
+// accidentally omitted from the sitemap. Dynamic routes are added from data below.
+function collectStaticRoutes(
+  directory: string,
+  routeSegments: string[] = [],
+): string[] {
+  return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const fullPath = join(directory, entry.name);
+
+    if (entry.isDirectory()) {
+      // Dynamic segments are added from their data sources below. Parallel
+      // route slots and private folders do not represent standalone URLs.
+      if (
+        entry.name.startsWith("[") ||
+        entry.name.startsWith("@") ||
+        entry.name.startsWith("_")
+      ) {
+        return [];
+      }
+
+      // Route groups organize files but do not contribute a URL segment.
+      const nextSegments = entry.name.startsWith("(")
+        ? routeSegments
+        : [...routeSegments, entry.name];
+
+      return collectStaticRoutes(fullPath, nextSegments);
+    }
+
+    if (entry.isFile() && entry.name === "page.tsx") {
+      return [routeSegments.length ? `/${routeSegments.join("/")}` : "/"];
+    }
+
+    return [];
+  });
+}
+
+// These are genuine English/Sinhala counterparts. Only pair pages whose
+// primary subject is translated; related but non-equivalent pages are omitted.
+const translatedPairs = [
+  {
+    en: "/learn/natural-vs-synthetic-gemstones",
+    si: "/si/learn/natural-vs-synthetic-gemstones",
+  },
+  {
+    en: "/learn/questions-to-ask-gem-dealer",
+    si: "/si/learn/questions-to-ask-gem-dealer",
+  },
+] as const;
+
+const languageAlternates = new Map<
+  string,
+  { en: string; si: string }
+>();
+
+for (const pair of translatedPairs) {
+  const languages = {
+    en: `${BASE_URL}${pair.en}`,
+    si: `${BASE_URL}${pair.si}`,
+  };
+  languageAlternates.set(pair.en, languages);
+  languageAlternates.set(pair.si, languages);
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = [
-    "",
-    "/gemstones",
-    "/learn",
-    "/learn/sapphire/what-is-ceylon-sapphire",
-    "/learn/sapphire/sapphire-value-factors",
-    "/learn/natural-vs-synthetic-gemstones",
-    "/learn/heated-vs-unheated",
-    "/learn/gemstone-certification",
-    "/learn/how-to-read-a-gemstone-report",
-    "/learn/gemstone-care",
-    "/learn/questions-to-ask-gem-dealer",
-    "/si/learn/rough-yellow-sapphire-value",
-    "/si/learn/how-to-read-gem-report",
-    "/si/learn/carat-vs-gram",
-    "/si/learn/buying-rough-gemstones",
-    "/si/learn/natural-vs-synthetic-gemstones",
-    "/si/learn/blue-sapphire-complete-guide",
-    "/si/learn/blue-sapphire-colour-quality",
-    "/si/learn/heated-vs-unheated-blue-sapphire",
-    "/si/learn/star-sapphire-guide",
-    "/si/learn/rough-blue-sapphire-value",
-    "/si/learn/blue-sapphire-value-factors",
-    "/si/learn/blue-sapphire-price-per-carat",
-    "/si/learn/avoid-gemstone-scams",
-    "/si/learn/rough-sapphire-inclusions",
-    "/si/learn/gemstone-buying-checklist",
-    "/si/learn/heated-sapphire-guide",
-    "/si/learn/gem-lab-report-details",
-    "/si/learn/sri-lankan-blue-sapphire",
-    "/si/learn/identify-sapphire",
-    "/si/learn/ruby-vs-spinel",
-    "/si/learn/yellow-sapphire-vs-topaz",
-    "/si/learn/natural-synthetic-imitation-gems",
-    "/si/learn/gemstone-treatment-disclosure",
-    "/origins",
-    "/sri-lanka-mining",
-    "/sri-lanka-trade-export",
-    "/sri-lanka-mining/methods",
-    "/sri-lanka-mining/environment",
-    "/sri-lanka-mining/licensing",
-    "/tools",
-    "/tools/carat-to-gram",
-    "/tools/gemstone-size",
-    "/tools/ring-size",
-    "/tools/mohs-hardness",
-    "/tools/birthstones",
-    "/glossary",
-    "/about",
-    "/editorial-standards",
-    "/contact",
-    "/privacy",
-    "/terms",
-    "/disclaimer",
-  ].map((path) => ({ url: `${BASE_URL}${path}` }));
+  const staticRoutes = collectStaticRoutes(APP_ROOT).filter(
+    (path) => path !== "/search",
+  );
 
-  const gemstoneRoutes = gemstones.map((g) => ({
-    url: `${BASE_URL}/gemstones/${g.slug}`,
-  }));
+  const dynamicRoutes = [
+    ...gemstones.map((gemstone) => `/gemstones/${gemstone.slug}`),
+    ...origins.map((origin) => `/origins/${origin.slug}`),
+    ...glossaryTerms.map((term) => `/glossary/${term.slug}`),
+  ];
 
-  const originRoutes = origins.map((o) => ({
-    url: `${BASE_URL}/origins/${o.slug}`,
-  }));
+  const routes = [...new Set([...staticRoutes, ...dynamicRoutes])];
 
-  const glossaryRoutes = glossaryTerms.map((t) => ({
-    url: `${BASE_URL}/glossary/${t.slug}`,
-  }));
+  return routes.map((path) => {
+    const languages = languageAlternates.get(path);
 
-  return [...staticRoutes, ...gemstoneRoutes, ...originRoutes, ...glossaryRoutes];
+    return {
+      url: `${BASE_URL}${path === "/" ? "" : path}`,
+      ...(languages ? { alternates: { languages } } : {}),
+    };
+  });
 }

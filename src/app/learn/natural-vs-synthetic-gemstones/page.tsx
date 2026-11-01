@@ -4,6 +4,7 @@ import { ArticleLayout, ArticleSection } from "@/components/article-layout";
 export const metadata: Metadata = {
   title: "Natural vs Synthetic Gemstones",
   description: "What separates a natural gemstone from a synthetic one, how they're identified, and why disclosure matters.",
+  alternates: { canonical: "/learn/natural-vs-synthetic-gemstones" },
 };
 
 export default function Page() {
