@@ -7,7 +7,7 @@ import { AdSlot } from "@/components/ad-slot";
 
 export function generateStaticParams(){return allGemstones.map(g=>({slug:g.slug}));}
 type Params=Promise<{slug:string}>;
-export async function generateMetadata({params}:{params:Params}):Promise<Metadata>{const {slug}=await params;const gem=allGemstones.find((g)=>g.slug===slug);return gem?{title:gem.name,description:gem.description}:{};}
+export async function generateMetadata({params}:{params:Params}):Promise<Metadata>{const {slug}=await params;const gem=allGemstones.find((g)=>g.slug===slug);return gem?{title:gem.name,description:gem.description,alternates:{canonical:`/gemstones/${slug}`}}:{};}
 
 function Fact({label,value}:{label:string;value:string}){return <div className="gem-fact"><dt>{label}</dt><dd>{value}</dd></div>}
 
