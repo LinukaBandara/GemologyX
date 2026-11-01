@@ -177,3 +177,28 @@ Implementation commits:
 - Fake/mismatched reports: `0b53298afdbd78b556b217ddaceee12b2836aee3`
 
 Validation status: no local build run; latest GitHub CI and Vercel preview must be checked before merge. No merge or production deployment performed.
+
+
+## 12. Fifth safe implementation completed — natural, synthetic, imitation and identification cluster
+
+Implemented on `seo/technical-foundation`:
+
+- `/si/learn/natural-vs-synthetic-gemstones`: expanded as the primary explanation of natural origin, laboratory-grown/synthetic material, imitation, treatment distinction, report interpretation and identification limits.
+- `/si/learn/natural-synthetic-imitation-gems`: differentiated as a terminology reference covering natural, laboratory-grown/synthetic, imitation/simulant, treated and assembled/composite terms.
+- `/si/learn/identify-sapphire`: expanded to separate the questions of material identity, natural/lab-grown origin and treatment; added safe-testing limits and report checks.
+- `/si/learn/synthetic-sapphire-guide`: expanded as a sapphire-specific lab-grown buyer guide, with origin, material properties, price-context caveats and disclosure.
+- `/si/learn/glass-vs-gemstone`: expanded around glass imitation clues, why clues are not proof, harmful home-test warnings and safer purchase checks.
+
+All five URLs remain. No redirects or deletions were made. Pages have distinct roles rather than copying the same general explanation. Review dates updated to 2026-11-02.
+
+Implementation commits:
+- Natural vs synthetic overview: `abdf67cd44bb886ce757e24c293abcec88d31bd5`
+- Terminology reference: `8c89bb3d0f274cc6d2446e8434e5be991c6ee4d9`
+- Sapphire identification: `ac381405b03db99f61ea707164f100dd065d7a8b`
+- Synthetic sapphire: `6f0a0272830a6fc5827b2cb7f266a75f9f670514`
+- Glass vs gemstone: `7643b504339cea0e789dcf42e42c91060a3d0e2e`
+
+Validation status:
+- Source files were updated through the GitHub contents API. This is not a substitute for lint, TypeScript checking, a production build, rendered-page review or gemological fact-checking.
+- Check GitHub Actions and Vercel preview at the latest PR head before merge.
+- No merge or production deployment was performed.
