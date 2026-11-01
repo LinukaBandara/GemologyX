@@ -166,3 +166,28 @@ This batch directly reviewed 8 further page sources. Cumulative direct review is
 ### Additional cross-cutting note
 
 These eight pages retain the same concise ArticleLayout pattern and generally provide a useful entry-level answer, but most need deeper reference material before they can stand alone as authoritative guides. Prioritize comparison tables, diagrams, sourced property ranges, treatment notes and practical buyer/care examples. No page was modified beyond this audit document.
+
+
+## 7. Fourth review batch — 8 rough-stone and measurement pages
+
+This batch directly reviewed 8 further Sinhala learning sources. Cumulative direct review is now **70 of 109 learning page files** (39 remain).
+
+| Page | Initial decision | Direct-source finding / next action |
+|---|---|---|
+| `/si/learn/rough-blue-sapphire-value` | Keep + improve | Direct review completed. Sapphire-specific rough valuation is distinct from general rough buying. It explains uncertainty, inclusions, cutting yield and total costs. Add a worked hypothetical calculation and link to the general rough-stone hub. |
+| `/si/learn/rough-yellow-sapphire-value` | Keep + improve | Yellow-sapphire-specific identity and cutting risk are useful. Expand beyond the short outline with a worked example, yellow sapphire vs topaz/citrine identification limits and sourced treatment notes. |
+| `/si/learn/rough-sapphire-inclusions` | Keep + substantially improve | More detailed than many pages and appropriately warns that inclusions do not prove natural origin or treatment. Add labelled inclusion photographs/diagrams, safe loupe guidance and clearer distinctions between surface-reaching fractures and internal features. |
+| `/si/learn/rough-gem-questions` | Merge / reposition | Its five buyer-question categories substantially overlap `buying-rough-gemstones`. Best as a printable question checklist embedded in or linked from the main rough-buying guide unless a distinct question-led intent is demonstrated. |
+| `/si/learn/buying-rough-gemstones` | Keep as main rough-buying hub + improve | Clear buyer workflow covering identity, treatment, damage, yield, price and terms. Expand with a pre-purchase checklist, example written agreement and links to the specialist rough-value pages. |
+| `/si/learn/buying-geuda` | Keep + substantially improve | Important Sri Lankan trade-specific topic; currently very short and mostly English. Expand in accessible Sinhala with geuda terminology, uncertainty, heating process overview, risks, costs, disclosure and authoritative technical references. Avoid implying a predictable heat result. |
+| `/si/learn/carat-weight-guide` | Keep as main carat/size guide + improve | Useful distinction between weight, dimensions, cut depth and price-per-carat. Add a visual size-vs-weight comparison and calculator/example; do not imply a universal price curve. |
+| `/si/learn/carat-vs-gram` | Merge / reposition | Conversion content substantially duplicates `carat-weight-guide`. Preserve a concise conversion table/tool within the main guide or make this a standalone converter only if it provides functional value beyond the text. |
+
+### Rough-stone cluster decisions
+
+- Keep the general rough-buying page as the central transaction guide and keep the sapphire-specific valuation/inclusion pages as specialist supporting resources.
+- Consolidate the duplicate general rough-questions page into a printable checklist or distinct interactive resource; do not keep two near-identical explanatory articles.
+- Keep geuda as a distinct Sri Lankan topic, but substantially expand and source it before treating it as a complete guide.
+- Make rough-to-cut yield a connected topic across the general rough-buying guide, sapphire value pages and cutting-weight-loss page. Use one consistent worked hypothetical example, clearly labelled as illustrative rather than a promised yield.
+- Carat conversion belongs in the main weight guide; a standalone converter is a better utility than another thin article.
+- No content pages were modified, merged, redirected or deleted in this batch. Only the audit report was updated.
