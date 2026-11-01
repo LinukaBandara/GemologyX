@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Questions to Ask a Gem Dealer Before Buying",
   description:
     "A practical gemstone buyer checklist covering identity, treatment, origin claims, laboratory reports, price, payment, and written return terms.",
+  alternates: { canonical: "/learn/questions-to-ask-gem-dealer" },
 };
 
 export default function Page() {
