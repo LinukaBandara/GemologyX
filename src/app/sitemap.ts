@@ -1,5 +1,5 @@
 import { readdirSync } from "node:fs";
-import { join, relative, sep } from "node:path";
+import { join } from "node:path";
 import type { MetadataRoute } from "next";
 import { allGemstones as gemstones } from "@/data/all-gemstones";
 import { origins } from "@/data/origins";
@@ -10,25 +10,34 @@ const APP_ROOT = join(process.cwd(), "src", "app");
 
 // Discover concrete App Router pages so new static articles are not
 // accidentally omitted from the sitemap. Dynamic routes are added from data below.
-function collectStaticRoutes(directory: string): string[] {
+function collectStaticRoutes(
+  directory: string,
+  routeSegments: string[] = [],
+): string[] {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-    if (
-      entry.name.startsWith("[") ||
-      entry.name.startsWith("(") ||
-      entry.name.startsWith("@")
-    ) {
-      return [];
-    }
-
     const fullPath = join(directory, entry.name);
 
     if (entry.isDirectory()) {
-      return collectStaticRoutes(fullPath);
+      // Dynamic segments are added from their data sources below. Parallel
+      // route slots and private folders do not represent standalone URLs.
+      if (
+        entry.name.startsWith("[") ||
+        entry.name.startsWith("@") ||
+        entry.name.startsWith("_")
+      ) {
+        return [];
+      }
+
+      // Route groups organize files but do not contribute a URL segment.
+      const nextSegments = entry.name.startsWith("(")
+        ? routeSegments
+        : [...routeSegments, entry.name];
+
+      return collectStaticRoutes(fullPath, nextSegments);
     }
 
     if (entry.isFile() && entry.name === "page.tsx") {
-      const route = relative(APP_ROOT, directory).split(sep).join("/");
-      return [route ? `/${route}` : "/"];
+      return [routeSegments.length ? `/${routeSegments.join("/")}` : "/"];
     }
 
     return [];
