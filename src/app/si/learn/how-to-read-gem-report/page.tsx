@@ -1,103 +1,73 @@
 import type { Metadata } from "next";
-import {
-  ArticleLayout,
-  ArticleSection,
-  QuickAnswer,
-  PracticalChecklist,
-  Misconceptions,
-} from "@/components/article-layout";
+import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් පරීක්ෂණ වාර්තාවක් කියවන්නේ කෙසේද? | GemologyX",
-  description:
-    "මැණික් lab වාර්තාවක ගල් වර්ගය, ස්වභාවික බව, ප්‍රතිකාර, බර සහ සත්‍යාපනය කියවන සරල සිංහල මාර්ගෝපදේශය.",
+  title: "මැණික් Lab Report එකක් කියවන පියවරෙන් පියවර මාර්ගෝපදේශය | GemologyX",
+  description: "Gemstone lab report එකක identity, treatment, measurements, origin opinion සහ report number එක පරීක්ෂා කරන පියවරෙන් පියවර සිංහල මාර්ගෝපදේශය.",
 };
 
 export default function Page() {
   return (
     <ArticleLayout
       category="සිංහල මැණික් දැනුම"
-      readTime="මිනිත්තු 6"
-      title="මැණික් පරීක්ෂණ වාර්තාවක් කියවන්නේ කෙසේද?"
+      readTime="මිනිත්තු 8"
+      title="මැණික් Lab Report එකක් කියවන පියවරෙන් පියවර මාර්ගෝපදේශය"
       crumbHref="/si/learn/gem-labs-overview"
       crumbLabel="Labs මූලික"
-      lastReviewed="2026-10-24"
+      lastReviewed="2026-11-02"
       related={[
-        { label: "Labs — මූලික දැනුම", href: "/si/learn/gem-labs-overview" },
-        { label: "Origin opinion vs guarantee", href: "/si/learn/origin-opinion-vs-guarantee" },
+        { label: "වාර්තාවක ප්‍රධාන තොරතුරු", href: "/si/learn/gem-lab-report-details" },
         { label: "නිල්මැණික් lab report", href: "/si/learn/blue-sapphire-lab-report" },
-        { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
+        { label: "ව්‍යාජ හෝ නොගැළපෙන reports", href: "/si/learn/fake-lab-reports" },
+        { label: "Origin opinion vs guarantee", href: "/si/learn/origin-opinion-vs-guarantee" },
       ]}
     >
       <QuickAnswer>
-        <p>
-          වාර්තාවේ බලන්න: වාර්තා අංකය, ගල් වර්ගය (species), ස්වභාවික / synthetic,
-          බර, මානයන්, ප්‍රතිකාර සටහන්. අංකය නිල මාර්ගයෙන් සත්‍යාපනය කරන්න. ගලේ
-          බර/පෙනුම වාර්තාවට ගැළපේද බලන්න. වාර්තාව = මිල හෝ ලාභ සහතිකයක් නොවේ.
-        </p>
+        <p>මුලින් report number එක නිකුත් කළ laboratory එකේ නිල ක්‍රමයෙන් verify කරන්න. ඉන්පසු report එකේ ගල් වර්ගය, natural/synthetic wording, බර, මානයන්, treatment comments සහ තිබේ නම් origin opinion කියවන්න. අවසානයේ report එක ඔබේ අතේ ඇති ගලට ගැළපේදැයි පරීක්ෂා කරන්න. Report එකක් මිල හෝ resale guarantee එකක් නොවේ.</p>
       </QuickAnswer>
 
-      <ArticleSection heading="වාර්තාවක් කියන්නේ මොකක්ද?">
-        <p>
-          පරීක්ෂණාගාරයක් ගල ගැන සටහන් කරන තොරතුරු ලේඛනයකි. එය opinions සහ
-          පරීක්ෂණ ප්‍රතිඵල ඇතුළත් විය හැකියි. නිරපේක්ෂ “සහතික පත්‍රයක්” නොවේ.
-        </p>
+      <ArticleSection heading="පියවර 1: Report number එක verify කරන්න">
+        <p>Laboratory එකේ නිල website හෝ portal එක ඔබම සොයාගෙන report number එක ඇතුළත් කරන්න. Seller එවූ link එකක් පමණක් මත රඳා නොසිටින්න. Online record එකක් නොපෙන්වන්නේ නම්, ඒක පමණක් report එක fake බවට අවසන් සාක්ෂියක් නොවුණත්, issuing laboratory එකෙන් සෘජුව තහවුරු කරගන්නා තුරු claim එක පිළිගන්න එපා.</p>
       </ArticleSection>
 
-      <ArticleSection heading="1. අංකය සහ ගලේ විස්තර">
-        <p>
-          වාර්තා අංකය, දිනය, බර, හැඩය, මිනුම්, ඡායාරූප (තිබේ නම්) බලන්න. ඔබේ
-          ගලේ බර හෝ පෙනුම නොගැළපේ නම් පැහැදිලි කිරීමක් ඉල්ලන්න.
-        </p>
+      <ArticleSection heading="පියවර 2: ගලේ identity එක කියවන්න">
+        <p>Species සහ variety යන නම් බලන්න. Report එක natural, laboratory-grown/synthetic හෝ වෙනත් identification එකක් සඳහන් කරනවාදැයි කියවන්න. “Natural” යන්නෙන් treatment නොකළ බව අදහස් නොවන අතර, treatment status එක identity එකෙන් වෙනම පරීක්ෂා කළ යුතුයි.</p>
       </ArticleSection>
 
-      <ArticleSection heading="2. ගලේ නම සහ ස්වභාවික බව">
-        <p>
-          Species / variety කියවන්න. Natural, laboratory-grown / synthetic,
-          imitation වචනවල අර්ථය තේරුම් ගන්න. අවිනිශ්චිත නම් විශේෂඥයකුගෙන්
-          විමසන්න.
-        </p>
+      <ArticleSection heading="පියවර 3: බර, මානයන් සහ ඡායාරූප සසඳන්න">
+        <p>Carat weight, millimetre dimensions, shape/cut description සහ report photo හෝ plot තිබේ නම් ඒවා ගල සමඟ සසඳන්න. Report එක සැබෑ එකක් වුණත් වෙනත් ගලකට අදාළ විය හැකියි. වැදගත් නොගැළපීමක් තිබේ නම් ගනුදෙනුව නවතා laboratory එකෙන් හෝ ස්වාධීන gemologist කෙනෙකුගෙන් උපදෙස් ගන්න.</p>
       </ArticleSection>
 
-      <ArticleSection heading="3. ප්‍රතිකාර සටහන්">
-        <p>
-          Heat, diffusion, filling වැනි notes තිබේද බලන්න. “No indications of
-          heat” වැනි වචනවල සීමා තිබිය හැකියි. සෑම lab එකක්ම එකම පරීක්ෂණ නොකරයි.
-        </p>
+      <ArticleSection heading="පියවර 4: Treatment comments කියවන්න">
+        <p>Heat, diffusion, filling හෝ වෙනත් treatment comments තිබේදැයි බලන්න. “No indications of heat” වැනි wording එකක් එම පරීක්ෂණයේදී හඳුනාගත් ලක්ෂණ පිළිබඳ ප්‍රකාශයකි; එය සෑම අවස්ථාවකම සීමා රහිත guarantee එකක් ලෙස නොකියවිය යුතුයි. Report එකේ notes සහ limitations එකට කියවන්න.</p>
       </ArticleSection>
 
-      <ArticleSection heading="4. සත්‍යාපනය">
-        <ul>
-          <li>නිල website / portal එකෙන් අංකය check කරන්න</li>
-          <li>බර / මානයන් ගලට ගැළපේද</li>
-          <li>පැරණි වාර්තාවක් නම් නව පරීක්ෂාවක් සලකා බලන්න</li>
-          <li>මිල අධික නම් ස්වාධීන උපදෙස්</li>
-        </ul>
+      <ArticleSection heading="පියවර 5: Origin opinion එක guarantee එකක් ලෙස නොසලකන්න">
+        <p>Geographic origin එකක් සඳහන් කර තිබේ නම් laboratory එක එය opinion එකක් ලෙස ඉදිරිපත් කරනවාදැයි සහ ඒ සඳහා සීමා සඳහන් කර තිබේදැයි කියවන්න. Origin claim එක මිලට වැදගත් නම් වචන නිවැරදිව තේරුම් ගන්න; විකුණුම්කරුගේ කතාව හෝ ගලේ පෙනුම පමණක් මත රට තීරණය නොකරන්න.</p>
       </ArticleSection>
 
-      <PracticalChecklist
-        items={[
-          "වාර්තා අංකය නිල මාර්ගයෙන් සත්‍යාපනය කළාද?",
-          "බර / මානයන් ගලට ගැළපේද?",
-          "Species සහ natural / synthetic කියවුවාද?",
-          "Treatment notes බැලුවාද?",
-          "Origin තිබේ නම් — opinion ද guarantee ද?",
-        ]}
-      />
+      <ArticleSection heading="Report එකෙන් තහවුරු නොවන දේ">
+        <p>Report එකක් තිබීමෙන් fair market price, resale value, investment return, durability හෝ අනාගත ඉල්ලුම ස්වයංක්‍රීයව තහවුරු වන්නේ නැහැ. Laboratory එක පරීක්ෂා කළ කරුණු සහ report එකේ පැහැදිලිව සඳහන් කර ඇති දේ පමණක් එහි සීමාවන් තුළ භාවිත කරන්න.</p>
+      </ArticleSection>
 
-      <Misconceptions
-        items={[
-          "වාර්තාව = 100% guarantee — නැහැ; opinions සහ සීමා තියෙනවා.",
-          "ලේබලයේ lab නම ප්‍රමාණවත් — අංකය සත්‍යාපනය කරන්න.",
-          "වාර්තාව = මිල හෝ ලාභ සහතිකය — නැහැ.",
-        ]}
-      />
+      <PracticalChecklist items={[
+        "Report number එක official source එකෙන් verify කළාද?",
+        "Species / variety සහ natural හෝ synthetic wording කියෙව්වාද?",
+        "Carat weight, dimensions, shape සහ photo ගලට ගැළපේද?",
+        "Treatment comments සහ limitations කියෙව්වාද?",
+        "Origin සඳහන් නම් opinion එකේ සීමාවන් තේරුම් ගත්තාද?",
+        "ගනුදෙනුවේ වටිනාකමට ගැළපෙන ස්වාධීන පරීක්ෂාවක් අවශ්‍යදැයි සලකා බැලුවාද?",
+      ]} />
+
+      <Misconceptions items={[
+        "Report එකක් = ගලේ මිල සහතිකයක් — නැහැ.",
+        "Natural = unheated — නැහැ; මේවා වෙනස් කරුණු.",
+        "Report එක genuine නම් එය අතේ ඇති ගලට අනිවාර්යයෙන් ගැළපේ — ගලත් සසඳන්න.",
+        "Origin wording එකක් = සෑම අවස්ථාවකම absolute guarantee — report wording සහ limits කියවන්න.",
+      ]} />
 
       <ArticleSection heading="මතක තබාගන්න">
-        <p>
-          මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. වාර්තාවක් මිල හෝ නැවත විකිණීමේ
-          හැකියාව සහතික නොකරයි.
-        </p>
+        <p>මෙය අධ්‍යාපනික මාර්ගෝපදේශයකි; laboratory examination හෝ valuation එකකට ආදේශකයක් නොවේ. මිල අධික ගනුදෙනුවකදී issuing laboratory එකෙන් verification සහ අවශ්‍ය නම් ස්වාධීන පරීක්ෂාවක් ලබාගන්න.</p>
       </ArticleSection>
     </ArticleLayout>
   );
