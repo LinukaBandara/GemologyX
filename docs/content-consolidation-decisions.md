@@ -116,3 +116,23 @@ Validation status:
 - Updated files were fetched again from the branch and confirmed present.
 - A local lint/production build has not been run in this environment; GitHub checks must complete before merge.
 - PR #11 remains open and unmerged. No production deployment has been performed.
+
+
+## 9. Second safe implementation completed — carat weight and unit conversion
+
+Implemented on `seo/technical-foundation`:
+
+- Expanded `/si/learn/carat-weight-guide` into the main educational guide covering carat vs gram, carat vs millimetre dimensions, density, cut, price-per-carat and buyer checks.
+- Repositioned `/si/learn/carat-vs-gram` as a dedicated interactive conversion tool, including a two-way carat/gram converter, quick conversion table and formulas.
+- Added reciprocal links so the guide explains the concepts and the tool performs the unit conversion.
+- Used a clearly labelled hypothetical price example rather than presenting an unsupported market price.
+- Updated review dates to 2026-11-02.
+
+Both URLs remain live in the route tree; no redirect or deletion was made.
+
+Implementation commits:
+- Converter component: `bdf3b43fc49b8ebacdc4be28b78b6727504c3b08`
+- Main guide: `039d12049a0f47dae95d1d698a877b64c9dcac34`
+- Conversion tool page: `d88e642e475a4e0a0b13bc99a46f7fca042963e3`
+
+Validation is pending GitHub Actions on the latest branch head. No local build has been run from this environment.
