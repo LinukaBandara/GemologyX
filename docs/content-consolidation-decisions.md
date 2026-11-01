@@ -95,3 +95,24 @@ Start with the safest, highest-value work that does not require redirect approva
 3. Improve `/si/learn/heat-treatment-guide` and its specialist links; separate general treatment theory from sapphire-specific buying guidance.
 4. Improve `/si/learn/how-to-read-gem-report` and make its relationship to lab overview, origin opinion and sapphire report pages explicit.
 5. Complete query/backlink checks before any redirects.
+
+
+## 8. First safe implementation completed — rough gemstone buying cluster
+
+Implemented on `seo/technical-foundation`:
+
+- Expanded `/si/learn/buying-rough-gemstones` into the main in-depth buying guide, covering identity, treatments, visible condition, cutting uncertainty, total costs, written terms and a practical transaction checklist.
+- Refocused `/si/learn/rough-gem-questions` as a concise question-led checklist for use during a dealer conversation, rather than a second copy of the full explanatory article.
+- Added reciprocal navigation between the guide and checklist, plus contextual links to rough sapphire valuation, inclusions and cutting-yield resources.
+- Updated the review date on both pages to 2026-11-02.
+
+This resolves the immediate content overlap by differentiating the two user tasks, **not** by deleting or redirecting either URL. Both routes remain in place pending GSC, analytics and backlink review.
+
+Implementation commits:
+- Main guide: `6d1b0f94cad88ae83aef1e87bd048466396863c8`
+- Checklist: `fc10a3ad853c8f171cfdabd2fd509d7ce0ed5f07`
+
+Validation status:
+- Updated files were fetched again from the branch and confirmed present.
+- A local lint/production build has not been run in this environment; GitHub checks must complete before merge.
+- PR #11 remains open and unmerged. No production deployment has been performed.
