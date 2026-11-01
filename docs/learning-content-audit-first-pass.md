@@ -265,3 +265,28 @@ This batch directly reviewed 8 additional unique Sinhala source files. Cumulativ
 - Keep `identify-sapphire` as the main safety-first identification page and link from sapphire variety and comparison pages.
 - Rewrite UV-light content for Sinhala readers and include appropriate UV safety guidance from authoritative sources.
 - No page content was modified, merged, redirected or deleted in this batch.
+
+
+## 11. Eighth review batch — 8 auction, laboratory, origin and jewellery pages
+
+This batch directly reviewed 8 additional unique Sinhala source files. Cumulative direct review is now **101 of 109 learning page files** (8 remain).
+
+| Page | Initial decision | Direct-source finding / next action |
+|---|---|---|
+| `/si/learn/buying-at-gem-auction` | Keep + substantially improve | Distinct auction purchase intent. Expand buyer premium/total-cost worked example, inspection and catalogue limitations, bidding discipline and auction-specific terms. Clarify that conditions vary by auction house and jurisdiction. |
+| `/si/learn/gem-insurance-appraisal` | Keep + improve | Useful distinction between lab report, insurance appraisal, replacement value and resale price. Add a sample appraisal breakdown, update cadence and insurer-specific policy questions; do not state one universal valuation method. |
+| `/si/learn/gem-labs-overview` | Keep as lab/report hub + improve | Correctly explains reports as scoped opinions, not guarantees, and avoids ranking labs. Add a neutral comparison of report types, verification workflow and scope/limitations. Avoid unsubstantiated lab rankings. |
+| `/si/learn/gem-terms-glossary-si` | Keep + substantially improve | Distinct Sinhala terminology resource, but currently short. Expand into a searchable/structured glossary with consistent Sinhala/English terms, definitions, examples and links to relevant guides. |
+| `/si/learn/origin-opinion-vs-guarantee` | Keep + improve | Important distinct explanation of origin opinions and their limitations. Link to the Ceylon/sapphire pages and lab overview; add a clearly labelled illustrative report wording example. |
+| `/si/learn/pawn-and-resale-reality` | Keep + improve | Useful expectation-setting page separating retail, appraisal and resale/pawn values. Add a transparent hypothetical example and explain why offers vary; avoid unsupported percentage estimates. |
+| `/si/learn/jewelry-setting-types` | Keep + improve | Practical prong/bezel and durability topic. Add setting diagrams and a stone-durability comparison, while avoiding blanket claims that one setting is always safe. |
+| `/si/learn/ring-vs-pendant-durability` | Keep + improve | Distinct use-case guidance for daily rings vs pendants/earrings. Add a simple wear-risk matrix and link to setting types and care pages. |
+
+### Lab, transaction and jewellery cluster decisions
+
+- Use `gem-labs-overview` as the parent resource; `origin-opinion-vs-guarantee` explains one specific report limitation, while `gem-insurance-appraisal` covers a different valuation purpose.
+- Keep pawn/resale expectations separate from insurance appraisal, but cross-link them to prevent confusion between replacement value and cash resale offers.
+- Keep auction buying as a separate transaction channel with its own costs and terms.
+- Keep jewellery setting and ring-vs-pendant pages distinct: one explains construction; the other explains wear context. Link them closely.
+- Expand the Sinhala glossary and align its definitions with the site's English terms and gemstone data.
+- No content pages were modified, merged, redirected or deleted in this batch.
