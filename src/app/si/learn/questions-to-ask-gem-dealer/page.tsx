@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "මැණික් වෙළෙන්දාගෙන් අසන්න ඕනේ ප්‍රශ්න | GemologyX",
   description:
     "මැණික් ගලක් මිලදී ගැනීමට පෙර වෙළෙන්දාගෙන් අසිය යුතු ප්‍රශ්න — අනන්‍යතාව, ප්‍රතිකාර, වාර්තා, මිල සහ කොන්දේසි.",
+  alternates: { canonical: "/si/learn/questions-to-ask-gem-dealer" },
 };
 
 export default function Page() {
