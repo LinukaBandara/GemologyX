@@ -136,3 +136,22 @@ Implementation commits:
 - Conversion tool page: `d88e642e475a4e0a0b13bc99a46f7fca042963e3`
 
 Validation is pending GitHub Actions on the latest branch head. No local build has been run from this environment.
+
+
+## 10. Third safe implementation completed — heat-treatment cluster
+
+Implemented on `seo/technical-foundation`:
+
+- Expanded `/si/learn/heat-treatment-guide` as the general heat-treatment hub: what the term means, possible effects, differences from diffusion/filling, natural vs treated terminology, report wording and buyer checks.
+- Repositioned `/si/learn/heated-sapphire-guide` as a sapphire-specific treatment guide, focusing on corundum context, identity vs treatment, sapphire report interpretation and value considerations.
+- Expanded `/si/learn/heated-vs-unheated-blue-sapphire` as a buyer comparison with a comparison table, report-language cautions and a practical purchase checklist.
+- Added reciprocal contextual links between the three pages and specialist treatment/report resources.
+- Kept all three URLs. The overlap is addressed through distinct scopes: general treatment education, sapphire-specific context and buyer comparison.
+- Updated review dates to 2026-11-02.
+
+Implementation commits:
+- General heat-treatment hub: `4e85f908672bf4fc970cc7126b935ed3e8c9d7d9`
+- Sapphire-specific guide: `79d0106c47e192bf2b5a96cecb93a3f5352d17d4`
+- Heated/unheated comparison: `424e055ac22e991adab871e1ccd350fe6c7acec7`
+
+Validation status: GitHub Actions and Vercel preview need to finish against the latest branch head. No local build has been run in this environment; no merge or production deployment has been performed.
