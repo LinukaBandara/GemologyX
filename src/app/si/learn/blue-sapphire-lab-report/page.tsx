@@ -21,12 +21,13 @@ export default function Page() {
       title="නිල්මැණික් lab report එකක බලන්න ඕනේ දේ"
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
-      lastReviewed="2026-10-21"
+      lastReviewed="2026-11-02"
       related={[
         { label: "මැණික් පරීක්ෂණ වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
         { label: "වාර්තාවක ප්‍රධාන තොරතුරු", href: "/si/learn/gem-lab-report-details" },
         { label: "Heated vs Unheated", href: "/si/learn/heated-vs-unheated-blue-sapphire" },
         { label: "නිල්මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/blue-sapphire-buying-checklist" },
+        { label: "ව්‍යාජ හෝ නොගැළපෙන reports", href: "/si/learn/fake-lab-reports" },
       ]}
     >
       <QuickAnswer>
