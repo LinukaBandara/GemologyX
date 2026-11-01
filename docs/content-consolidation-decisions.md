@@ -155,3 +155,25 @@ Implementation commits:
 - Heated/unheated comparison: `424e055ac22e991adab871e1ccd350fe6c7acec7`
 
 Validation status: GitHub Actions and Vercel preview need to finish against the latest branch head. No local build has been run in this environment; no merge or production deployment has been performed.
+
+
+## 11. Fourth safe implementation completed — lab reports and certification cluster
+
+Implemented on `seo/technical-foundation`:
+
+- `/si/learn/how-to-read-gem-report`: expanded as the main step-by-step workflow (verify number, identify the stone, match physical details, read treatment, interpret origin, understand limits).
+- `/si/learn/gem-lab-report-details`: differentiated as a concise field-by-field reference rather than a second full walkthrough.
+- `/si/learn/blue-sapphire-lab-report`: retained as the sapphire-specific report guide and refreshed review date/link to fake-report checks.
+- `/si/learn/gem-labs-overview`: retained as a general lab/report overview; refreshed review date and linked the field reference and certificate myths.
+- `/si/learn/gem-certification-myths`: expanded as a six-myth buyer education page, covering value, resale, natural vs treatment, lab identity, differing report scopes, and report-to-stone mismatch.
+- `/si/learn/fake-lab-reports`: expanded into a practical verification and red-flag workflow, including what to do when a mismatch is found.
+
+All six URLs remain. No redirect or deletion was made. Distinct page roles: general lab overview, report-reading workflow, field reference, sapphire-specific report reading, certificate myths, and fake/mismatched report safety.
+
+Implementation commits:
+- Main report walkthrough: `650738220f4578a8e2210c7e70e5b8a22156b3ea`
+- Report field reference: `95e88a8b8d52c00c0b935b27cc8ab44ff0707d7f`
+- Certificate myths: `caab05295544da15d2885a3e056a94f950eab23c`
+- Fake/mismatched reports: `0b53298afdbd78b556b217ddaceee12b2836aee3`
+
+Validation status: no local build run; latest GitHub CI and Vercel preview must be checked before merge. No merge or production deployment performed.
