@@ -3,7 +3,7 @@
 > Repository: `LinukaBandara/GemologyX`  
 > Branch: `seo/technical-foundation`  
 > Audited source baseline: `a37c81fccd9975c7aecee2980c0c845af3368aad`  
-> Scope in this pass: 24 learning page files inspected directly (selected Sinhala clusters and English learning pages). This is a **partial content audit**, not a claim that all 109 pages have been reviewed.
+> Scope in this pass: 30 learning page files inspected directly (selected Sinhala clusters and English learning pages). This is a **partial content audit**, not a claim that all 109 pages have been reviewed.
 
 ## 1. Key findings from inspected pages
 
@@ -14,7 +14,7 @@
 | `/si/learn/blue-sapphire-colour-quality` | Keep + improve | Distinct colour-evaluation intent; retain. Add clear visual examples/diagrams and sourced explanation of hue, tone, saturation and lighting. |
 | `/si/learn/blue-sapphire-value-factors` | Keep | Broad value-factor overview is distinct. Make it the central value hub and link out to detailed supporting guides. |
 | `/si/learn/blue-sapphire-price-per-carat` | Keep + improve | Distinct price-comparison/calculation intent. Keep cautious; add worked hypothetical examples, explain limits and avoid unsupported market price tables. |
-| `/si/learn/rough-blue-sapphire-value` | Investigate overlap | Compare against rough gemstone valuation and cutting-yield content before deciding whether to retain as sapphire-specific or merge. |
+| `/si/learn/rough-blue-sapphire-value` | Pending direct review | Its title suggests a possible relationship to broader rough-stone valuation content; inspect the full page before deciding. |
 
 ### B. Heat and treatment cluster
 
