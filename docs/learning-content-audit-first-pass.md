@@ -240,3 +240,28 @@ This batch directly reviewed 8 additional unique Sinhala sources. Cumulative dir
 - Keep general colour, clarity, cut and inclusions pages as foundational reference guides. They should explain concepts and link to specific gem pages rather than duplicate their valuation content.
 - Keep gift buying and jewellery buying separate: one addresses choosing for a recipient/lifestyle; the other addresses the finished item, metal, setting and documentation.
 - No page content was modified, merged, redirected or deleted in this batch.
+
+
+## 10. Seventh review batch — 8 identification, comparison and sapphire pages
+
+This batch directly reviewed 8 additional unique Sinhala source files. Cumulative direct review is now **93 of 109 learning page files** (16 remain).
+
+| Page | Initial decision | Direct-source finding / next action |
+|---|---|---|
+| `/si/learn/ruby-vs-garnet` | Keep + improve | Clear species comparison and safe identification caveat. Add a concise property/comparison table and labelled examples; do not imply visual certainty. |
+| `/si/learn/ruby-vs-spinel` | Keep + improve | Distinct high-value buyer confusion topic, but overlaps with the ruby-vs-garnet page and ruby/spinel introductions. Keep if it provides a fuller buyer comparison; otherwise combine both ruby look-alike comparisons into a single comparison resource with separate sections. |
+| `/si/learn/sapphire-vs-tanzanite` | Keep + improve | Useful mineral identity and durability comparison. Add property table, care/setting implications and treatment disclosure. |
+| `/si/learn/yellow-sapphire-vs-topaz` | Keep + improve | Useful yellow-stone confusion topic, also connected to citrine. Add a three-way comparison table and clarify naming/terminology in Sinhala. |
+| `/si/learn/uv-light-gem-myths` | Keep + substantially improve | Important warning that fluorescence is not a definitive ID test. Current body is English-heavy and brief; rewrite in Sinhala, explain UV-A/UV-B safety and limitations, and avoid suggesting a phone UV torch is a reliable diagnostic tool. |
+| `/si/learn/star-sapphire-guide` | Keep + improve | More detailed and practical than many introductions; covers asterism, cabochon cut and viewing. Add labelled diagrams/photos of star quality and sourced treatment/identification notes. |
+| `/si/learn/synthetic-sapphire-guide` | Keep + improve | Correctly distinguishes lab-grown corundum from glass/CZ and natural sapphire. Expand growth methods, disclosure terminology and report-reading with reliable references. |
+| `/si/learn/identify-sapphire` | Keep as sapphire identification hub + improve | Good caution against visual identification and home testing. Add a safe observation workflow, comparison table of common look-alikes and explanation of what professional testing evaluates. |
+
+### Comparison and identification cluster decisions
+
+- Keep comparison pages when the buyer intent is genuinely distinct, but strengthen them beyond repeated “these are different minerals” paragraphs with property, durability, treatment and buying tables.
+- Review `ruby-vs-garnet` and `ruby-vs-spinel` together. A single strong “ruby look-alikes” comparison may serve users better than two very short pages; preserve separate URLs only if each has distinct search intent and enough unique depth.
+- Add citrine to the yellow sapphire/topaz comparison because it is already named as a likely look-alike.
+- Keep `identify-sapphire` as the main safety-first identification page and link from sapphire variety and comparison pages.
+- Rewrite UV-light content for Sinhala readers and include appropriate UV safety guidance from authoritative sources.
+- No page content was modified, merged, redirected or deleted in this batch.
