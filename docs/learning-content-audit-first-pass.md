@@ -3,7 +3,7 @@
 > Repository: `LinukaBandara/GemologyX`  
 > Branch: `seo/technical-foundation`  
 > Audited source baseline: `a37c81fccd9975c7aecee2980c0c845af3368aad`  
-> Scope in this pass: 30 learning page files inspected directly (selected Sinhala clusters and English learning pages). This is a **partial content audit**, not a claim that all 109 pages have been reviewed.
+> Scope: all 109 learning page files in the current route inventory have now been inspected directly at source level (100 Sinhala routes and 9 English routes). This is a completed first-pass editorial triage, not a full gemological fact-check, analytics audit or search-intent validation.
 
 ## 1. Key findings from inspected pages
 
@@ -290,3 +290,33 @@ This batch directly reviewed 8 additional unique Sinhala source files. Cumulativ
 - Keep jewellery setting and ring-vs-pendant pages distinct: one explains construction; the other explains wear context. Link them closely.
 - Expand the Sinhala glossary and align its definitions with the site's English terms and gemstone data.
 - No content pages were modified, merged, redirected or deleted in this batch.
+
+
+## 12. Final review batch — remaining 8 learning pages
+
+This final batch directly reviewed the 7 remaining Sinhala page files and the remaining English Ceylon sapphire page. **All 109 learning page files (100 Sinhala + 9 English) have now received a direct source-level first-pass review.**
+
+| Page | Initial decision | Direct-source finding / next action |
+|---|---|---|
+| `/si/learn/blue-sapphire-lab-report` | Keep + improve | Useful sapphire-specific report reading, especially treatment wording and origin notes. Keep distinct from the general report guide only if it remains focused on sapphire report fields; add annotated illustrative examples and explain “no indications of heat” as bounded report language, not absolute proof. |
+| `/si/learn/blue-sapphire-red-flags` | Keep + improve | Strong buyer-risk checklist with sensible caveat that one red flag alone does not prove fraud. Add printable checklist and link to general scam avoidance and sapphire buying pages. |
+| `/si/learn/mohs-hardness-guide` | Keep as hardness hub + improve | Correctly distinguishes scratch resistance from toughness and includes approximate gem values. Add a sourced property table and visual explanation; label values as approximate and avoid implying hardness alone predicts durability. |
+| `/si/learn/secondhand-jewelry-gems` | Keep + substantially improve | Useful pre-owned jewellery topic covering wear, documentation and resizing. Currently English-heavy; rewrite in accessible Sinhala and add an inspection checklist for settings, replaced stones, repairs and report matching. |
+| `/si/learn/tourmaline-intro` | Keep + improve | Useful mineral-group and trade-name overview. Expand species/variety terminology (e.g. indicolite, rubellite, Paraíba) carefully, with sourced colour/treatment notes and no unsupported origin inference. |
+| `/si/learn/turquoise-intro` | Keep + improve | Distinct stabilization/dye and care topic. Add natural/stabilized/reconstituted/imitation distinctions, disclosure wording and practical care table with references. |
+| `/si/learn/zircon-intro` | Keep + improve | Important zircon vs cubic zirconia distinction. Expand natural zircon properties, heat-treatment colour changes, durability and safe care; include a clear comparison table. |
+| `/learn/sapphire/what-is-ceylon-sapphire` | Keep + improve; align with Sinhala cluster | More detailed English treatment of “Ceylon” as geographic origin vs colour/trade shorthand, and lab origin opinions. Align terminology with `/si/learn/what-ceylon-means` and `/si/learn/sri-lankan-blue-sapphire`; clarify that origin reports are expert opinions with limits, not GPS-level certainty. |
+
+### Final coverage and limitations
+
+- Direct source-level first-pass coverage is complete for the current inventory: **109 / 109 learning page files**.
+- This does not mean all 109 pages are publish-ready. It does not substitute for external fact-checking, current legal/regulatory verification, analytics/Search Console review, backlink checks, query-intent analysis, or testing the rendered pages.
+- The route inventory counted 100 Sinhala learning page files and 9 English learning page files. This is a source-file count; dynamic routes/data-backed records are tracked separately in the route inventory.
+- The most important consolidation candidates identified across the audit are:
+  1. `/si/learn/rough-gem-questions` into `/si/learn/buying-rough-gemstones` as a practical checklist.
+  2. `/si/learn/carat-vs-gram` into `/si/learn/carat-weight-guide`, or replace the separate article with a useful converter.
+  3. Clarify or consolidate `/si/learn/what-ceylon-means`, `/si/learn/sri-lankan-blue-sapphire` and `/learn/sapphire/what-is-ceylon-sapphire` by language and distinct intent.
+  4. Review `/si/learn/ruby-vs-garnet` and `/si/learn/ruby-vs-spinel` as one stronger ruby look-alikes comparison if independent intent is not demonstrated.
+  5. Reposition `/si/learn/heated-sapphire-guide`, `/si/learn/natural-synthetic-imitation-gems` and `/si/learn/gem-lab-report-details` according to the overlap findings in sections 1–3.
+- The strongest site-wide improvement themes are: deeper topic-specific content; natural Sinhala on Sinhala routes; cited technical claims; official sources for legal/export content; useful comparison/property tables; labelled diagrams and real educational visuals; safe practical workflows; and clear internal links between hubs and specialist guides.
+- No learning page has been deleted, redirected, merged or rewritten as part of this audit. All changes in this audit series are documentation-only. Each merge/redirect still requires a separate decision based on rendered content, analytics, Search Console queries, backlinks and URL history.
