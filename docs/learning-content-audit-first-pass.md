@@ -191,3 +191,28 @@ This batch directly reviewed 8 further Sinhala learning sources. Cumulative dire
 - Make rough-to-cut yield a connected topic across the general rough-buying guide, sapphire value pages and cutting-weight-loss page. Use one consistent worked hypothetical example, clearly labelled as illustrative rather than a promised yield.
 - Carat conversion belongs in the main weight guide; a standalone converter is a better utility than another thin article.
 - No content pages were modified, merged, redirected or deleted in this batch. Only the audit report was updated.
+
+
+## 8. Fifth review batch — 8 Sri Lankan trade, origin and travel pages
+
+This batch directly reviewed 8 source files (including a repeat verification of the export page previously reviewed in batch 2). The cumulative number of unique learning page files directly reviewed remains **77 of 109** (32 remain).
+
+| Page | Initial decision | Direct-source finding / next action |
+|---|---|---|
+| `/si/learn/sri-lanka-gem-trade-intro` | Keep as Sri Lanka trade hub + substantially improve | Broad overview of mining, cutting, trading and export, but currently high-level. Add a sourced industry map/flow, mining regions, roles, licensing and export pathways; distinguish historical background from current rules. |
+| `/si/learn/sri-lanka-dealer-types` | Keep + substantially improve | Trade-role taxonomy is useful, but most body copy is English and extremely brief. Rewrite in natural Sinhala and explain rough suppliers, cutters, brokers, exporters and retail jewellers neutrally, with examples of responsibilities and questions to ask. |
+| `/si/learn/sri-lanka-gem-terms` | Keep + improve | Useful local terminology reference (geuda, rough, cut stones, Ceylon). Expand into a structured glossary with Sinhala/English terms, precise definitions, examples and cross-links to deeper guides. |
+| `/si/learn/sri-lanka-buying-day-tips` | Keep + substantially improve | Practical local buying advice, but English-heavy and short. Add a step-by-step buyer visit plan, document checklist and safe transaction guidance. Any claims about locations, licensing or legal requirements need current official sourcing. |
+| `/si/learn/sri-lankan-blue-sapphire` | Keep as Sri Lankan sapphire guide + improve | Useful distinction between trade label, origin opinion and quality/treatment. Add sourced geology/mining context and an annotated explanation of what origin reports can and cannot conclude. |
+| `/si/learn/what-ceylon-means` | Reposition / merge carefully | Overlaps with the Sri Lankan blue sapphire page on “Ceylon” as a trade term and origin opinion. Preserve a concise terminology section or make it a distinct reference only if it deeply explains historical/trade usage and lab-origin language; avoid two thin pages answering the same question. |
+| `/si/learn/travel-with-gemstones` | Keep + verify | Practical transport/security topic. Rewrite in fuller Sinhala and separate general packing/insurance advice from customs declaration rules; link to destination-country official sources because rules vary. |
+| `/si/learn/export-documents-intro` | Keep + verify (repeat source confirmation) | General awareness page, not a legal checklist. Personal carriage and commercial export must be separated. Add current official Sri Lankan customs/NGJA sources and destination-country verification; do not state generic documents as universally mandatory. |
+
+### Sri Lanka content cluster decisions
+
+- Use `sri-lanka-gem-trade-intro` as the central industry hub, supported by specialist pages on mining, licensing, trade roles, buying, export and origin.
+- Keep `sri-lanka-gem-terms` as a structured glossary, not another broad narrative article.
+- Clarify the boundary between `sri-lankan-blue-sapphire` and `what-ceylon-means`; likely move the concise “what Ceylon means” explanation into the sapphire guide and retain a standalone page only if it has a genuinely distinct terminology/history scope.
+- Rewrite English-heavy Sinhala routes in natural Sinhala while preserving established technical English terms in parentheses.
+- Regulatory and customs content must carry official sources, jurisdiction, last-verified date and a clear non-legal-advice boundary. Avoid static claims that can become outdated.
+- No content pages were changed, merged, redirected or deleted in this batch.
