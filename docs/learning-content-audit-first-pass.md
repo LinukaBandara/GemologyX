@@ -216,3 +216,27 @@ This batch directly reviewed 8 source files (including a repeat verification of 
 - Rewrite English-heavy Sinhala routes in natural Sinhala while preserving established technical English terms in parentheses.
 - Regulatory and customs content must carry official sources, jurisdiction, last-verified date and a clear non-legal-advice boundary. Avoid static claims that can become outdated.
 - No content pages were changed, merged, redirected or deleted in this batch.
+
+
+## 9. Sixth review batch — 8 care, evaluation and jewellery pages
+
+This batch directly reviewed 8 additional unique Sinhala sources. Cumulative direct review is now **85 of 109 learning page files** (24 remain).
+
+| Page | Initial decision | Direct-source finding / next action |
+|---|---|---|
+| `/si/learn/gemstone-care-general` | Keep as main care hub + improve | Broad cleaning, storage, wear and treatment-sensitive care overview. Add a stone-by-stone care matrix and cross-links to specialist care pages; clearly qualify any “safe default”. |
+| `/si/learn/gemstone-cleaning-methods` | Keep + substantially improve | Useful focused cleaning method page with sensible cautions for emerald, opal, pearl, coral, turquoise and filled stones. Expand into a decision table by gem/treatment and cite reputable care guidance. |
+| `/si/learn/gemstone-clarity-guide` | Keep + improve | Distinguishes coloured-stone clarity from diamond grading and notes durability implications. Add a visual glossary and clarify that coloured-stone clarity terminology is not one universal grading scale. |
+| `/si/learn/gemstone-colour-guide` | Keep as colour hub + improve | Hue/tone/saturation and lighting are useful fundamentals. Add labelled visual examples, colour zoning and trade-term caveats; connect to sapphire-specific colour pages. |
+| `/si/learn/gemstone-cut-shapes` | Keep + improve | Good distinction between shape and cut quality, plus cabochon and weight-retention notes. Add annotated diagrams for windowing, extinction, symmetry and common shapes. |
+| `/si/learn/gemstone-inclusions-guide` | Keep as general inclusions hub + improve | Clear explanation that inclusions do not automatically mean fake and can affect durability. Add labelled examples and connect to the rough-sapphire inclusions page without duplicating its cutting-risk detail. |
+| `/si/learn/gemstone-gift-buying` | Keep + improve | Distinct gift-selection intent, focused on lifestyle, budget, durability and returns. Add a simple recipient-use comparison and practical sizing/return examples. |
+| `/si/learn/jewelry-with-gems-buying` | Keep + improve | Distinct finished-jewellery purchase intent covering stone, metal, setting and paperwork. Add a metal/setting checklist and clarify jewellery-specific quality checks. |
+
+### Care and evaluation cluster decisions
+
+- Keep `gemstone-care-general` as the parent care page and `gemstone-cleaning-methods` as the practical cleaning procedure guide. Their scopes should be explicit to prevent repeated generic cleaning paragraphs.
+- Add a treatment-aware care matrix; never imply that one cleaning method is safe for every stone or setting.
+- Keep general colour, clarity, cut and inclusions pages as foundational reference guides. They should explain concepts and link to specific gem pages rather than duplicate their valuation content.
+- Keep gift buying and jewellery buying separate: one addresses choosing for a recipient/lifestyle; the other addresses the finished item, metal, setting and documentation.
+- No page content was modified, merged, redirected or deleted in this batch.
