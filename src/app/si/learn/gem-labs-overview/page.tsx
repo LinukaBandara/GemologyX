@@ -21,11 +21,13 @@ export default function Page() {
       title="මැණික් පරීක්ෂණාගාර (Labs) — මූලික දැනුම"
       crumbHref="/si/learn/how-to-read-gem-report"
       crumbLabel="වාර්තා කියවීම"
-      lastReviewed="2026-10-21"
+      lastReviewed="2026-11-02"
       related={[
         { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
         { label: "Origin opinion vs guarantee", href: "/si/learn/origin-opinion-vs-guarantee" },
         { label: "නිල්මැණික් lab report", href: "/si/learn/blue-sapphire-lab-report" },
+        { label: "වාර්තාවක fields", href: "/si/learn/gem-lab-report-details" },
+        { label: "Certificate myths", href: "/si/learn/gem-certification-myths" },
         { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
       ]}
     >
