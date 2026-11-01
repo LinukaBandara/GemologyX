@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { term } = await params;
   const entry = getGlossaryTermBySlug(term);
   if (!entry) return {};
-  return { title: entry.term, description: entry.definition };
+  return { title: entry.term, description: entry.definition, alternates: { canonical: `/glossary/${term}` } };
 }
 
 export default async function GlossaryTermPage({ params }: { params: Params }) {
