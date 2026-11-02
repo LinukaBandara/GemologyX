@@ -13,18 +13,21 @@ export const metadata: Metadata = {
   },
   description:
     "Explore gemstone characteristics, origins, treatments, certification, buying knowledge and practical tools — all in one place.",
+  icons: { icon: "/icon.svg", shortcut: "/icon.svg" },
   openGraph: {
     type: "website",
     siteName: "GemologyX",
     title: "GemologyX — The Digital Guide to Gemstones",
     description:
       "Explore gemstone characteristics, origins, treatments, certification, buying knowledge and practical tools — all in one place.",
+    images: [{ url: "/gemologyx-social.svg", width: 1200, height: 630, alt: "GemologyX — Knowledge, Science, Integrity" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GemologyX — The Digital Guide to Gemstones",
     description:
       "Explore gemstone characteristics, origins, treatments, certification, buying knowledge and practical tools — all in one place.",
+    images: ["/gemologyx-social.svg"],
   },
 };
 
