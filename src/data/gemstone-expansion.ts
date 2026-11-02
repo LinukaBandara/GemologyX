@@ -247,4 +247,75 @@ export const expandedGemstones: Gemstone[] = [
       care: "Chrysoberyl's hardness of about 8.5 makes it durable for jewellery. Clean with mild soap, warm water and a soft brush. Avoid hard impacts and use additional caution with stones that have significant fractures or specialised settings."
     }
   }
+  ,
+  {
+    slug: "andalusite", name: "Andalusite", category: "Semi-Precious", mineralFamily: "Andalusite group", chemicalFormula: "Al₂SiO₅", hardness: "6.5–7.5", crystalSystem: "Orthorhombic", colors: ["Yellowish green", "Olive", "Brown", "Reddish brown"], transparency: "Transparent to opaque", commonTreatments: ["Often untreated; disclose any known treatment"], description: "An aluminium silicate gemstone known for strong pleochroism and earthy colour combinations.",
+    detail: {
+      whatIsIt: "Andalusite is an aluminium silicate mineral and one of the Al₂SiO₅ polymorphs, along with kyanite and sillimanite. It is valued as a gemstone particularly when transparent material displays distinct colours from different viewing directions.",
+      colorNotes: "Gem-quality andalusite commonly shows olive, yellowish-green, brown and reddish-brown tones. Strong pleochroism can make the same stone appear to contain more than one colour as it is rotated. Cut orientation influences which colours are most visible face-up.",
+      origins: "Gem andalusite has been reported from several metamorphic regions, including Brazil, Sri Lanka and other localities. A geographic origin should not be assigned from colour or pleochroism alone; provenance requires independent evidence.",
+      naturalVsSynthetic: "Natural andalusite may be confused with other brown or green gemstones in jewellery. Similar appearance is not proof of identity. Reliable separation uses refractive index, optical character, specific gravity and other gemological observations.",
+      treatments: "Andalusite is commonly encountered without treatment, but sellers should disclose any known enhancement. Do not assume treatment status from appearance; request documentation for important purchases.",
+      inclusions: "Crystals may contain fractures, mineral inclusions, growth features and internal colour zoning. Their effect on transparency and durability depends on size, position and the way the stone is set.",
+      valueFactors: ["Strength and attractiveness of pleochroic colours", "Transparency and clarity", "Cut orientation and face-up appearance", "Carat weight and finished dimensions", "Durability and disclosure"],
+      certification: "A gemological report can document whether a specimen is andalusite and record relevant observations. For a valuable stone, use an independent laboratory and verify that the report corresponds to the stone.",
+      care: "With hardness around 6.5–7.5, andalusite is suitable for carefully worn jewellery but can be damaged by hard knocks. Use mild soap, lukewarm water and a soft brush; avoid harsh chemicals and protect it from impact."
+    }
+  },
+  {
+    slug: "apatite", name: "Apatite", category: "Semi-Precious", mineralFamily: "Apatite group", chemicalFormula: "Ca₅(PO₄)₃(F,Cl,OH)", hardness: "5", crystalSystem: "Hexagonal", colors: ["Blue", "Green", "Yellow", "Violet", "Colourless"], transparency: "Transparent to opaque", commonTreatments: ["Some material may be heated or otherwise enhanced; verify disclosure"], description: "A phosphate mineral found in vivid blue and green gem varieties, but softer than many jewellery stones.",
+    detail: {
+      whatIsIt: "Apatite is a group name for phosphate minerals with related structures and variable anions. Transparent specimens are cut as gemstones and may occur in striking neon-blue, green, yellow and other colours. Apatite is also an important mineral in geology and biology.",
+      colorNotes: "Gem apatite ranges from pale to vivid blue and green, with yellow, violet and colourless examples also known. Colour intensity, transparency, visible inclusions and cut quality influence appearance. Colour names used in trade are descriptions, not proof of origin.",
+      origins: "Gem-quality apatite is reported from localities including Madagascar, Brazil, Mexico and other countries. Deposits differ in colour and crystal quality; geographic attribution should be supported by reliable provenance or specialist laboratory work.",
+      naturalVsSynthetic: "Apatite can be confused with other blue or green gems. Its relatively low hardness and measurable gemological properties help distinguish it, but a visual comparison or photograph is not sufficient for a confident identification.",
+      treatments: "Some apatite may be subjected to colour enhancement. Treatment practices can vary by material and market, so ask the seller for written disclosure and seek an independent report for a significant purchase.",
+      inclusions: "Apatite may contain fractures, fluid features, mineral inclusions and growth-related characteristics. Because it is relatively soft, surface wear and fractures deserve attention when assessing a finished stone.",
+      valueFactors: ["Colour and saturation", "Transparency and clarity", "Cut quality and finished size", "Carat weight", "Condition, treatment disclosure and intended use"],
+      certification: "An independent gemological report can confirm the material identity and record detectable treatments within the laboratory's scope. Confirm the exact report wording rather than relying on a seller's summary.",
+      care: "Apatite has Mohs hardness of about 5 and can scratch more easily than quartz or corundum. Reserve it for protective settings or occasional wear, clean gently with mild soap and water, and avoid ultrasonic or steam cleaning."
+    }
+  },
+  {
+    slug: "danburite", name: "Danburite", category: "Semi-Precious", mineralFamily: "Danburite", chemicalFormula: "CaB₂(SiO₄)₂", hardness: "7–7.5", crystalSystem: "Orthorhombic", colors: ["Colourless", "Pale yellow", "Pinkish", "Brown"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A transparent borosilicate gemstone often valued for its bright appearance and near-colourless material.",
+    detail: {
+      whatIsIt: "Danburite is a calcium borosilicate mineral that can form transparent crystals suitable for faceting. Colourless material may resemble quartz or topaz, so identification should rely on measured properties rather than appearance alone.",
+      colorNotes: "Most familiar gem danburite is colourless or pale yellow, although pinkish and brownish material is also known. Clean transparency and a well-proportioned cut help produce a bright face-up appearance.",
+      origins: "Danburite has been reported from localities including Mexico, Myanmar, Madagascar and other mineral-producing regions. A specimen's country of origin should be supported by documented provenance or a qualified laboratory opinion where available.",
+      naturalVsSynthetic: "Danburite may be mistaken for other transparent gems. Its optical and physical properties provide a basis for identification by a trained gemologist; a photograph cannot establish the species conclusively.",
+      treatments: "Danburite is commonly encountered without treatment. Any known enhancement should still be disclosed, and buyers should avoid treating 'usually untreated' as a guarantee for an individual stone.",
+      inclusions: "Transparent crystals can contain fractures, mineral inclusions, growth features or small internal imperfections. Their visibility and position influence appearance and durability.",
+      valueFactors: ["Colourlessness or attractive natural body colour", "Transparency and clarity", "Cut proportions, polish and brilliance", "Carat weight and face-up spread", "Condition and disclosure"],
+      certification: "A laboratory report can identify danburite and describe relevant properties. For higher-value purchases, request independent documentation and verify the report number with the issuing laboratory.",
+      care: "Danburite's hardness around 7–7.5 is reasonable for jewellery, though it can still chip or fracture. Clean with mild soap, lukewarm water and a soft brush, and avoid hard impacts."
+    }
+  },
+  {
+    slug: "sphene", name: "Sphene (Titanite)", category: "Semi-Precious", mineralFamily: "Titanite", chemicalFormula: "CaTiSiO₅", hardness: "5–5.5", crystalSystem: "Monoclinic", colors: ["Yellow", "Green", "Brown", "Reddish", "Orange"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A high-dispersion gemstone prized for vivid spectral flashes, with care needs due to its modest hardness.",
+    detail: {
+      whatIsIt: "Sphene is the traditional gem name for titanite, a calcium titanium silicate mineral. Faceted transparent specimens can show strong dispersion, producing noticeable spectral flashes when lighting and cut are favourable.",
+      colorNotes: "Gem titanite is commonly yellow, green, brown, orange or reddish. Its high dispersion can create colourful flashes, while body colour, transparency, inclusions and cut determine the overall appearance.",
+      origins: "Gem titanite is known from localities including Madagascar, Pakistan, Brazil and other mineral regions. Origin claims should be supported by reliable provenance or specialist testing rather than inferred from colour.",
+      naturalVsSynthetic: "Sphene can be confused with other yellow or green faceted stones. Its optical properties, including strong dispersion and birefringence, assist identification, but testing should be performed by a qualified gemologist.",
+      treatments: "Many sphene specimens are sold without treatment, but buyers should ask about any known enhancement and have important purchases independently examined.",
+      inclusions: "Titanite may contain mineral inclusions, fractures and internal growth features. Because the material is relatively soft and can be brittle, fractures near facet junctions deserve particular attention.",
+      valueFactors: ["Colour and transparency", "Strength of dispersion and overall visual appeal", "Cut quality and light return", "Carat weight and face-up appearance", "Fractures, durability and disclosure"],
+      certification: "An independent gemological report can document identification and relevant observations. The report's scope should be checked, particularly if a seller makes a treatment or origin claim.",
+      care: "With hardness around 5–5.5 and relatively brittle behaviour, sphene is best suited to pendants, earrings or carefully protected rings. Avoid hard knocks, abrasive contact, ultrasonic cleaners and steam; clean gently with mild soap and water."
+    }
+  },
+  {
+    slug: "benitoite", name: "Benitoite", category: "Semi-Precious", mineralFamily: "Barium titanium silicate", chemicalFormula: "BaTiSi₃O₉", hardness: "6–6.5", crystalSystem: "Hexagonal", colors: ["Blue", "Violet-blue", "Colourless"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A rare blue gemstone known for strong dispersion and its association with a limited Californian source.",
+    detail: {
+      whatIsIt: "Benitoite is a rare barium titanium silicate mineral best known as a blue faceted gemstone. It is notable for its optical properties and limited known gem-producing localities, but rarity alone does not determine the quality or value of an individual stone.",
+      colorNotes: "Fine benitoite is often blue to violet-blue, while pale and colourless examples also occur. Colour saturation, transparency, cut, dispersion and the balance between brilliance and colour all affect appearance.",
+      origins: "The best-known gem source is the Benitoite Gem Mine area in San Benito County, California, United States. Other occurrences have been reported, but gem-quality material is uncommon. A specific origin claim still requires appropriate supporting evidence.",
+      naturalVsSynthetic: "Benitoite is a distinct mineral species and should not be identified from blue colour alone. Laboratory measurements and microscopic examination help separate it from other blue gemstones and simulants.",
+      treatments: "Benitoite is generally encountered without routine enhancement, but this should not be assumed for every specimen. Request disclosure of any known treatment and independent testing when the purchase value warrants it.",
+      inclusions: "Crystals may show fractures, mineral inclusions and growth features. These can affect transparency, cutting yield and durability, particularly in stones with inclusions reaching the surface.",
+      valueFactors: ["Blue colour and saturation", "Transparency and clarity", "Cut quality and visible dispersion", "Carat weight and rarity of fine material", "Condition and reliable identification"],
+      certification: "Because benitoite is uncommon, independent identification is especially useful for significant purchases. Check that a report identifies the mineral species and that the report number matches the document.",
+      care: "Benitoite has hardness around 6–6.5 and should be protected from scratches and sharp impacts. Use a protective setting for rings, store separately and clean gently with mild soap and water."
+    }
+  }
 ];
