@@ -1,42 +1,31 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
-  {
-    title: "Learn",
-    links: [
-      { label: "Guides", href: "/learn" },
-      { label: "Glossary", href: "/glossary" },
-      { label: "Gemstone Certification", href: "/learn/gemstone-certification" },
-      { label: "How to Read a Report", href: "/learn/how-to-read-a-gemstone-report" },
-    ],
-  },
-  {
-    title: "Explore",
-    links: [
-      { label: "Gemstones", href: "/gemstones" },
-      { label: "Origins", href: "/origins" },
-      { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
-      { label: "Trade & Export", href: "/sri-lanka-trade-export" },
-    ],
-  },
-  {
-    title: "Tools",
-    links: [
-      { label: "All Tools", href: "/tools" },
-      { label: "Carat Converter", href: "/tools/carat-to-gram" },
-      { label: "Ring Size", href: "/tools/ring-size" },
-      { label: "Mohs Hardness", href: "/tools/mohs-hardness" },
-    ],
-  },
-  {
-    title: "About",
-    links: [
-      { label: "About Us", href: "/about" },
-      { label: "Editorial Standards", href: "/editorial-standards" },
-      { label: "Contact", href: "/contact" },
-      { label: "Disclaimer", href: "/disclaimer" },
-    ],
-  },
+  { title: "Learn", links: [
+    { label: "Guides", href: "/learn" },
+    { label: "Glossary", href: "/glossary" },
+    { label: "Gemstone Certification", href: "/learn/gemstone-certification" },
+    { label: "How to Read a Report", href: "/learn/how-to-read-a-gemstone-report" },
+  ]},
+  { title: "Explore", links: [
+    { label: "Gemstones", href: "/gemstones" },
+    { label: "Origins", href: "/origins" },
+    { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
+    { label: "Trade & Export", href: "/sri-lanka-trade-export" },
+  ]},
+  { title: "Tools", links: [
+    { label: "All Tools", href: "/tools" },
+    { label: "Carat Converter", href: "/tools/carat-to-gram" },
+    { label: "Ring Size", href: "/tools/ring-size" },
+    { label: "Mohs Hardness", href: "/tools/mohs-hardness" },
+  ]},
+  { title: "About", links: [
+    { label: "About Us", href: "/about" },
+    { label: "Editorial Standards", href: "/editorial-standards" },
+    { label: "Contact", href: "/contact" },
+    { label: "Disclaimer", href: "/disclaimer" },
+  ]},
 ];
 
 export function SiteFooter() {
@@ -46,11 +35,11 @@ export function SiteFooter() {
         <div className="footer-top">
           <div className="footer-brand">
             <Link href="/" className="footer-brand-name">
-              <span className="brand-mark" aria-hidden="true"><i /><b /><em /></span>
-              Gemology<span>X</span>
+              <Image src="/gemologyx-mark.svg" alt="" width={36} height={36} />
+              <span>Gemology<span>X</span></span>
             </Link>
             <p>
-              Empowering minds with accurate, accessible gemology education for a more informed world.
+              Independent gemology education exploring gemstones, mineral science, Sri Lankan gem heritage and informed buying.
             </p>
             <div className="footer-gold-line" />
           </div>
@@ -79,7 +68,7 @@ export function SiteFooter() {
         </div>
 
         <div className="footer-credit">
-          <span /> Crafted with care · Knowledge · Science · Integrity <span />
+          <span /> Knowledge · Science · Integrity <span />
         </div>
       </div>
     </footer>
