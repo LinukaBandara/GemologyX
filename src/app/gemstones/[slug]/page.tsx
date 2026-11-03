@@ -38,6 +38,31 @@ export default async function GemstonePage({params}:{params:Params}){
    <section><h2>Certification</h2><p>{d.certification}</p></section>
    <section><h2>Care</h2><p>{d.care}</p></section>
   </div>:<div className="profile-note">A full educational write-up for {gem.name} is in editorial preparation. The quick facts above are available for reference.</div>}
+  <section className="mt-12 border-t border-border pt-8" aria-labelledby="related-gemstones-heading">
+   <div className="luxury-eyebrow"><span/> CONTINUE EXPLORING</div>
+   <h2 id="related-gemstones-heading" className="mt-2 font-serif text-2xl font-semibold">Related gemstones</h2>
+   <p className="mt-2 max-w-2xl text-sm leading-6 text-muted">Compare mineral relationships and appearance with these other profiles. Similar colour alone does not establish gemstone identity or geographic origin.</p>
+   <div className="mt-5 grid gap-3 sm:grid-cols-2">
+    {allGemstones
+      .filter((item) => item.slug !== gem.slug)
+      .map((item) => ({
+        ...item,
+        score:
+          (item.mineralFamily === gem.mineralFamily ? 3 : 0) +
+          (item.colors.some((color) => gem.colors.some((own) => own.toLowerCase() === color.toLowerCase())) ? 1 : 0),
+      }))
+      .filter((item) => item.score > 0)
+      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+      .slice(0, 4)
+      .map((item) => (
+       <Link key={item.slug} href={`/gemstones/${item.slug}`} className="block rounded-xl border border-border bg-white p-4 transition-colors hover:border-accent">
+        <span className="font-serif text-lg font-semibold">{item.name}</span>
+        <span className="mt-1 block text-xs uppercase tracking-wide text-muted">{item.mineralFamily}</span>
+        <span className="mt-2 block text-sm leading-6 text-muted">{item.description}</span>
+       </Link>
+      ))}
+   </div>
+  </section>
   <div className="profile-disclaimer">GemologyX provides educational information and is not a substitute for professional gemological examination or a laboratory report.</div>
   <Link href="/gemstones" className="luxury-back-link"><ArrowLeft size={14}/> Back to all gemstones</Link>
  </article>;
