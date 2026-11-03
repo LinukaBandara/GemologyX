@@ -17,6 +17,7 @@
 - Added a dedicated dynamic glossary-term page with canonical metadata, breadcrumbs, related terms and educational caveats; this closes the missing `/glossary/[slug]` route used by the browser.
 - Expanded the glossary from 30 to 40 terms with ten additional gemological concepts.
 - Added five detailed gemstone records: andalusite, apatite, danburite, sphene (titanite) and benitoite.
+- Added contextual related-gemstone links to gemstone profile pages, prioritising shared mineral family and then matching listed colours. The page labels this as discovery, not a reliable identification method.
 
 ## Updated data counts
 
