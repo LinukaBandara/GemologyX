@@ -187,3 +187,5 @@ The redundant `/glossary/[term]` template file was removed because it overlapped
 - Expanded gemstone profile FAQ batch (2026-11-06): added one focused, stone-specific buyer or identification question to each of the remaining 29 gemstone profiles. Topics include organic gem materials, common look-alikes, optical effects, treatment disclosure and durability. Together with the core FAQ batch, all 39 gemstone profiles now render at least one relevant FAQ; source-by-source review remains pending.
 
 - Gemstone comparator content batch (2026-11-06): added chemical composition and crystal system to the side-by-side reference, clarified that an unlisted treatment is unknown rather than absent, and explained that Mohs hardness does not measure toughness or impact resistance. Individual-stone identification and appraisal limits remain explicit.
+
+- Tracker inventory correction (2026-11-06): restored Draft/review-pending states for previously completed report-literacy, carat, treatment and Sri Lanka locality/mining/terminology routes while preserving their URLs and keeping final independent reviews open.
