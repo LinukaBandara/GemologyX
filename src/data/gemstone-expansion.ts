@@ -32,7 +32,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "With hardness around 6.5–7 and possible cleavage or stress-related fractures, peridot needs reasonable care. Use lukewarm water, mild soap and a soft brush; avoid sudden temperature changes, steam and ultrasonic cleaning, especially for included or fractured stones.",
       faqs: [{ question: "What gives peridot its green colour?", answer: "Iron within the olivine structure gives peridot its characteristic green colour. A photograph cannot distinguish peridot from other green materials." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Peridot", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gem Encyclopedia: Peridot", url: "https://www.gia.edu/peridot" }, { label: "GIA Peridot Description", url: "https://www.gia.edu/peridot-description" }],
   },
   {
     slug: "opal",
@@ -59,7 +59,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Opal is softer and more sensitive to impact than many crystalline gems. Avoid ultrasonic and steam cleaners, prolonged heat, harsh chemicals and sudden temperature changes. Clean gently with a soft damp cloth; doublets and triplets need particular care around prolonged soaking.",
       faqs: [{ question: "What is the difference between solid opal and a doublet or triplet?", answer: "Solid opal is a single opal piece. A doublet or triplet combines a thin opal layer with backing or a cap; construction should be disclosed because it changes durability and care." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Opal", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Opal Buyer’s Guide", url: "https://www.gia.edu/opal/buyers-guide" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
   },
   {
     slug: "tanzanite",
@@ -87,7 +87,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Tanzanite has moderate hardness and cleavage, so it can chip if struck. Prefer protective settings for rings, remove jewellery during manual work, and clean with mild soap, lukewarm water and a soft brush. Avoid ultrasonic and steam cleaning.",
       faqs: [{ question: "Why is tanzanite associated with one region?", answer: "Commercial tanzanite is strongly associated with the Merelani area of northern Tanzania. A particular stone’s source still needs reliable evidence; colour alone does not prove locality." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Tanzanite", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gem Encyclopedia: Tanzanite", url: "https://www.gia.edu/tanzanite" }, { label: "GIA Tanzanite Description", url: "https://www.gia.edu/tanzanite-description" }],
   },
   {
     slug: "jadeite",
@@ -113,7 +113,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Jadeite is tough but can still crack or chip. Clean with mild soap and lukewarm water; avoid harsh chemicals, steam and ultrasonic cleaning, especially when treatment status is uncertain. Protect carved pieces and avoid hard impacts.",
       faqs: [{ question: "Does “Type A jade” mean untreated jadeite?", answer: "It is a trade term commonly used for jadeite that has not been bleached and polymer-impregnated or dyed, but terminology and documentation should be checked. A laboratory report is more reliable than appearance." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Jadeite", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Jade Description", url: "https://www.gia.edu/jade-description" }, { label: "GIA Jade Buyer’s Guide", url: "https://www.gia.edu/jade/buyers-guide" }],
   },
   {
     slug: "nephrite",
@@ -139,7 +139,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Nephrite is tough but can be scratched or damaged by strong impacts. Clean with mild soap, water and a soft cloth. Avoid harsh chemicals, abrasive cleaners and ultrasonic cleaning when treatments or repairs are uncertain.",
       faqs: [{ question: "Is nephrite the same mineral as jadeite?", answer: "No. Nephrite is mainly amphibole minerals, while jadeite is a pyroxene. Both are called jade in trade and can look similar, so confirm the material when it affects value." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Nephrite", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Jade Description", url: "https://www.gia.edu/jade-description" }, { label: "GIA Jade Buyer’s Guide", url: "https://www.gia.edu/jade/buyers-guide" }],
   },
   {
     slug: "amethyst",
@@ -167,7 +167,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Quartz has hardness 7, but amethyst colour can fade with prolonged exposure to intense light or heat in some circumstances. Store away from strong direct sunlight, avoid sudden temperature changes and clean with mild soap, lukewarm water and a soft brush.",
       faqs: [{ question: "Can amethyst change colour with heat or light?", answer: "Heating can change amethyst’s colour, and prolonged exposure to strong light may affect some material. Ask about treatment and avoid leaving jewellery in intense heat or sunlight." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Amethyst", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gem Encyclopedia: Amethyst", url: "https://www.gia.edu/amethyst-description" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
   },
   {
     slug: "citrine",
@@ -195,7 +195,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Citrine has quartz hardness of 7. Clean with mild soap and warm water and a soft brush. Avoid prolonged strong heat and direct sunlight for extended periods, and protect the stone from hard impacts that could chip edges or corners.",
       faqs: [{ question: "Is commercial citrine always naturally yellow quartz?", answer: "No. Much commercial citrine is produced by heating amethyst or other quartz. Natural and treated material may look similar, so ask for treatment disclosure." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Citrine", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gem Encyclopedia: Citrine", url: "https://www.gia.edu/citrine" }, { label: "GIA Citrine Buyer’s Guide", url: "https://www.gia.edu/citrine/buyers-guide" }],
   },
   {
     slug: "zircon",
@@ -223,7 +223,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Zircon can be brittle and may abrade or chip at facet edges despite its sparkle. Use a protective setting, avoid hard knocks, and clean gently with mild soap and lukewarm water. Avoid ultrasonic or steam cleaning for fractured or uncertain material.",
       faqs: [{ question: "Is zircon the same as cubic zirconia?", answer: "No. Zircon is a natural mineral; cubic zirconia is a laboratory-made material used as a diamond imitation. Similar names do not mean they are the same substance." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Zircon", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Zircon Buyer’s Guide", url: "https://www.gia.edu/zircon/buyers-guide" }, { label: "GIA Zircon Description", url: "https://www.gia.edu/zircon-description" }],
   },
   {
     slug: "iolite",
@@ -249,7 +249,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Iolite has good everyday hardness but can be damaged by sharp impact or along cleavage directions. Clean with mild soap, lukewarm water and a soft brush. Avoid ultrasonic and steam cleaning when fractures or treatment status are uncertain.",
       faqs: [{ question: "Why can iolite look like different colours from different angles?", answer: "Iolite has strong pleochroism, so its colour can vary with viewing direction. Cut orientation affects the face-up appearance and the colour visible through the gem." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Iolite", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Iolite Description", url: "https://www.gia.edu/iolite-description" }, { label: "GIA Iolite Buyer’s Guide", url: "https://www.gia.edu/gia-website/iolite/buyers-guide" }],
   },
   {
     slug: "chrysoberyl",
@@ -275,7 +275,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Chrysoberyl's hardness of about 8.5 makes it durable for jewellery. Clean with mild soap, warm water and a soft brush. Avoid hard impacts and use additional caution with stones that have significant fractures or specialised settings.",
       faqs: [{ question: "Is every chrysoberyl an alexandrite?", answer: "No. Alexandrite is the rare colour-change variety of chrysoberyl. Other chrysoberyl can be yellow, green or brown and may show a cat’s-eye effect." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Chrysoberyl", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Alexandrite and Chrysoberyl", url: "https://www.gia.edu/alexandrite" }, { label: "GIA chrysoberyl research", url: "https://www.gia.edu/gems-gemology/spring-2014-v-chrysoberyl-stone-sundberg" }],
   }
   ,
   {
@@ -293,7 +293,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "With hardness around 6.5–7.5, andalusite is suitable for carefully worn jewellery but can be damaged by hard knocks. Use mild soap, lukewarm water and a soft brush; avoid harsh chemicals and protect it from impact.",
       faqs: [{ question: "What is distinctive about andalusite’s colour?", answer: "Andalusite can show different colours from different viewing directions and may have cross-shaped colour zoning. The effect is a property of the material, not proof of locality." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Andalusite", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gem Collection: Andalusite specimen from Sri Lanka", url: "https://www.gia.edu/doc/andalusite-34773.pdf" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
   },
   {
     slug: "apatite", name: "Apatite", category: "Semi-Precious", mineralFamily: "Apatite group", chemicalFormula: "Ca₅(PO₄)₃(F,Cl,OH)", hardness: "5", crystalSystem: "Hexagonal", colors: ["Blue", "Green", "Yellow", "Violet", "Colourless"], transparency: "Transparent to opaque", commonTreatments: ["Some material may be heated or otherwise enhanced; verify disclosure"], description: "A phosphate mineral found in vivid blue and green gem varieties, but softer than many jewellery stones.",
@@ -310,7 +310,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Apatite has Mohs hardness of about 5 and can scratch more easily than quartz or corundum. Reserve it for protective settings or occasional wear, clean gently with mild soap and water, and avoid ultrasonic or steam cleaning.",
       faqs: [{ question: "Is apatite suitable for a frequently worn ring?", answer: "Apatite is relatively soft compared with many jewellery gems and can scratch or chip. It is usually better protected in pendants or earrings, or worn in a protective setting with care." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Apatite", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gems & Gemology: Gem apatite", url: "https://www.gia.edu/doc/SU15.pdf" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
   },
   {
     slug: "danburite", name: "Danburite", category: "Semi-Precious", mineralFamily: "Danburite", chemicalFormula: "CaB₂(SiO₄)₂", hardness: "7–7.5", crystalSystem: "Orthorhombic", colors: ["Colourless", "Pale yellow", "Pinkish", "Brown"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A transparent borosilicate gemstone often valued for its bright appearance and near-colourless material.",
@@ -327,7 +327,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Danburite's hardness around 7–7.5 is reasonable for jewellery, though it can still chip or fracture. Clean with mild soap, lukewarm water and a soft brush, and avoid hard impacts.",
       faqs: [{ question: "How can I distinguish danburite from similar clear gems?", answer: "Appearance alone is not reliable. A gemologist can use refractive and other physical properties to distinguish danburite from quartz, topaz and other look-alikes." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Danburite", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gem Project: Danburite", url: "https://www.gia.edu/gia-gem-project-various-gems-d-h" }, { label: "GIA Gems & Gemology: Danburite in Vietnam", url: "https://www.gia.edu/gems-gemology/winter-2016-danburite-luc-yen-mining-area-vietnam" }],
   },
   {
     slug: "sphene", name: "Sphene (Titanite)", category: "Semi-Precious", mineralFamily: "Titanite", chemicalFormula: "CaTiSiO₅", hardness: "5–5.5", crystalSystem: "Monoclinic", colors: ["Yellow", "Green", "Brown", "Reddish", "Orange"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A high-dispersion gemstone prized for vivid spectral flashes, with care needs due to its modest hardness.",
@@ -344,7 +344,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "With hardness around 5–5.5 and relatively brittle behaviour, sphene is best suited to pendants, earrings or carefully protected rings. Avoid hard knocks, abrasive contact, ultrasonic cleaners and steam; clean gently with mild soap and water.",
       faqs: [{ question: "Why does sphene show colourful flashes?", answer: "Sphene, also called titanite, has high dispersion that can produce strong spectral flashes. Its modest hardness means it still needs protection from scratches and impact." }],
     }
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Sphene", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gems & Gemology: Yellow sphene", url: "https://www.gia.edu/gems-gemology/summer-2025-microworld-soap-bubbles-in-yellow-sphene0" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
   },
   {
     slug: "benitoite", name: "Benitoite", category: "Semi-Precious", mineralFamily: "Barium titanium silicate", chemicalFormula: "BaTiSi₃O₉", hardness: "6–6.5", crystalSystem: "Hexagonal", colors: ["Blue", "Violet-blue", "Colourless"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A rare blue gemstone known for strong dispersion and its association with a limited Californian source.",
@@ -361,6 +361,6 @@ export const expandedGemstones: Gemstone[] = [
       care: "Benitoite has hardness around 6–6.5 and should be protected from scratches and sharp impacts. Use a protective setting for rings, store separately and clean gently with mild soap and water.",
       faqs: [{ question: "Is blue colour enough to identify benitoite?", answer: "No. Several gems can be blue. Benitoite is uncommon and should be identified through gemological testing, especially when a purchase price depends on the species." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia (general reference) — Benitoite", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gems & Gemology: Benitoite from California", url: "https://www.gia.edu/gems-gemology/fall-1997-benitoite-california-laurs" }, { label: "GIA Historical Reading List: Benitoite", url: "https://www.gia.edu/benitoite-reading-list" }],
   }
 ];

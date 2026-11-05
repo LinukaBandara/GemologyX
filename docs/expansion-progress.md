@@ -189,3 +189,5 @@ The redundant `/glossary/[term]` template file was removed because it overlapped
 - Gemstone comparator content batch (2026-11-06): added chemical composition and crystal system to the side-by-side reference, clarified that an unlisted treatment is unknown rather than absent, and explained that Mohs hardness does not measure toughness or impact resistance. Individual-stone identification and appraisal limits remain explicit.
 
 - Tracker inventory correction (2026-11-06): restored Draft/review-pending states for previously completed report-literacy, carat, treatment and Sri Lanka locality/mining/terminology routes while preserving their URLs and keeping final independent reviews open.
+
+- Profile-reference upgrade (2026-11-06): replaced general encyclopedia-only links on the first 15 expanded gemstone profiles with stone-specific GIA descriptions/buyer guides where available, and relevant GIA research or collection records where a dedicated overview was not available. Link validity and source-to-claim scope still need a full editorial audit.
