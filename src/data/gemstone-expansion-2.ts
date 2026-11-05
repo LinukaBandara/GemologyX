@@ -24,7 +24,8 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Morganite can occur in sizeable crystals and faceted stones may appear relatively clean, but fractures, liquid inclusions and growth features can occur. Inspect inclusions for their visibility and position, especially if they reach the surface or lie near a vulnerable facet edge.",
       valueFactors: ["Pink-to-orange-pink hue and saturation", "Colour evenness and face-up appearance", "Clarity and transparency", "Cut orientation and proportions", "Carat weight and finished dimensions", "Treatment disclosure and reliable identification"],
       certification: "A recognized gemological laboratory can identify beryl and document relevant observations about treatment. Check the report’s exact wording; a report does not automatically prove mine origin, market value or future resale price.",
-      care: "Morganite has good hardness for jewellery but may contain fractures and can be damaged by impact. Clean gently with lukewarm water, mild soap and a soft brush. Avoid harsh chemicals and ask a jeweller before using ultrasonic or steam equipment if the stone is included, fractured or treated."
+      care: "Morganite has good hardness for jewellery but may contain fractures and can be damaged by impact. Clean gently with lukewarm water, mild soap and a soft brush. Avoid harsh chemicals and ask a jeweller before using ultrasonic or steam equipment if the stone is included, fractured or treated.",
+      faqs: [{ question: "Is morganite related to emerald and aquamarine?", answer: "Yes. Morganite, emerald and aquamarine are varieties of beryl, distinguished by colour and trace-element chemistry." }],
     },
     sources: [{ label: "GIA Gem Encyclopedia: Morganite", url: "https://www.gia.edu/morganite-description" }, { label: "GIA Gübelin Gem Project: Beryl data sheets", url: "https://www.gia.edu/gia-gubelin-gem-project-research" }]
   },
@@ -50,7 +51,8 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Kunzite often appears relatively clean to the unaided eye, although internal features and fractures can occur. Its two perfect cleavage directions create a risk of splitting during cutting or after a hard impact; a visible fracture near an edge deserves careful assessment.",
       valueFactors: ["Pink-to-violet hue and saturation", "Pleochroic colour visible face-up", "Clarity and fracture placement", "Cut depth, orientation and symmetry", "Carat weight and finished size", "Treatment disclosure and colour stability"],
       certification: "A laboratory report can confirm spodumene variety and record treatment observations within the lab’s methods. Read any report for what was examined; it may not establish treatment history or geographic origin conclusively.",
-      care: "Kunzite needs protection from sharp impact, heat and prolonged intense light. Store it in a closed, separate compartment when not worn. Clean with mild soap and lukewarm water; avoid ultrasonic and steam cleaning because cleavage and fractures can make the stone vulnerable."
+      care: "Kunzite needs protection from sharp impact, heat and prolonged intense light. Store it in a closed, separate compartment when not worn. Clean with mild soap and lukewarm water; avoid ultrasonic and steam cleaning because cleavage and fractures can make the stone vulnerable.",
+      faqs: [{ question: "Why should kunzite be protected from strong light?", answer: "Some kunzite can fade with prolonged exposure to strong light. Store it away from direct sun and follow a jeweller’s care advice for the specific stone." }],
     },
     sources: [{ label: "GIA Gem Encyclopedia: Kunzite description", url: "https://www.gia.edu/kunzite-description" }, { label: "GIA: Kunzite quality factors", url: "https://www.gia.edu/gia-website/kunzite-quality-factors" }]
   },
@@ -76,7 +78,8 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Matrix veins and patches can be part of the natural host-rock appearance. Surface pits, fractures and uneven colour may also be present. Examine construction from the sides and back where possible, but use a qualified gemologist to assess uncertain material.",
       valueFactors: ["Blue-to-green colour and evenness", "Texture, polish and matrix pattern", "Natural versus stabilized, dyed or composite status", "Craftsmanship and condition", "Size, shape and intended use", "Reliable disclosure and provenance"],
       certification: "An independent gemological report can help distinguish turquoise from imitations and may describe detectable treatment. Reports have limits, so check whether they address natural material, enhancement and construction separately.",
-      care: "Turquoise is relatively soft and porous. Keep it away from cosmetics, oils, household cleaners, heat and prolonged water exposure. Wipe with a soft dry cloth after wear and store separately to prevent scratches. Avoid ultrasonic and steam cleaning."
+      care: "Turquoise is relatively soft and porous. Keep it away from cosmetics, oils, household cleaners, heat and prolonged water exposure. Wipe with a soft dry cloth after wear and store separately to prevent scratches. Avoid ultrasonic and steam cleaning.",
+      faqs: [{ question: "Why is turquoise sometimes described as stabilized?", answer: "Stabilization usually means a treatment has been used to improve turquoise’s durability or appearance. Ask whether it is stabilized, dyed or otherwise treated, since appearance alone cannot show this." }],
     },
     sources: [{ label: "GIA Gem Encyclopedia: Turquoise description", url: "https://www.gia.edu/turquoise-description" }, { label: "GIA: An introduction to gem treatments", url: "https://www.gia.edu/gem-treatment" }]
   },
@@ -101,7 +104,8 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Calcite appears as white patches or veins, while pyrite can form metallic-looking flecks. These are components of the aggregate rather than necessarily foreign inclusions. Cracks, repairs or surface coatings should be evaluated separately.",
       valueFactors: ["Blue hue, saturation and evenness", "Texture and polish quality", "Calcite pattern and pyrite distribution", "Natural material versus dyed or reconstructed product", "Workmanship, size and condition", "Accurate treatment and provenance disclosure"],
       certification: "For significant purchases, an independent report can describe lapis lazuli and note detectable treatments or imitations. The report’s scope may not establish the mine of origin; read its conclusion and limitations carefully.",
-      care: "Lapis is softer than many jewellery gems and may be porous or impregnated. Keep it away from acids, solvents, cosmetics and heat. Clean with a soft damp cloth only when appropriate, dry promptly, and avoid ultrasonic or steam cleaners."
+      care: "Lapis is softer than many jewellery gems and may be porous or impregnated. Keep it away from acids, solvents, cosmetics and heat. Clean with a soft damp cloth only when appropriate, dry promptly, and avoid ultrasonic or steam cleaners.",
+      faqs: [{ question: "Is lapis lazuli a single mineral?", answer: "No. Lapis lazuli is a rock made mostly of lazurite with other minerals such as calcite and pyrite. Their proportions affect its colour and pattern." }],
     },
     sources: [{ label: "GIA Gem Encyclopedia: Lapis lazuli", url: "https://www.gia.edu/lapis-lazuli" }, { label: "GIA: Lapis lazuli description", url: "https://www.gia.edu/lapis-lazuli-description-v1" }, { label: "GIA: An introduction to gem treatments", url: "https://www.gia.edu/gem-treatment" }]
   },
@@ -126,7 +130,8 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Plant and animal inclusions can be scientifically interesting, but identification requires care because modern or composite imitations exist. Look for natural flow structures and consistent internal features; do not rely on a single insect or bubble as proof.",
       valueFactors: ["Colour, transparency and visual character", "Condition and surface polish", "Size and shape", "Natural versus pressed or reconstructed material", "Credible inclusion identification and provenance", "Treatment disclosure"],
       certification: "For valuable amber, an independent report can assess material identity, treatment and whether an inclusion appears consistent with the surrounding amber. No single feature guarantees age or locality; use reports with a clearly stated scope.",
-      care: "Amber scratches and softens more easily than most mineral gems. Keep it away from heat, solvents, perfume, cleaning products and hard surfaces. Wipe gently with a soft cloth and store separately in a cool, stable environment."
+      care: "Amber scratches and softens more easily than most mineral gems. Keep it away from heat, solvents, perfume, cleaning products and hard surfaces. Wipe gently with a soft cloth and store separately in a cool, stable environment.",
+      faqs: [{ question: "Is amber a mineral?", answer: "No. Amber is fossilized tree resin and is classified as an organic gem material. Inclusions and treatments should be assessed carefully by a qualified specialist." }],
     },
     sources: [{ label: "GIA Gem Encyclopedia: Amber", url: "https://www.gia.edu/amber" }, { label: "GIA: An introduction to gem treatments", url: "https://www.gia.edu/gem-treatment" }]
   },
@@ -152,7 +157,8 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Cloudy or fibrous internal features can contribute to rose quartz’s translucent appearance. Fractures and uneven colour may also occur. Evaluate how these features affect the finished object’s appearance and durability.",
       valueFactors: ["Attractive, even pink colour", "Translucency and internal appearance", "Cut, carving or bead workmanship", "Size, symmetry and polish", "Condition and absence of damaging fractures", "Treatment disclosure and accurate identification"],
       certification: "A report from a recognized laboratory can identify quartz and document relevant characteristics. Most ordinary rose quartz does not require a report, but independent identification may be useful for expensive, unusual or provenance-sensitive pieces.",
-      care: "Quartz has good hardness for many jewellery uses, but it can still chip or scratch against harder materials. Clean with mild soap, lukewarm water and a soft cloth or brush. Store separately and avoid sudden impacts."
+      care: "Quartz has good hardness for many jewellery uses, but it can still chip or scratch against harder materials. Clean with mild soap, lukewarm water and a soft cloth or brush. Store separately and avoid sudden impacts.",
+      faqs: [{ question: "Can rose quartz show a star effect?", answer: "Some rose quartz cabochons show asterism when light reflects from aligned microscopic inclusions. The effect depends on the material and cut and is not present in every stone." }],
     },
     sources: [{ label: "GIA Gem Encyclopedia: Rose quartz description", url: "https://origin.prod.gia.edu/rose-quartz-description" }, { label: "GIA Gems & Gemology: Colored Stones Unearthed", url: "https://www.gia.edu/doc/winter-2022-colored-stones-unearthed.pdf" }]
   },
@@ -177,7 +183,8 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Surface marks, nacre layers and growth features vary naturally. Evaluate lustre, surface quality, shape and nacre quality together; a single blemish or round shape should not be treated as a complete quality grade.",
       valueFactors: ["Lustre and reflected-light sharpness", "Surface quality and nacre quality", "Size, shape and colour", "Matching across a strand or pair", "Natural, cultured or imitation status", "Treatment disclosure and workmanship"],
       certification: "A recognized pearl laboratory can assess whether a pearl is natural or cultured, its saltwater or freshwater origin where determinable, and some treatment characteristics. Check the exact report scope and any uncertainty stated by the laboratory.",
-      care: "Pearl is relatively soft and can be scratched or damaged by heat, acids, perfume, hairspray and cosmetics. Put jewellery on after applying personal-care products, wipe pearls with a soft cloth after wear and store them separately. Never use ultrasonic or steam cleaning."
+      care: "Pearl is relatively soft and can be scratched or damaged by heat, acids, perfume, hairspray and cosmetics. Put jewellery on after applying personal-care products, wipe pearls with a soft cloth after wear and store them separately. Never use ultrasonic or steam cleaning.",
+      faqs: [{ question: "Are cultured pearls real pearls?", answer: "Yes. Cultured pearls form inside molluscs through a human-assisted process. They are distinct from imitations, which are made from other materials." }],
     },
     sources: [{ label: "GIA: Pearl care and cleaning", url: "https://www.gia.edu/pearl-care-cleaning" }, { label: "GIA Pearl Buyer’s Guide", url: "https://www.gia.edu/pearl/buyers-guide" }]
   }

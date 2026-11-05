@@ -24,7 +24,8 @@ export const expandedGemstonesThree: Gemstone[] = [
       inclusions: "Many faceted ametrines appear eye-clean, but fractures and internal growth features may occur. Check the colour boundary, transparency and any surface-reaching fractures under suitable lighting and magnification.",
       valueFactors: ["Balance and contrast of the two colour zones", "Face-up colour distribution and cut orientation", "Transparency and visible inclusions", "Cut design, symmetry and polish", "Carat weight and finished size", "Reliable identity and treatment disclosure"],
       certification: "An independent laboratory can identify quartz and assess whether the colour zoning is consistent with natural material using its available methods. Reports do not automatically prove mine origin or establish a market price.",
-      care: "Ametrine has good hardness for most jewellery uses but may chip at edges or along fractures. Warm soapy water and a soft brush are generally suitable. Avoid abrupt impacts and confirm treatment before using ultrasonic or steam equipment."
+      care: "Ametrine has good hardness for most jewellery uses but may chip at edges or along fractures. Warm soapy water and a soft brush are generally suitable. Avoid abrupt impacts and confirm treatment before using ultrasonic or steam equipment.",
+      faqs: [{ question: "How does ametrine show both purple and yellow?", answer: "Ametrine contains zones of amethyst and citrine colour in one quartz crystal. The boundary and colour distribution vary; a two-colour appearance alone does not establish natural origin." }],
     },
     sources: [{ label: "GIA Gem Encyclopedia: Ametrine", url: "https://www.gia.edu/ametrine-description" }, { label: "GIA Ametrine Buyer’s Guide", url: "https://www.gia.edu/ametrine/buyers-guide" }]
   },
@@ -50,7 +51,8 @@ export const expandedGemstonesThree: Gemstone[] = [
       inclusions: "Reflective internal particles can create aventurescence, the glittering effect for which some sunstones are valued. The type, density and orientation of inclusions influence appearance. Fractures and cleavage can affect durability and should be evaluated separately.",
       valueFactors: ["Colour and evenness", "Strength and pattern of aventurescence, if present", "Transparency and inclusion placement", "Species identification and provenance", "Cut orientation and finish", "Condition and treatment disclosure"],
       certification: "A laboratory can identify feldspar species and document observed optical features within its methods. The term sunstone alone is not a precise species determination and does not prove locality.",
-      care: "Feldspar sunstones have moderate hardness and may be vulnerable to cleavage and impact. Use protective settings for rings, clean with mild soap and lukewarm water, and avoid hard knocks, ultrasonic cleaning and steam."
+      care: "Feldspar sunstones have moderate hardness and may be vulnerable to cleavage and impact. Use protective settings for rings, clean with mild soap and lukewarm water, and avoid hard knocks, ultrasonic cleaning and steam.",
+      faqs: [{ question: "What creates the sparkle in sunstone?", answer: "Reflective platelets or inclusions within feldspar can create aventurescence, a glittering effect as the stone moves. The appearance depends on the inclusions and cut." }],
     },
     sources: [{ label: "GIA Gem Encyclopedia: Sunstone", url: "https://origin.prod.gia.edu/sunstone" }, { label: "GIA Gem Encyclopedia: Sunstone overview", url: "https://www.gia.edu/gem-encyclopedia" }]
   },
@@ -76,7 +78,8 @@ export const expandedGemstonesThree: Gemstone[] = [
       inclusions: "Internal banding, dendritic patterns, mineral inclusions and host-rock features can create distinctive appearances. These patterns may be natural, but they do not by themselves identify a locality or demonstrate that colour is untreated.",
       valueFactors: ["Colour, pattern and translucency", "Evenness and visual character", "Carving, cabochon or bead craftsmanship", "Size, polish and condition", "Natural versus treated or assembled status", "Accurate material naming and disclosure"],
       certification: "A qualified gemologist or laboratory can identify chalcedony and describe treatments or construction where detectable. Reports may identify the broader material rather than validate every commercial variety name.",
-      care: "Chalcedony has good everyday hardness, though it can chip or fracture. Clean with mild soap and lukewarm water. If the stone is dyed, impregnated or assembled, follow material-specific care instructions and avoid harsh chemicals."
+      care: "Chalcedony has good everyday hardness, though it can chip or fracture. Clean with mild soap and lukewarm water. If the stone is dyed, impregnated or assembled, follow material-specific care instructions and avoid harsh chemicals.",
+      faqs: [{ question: "What is chalcedony made of?", answer: "Chalcedony is microcrystalline quartz: tiny quartz crystals intergrown into a compact material. Agate and some other trade varieties are forms of chalcedony." }],
     },
     sources: [{ label: "GIA: Gem Cutters Reveal the Beauty of Chalcedony", url: "https://www.gia.edu/gia-news-research/gem-cutters-reveal-beauty-chalcedony" }, { label: "GIA Gems & Gemology: Quartz family and chalcedony varieties", url: "https://www.gia.edu/doc/winter-2022-colored-stones-unearthed.pdf" }]
   },
@@ -102,7 +105,8 @@ export const expandedGemstonesThree: Gemstone[] = [
       inclusions: "Banding, cavity fillings and mineral patterns form part of agate’s visual character. Fractures, pits and uneven polish can affect durability and finish. Pattern names such as lace, moss, iris or fire are not substitutes for an accurate material description.",
       valueFactors: ["Pattern definition and visual interest", "Colour and translucency", "Natural versus dyed or composite status", "Carving and polish quality", "Size, shape and usable material", "Disclosure and condition"],
       certification: "A laboratory can identify chalcedony and may detect some dyes or composites. The report should state the material and observed treatment findings; it may not confirm a seller’s pattern name or locality claim.",
-      care: "Agate is suitable for many jewellery and carving uses but can still chip. Mild soap, lukewarm water and a soft cloth are good general choices. Avoid solvents, acids, heat and ultrasonic cleaning when treatment or construction is uncertain."
+      care: "Agate is suitable for many jewellery and carving uses but can still chip. Mild soap, lukewarm water and a soft cloth are good general choices. Avoid solvents, acids, heat and ultrasonic cleaning when treatment or construction is uncertain.",
+      faqs: [{ question: "Are agate bands always natural and untreated?", answer: "No. Agate can be dyed or otherwise treated to change its colour. Strong or unusually even colours may warrant questions, but a laboratory is needed for reliable treatment identification." }],
     },
     sources: [{ label: "GIA: Gem Cutters Reveal the Beauty of Chalcedony", url: "https://www.gia.edu/gia-news-research/gem-cutters-reveal-beauty-chalcedony" }, { label: "GIA: An introduction to gem treatments", url: "https://www.gia.edu/gem-treatment" }]
   },
@@ -128,7 +132,8 @@ export const expandedGemstonesThree: Gemstone[] = [
       inclusions: "Fine mineral inclusions produce many of jasper’s opaque colours and patterns. Fractures, veins and cavities may occur, and each affects the finished material differently. The visual pattern does not by itself establish exact composition or origin.",
       valueFactors: ["Pattern and colour harmony", "Workmanship and polish", "Size and usable material", "Fractures, pits and surface condition", "Natural versus enhanced status", "Reliable naming and disclosure"],
       certification: "For significant purchases, independent testing can identify the material and describe detectable treatments. Many decorative pieces are sold without laboratory reports, so buyers should ask clear questions about composition and enhancement.",
-      care: "Jasper is reasonably hard for jewellery and carvings but can chip under impact. Clean with mild soap and water, then dry with a soft cloth. Keep it away from harsh chemicals and store separately from harder gems."
+      care: "Jasper is reasonably hard for jewellery and carvings but can chip under impact. Clean with mild soap and water, then dry with a soft cloth. Keep it away from harsh chemicals and store separately from harder gems.",
+      faqs: [{ question: "How is jasper different from transparent chalcedony?", answer: "Jasper is an opaque, fine-grained silica material with mineral impurities that create colour and pattern. Chalcedony is often translucent, though the trade names cover varied material." }],
     },
     sources: [{ label: "GIA: Gem Cutters Reveal the Beauty of Chalcedony", url: "https://www.gia.edu/gia-news-research/gem-cutters-reveal-beauty-chalcedony" }, { label: "GIA: March birthstones and bloodstone", url: "https://www.gia.edu/birthstones/march-birthstones" }]
   },
@@ -155,7 +160,8 @@ export const expandedGemstonesThree: Gemstone[] = [
       inclusions: "Red iron-oxide inclusions create the namesake spots within green chalcedony. Their distribution is naturally variable. Fractures or surface pits may affect polish, durability and carving quality.",
       valueFactors: ["Green body colour and red inclusion pattern", "Contrast and distribution of spots", "Polish, carving and workmanship", "Size and condition", "Accurate identification and treatment disclosure"],
       certification: "A laboratory report can identify chalcedony and record relevant observations. A report may not establish geographic origin or validate a commercial pattern name unless the laboratory specifically addresses it.",
-      care: "Bloodstone has good everyday hardness but can still chip or scratch. Clean with mild soap and lukewarm water, use a soft cloth, and store away from harder stones. Avoid chemical tests and sudden impact."
+      care: "Bloodstone has good everyday hardness but can still chip or scratch. Clean with mild soap and lukewarm water, use a soft cloth, and store away from harder stones. Avoid chemical tests and sudden impact.",
+      faqs: [{ question: "What are the red spots in bloodstone?", answer: "Bloodstone is typically dark green chalcedony with red inclusions, traditionally identified as hematite. The amount and distribution of red vary between pieces." }],
     },
     sources: [{ label: "GIA: March birthstones and bloodstone", url: "https://www.gia.edu/birthstones/march-birthstones" }, { label: "GIA: Gem Cutters Reveal the Beauty of Chalcedony", url: "https://www.gia.edu/gia-news-research/gem-cutters-reveal-beauty-chalcedony" }]
   },
@@ -181,7 +187,8 @@ export const expandedGemstonesThree: Gemstone[] = [
       inclusions: "Aligned fibrous inclusions produce the silky moving band. In tiger’s-eye these fibres are enclosed in quartz; internal fractures or poorly oriented fibres can affect the continuity of the effect and the durability of a finished cabochon.",
       valueFactors: ["Sharpness, continuity and placement of the chatoyant band", "Golden-brown or blue-grey colour and contrast", "Cabochon orientation and polish", "Size and condition", "Natural versus enhanced material", "Reliable identification and disclosure"],
       certification: "A qualified gemologist can identify quartz and describe chatoyancy and observed features. For significant purchases, ask whether a report addresses material identity and any detectable enhancement; locality may remain unconfirmed.",
-      care: "Tiger’s-eye is suitable for many jewellery uses, but hard impact can chip or fracture it. Clean with mild soap and lukewarm water. Store separately and avoid harsh chemicals or abrasive cleaning."
+      care: "Tiger’s-eye is suitable for many jewellery uses, but hard impact can chip or fracture it. Clean with mild soap and lukewarm water. Store separately and avoid harsh chemicals or abrasive cleaning.",
+      faqs: [{ question: "What causes the moving band of light in tiger’s-eye?", answer: "A preserved fibrous structure reflects light directionally, producing chatoyancy. The effect is strongest when the stone is cut and polished to display the fibres properly." }],
     },
     sources: [{ label: "GIA Museum: Tiger’s-Eye Quartz", url: "https://www.gia.edu/uk-en/gia-museum-exhibit-tigers-eye-quartz" }, { label: "GIA Gems & Gemology: Optical effects in phenomenal gemstones", url: "https://www.gia.edu/doc/summer-2025-phenomenal-gemstones.pdf" }]
   }
