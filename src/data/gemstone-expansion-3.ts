@@ -54,7 +54,7 @@ export const expandedGemstonesThree: Gemstone[] = [
       care: "Feldspar sunstones have moderate hardness and may be vulnerable to cleavage and impact. Use protective settings for rings, clean with mild soap and lukewarm water, and avoid hard knocks, ultrasonic cleaning and steam.",
       faqs: [{ question: "What creates the sparkle in sunstone?", answer: "Reflective platelets or inclusions within feldspar can create aventurescence, a glittering effect as the stone moves. The appearance depends on the inclusions and cut." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia: Sunstone", url: "https://origin.prod.gia.edu/sunstone" }, { label: "GIA Gem Encyclopedia: Sunstone overview", url: "https://www.gia.edu/gem-encyclopedia" }]
+    sources: [{ label: "GIA Gem Encyclopedia: Sunstone", url: "https://www.gia.edu/sunstone" }, { label: "GIA Gem Encyclopedia: Sunstone overview", url: "https://www.gia.edu/gem-encyclopedia" }]
   },
   {
     slug: "chalcedony",

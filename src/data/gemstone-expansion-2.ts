@@ -160,7 +160,7 @@ export const expandedGemstonesTwo: Gemstone[] = [
       care: "Quartz has good hardness for many jewellery uses, but it can still chip or scratch against harder materials. Clean with mild soap, lukewarm water and a soft cloth or brush. Store separately and avoid sudden impacts.",
       faqs: [{ question: "Can rose quartz show a star effect?", answer: "Some rose quartz cabochons show asterism when light reflects from aligned microscopic inclusions. The effect depends on the material and cut and is not present in every stone." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia: Rose quartz description", url: "https://origin.prod.gia.edu/rose-quartz-description" }, { label: "GIA Gems & Gemology: Colored Stones Unearthed", url: "https://www.gia.edu/doc/winter-2022-colored-stones-unearthed.pdf" }]
+    sources: [{ label: "GIA Gem Encyclopedia: Rose quartz description", url: "https://www.gia.edu/rose-quartz-description" }, { label: "GIA Gems & Gemology: Colored Stones Unearthed", url: "https://www.gia.edu/doc/winter-2022-colored-stones-unearthed.pdf" }]
   },
   {
     slug: "pearl",
