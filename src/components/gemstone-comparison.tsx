@@ -14,9 +14,11 @@ export function GemstoneComparison({ current, gemstones }: { current: Gemstone; 
 
   const facts = [
     { label: "Mineral family", first: current.mineralFamily, second: compared.mineralFamily },
+    { label: "Composition", first: current.chemicalFormula ?? "Not specified", second: compared.chemicalFormula ?? "Not specified" },
+    { label: "Crystal system", first: current.crystalSystem ?? "Variable or not specified", second: compared.crystalSystem ?? "Variable or not specified" },
     { label: "Mohs hardness", first: current.hardness, second: compared.hardness },
     { label: "Colour range", first: current.colors.join(", "), second: compared.colors.join(", ") },
-    { label: "Common treatments", first: current.commonTreatments?.join(", ") ?? "No routine treatment listed", second: compared.commonTreatments?.join(", ") ?? "No routine treatment listed" },
+    { label: "Common treatments", first: current.commonTreatments?.length ? current.commonTreatments.join(", ") : "Not listed for this profile; ask about the individual stone", second: compared.commonTreatments?.length ? compared.commonTreatments.join(", ") : "Not listed for this profile; ask about the individual stone" },
     { label: "Transparency", first: current.transparency ?? "Not specified", second: compared.transparency ?? "Not specified" },
   ];
 
@@ -40,7 +42,7 @@ export function GemstoneComparison({ current, gemstones }: { current: Gemstone; 
         </div>)}
         <div aria-hidden="true" className="hidden items-center justify-center md:flex"><span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-[#173d52] text-[#e7c98f]"><ArrowLeftRight size={16} /></span></div>
       </div>
-      <p className="border-t border-white/10 px-5 py-3 text-[0.68rem] leading-5 text-white/50 sm:px-8">Gemstone properties can vary with composition, structure, treatments and specimen condition. Ask an independent gemologist about an individual stone.</p>
+      <p className="border-t border-white/10 px-5 py-3 text-[0.68rem] leading-5 text-white/50 sm:px-8">These are reference descriptions, not tests of the stone you own. Mohs hardness describes scratch resistance, not toughness or impact resistance. Properties can vary with composition, structure, treatment and specimen condition; ask an independent gemologist about an individual stone.</p>
     </section>
   );
 }
