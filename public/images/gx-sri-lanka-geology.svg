@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none">
+<defs><linearGradient id="sky" x1="320" y1="30" x2="320" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#173F50"/><stop offset="1" stop-color="#071B29"/></linearGradient><linearGradient id="rock" x1="170" y1="230" x2="450" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#D0B17A"/><stop offset="1" stop-color="#745A42"/></linearGradient></defs>
+<circle cx="320" cy="250" r="214" stroke="#C5A16A" stroke-opacity=".28"/><circle cx="320" cy="250" r="175" stroke="#C5A16A" stroke-opacity=".16"/>
+<path d="M60 340 145 230 215 280 300 120 385 255 450 195 580 350V470H60V340Z" fill="url(#sky)" stroke="#C5A16A" stroke-opacity=".55" stroke-width="2"/>
+<path d="m60 340 85-110 70 50 85-160 85 135 65-60 130 155" stroke="#D6C49F" stroke-opacity=".7" stroke-width="2"/>
+<path d="M60 365c82-30 124-10 188 5s112 17 177-8 104-24 155-5v113H60V365Z" fill="url(#rock)" opacity=".76"/>
+<path d="M60 392c88-22 140 5 210 13s117-2 180-22 90-20 130-5" stroke="#E6C995" stroke-width="2" stroke-opacity=".65"/>
+<path d="M60 425c92-24 142 8 214 10s112-7 176-25 91-13 130-1" stroke="#B4C5B3" stroke-width="2" stroke-opacity=".65"/>
+<path d="M120 460c90-18 125 6 194 4s112-18 185-22" stroke="#C5A16A" stroke-width="2" stroke-opacity=".8"/>
+<g transform="translate(320 318)"><path d="M0-44 31-20 25 20 0 45-25 20-31-20 0-44Z" fill="#4C8E9D" stroke="#E5C88F" stroke-width="1.5"/><path d="m0-44 0 89M-31-20h62M-25 20 0-44 25 20" stroke="#D5E8E6" stroke-opacity=".7"/></g>
+<g fill="#C5A16A"><circle cx="135" cy="380" r="4"/><circle cx="490" cy="397" r="5"/><circle cx="210" cy="442" r="3"/></g>
+<text x="320" y="45" text-anchor="middle" fill="#DCC18D" font-family="Georgia,serif" font-size="12" letter-spacing="4">SRI LANKA · GEOLOGICAL HERITAGE</text>
+</svg>

@@ -5,67 +5,57 @@ import { Search, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const NAV = [
-  { label: "Learn", href: "/learn" },
-  { label: "Gemstones", href: "/gemstones" },
-  { label: "Tools", href: "/tools" },
+  { label: "Discover", href: "/gemstones" },
+  { label: "Gemology", href: "/learn" },
   { label: "Origins", href: "/origins" },
+  { label: "Sri Lanka", href: "/origins/sri-lanka" },
+  { label: "Tools", href: "/tools" },
   { label: "Glossary", href: "/glossary" },
-  { label: "About", href: "/about" },
 ];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/90 bg-background/90 backdrop-blur-xl">
-      <div className="container-page flex h-[64px] items-center justify-between md:h-[68px]">
-        <Link href="/" className="group flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="brand-mark" aria-hidden="true"><i /><b /><em /></span>
-          <span className="font-serif text-[1.15rem] font-semibold tracking-tight text-foreground">
-            Gemology<span className="text-gold">X</span>
-          </span>
-        </Link>
-
-        <nav className="hidden items-center gap-6 md:flex">
-          {NAV.map((item) => (
-            <Link key={item.href} href={item.href} className="nav-link">
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="flex items-center gap-2">
-          <Link href="/search" aria-label="Search GemologyX" className="gx-icon-btn">
-            <Search size={16} />
+    <>
+      <div className="gx-topline"><strong>GEMOLOGYX</strong>&nbsp; · &nbsp;The science · The origin · The gem</div>
+      <header className="gx-header">
+        <div className="container-page gx-header-inner">
+          <Link href="/" className="gx-brand" onClick={() => setOpen(false)} aria-label="GemologyX home">
+            <img src="/gemologyx-mark.svg" alt="" width="42" height="42" />
+            <span>
+              <span className="gx-brand-word">Gemology<span>X</span></span>
+              <span className="gx-brand-caption">A world of gems, understood</span>
+            </span>
           </Link>
-          <button
-            type="button"
-            aria-label={open ? "Close menu" : "Open menu"}
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-            className="gx-icon-btn md:hidden"
-          >
-            {open ? <X size={17} /> : <Menu size={17} />}
-          </button>
-        </div>
-      </div>
 
-      {open && (
-        <div className="border-t border-border bg-background md:hidden">
-          <nav className="container-page flex flex-col gap-1 py-3">
+          <nav className="gx-nav" aria-label="Main navigation">
             {NAV.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent-soft"
-              >
-                {item.label}
-              </Link>
+              <Link key={item.href} href={item.href} className="gx-nav-link">{item.label}</Link>
             ))}
           </nav>
+
+          <div className="gx-header-actions">
+            <Link href="/search" aria-label="Search GemologyX" className="gx-search-link"><Search size={16} /></Link>
+            <button
+              type="button"
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              onClick={() => setOpen((value) => !value)}
+              className="gx-menu-button"
+            >
+              {open ? <X size={18} /> : <Menu size={18} />}
+            </button>
+          </div>
         </div>
-      )}
-    </header>
+        {open && (
+          <nav className="gx-mobile-nav container-page" aria-label="Mobile navigation">
+            {NAV.map((item) => (
+              <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</Link>
+            ))}
+          </nav>
+        )}
+      </header>
+    </>
   );
 }
