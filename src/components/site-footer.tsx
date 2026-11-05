@@ -1,86 +1,38 @@
 import Link from "next/link";
 
-const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
-  {
-    title: "Learn",
-    links: [
-      { label: "Guides", href: "/learn" },
-      { label: "Glossary", href: "/glossary" },
-      { label: "Gemstone Certification", href: "/learn/gemstone-certification" },
-      { label: "How to Read a Report", href: "/learn/how-to-read-a-gemstone-report" },
-    ],
-  },
-  {
-    title: "Explore",
-    links: [
-      { label: "Gemstones", href: "/gemstones" },
-      { label: "Origins", href: "/origins" },
-      { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
-      { label: "Trade & Export", href: "/sri-lanka-trade-export" },
-    ],
-  },
-  {
-    title: "Tools",
-    links: [
-      { label: "All Tools", href: "/tools" },
-      { label: "Carat Converter", href: "/tools/carat-to-gram" },
-      { label: "Ring Size", href: "/tools/ring-size" },
-      { label: "Mohs Hardness", href: "/tools/mohs-hardness" },
-    ],
-  },
-  {
-    title: "About",
-    links: [
-      { label: "About Us", href: "/about" },
-      { label: "Editorial Standards", href: "/editorial-standards" },
-      { label: "Contact", href: "/contact" },
-      { label: "Disclaimer", href: "/disclaimer" },
-    ],
-  },
+const COLUMNS = [
+  { title: "Explore", links: [{ label: "Gemstone directory", href: "/gemstones" }, { label: "Gemstone origins", href: "/origins" }, { label: "Sri Lankan gems", href: "/origins/sri-lanka" }, { label: "Mining & trade", href: "/sri-lanka-mining" }] },
+  { title: "Learn", links: [{ label: "Learning library", href: "/learn" }, { label: "Gemstone glossary", href: "/glossary" }, { label: "Certification", href: "/learn/gemstone-certification" }, { label: "Buying guides", href: "/learn" }] },
+  { title: "Resources", links: [{ label: "Practical tools", href: "/tools" }, { label: "Search the library", href: "/search" }, { label: "Editorial standards", href: "/editorial-standards" }, { label: "About GemologyX", href: "/about" }] },
+  { title: "Information", links: [{ label: "Contact", href: "/contact" }, { label: "Privacy", href: "/privacy" }, { label: "Disclaimer", href: "/disclaimer" }, { label: "Terms", href: "/terms" }] },
 ];
 
 export function SiteFooter() {
   return (
-    <footer className="site-footer">
-      <div className="container-page py-14 md:py-16">
-        <div className="footer-top">
-          <div className="footer-brand">
-            <Link href="/" className="footer-brand-name">
-              <span className="brand-mark" aria-hidden="true"><i /><b /><em /></span>
-              Gemology<span>X</span>
+    <footer className="gx-footer">
+      <div className="container-page">
+        <div className="gx-footer-main">
+          <div className="gx-footer-brand">
+            <Link href="/" className="gx-brand">
+              <img src="/gemologyx-mark.svg" alt="" width="42" height="42" />
+              <span><span className="gx-brand-word">Gemology<span>X</span></span><span className="gx-brand-caption">A world of gems, understood</span></span>
             </Link>
-            <p>
-              Empowering minds with accurate, accessible gemology education for a more informed world.
-            </p>
-            <div className="footer-gold-line" />
+            <p>An independent learning and reference destination for the science, origins and character of gemstones — with a special connection to Sri Lanka.</p>
           </div>
-
-          {COLUMNS.map((col) => (
-            <div key={col.title}>
-              <p className="footer-column-title">{col.title}</p>
-              <ul className="mt-4 space-y-2.5">
-                {col.links.map((l) => (
-                  <li key={l.href}>
-                    <Link href={l.href} className="footer-link">{l.label}</Link>
-                  </li>
-                ))}
-              </ul>
+          {COLUMNS.map((column) => (
+            <div key={column.title}>
+              <h2 className="gx-footer-title">{column.title}</h2>
+              <div className="gx-footer-links">
+                {column.links.map((link) => <Link key={link.href} href={link.href}>{link.label}</Link>)}
+              </div>
             </div>
           ))}
         </div>
-
-        <div className="footer-bottom">
-          <p>© 2026 GemologyX. Educational information; not a substitute for professional gemological examination.</p>
-          <div>
-            <Link href="/privacy">Privacy</Link>
-            <Link href="/disclaimer">Disclaimer</Link>
-            <Link href="/editorial-standards">Standards</Link>
-          </div>
+        <div className="gx-footer-bottom">
+          <p>© {new Date().getFullYear()} GemologyX. Educational reference; not a substitute for professional gemological examination.</p>
+          <div className="gx-footer-bottom-links"><Link href="/editorial-standards">Editorial standards</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div>
         </div>
-
-        <div className="footer-credit">
-          <span /> Crafted with care · Knowledge · Science · Integrity <span />
-        </div>
+        <div className="gx-footer-credit">THE SCIENCE · THE ORIGIN · THE GEM</div>
       </div>
     </footer>
   );
