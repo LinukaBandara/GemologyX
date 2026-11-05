@@ -23,6 +23,7 @@ export interface Gemstone {
     valueFactors: string[];
     certification: string;
     care: string;
+    faqs?: { question: string; answer: string }[];
   };
   sources?: { label: string; url: string }[];
 }
@@ -62,6 +63,10 @@ export const gemstones: Gemstone[] = [
         "A laboratory report from a recognized gemological laboratory typically documents a sapphire's identity, weight and measurements, colour, clarity characteristics, and treatment status, and may offer an origin opinion where the evidence supports one. Reports vary in scope and rigor between laboratories, so it is worth understanding which laboratory issued a given report and what that laboratory does and does not attempt to determine.",
       care:
         "Sapphire's high hardness (9 on the Mohs scale) makes it well suited to everyday jewellery wear. It can still chip if struck at the wrong angle, and ultrasonic or steam cleaning should be avoided for stones that have been fracture-filled or otherwise treated in a way that could be affected by heat or vibration. Mild soap and warm water with a soft brush is a safe general-purpose cleaning method for untreated or heat-only-treated stones.",
+      faqs: [
+        { question: "Does a blue colour prove that a sapphire came from Sri Lanka?", answer: "No. Sapphires from different localities can look similar, and Sri Lankan origin cannot be established from colour or a trade name alone. A laboratory may offer an origin opinion when evidence and service scope allow." },
+        { question: "Can every sapphire be cleaned in an ultrasonic cleaner?", answer: "No. Fracture-filled stones and stones with vulnerable inclusions or other treatments may be damaged by vibration or heat. When treatment is unknown, use mild soap, lukewarm water and a soft brush, or ask a jeweller familiar with the stone." },
+      ],
     },
     sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }],
   },
@@ -99,6 +104,10 @@ export const gemstones: Gemstone[] = [
         "A report from a recognized gemological laboratory typically documents identity, weight, colour, clarity characteristics, and treatment status, including whether the stone has been heated or glass-filled, which materially affects value.",
       care:
         "Ruby's hardness (9 on the Mohs scale) makes it durable for everyday wear, though glass-filled stones are considerably more fragile and should avoid ultrasonic cleaning, heat, and harsh chemicals. Untreated or heat-only-treated rubies can generally be cleaned with mild soap, warm water, and a soft brush.",
+      faqs: [
+        { question: "Are ruby and sapphire the same mineral?", answer: "Both are varieties of corundum. Red corundum is called ruby; other corundum colours are generally called sapphire. Trace elements influence the colour." },
+        { question: "Is a glass-filled ruby as durable as an untreated ruby?", answer: "No. Lead-glass filling can make a fractured ruby more vulnerable to heat, chemicals, abrasion and cleaning methods. Treatment disclosure and gentle care are essential." },
+      ],
     },
     sources: [{ label: "GIA — Ruby Buyers Guide", url: "https://www.gia.edu/ruby/buyers-guide" }, { label: "GIA — Corundum", url: "https://www.gia.edu/gia-gem-corundum" }],
   },
@@ -136,6 +145,10 @@ export const gemstones: Gemstone[] = [
         "A laboratory report on emerald typically documents identity, weight, colour, clarity, and the type and extent of clarity enhancement (oiling or resin filling), since this has a significant effect on both value and appropriate care.",
       care:
         "Emerald's hardness (7.5–8) is moderate, but its typical inclusion of fractures makes it more prone to chipping and damage than harder, cleaner gemstones. Avoid ultrasonic cleaners, steam cleaning, and harsh chemicals, all of which can strip fracture-filling oil or resin; clean gently with mild soap and a soft cloth only.",
+      faqs: [
+        { question: "Are visible inclusions unusual in emerald?", answer: "No. Emeralds commonly contain visible internal features, often called jardin. Their position and effect on transparency and durability matter; inclusions alone do not determine whether a stone is natural or valuable." },
+        { question: "Can I use steam or ultrasonic cleaning on an emerald?", answer: "Avoid both. Heat and vibration can damage emeralds, especially when fractures contain oil or resin. Use mild soap, lukewarm water and a soft cloth, and ask a jeweller before cleaning a mounted stone." },
+      ],
     },
     sources: [{ label: "GIA — Emerald Buyers Guide", url: "https://www.gia.edu/emerald/buyers-guide" }, { label: "GIA — Emerald", url: "https://www.gia.edu/emerald" }],
   },
@@ -173,6 +186,10 @@ export const gemstones: Gemstone[] = [
         "A laboratory report for spinel documents identity, weight, colour, and clarity, and confirms treatment status — most often confirming the stone is untreated.",
       care:
         "Spinel's hardness (7.5–8) and typically good clarity make it well suited to everyday wear. It can generally be cleaned with mild soap and warm water; as with any gemstone, ultrasonic cleaning is safest when the stone is confirmed untreated and free of significant fractures.",
+      faqs: [
+        { question: "Is spinel just another name for ruby?", answer: "No. Spinel is a separate mineral species. Some historic red stones once called ruby were later identified as spinel, but modern gemological identification distinguishes them." },
+        { question: "Is spinel usually treated?", answer: "Much spinel is sold without treatment, but that should not be assumed for an individual stone. Request disclosure and an independent report when the distinction matters to your purchase." },
+      ],
     },
     sources: [{ label: "GIA — Spinel Description", url: "https://www.gia.edu/spinel-description" }, { label: "GIA — Spinel", url: "https://www.gia.edu/spinel" }],
   },
@@ -210,6 +227,10 @@ export const gemstones: Gemstone[] = [
         "A laboratory report for alexandrite confirms species identity (chrysoberyl) and documents the colour change observed under standardized lighting, along with clarity and treatment status.",
       care:
         "Alexandrite's hardness (8.5) makes it durable for regular wear. It can typically be cleaned with mild soap and warm water; as with most gemstones, avoiding sudden temperature changes and harsh chemicals is good general practice.",
+      faqs: [
+        { question: "Why does alexandrite change colour?", answer: "Its chromium-bearing chrysoberyl absorbs light in an unusual way. The balance of wavelengths in daylight and incandescent light makes the stone appear different colours; the effect is not simply pleochroism." },
+        { question: "Can a laboratory confirm that a stone is alexandrite?", answer: "A gemological laboratory can identify the material and assess its colour change. Other gems and laboratory-grown materials can imitate the effect, so appearance alone is not conclusive." },
+      ],
     },
     sources: [{ label: "GIA — Alexandrite", url: "https://www.gia.edu/alexandrite" }, { label: "GIA — Alexandrite Description", url: "https://www.gia.edu/alexandrite-description" }],
   },
@@ -247,6 +268,10 @@ export const gemstones: Gemstone[] = [
         "A laboratory report identifies the specific garnet species (not just 'garnet' generically), along with weight, colour, and clarity — species identification matters because value varies enormously between common red garnet and rare green varieties.",
       care:
         "Most garnet species have good hardness (6.5–7.5) suitable for regular wear, though demantoid is somewhat softer and more fracture-prone. General cleaning with mild soap and warm water is appropriate for most untreated garnet.",
+      faqs: [
+        { question: "Is garnet one mineral species?", answer: "No. Garnet is a group of related silicate minerals. Species and varieties differ in composition, colour, properties and market value, so a report that names the species is more useful than a generic label." },
+        { question: "Are all garnets red?", answer: "No. Garnets occur in red, orange, green, purple and other colours. Colour depends on the garnet species and its chemistry." },
+      ],
     },
     sources: [{ label: "GIA — Garnet", url: "https://www.gia.edu/garnet" }, { label: "GIA — Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
   },
@@ -284,6 +309,10 @@ export const gemstones: Gemstone[] = [
         "A laboratory report on tourmaline documents variety (e.g., rubellite, Paraiba-type), colour, clarity, weight, and treatment status; for Paraiba-type material, chemical testing to confirm the characteristic copper content is often part of the report.",
       care:
         "Tourmaline's hardness (7–7.5) makes it reasonably durable for jewellery use. Clean with mild soap and warm water, and avoid extreme heat or sudden temperature changes.",
+      faqs: [
+        { question: "Does tourmaline occur in just one colour?", answer: "No. Tourmaline is a group of related mineral species found in a wide range of colours. A colour name by itself does not establish species, treatment or locality." },
+        { question: "Is tourmaline safe for everyday jewellery?", answer: "Many tourmalines are suitable for regular wear, but hardness does not prevent chipping. Setting, fractures, treatment and how the jewellery is worn all affect durability." },
+      ],
     },
     sources: [{ label: "GIA — Tourmaline Description", url: "https://www.gia.edu/tourmaline-description" }, { label: "GIA — Tourmaline", url: "https://www.gia.edu/tourmaline" }],
   },
@@ -321,6 +350,10 @@ export const gemstones: Gemstone[] = [
         "A laboratory report on aquamarine documents identity, weight, colour, clarity, and treatment status (typically confirming heat treatment or its absence).",
       care:
         "Aquamarine's hardness (7.5–8) and typically good clarity make it well suited to everyday wear, and it can usually be cleaned safely with mild soap, warm water, and even ultrasonic cleaning when free of significant fractures.",
+      faqs: [
+        { question: "Is aquamarine related to emerald?", answer: "Yes. Both are varieties of beryl. Aquamarine is blue to blue-green, while emerald is green and coloured by chromium and/or vanadium." },
+        { question: "Can I assume a blue aquamarine is untreated?", answer: "No. Heat treatment is used on some aquamarine to reduce greenish tones. Ask the seller to disclose known treatment and consult a report when it matters." },
+      ],
     },
     sources: [{ label: "GIA — Aquamarine", url: "https://www.gia.edu/gia-website/aquamarine" }, { label: "GIA — Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
   },
@@ -358,6 +391,10 @@ export const gemstones: Gemstone[] = [
         "A laboratory report on topaz documents identity, colour, clarity, and treatment status — an important distinction for buyers who want a natural-colour stone rather than treated blue topaz.",
       care:
         "Topaz has good hardness (8) but a distinct cleavage plane, meaning it can split cleanly if struck at the wrong angle, more so than similarly hard gems without cleavage. Clean with mild soap and warm water and avoid sharp impacts; coated 'mystic' varieties should avoid abrasive cleaning that could wear the coating.",
+      faqs: [
+        { question: "Is most blue topaz naturally blue?", answer: "Much of the blue topaz sold today has been treated from colourless or pale material. Treatment cannot reliably be determined from appearance alone, so ask for disclosure." },
+        { question: "Why can a hard topaz still chip or split?", answer: "Mohs hardness describes resistance to scratching, not resistance to impact. Topaz has cleavage and can break when struck or exposed to stress in a vulnerable direction." },
+      ],
     },
     sources: [{ label: "GIA — Topaz", url: "https://www.gia.edu/gia-website/topaz/buyers-guide" }, { label: "GIA — Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
   },
@@ -395,6 +432,10 @@ export const gemstones: Gemstone[] = [
         "Given its lower average value, moonstone is less commonly submitted for formal laboratory reports than precious stones, though a gemologist can confirm identity and natural origin on request.",
       care:
         "Moonstone's moderate hardness (6–6.5) and internal stress features make it more prone to chipping or cracking than harder gems, so it suits pendants and earrings somewhat better than everyday rings. Clean gently with mild soap and a soft cloth; avoid ultrasonic cleaning.",
+      faqs: [
+        { question: "What creates the glow in moonstone?", answer: "Light scattering within intergrown feldspar layers creates adularescence, the soft sheen that appears to move across the stone as it is tilted." },
+        { question: "Is moonstone durable enough for a ring?", answer: "It can be worn in a ring with care, but its moderate hardness and cleavage make it more vulnerable to scratches and impact than sapphire. A protective setting and gentle wear help reduce damage." },
+      ],
     },
     sources: [{ label: "GIA — Moonstone Description", url: "https://www.gia.edu/gia-website/moonstone-description" }, { label: "GIA — Moonstone", url: "https://www.gia.edu/moonstone?hl=en-US" }],
   },
