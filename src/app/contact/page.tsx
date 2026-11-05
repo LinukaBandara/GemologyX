@@ -2,41 +2,21 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with the GemologyX editorial team.",
+  description: "How to prepare a correction or source suggestion for GemologyX.",
 };
 
 export default function ContactPage() {
   return (
     <div className="container-page max-w-lg py-14">
       <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-4xl">Contact</h1>
-      <p className="mt-4 text-sm text-muted">
-        Questions, corrections, or source suggestions are welcome. This form is not yet connected
-        to an email backend — wire up a form handler or email provider before relying on it in
-        production (see <code>src/app/contact/page.tsx</code>).
-      </p>
-
-      <form className="mt-8 space-y-5">
-        <label className="block">
-          <span className="text-xs font-medium uppercase tracking-wide text-muted">Name</span>
-          <input type="text" name="name" className="mt-1.5 w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:border-accent" />
-        </label>
-        <label className="block">
-          <span className="text-xs font-medium uppercase tracking-wide text-muted">Email</span>
-          <input type="email" name="email" className="mt-1.5 w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:border-accent" />
-        </label>
-        <label className="block">
-          <span className="text-xs font-medium uppercase tracking-wide text-muted">Message</span>
-          <textarea name="message" rows={5} className="mt-1.5 w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:border-accent" />
-        </label>
-        <button
-          type="button"
-          disabled
-          title="Not connected to a backend yet"
-          className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white opacity-50"
-        >
-          Send message
-        </button>
-      </form>
+      <div className="mt-5 space-y-5 text-sm leading-7 text-foreground/90">
+        <p>We welcome well-sourced corrections and suggestions for future educational topics. GemologyX has not yet published an email address or connected a message form, so messages cannot currently be delivered through this page.</p>
+        <section>
+          <h2 className="font-serif text-xl font-semibold text-accent-strong">Preparing a correction</h2>
+          <p className="mt-2">When a contact channel is available, please include the page URL, the specific sentence or claim, a brief explanation, and a reliable source that supports the correction. For a source suggestion, include the title, publisher or author, publication date if known, and a direct link.</p>
+        </section>
+        <p>Please do not send private, financial, or sensitive personal information. GemologyX cannot provide individual gemstone identification, valuation, or purchase advice through this site.</p>
+      </div>
     </div>
   );
 }

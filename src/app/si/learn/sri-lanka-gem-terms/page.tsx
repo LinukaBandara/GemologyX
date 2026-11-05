@@ -6,97 +6,87 @@ import {
   PracticalChecklist,
   Misconceptions,
 } from "@/components/article-layout";
+import { SriLankaGemTermsExplorer } from "@/components/sri-lanka-gem-terms-explorer";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් පද — Geuda සහ අනෙකුත් | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ පද මාලාව | GemologyX",
   description:
-    "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාමේ භාවිත වන පද (geuda, රළු, කැපූ ගල් ආදිය) සරල සිංහලෙන් තේරුම් ගන්න.",
+    "Geuda, rough, dullam, lapidary සහ Ceylon sapphire ඇතුළු ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාමට සම්බන්ධ පද සිංහලෙන් සහ මූලාශ්‍ර සමඟ ඉගෙනගන්න.",
+  alternates: { canonical: "/si/learn/sri-lanka-gem-terms" },
 };
 
 export default function Page() {
   return (
     <ArticleLayout
-      category="සිංහල මැණික් දැනුම"
-      readTime="මිනිත්තු 7"
-      title="ශ්‍රී ලංකාවේ මැණික් පද — Geuda සහ අනෙකුත්"
+      category="සිංහල · ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාම"
+      readTime="මිනිත්තු 8"
+      title="ශ්‍රී ලංකාවේ මැණික් පද මාලාව"
       crumbHref="/si/learn/sri-lanka-gem-trade-intro"
       crumbLabel="ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාම"
-      lastReviewed="2026-10-21"
+      lastReviewed="2026-11-05"
+      languageLink={{ href: "/learn/sri-lanka-gem-terms", label: "English: Sri Lankan gem trade terms" }}
       related={[
         { label: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාම", href: "/si/learn/sri-lanka-gem-trade-intro" },
-        { label: "Heat treatment", href: "/si/learn/heat-treatment-guide" },
+        { label: "Geuda ගැනුම් මාර්ගෝපදේශය", href: "/si/learn/buying-geuda" },
         { label: "ශ්‍රී ලංකාවේ නිල්මැණික්", href: "/si/learn/sri-lankan-blue-sapphire" },
-        { label: "රළු මැණික් මිලදී ගැනීම", href: "/si/learn/buying-rough-gemstones" },
+        { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
       ]}
     >
-      <QuickAnswer>
+      <QuickAnswer locale="si">
         <p>
-          ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාමේ “geuda”, රළු ගල්, කැපූ ගල් වැනි පද භාවිත
-          වේ. Geuda බොහෝ විට උණුසුම් කිරීමෙන් වර්ණය වෙනස් විය හැකි කොරන්ඩම්
-          රළු ද්‍රව්‍යයක් ලෙස සඳහන් වේ. පදයක් පමණක් ගලේ අනන්‍යතාව, ප්‍රතිකාර හෝ
-          වටිනාකම තහවුරු නොකරයි.
+          Geuda, rough, dullam, lapidary සහ Ceylon sapphire වැනි පද ශ්‍රී ලංකාවේ
+          මැණික් කර්මාන්තයේ විවිධ සන්දර්භවලදී ඇසෙන්න පුළුවන්. පදවල භාවිතය
+          ප්‍රදේශය හා ගනුදෙනුව අනුව වෙනස් විය හැකි නිසා, විකුණුම්කරු අදහස් කරන
+          නිශ්චිත අර්ථය සහ ලිඛිත වාර්තා පැහැදිලි කරගන්න.
         </p>
       </QuickAnswer>
 
-      <ArticleSection heading="Geuda">
-        <p>
-          Geuda යනු ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාමේ බහුලව ඇසෙන පදයකි. බොහෝ විට
-          එයින් අදහස් වන්නේ උණුසුම් ප්‍රතිකාරයෙන් වර්ණය / පෙනුම වෙනස් කළ හැකි
-          කොරන්ඩම් රළු ද්‍රව්‍යයකි. සියලුම geuda එකම ගුණාත්මකභාවයක් හෝ ප්‍රතිඵලයක්
-          නොදක්වයි. කැපීමෙන් පසු ලැබෙන බර සහ වර්ණය කලින් නිශ්චිතව කිව නොහැකියි.
-        </p>
-      </ArticleSection>
+      <SriLankaGemTermsExplorer />
 
-      <ArticleSection heading="රළු ගල් (Rough)">
+      <ArticleSection heading="පදය සහ ගල පිළිබඳ සාක්ෂි වෙන් කරගන්න">
         <p>
-          කැපීමට සහ ඔප දැමීමට පෙර ඇති ගල්. ඉරිතැලීම්, හැඩය සහ අභ්‍යන්තර ලක්ෂණ
-          කැපීමේ ප්‍රතිඵලයට බලපායි. රළු බර ≠ කැපූ පසු බර.
+          දේශීය වෙළෙඳ පදයක් ගලක mineral identity, treatment, quality හෝ
+          geographic origin එක තනිවම තහවුරු නොකරයි. වෙළෙඳ විස්තරය, රසායනාගාර
+          වාර්තාව සහ නිල ලේඛන වෙන වෙනම කියවන්න. පදයක් ගැන නොතේරෙන විට එය
+          ලිඛිතව අර්ථ දක්වා දෙන ලෙස ඉල්ලන්න.
         </p>
-      </ArticleSection>
-
-      <ArticleSection heading="කැපූ / ඔප දැමූ ගල්">
         <p>
-          කැපීම සහ ඔප දැමීම අවසන් වූ ගල්. වර්ණය, පැහැදිලි බව, කැපීමේ ගුණාත්මකභාවය
-          සහ බර මෙහිදී වඩාත් පැහැදිලිව සසඳන්න පුළුවන්.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection heading="Ceylon / Sri Lankan">
-        <p>
-          වෙළෙඳ නාමයක් හෝ origin opinion එකක් විය හැකියි. ලේබලයක් පමණක්
-          මූලාරම්භය තහවුරු නොකරයි. වාර්තාවේ භාෂාව සහ සීමාවන් කියවන්න.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection heading="ප්‍රායෝගික උපදෙස්">
-        <p>
-          පදයක් ඇසුණු විට: (1) එහි අර්ථය විකුණුම්කරුගෙන් පැහැදිලි කරගන්න, (2)
-          අනන්‍යතාව සහ ප්‍රතිකාර ලිඛිතව විමසන්න, (3) අවශ්‍ය නම් වාර්තාවක් සහ
-          ස්වාධීන පරීක්ෂාවක් සලකා බලන්න.
+          මෙහි “dullam” විස්තරය GIA ක්ෂේත්‍ර ගවේෂණ ලිපියක සටහන් වූ භාවිතයක්
+          මත පදනම් වේ. එය සෑම ප්‍රදේශයකම හෝ සෑම ගනුදෙනුවකම එකම අර්ථය භාවිත
+          වන බවට ප්‍රකාශයක් නොවේ.
         </p>
       </ArticleSection>
 
       <PracticalChecklist
+        locale="si"
         items={[
-          "පදයේ අර්ථය විකුණුම්කරුගෙන් පැහැදිලි කරගත්තාද?",
-          "අනන්‍යතාව සහ ප්‍රතිකාර ලිඛිතව තියෙනවාද?",
-          "රළු ගලක් නම් — කැපීමේ අවදානම තේරුම් ගත්තාද?",
-          "Origin / Ceylon ප්‍රකාශයක් තිබේ නම් වාර්තාවේ සීමාවන් බැලුවාද?",
+          "පදය මේ ගනුදෙනුවේ අදහස් කරන්නේ කුමක්දැයි විකුණුම්කරුගෙන් අසා පැහැදිලි කරගන්න.",
+          "ගලේ අනන්‍යතාව, දන්නා ප්‍රතිකාර සහ වාර්තාවේ විෂය පථය වෙන්කර ලිඛිතව බලන්න.",
+          "රළු ගලක් නම් කැපීමේ ගාස්තුව, අවදානම සහ අවසාන බරේ අවිනිශ්චිතතාව කලින් සාකච්ඡා කරන්න.",
+          "Geuda export වැනි නිල ක්‍රියාවලියකට අදාළ නම් පැරණි සාරාංශයකට නොව NGJA හි නවතම උපදෙස්වලට යොමු වන්න.",
         ]}
       />
 
       <Misconceptions
+        locale="si"
         items={[
-          "Geuda = සෑම විටම ලාභදායක — නැහැ; ප්‍රතිඵලය වෙනස් වේ.",
-          "පදයක් දන්නවා නම් ගලේ වටිනාකම තීරණය කළ හැකියි — නැහැ.",
-          "Ceylon ලේබලය = මූලාරම්භය තහවුරු — නැහැ.",
+          "‘Geuda’ යන පදය සෑම ගලකම තාප ප්‍රතිකාරයෙන් එකම වර්ණ ප්‍රතිඵලයක් ලැබෙන බව සහතික නොකරයි.",
+          "‘Ceylon’ යන විස්තරය පමණක් geographic origin එක තහවුරු නොකරයි.",
+          "‘Lapidary’ යන භූමිකාවෙන් ගලේ අනන්‍යතාව හෝ වටිනාකම පිළිබඳ රසායනාගාර සහතිකයක් අදහස් නොවේ.",
         ]}
       />
 
-      <ArticleSection heading="මතක තබාගන්න">
+      <ArticleSection heading="මූලාශ්‍ර සහ නවතම නිල උපදෙස්">
+        <ul>
+          <li><a href="https://www.gia.edu/gems-gemology/fall-2014-sri-lanka-expedition-island-of-jewels" target="_blank" rel="noreferrer">GIA: ශ්‍රී ලංකා මැණික් කර්මාන්තයේ mining, cutting, trading සහ “dullam” භාවිතය පිළිබඳ ක්ෂේත්‍ර වාර්තාව</a></li>
+          <li><a href="https://www.srilankabusiness.com/gem-diamond-and-jewellery/about-sri-lanka-gems/industry-capability.html" target="_blank" rel="noreferrer">Sri Lanka Export Development Board: කර්මාන්තයේ පාර්ශ්ව සහ අගයදාමය</a></li>
+          <li><a href="https://ngja.gov.lk/wp-content/uploads/2020/08/NGJA-Geuda-RIE-Procedure.pdf" target="_blank" rel="noreferrer">NGJA: Geuda වර්ගීකරණය ඇතුළත් export procedure circular (2020)</a></li>
+          <li><a href="https://www.gia.edu/gems-gemology/winter-2019-geographic-origin-dilemma" target="_blank" rel="noreferrer">GIA: භූගෝලීය origin opinions සහ ඒවායේ සීමා</a></li>
+        </ul>
         <p>
-          මෙම ලිපිය පද තේරුම් ගැනීමට අධ්‍යාපනික මාර්ගෝපදේශයකි. එය ගලක මිල හෝ
-          ප්‍රතිකාර ප්‍රතිඵලයක් සහතික නොකරයි.
+          NGJA circular එක 2020 දිනැති ලේඛනයකි. මෙය වර්තමාන export checklist එකක්
+          නොවේ. බලපත්‍ර, ගාස්තු සහ export නියමයන් වෙනස් විය හැකි නිසා ගනුදෙනුවකට
+          පෙර NGJA සහ ශ්‍රී ලංකා රේගුවෙන් අලුත්ම තොරතුරු තහවුරු කරගන්න.
         </p>
       </ArticleSection>
     </ArticleLayout>

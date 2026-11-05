@@ -23,55 +23,58 @@ export default function CeylonSapphirePage() {
 
       <div className="prose-content mt-8 space-y-6 text-sm leading-relaxed text-foreground/90 md:text-base">
         <p>
-          &ldquo;Ceylon sapphire&rdquo; refers to sapphire mined in Sri Lanka, historically known
-          as Ceylon until 1972. The term is used both as a straightforward geographic descriptor
-          and, informally in parts of the trade, as a loose stand-in for a particular lighter,
-          vivid blue tone — even when applied to stones from elsewhere. This is worth understanding
-          before treating &ldquo;Ceylon&rdquo; as a guarantee of either origin or colour.
+          &ldquo;Ceylon sapphire&rdquo; is a familiar trade expression associated with Sri Lankan
+          sapphire. On a specific listing, however, the word alone does not show what evidence
+          supports the seller&rsquo;s origin claim. Separate the description on the listing from
+          any independent laboratory report, and read exactly what that report concludes.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-accent-strong">
           Origin vs colour: two different claims
         </h2>
         <p>
-          Geographic origin — where a stone was actually mined — is a factual claim that can, in
-          many cases, be supported by a gemological laboratory through trace-element chemistry and
-          inclusion analysis. Colour description, by contrast, is a subjective and stylistic
-          shorthand. When a seller describes a non-Sri Lankan stone as having a &ldquo;Ceylon
-          colour,&rdquo; they are making a colour comparison, not an origin claim — and the two
-          should not be confused.
+          Origin and colour are different questions. A seller may use a regional name in a product
+          description, while a laboratory may issue an origin opinion after examining the stone.
+          GIA notes that identification reports describe characteristics such as weight, shape,
+          cutting style and colour, and may include a geographic-origin opinion when requested and
+          possible. Neither a colour impression nor the listing&rsquo;s wording is a substitute for
+          checking the report.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-accent-strong">
           How origin is actually determined
         </h2>
         <p>
-          A gemological laboratory forms an origin opinion by examining a stone&rsquo;s internal
-          inclusions and, often, its trace-element chemistry via non-destructive spectroscopic
-          methods, then comparing the results against reference databases built from stones of
-          confirmed provenance. This is a specialist determination — it is not something a buyer,
-          or even an experienced dealer, can reliably assess by eye.
+          Origin work can draw on inclusions, trace-element chemistry and other gemological data,
+          compared with reference material. For blue sapphire, published GIA research describes
+          overlap between localities and cases where the evidence is ambiguous. A report can
+          therefore express an expert opinion, or be inconclusive; it is not a GPS record of the
+          mine and should be read using the laboratory&rsquo;s own wording and limitations.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-accent-strong">
           Why Sri Lanka is closely associated with sapphire
         </h2>
         <p>
-          Sri Lanka has one of the longest continuous histories of gem mining in the world,
-          concentrated around Ratnapura and Balangoda, and has historically produced significant
-          quantities of fine blue and padparadscha sapphire. That long track record is part of why
-          the name carries weight in the trade — but it does not mean every fine sapphire is
-          Sri Lankan, nor that every Sri Lankan sapphire is exceptional. Quality varies by
-          individual stone regardless of origin.
+          Sri Lanka has a substantial gem and jewellery sector and is known in the international
+          trade for a range of sapphires. The Export Development Board describes exports that
+          include blue, padparadscha, star and fancy sapphires. A country&rsquo;s reputation provides
+          useful context, but it cannot identify the origin or quality of an individual stone.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-accent-strong">
           What this means if you&rsquo;re buying
         </h2>
         <ul className="list-disc space-y-1 pl-5">
-          <li>An origin claim on a listing without a laboratory report is a seller&rsquo;s representation, not a verified fact.</li>
-          <li>A laboratory report on origin is typically an opinion based on the available evidence, not an absolute certainty in every case.</li>
-          <li>Evaluate the stone itself — colour, clarity, cut — rather than relying on origin terminology alone.</li>
+          <li>Ask the seller to put the claimed origin and treatment disclosure in writing.</li>
+          <li>Check that the report matches the stone and read the lab&rsquo;s conclusion, treatment comments and limitations.</li>
+          <li>Compare the individual stone&rsquo;s colour, clarity, cut and treatment; origin terminology by itself is not a complete quality assessment.</li>
+        </ul>
+        <h2 className="font-serif text-xl font-semibold text-accent-strong">Primary references</h2>
+        <ul className="list-disc space-y-2 pl-5">
+          <li><a className="text-accent underline underline-offset-4" href="https://www.gia.edu/sapphire/buyers-guide" target="_blank" rel="noreferrer">GIA Sapphire Buyer&rsquo;s Guide</a> — report scope, origin opinions and treatment information.</li>
+          <li><a className="text-accent underline underline-offset-4" href="https://www.gia.edu/gems-gemology/winter-2019-blue-sapphire-geographic-origin-determination" target="_blank" rel="noreferrer">GIA Gems &amp; Gemology: Geographic Origin Determination of Blue Sapphire</a> — research on methods and challenges.</li>
+          <li><a className="text-accent underline underline-offset-4" href="https://www.srilankabusiness.com/gem-diamond-and-jewellery/about-sri-lanka-gems/sri-lanka-gemstones.html" target="_blank" rel="noreferrer">Sri Lanka Export Development Board: Sri Lanka Gemstones</a> — the country&rsquo;s gem-sector context.</li>
         </ul>
       </div>
 

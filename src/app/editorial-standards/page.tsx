@@ -13,34 +13,37 @@ export default function EditorialStandardsPage() {
         <section>
           <h2 className="font-serif text-xl font-semibold text-accent-strong">How we select sources</h2>
           <p className="mt-2">
-            Factual claims are grounded in recognized gemological and geological references —
-            including gemological laboratories, national gem authorities, academic geological
-            literature, and reputable museum or institutional sources — rather than unverified
-            trade anecdotes.
+            Our editorial approach prioritizes gemological laboratories, national gem authorities,
+            academic geological literature, and reputable museum or institutional references. For
+            local rules and procedures, start with the responsible authority. Trade accounts can
+            provide context, but they are not treated as scientific evidence on their own.
           </p>
         </section>
         <section>
           <h2 className="font-serif text-xl font-semibold text-accent-strong">How we check technical claims</h2>
           <p className="mt-2">
-            We avoid presenting subjective trade convention as scientific fact, and we avoid
-            fabricating statistics, prices, or quotes. Where information cannot be confidently
-            established from a reliable source, we either omit it or state it cautiously rather
-            than presenting it as settled.
+            We aim to distinguish measured findings from interpretation, trade language, and
+            uncertainty. We do not invent statistics, prices, or quotations. Where a claim cannot
+            be established from a reliable source, it should be omitted or described with its limits
+            instead of presented as settled fact.
           </p>
         </section>
         <section>
           <h2 className="font-serif text-xl font-semibold text-accent-strong">How we update content</h2>
           <p className="mt-2">
-            Gemological understanding and treatment practices evolve. Articles are revisited and
-            corrected as better information becomes available.
+            Gemological understanding, laboratory services, and local requirements can change.
+            Pages are reviewed in batches, with priority for technical claims and information that
+            changes over time. The full library has not yet completed an editorial and factual review;
+            a page being live does not mean every statement has been independently verified. Readers
+            should check linked sources and seek professional advice where a decision depends on it.
           </p>
         </section>
         <section>
           <h2 className="font-serif text-xl font-semibold text-accent-strong">Commercial interests</h2>
           <p className="mt-2">
-            GemologyX is not a marketplace and does not sell gemstones. Any future advertising or
-            affiliate relationships will be disclosed and kept separate from editorial judgment —
-            content is not written to favor any product or seller.
+            GemologyX is not a marketplace and does not sell gemstones through this site. If
+            advertising or affiliate relationships are introduced, they should be clearly disclosed
+            and kept separate from editorial decisions.
           </p>
         </section>
       </div>

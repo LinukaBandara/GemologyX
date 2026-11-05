@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "රළු මැණික් ගලක් මිලදී ගැනීමට පෙර | GemologyX",
   description:
     "රළු මැණික් මිලදී ගැනීමේදී අනන්‍යතාව, ප්‍රතිකාර, ඉරිතැලීම්, කැපීමේ අවදානම, වියදම් සහ ගනුදෙනු කොන්දේසි පරීක්ෂා කරන සවිස්තර මාර්ගෝපදේශය.",
+  alternates: { canonical: "/si/learn/buying-rough-gemstones" },
 };
 
 export default function Page() {
@@ -21,7 +22,7 @@ export default function Page() {
       title="රළු මැණික් ගලක් මිලදී ගැනීමට පෙර බලන්න"
       crumbHref="/si/learn"
       crumbLabel="සිංහල මැණික් දැනුම"
-      lastReviewed="2026-11-02"
+      lastReviewed="2026-11-06"
       related={[
         { label: "රළු ගල් මිලදී ගැනීමේ ප්‍රශ්න checklist", href: "/si/learn/rough-gem-questions" },
         { label: "රළු නිල්මැණික් වටිනාකම", href: "/si/learn/rough-blue-sapphire-value" },
@@ -162,6 +163,14 @@ export default function Page() {
           <a href="/si/learn/cutting-weight-loss">cutting weight loss</a>{" "}
           මාර්ගෝපදේශ බලන්න.
         </p>
+      </ArticleSection>
+
+      <ArticleSection heading="තවත් පරීක්ෂා කළ හැකි මූලාශ්‍ර">
+        <ul>
+          <li><a href="https://www.gia.edu/sapphire/buyers-guide" target="_blank" rel="noreferrer">GIA: Sapphire Buyer’s Guide</a> — sapphire identification reports, treatment information, and report scope.</li>
+          <li><a href="https://www.gia.edu/gia-news-research-column-examining-rough-sapphire" target="_blank" rel="noreferrer">GIA: Examining a Rough Sapphire</a> — a field example of examining cracks and inclusions in rough sapphire; it does not predict the result for every rough stone.</li>
+        </ul>
+        <p>මෙම මූලාශ්‍ර නිශ්චිත ගලක් හඳුනාගැනීම, තක්සේරු කිරීම හෝ කැපූ පසු ප්‍රතිඵලය සහතික කිරීම වෙනුවට භාවිත කළ නොහැකියි.</p>
       </ArticleSection>
 
       <ArticleSection heading="මතක තබාගන්න">

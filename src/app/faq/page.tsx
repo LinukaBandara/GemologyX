@@ -1,0 +1,27 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Gemology Questions and Answers",
+  description: "Straightforward answers to common questions about gemstone identification, treatments, reports, buying and Sri Lankan gem knowledge.",
+  alternates: { canonical: "/faq" },
+};
+
+const questions = [
+  { q: "Can I identify a gemstone from a photograph?", a: "A photograph can help describe visible features, but lighting, processing and similar-looking materials make it unsuitable as proof of identity, treatment or origin. Use a qualified gemologist or laboratory when a reliable determination matters.", links: [{ label: "Gemstone directory", href: "/gemstones" }, { label: "Identification guides", href: "/learn" }] },
+  { q: "What does a gemstone report tell me?", a: "A report records a laboratory's findings within its stated scope. Read the identification, treatment comments, any origin opinion, limitations and report details together; a report is not automatically an appraisal or a guarantee of future value.", links: [{ label: "How to read a report", href: "/learn/how-to-read-a-gemstone-report" }, { label: "Certification guide", href: "/learn/gemstone-certification" }] },
+  { q: "Does heat treatment mean a sapphire is fake?", a: "No. Treatment and whether a gem is natural or synthetic are different questions. Ask for clear disclosure and, where relevant, an independent report that states the laboratory's findings.", links: [{ label: "Heated vs unheated", href: "/learn/heated-vs-unheated" }, { label: "Natural vs synthetic", href: "/learn/natural-vs-synthetic-gemstones" }] },
+  { q: "Does the name Ceylon prove a sapphire came from Sri Lanka?", a: "The trade term is associated with Sri Lanka, but a name or appearance alone does not establish a particular stone's geographic origin. Review the seller's wording carefully and seek a laboratory origin opinion when it is important to the purchase.", links: [{ label: "Ceylon sapphire guide", href: "/learn/sapphire/what-is-ceylon-sapphire" }, { label: "Sri Lanka gem hub", href: "/sri-lanka" }] },
+  { q: "How can I compare gemstone weight and size?", a: "Carat measures weight, not physical dimensions. Different gems and cuts can look different at the same weight, so use measurements as well as carat weight when comparing stones.", links: [{ label: "Carat to gram converter", href: "/tools/carat-to-gram" }, { label: "Gemstone size calculator", href: "/tools/gemstone-size" }] },
+  { q: "Where can I find Sri Lanka mining and export information?", a: "Start with the Sri Lanka hub for context, then follow its mining, licensing and trade links to the relevant official resources. Requirements can change, so confirm current rules with the responsible authority before acting.", links: [{ label: "Sri Lanka hub", href: "/sri-lanka" }, { label: "Mining guide", href: "/sri-lanka-mining" }, { label: "Trade and export", href: "/sri-lanka-trade-export" }] },
+];
+
+export default function FAQPage() {
+  return <div className="container-page max-w-4xl py-12 md:py-16">
+    <nav className="luxury-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>FAQ</span></nav>
+    <header className="border-b border-border pb-8"><div className="gx-eyebrow"><span /> QUICK ANSWERS</div><h1 className="mt-3 font-serif text-3xl font-semibold tracking-tight md:text-4xl">Gemology questions, answered</h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted md:text-base">Clear starting points for common gemstone questions. Follow the linked guides for more detail, and use qualified gemological or official sources when a decision depends on a definitive result or current requirements.</p></header>
+    <div className="mt-8 space-y-4">{questions.map((item) => <section key={item.q} className="gx-card p-5 md:p-6"><h2 className="font-serif text-xl font-semibold">{item.q}</h2><p className="mt-3 text-sm leading-6 text-muted">{item.a}</p><ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2">{item.links.map((link) => <li key={link.href}><Link className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:text-accent-strong" href={link.href}>{link.label}<ArrowUpRight size={14} /></Link></li>)}</ul></section>)}</div>
+    <p className="mt-8 text-sm text-muted">Have a correction or question suggestion? The <Link className="font-medium text-accent underline" href="/contact">contact page</Link> explains how to prepare it and notes that submissions are not available yet.</p>
+  </div>;
+}

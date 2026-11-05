@@ -3,13 +3,13 @@
 > Repository: `LinukaBandara/GemologyX`  
 > Branch: `seo/technical-foundation`  
 > Basis: source-level first-pass review of all 109 learning page files, recorded in `docs/learning-content-audit-first-pass.md`.  
-> Status: editorial decisions for the next implementation phase. This document does not authorize deleting URLs or shipping redirects without performance and URL-history checks.
+> Status: editorial decisions for the next implementation phase. Updated to follow the current scope: English global reference plus a separate Sinhala section for Sri Lanka-specific topics. This document does not authorize deleting URLs or shipping redirects without performance and URL-history checks.
 
 ## 1. Decision principles
 
 1. Preserve a URL when it serves a distinct user task, audience, language or useful reference purpose.
 2. Consolidate duplicate explanations into the strongest relevant hub; retain useful checklists, tables and examples as sections or tools.
-3. Do not redirect a Sinhala page to an English page (or vice versa) merely because the subject overlaps. Preserve language parity and provide language links.
+3. Do not redirect a page merely because a related topic exists in another language. Preserve useful existing URLs, but do not promise translation parity or add language links unless pages are genuine translations. Surface only reviewed Sri Lanka-specific Sinhala pages in the dedicated `/si/learn` hub.
 4. Before any redirect, inspect Google Search Console queries/pages, analytics, backlinks/referring domains, external references and current index status for both URLs.
 5. If the source content has useful unique information, migrate it into the destination and verify the destination before redirecting the source.
 6. Use permanent redirects only after the destination is live and tested. Keep a redirect map and test every old URL.
@@ -22,7 +22,7 @@
 | `/si/learn/rough-gem-questions` | `/si/learn/buying-rough-gemstones` | **Consolidate candidate** | Move unique questions into a printable pre-purchase checklist section. Keep a separate URL only if Search Console demonstrates distinct question-led demand and the page is expanded substantially. |
 | `/si/learn/carat-vs-gram` | `/si/learn/carat-weight-guide` | **Consolidate candidate** | Move conversion explanation and examples into the main weight guide. Better long-term option: provide a functional carat/gram converter rather than a second thin article. |
 | `/si/learn/what-ceylon-means` | `/si/learn/sri-lankan-blue-sapphire` | **Reposition first; conditional consolidation** | Move the concise definition and trade-name caveats into the sapphire guide. Retain a separate glossary/history page only if it provides distinct, sourced historical and terminology depth. Do not redirect the English page to Sinhala. |
-| `/learn/sapphire/what-is-ceylon-sapphire` | English-language Ceylon sapphire guide | **Keep; align** | Preserve as the English counterpart. Align terminology and facts with the Sinhala pages, but do not collapse language routes. Add reciprocal language navigation where appropriate. |
+| `/learn/sapphire/what-is-ceylon-sapphire` | English-language Ceylon sapphire guide | **Keep; review scope** | Keep as a global English reference. Related Sinhala pages should address Sri Lankan readers and local context; do not label them translations or add reciprocal language navigation unless the content is genuinely translated. |
 | `/si/learn/ruby-vs-garnet` + `/si/learn/ruby-vs-spinel` | One expanded ruby look-alikes comparison | **Conditional consolidation** | Combine only if query data shows no distinct demand and the combined guide can give meaningful garnet and spinel sections, comparison tables and identification limitations. Otherwise keep separate, substantive comparisons. |
 | `/si/learn/heated-sapphire-guide` | `/si/learn/heat-treatment-guide` plus `/si/learn/heated-vs-unheated-blue-sapphire` | **Reposition / likely consolidate** | General heat-treatment mechanism belongs in the treatment hub; sapphire-specific buyer/report implications belong in the sapphire comparison. Preserve unique details before considering a redirect. |
 | `/si/learn/natural-synthetic-imitation-gems` | `/si/learn/natural-vs-synthetic-gemstones` | **Reposition / conditional consolidation** | Keep a concise terminology reference if it distinctly defines synthetic, imitation and assembled materials. Otherwise merge unique definitions into the main explainer. Do not conflate synthetics and simulants. |

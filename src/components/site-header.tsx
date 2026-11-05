@@ -8,28 +8,28 @@ import { useState } from "react";
 const NAV = [
   { label: "Learn", href: "/learn" },
   { label: "Gemstones", href: "/gemstones" },
+  { label: "Sri Lanka", href: "/sri-lanka" },
+  { label: "සිංහල", href: "/si/learn" },
+  { label: "Mining", href: "/sri-lanka-mining" },
   { label: "Tools", href: "/tools" },
-  { label: "Origins", href: "/origins" },
-  { label: "Glossary", href: "/glossary" },
-  { label: "About", href: "/about" },
 ];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/90 bg-background/90 backdrop-blur-xl">
-      <div className="container-page flex h-[64px] items-center justify-between md:h-[68px]">
-        <Link href="/" className="group flex items-center gap-2.5" onClick={() => setOpen(false)} aria-label="GemologyX home">
-          <Image src="/gemologyx-mark.svg" alt="" width={32} height={32} priority />
-          <span className="font-serif text-[1.15rem] font-semibold tracking-tight text-foreground">
-            Gemology<span className="text-gold">X</span>
+    <header className="site-header sticky top-0 z-40">
+      <div className="container-page flex h-[72px] items-center justify-between">
+        <Link href="/" className="group flex items-center gap-3" onClick={() => setOpen(false)} aria-label="GemologyX home">
+          <Image src="/gemologyx-mark.svg" alt="" width={30} height={30} priority />
+          <span className="brand-lockup"><span className="font-serif text-[1.55rem] font-medium leading-none tracking-tight text-foreground">
+            Gemology<span className="text-gold">X</span></span><small>The science · The origin · The gem</small>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex" aria-label="Main navigation">
+        <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
           {NAV.map((item) => (
-            <Link key={item.href} href={item.href} className="nav-link">
+          <Link key={item.href} href={item.href} className="nav-link">
               {item.label}
             </Link>
           ))}
@@ -45,7 +45,7 @@ export function SiteHeader() {
             aria-expanded={open}
             aria-controls="mobile-navigation"
             onClick={() => setOpen((v) => !v)}
-            className="gx-icon-btn md:hidden"
+            className="gx-icon-btn lg:hidden"
           >
             {open ? <X size={17} /> : <Menu size={17} />}
           </button>
@@ -53,14 +53,14 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div id="mobile-navigation" className="border-t border-border bg-background md:hidden">
+        <div id="mobile-navigation" className="border-t border-border bg-background lg:hidden">
           <nav className="container-page flex flex-col gap-1 py-3" aria-label="Mobile navigation">
             {NAV.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent-soft"
+                className="min-h-11 rounded-lg px-3 py-3 text-sm font-medium text-foreground hover:bg-accent-soft"
               >
                 {item.label}
               </Link>

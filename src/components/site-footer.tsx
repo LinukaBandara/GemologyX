@@ -11,6 +11,8 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   { title: "Explore", links: [
     { label: "Gemstones", href: "/gemstones" },
     { label: "Origins", href: "/origins" },
+    { label: "Sri Lanka Gem Hub", href: "/sri-lanka" },
+    { label: "සිංහල: ශ්‍රී ලංකාවේ මැණික්", href: "/si/learn" },
     { label: "Sri Lanka Mining", href: "/sri-lanka-mining" },
     { label: "Trade & Export", href: "/sri-lanka-trade-export" },
   ]},
@@ -23,6 +25,8 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   { title: "About", links: [
     { label: "About Us", href: "/about" },
     { label: "Editorial Standards", href: "/editorial-standards" },
+    { label: "Sources & Citations", href: "/sources" },
+    { label: "Frequently Asked Questions", href: "/faq" },
     { label: "Contact", href: "/contact" },
     { label: "Disclaimer", href: "/disclaimer" },
   ]},
@@ -64,6 +68,7 @@ export function SiteFooter() {
             <Link href="/privacy">Privacy</Link>
             <Link href="/disclaimer">Disclaimer</Link>
             <Link href="/editorial-standards">Standards</Link>
+            <Link href="/sitemap">Site map</Link>
           </div>
         </div>
 

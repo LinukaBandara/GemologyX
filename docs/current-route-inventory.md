@@ -1,6 +1,8 @@
-# GemologyX Current Route Inventory
+# GemologyX Historical Route Inventory
 
-> Generated from `seo/technical-foundation` at `f319da29604a033dcd0162067478e7e07c93f8a8`. This lists route source files, not a content-quality verdict. Dynamic templates expand from data records.
+> **Historical snapshot:** generated from `seo/technical-foundation` at `f319da29604a033dcd0162067478e7e07c93f8a8`. Its route and data counts are superseded. Use [`1000-page-completion-programme.md`](1000-page-completion-programme.md) and [`page-readiness-tracker.csv`](page-readiness-tracker.csv) for current planning. This snapshot remains only as a record of the earlier baseline.
+
+This lists route source files, not a content-quality verdict. Dynamic templates expand from data records.
 
 **Page files:** 134. **Sinhala learning:** 100. **English learning:** 9.
 

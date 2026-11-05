@@ -10,7 +10,8 @@ import {
 export const metadata: Metadata = {
   title: "රළු නිල්මැණික් ගලක වටිනාකම තක්සේරු කිරීම | GemologyX",
   description:
-    "රළු නිල්මැණිකක වර්ණය, විනිවිදභාවය, ඉරිතැලීම්, කැපීමේ අවදානම සහ මිලදී ගැනීමට පෙර පරීක්ෂා කළ යුතු කරුණු ගැන සිංහල මාර්ගෝපදේශය.",
+    "රළු නිල්මැණික් ගලක අනන්‍යතාව, වර්ණය, inclusions, treatment, කැපුම් අවදානම සහ මුළු වියදම මිලදී ගැනීමට පෙර සලකා බලන සිංහල මාර්ගෝපදේශය.",
+  alternates: { canonical: "/si/learn/rough-blue-sapphire-value" },
 };
 
 export default function Page() {
@@ -21,7 +22,7 @@ export default function Page() {
       title="රළු නිල්මැණික් ගලක වටිනාකම තක්සේරු කිරීම"
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
-      lastReviewed="2026-10-21"
+      lastReviewed="2026-11-06"
       related={[
         { label: "රළු නිල්මැණික් ගලක ඇතුළත ලක්ෂණ", href: "/si/learn/rough-sapphire-inclusions" },
         { label: "රළු මැණික් ගලක් මිලදී ගැනීමට පෙර", href: "/si/learn/buying-rough-gemstones" },
@@ -40,10 +41,29 @@ export default function Page() {
 
       <ArticleSection heading="රළු ගලක මිල ඇස්තමේන්තු කිරීම අමාරු ඇයි?">
         <p>
-          රළු ගලේ පිටත හැඩය සහ බර පමණක් බැලීමෙන් කැපූ පසු ලැබෙන ගලේ ප්‍රමාණය,
-          වර්ණය හෝ පැහැදිලි බව නිශ්චිතව කියන්න බැහැ. ගල තුළ ඇති ඉරිතැලීම් සහ
-          වර්ධන ලක්ෂණ නිසා කැපීමේ සැලැස්ම වෙනස් විය හැකියි. එබැවින් රළු ගලක් කැපූ
-          ගලක් ලෙස සලකා මිල ගණනය කිරීම අවදානම්ය.
+          Rough එකේ පිටත හැඩය සහ බර පමණක් බැලීමෙන් කැපූ පසු ලැබෙන ගලේ
+          ප්‍රමාණය, වර්ණය, පැහැදිලි බව හෝ අගය නිශ්චිතව කියන්න බැහැ.
+          අභ්‍යන්තර ලක්ෂණ, ඉරිතැලීම් සහ වර්ණ ව්‍යාප්තිය දැනගැනීමට
+          විශාලනය, සුදුසු ආලෝකය සහ පළපුරුදු පරීක්ෂාව අවශ්‍ය විය හැකියි.
+          එබැවින් rough ගලක් සැලසුම් කළ finished stone එකක් ලෙස සලකා
+          මිල ගණනය කිරීම අවදානම්ය.
+        </p>
+      </ArticleSection>
+
+      <ArticleSection heading="වර්ණය, zoning සහ කැපුම් දිශාව">
+        <p>
+          Sapphire එකක වර්ණය සලකා බලද්දී hue, tone සහ saturation වෙන්කර
+          බලන්න. Rough එක පුරා වර්ණය ඒකාකාර නොවිය හැකියි; නිල් හෝ ලා
+          ප්‍රදේශ වෙන වෙනම තිබිය හැකියි. Crystal එකේ දිශාව සහ pleochroism
+          නිසා cutter තෝරන orientation එක finished stone එකේ face-up
+          වර්ණයට බලපාන්න පුළුවන්. GIA සඳහන් කරන පරිදි rough එකේ හැඩය,
+          zoning සහ ආලෝකයද සැලැස්මට බලපාන කරුණුය.
+        </p>
+        <p>
+          එය රළු ගලක් අතේ නොගෙන හෝ සුදුසු පරීක්ෂණයක් නොකර ඡායාරූපයකින්
+          විශ්වාසදායකව නිගමනය කළ නොහැකියි. විකුණුම්කරුගේ ඡායාරූපය
+          මත පමණක් වර්ණය හෝ කැපූ පසු පෙනුම තක්සේරු නොකරන්න; පසුබිම,
+          ආලෝකය, exposure සහ image processing පෙනුම වෙනස් කළ හැකියි.
         </p>
       </ArticleSection>
 
@@ -72,6 +92,23 @@ export default function Page() {
         </ul>
       </ArticleSection>
 
+      <ArticleSection heading="Inclusions, treatment සහ origin claims">
+        <p>
+          ඇතුළත ලක්ෂණ හා ඉරිතැලීම් කැපුමට, පැහැදිලි බවට හෝ durability
+          එකට බලපාන්න පුළුවන්. ඇතැම් inclusions විද්‍යාගාරයකදී වෙනත්
+          පරීක්ෂණ සමඟ සාක්ෂි කොටසක් විය හැකි නමුත්, එක් ලක්ෂණයක් පමණක්
+          ස්වභාවික බව, treatment හෝ origin එක තහවුරු නොකරයි. Sapphire
+          පිළිබඳ GIA reference එකත් origin සහ treatment ප්‍රකාශයන්
+          පරීක්ෂණ වාර්තාවක සීමාවන් තුළ කියවිය යුතු බව පැහැදිලි කරයි.
+        </p>
+        <p>
+          දන්නා heat treatment හෝ වෙනත් වැඩිදියුණු කිරීම් තිබේදැයි ලිඛිතව
+          අසන්න. විකුණුම්කරු නොදන්නේ නම් එය “ප්‍රතිකාර නැත” යන්නට සමාන
+          නොවේ. Origin නාමයක් හෝ “Ceylon” යන වෙළෙඳ වචනයක් පමණක් මත
+          rough එකේ භූගෝලීය මූලාරම්භය තහවුරු කළ නොහැකියි.
+        </p>
+      </ArticleSection>
+
       <ArticleSection heading="කැපීමෙන් පසු ලැබෙන බර සහ ගුණාත්මකභාවය">
         <p>
           කැපීමේදී දෝෂ සහිත කොටස් ඉවත් කිරීම, හැඩය සකස් කිරීම සහ ආලෝකය හොඳින්
@@ -87,6 +124,23 @@ export default function Page() {
           ප්‍රවාහන හෝ ගනුදෙනු ගාස්තු, කාලය සහ කැපීමෙන් පසු ලැබෙන ප්‍රතිඵලය පිළිබඳ
           අවදානමද සලකා බලන්න. අවසාන ගලේ ගුණාත්මකභාවය හෝ නැවත විකිණීමේ මිල සහතික
           නොවන නිසා, අහිමි විය හැකි මුදල ගැනත් කලින් තීරණය කරන්න.
+        </p>
+      </ArticleSection>
+
+      <ArticleSection heading="සසඳිය හැකි ගල් තෝරාගන්න">
+        <p>
+          මිල සසඳද්දී අනන්‍යතාව, treatment තොරතුරු, rough weight,
+          හැඩය, වර්ණ ව්‍යාප්තිය, පෙනෙන හානි සහ documentation එක සමාන
+          මට්ටමක තිබේදැයි බලන්න. මේ කරුණු වෙනස් නම් මිල වෙනසට හේතුව
+          පැහැදිලි කරගන්න; එකම carat බරක් ඇති බවෙන් rough ගල් දෙක
+          සමාන නොවේ.
+        </p>
+        <p>
+          ඔබ ගෙවන්නේ කුමක් සඳහාදැයි ලිඛිතව සටහන් කරන්න: rough එක,
+          cutting fee, laboratory fee සහ වෙනත් ගාස්තු. Cutter කෙනෙකුගේ
+          ඇස්තමේන්තුව, කැපූ පසු බරක් හෝ වෙළඳ වටිනාකමක් සහතික නොකරයි.
+          ලාභය අපේක්ෂා කළ හැකි යැයි ගණනය කරනවා වෙනුවට, අහිමි කළ හැකි
+          මුදල සහ ගනුදෙනුවෙන් ඉවත් විය හැකි කොන්දේසි කලින් තීරණය කරන්න.
         </p>
       </ArticleSection>
 
@@ -114,6 +168,15 @@ export default function Page() {
           ලැබෙන බරක් හෝ ලාභයක් සහතික නොකරයි. රළු ගලක වටිනාකම තක්සේරු කිරීමේදී
           පෙනුම, අවදානම, වියදම් සහ ස්වාධීන පරීක්ෂණය එකට සලකා බලන්න.
         </p>
+      </ArticleSection>
+
+      <ArticleSection heading="මූලාශ්‍ර">
+        <ul>
+          <li><a href="https://www.gia.edu/sapphire-quality-factor" target="_blank" rel="noreferrer">GIA: Sapphire Quality Factors</a> — rough shape, colour zoning, pleochroism and orientation.</li>
+          <li><a href="https://www.gia.edu/sapphire/buyers-guide" target="_blank" rel="noreferrer">GIA: Sapphire Buyer’s Guide</a> — reports, treatments and the scope of identification and origin opinions.</li>
+          <li><a href="https://www.gia.edu/gems-gemology/summer-2022-colored-stones-unearthed" target="_blank" rel="noreferrer">GIA: Inclusions in Gemstones</a> — inclusions as evidence considered with other observations, not as single-feature proof.</li>
+        </ul>
+        <p>මෙම මූලාශ්‍ර සාමාන්‍ය අධ්‍යාපනය සඳහාය; නිශ්චිත rough ගලක් හඳුනාගැනීමක් හෝ මිල තක්සේරුවක් නොවේ.</p>
       </ArticleSection>
     </ArticleLayout>
   );

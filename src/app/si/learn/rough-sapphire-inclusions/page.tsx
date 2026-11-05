@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "රළු නිල්මැණික්වල ඇතුළත ලක්ෂණ සහ ඉරිතැලීම් හඳුනාගැනීම | GemologyX",
   description:
     "රළු නිල්මැණික් ගලක inclusions, ඉරිතැලීම්, වර්ධන රටා සහ කැපීමේ අවදානම් ගැන ඉගෙන ගන්න. පෙනුමෙන් පමණක් ස්වභාවික බව හෝ වටිනාකම තීරණය නොකරන ප්‍රායෝගික සිංහල මාර්ගෝපදේශය.",
+  alternates: { canonical: "/si/learn/rough-sapphire-inclusions" },
 };
 
 export default function Page() {
@@ -21,7 +22,7 @@ export default function Page() {
       title="රළු නිල්මැණික් ගලක ඇතුළත ලක්ෂණ සහ ඉරිතැලීම් පරීක්ෂා කරන්නේ කෙසේද?"
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
-      lastReviewed="2026-10-21"
+      lastReviewed="2026-11-06"
       related={[
         { label: "රළු නිල්මැණික්වල වටිනාකම", href: "/si/learn/rough-blue-sapphire-value" },
         { label: "රළු මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/buying-rough-gemstones" },
@@ -128,6 +129,15 @@ export default function Page() {
           නොහැකියි. මිලදී ගැනීමේ තීරණයක් ගන්නා විට ස්වාධීන පරීක්ෂාව, ලිඛිත කොන්දේසි
           සහ සමාන ගල් සඳහා සැසඳිය හැකි මිල තොරතුරු භාවිත කරන්න.
         </p>
+      </ArticleSection>
+
+      <ArticleSection heading="මූලාශ්‍ර">
+        <ul>
+          <li><a href="https://www.gia.edu/gia-news-research-column-examining-rough-sapphire" target="_blank" rel="noreferrer">GIA: Examining a Rough Sapphire</a> — rough sapphire එකක ඉරිතැලීම් සහ ඇතුළත ලක්ෂණ පරීක්ෂා කිරීම.</li>
+          <li><a href="https://www.gia.edu/gems-gemology/summer-2022-colored-stones-unearthed" target="_blank" rel="noreferrer">GIA: Inclusions in Gemstones</a> — inclusions හඳුනාගැනීම, treatment evidence සහ origin interpretation හි සීමා.</li>
+          <li><a href="https://www.gia.edu/sapphire-quality-factor" target="_blank" rel="noreferrer">GIA: Sapphire Quality Factors</a> — sapphire clarity characteristics සහ ඒවායේ වටිනාකමට ඇති සන්දර්භය.</li>
+        </ul>
+        <p>මෙම මූලාශ්‍ර අධ්‍යාපනික තොරතුරු සඳහාය. රළු ගලක එක් දෘශ්‍ය ලක්ෂණයක් පමණක් මත ස්වභාවික බව, treatment හෝ origin තීරණය කළ නොහැකියි.</p>
       </ArticleSection>
     </ArticleLayout>
   );
