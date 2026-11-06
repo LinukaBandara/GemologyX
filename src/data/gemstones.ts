@@ -55,20 +55,20 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic sapphire has the same chemical composition and crystal structure as natural sapphire but is grown in a laboratory, typically by flame-fusion or flux-growth methods, over a period of hours to weeks rather than geological time. Synthetic sapphire is common in industrial applications (such as watch crystals) as well as in some jewellery, and should always be disclosed as synthetic when sold. Distinguishing natural from synthetic material generally requires examination by a trained gemologist using magnification and, in some cases, advanced laboratory equipment — it is not reliably done by eye.",
       treatments:
-        "The great majority of blue sapphire on the market today is heat-treated to improve colour and clarity, a practice with a long history in the trade and one that is generally accepted, provided it is disclosed. Less common treatments include beryllium diffusion, which can introduce colour (including padparadscha-like hues) into otherwise less desirable material, and fracture filling to improve apparent clarity. Treatment status has a material effect on value and should be stated on any accompanying laboratory report.",
+        "Heat treatment is a common and generally accepted sapphire enhancement when accurately disclosed. GIA notes that many sapphires on the market have undergone treatment, but prevalence varies by source and material. Less common treatments include beryllium diffusion, which introduces colour-causing elements into corundum. Fracture filling is much less common in sapphire than in ruby and can substantially change durability. Treatment status affects value; read a laboratory report within its stated findings and scope.",
       inclusions:
         "Inclusions are internal features — such as mineral crystals, fingerprint-like fluid networks, or growth lines — that formed as the crystal grew. In sapphire, inclusions can help a gemologist distinguish natural from synthetic material and can sometimes support an origin opinion. Fine silk-like rutile inclusions, when abundant and properly oriented, can also produce the star effect seen in star sapphires.",
       valueFactors: ["Colour saturation and hue", "Clarity", "Cut quality and proportions", "Carat weight", "Treatment status", "Origin, where determinable"],
       certification:
         "A laboratory report from a recognized gemological laboratory typically documents a sapphire's identity, weight and measurements, colour, clarity characteristics, and treatment status, and may offer an origin opinion where the evidence supports one. Reports vary in scope and rigor between laboratories, so it is worth understanding which laboratory issued a given report and what that laboratory does and does not attempt to determine.",
       care:
-        "Sapphire's high hardness (9 on the Mohs scale) makes it well suited to everyday jewellery wear. It can still chip if struck at the wrong angle, and ultrasonic or steam cleaning should be avoided for stones that have been fracture-filled or otherwise treated in a way that could be affected by heat or vibration. Mild soap and warm water with a soft brush is a safe general-purpose cleaning method for untreated or heat-only-treated stones.",
+        "Sapphire's hardness (9 on the Mohs scale) and lack of cleavage make it suitable for regular jewellery wear, though it can still chip under impact. GIA says ultrasonic and steam cleaning are usually safe for untreated, heat-treated and lattice-diffusion-treated sapphire. Fracture-filled, cavity-filled or dyed material should be cleaned only with a damp cloth. If treatment is unknown, ask a jeweller or gemological laboratory before using heat or vibration; warm soapy water is a gentle option for stones with compatible treatments.",
       faqs: [
         { question: "Does a blue colour prove that a sapphire came from Sri Lanka?", answer: "No. Sapphires from different localities can look similar, and Sri Lankan origin cannot be established from colour or a trade name alone. A laboratory may offer an origin opinion when evidence and service scope allow." },
         { question: "Can every sapphire be cleaned in an ultrasonic cleaner?", answer: "No. Fracture-filled stones and stones with vulnerable inclusions or other treatments may be damaged by vibration or heat. When treatment is unknown, use mild soap, lukewarm water and a soft brush, or ask a jeweller familiar with the stone." },
       ],
     },
-    sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }],
+    sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }, { label: "GIA — Sapphire Care and Cleaning", url: "https://www.gia.edu/sapphire-care-cleaning" }],
   },
   {
     slug: "ruby",
@@ -96,20 +96,20 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic ruby has been produced since the early 1900s, initially by flame-fusion methods, and is widely used in both jewellery and industrial applications. Reliably distinguishing natural from synthetic ruby generally requires a gemologist's examination under magnification, and sometimes advanced laboratory testing.",
       treatments:
-        "Heat treatment to improve colour and clarity is standard practice for the majority of ruby on the market. Lower-clarity material is sometimes filled with lead glass to mask fractures and improve apparent transparency — a treatment that significantly affects durability and value and should always be disclosed.",
+        "GIA advises buyers to assume ruby has been heat-treated unless an identification report says otherwise. Lower-quality material may have surface-reaching fractures filled with high-lead-content glass to make it appear more transparent. This is a common but less durable treatment; glass can be affected by solvents and other chemicals. Ask for treatment disclosure and read any report within its stated findings and scope.",
       inclusions:
         "Natural ruby commonly contains rutile silk, mineral crystals, and healed fracture patterns that formed during growth. These inclusions can assist a gemologist in confirming natural origin and, in some cases, supporting a geographic origin opinion.",
       valueFactors: ["Colour saturation and hue", "Clarity", "Cut quality", "Carat weight", "Treatment status", "Origin, where determinable"],
       certification:
         "A report from a recognized gemological laboratory typically documents identity, weight, colour, clarity characteristics, and treatment status, including whether the stone has been heated or glass-filled, which materially affects value.",
       care:
-        "Ruby's hardness (9 on the Mohs scale) makes it durable for everyday wear, though glass-filled stones are considerably more fragile and should avoid ultrasonic cleaning, heat, and harsh chemicals. Untreated or heat-only-treated rubies can generally be cleaned with mild soap, warm water, and a soft brush.",
+        "Ruby's hardness (9 on the Mohs scale) and lack of cleavage make untreated and heat-treated material durable for regular wear. GIA says fracture-filled, cavity-filled or dyed material should be cleaned only with a damp cloth; warm soapy water is usually safe, and ultrasonic or steam cleaning is usually safe for untreated, heat-treated and lattice-diffusion-treated stones. If the treatment is unknown, check before cleaning or repairing the gem.",
       faqs: [
         { question: "Are ruby and sapphire the same mineral?", answer: "Both are varieties of corundum. Red corundum is called ruby; other corundum colours are generally called sapphire. Trace elements influence the colour." },
         { question: "Is a glass-filled ruby as durable as an untreated ruby?", answer: "No. Lead-glass filling can make a fractured ruby more vulnerable to heat, chemicals, abrasion and cleaning methods. Treatment disclosure and gentle care are essential." },
       ],
     },
-    sources: [{ label: "GIA — Ruby Buyers Guide", url: "https://www.gia.edu/ruby/buyers-guide" }, { label: "GIA — Corundum", url: "https://www.gia.edu/gia-gem-corundum" }],
+    sources: [{ label: "GIA — Ruby Buyers Guide", url: "https://www.gia.edu/ruby/buyers-guide" }, { label: "GIA — The Royal Ruby", url: "https://www.gia.edu/royal-ruby" }, { label: "GIA — Ruby Care and Cleaning", url: "https://www.gia.edu/ruby-care-cleaning" }, { label: "GIA — Corundum", url: "https://www.gia.edu/gia-gem-corundum" }],
   },
   {
     slug: "emerald",
@@ -137,20 +137,20 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic emerald, grown by flux or hydrothermal methods, has existed commercially since the mid-20th century. Distinguishing natural from synthetic emerald generally requires gemological examination, often aided by characteristic inclusion patterns that differ between natural and lab-grown material.",
       treatments:
-        "The great majority of natural emerald is treated with oil (traditionally cedar oil) or, increasingly, synthetic resin, to fill surface-reaching fractures and improve apparent clarity. This is a long-accepted trade practice, but the type and extent of filling materially affects value and should be disclosed on any accompanying report.",
+        "Many natural emeralds undergo clarity enhancement by filling surface-reaching fractures with oils, waxes or resins. Filler type and amount vary, and fillers can be changed or mixed. A laboratory report may describe the degree of filling and, depending on the laboratory and service, may identify the filler type. Read the specific report for its findings and limits; do not assume it identifies every substance present.",
       inclusions:
         "Emerald is well known for visible inclusions, sometimes poetically called 'jardin' (French for garden). These inclusions are considered a normal characteristic of the material rather than automatically a defect, though excessive fracturing can affect durability.",
       valueFactors: ["Colour saturation and hue", "Clarity and degree of visible inclusions", "Cut quality", "Carat weight", "Treatment (oil/resin) extent", "Origin, where determinable"],
       certification:
-        "A laboratory report on emerald typically documents identity, weight, colour, clarity, and the type and extent of clarity enhancement (oiling or resin filling), since this has a significant effect on both value and appropriate care.",
+        "A laboratory report may document emerald identity and the degree of clarity enhancement; some services also report a filler category or type. Reporting varies by laboratory and service, and filler materials can be mixed, altered or difficult to identify, so read the report's stated scope rather than assuming the filler is fully characterized.",
       care:
-        "Emerald's hardness (7.5–8) is moderate, but its typical inclusion of fractures makes it more prone to chipping and damage than harder, cleaner gemstones. Avoid ultrasonic cleaners, steam cleaning, and harsh chemicals, all of which can strip fracture-filling oil or resin; clean gently with mild soap and a soft cloth only.",
+        "Emerald has a Mohs hardness of 7.5–8 and fair-to-good toughness, but existing fractures and fillers call for extra care. GIA warns that ultrasonic vibration can weaken fractured stones and hot steam can cause oil or unhardened resin to seep from fractures. Use warm soapy water with gentle cleaning; avoid ultrasonic and steam cleaners, heat, and harsh chemicals, especially when the treatment is unknown.",
       faqs: [
         { question: "Are visible inclusions unusual in emerald?", answer: "No. Emeralds commonly contain visible internal features, often called jardin. Their position and effect on transparency and durability matter; inclusions alone do not determine whether a stone is natural or valuable." },
         { question: "Can I use steam or ultrasonic cleaning on an emerald?", answer: "Avoid both. Heat and vibration can damage emeralds, especially when fractures contain oil or resin. Use mild soap, lukewarm water and a soft cloth, and ask a jeweller before cleaning a mounted stone." },
       ],
     },
-    sources: [{ label: "GIA — Emerald Buyers Guide", url: "https://www.gia.edu/emerald/buyers-guide" }, { label: "GIA — Emerald", url: "https://www.gia.edu/emerald" }],
+    sources: [{ label: "GIA — Emerald Buyers Guide", url: "https://www.gia.edu/emerald/buyers-guide" }, { label: "GIA — Emerald Care and Cleaning", url: "https://www.gia.edu/emerald-care-cleaning" }, { label: "GIA — Emerald Report Filler Identification", url: "https://www.gia.edu/gia-news-press/gia-enhances-emerald-reports" }, { label: "GIA — Emerald", url: "https://www.gia.edu/emerald" }],
   },
   {
     slug: "spinel",
