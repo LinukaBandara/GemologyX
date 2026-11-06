@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Garnet (ගානට්) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Garnet (ගානට්) — මූලික මාර්ගෝපදේශය",
   description:
     "Garnet යනු කුමක්ද, වර්ණ විවිධත්වය, ruby සමඟ වෙනස, හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/garnet-intro" },
 };
 
 export default function Page() {

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10253b"/><stop offset=".48" stop-color="#030b14"/><stop offset="1" stop-color="#182638"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#2259a6" stop-opacity=".48"/><stop offset="1" stop-color="#06101d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="sapphire" x1=".12" y1=".08" x2=".84" y2=".95"><stop stop-color="#e6f2ff"/><stop offset=".16" stop-color="#5799ff"/><stop offset=".38" stop-color="#0649d9"/><stop offset=".62" stop-color="#001758"/><stop offset=".8" stop-color="#1673ef"/><stop offset="1" stop-color="#001034"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#52a9ff" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-40%" width="160%" height="190%"><feGaussianBlur in="SourceAlpha" stdDeviation="24"/><feOffset dy="24"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .8 0"/><feBlend in="SourceGraphic"/></filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1600v700H0z"/><ellipse cx="1130" cy="320" rx="520" ry="420" fill="url(#glow)"/>
+  <path d="M0 570 160 530l124 44 148-72 169 56 174-42 174 65 152-72 152 80 154-62 193 81v92H0z" fill="#02080f"/>
+  <g opacity=".72" fill="#27394b"><path d="m850 585 114-105 81 31 45 92-100 39-133-20z"/><path d="m1288 567 103-100 79 12 72 85-82 53-145-9z"/><path d="m1040 626 107-72 85 30 38 77-121 30-112-28z"/></g>
+  <g filter="url(#shadow)" transform="translate(970 315) rotate(-13)">
+    <path d="m-226-130 96-95 260 0 106 104-42 242-112 94-221-17-129-103z" fill="url(#sapphire)" stroke="#a8d5ff" stroke-width="8"/>
+    <path d="m-226-130 155 23-59-118m59 118 101-118 100 110-107 26m-94-18 94-118m-94 118 14 167-119-64m119 64 87-149 74 125m-161 24 49 111m112-135 90-25m-181 49 92 111" stroke="#addbff" stroke-opacity=".76" stroke-width="7"/>
+    <path d="m-130-225 59 118 101-118 100 110-107 26-94-18 14 167-119-64z" fill="url(#shine)" opacity=".7"/>
+    <path d="m-71-107 94 18-87 149-14-167 101-118" fill="#0c50dd" fill-opacity=".58"/>
+    <path d="m23-89 107-26-20 151-74 125-87-149z" fill="#001b70" fill-opacity=".76"/>
+    <path d="m-226-130 155 23-119 64z" fill="#f4fbff" fill-opacity=".5"/>
+  </g>
+  <g opacity=".24" stroke="#dfc384"><path d="M74 492c138-114 242-89 322-186 86-103 43-188 154-251"/><path d="M126 530c146-97 239-72 336-178 72-79 67-154 155-238"/></g>
+</svg>

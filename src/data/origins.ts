@@ -3,6 +3,7 @@ export interface Origin {
   name: string;
   summary: string;
   gemstones?: string[];
+  sources: { label: string; url: string }[];
   detail?: {
     overview: string;
     geology: string;
@@ -15,7 +16,7 @@ export const origins: Origin[] = [
   {
     slug: "sri-lanka",
     name: "Sri Lanka",
-    summary: "One of the world's longest-active gem-producing regions, historically known as Ceylon.",
+    summary: "A long-established gem-producing region, historically known as Ceylon.",
     gemstones: ["Sapphire", "Ruby", "Alexandrite", "Spinel", "Garnet", "Tourmaline", "Cat's eye chrysoberyl"],
     detail: {
       overview:
@@ -27,6 +28,10 @@ export const origins: Origin[] = [
       misconceptions:
         "It is a common misconception that a sapphire's fine quality or blue colour by itself proves Sri Lankan origin. Geographic origin is a laboratory determination based on trace-element and inclusion evidence, not something that can be read from a stone's appearance, and comparable material is also produced by other countries.",
     },
+    sources: [
+      { label: "National Gem and Jewellery Authority: Gemstone mining industry", url: "https://ngja.gov.lk/gems/gemstone-mining-industry/" },
+      { label: "GIA: Sri Lanka, expedition to the Island of Jewels", url: "https://www.gia.edu/gems-gemology/fall-2014-sri-lanka-expedition-island-of-jewels" },
+    ],
   },
   {
     slug: "madagascar",
@@ -43,11 +48,15 @@ export const origins: Origin[] = [
       misconceptions:
         "Because Madagascar sapphire and ruby can closely resemble material from other origins in colour, buyers should not assume origin from appearance; a laboratory opinion is needed for a supportable origin claim.",
     },
+    sources: [
+      { label: "GIA: Ilakaka sapphire field report", url: "https://www.gia.edu/gia-news-research/sapphire-mines-ilakaka-madagascar-field-expedition" },
+      { label: "GIA: Madagascar sapphire deposits and origin characteristics", url: "https://www.gia.edu/gems-gemology/winter-2019-blue-sapphire-geographic-origin-determination" },
+    ],
   },
   {
     slug: "myanmar",
     name: "Myanmar",
-    summary: "Historic source of ruby and jadeite, associated with the Mogok Valley.",
+    summary: "A historic source of ruby and jadeite, including the Mogok Valley.",
     gemstones: ["Ruby", "Sapphire", "Spinel", "Jadeite"],
     detail: {
       overview:
@@ -59,6 +68,10 @@ export const origins: Origin[] = [
       misconceptions:
         "Not all fine-coloured ruby is from Myanmar, and Myanmar-quality colour can occur in material from other origins — colour alone is not proof of origin, and current legal/import restrictions on Myanmar-origin gems vary by country and should be checked independently.",
     },
+    sources: [
+      { label: "GIA: The Rubies of Burma and the Mogok Stone Tract", url: "https://www.gia.edu/gems-gemology/winter-1983-ruby-mogok-keller" },
+      { label: "GIA: Blue sapphires from Mogok, Myanmar", url: "https://www.gia.edu/gems-gemology/winter-2021-blue-sapphires-from-mogok-myanmar-gemological-review" },
+    ],
   },
   {
     slug: "kashmir",
@@ -75,6 +88,10 @@ export const origins: Origin[] = [
       misconceptions:
         "Because 'Kashmir blue' has become a descriptive colour term in the trade, sellers sometimes use it loosely to describe sapphire from other origins with a similar colour. A colour description is not the same as a verified Kashmir origin, which requires laboratory confirmation.",
     },
+    sources: [
+      { label: "GIA: Historical reading list on Kashmir sapphires", url: "https://www.gia.edu/reading-list-kashmir-sapphires" },
+      { label: "GIA: New sapphire material from Kashmir", url: "https://www.gia.edu/gems-gemology/spring-2024-gemnews-new-sapphire-material-from-kashmir" },
+    ],
   },
   {
     slug: "colombia",
@@ -91,6 +108,10 @@ export const origins: Origin[] = [
       misconceptions:
         "While Colombian emerald is often considered a benchmark for fine colour, quality varies considerably by individual stone, and fine emerald is also produced by Zambia, Brazil, and other countries — origin alone does not guarantee quality.",
     },
+    sources: [
+      { label: "GIA: Geology of corundum and emerald gem deposits", url: "https://www.gia.edu/gems-gemology/winter-2019-geology-of-corundum-and-emerald-gem-deposits" },
+      { label: "GIA: Colombian emerald industry and geology", url: "https://www.gia.edu/gems-gemology/fall-2017-colombian-emerald-industry" },
+    ],
   },
   {
     slug: "tanzania",
@@ -107,6 +128,10 @@ export const origins: Origin[] = [
       misconceptions:
         "Because tanzanite comes from a single deposit area, origin claims are less contested than for widely distributed stones like sapphire — the more relevant buyer questions for tanzanite involve colour treatment (most tanzanite is heat-treated) rather than origin verification.",
     },
+    sources: [
+      { label: "GIA: Tanzanite description and Merelani source", url: "https://www.gia.edu/tanzanite-description" },
+      { label: "GIA: Tanzanite birthstone history", url: "https://www.gia.edu/birthstones/december-birthstones" },
+    ],
   },
   {
     slug: "mozambique",
@@ -123,11 +148,15 @@ export const origins: Origin[] = [
       misconceptions:
         "Mozambique ruby quality spans a wide range from commercial to fine gem grade — origin alone does not indicate quality, and material from Mozambique can closely resemble ruby from Myanmar or other sources without laboratory testing.",
     },
+    sources: [
+      { label: "GIA: A decade of ruby from Mozambique", url: "https://www.gia.edu/gems-gemology/summer-2019-decade-of-ruby-from-mozambique" },
+      { label: "GIA: Mozambique ruby discovery and geology", url: "https://www.gia.edu/doc/GG-SP15-Hsu-Mozambique.pdf" },
+    ],
   },
   {
     slug: "brazil",
     name: "Brazil",
-    summary: "A major source of aquamarine, tourmaline, topaz and other semi-precious gemstones.",
+    summary: "A major source of aquamarine, tourmaline, topaz, and other coloured gemstones.",
     gemstones: ["Aquamarine", "Tourmaline", "Topaz", "Emerald", "Amethyst"],
     detail: {
       overview:
@@ -139,15 +168,19 @@ export const origins: Origin[] = [
       misconceptions:
         "Not all copper-bearing blue-green tourmaline is 'Paraiba' in the strict trade sense — laboratory chemical analysis, not just colour or general Brazilian origin, is used to determine whether material meets the specific criteria associated with the Paraiba name.",
     },
+    sources: [
+      { label: "GIA: Paraíba tourmaline geographic origin determination", url: "https://www.gia.edu/gems-gemology/winter-2019-paraiba-tourmaline-geographic-origin-determination" },
+      { label: "GIA: Pegmatite areas mined for gem minerals", url: "https://www.gia.edu/doc/summer-2025-gems-gemology-v2.pdf" },
+    ],
   },
   {
     slug: "australia",
     name: "Australia",
-    summary: "Known for sapphire and for producing the majority of the world's precious opal.",
+    summary: "Known for sapphire and for its black and boulder opal fields.",
     gemstones: ["Sapphire", "Opal"],
     detail: {
       overview:
-        "Australia is a significant sapphire producer, particularly from deposits in Queensland and New South Wales, and is by far the world's largest source of precious opal, with the majority of global supply coming from areas such as Coober Pedy, Lightning Ridge, and Andamooka.",
+        "Australia is a significant sapphire producer and a major source of precious opal, including black opal from Lightning Ridge and boulder opal from fields in Queensland.",
       geology:
         "Australian sapphire typically forms in basaltic volcanic settings, which tends to produce darker blue and green-blue tones compared to the metamorphic settings associated with some other sapphire sources. Australian opal forms in sedimentary rock through a slow silica deposition process in ancient groundwater basins.",
       history:
@@ -155,6 +188,10 @@ export const origins: Origin[] = [
       misconceptions:
         "Australian sapphire's typically darker tones are sometimes assumed to be lower quality by default, but darker, ink-blue sapphire is prized by some buyers specifically for that character — 'quality' in coloured stones is often about matching stone to preference rather than a single universal ranking.",
     },
+    sources: [
+      { label: "GIA: Australia opal fields expedition", url: "https://www.gia.edu/gia-news-research/australia-opal-fields-expedition" },
+      { label: "GIA: Sapphire geographic origin determination", url: "https://www.gia.edu/gems-gemology/winter-2019-blue-sapphire-geographic-origin-determination" },
+    ],
   },
 ];
 

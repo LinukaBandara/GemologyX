@@ -3,76 +3,83 @@ import {
   ArticleLayout,
   ArticleSection,
   QuickAnswer,
-  PracticalChecklist,
-  Misconceptions,
 } from "@/components/article-layout";
+import { SriLankaBuyingVisit } from "@/components/sri-lanka-buying-visit";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් මිලදී ගන්නා දිනයකට | GemologyX",
+  title: "ශ්‍රී ලංකාවේදී මැණික් මිලදී ගැනීමට සූදානම් වන්න",
   description:
-    "දේශීය වෙළෙඳපොළේ මිලදී ගැනීම — ලේඛන, කාලය, පීඩනය, independent check සහ realistic expectations.",
+    "ශ්‍රී ලංකාවේ මැණික් ගනුදෙනුවකට පෙර සූදානම් වීම, වාර්තාවක් පරීක්ෂා කිරීම සහ ලිඛිත කොන්දේසි පැහැදිලි කරගැනීම සඳහා අන්තර්ක්‍රියාකාරී මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/sri-lanka-buying-day-tips" },
 };
 
 export default function Page() {
   return (
     <ArticleLayout
-      category="සිංහල මැණික් දැනුම"
-      readTime="මිනිත්තු 7"
-      title="ශ්‍රී ලංකාවේ මැණික් මිලදී ගන්නා දිනයකට — ප්‍රායෝගික උපදෙස්"
-      crumbHref="/si/learn/sri-lanka-gem-trade-intro"
-      crumbLabel="SL මැණික් වෙළෙඳාම"
-      lastReviewed="2026-10-25"
+      category="ශ්‍රී ලංකාවේ මිලදී ගැනීම"
+      readTime="මිනිත්තු 8"
+      title="ශ්‍රී ලංකාවේදී මැණික් මිලදී ගැනීම: යාමට පෙර සිට ගෙවීම දක්වා"
+      crumbHref="/si/learn"
+      crumbLabel="ශ්‍රී ලංකා මැණික් දැනුම"
+      lastReviewed="2026-11-05"
       related={[
-        { label: "SL මැණික් වෙළෙඳාම", href: "/si/learn/sri-lanka-gem-trade-intro" },
-        { label: "SL මැණික් පද", href: "/si/learn/sri-lanka-gem-terms" },
-        { label: "වෙළෙන්දාගෙන් අසන්න ඕනේ ප්‍රශ්න", href: "/si/learn/questions-to-ask-gem-dealer" },
-        { label: "Negotiate", href: "/si/learn/negotiate-gem-price" },
+        { label: "වෙළෙන්දාගේ භූමිකා", href: "/si/learn/sri-lanka-dealer-types" },
+        { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
+        { label: "ශ්‍රී ලංකාවේ වෙළෙඳ ගමන", href: "/si/learn/sri-lanka-gem-trade-intro" },
+        { label: "අපනයන ලේඛන", href: "/si/learn/export-documents-intro" },
       ]}
     >
-      <QuickAnswer>
+      <QuickAnswer locale="si">
         <p>
-          කාලය ගන්න — same-day pressure red flag එකක් විය හැකියි. ලිඛිතව:
-          identity, treatment, weight, price, seller details. “Ceylon” =
-          marketing term නම් origin proof අසන්න. High value → independent lab
-          before final payment when possible. Budget ට වඩා “deal” chase නොකරන්න.
+          ශ්‍රී ලංකාවේ මැණික් මිලදී ගැනීමට යන විට, පළමුව ඔබගේ අවශ්‍යතාව සහ
+          වැය සීමාව තීරණය කරන්න. ගලේ අනන්‍යතාව, ප්‍රතිකාරය, වාර්තාව, මුළු මිල
+          සහ ආපසු භාරදීමේ කොන්දේසි වෙන වෙනම පැහැදිලි කරගන්න. ඉක්මන් තීරණයක්
+          ගැනීමට අවශ්‍ය නැහැ; සැකයක් හෝ නොපැහැදිලි එකඟතාවක් තිබේ නම් ගනුදෙනුව
+          කල් දැමිය හැකියි.
         </p>
       </QuickAnswer>
 
-      <ArticleSection heading="Before you go">
-        <p>Know your budget ceiling. Read basic treatment and report vocabulary. Decide must-have vs nice-to-have (unheated, size, colour).</p>
+      <SriLankaBuyingVisit />
+
+      <ArticleSection heading="මෙම මාර්ගෝපදේශයේ ශ්‍රී ලංකා සන්දර්භය">
+        <p>
+          මෙය ගනුදෙනුකරුවන්ට භාවිත කළ හැකි පරීක්ෂණ ක්‍රමයක් පමණයි; කිසියම්
+          වෙළෙඳපොළක්, වෙළෙන්දෙක් හෝ ගලක් නිර්දේශ නොකරයි. NGJA තම වෙබ් අඩවියේ
+          මැණික් වෙළෙන්දන් සෙවීමේ සේවාවක් සහ එය නිකුත් කළ වාර්තා සඳහා
+          Certificate Verification සේවාවක් සපයයි. මේ සේවා ලැයිස්තුගත තොරතුරු
+          හෝ වාර්තා අංක සොයා බැලීමට උදව් කරන අතර ගලේ ගුණාත්මකභාවය, මිල
+          සාධාරණත්වය හෝ විකුණුම්කරුගේ සියලු ප්‍රකාශ සහතික නොකරයි.
+        </p>
+        <p>
+          NGJA වාර්තාවක අංකය පරීක්ෂා කළ හැකි වුවත්, එම වාර්තාවෙන් මොනවා
+          පරීක්ෂා කළාද සහ නොකළාද යන්න එහිම කියවන්න. වාර්තාවක් මිල තක්සේරුවක්,
+          origin සහතිකයක් හෝ නැවත විකිණීමේ පොරොන්දුවක් ලෙස නොසලකන්න.
+        </p>
       </ArticleSection>
 
-      <ArticleSection heading="On the day">
+      <ArticleSection heading="නිල මූලාශ්‍ර සහ සෘජු සේවා">
         <ul>
-          <li>Compare more than one option</li>
-          <li>Ask for daylight viewing</li>
-          <li>Write down what was promised</li>
-          <li>Receipt with description</li>
+          <li><a href="https://ngja.gov.lk/find-dealers/gem-dealers/" target="_blank" rel="noreferrer">NGJA: මැණික් වෙළෙන්දන් සෙවීම</a></li>
+          <li><a href="https://gemlab-certificate.ngja.gov.lk/" target="_blank" rel="noreferrer">NGJA: මැණික් පරීක්ෂණ වාර්තා අංකය පරීක්ෂා කිරීම</a></li>
+          <li><a href="https://ngja.gov.lk/business_services/contact-gem-laboratory-centers-of-ngja/" target="_blank" rel="noreferrer">NGJA: මැණික් පරීක්ෂණාගාර මධ්‍යස්ථාන</a></li>
+          <li><a href="https://www.srilankabusiness.com/gem-diamond-and-jewellery/exporter-information/gem-export-procedure-sri-lanka.html" target="_blank" rel="noreferrer">EDB: මැණික් සහ ස්වර්ණාභරණ අපනයන ක්‍රියාවලිය</a></li>
         </ul>
+        <p className="text-sm text-muted">
+          NGJA වෙබ් සෙවුම් ප්‍රතිඵල හෝ සහතික පරීක්ෂකයක් විශ්වාසය/ගුණාත්මකභාවය
+          අනුමත කරන සේවාවක් ලෙස නොසලකන්න. ගනුදෙනුවක් හෝ විදේශයට ගෙනයාමක්
+          සම්බන්ධයෙන් අදාළ නිල ආයතනයෙන් නවතම උපදෙස් ගන්න.
+        </p>
       </ArticleSection>
 
-      <ArticleSection heading="Local realities">
-        <p>Trade hubs are active; not every seller is bad, not every friendly seller is safe. Process over personality. Geuda / heated material is normal in the market — disclosure is the issue.</p>
-      </ArticleSection>
-
-      <PracticalChecklist
-        items={[
-          "Budget ceiling fix කළාද?",
-          "ලිඛිත description + receipt තියෙනවාද?",
-          "High value නම් independent check plan තියෙනවාද?",
-          "Pressure decision avoid කළාද?",
-        ]}
-      />
-
-      <Misconceptions
-        items={[
-          "SL = automatically unheated Ceylon sapphire — නැහැ.",
-          "Street price always lower than fair — quality varies widely.",
-        ]}
-      />
-
-      <ArticleSection heading="මතක තබාගන්න">
-        <p>මෙම ලිපිය අධ්‍යාපනික මාර්ගෝපදේශයකි. නිශ්චිත වෙළෙන්දන් හෝ මිල නිර්දේශ නොකරයි.</p>
+      <ArticleSection heading="වටිනා තීරණයක් නම්">
+        <p>
+          අවශ්‍ය විට ගනුදෙනුවෙන් ස්වාධීන gemologist කෙනෙකු හෝ පිළිගත්
+          පරීක්ෂණාගාරයකින් අදහසක් ගන්න. පරීක්ෂාවට පෙර ගෙවීමක් හෝ භාණ්ඩය
+          භාරදීමක් අවශ්‍යද යන්න පාර්ශ්ව සමඟ ලිඛිතව එකඟ කරගන්න. දුරකථන
+          ඡායාරූපයක්, සරල පරීක්ෂණයක් හෝ මෙම වෙබ් පිටුවෙන් ගල හඳුනාගැනීමට
+          නොහැකියි.
+        </p>
       </ArticleSection>
     </ArticleLayout>
   );

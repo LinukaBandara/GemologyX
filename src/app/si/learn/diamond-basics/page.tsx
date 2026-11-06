@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Diamond (දියමන්ති) — මූලික දැනුම | GemologyX",
+  title: "Diamond (දියමන්ති) — මූලික දැනුම",
   description:
     "Diamond 4Cs, natural vs lab-grown, simulants (CZ, moissanite) සහ මිලදී ගැනීමේ මූලික උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/diamond-basics" },
 };
 
 export default function Page() {

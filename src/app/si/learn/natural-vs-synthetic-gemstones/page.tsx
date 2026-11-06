@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "ස්වභාවික සහ Lab-grown මැණික් අතර වෙනස | GemologyX",
+  title: "ස්වභාවික සහ Lab-grown මැණික් අතර වෙනස",
   description: "Natural, lab-grown / synthetic සහ imitation මැණික් අතර ප්‍රධාන වෙනස්කම්, පරීක්ෂණ සීමා සහ ආරක්ෂිත මිලදී ගැනීමේ ක්‍රම.",
   alternates: { canonical: "/si/learn/natural-vs-synthetic-gemstones" },
 };

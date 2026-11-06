@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් මිලදී ගැනීමට පෙර checklist | GemologyX",
+  title: "නිල්මැණික් මිලදී ගැනීමට පෙර checklist",
   description:
     "නිල්මැණික් ගලක් මිලදී ගැනීමට පෙර අනන්‍යතාව, වර්ණය, ප්‍රතිකාර, වාර්තා, මිල සහ ගනුදෙනු කොන්දේසි පරීක්ෂා කරන ප්‍රායෝගික සිංහල checklist.",
+
+  alternates: { canonical: "/si/learn/blue-sapphire-buying-checklist" },
 };
 
 export default function Page() {

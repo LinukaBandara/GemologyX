@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් ගනුදෙනුවල වංචා අවදානම් | GemologyX",
+  title: "මැණික් ගනුදෙනුවල වංචා අවදානම්",
   description:
     "මැණික් මිලදී ගැනීමේදී red flags — පීඩනය, ලාභ පොරොන්දු, ලේඛන ගැටලු සහ ආරක්ෂිත පියවර.",
+
+  alternates: { canonical: "/si/learn/avoid-gemstone-scams" },
 };
 
 export default function Page() {

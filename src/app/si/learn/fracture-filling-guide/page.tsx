@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික්වල Fracture filling / glass filling | GemologyX",
+  title: "මැණික්වල Fracture filling / glass filling",
   description:
     "Fracture filling සහ glass filling යනු කුමක්ද, ඇයි හෙළිදරව් කළ යුතුද, රැකවරණය සහ වාර්තා කියවන ආකාරය.",
+
+  alternates: { canonical: "/si/learn/fracture-filling-guide" },
 };
 
 export default function Page() {

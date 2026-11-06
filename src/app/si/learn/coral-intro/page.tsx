@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Coral (කොරල්) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Coral (කොරල්) — මූලික මාර්ගෝපදේශය",
   description:
     "Gem coral යනු කුමක්ද, dye treatments, රැකවරණය, නීතිමය / conservation සීමා සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/coral-intro" },
 };
 
 export default function Page() {

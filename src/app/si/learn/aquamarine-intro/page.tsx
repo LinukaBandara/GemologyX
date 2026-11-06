@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Aquamarine (නීලවර්ණ) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Aquamarine (නීලවර්ණ) — මූලික මාර්ගෝපදේශය",
   description:
     "Aquamarine යනු කුමක්ද, නිල් පැහැය, heat treatment, sapphire සමඟ වෙනස සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/aquamarine-intro" },
 };
 
 export default function Page() {

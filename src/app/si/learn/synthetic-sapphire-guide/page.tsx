@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Synthetic Sapphire / Lab-grown නිල්මැණික් මාර්ගෝපදේශය | GemologyX",
+  title: "Synthetic Sapphire / Lab-grown නිල්මැණික් මාර්ගෝපදේශය",
   description: "Laboratory-grown sapphire යනු කුමක්ද, natural sapphire සමඟ වෙනස, disclosure සහ report wording.",
   alternates: { canonical: "/si/learn/synthetic-sapphire-guide" },
 };

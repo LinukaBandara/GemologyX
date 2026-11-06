@@ -4,10 +4,14 @@ import type { MetadataRoute } from "next";
 import { allGemstones as gemstones } from "@/data/all-gemstones";
 import { origins } from "@/data/origins";
 import { glossaryTerms } from "@/data/glossary";
+import { treatmentGuides } from "@/data/treatments";
+import { buyingGuides } from "@/data/buying-guides";
+import { cutGuides } from "@/data/cut-guides";
+import { formationGuides } from "@/data/formation-guides";
+import { draftRoutes } from "@/data/draft-routes";
 
 const BASE_URL = "https://gemologyx.com";
 const APP_ROOT = join(process.cwd(), "src", "app");
-
 // Discover concrete App Router pages so new static articles are not
 // accidentally omitted from the sitemap. Dynamic routes are added from data below.
 function collectStaticRoutes(
@@ -44,33 +48,6 @@ function collectStaticRoutes(
   });
 }
 
-// These are genuine English/Sinhala counterparts. Only pair pages whose
-// primary subject is translated; related but non-equivalent pages are omitted.
-const translatedPairs = [
-  {
-    en: "/learn/natural-vs-synthetic-gemstones",
-    si: "/si/learn/natural-vs-synthetic-gemstones",
-  },
-  {
-    en: "/learn/questions-to-ask-gem-dealer",
-    si: "/si/learn/questions-to-ask-gem-dealer",
-  },
-] as const;
-
-const languageAlternates = new Map<
-  string,
-  { en: string; si: string }
->();
-
-for (const pair of translatedPairs) {
-  const languages = {
-    en: `${BASE_URL}${pair.en}`,
-    si: `${BASE_URL}${pair.si}`,
-  };
-  languageAlternates.set(pair.en, languages);
-  languageAlternates.set(pair.si, languages);
-}
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = collectStaticRoutes(APP_ROOT).filter(
     (path) => path !== "/search",
@@ -80,16 +57,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...gemstones.map((gemstone) => `/gemstones/${gemstone.slug}`),
     ...origins.map((origin) => `/origins/${origin.slug}`),
     ...glossaryTerms.map((term) => `/glossary/${term.slug}`),
+    ...treatmentGuides.map((guide) => `/learn/gemstone-treatments/${guide.slug}`),
+    ...buyingGuides.map((guide) => `/learn/buying-gemstones/${guide.slug}`),
+    ...cutGuides.map((guide) => `/learn/gemstone-cut/${guide.slug}`),
+    ...formationGuides.map((guide) => `/learn/gem-formation/${guide.slug}`),
   ];
 
-  const routes = [...new Set([...staticRoutes, ...dynamicRoutes])];
+  const routes = [...new Set([...staticRoutes, ...dynamicRoutes])].filter(
+    (path) => !draftRoutes.has(path),
+  );
 
-  return routes.map((path) => {
-    const languages = languageAlternates.get(path);
-
-    return {
-      url: `${BASE_URL}${path === "/" ? "" : path}`,
-      ...(languages ? { alternates: { languages } } : {}),
-    };
-  });
+  return routes.map((path) => ({
+    url: `${BASE_URL}${path === "/" ? "" : path}`,
+  }));
 }

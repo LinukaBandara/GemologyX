@@ -4,6 +4,8 @@ import { ArticleLayout, ArticleSection } from "@/components/article-layout";
 export const metadata: Metadata = {
   title: "How Gemstone Certification Works",
   description: "What a gemological laboratory actually does, and why not all reports are created equal.",
+
+  alternates: { canonical: "/learn/gemstone-certification" },
 };
 
 export default function Page() {

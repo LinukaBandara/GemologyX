@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් හඳුනාගැනීම: නිරීක්ෂණ සහ පරීක්ෂණ | GemologyX",
+  title: "නිල්මැණික් හඳුනාගැනීම: නිරීක්ෂණ සහ පරීක්ෂණ",
   description: "නිල් පැහැති ගලක් sapphire ද යන්න, natural හෝ synthetic ද යන්න සහ treatment status එක හඳුනාගැනීමේ සීමා.",
   alternates: { canonical: "/si/learn/identify-sapphire" },
 };

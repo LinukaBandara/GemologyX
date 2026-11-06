@@ -59,7 +59,7 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
               type="button"
               onClick={() => setQuery("")}
               aria-label="Clear search"
-              className="rounded-full p-0.5 text-muted hover:text-foreground"
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-muted transition-colors hover:bg-accent-soft hover:text-foreground"
             >
               <X size={15} />
             </button>

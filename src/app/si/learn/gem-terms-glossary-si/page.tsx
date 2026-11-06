@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් පද 20ක් — සිංහල Glossary | GemologyX",
+  title: "මැණික් පද 20ක් — සිංහල Glossary",
   description:
     "Carat, clarity, heat, diffusion, origin opinion, eye-clean සහ තවත් පොදු පද කෙටියෙන්.",
+
+  alternates: { canonical: "/si/learn/gem-terms-glossary-si" },
 };
 
 export default function Page() {

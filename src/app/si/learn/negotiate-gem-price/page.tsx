@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් මිල සාකච්ඡා කරන ආකාරය | GemologyX",
+  title: "මැණික් මිල සාකච්ඡා කරන ආකාරය",
   description:
     "මැණික් ගනුදෙනුවකදී මිල සාකච්ඡා කිරීමේදී සැලකිලිමත් විය යුතු කරුණු — තොරතුරු, සංසන්දනය සහ ආරක්ෂිත සීමා.",
+
+  alternates: { canonical: "/si/learn/negotiate-gem-price" },
 };
 
 export default function Page() {

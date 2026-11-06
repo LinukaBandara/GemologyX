@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් තෑග්ගක් මිලදී ගැනීම | GemologyX",
+  title: "මැණික් තෑග්ගක් මිලදී ගැනීම",
   description:
     "තෑග්ගක් ලෙස මැණික් / ආභරණ තෝරන විට budget, durability, return policy සහ documentation.",
+
+  alternates: { canonical: "/si/learn/gemstone-gift-buying" },
 };
 
 export default function Page() {

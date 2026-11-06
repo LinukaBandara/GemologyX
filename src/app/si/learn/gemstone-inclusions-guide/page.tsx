@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික්වල ඇතුළත ලක්ෂණ (Inclusions) | GemologyX",
+  title: "මැණික්වල ඇතුළත ලක්ෂණ (Inclusions)",
   description:
     "Inclusions යනු කුමක්ද, ඒවා ගලේ ගුණාත්මකභාවයට සහ හඳුනාගැනීමට බලපාන ආකාරය, සහ පොදු වැරදි අවබෝධ.",
+
+  alternates: { canonical: "/si/learn/gemstone-inclusions-guide" },
 };
 
 export default function Page() {

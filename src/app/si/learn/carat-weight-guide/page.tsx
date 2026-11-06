@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "කැරට් බර තේරුම් ගැනීම | GemologyX",
+  title: "කැරට් බර තේරුම් ගැනීම",
   description:
     "මැණික්වල carat weight, gram conversion, mm dimensions, cut, density සහ price-per-carat අතර වෙනස පැහැදිලි කරන මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/carat-weight-guide" },
 };
 
 export default function Page() {

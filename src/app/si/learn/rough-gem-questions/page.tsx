@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "රළු මැණික් මිලදී ගන්නා විට අසන්න ඕනේ ප්‍රශ්න | GemologyX",
+  title: "රළු මැණික් මිලදී ගන්නා විට අසන්න ඕනේ ප්‍රශ්න",
   description:
     "රළු මැණික් ගනුදෙනුවකදී වෙළෙන්දාගෙන් අසන්න සහ ලිඛිතව තහවුරු කරගන්න ප්‍රශ්න ඇතුළත් භාවිතයට පහසු checklist එක.",
+
+  alternates: { canonical: "/si/learn/rough-gem-questions" },
 };
 
 export default function Page() {

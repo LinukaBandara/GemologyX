@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් සහිත ආභරණ මිලදී ගැනීම | GemologyX",
+  title: "මැණික් සහිත ආභරණ මිලදී ගැනීම",
   description:
     "මැණික් සහිත මුදු, මාල සහ ආභරණ මිලදී ගැනීමේදී ගල, ලෝහ, සැකසුම සහ ලේඛන පරීක්ෂා කළ යුතු ආකාරය.",
+
+  alternates: { canonical: "/si/learn/jewelry-with-gems-buying" },
 };
 
 export default function Page() {

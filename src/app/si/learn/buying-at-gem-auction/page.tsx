@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් Auction එකකින් මිලදී ගැනීම | GemologyX",
+  title: "මැණික් Auction එකකින් මිලදී ගැනීම",
   description:
     "Gem auctions — inspection windows, premiums, conditions, and risks for buyers.",
+
+  alternates: { canonical: "/si/learn/buying-at-gem-auction" },
 };
 
 export default function Page() {

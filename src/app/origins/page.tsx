@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   title: "Gemstone Origins",
   description:
     "Explore where gemstones come from, country by country, with geological and historical context.",
+
+  alternates: { canonical: "/origins" },
 };
 
 export default function OriginsPage() {

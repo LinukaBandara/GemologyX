@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් Heat Treatment: විශේෂයෙන් දැනගත යුතු දේ | GemologyX",
+  title: "නිල්මැණික් Heat Treatment: විශේෂයෙන් දැනගත යුතු දේ",
   description:
     "Blue sapphire heat treatment ගැන, එහි ප්‍රතිඵල වෙනස් විය හැකි ආකාරය, treatment disclosure සහ sapphire report සටහන් කියවීම.",
+
+  alternates: { canonical: "/si/learn/heated-sapphire-guide" },
 };
 
 export default function Page() {

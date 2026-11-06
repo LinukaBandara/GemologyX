@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් සහ Tanzanite අතර වෙනස | GemologyX",
+  title: "නිල්මැණික් සහ Tanzanite අතර වෙනස",
   description:
     "Blue sapphire සහ tanzanite — ඛනිජ වෙනස, දෘඪතාව, heat treatment සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/sapphire-vs-tanzanite" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "තරු නිල්මැණික් හඳුනාගැනීම සහ මිලදී ගැනීම | GemologyX",
+  title: "තරු නිල්මැණික් හඳුනාගැනීම සහ මිලදී ගැනීම",
   description:
     "Star sapphire ගලක තරු ආචරණය, cabochon කැපීම, ආලෝකය සහ මිලදී ගැනීමේදී සැලකිලිමත් විය යුතු කරුණු.",
+
+  alternates: { canonical: "/si/learn/star-sapphire-guide" },
 };
 
 export default function Page() {

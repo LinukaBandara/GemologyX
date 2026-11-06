@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Jade (ජේඩ්) — Jadeite සහ Nephrite | GemologyX",
+  title: "Jade (ජේඩ්) — Jadeite සහ Nephrite",
   description:
     "Jade යනු කුමක්ද, jadeite vs nephrite, treatments, හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/jade-intro" },
 };
 
 export default function Page() {

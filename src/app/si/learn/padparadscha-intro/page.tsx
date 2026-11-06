@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Padparadscha sapphire යනු කුමක්ද? | GemologyX",
+  title: "Padparadscha sapphire යනු කුමක්ද?",
   description:
     "Padparadscha sapphire හි වර්ණ පරාසය, හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීමේදී සැලකිලිමත් විය යුතු කරුණු.",
+
+  alternates: { canonical: "/si/learn/padparadscha-intro" },
 };
 
 export default function Page() {

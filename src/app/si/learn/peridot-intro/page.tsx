@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Peridot (පෙරිඩොට්) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Peridot (පෙරිඩොට්) — මූලික මාර්ගෝපදේශය",
   description:
     "Peridot යනු කුමක්ද, කොළ පැහැය, emerald සමඟ වෙනස, හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/peridot-intro" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මරකත (Emerald) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "මරකත (Emerald) — මූලික මාර්ගෝපදේශය",
   description:
     "මරකත (emerald) යනු කුමක්ද, inclusions, oil treatment, හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීමේදී සැලකිලිමත් විය යුතු දේ.",
+
+  alternates: { canonical: "/si/learn/emerald-intro" },
 };
 
 export default function Page() {
