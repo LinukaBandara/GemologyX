@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Amber (ඇම්බර්) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Amber (ඇම්බර්) — මූලික මාර්ගෝපදේශය",
   description:
     "Amber යනු කුමක්ද, fossil resin, imitations (plastic / copal), රැකවරණය සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/amber-intro" },
 };
 
 export default function Page() {

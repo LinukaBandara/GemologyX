@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync } from "node:fs";
+import { readdirSync } from "node:fs";
 import { join } from "node:path";
 import type { MetadataRoute } from "next";
 import { allGemstones as gemstones } from "@/data/all-gemstones";
@@ -8,27 +8,10 @@ import { treatmentGuides } from "@/data/treatments";
 import { buyingGuides } from "@/data/buying-guides";
 import { cutGuides } from "@/data/cut-guides";
 import { formationGuides } from "@/data/formation-guides";
+import { draftRoutes } from "@/data/draft-routes";
 
 const BASE_URL = "https://gemologyx.com";
 const APP_ROOT = join(process.cwd(), "src", "app");
-const READINESS_TRACKER = join(
-  process.cwd(),
-  "docs",
-  "page-readiness-tracker.csv",
-);
-
-function getDraftRoutes(): Set<string> {
-  const lines = readFileSync(READINESS_TRACKER, "utf8").split(/\r?\n/);
-  return new Set(
-    lines.slice(1).flatMap((line) => {
-      // Route and status columns contain no commas; the remaining CSV fields
-      // may contain quoted commas and do not affect this small lookup.
-      const [route, , , status] = line.split(",", 5);
-      return route && status === "Draft" ? [route.replace(/^"|"$/g, "")] : [];
-    }),
-  );
-}
-
 // Discover concrete App Router pages so new static articles are not
 // accidentally omitted from the sitemap. Dynamic routes are added from data below.
 function collectStaticRoutes(
@@ -80,7 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...formationGuides.map((guide) => `/learn/gem-formation/${guide.slug}`),
   ];
 
-  const draftRoutes = getDraftRoutes();
   const routes = [...new Set([...staticRoutes, ...dynamicRoutes])].filter(
     (path) => !draftRoutes.has(path),
   );

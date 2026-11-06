@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How GemologyX handles information when you browse this educational website.",
+
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

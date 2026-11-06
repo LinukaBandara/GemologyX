@@ -22,6 +22,7 @@ export default async function OriginPage({params}:{params:Params}){
    <section><h2>Geological Context</h2><p>{d.geology}</p></section>
    <section><h2>History</h2><p>{d.history}</p></section>
    <section><h2>Common Misconceptions</h2><p>{d.misconceptions}</p></section>
+   <section id="sources"><h2>Sources and Further Reading</h2><ul>{origin.sources.map(source=><li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a></li>)}</ul></section>
   </div>:<div className="profile-note">A full write-up on {origin.name}&apos;s gemstone geology and history is in editorial preparation.</div>}
   <div className="profile-disclaimer">Geographic origin can require specialist laboratory methods and cannot reliably be determined from appearance alone.</div>
   <Link href="/origins" className="luxury-back-link"><ArrowLeft size={14}/> Back to all origins</Link>

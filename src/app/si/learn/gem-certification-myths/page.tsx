@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Gem Certificate පිළිබඳ මිථ්‍යා 6ක් | GemologyX",
+  title: "Gem Certificate පිළිබඳ මිථ්‍යා 6ක්",
   description: "Gem certificate එකකින් තහවුරු කළ හැකි දේ සහ නොහැකි දේ, report verification, valuation සහ treatment claims ගැන ගැනුම්කරුවන්ට මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/gem-certification-myths" },
 };
 
 export default function Page() {

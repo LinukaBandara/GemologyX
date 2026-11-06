@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Secondhand ආභරණ සහ මැණික් | GemologyX",
+  title: "Secondhand ආභරණ සහ මැණික්",
   description:
     "Used jewelry මිලදී ගැනීම — identity risk, wear, resizing, documentation සහ inspection tips.",
+
+  alternates: { canonical: "/si/learn/secondhand-jewelry-gems" },
 };
 
 export default function Page() {

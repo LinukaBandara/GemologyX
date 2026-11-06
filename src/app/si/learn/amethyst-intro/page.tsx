@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Amethyst (නීලකාන්ත) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Amethyst (නීලකාන්ත) — මූලික මාර්ගෝපදේශය",
   description:
     "Amethyst යනු කුමක්ද, දම් පැහැය, heat treatment, දෘඪතාව සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/amethyst-intro" },
 };
 
 export default function Page() {

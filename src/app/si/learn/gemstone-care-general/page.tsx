@@ -8,7 +8,7 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් රැකවරණය — සාමාන්‍ය මාර්ගෝපදේශය | GemologyX",
+  title: "මැණික් රැකවරණය — සාමාන්‍ය මාර්ගෝපදේශය",
   description:
     "මැණික් ගල් පිරිසිදු කිරීම, ගබඩා කිරීම, උෂ්ණත්වය සහ එදිනෙදා භාවිතයේදී රැකගන්නා මූලික ක්‍රම.",
   alternates: { canonical: "/si/learn/gemstone-care-general" },

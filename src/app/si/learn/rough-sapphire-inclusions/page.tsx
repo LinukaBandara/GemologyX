@@ -8,7 +8,7 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "රළු නිල්මැණික්වල ඇතුළත ලක්ෂණ සහ ඉරිතැලීම් හඳුනාගැනීම | GemologyX",
+  title: "රළු නිල්මැණික්වල ඇතුළත ලක්ෂණ සහ ඉරිතැලීම් හඳුනාගැනීම",
   description:
     "රළු නිල්මැණික් ගලක inclusions, ඉරිතැලීම්, වර්ධන රටා සහ කැපීමේ අවදානම් ගැන ඉගෙන ගන්න. පෙනුමෙන් පමණක් ස්වභාවික බව හෝ වටිනාකම තීරණය නොකරන ප්‍රායෝගික සිංහල මාර්ගෝපදේශය.",
   alternates: { canonical: "/si/learn/rough-sapphire-inclusions" },

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් පරීක්ෂණාගාර (Labs) — මූලික දැනුම | GemologyX",
+  title: "මැණික් පරීක්ෂණාගාර (Labs) — මූලික දැනුම",
   description:
     "මැණික් lab වාර්තා භාවිතයේදී දැනගත යුතු මූලික කරුණු — වාර්තාවක අර්ථය, සීමාවන් සහ සත්‍යාපනය.",
+
+  alternates: { canonical: "/si/learn/gem-labs-overview" },
 };
 
 export default function Page() {

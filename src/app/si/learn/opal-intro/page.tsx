@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Opal — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Opal — මූලික මාර්ගෝපදේශය",
   description:
     "Opal යනු කුමක්ද, play-of-colour, රැකවරණය, ජලය / උෂ්ණත්වය අවදානම් සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/opal-intro" },
 };
 
 export default function Page() {

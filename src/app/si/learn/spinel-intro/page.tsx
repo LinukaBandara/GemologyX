@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Spinel (ස්පිනල්) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Spinel (ස්පිනල්) — මූලික මාර්ගෝපදේශය",
   description:
     "Spinel යනු කුමක්ද, ruby සමඟ පටලවා ගැනීම, වර්ණ, හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/spinel-intro" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Tourmaline — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Tourmaline — මූලික මාර්ගෝපදේශය",
   description:
     "Tourmaline යනු කුමක්ද, වර්ණ විවිධත්වය (paraiba, indicolite, rubellite), හඳුනාගැනීමේ සීමා සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/tourmaline-intro" },
 };
 
 export default function Page() {

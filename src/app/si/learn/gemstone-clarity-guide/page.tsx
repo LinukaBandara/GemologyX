@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් Clarity (පැහැදිලි බව) | GemologyX",
+  title: "මැණික් Clarity (පැහැදිලි බව)",
   description:
     "Inclusions, clarity grades, eye-clean සංකල්පය සහ මිලදී ගැනීමේදී බලන්න ඕනේ දේ.",
+
+  alternates: { canonical: "/si/learn/gemstone-clarity-guide" },
 };
 
 export default function Page() {

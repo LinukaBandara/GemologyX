@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් මිලදී ගැනීමට පෙර checklist | GemologyX",
+  title: "මැණික් මිලදී ගැනීමට පෙර checklist",
   description:
     "මැණික් මිලදී ගැනීමට පෙර අනන්‍යතාව, ප්‍රතිකාර, වාර්තා, මිල සහ ගනුදෙනු කොන්දේසි පරීක්ෂා කිරීමට ප්‍රායෝගික ලැයිස්තුව.",
+
+  alternates: { canonical: "/si/learn/gemstone-buying-checklist" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් කැරට් එකක මිල තේරුම් ගැනීම | GemologyX",
+  title: "නිල්මැණික් කැරට් එකක මිල තේරුම් ගැනීම",
   description:
     "නිල්මැණික් මිල කැරට් එකකට පමණක් තීරණය නොවන්නේ ඇයි, ගුණාත්මකභාවය, ප්‍රතිකාර, වාර්තා සහ විකුණුම් කොන්දේසි සසඳන ආකාරය ගැන සිංහල මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/blue-sapphire-price-per-carat" },
 };
 
 export default function Page() {

@@ -59,7 +59,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Opal is softer and more sensitive to impact than many crystalline gems. Avoid ultrasonic and steam cleaners, prolonged heat, harsh chemicals and sudden temperature changes. Clean gently with a soft damp cloth; doublets and triplets need particular care around prolonged soaking.",
       faqs: [{ question: "What is the difference between solid opal and a doublet or triplet?", answer: "Solid opal is a single opal piece. A doublet or triplet combines a thin opal layer with backing or a cap; construction should be disclosed because it changes durability and care." }],
     },
-    sources: [{ label: "GIA Opal Buyer’s Guide", url: "https://www.gia.edu/opal/buyers-guide" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Opal Buyer’s Guide", url: "https://www.gia.edu/opal/buyers-guide" }],
   },
   {
     slug: "tanzanite",
@@ -167,7 +167,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Quartz has hardness 7, but amethyst colour can fade with prolonged exposure to intense light or heat in some circumstances. Store away from strong direct sunlight, avoid sudden temperature changes and clean with mild soap, lukewarm water and a soft brush.",
       faqs: [{ question: "Can amethyst change colour with heat or light?", answer: "Heating can change amethyst’s colour, and prolonged exposure to strong light may affect some material. Ask about treatment and avoid leaving jewellery in intense heat or sunlight." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia: Amethyst", url: "https://www.gia.edu/amethyst-description" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gem Encyclopedia: Amethyst", url: "https://www.gia.edu/amethyst-description" }],
   },
   {
     slug: "citrine",
@@ -293,7 +293,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "With hardness around 6.5–7.5, andalusite is suitable for carefully worn jewellery but can be damaged by hard knocks. Use mild soap, lukewarm water and a soft brush; avoid harsh chemicals and protect it from impact.",
       faqs: [{ question: "What is distinctive about andalusite’s colour?", answer: "Andalusite can show different colours from different viewing directions and may have cross-shaped colour zoning. The effect is a property of the material, not proof of locality." }],
     },
-    sources: [{ label: "GIA Gem Collection: Andalusite specimen from Sri Lanka", url: "https://www.gia.edu/doc/andalusite-34773.pdf" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gem Collection: Andalusite specimen from Sri Lanka", url: "https://www.gia.edu/doc/andalusite-34773.pdf" }],
   },
   {
     slug: "apatite", name: "Apatite", category: "Semi-Precious", mineralFamily: "Apatite group", chemicalFormula: "Ca₅(PO₄)₃(F,Cl,OH)", hardness: "5", crystalSystem: "Hexagonal", colors: ["Blue", "Green", "Yellow", "Violet", "Colourless"], transparency: "Transparent to opaque", commonTreatments: ["Some material may be heated or otherwise enhanced; verify disclosure"], description: "A phosphate mineral found in vivid blue and green gem varieties, but softer than many jewellery stones.",
@@ -310,7 +310,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Apatite has Mohs hardness of about 5 and can scratch more easily than quartz or corundum. Reserve it for protective settings or occasional wear, clean gently with mild soap and water, and avoid ultrasonic or steam cleaning.",
       faqs: [{ question: "Is apatite suitable for a frequently worn ring?", answer: "Apatite is relatively soft compared with many jewellery gems and can scratch or chip. It is usually better protected in pendants or earrings, or worn in a protective setting with care." }],
     },
-    sources: [{ label: "GIA Gems & Gemology: Gem apatite", url: "https://www.gia.edu/doc/SU15.pdf" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gems & Gemology: Gem apatite", url: "https://www.gia.edu/doc/SU15.pdf" }],
   },
   {
     slug: "danburite", name: "Danburite", category: "Semi-Precious", mineralFamily: "Danburite", chemicalFormula: "CaB₂(SiO₄)₂", hardness: "7–7.5", crystalSystem: "Orthorhombic", colors: ["Colourless", "Pale yellow", "Pinkish", "Brown"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A transparent borosilicate gemstone often valued for its bright appearance and near-colourless material.",
@@ -344,7 +344,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "With hardness around 5–5.5 and relatively brittle behaviour, sphene is best suited to pendants, earrings or carefully protected rings. Avoid hard knocks, abrasive contact, ultrasonic cleaners and steam; clean gently with mild soap and water.",
       faqs: [{ question: "Why does sphene show colourful flashes?", answer: "Sphene, also called titanite, has high dispersion that can produce strong spectral flashes. Its modest hardness means it still needs protection from scratches and impact." }],
     },
-    sources: [{ label: "GIA Gems & Gemology: Yellow sphene", url: "https://www.gia.edu/gems-gemology/summer-2025-microworld-soap-bubbles-in-yellow-sphene0" }, { label: "GIA Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA Gems & Gemology: Yellow sphene (Summer 2025, p. 190)", url: "https://www.gia.edu/doc/summer-2025-micro-world.pdf" }],
   },
   {
     slug: "benitoite", name: "Benitoite", category: "Semi-Precious", mineralFamily: "Barium titanium silicate", chemicalFormula: "BaTiSi₃O₉", hardness: "6–6.5", crystalSystem: "Hexagonal", colors: ["Blue", "Violet-blue", "Colourless"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A rare blue gemstone known for strong dispersion and its association with a limited Californian source.",

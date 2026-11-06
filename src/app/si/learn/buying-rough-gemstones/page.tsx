@@ -8,7 +8,7 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "රළු මැණික් ගලක් මිලදී ගැනීමට පෙර | GemologyX",
+  title: "රළු මැණික් ගලක් මිලදී ගැනීමට පෙර",
   description:
     "රළු මැණික් මිලදී ගැනීමේදී අනන්‍යතාව, ප්‍රතිකාර, ඉරිතැලීම්, කැපීමේ අවදානම, වියදම් සහ ගනුදෙනු කොන්දේසි පරීක්ෂා කරන සවිස්තර මාර්ගෝපදේශය.",
   alternates: { canonical: "/si/learn/buying-rough-gemstones" },

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description: "Learn about GemologyX, an educational reference for gemstones, gemology, and Sri Lankan gem knowledge.",
+
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

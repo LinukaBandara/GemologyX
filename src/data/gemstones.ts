@@ -273,7 +273,7 @@ export const gemstones: Gemstone[] = [
         { question: "Are all garnets red?", answer: "No. Garnets occur in red, orange, green, purple and other colours. Colour depends on the garnet species and its chemistry." },
       ],
     },
-    sources: [{ label: "GIA — Garnet", url: "https://www.gia.edu/garnet" }, { label: "GIA — Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA — Garnet", url: "https://www.gia.edu/garnet" }],
   },
   {
     slug: "tourmaline",
@@ -355,7 +355,7 @@ export const gemstones: Gemstone[] = [
         { question: "Can I assume a blue aquamarine is untreated?", answer: "No. Heat treatment is used on some aquamarine to reduce greenish tones. Ask the seller to disclose known treatment and consult a report when it matters." },
       ],
     },
-    sources: [{ label: "GIA — Aquamarine", url: "https://www.gia.edu/gia-website/aquamarine" }, { label: "GIA — Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA — Aquamarine", url: "https://www.gia.edu/gia-website/aquamarine" }],
   },
   {
     slug: "topaz",
@@ -396,7 +396,7 @@ export const gemstones: Gemstone[] = [
         { question: "Why can a hard topaz still chip or split?", answer: "Mohs hardness describes resistance to scratching, not resistance to impact. Topaz has cleavage and can break when struck or exposed to stress in a vulnerable direction." },
       ],
     },
-    sources: [{ label: "GIA — Topaz", url: "https://www.gia.edu/gia-website/topaz/buyers-guide" }, { label: "GIA — Gem Encyclopedia", url: "https://www.gia.edu/gem-encyclopedia" }],
+    sources: [{ label: "GIA — Topaz", url: "https://www.gia.edu/gia-website/topaz/buyers-guide" }],
   },
   {
     slug: "moonstone",

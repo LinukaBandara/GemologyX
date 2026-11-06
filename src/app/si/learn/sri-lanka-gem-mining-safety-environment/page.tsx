@@ -4,7 +4,7 @@ import { ArticleLayout, ArticleSection, QuickAnswer } from "@/components/article
 import { SriLankaMineResponsibilityExplorer } from "@/components/interactive-learning-tools";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් පතල්: පරිසරය සහ වගකීම් | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් පතල්: පරිසරය සහ වගකීම්",
   description: "NGJA නිල තොරතුරු මත ශ්‍රී ලංකාවේ මැණික් පතල් පරිසර සමාලෝචනය, ජලය, පතල් වසා දැමීම සහ මහජන ආරක්ෂාව ගැන කියවන්න.",
   alternates: { canonical: "/si/learn/sri-lanka-gem-mining-safety-environment" },
 };

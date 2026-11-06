@@ -9,7 +9,7 @@ import {
 import { SriLankaGemTermsExplorer } from "@/components/sri-lanka-gem-terms-explorer";
 
 export const metadata: Metadata = {
-  title: "Sri Lankan Gem Trade Terms: Geuda, Dullam and Ceylon Sapphire | GemologyX",
+  title: "Sri Lankan Gem Trade Terms: Geuda, Dullam and Ceylon Sapphire",
   description:
     "Understand gem trade vocabulary used in Sri Lanka, including geuda, dullam, lapidary, cutting yield and Ceylon sapphire, with sources and buyer questions.",
   alternates: { canonical: "/learn/sri-lanka-gem-terms" },

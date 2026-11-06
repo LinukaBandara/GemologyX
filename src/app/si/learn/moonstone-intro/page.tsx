@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Moonstone — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Moonstone — මූලික මාර්ගෝපදේශය",
   description:
     "Moonstone යනු කුමක්ද, adularescence, දෘඪතාව, රැකවරණය සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/moonstone-intro" },
 };
 
 export default function Page() {

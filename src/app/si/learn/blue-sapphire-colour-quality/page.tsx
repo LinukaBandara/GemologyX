@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් වර්ණය සහ ගුණාත්මකභාවය තේරුම් ගැනීම | GemologyX",
+  title: "නිල්මැණික් වර්ණය සහ ගුණාත්මකභාවය තේරුම් ගැනීම",
   description:
     "නිල්මැණික්වල වර්ණ ස්වරය, තීව්‍රතාව, වර්ණ ව්‍යාප්තිය, ආලෝකය සහ පෙනුම නිවැරදිව සසඳන ආකාරය ගැන ප්‍රායෝගික සිංහල මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/blue-sapphire-colour-quality" },
 };
 
 export default function Page() {

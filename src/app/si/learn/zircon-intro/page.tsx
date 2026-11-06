@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Zircon (සර්කන්) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Zircon (සර්කන්) — මූලික මාර්ගෝපදේශය",
   description:
     "Zircon යනු කුමක්ද, cubic zirconia සමඟ වෙනස, වර්ණ, heat treatment සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/zircon-intro" },
 };
 
 export default function Page() {

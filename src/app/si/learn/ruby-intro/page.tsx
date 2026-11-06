@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Ruby (රතු මැණික්) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Ruby (රතු මැණික්) — මූලික මාර්ගෝපදේශය",
   description:
     "Ruby යනු කුමක්ද, corundum, heat treatment, spinel/garnet සමඟ වෙනස සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/ruby-intro" },
 };
 
 export default function Page() {

@@ -7,9 +7,11 @@ import {
 import { SriLankaBuyingVisit } from "@/components/sri-lanka-buying-visit";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේදී මැණික් මිලදී ගැනීමට සූදානම් වන්න | GemologyX",
+  title: "ශ්‍රී ලංකාවේදී මැණික් මිලදී ගැනීමට සූදානම් වන්න",
   description:
     "ශ්‍රී ලංකාවේ මැණික් ගනුදෙනුවකට පෙර සූදානම් වීම, වාර්තාවක් පරීක්ෂා කිරීම සහ ලිඛිත කොන්දේසි පැහැදිලි කරගැනීම සඳහා අන්තර්ක්‍රියාකාරී මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/sri-lanka-buying-day-tips" },
 };
 
 export default function Page() {

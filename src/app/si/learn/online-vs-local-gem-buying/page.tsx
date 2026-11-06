@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Online සහ දේශීය වෙළෙඳපොළෙන් මැණික් මිලදී ගැනීම | GemologyX",
+  title: "Online සහ දේශීය වෙළෙඳපොළෙන් මැණික් මිලදී ගැනීම",
   description:
     "අන්තර්ජාලයෙන් සහ දේශීය වෙළෙඳපොළෙන් මැණික් මිලදී ගැනීමේ වාසි, අවදානම් සහ ආරක්ෂිත පියවර.",
+
+  alternates: { canonical: "/si/learn/online-vs-local-gem-buying" },
 };
 
 export default function Page() {

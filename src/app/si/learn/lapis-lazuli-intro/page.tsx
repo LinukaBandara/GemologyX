@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Lapis lazuli — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Lapis lazuli — මූලික මාර්ගෝපදේශය",
   description:
     "Lapis lazuli යනු කුමක්ද, rock vs mineral, dye treatments, රැකවරණය සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/lapis-lazuli-intro" },
 };
 
 export default function Page() {

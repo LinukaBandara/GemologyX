@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   title: "What Is Ceylon Sapphire?",
   description:
     "What 'Ceylon sapphire' means, how origin is actually determined, and why the term is often used loosely in the trade.",
+
+  alternates: { canonical: "/learn/sapphire/what-is-ceylon-sapphire" },
 };
 
 export default function CeylonSapphirePage() {

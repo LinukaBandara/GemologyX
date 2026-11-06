@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික්වල Heat Treatment: ක්‍රියාවලිය සහ හෙළිදරව් කිරීම | GemologyX",
+  title: "මැණික්වල Heat Treatment: ක්‍රියාවලිය සහ හෙළිදරව් කිරීම",
   description:
     "මැණික්වල heat treatment යනු කුමක්ද, එය පෙනුමට හා වෙළඳ වටිනාකමට බලපාන ආකාරය, වාර්තා කියවීම සහ ප්‍රතිකාර තොරතුරු තහවුරු කිරීම.",
+
+  alternates: { canonical: "/si/learn/heat-treatment-guide" },
 };
 
 export default function Page() {

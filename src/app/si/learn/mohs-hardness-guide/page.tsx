@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Mohs දෘඪතා පරිමාණය — මැණික්වලට ඇති අර්ථය | GemologyX",
+  title: "Mohs දෘඪතා පරිමාණය — මැණික්වලට ඇති අර්ථය",
   description:
     "Mohs hardness scale යනු කුමක්ද, මැණික් රැකවරණයට සහ භාවිතයට එය බලපාන ආකාරය.",
+
+  alternates: { canonical: "/si/learn/mohs-hardness-guide" },
 };
 
 export default function Page() {

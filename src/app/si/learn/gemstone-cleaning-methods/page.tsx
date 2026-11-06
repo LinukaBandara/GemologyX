@@ -8,7 +8,7 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් සහිත ආභරණ ආරක්ෂිතව පිරිසිදු කරන්නේ කෙසේද? | GemologyX",
+  title: "මැණික් සහිත ආභරණ ආරක්ෂිතව පිරිසිදු කරන්නේ කෙසේද?",
   description:
     "ගලේ වර්ගය, ප්‍රතිකාරය සහ සැකසුම අනුව පිරිසිදු කිරීමේ ක්‍රම තෝරන්න. මෘදු පිරිසිදු කිරීම, ultrasonic සහ steam සීමා ගැන සිංහල මාර්ගෝපදේශය.",
   alternates: { canonical: "/si/learn/gemstone-cleaning-methods" },

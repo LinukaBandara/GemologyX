@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Editorial Standards",
   description: "How GemologyX selects sources, checks technical claims, updates content, and handles commercial interests.",
+
+  alternates: { canonical: "/editorial-standards" },
 };
 
 export default function EditorialStandardsPage() {

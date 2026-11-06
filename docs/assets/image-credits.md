@@ -1,5 +1,10 @@
 # GemologyX image credits and licenses
 
+## Original illustrative artwork
+
+- `sapphire-hero.svg` — local vector illustration used as decorative site artwork. Its stylized sapphire shape is not a photograph or a representation of any examined specimen, and it does not evidence a stone's identity, quality, treatment, or locality.
+- `GemstoneIllustration` in `src/components/gemstone-illustration.tsx` — code-rendered abstract color illustrations used as fallbacks/cards. The component labels them as illustrations and not specimen photographs. They are not gemological evidence.
+
 ## Sapphire profile specimen gallery
 
 The following images are hosted locally under `public/images/gems/` for page performance and to avoid hotlinking. They depict rough sapphire (corundum) crystals from the Missouri River deposit in Montana, USA. Do not caption or imply that these are Sri Lankan specimens.

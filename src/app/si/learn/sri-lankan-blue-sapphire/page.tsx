@@ -9,9 +9,11 @@ import {
 import { CeylonClaimExplainer } from "@/components/ceylon-claim-explainer";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ නිල්මැණික් ගැන මූලික දැනුම | GemologyX",
+  title: "ශ්‍රී ලංකාවේ නිල්මැණික් ගැන මූලික දැනුම",
   description:
     "ශ්‍රී ලාංකික නිල්මැණික් පිළිබඳ වර්ණය, වෙළෙඳ නාම, මූලාරම්භ ප්‍රකාශ සහ ස්වාධීන පරීක්ෂණ ගැන හැඳින්වීමක්.",
+
+  alternates: { canonical: "/si/learn/sri-lankan-blue-sapphire" },
 };
 
 export default function Page() {

@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "ව්‍යාජ හෝ නොගැළපෙන Gem Lab Reports පරීක්ෂා කිරීම | GemologyX",
+  title: "ව්‍යාජ හෝ නොගැළපෙන Gem Lab Reports පරීක්ෂා කිරීම",
   description: "Gem report number verification, report-stone mismatch red flags සහ ගනුදෙනුවට පෙර ගත යුතු පියවර ගැන සිංහල මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/fake-lab-reports" },
 };
 
 export default function Page() {

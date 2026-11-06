@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Gem Lab Report Field Guide: වාර්තාවක එක් එක් තොරතුර | GemologyX",
+  title: "Gem Lab Report Field Guide: වාර්තාවක එක් එක් තොරතුර",
   description: "Gemstone report එකක report number, identity, weight, dimensions, treatment සහ origin fields කෙටියෙන් හඳුනාගැනීමට සිංහල reference guide එකක්.",
+
+  alternates: { canonical: "/si/learn/gem-lab-report-details" },
 };
 
 export default function Page() {

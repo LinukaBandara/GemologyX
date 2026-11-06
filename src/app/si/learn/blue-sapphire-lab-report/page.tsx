@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් lab report එකක බලන්න ඕනේ දේ | GemologyX",
+  title: "නිල්මැණික් lab report එකක බලන්න ඕනේ දේ",
   description:
     "නිල්මැණික් පරීක්ෂණ වාර්තාවක ගල් වර්ගය, ප්‍රතිකාර, බර, මානයන්, origin notes සහ සීමාවන් කියවන ආකාරය ගැන සිංහල මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/blue-sapphire-lab-report" },
 };
 
 export default function Page() {

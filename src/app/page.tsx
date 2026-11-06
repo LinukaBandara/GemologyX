@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Gem, Globe2, Microscope, Search, Sparkles } from "lucide-react";
 import { gemstones } from "@/data/gemstones";
+
+export const metadata: Metadata = {
+  title: "GemologyX — Gemstones, Gemology & Sri Lanka",
+  description: "Explore gemstone science, gem identification, treatments, buying guidance, and Sri Lanka’s gem heritage.",
+  alternates: { canonical: "/" },
+};
 
 const gemLooks: Record<string, string> = {
   sapphire: "gem-sapphire", ruby: "gem-ruby", emerald: "gem-emerald", topaz: "gem-topaz", pearl: "gem-pearl",

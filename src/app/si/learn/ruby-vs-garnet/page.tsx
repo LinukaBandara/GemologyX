@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "රතු මැණික් (Ruby) සහ ගානට් (Garnet) අතර වෙනස | GemologyX",
+  title: "රතු මැණික් (Ruby) සහ ගානට් (Garnet) අතර වෙනස",
   description:
     "රතු පැහැති ruby සහ garnet අතර ඛනිජ වෙනස, සමාන පෙනුම සහ මිලදී ගැනීමේදී සැලකිලිමත් විය යුතු දේ.",
+
+  alternates: { canonical: "/si/learn/ruby-vs-garnet" },
 };
 
 export default function Page() {

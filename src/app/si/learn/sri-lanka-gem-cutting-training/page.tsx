@@ -4,7 +4,7 @@ import { ArticleLayout, ArticleSection, QuickAnswer } from "@/components/article
 import { SriLankaCuttingJourney } from "@/components/sri-lanka-cutting-journey";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් කැපීම සහ පුහුණුව | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් කැපීම සහ පුහුණුව",
   description: "ශ්‍රී ලංකාවේ faceting උරුමය, free-size හා calibrated සේවා, GJRTI පුහුණු මාර්ග සහ මැණික් කැපුම් වැඩ භාරදීම ගැන සිංහලෙන් කියවන්න.",
   alternates: { canonical: "/si/learn/sri-lanka-gem-cutting-training" },
 };

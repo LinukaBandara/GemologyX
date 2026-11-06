@@ -8,7 +8,7 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මුද්දක්ද පෙන්ඩන්ට් එකක්ද? මැණික් ගලේ කල්පැවැත්ම තෝරන්න | GemologyX",
+  title: "මුද්දක්ද පෙන්ඩන්ට් එකක්ද? මැණික් ගලේ කල්පැවැත්ම තෝරන්න",
   description:
     "මුද්ද, පෙන්ඩන්ට් සහ earrings අතර තෝරාගැනීමේදී hardness, toughness, cleavage, setting සහ ඔබේ දෛනික භාවිතය සලකා බලන සිංහල මාර්ගෝපදේශය.",
   alternates: { canonical: "/si/learn/ring-vs-pendant-durability" },

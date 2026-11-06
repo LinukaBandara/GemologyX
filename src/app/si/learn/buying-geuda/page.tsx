@@ -9,9 +9,11 @@ import {
 import { GeudaBuyingStudio } from "@/components/geuda-buying-studio";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ Geuda මිලදී ගැනීමේ මාර්ගෝපදේශය | GemologyX",
+  title: "ශ්‍රී ලංකාවේ Geuda මිලදී ගැනීමේ මාර්ගෝපදේශය",
   description:
     "Geuda රළු ගල් මිලදී ගැනීමේදී අනන්‍යතාව, කැපීම, තාප ප්‍රතිකාරය, ලේඛන සහ අවදානම ගැන විමසිය යුතු දේ සිංහලෙන් දැනගන්න.",
+
+  alternates: { canonical: "/si/learn/buying-geuda" },
 };
 
 export default function Page() {

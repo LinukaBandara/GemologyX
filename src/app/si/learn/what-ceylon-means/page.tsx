@@ -9,9 +9,11 @@ import {
 import { CeylonClaimExplainer } from "@/components/ceylon-claim-explainer";
 
 export const metadata: Metadata = {
-  title: "Ceylon Sapphire කියන්නේ මොකක්ද? | GemologyX",
+  title: "Ceylon Sapphire කියන්නේ මොකක්ද?",
   description:
     "Ceylon / Sri Lanka origin claims — trade use, lab origin opinion, and why the name alone is not a guarantee.",
+
+  alternates: { canonical: "/si/learn/what-ceylon-means" },
 };
 
 export default function Page() {

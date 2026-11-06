@@ -11,23 +11,34 @@ Scope: repository/build checks and local production output. This is not a live-d
 - Removed the visible “Reserved ad space” placeholders and their component from article and origin layouts. No advertising scripts or units were added.
 - Reconciled `docs/page-readiness-tracker.csv` against the production sitemap. Added 44 previously untracked route rows with review-pending `Inventory` status. The tracker now has 281 rows (including the search experience, which is intentionally absent from XML sitemap).
 - Updated the XML sitemap to omit rows explicitly marked `Draft`. It now emits 204 unique URLs, all of which have tracker rows. Draft labels and review fields were not promoted or altered.
+- Added an `X-Robots-Tag: noindex, follow` response header to every route in the synchronized Draft route manifest. Draft pages remain accessible to readers and reviewers but are excluded from search indexing while marked Draft.
+- Split four interactive tool pages into server metadata wrappers and client components, giving each tool a distinct title and description without changing its interface.
+- Added self-canonical metadata to static App Router pages and the home page, and removed redundant brand suffixes from page titles so the shared title template does not repeat the brand.
+- Added authoritative reference links to all nine origin profiles and rendered a “Sources and Further Reading” section. The tracker continues to show source-to-claim review pending; links alone do not complete factual review.
+- Removed nine generic GIA encyclopedia landing-page links where a more specific source already existed, and replaced a GIA sphene article URL that returned 404 with the official Summer 2025 Micro-World PDF (article on page 190).
+- Revised two overbroad origin descriptions (“longest-active” for Sri Lanka and “majority” of precious opal supply for Australia) to narrower wording supported by the selected source references. Added provenance notes for the site’s vector artwork.
 
 ## Verification
 
 - `npm run lint`: passed.
 - `npm run build`: passed; Next.js generated 286 route outputs.
 - Local production crawl of the sitemap: 204 URLs, no duplicates, no request failures, no missing title tags, no missing meta descriptions, and no sitemap URL marked `noindex`.
+- Checked Draft response headers and sitemap membership in production mode: Draft routes return `noindex, follow` and are absent from the sitemap; reviewed Inventory routes remain indexable by default.
+- The four tool pages now have distinct titles and descriptions; the sitemap crawl found no duplicate page titles.
+- After canonical updates, the production sitemap crawl found zero missing canonical tags, zero canonical mismatches, zero duplicate titles, and zero doubled `GemologyX` suffixes across its 204 URLs.
+- Checked the nine origin reference links against the named official sources and confirmed the replacement sphene PDF contains the cited article. This is a source-link check, not a page-by-page verification of every origin claim.
+- Inspected the homepage at a 400 CSS-pixel responsive viewport. Header controls, hero copy, search, two-column highlights, and the two-column gemstone cards render within the viewport. Full mobile testing of other routes, keyboard flows, and assistive technology remains outstanding.
 - `/robots.txt` responds and references `https://gemologyx.com/sitemap.xml`.
 - A nonexistent local route returns 404. `/search?q=sapphire` responds; search metadata specifies `noindex,follow` and search is excluded from XML sitemap.
-- `git diff --check`: passed before the sitemap/tracker edits; rerun before committing.
+- `git diff --check`: passed after the sitemap/tracker edits.
 
 ## Open issues and limits
 
-- The tracker still records 162 `Inventory` rows and 75 `Draft` rows. Inventory is not an approval state. No pages have been marked complete based on this audit.
-- Excluding Draft pages from the sitemap does not itself make those URLs `noindex`. Before treating these drafts as unpublished content, add and validate an explicit robots policy for them, or complete editorial review and update the tracker truthfully.
-- Local HTML inspection found 89 sitemap pages with no explicit canonical link and five pages sharing the root default title. Search engines can select canonicals without a tag, but this makes canonical intent less explicit; title duplication needs page-level review.
+- The tracker now records 206 `Inventory` rows and 75 `Draft` rows (281 total). The 44 inventory additions came from sitemap reconciliation. `Inventory` is not an approval state. No pages have been marked complete based on this audit.
+- The 75 route manifest entries for `noindex` and sitemap exclusion must be kept synchronized with the tracker when editorial status changes. Build and crawler validation currently confirm the manifest matches the tracker.
+- Explicit canonical tags are now present and match the expected production URL for all 204 sitemap routes in the local production build. Live-domain canonical responses still need deployment verification.
 - Sitemap route inclusion is not evidence of indexing, usefulness, or search performance. Production-domain responses and Search Console ownership/submission are unverified.
-- Source-to-claim review of all gemstone profiles, origins, glossary entries, and guides is incomplete. Existing references have not been audited claim by claim in this pass. Do not represent the content inventory as fact-checked.
+- Source-to-claim review of all gemstone profiles, origins, glossary entries, and guides is incomplete. Origin references were added and checked for relevance, but claim-by-claim validation remains pending. Do not represent the content inventory as fact-checked.
 - Image source, creator, license, attribution, and AI-generated status have not been verified for every displayed image. Do not use images with unresolved rights in a monetized publication.
 - The About and editorial pages do not identify the responsible owner/editor or explain actual AI use. The contact page cannot deliver messages. Terms say no legal entity or governing jurisdiction has been identified. These statements must be resolved with the owner; no identity, credentials, or legal facts were invented.
 - Privacy text says analytics and advertising are not configured. Code inspection found no GA4 or AdSense tags and no consent-management integration. This is accurate to inspected source, but deployment tags/CDN configuration were not accessible.

@@ -9,7 +9,7 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් කැපීමේදී බර අඩුවන්නේ ඇයි? | GemologyX",
+  title: "මැණික් කැපීමේදී බර අඩුවන්නේ ඇයි?",
   description:
     "රළු ගලකින් කැපූ මැණිකක් සකස් කිරීමේදී බර අඩුවීමට හේතු, yield ගණනය, ඇස්තමේන්තු සීමා සහ cutter සමඟ එකඟ විය යුතු කරුණු සිංහලෙන් කියවන්න.",
   alternates: { canonical: "/si/learn/cutting-weight-loss" },

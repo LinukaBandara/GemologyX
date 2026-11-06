@@ -8,7 +8,7 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "රළු නිල්මැණික් ගලක වටිනාකම තක්සේරු කිරීම | GemologyX",
+  title: "රළු නිල්මැණික් ගලක වටිනාකම තක්සේරු කිරීම",
   description:
     "රළු නිල්මැණික් ගලක අනන්‍යතාව, වර්ණය, inclusions, treatment, කැපුම් අවදානම සහ මුළු වියදම මිලදී ගැනීමට පෙර සලකා බලන සිංහල මාර්ගෝපදේශය.",
   alternates: { canonical: "/si/learn/rough-blue-sapphire-value" },

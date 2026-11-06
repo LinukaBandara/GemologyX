@@ -3,9 +3,11 @@ import Link from "next/link";
 import { ArrowUpRight, BookOpen, Gem } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Learn Gemology | GemologyX",
+  title: "Learn Gemology",
   description:
     "Explore general gemology reference guides in English, plus a dedicated Sinhala collection about Sri Lankan gems, trade and local knowledge.",
+
+  alternates: { canonical: "/learn" },
 };
 
 const sinhalaGuides = [

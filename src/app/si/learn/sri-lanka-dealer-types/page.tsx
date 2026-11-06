@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ භූමිකා හඳුනාගැනීම | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ භූමිකා හඳුනාගැනීම",
   description:
     "රළු ගල් සැපයුම්කරුවන්, මැණික් වෙළෙන්දන්, කැපුම් ශිල්පීන්, තැරැව්කරුවන් සහ සිල්ලර වෙළෙන්දන්ගේ වෙනස් භූමිකා තේරුම් ගන්න.",
+
+  alternates: { canonical: "/si/learn/sri-lanka-dealer-types" },
 };
 
 export default function Page() {

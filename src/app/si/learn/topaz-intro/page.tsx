@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Topaz (ටොපාස්) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Topaz (ටොපාස්) — මූලික මාර්ගෝපදේශය",
   description:
     "Topaz යනු කුමක්ද, වර්ණ, blue topaz treatments, sapphire සමඟ වෙනස සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/topaz-intro" },
 };
 
 export default function Page() {

@@ -3,7 +3,7 @@ import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconc
 import { ReportFieldExplorer } from "@/components/interactive-learning-tools";
 
 export const metadata: Metadata = {
-  title: "How to Read a Gemstone Laboratory Report | GemologyX",
+  title: "How to Read a Gemstone Laboratory Report",
   description: "Learn to read gemstone identification, treatment, measurement and origin wording, verify a report, and understand its limits.",
   alternates: { canonical: "/learn/how-to-read-a-gemstone-report" },
 };

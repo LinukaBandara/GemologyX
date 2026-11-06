@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික්වල Diffusion ප්‍රතිකාරය | GemologyX",
+  title: "මැණික්වල Diffusion ප්‍රතිකාරය",
   description:
     "Diffusion treatment යනු කුමක්ද, heat සමඟ වෙනස, හෙළිදරව් කිරීම සහ වාර්තා කියවන ආකාරය.",
+
+  alternates: { canonical: "/si/learn/diffusion-treatment-guide" },
 };
 
 export default function Page() {

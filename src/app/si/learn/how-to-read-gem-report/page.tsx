@@ -3,7 +3,7 @@ import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconc
 import { ReportFieldExplorer } from "@/components/interactive-learning-tools";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් වාර්තා කියවීම | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් වාර්තා කියවීම",
   description: "ශ්‍රී ලංකාවේ මැණික් ගැනුම්කරුවන්ට NGJA සහ වෙනත් පරීක්ෂණාගාර වාර්තා තහවුරු කර කියවීමට, ගලේ විස්තර හා ප්‍රතිකාර සටහන් සසඳා බැලීමට සිංහල මාර්ගෝපදේශයක්.",
   alternates: { canonical: "/si/learn/how-to-read-gem-report" },
 };

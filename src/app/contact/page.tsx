@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description: "How to prepare a correction or source suggestion for GemologyX.",
+
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

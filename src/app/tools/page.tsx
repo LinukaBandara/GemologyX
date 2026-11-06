@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Gemstone Tools",
   description:
     "Practical calculators and reference tools for gemstone weight, sizing, hardness, and birthstones.",
+
+  alternates: { canonical: "/tools" },
 };
 
 const tools = [

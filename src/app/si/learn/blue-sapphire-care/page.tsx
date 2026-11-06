@@ -8,7 +8,7 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් රැකවරණය සහ කල්පැවැත්ම | GemologyX",
+  title: "නිල්මැණික් රැකවරණය සහ කල්පැවැත්ම",
   description:
     "නිල්මැණික් ගලක් පිරිසිදු කිරීම, ගබඩා කිරීම, උෂ්ණත්වය සහ එදිනෙදා භාවිතයේදී රැකගන්නා ආකාරය ගැන ප්‍රායෝගික සිංහල මාර්ගෝපදේශය.",
   alternates: { canonical: "/si/learn/blue-sapphire-care" },

@@ -8,9 +8,11 @@ import {
 import { SriLankaTradeJourney } from "@/components/sri-lanka-trade-journey";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ ගමන | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ ගමන",
   description:
     "පතල් සහ රළු ගල් සිට කැපීම, වෙළෙඳාම, ආභරණ සහ අපනයනය දක්වා ශ්‍රී ලංකාවේ මැණික් කර්මාන්තයේ භූමිකා සහ සීමා දැනගන්න.",
+
+  alternates: { canonical: "/si/learn/sri-lanka-gem-trade-intro" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "පුෂ්පරාග රළු ගලක මිල තක්සේරු කිරීම | GemologyX",
+  title: "පුෂ්පරාග රළු ගලක මිල තක්සේරු කිරීම",
   description:
     "කහ sapphire rough ගලක් මිලදී ගැනීමට පෙර අනන්‍යතාව, වර්ණය, ඉරිතැලීම්, treatment, cutting risk සහ මුළු වියදම සලකා බලන සිංහල මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/rough-yellow-sapphire-value" },
 };
 
 export default function Page() {

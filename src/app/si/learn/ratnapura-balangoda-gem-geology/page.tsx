@@ -5,7 +5,7 @@ import { ArticleLayout, ArticleSection, QuickAnswer } from "@/components/article
 import { SriLankaGeologyExplorer } from "@/components/sri-lanka-geology-explorer";
 
 export const metadata: Metadata = {
-  title: "රත්නපුර සහ බලංගොඩ මැණික් භූවිද්‍යාව | GemologyX",
+  title: "රත්නපුර සහ බලංගොඩ මැණික් භූවිද්‍යාව",
   description: "NGJA සහ ශ්‍රී ලංකා විශ්වවිද්‍යාල පර්යේෂණ ඇසුරින් රත්නපුර, බලංගොඩ සහ ද්විතීයික මැණික් තැන්පතු සරලව තේරුම් ගන්න.",
   alternates: { canonical: "/si/learn/ratnapura-balangoda-gem-geology" },
 };

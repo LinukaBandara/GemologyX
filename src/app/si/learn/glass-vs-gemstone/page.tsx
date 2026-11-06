@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Glass imitation සහ මැණික් අතර වෙනස | GemologyX",
+  title: "Glass imitation සහ මැණික් අතර වෙනස",
   description: "Glass imitation පිළිබඳ මූලික දැනුම, නිරීක්ෂණවල සීමා සහ ගලට හානි නොකර මිලදී ගැනීමේ ආරක්ෂිත පියවර.",
   alternates: { canonical: "/si/learn/glass-vs-gemstone" },
 };

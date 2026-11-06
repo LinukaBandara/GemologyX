@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Chrysoberyl — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Chrysoberyl — මූලික මාර්ගෝපදේශය",
   description:
     "Chrysoberyl යනු කුමක්ද, alexandrite සහ cat’s-eye, දෘඪතාව සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/chrysoberyl-intro" },
 };
 
 export default function Page() {

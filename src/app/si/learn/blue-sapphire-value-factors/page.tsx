@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණිකක වටිනාකමට බලපාන කරුණු | GemologyX",
+  title: "නිල්මැණිකක වටිනාකමට බලපාන කරුණු",
   description:
     "නිල්මැණිකක වටිනාකම සසඳන විට වර්ණය, පැහැදිලි බව, කැපීම, බර, ප්‍රතිකාර, වාර්තා සහ ගනුදෙනු අවදානම පරීක්ෂා කරන ප්‍රායෝගික සිංහල මාර්ගෝපදේශය.",
+
+  alternates: { canonical: "/si/learn/blue-sapphire-value-factors" },
 };
 
 export default function Page() {

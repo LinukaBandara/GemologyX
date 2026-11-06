@@ -3,7 +3,7 @@ import { ArticleLayout, ArticleSection, QuickAnswer, Misconceptions } from "@/co
 import { SriLankaExportReadinessChecklist, SriLankaExportRouteExplorer } from "@/components/interactive-learning-tools";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවෙන් මැණික් අපනයනය: ලේඛන සහ නිල පියවර | GemologyX",
+  title: "ශ්‍රී ලංකාවෙන් මැණික් අපනයනය: ලේඛන සහ නිල පියවර",
   description: "ශ්‍රී ලංකාවෙන් මැණික් හෝ ආභරණ රැගෙන යාමට පෙර NGJA, ශ්‍රී ලංකා රේගුව සහ ගමනාන්ත රටෙන් තහවුරු කළ යුතු කරුණු.",
   alternates: { canonical: "/si/learn/export-documents-intro" },
 };

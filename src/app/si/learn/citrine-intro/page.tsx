@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Citrine — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Citrine — මූලික මාර්ගෝපදේශය",
   description:
     "Citrine යනු කුමක්ද, කහ පැහැය, heat-treated amethyst, topaz සමඟ වෙනස සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/citrine-intro" },
 };
 
 export default function Page() {

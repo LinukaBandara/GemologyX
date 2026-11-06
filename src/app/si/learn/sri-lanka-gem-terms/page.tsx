@@ -9,7 +9,7 @@ import {
 import { SriLankaGemTermsExplorer } from "@/components/sri-lanka-gem-terms-explorer";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ පද මාලාව | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ පද මාලාව",
   description:
     "Geuda, rough, dullam, lapidary සහ Ceylon sapphire ඇතුළු ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාමට සම්බන්ධ පද සිංහලෙන් සහ මූලාශ්‍ර සමඟ ඉගෙනගන්න.",
   alternates: { canonical: "/si/learn/sri-lanka-gem-terms" },

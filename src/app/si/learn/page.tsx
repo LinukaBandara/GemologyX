@@ -4,7 +4,7 @@ import { ArrowRight, ExternalLink, Gem, Landmark, ShieldCheck } from "lucide-rea
 import { SriLankaSinhalaExplorer } from "@/components/sri-lanka-sinhala-explorer";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් — සිංහල දැනුම් එකතුව | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් — සිංහල දැනුම් එකතුව",
   description: "ශ්‍රී ලංකාවේ මැණික්, Ceylon sapphire, Geuda, දේශීය වෙළෙඳාම, ගැනුම් සහ නිල තොරතුරු ගැන සිංහල මාර්ගෝපදේශ.",
   alternates: { canonical: "/si/learn" },
 };

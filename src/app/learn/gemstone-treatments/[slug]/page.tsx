@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: PageProps<"/learn/gemstone-tr
   const { slug } = await params;
   const guide = treatmentGuides.find((item) => item.slug === slug);
   if (!guide) return {};
-  return { title: `${guide.title}: Gemstone Treatment Guide | GemologyX`, description: guide.summary, alternates: { canonical: `/learn/gemstone-treatments/${guide.slug}` } };
+  return { title: `${guide.title}: Gemstone Treatment Guide`, description: guide.summary, alternates: { canonical: `/learn/gemstone-treatments/${guide.slug}` } };
 }
 
 export default async function TreatmentArticle({ params }: PageProps<"/learn/gemstone-treatments/[slug]">) {

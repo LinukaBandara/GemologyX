@@ -5,8 +5,10 @@ import { TreatmentExplorer } from "@/components/treatment-explorer";
 import { treatmentGuides } from "@/data/treatments";
 
 export const metadata: Metadata = {
-  title: "Gemstone Treatments: Interactive Guide | GemologyX",
+  title: "Gemstone Treatments: Interactive Guide",
   description: "Explore common gemstone treatments, how they work, care considerations and questions to ask using an interactive gemology guide.",
+
+  alternates: { canonical: "/learn/gemstone-treatments" },
 };
 
 export default function GemstoneTreatmentsPage() {

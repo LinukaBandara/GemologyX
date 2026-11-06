@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Photos වලින් මැණික් මිලදී ගැනීම | GemologyX",
+  title: "Photos වලින් මැණික් මිලදී ගැනීම",
   description:
     "Online / WhatsApp photos — colour distortion, scale, return policy සහ ආරක්ෂිත පියවර.",
+
+  alternates: { canonical: "/si/learn/buying-gems-from-photos" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Origin opinion සහ origin guarantee අතර වෙනස | GemologyX",
+  title: "Origin opinion සහ origin guarantee අතර වෙනස",
   description:
     "මැණික් වාර්තාවල origin opinion යනු කුමක්ද, guarantee නොවන්නේ ඇයි, සහ මූලාරම්භ ප්‍රකාශ මිලදී ගැනීමේදී සලකා බලන ආකාරය.",
+
+  alternates: { canonical: "/si/learn/origin-opinion-vs-guarantee" },
 };
 
 export default function Page() {

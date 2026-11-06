@@ -3,7 +3,7 @@ import { ArticleLayout, ArticleSection, QuickAnswer } from "@/components/article
 import { SriLankaMiningLicenceExplorer } from "@/components/sri-lanka-mining-licence-explorer";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ මැණික් පතල් බලපත්‍රය: මුලින්ම තහවුරු කළ යුතු දේ | GemologyX",
+  title: "ශ්‍රී ලංකාවේ මැණික් පතල් බලපත්‍රය: මුලින්ම තහවුරු කළ යුතු දේ",
   description:
     "ඉඩම් අයිතිය, ඉඩම් වර්ගය, NGJA අයදුම්පත සහ පතල් අවසර ගැන ශ්‍රී ලංකාවේදී නිල ආයතනයෙන් විමසිය යුතු කරුණු සිංහලෙන් කියවන්න.",
   alternates: { canonical: "/si/learn/sri-lanka-mining-licence-basics" },
