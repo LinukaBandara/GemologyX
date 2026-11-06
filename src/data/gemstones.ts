@@ -431,13 +431,13 @@ export const gemstones: Gemstone[] = [
       certification:
         "Given its lower average value, moonstone is less commonly submitted for formal laboratory reports than precious stones, though a gemologist can confirm identity and natural origin on request.",
       care:
-        "Moonstone's moderate hardness (6–6.5) and internal stress features make it more prone to chipping or cracking than harder gems, so it suits pendants and earrings somewhat better than everyday rings. Clean gently with mild soap and a soft cloth; avoid ultrasonic cleaning.",
+        "Moonstone measures 6–6.5 on the Mohs scale and has poor toughness with two cleavage directions, so a hard blow can chip or break it. Warm soapy water is the recommended cleaning method; never use ultrasonic or steam cleaners. High heat or sudden temperature changes can also cause breaks, so protective settings and gentler wear are sensible for rings.",
       faqs: [
         { question: "What creates the glow in moonstone?", answer: "Light scattering within intergrown feldspar layers creates adularescence, the soft sheen that appears to move across the stone as it is tilted." },
         { question: "Is moonstone durable enough for a ring?", answer: "It can be worn in a ring with care, but its moderate hardness and cleavage make it more vulnerable to scratches and impact than sapphire. A protective setting and gentle wear help reduce damage." },
       ],
     },
-    sources: [{ label: "GIA — Moonstone Description", url: "https://www.gia.edu/gia-website/moonstone-description" }, { label: "GIA — Moonstone", url: "https://www.gia.edu/moonstone?hl=en-US" }],
+    sources: [{ label: "GIA Moonstone Buyer's Guide", url: "https://www.gia.edu/moonstone/buyers-guide" }, { label: "GIA Moonstone Care and Cleaning", url: "https://www.gia.edu/moonstone-care-cleaning" }, { label: "GIA Moonstone: A Gem to Celebrate the Moon", url: "https://4cs.gia.edu/en-us/blog/moonstone-a-gem-to-celebrate-the-moon/" }, { label: "GIA Moonstone Description", url: "https://www.gia.edu/moonstone-description" }],
   },
 ];
 

@@ -84,3 +84,5 @@ Do not apply for AdSense until the outstanding editorial, rights, privacy, and l
 - Reviewed GIA treatment/care references for morganite, amber, nephrite and citrine. Updated the pages’ care guidance, treatment notes and direct source links. The reviews are partial and the routes remain Draft.
 
 - Reviewed GIA treatment/care references for pearl, kunzite and ametrine. Updated treatment and cleaning language to distinguish material-specific limits. The tracker records partial review, not completion; routes remain Draft.
+
+- Reviewed GIA treatment/care references for moonstone and sunstone. Updated durability wording, sunstone treatment context and direct care citations. Tracker records partial review only; visual and remaining claim review is outstanding.

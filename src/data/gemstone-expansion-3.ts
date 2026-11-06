@@ -35,11 +35,11 @@ export const expandedGemstonesThree: Gemstone[] = [
     category: "Semi-Precious",
     mineralFamily: "Feldspar group",
     chemicalFormula: "Feldspar composition varies by species",
-    hardness: "6–6.5",
+    hardness: "6.5–7.2 (feldspar range cited by GIA)",
     crystalSystem: "Triclinic or monoclinic, depending on feldspar species",
     colors: ["Yellow", "Orange", "Red", "Green", "Bicolour"],
     transparency: "Transparent to opaque",
-    commonTreatments: ["Ask about any colour or clarity enhancement for the individual stone"],
+    commonTreatments: ["Oregon sunstone is not treated to improve appearance; pale feldspar from other areas may be enhanced"],
     description: "A feldspar gem name often associated with warm colour and aventurescence from reflective internal inclusions.",
     detail: {
       whatIsIt: "Sunstone is a gem trade name for feldspar material whose appearance may include reflective glitter or aventurescence. Several feldspar compositions can be sold as sunstone, so the name does not by itself state a single mineral species or exact chemical formula.",
@@ -47,14 +47,14 @@ export const expandedGemstonesThree: Gemstone[] = [
       origins: "Sunstone is reported from several feldspar-producing regions, including Oregon in the United States and other localities. A geographic or deposit-specific claim requires reliable provenance; hue or glitter alone does not identify where a specimen formed.",
       formation: "Sunstone is feldspar with reflective platelets or inclusions that create aventurescence. It occurs in igneous rocks and in some sedimentary deposits derived from those rocks.",
       naturalVsSynthetic: "Glass and other materials can imitate a glittering feldspar appearance. Because the trade name covers a range of material, a laboratory report should identify the species or composition where determinable, rather than relying only on the word sunstone.",
-      treatments: "Treatment practices and disclosure can vary by material and market. Ask the seller directly about any known enhancement and seek an independent report when the stone’s identity or value warrants it; do not infer treatment status from colour or sparkle.",
+      treatments: "GIA says Oregon sunstone is not treated to improve its appearance, while pale-coloured feldspar from other areas may be enhanced. Ask for treatment disclosure and do not infer treatment status from colour or sparkle alone.",
       inclusions: "Reflective internal particles can create aventurescence, the glittering effect for which some sunstones are valued. The type, density and orientation of inclusions influence appearance. Fractures and cleavage can affect durability and should be evaluated separately.",
       valueFactors: ["Colour and evenness", "Strength and pattern of aventurescence, if present", "Transparency and inclusion placement", "Species identification and provenance", "Cut orientation and finish", "Condition and treatment disclosure"],
       certification: "A laboratory can identify feldspar species and document observed optical features within its methods. The term sunstone alone is not a precise species determination and does not prove locality.",
-      care: "Feldspar sunstones have moderate hardness and may be vulnerable to cleavage and impact. Use protective settings for rings, clean with mild soap and lukewarm water, and avoid hard knocks, ultrasonic cleaning and steam.",
+      care: "GIA places feldspar hardness, including sunstone, at 6.5–7.2 and notes two cleavage directions and poor toughness. Protective settings reduce exposure to knocks. Warm soapy water is safe; avoid ultrasonic and steam cleaners, heat, and bleach-containing cleaners because feldspar can be damaged by hydrochloric acid.",
       faqs: [{ question: "What creates the sparkle in sunstone?", answer: "Reflective platelets or inclusions within feldspar can create aventurescence, a glittering effect as the stone moves. The appearance depends on the inclusions and cut." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia: Sunstone", url: "https://www.gia.edu/sunstone" }]
+    sources: [{ label: "GIA Sunstone Buyer's Guide", url: "https://www.gia.edu/sunstone/buyers-guide" }, { label: "GIA Sunstone Care and Cleaning", url: "https://www.gia.edu/sunstone-care-cleaning" }, { label: "GIA Gem Encyclopedia: Sunstone", url: "https://www.gia.edu/sunstone" }]
   },
   {
     slug: "chalcedony",
