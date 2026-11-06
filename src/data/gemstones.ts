@@ -286,7 +286,7 @@ export const gemstones: Gemstone[] = [
     colors: ["Green", "Pink", "Blue (Paraiba)", "Bi-colour"],
     transparency: "Transparent to translucent",
     birthstoneMonth: "October",
-    commonTreatments: ["Heat treatment (common)", "Irradiation (some pink/red material)"],
+    commonTreatments: ["Heat treatment (some material)", "Irradiation (some pink or red material)"],
     description:
       "A complex borosilicate mineral known for an exceptionally wide colour range, including bi-colour and watermelon varieties.",
     detail: {
@@ -301,20 +301,20 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic tourmaline is not commercially significant in the gem trade, so most identification concerns involve confirming the specific tourmaline variety and any treatment rather than a natural-vs-synthetic question.",
       treatments:
-        "Heat treatment is common to improve colour in some tourmaline, particularly to lighten overly dark material. Irradiation is used on some pink and red material. Treatment status should be confirmed rather than assumed, particularly for vivid colours.",
+        "Some tourmaline is heat-treated to change colour, and some pink or red material is irradiated. GIA notes that irradiation-related colour can fade with heat or bright light; ask the seller about known treatments and follow care advice for the individual stone.",
       inclusions:
         "Tourmaline often contains long, thread-like inclusions and occasional fractures; heavily included material is sometimes stabilized, though this is less standard than emerald oiling.",
       valueFactors: ["Colour (with Paraiba-type material commanding the highest premiums)", "Clarity", "Cut quality", "Carat weight", "Origin, for named varieties like Paraiba"],
       certification:
         "A laboratory report on tourmaline documents variety (e.g., rubellite, Paraiba-type), colour, clarity, weight, and treatment status; for Paraiba-type material, chemical testing to confirm the characteristic copper content is often part of the report.",
       care:
-        "Tourmaline's hardness (7–7.5) makes it reasonably durable for jewellery use. Clean with mild soap and warm water, and avoid extreme heat or sudden temperature changes.",
+        "Tourmaline measures 7–7.5 on the Mohs scale, but its toughness is rated fair. Warm soapy water is the recommended cleaning method; avoid ultrasonic and steam cleaners. Heat can damage tourmaline, sudden temperature changes can cause fractures, and irradiation-related colour may fade in heat or bright light.",
       faqs: [
         { question: "Does tourmaline occur in just one colour?", answer: "No. Tourmaline is a group of related mineral species found in a wide range of colours. A colour name by itself does not establish species, treatment or locality." },
         { question: "Is tourmaline safe for everyday jewellery?", answer: "Many tourmalines are suitable for regular wear, but hardness does not prevent chipping. Setting, fractures, treatment and how the jewellery is worn all affect durability." },
       ],
     },
-    sources: [{ label: "GIA — Tourmaline Description", url: "https://www.gia.edu/tourmaline-description" }, { label: "GIA — Tourmaline", url: "https://www.gia.edu/tourmaline" }],
+    sources: [{ label: "GIA — Tourmaline Buyer's Guide and Care", url: "https://www.gia.edu/tourmaline/buyers-guide" }, { label: "GIA — Tourmaline Care and Cleaning", url: "https://www.gia.edu/tourmaline-care-cleaning" }, { label: "GIA — Tourmaline Description", url: "https://www.gia.edu/tourmaline-description" }],
   },
   {
     slug: "aquamarine",
@@ -349,13 +349,13 @@ export const gemstones: Gemstone[] = [
       certification:
         "A laboratory report on aquamarine documents identity, weight, colour, clarity, and treatment status (typically confirming heat treatment or its absence).",
       care:
-        "Aquamarine's hardness (7.5–8) and typically good clarity make it well suited to everyday wear, and it can usually be cleaned safely with mild soap, warm water, and even ultrasonic cleaning when free of significant fractures.",
+        "Aquamarine measures 7.5–8 on the Mohs scale. Warm soapy water is always a safe cleaning method. Ultrasonic or steam cleaning is usually safe only when the stone has no liquid inclusions or fractures; fracture-filled aquamarine should be cleaned only with warm soapy water. Avoid heat exposure.",
       faqs: [
         { question: "Is aquamarine related to emerald?", answer: "Yes. Both are varieties of beryl. Aquamarine is blue to blue-green, while emerald is green and coloured by chromium and/or vanadium." },
         { question: "Can I assume a blue aquamarine is untreated?", answer: "No. Heat treatment is used on some aquamarine to reduce greenish tones. Ask the seller to disclose known treatment and consult a report when it matters." },
       ],
     },
-    sources: [{ label: "GIA — Aquamarine", url: "https://www.gia.edu/gia-website/aquamarine" }],
+    sources: [{ label: "GIA — Aquamarine Buyer's Guide and Care", url: "https://www.gia.edu/aquamarine/buyers-guide" }, { label: "GIA — Aquamarine Care and Cleaning", url: "https://www.gia.edu/aquamarine-care-cleaning" }, { label: "GIA — Aquamarine", url: "https://www.gia.edu/gia-website/aquamarine" }],
   },
   {
     slug: "topaz",
@@ -390,13 +390,13 @@ export const gemstones: Gemstone[] = [
       certification:
         "A laboratory report on topaz documents identity, colour, clarity, and treatment status — an important distinction for buyers who want a natural-colour stone rather than treated blue topaz.",
       care:
-        "Topaz has good hardness (8) but a distinct cleavage plane, meaning it can split cleanly if struck at the wrong angle, more so than similarly hard gems without cleavage. Clean with mild soap and warm water and avoid sharp impacts; coated 'mystic' varieties should avoid abrasive cleaning that could wear the coating.",
+        "Topaz measures 8 on the Mohs scale, but cleavage makes it vulnerable to breakage from sharp impacts or sudden temperature changes. Clean with warm soapy water; avoid steam and ultrasonic cleaners. Coated 'mystic' topaz should be cleaned only with mild soap because abrasive cleaners can wear away the surface coating.",
       faqs: [
         { question: "Is most blue topaz naturally blue?", answer: "Much of the blue topaz sold today has been treated from colourless or pale material. Treatment cannot reliably be determined from appearance alone, so ask for disclosure." },
         { question: "Why can a hard topaz still chip or split?", answer: "Mohs hardness describes resistance to scratching, not resistance to impact. Topaz has cleavage and can break when struck or exposed to stress in a vulnerable direction." },
       ],
     },
-    sources: [{ label: "GIA — Topaz", url: "https://www.gia.edu/gia-website/topaz/buyers-guide" }],
+    sources: [{ label: "GIA — Topaz Buyer's Guide and Care", url: "https://www.gia.edu/gia-website/topaz/buyers-guide" }, { label: "GIA — Topaz Care and Cleaning", url: "https://www.gia.edu/topaz-care-cleaning" }],
   },
   {
     slug: "moonstone",
