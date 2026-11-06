@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, MapPin } from "lucide-react";
 import { origins, getOriginBySlug } from "@/data/origins";
-import { AdSlot } from "@/components/ad-slot";
 
 export function generateStaticParams(){return origins.map(o=>({slug:o.slug}));}
 type Params=Promise<{slug:string}>;
@@ -21,7 +20,6 @@ export default async function OriginPage({params}:{params:Params}){
   {d?<div className="profile-content">
    <section><h2>Overview</h2><p>{d.overview}</p></section>
    <section><h2>Geological Context</h2><p>{d.geology}</p></section>
-   <AdSlot variant="in-content"/>
    <section><h2>History</h2><p>{d.history}</p></section>
    <section><h2>Common Misconceptions</h2><p>{d.misconceptions}</p></section>
   </div>:<div className="profile-note">A full write-up on {origin.name}&apos;s gemstone geology and history is in editorial preparation.</div>}

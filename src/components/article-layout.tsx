@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowLeft, ArrowUpRight, Clock3, Calendar, Languages } from "lucide-react";
-import { AdSlot } from "@/components/ad-slot";
 
 export function ArticleLayout({
   category,
@@ -66,8 +65,6 @@ export function ArticleLayout({
       <div className="prose-content mt-9 min-w-0 space-y-7 text-[0.95rem] leading-[1.75] text-foreground/90 md:text-base">
         {children}
       </div>
-
-      <AdSlot variant="in-content" />
 
       {/* Related */}
       {related && related.length > 0 && (

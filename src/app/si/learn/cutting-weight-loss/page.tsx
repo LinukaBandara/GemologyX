@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   ArticleLayout,
   ArticleSection,
@@ -120,9 +121,9 @@ export default function Page() {
       <ArticleSection heading="තවත් කියවන්න">
         <p>
           Rough එකක් මිලදී ගැනීමට පෙර අනන්‍යතාව, treatment, මුළු වියදම සහ
-          ලිඛිත කොන්දේසි ගැන <a href="/si/learn/buying-rough-gemstones">rough gemstone buying guide</a> බලන්න.
-          Sapphire rough හි ලක්ෂණ සහ ඉරිතැලීම් සඳහා <a href="/si/learn/rough-sapphire-inclusions">inclusion guide</a> ද,
-          ආලෝකය සහ proportions කැපුමට බලපාන ආකාරය සඳහා <a href="/learn/gemstone-cut">English cut guide</a> ද කියවන්න.
+          ලිඛිත කොන්දේසි ගැන <Link href="/si/learn/buying-rough-gemstones">rough gemstone buying guide</Link> බලන්න.
+          Sapphire rough හි ලක්ෂණ සහ ඉරිතැලීම් සඳහා <Link href="/si/learn/rough-sapphire-inclusions">inclusion guide</Link> ද,
+          ආලෝකය සහ proportions කැපුමට බලපාන ආකාරය සඳහා <Link href="/learn/gemstone-cut">English cut guide</Link> ද කියවන්න.
         </p>
       </ArticleSection>
 
