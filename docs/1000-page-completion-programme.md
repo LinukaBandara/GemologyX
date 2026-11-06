@@ -21,9 +21,11 @@ The 1,202 figures in the source plan describe topic/page units. Count each disti
 
 Counts below describe source routes and data, not verified content quality or search indexing.
 
-- 152 App Router `page.tsx` files, including 105 Sinhala learning pages and 18 English learning pages.
-- Data-backed library: 39 gemstone records, 9 origin records and 50 glossary terms.
-- 280 tracked route candidates including search; 279 sitemap URLs after excluding search and expanding data-backed routes, confirmed after the Sri Lanka glossary companion build.
+- 161 App Router `page.tsx` source files (not a count of final URLs).
+- Data-backed library: 39 gemstone records, 9 origin records, 50 glossary terms and 28 guide records across treatment, buying, cut and formation clusters.
+- 237 readiness-tracker rows after the 6 November audit reconciled all 39 gemstone profiles.
+- 279 sitemap URLs: 153 static routes plus 126 data-backed routes; `/search` is excluded and seven dynamic template files are not standalone URLs.
+- The tracker counts route candidates, not quality-complete pages. All 39 gemstone profiles remain Draft pending source-by-source verification and visual/mobile/accessibility review.
 - The previous implementation added branded mark, app icon and social preview; core hubs; a human-readable sitemap; working home/search flow; interactive filtering; abstract gemstone-card illustrations; and credited, zoomable specimen galleries for sapphire, ruby, emerald, amethyst and tourmaline (six images across five profiles).
 - A duplicate glossary dynamic template was removed; the richer `/glossary/[slug]` template remains. The `/learn/using-a-gem-loupe`, `/learn/gemstone-microscope-guide`, `/learn/gemstone-refractometer-guide`, `/learn/using-a-polariscope`, `/learn/gemstone-spectroscope-guide`, `/learn/specific-gravity-guide`, `/learn/dichroscope-guide` and `/learn/uv-fluorescence-guide` English instrument guides add interactive original diagrams and GIA-sourced observation limits; all are under review.
 - Existing filters and calculators already provide useful interaction. The comparison tool, guided learning flow and map below are proposed work, not existing features.
