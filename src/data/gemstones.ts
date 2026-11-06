@@ -178,20 +178,20 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic spinel is inexpensive to produce and widely used in costume jewellery and as a diamond simulant in some contexts. It is generally straightforward for a gemologist to distinguish from natural spinel using standard gemological testing.",
       treatments:
-        "Most spinel on the market is untreated, which is part of its growing appeal. Where treatments do occur, they are less standardized than for ruby or sapphire, so treatment status should still be confirmed rather than assumed.",
+        "Spinel is rarely treated, but heat treatment has been documented in natural material. Ask about any known enhancement and use an independent report when treatment status matters; it should not be inferred from appearance alone.",
       inclusions:
         "Natural spinel often contains octahedral mineral inclusions and can show fine needle-like inclusions in some material. These features assist gemologists in confirming natural origin.",
       valueFactors: ["Colour saturation and hue", "Clarity", "Cut quality", "Carat weight", "Rarity of colour (e.g., vivid blue)"],
       certification:
         "A laboratory report for spinel documents identity, weight, colour, and clarity, and confirms treatment status — most often confirming the stone is untreated.",
       care:
-        "Spinel's hardness (7.5–8) and typically good clarity make it well suited to everyday wear. It can generally be cleaned with mild soap and warm water; as with any gemstone, ultrasonic cleaning is safest when the stone is confirmed untreated and free of significant fractures.",
+        "Spinel is durable enough for rings and other jewellery worn regularly. GIA describes warm soapy water as safe; fracture-filled material should be cleaned only with warm soapy water, and an unknown treatment or significant fracture is a reason to avoid ultrasonic cleaning until the stone has been assessed.",
       faqs: [
         { question: "Is spinel just another name for ruby?", answer: "No. Spinel is a separate mineral species. Some historic red stones once called ruby were later identified as spinel, but modern gemological identification distinguishes them." },
         { question: "Is spinel usually treated?", answer: "Much spinel is sold without treatment, but that should not be assumed for an individual stone. Request disclosure and an independent report when the distinction matters to your purchase." },
       ],
     },
-    sources: [{ label: "GIA — Spinel Description", url: "https://www.gia.edu/spinel-description" }, { label: "GIA — Spinel", url: "https://www.gia.edu/spinel" }],
+    sources: [{ label: "GIA — Spinel Description", url: "https://www.gia.edu/spinel-description" }, { label: "GIA — Spinel Buyers Guide", url: "https://www.gia.edu/spinel/buyers-guide" }, { label: "GIA — Distinguishing Heated from Unheated Natural Spinels", url: "https://www.gia.edu/doc/distinguishing-heated-spinels-from-unheated-natural-spinels.pdf" }, { label: "GIA — Spinel", url: "https://www.gia.edu/spinel" }],
   },
   {
     slug: "alexandrite",
@@ -219,20 +219,20 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic colour-change corundum and synthetic alexandrite-like materials exist and are sometimes mistaken for natural alexandrite by non-specialists. Laboratory testing can reliably distinguish natural alexandrite chrysoberyl from synthetic substitutes.",
       treatments:
-        "Natural alexandrite is generally untreated; its value rests heavily on natural colour-change quality rather than any color enhancement.",
+        "Alexandrite is rarely treated, but some stones may contain fractures or have undergone enhancement. Treatment status should be determined from appropriate gemological examination, not from the colour-change effect or an attractive appearance alone.",
       inclusions:
         "Inclusions in natural alexandrite can include fine needle-like or fingerprint-type features that help confirm natural origin and separate it from synthetic material.",
       valueFactors: ["Strength and completeness of the colour change", "Colour saturation in each lighting condition", "Clarity", "Cut quality", "Carat weight"],
       certification:
         "A laboratory report for alexandrite confirms species identity (chrysoberyl) and documents the colour change observed under standardized lighting, along with clarity and treatment status.",
       care:
-        "Alexandrite's hardness (8.5) makes it durable for regular wear. It can typically be cleaned with mild soap and warm water; as with most gemstones, avoiding sudden temperature changes and harsh chemicals is good general practice.",
+        "Alexandrite is durable and suitable for rings and other mountings subject to regular wear. GIA says warm soapy water is safe; because fractures may be filled, only warm soapy water should be used on fracture-filled material. Ask about the stone's treatment before choosing ultrasonic or steam cleaning.",
       faqs: [
         { question: "Why does alexandrite change colour?", answer: "Its chromium-bearing chrysoberyl absorbs light in an unusual way. The balance of wavelengths in daylight and incandescent light makes the stone appear different colours; the effect is not simply pleochroism." },
         { question: "Can a laboratory confirm that a stone is alexandrite?", answer: "A gemological laboratory can identify the material and assess its colour change. Other gems and laboratory-grown materials can imitate the effect, so appearance alone is not conclusive." },
       ],
     },
-    sources: [{ label: "GIA — Alexandrite", url: "https://www.gia.edu/alexandrite" }, { label: "GIA — Alexandrite Description", url: "https://www.gia.edu/alexandrite-description" }],
+    sources: [{ label: "GIA — Alexandrite Buyers Guide", url: "https://www.gia.edu/alexandrite/buyers-guide" }, { label: "GIA — Alexandrite Description", url: "https://www.gia.edu/alexandrite-description" }, { label: "GIA — Alexandrite", url: "https://www.gia.edu/alexandrite" }],
   },
   {
     slug: "garnet",
@@ -260,20 +260,20 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic garnet analogues (such as YAG and GGG, used mainly in lasers and as diamond simulants) exist but are chemically and structurally distinct from natural garnet species, making them straightforward to distinguish with standard gemological testing.",
       treatments:
-        "The majority of garnet on the market is untreated, which is one of its practical advantages for buyers.",
+        "Garnets are not commonly treated, although fracture filling is used on rare occasions. Ask the seller about any known enhancement and do not assume treatment status from appearance alone.",
       inclusions:
         "Inclusion patterns vary significantly by garnet species; demantoid, for example, is well known for distinctive 'horsetail' inclusions that can support identification.",
       valueFactors: ["Species and colour rarity (e.g., demantoid, tsavorite)", "Colour saturation", "Clarity", "Cut quality", "Carat weight"],
       certification:
         "A laboratory report identifies the specific garnet species (not just 'garnet' generically), along with weight, colour, and clarity — species identification matters because value varies enormously between common red garnet and rare green varieties.",
       care:
-        "Most garnet species have good hardness (6.5–7.5) suitable for regular wear, though demantoid is somewhat softer and more fracture-prone. General cleaning with mild soap and warm water is appropriate for most untreated garnet.",
+        "Garnet hardness varies by species, roughly 6.5–7.5 on the Mohs scale, and GIA describes the group as having fair-to-good toughness. Warm soapy water is safe for cleaning; ultrasonic cleaning is usually safe except for stones with fractures, while steam cleaning is not recommended. Fracture-filled garnet should be cleaned only with warm soapy water, and the stone should be protected from hard blows.",
       faqs: [
         { question: "Is garnet one mineral species?", answer: "No. Garnet is a group of related silicate minerals. Species and varieties differ in composition, colour, properties and market value, so a report that names the species is more useful than a generic label." },
         { question: "Are all garnets red?", answer: "No. Garnets occur in red, orange, green, purple and other colours. Colour depends on the garnet species and its chemistry." },
       ],
     },
-    sources: [{ label: "GIA — Garnet", url: "https://www.gia.edu/garnet" }],
+    sources: [{ label: "GIA — Garnet Buyers Guide", url: "https://www.gia.edu/garnet/buyers-guide" }, { label: "GIA — Garnet Care and Cleaning", url: "https://www.gia.edu/garnet-care-cleaning" }, { label: "GIA — Garnet", url: "https://www.gia.edu/garnet" }],
   },
   {
     slug: "tourmaline",
