@@ -32,6 +32,7 @@ Scope: repository/build checks and local production output. This is not a live-d
 - Rendered the homepage, sapphire profile, treatment guide, and Sri Lanka origin profile at a 390-pixel phone viewport. The origin detail template initially lacked its own typography/layout rules and its gemstone tags overflowed horizontally; added dedicated responsive styling, tag wrapping and readable editorial section spacing. Rechecked the page after restarting the production server: tags wrap within the viewport and the content styling is restored. This is a targeted visual check, not full mobile/accessibility QA.
 - `/robots.txt` responds and references `https://gemologyx.com/sitemap.xml`.
 - A nonexistent local route returns 404. `/search?q=sapphire` responds; search metadata specifies `noindex,follow` and search is excluded from XML sitemap.
+- Crawled all 204 sitemap pages in the local production build and checked 280 unique internal page/image destinations discovered in their rendered markup. All sitemap pages and internal destinations returned HTTP 200.
 - `git diff --check`: passed after the gemstone source correction.
 
 ## Open issues and limits
