@@ -3,18 +3,19 @@
 
 ## Current repository status — 6 November 2026
 
-This current snapshot supersedes older counts elsewhere in the historical progress notes below. It is reconciled against the Git tree, data files, tracker and production sitemap through commit `1b3e09a`.
+This current snapshot supersedes older counts elsewhere in the historical progress notes below. It is reconciled against the Git tree, data files, tracker and production sitemap through the current branch QA pass.
 
 - App Router page source files: **161** (source-file count; not a URL count).
 - Data-backed gemstone profiles: **39** (10 core + 15 first expansion + 7 second expansion + 7 third expansion).
 - Origin records: **9**.
 - Glossary terms: **50**.
 - Treatment, buying, cut and formation guide records: **7 each** (28 total).
-- XML sitemap URLs: **204** after excluding 75 routes marked Draft; `/search` is excluded. This count reflects publication index controls, not a quality-complete URL target.
-- Readiness tracker rows: **281** (206 Inventory, 75 Draft), including `/search` and all 39 gemstone profiles.
+- XML sitemap URLs: **203** after excluding 76 routes marked Draft; `/search` is excluded. This count reflects publication index controls, not a quality-complete URL target.
+- Readiness tracker rows: **281** (205 Inventory, 76 Draft), including `/search` and all 39 gemstone profiles.
 - All 39 gemstone profiles are marked **Draft** pending source-by-source gemological verification and full visual/mobile/accessibility review. Formation content and at least one stone-specific FAQ are recorded for each profile.
-- Draft sitemap exclusions and `X-Robots-Tag: noindex, follow` are synchronized through a 75-route manifest.
-- Latest branch commit checked: `1b3e09a`. `npm run lint` and `npm run build` pass; the build generates 286 route outputs.
+- The `/si/learn` hub and its 13 curated Sri Lanka-focused Sinhala guides are marked **Draft** pending independent language and factual review. The remaining legacy Sinhala routes stay unchanged until Search Console/analytics and backlink evidence supports a scope decision.
+- Draft sitemap exclusions and `X-Robots-Tag: noindex, follow` are synchronized through a 76-route manifest.
+- Latest branch QA includes the responsive origin-profile fix, source-link correction, and local internal-link crawl. `npm run lint` and `npm run build` pass; the build generates 286 route outputs.
 
 These counts measure source records and URL inventory only. They do not represent quality-complete pages, search indexing or approval to publish. Production deployment and live indexing remain unverified.
 

@@ -37,8 +37,8 @@ Scope: repository/build checks and local production output. This is not a live-d
 
 ## Open issues and limits
 
-- The tracker now records 206 `Inventory` rows and 75 `Draft` rows (281 total). The 44 inventory additions came from sitemap reconciliation. `Inventory` is not an approval state. No pages have been marked complete based on this audit.
-- The 75 route manifest entries for `noindex` and sitemap exclusion must be kept synchronized with the tracker when editorial status changes. Build and crawler validation currently confirm the manifest matches the tracker.
+- The tracker now records 205 `Inventory` rows and 76 `Draft` rows (281 total). The 44 inventory additions came from sitemap reconciliation. `Inventory` is not an approval state. No pages have been marked complete based on this audit.
+- The 76 route manifest entries for `noindex` and sitemap exclusion must be kept synchronized with the tracker when editorial status changes. Build and crawler validation must confirm the manifest matches the tracker after each status change.
 - Explicit canonical tags are now present and match the expected production URL for all 204 sitemap routes in the local production build. Live-domain canonical responses still need deployment verification.
 - Sitemap route inclusion is not evidence of indexing, usefulness, or search performance. Production-domain responses and Search Console ownership/submission are unverified.
 - Source-to-claim review of all gemstone profiles, origins, glossary entries, and guides is incomplete. Origin references were added and checked for relevance, but claim-by-claim validation remains pending. Do not represent the content inventory as fact-checked.
@@ -63,3 +63,10 @@ Scope: repository/build checks and local production output. This is not a live-d
 6. Image ownership/license evidence for assets whose records are missing.
 
 Do not apply for AdSense until the outstanding editorial, rights, privacy, and live-site checks are complete. Never click own ads, buy invalid traffic, or encourage ad clicks. Any future affiliate relationship must be real, relevant, approved, and disclosed.
+
+
+## Follow-up tracker reconciliation
+
+- Marked `/si/learn` Draft because its independent Sinhala editorial and factual review has not started, and added it to the noindex manifest. The hub and its 13 curated local guides now use the same `Curated Sinhala Sri Lanka section` language scope in the tracker.
+- Left the remaining 103 legacy Sinhala routes in their prior states while scope, search performance and backlinks await review; existing project notes defer consolidation or de-indexing until Search Console/analytics evidence is available.
+- Post-correction verification: the tracker and manifest both contain 76 Draft routes; lint and the production build pass (286 route outputs); the sitemap emits 203 URLs; `/si/learn` and Draft guides respond with `noindex, follow`; all 203 sitemap pages and 277 unique internal page/image destinations return HTTP 200.
