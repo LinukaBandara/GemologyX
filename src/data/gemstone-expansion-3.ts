@@ -24,10 +24,10 @@ export const expandedGemstonesThree: Gemstone[] = [
       inclusions: "Many faceted ametrines appear eye-clean, but fractures and internal growth features may occur. Check the colour boundary, transparency and any surface-reaching fractures under suitable lighting and magnification.",
       valueFactors: ["Balance and contrast of the two colour zones", "Face-up colour distribution and cut orientation", "Transparency and visible inclusions", "Cut design, symmetry and polish", "Carat weight and finished size", "Reliable identity and treatment disclosure"],
       certification: "An independent laboratory can identify quartz and assess whether the colour zoning is consistent with natural material using its available methods. Reports do not automatically prove mine origin or establish a market price.",
-      care: "Ametrine has good hardness for most jewellery uses but may chip at edges or along fractures. Warm soapy water and a soft brush are generally suitable. Avoid abrupt impacts and confirm treatment before using ultrasonic or steam equipment.",
+      care: "Ametrine measures 7 on the Mohs scale and has good toughness, but abrupt temperature changes can fracture it and some colours can fade after prolonged intense light. Warm soapy water is safe. Ultrasonic cleaning is usually safe except for dyed or fracture-filled stones; avoid steam cleaning and heat.",
       faqs: [{ question: "How does ametrine show both purple and yellow?", answer: "Ametrine contains zones of amethyst and citrine colour in one quartz crystal. The boundary and colour distribution vary; a two-colour appearance alone does not establish natural origin." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia: Ametrine", url: "https://www.gia.edu/ametrine-description" }, { label: "GIA Ametrine Buyer’s Guide", url: "https://www.gia.edu/ametrine/buyers-guide" }]
+    sources: [{ label: "GIA Ametrine Buyer's Guide", url: "https://www.gia.edu/ametrine/buyers-guide" }, { label: "GIA Ametrine Care and Cleaning", url: "https://www.gia.edu/ametrine-care-cleaning" }, { label: "GIA Gem Encyclopedia: Ametrine", url: "https://www.gia.edu/ametrine-description" }]
   },
   {
     slug: "sunstone",
