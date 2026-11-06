@@ -310,7 +310,10 @@ export const expandedGemstones: Gemstone[] = [
       care: "Apatite has Mohs hardness of about 5 and can scratch more easily than quartz or corundum. Reserve it for protective settings or occasional wear, clean gently with mild soap and water, and avoid ultrasonic or steam cleaning.",
       faqs: [{ question: "Is apatite suitable for a frequently worn ring?", answer: "Apatite is relatively soft compared with many jewellery gems and can scratch or chip. It is usually better protected in pendants or earrings, or worn in a protective setting with care." }],
     },
-    sources: [{ label: "GIA Gems & Gemology: Gem apatite", url: "https://www.gia.edu/doc/SU15.pdf" }],
+    sources: [
+      { label: "GIA Gems & Gemology: Blue Cat's-Eye Apatite", url: "https://www.gia.edu/gia-website/gems-gemology/spring-2013-gemnews-blue-cats-eye-apatite" },
+      { label: "GIA Gems & Gemology: Apatite Piñata", url: "https://www.gia.edu/gems-gemology/summer-2015-microworld-apatite-pinata" },
+    ],
   },
   {
     slug: "danburite", name: "Danburite", category: "Semi-Precious", mineralFamily: "Danburite", chemicalFormula: "CaB₂(SiO₄)₂", hardness: "7–7.5", crystalSystem: "Orthorhombic", colors: ["Colourless", "Pale yellow", "Pinkish", "Brown"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A transparent borosilicate gemstone often valued for its bright appearance and near-colourless material.",
