@@ -80,3 +80,5 @@ Do not apply for AdSense until the outstanding editorial, rights, privacy, and l
 - Reviewed GIA treatment/care sources for jadeite, turquoise and zircon. Updated direct care references, improved jade category wording, and aligned cleaning and durability guidance with GIA. Tracker review is partial only; the pages remain Draft.
 
 - Reviewed GIA treatment/care references for amethyst, iolite and lapis lazuli. Profile text and citations now reflect the specific cleaning methods, treatment notes and durability limits. Tracker records partial review only; pages remain Draft.
+
+- Reviewed GIA treatment/care references for morganite, amber, nephrite and citrine. Updated the pages’ care guidance, treatment notes and direct source links. The reviews are partial and the routes remain Draft.

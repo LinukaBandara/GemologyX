@@ -24,10 +24,10 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Morganite can occur in sizeable crystals and faceted stones may appear relatively clean, but fractures, liquid inclusions and growth features can occur. Inspect inclusions for their visibility and position, especially if they reach the surface or lie near a vulnerable facet edge.",
       valueFactors: ["Pink-to-orange-pink hue and saturation", "Colour evenness and face-up appearance", "Clarity and transparency", "Cut orientation and proportions", "Carat weight and finished dimensions", "Treatment disclosure and reliable identification"],
       certification: "A recognized gemological laboratory can identify beryl and document relevant observations about treatment. Check the report’s exact wording; a report does not automatically prove mine origin, market value or future resale price.",
-      care: "Morganite has good hardness for jewellery but may contain fractures and can be damaged by impact. Clean gently with lukewarm water, mild soap and a soft brush. Avoid harsh chemicals and ask a jeweller before using ultrasonic or steam equipment if the stone is included, fractured or treated.",
+      care: "Morganite measures 7.5–8 on the Mohs scale. Warm soapy water is always safe, while ultrasonic or steam cleaning is usually safe only when the stone has no liquid inclusions or fractures; fracture-filled material should be cleaned only with warm soapy water. Avoid heat exposure.",
       faqs: [{ question: "Is morganite related to emerald and aquamarine?", answer: "Yes. Morganite, emerald and aquamarine are varieties of beryl, distinguished by colour and trace-element chemistry." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia: Morganite", url: "https://www.gia.edu/morganite-description" }, { label: "GIA Gübelin Gem Project: Beryl data sheets", url: "https://www.gia.edu/gia-gubelin-gem-project-research" }]
+    sources: [{ label: "GIA Morganite Care and Cleaning", url: "https://www.gia.edu/morganite-care-cleaning" }, { label: "GIA Morganite Description", url: "https://www.gia.edu/morganite-description" }, { label: "GIA Gübelin Gem Project: Beryl data sheets", url: "https://www.gia.edu/gia-gubelin-gem-project-research" }]
   },
   {
     slug: "kunzite",
@@ -118,7 +118,7 @@ export const expandedGemstonesTwo: Gemstone[] = [
     hardness: "2–2.5",
     colors: ["Yellow", "Honey", "Orange", "Brown", "Greenish", "Blue (rare)"],
     transparency: "Transparent to opaque",
-    commonTreatments: ["Heating, clarification, dyeing, pressing and filling may occur"],
+    commonTreatments: ["Heating, oil clarification, dyeing and pressing/reconstruction may occur"],
     description: "A lightweight fossilized resin valued for warm colour, polished glow and preserved inclusions that can reveal ancient environments.",
     detail: {
       whatIsIt: "Amber is fossilized tree resin and an organic gem material, not a crystalline mineral. It is lightweight and relatively soft. Natural plant or animal inclusions may occur, but an inclusion does not by itself prove a specimen’s age, locality or authenticity.",
@@ -126,14 +126,14 @@ export const expandedGemstonesTwo: Gemstone[] = [
       origins: "Amber occurs in multiple geological deposits around the world, including Baltic-region deposits and sources in the Americas and elsewhere. Age and locality vary by deposit. A specific origin claim needs documented provenance or specialist analysis rather than a visual match.",
       formation: "Amber is fossilized tree resin that hardened and chemically changed over geological time. It occurs in sedimentary deposits and can preserve plant or animal inclusions, though such inclusions require careful verification.",
       naturalVsSynthetic: "Copal, plastics, glass, pressed amber and other resins may imitate natural amber. Material may also contain inserted inclusions. Examination can consider internal structures, fluorescence and other properties; professional testing is appropriate for valuable specimens.",
-      treatments: "Amber may be heated, clarified, dyed, pressed from smaller pieces or filled with resin. Some processes create characteristic internal features. Sellers should disclose treatment and construction, especially when inclusions or rarity are used to support a premium price.",
+      treatments: "Amber may be heated to alter colour or clarity, clarified in hot oil, dyed, or pressed from smaller pieces into reconstructed material. Some processes create characteristic internal features. Sellers should disclose treatment and construction, especially when inclusions or rarity are used to support a premium price.",
       inclusions: "Plant and animal inclusions can be scientifically interesting, but identification requires care because modern or composite imitations exist. Look for natural flow structures and consistent internal features; do not rely on a single insect or bubble as proof.",
       valueFactors: ["Colour, transparency and visual character", "Condition and surface polish", "Size and shape", "Natural versus pressed or reconstructed material", "Credible inclusion identification and provenance", "Treatment disclosure"],
       certification: "For valuable amber, an independent report can assess material identity, treatment and whether an inclusion appears consistent with the surrounding amber. No single feature guarantees age or locality; use reports with a clearly stated scope.",
-      care: "Amber scratches and softens more easily than most mineral gems. Keep it away from heat, solvents, perfume, cleaning products and hard surfaces. Wipe gently with a soft cloth and store separately in a cool, stable environment.",
+      care: "Amber measures 2–2.5 on the Mohs scale and has poor toughness, so it scratches easily. Warm soapy water with mild soap is the safe cleaning method. Amber can burn at relatively low temperatures, darken with prolonged light exposure, and be damaged by chemicals; store and wear it away from heat, strong light and harsh products.",
       faqs: [{ question: "Is amber a mineral?", answer: "No. Amber is fossilized tree resin and is classified as an organic gem material. Inclusions and treatments should be assessed carefully by a qualified specialist." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia: Amber", url: "https://www.gia.edu/amber" }, { label: "GIA: An introduction to gem treatments", url: "https://www.gia.edu/gem-treatment" }]
+    sources: [{ label: "GIA Amber Buyer's Guide", url: "https://www.gia.edu/amber/buyers-guide" }, { label: "GIA Amber Care and Cleaning", url: "https://www.gia.edu/amber-care-cleaning" }, { label: "GIA Amber Quality Factors", url: "https://www.gia.edu/amber-quality-factor" }, { label: "GIA Gem Treatment Guide", url: "https://www.gia.edu/gem-treatment" }]
   },
   {
     slug: "rose-quartz",
