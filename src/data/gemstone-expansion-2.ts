@@ -78,10 +78,10 @@ export const expandedGemstonesTwo: Gemstone[] = [
       inclusions: "Matrix veins and patches can be part of the natural host-rock appearance. Surface pits, fractures and uneven colour may also be present. Examine construction from the sides and back where possible, but use a qualified gemologist to assess uncertain material.",
       valueFactors: ["Blue-to-green colour and evenness", "Texture, polish and matrix pattern", "Natural versus stabilized, dyed or composite status", "Craftsmanship and condition", "Size, shape and intended use", "Reliable disclosure and provenance"],
       certification: "An independent gemological report can help distinguish turquoise from imitations and may describe detectable treatment. Reports have limits, so check whether they address natural material, enhancement and construction separately.",
-      care: "Turquoise is relatively soft and porous. Keep it away from cosmetics, oils, household cleaners, heat and prolonged water exposure. Wipe with a soft dry cloth after wear and store separately to prevent scratches. Avoid ultrasonic and steam cleaning.",
+      care: "Turquoise measures 5–6 on the Mohs scale and can be porous. Clean with warm soapy water only; never use steam or ultrasonic cleaners. High heat, chemicals, cosmetics, skin oils and perspiration can discolor it, and heat or solvents can damage treated surfaces. Store it separately to reduce scratching.",
       faqs: [{ question: "Why is turquoise sometimes described as stabilized?", answer: "Stabilization usually means a treatment has been used to improve turquoise’s durability or appearance. Ask whether it is stabilized, dyed or otherwise treated, since appearance alone cannot show this." }],
     },
-    sources: [{ label: "GIA Gem Encyclopedia: Turquoise description", url: "https://www.gia.edu/turquoise-description" }, { label: "GIA: An introduction to gem treatments", url: "https://www.gia.edu/gem-treatment" }]
+    sources: [{ label: "GIA Turquoise Buyer's Guide", url: "https://www.gia.edu/turquoise/buyers-guide" }, { label: "GIA Turquoise Care and Cleaning", url: "https://www.gia.edu/turquoise-care-cleaning" }, { label: "GIA Gem Encyclopedia: Turquoise description", url: "https://www.gia.edu/turquoise-description" }, { label: "GIA: An introduction to gem treatments", url: "https://www.gia.edu/gem-treatment" }]
   },
   {
     slug: "lapis-lazuli",

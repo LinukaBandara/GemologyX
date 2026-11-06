@@ -76,3 +76,5 @@ Do not apply for AdSense until the outstanding editorial, rights, privacy, and l
 - Reviewed GIA treatment/care guidance for tourmaline, aquamarine and topaz. The local copy now reflects GIA's stated cleaning cautions and treatment-related durability limits; the tracker records this as partial review only. This does not verify the remaining profile claims or approve these pages.
 
 - Reviewed GIA treatment/care sources for peridot, opal and tanzanite and updated the profile copy and direct citations. The tracker records only partial review. The changed claims do not verify origins, formation, identification, values, imagery or the rest of each profile.
+
+- Reviewed GIA treatment/care sources for jadeite, turquoise and zircon. Updated direct care references, improved jade category wording, and aligned cleaning and durability guidance with GIA. Tracker review is partial only; the pages remain Draft.
