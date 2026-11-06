@@ -1,5 +1,22 @@
 # GemologyX Expansion Progress
 
+
+## Repository audit correction — 6 November 2026
+
+This snapshot supersedes older counts elsewhere in the historical progress notes below. It was reconciled against the Git tree and data files at commit `2ab337a`, then the route tracker was corrected in commit `6995857`.
+
+- App Router page source files: **161** (source-file count; not a URL count).
+- Data-backed gemstone profiles: **39** (10 core + 15 first expansion + 7 second expansion + 7 third expansion).
+- Origin records: **9**.
+- Glossary terms: **50**.
+- Treatment, buying, cut and formation guide records: **7 each** (28 total).
+- Concrete sitemap URLs: **279**, derived from 153 static routes plus 126 data-backed routes (39 gemstones, 9 origins, 50 glossary entries and 28 guide entries); `/search` is excluded and the seven dynamic template files are not counted as standalone URLs.
+- Readiness tracker rows: **237** after adding the 14 missing gemstone profiles. The tracker now includes all 39 gemstone profiles.
+- All 39 gemstone profiles are marked **Draft** pending source-by-source gemological verification and full visual/mobile/accessibility review. Formation content and at least one stone-specific FAQ are recorded for each profile.
+- Latest commit checked: `2ab337a`; tracker reconciliation commit: `6995857`.
+
+These counts measure source records and URL inventory only. They do not represent quality-complete pages, search indexing or approval to publish. The latest GitHub Vercel status for `2ab337a` is failure. The connected Vercel log endpoint returned not-found/permission errors during this audit, so the underlying build error remains unknown and must not be guessed.
+
 **Programme:** 1,000+ meaningful URLs
 **Branch:** `content/complete-and-expand-1000`
 **Baseline commit:** `74641d49d260aeb4807403c59250bd33719c6b8d`
