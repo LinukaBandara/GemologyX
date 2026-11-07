@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -113,6 +114,7 @@ const inDevelopment = [
 export default function ToolsPage() {
   return (
     <main className="container-page py-10 md:py-16">
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Gemology Tools", url: "https://gemologyx.com/tools" }]} />
       <header className="relative overflow-hidden border-b border-border pb-9 md:pb-12">
         <div className="pointer-events-none absolute -right-8 -top-12 hidden h-64 w-64 rounded-full border border-[var(--gold)]/20 md:block" />
         <div className="pointer-events-none absolute -right-1 top-0 hidden h-48 w-48 rounded-full border border-[var(--gold)]/20 md:block" />
