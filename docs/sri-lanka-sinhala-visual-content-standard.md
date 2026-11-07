@@ -200,3 +200,5 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 - `/si/learn/negotiate-gem-price`: modern collapsible jeweller's balance scale with brass weights — W.carter, CC BY-SA 4.0. This illustrates weighing as one documented part of a transaction, not a valuation method or a guide to market price.
 
 - `/si/learn/blue-sapphire-red-flags`: pink sapphire under gemmological microscope — Sara Abey, CC BY-SA 4.0. The image illustrates professional examination context only; it does not prove the identity, treatment, origin or quality of any stone discussed in the guide.
+
+- `/si/learn/blue-sapphire-price-per-carat`: electronic jewellery weighing scale — Mauro Cateb, CC BY-SA 3.0. This supports the discussion of recorded weight only; it is not evidence of a sapphire's identity, quality or price.
