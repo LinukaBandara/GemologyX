@@ -153,3 +153,9 @@ The 2026-11-06 audit's local build and crawl results remain historical results f
 - Remaining work: run the new Playwright checks in a production build, verify the local image files and their licence records against the original source pages, and complete manual screen-reader/focus/contrast testing.
 
 - Added the companion [image provenance register](./image-provenance-register.md). It separates six locally stored specimen photographs with recorded credits/licences/source pages from homepage, Suranga collection and decorative SVG assets whose original creator or permission still needs owner confirmation. No unverified asset is described as licensed or original.
+
+### Bilingual and image-accessibility regression checks — 2026-11-08
+
+- Added a Playwright accessibility regression test confirming Sinhala guide content is wrapped in a `lang="si"` region while the root document language remains English. It also checks that the Sinhala region contains a non-empty visible page heading.
+- Extended the published-sitemap SEO test to flag any rendered `<img>` element without an `alt` attribute. This detects missing attributes; it does not judge whether each alt description is meaningful or whether an empty alt is appropriate for decorative imagery.
+- These checks are committed but remain unexecuted in CI until the committed package manifest and lockfile are brought back into sync. Manual screen-reader and descriptive-alt review are still required.
