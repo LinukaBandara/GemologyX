@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   description:
     "Explore gemstone calculators and gemological references for carat weight, proportions, ring sizes, hardness, specific gravity, refractive index, birefringence and gemstone colour science.",
   alternates: { canonical: "/tools" },
-  openGraph: { type: "website", title: "Gemology Tools & Calculators", description: "Use practical gemstone calculators and reference tools for weight, proportions, ring sizes and optical properties.", url: "/tools" },
-  twitter: { card: "summary_large_image", title: "Gemology Tools & Calculators", description: "Use practical gemstone calculators and reference tools for weight, proportions, ring sizes and optical properties." },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Gemology Tools & Calculators", description: "Use practical gemstone calculators and reference tools for weight, proportions, ring sizes and optical properties.", url: "/tools" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Gemology Tools & Calculators", description: "Use practical gemstone calculators and reference tools for weight, proportions, ring sizes and optical properties." },
 };
 
 const availableTools = [
