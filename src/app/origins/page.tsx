@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
@@ -15,6 +16,7 @@ export default function OriginsPage() {
 
   return (
     <main className="container-page py-12 md:py-16">
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Gemstone Origins", url: "https://gemologyx.com/origins" }]} />
       <header className="mx-auto max-w-3xl border-b border-border pb-9 text-center">
         <div className="gx-eyebrow justify-center"><span /> WORLD GEMSTONE ATLAS</div>
         <h1 className="mt-4 font-serif text-4xl font-semibold tracking-tight text-foreground md:text-6xl">
