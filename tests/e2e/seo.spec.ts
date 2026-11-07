@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 function getMetaContent(html: string, name: string) {
-  const tag = html.match(new RegExp(\`<meta\\b[^>]*name=["']\${name}["'][^>]*>\`, "i"))?.[0];
+  const tag = html.match(new RegExp("<meta\\b[^>]*name=[\\"']" + name + "[\\"'][^>]*>", "i"))?.[0];
   return tag?.match(/content=["']([^"']*)["']/i)?.[1] ?? "";
 }
 
@@ -28,7 +28,7 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
         const pathname = new URL(url).pathname || "/";
         const response = await request.get(pathname);
         if (!response.ok()) {
-          return \`\${pathname}: HTTP \${response.status()}\`;
+          return pathname + ": HTTP " + response.status();
         }
 
         const html = await response.text();
@@ -37,30 +37,30 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
         const canonical = getCanonical(html);
         const robots = getMetaContent(html, "robots");
         const xRobots = response.headers()["x-robots-tag"] ?? "";
-        const expectedCanonical = \`https://gemologyx.com\${pathname === "/" ? "/" : pathname}\`;
+        const expectedCanonical = "https://gemologyx.com" + (pathname === "/" ? "/" : pathname);
         const issues: string[] = [];
 
         if (!title) issues.push("missing title");
         if (!description) issues.push("missing meta description");
-        if (canonical !== expectedCanonical) issues.push(\`canonical mismatch (\${canonical || "missing"})\`);
-        if (/noindex/i.test(\`\${robots} \${xRobots}\`)) issues.push("published sitemap route is noindex");
+        if (canonical !== expectedCanonical) issues.push("canonical mismatch (" + (canonical || "missing") + ")");
+        if (/noindex/i.test(robots + " " + xRobots)) issues.push("published sitemap route is noindex");
 
         const normalizedTitle = title.toLocaleLowerCase();
         const previousPath = seenTitles.get(normalizedTitle);
         if (previousPath && previousPath !== pathname) {
-          issues.push(\`duplicate title also used by \${previousPath}\`);
+          issues.push("duplicate title also used by " + previousPath);
         } else if (title) {
           seenTitles.set(normalizedTitle, pathname);
         }
 
-        return issues.length ? \`\${pathname}: \${issues.join(", ")}\` : null;
+        return issues.length ? pathname + ": " + issues.join(", ") : null;
       }),
     );
 
     failures.push(...batch.filter((failure): failure is string => failure !== null));
   }
 
-  expect(failures, failures.join("\\n")).toEqual([]);
+  expect(failures, failures.join("\n")).toEqual([]);
 });
 
 test("internal search results are noindex and absent from the XML sitemap", async ({ request }) => {
@@ -80,6 +80,6 @@ test("editorial draft routes stay noindex and outside the XML sitemap", async ({
     const response = await request.get(route);
     expect(response.status(), route).toBe(200);
     expect(response.headers()["x-robots-tag"] ?? "", route).toMatch(/noindex/i);
-    expect(sitemap, route).not.toContain(\`https://gemologyx.com\${route}\`);
+    expect(sitemap, route).not.toContain("https://gemologyx.com" + route);
   }
 });
