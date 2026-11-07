@@ -9,7 +9,7 @@ import {
 export const metadata: Metadata = {
   title: "Gemology Tools & Calculators",
   description:
-    "Explore gemstone calculators and gemological references for carat weight, proportions, ring sizes, hardness, specific gravity, refractive index and birefringence.",
+    "Explore gemstone calculators and gemological references for carat weight, proportions, ring sizes, hardness, specific gravity, refractive index, birefringence and gemstone colour science.",
   alternates: { canonical: "/tools" },
 };
 
