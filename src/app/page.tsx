@@ -24,10 +24,10 @@ export const metadata: Metadata = {
 };
 
 const gemstones = [
-  { name: "Sapphire", detail: "Corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/blue-gem.svg", alt: "Blue sapphire visual from the Suranga Gems collection", note: "THE BLUE OF CEYLON", number: "01" },
-  { name: "Ruby", detail: "Red corundum · Mohs 9", href: "/gemstones/ruby", image: "/images/suranga/pink-gem.svg", alt: "Ruby visual from the Suranga Gems collection", note: "THE RED VARIETY", number: "02" },
-  { name: "Emerald", detail: "Beryl · Mohs 7.5–8", href: "/gemstones/emerald", image: "/images/suranga/green-gem.svg", alt: "Emerald visual from the Suranga Gems collection", note: "THE GREEN BERYL", number: "03" },
-  { name: "Golden sapphire", detail: "Yellow corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/gold-gem.svg", alt: "Golden sapphire visual from the Suranga Gems collection", note: "A GOLDEN CORUNDUM", number: "04" },
+  { name: "Sapphire", detail: "Corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/blue-gem.svg", alt: "Illustration of a faceted blue sapphire", note: "BLUE CORUNDUM", number: "01" },
+  { name: "Ruby", detail: "Red corundum · Mohs 9", href: "/gemstones/ruby", image: "/images/suranga/pink-gem.svg", alt: "Illustration of a faceted red ruby", note: "THE RED VARIETY", number: "02" },
+  { name: "Emerald", detail: "Beryl · Mohs 7.5–8", href: "/gemstones/emerald", image: "/images/suranga/green-gem.svg", alt: "Illustration of a faceted green emerald", note: "THE GREEN BERYL", number: "03" },
+  { name: "Golden sapphire", detail: "Yellow corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/gold-gem.svg", alt: "Illustration of a faceted golden-yellow sapphire", note: "A GOLDEN CORUNDUM", number: "04" },
 ];
 
 const articles = [
