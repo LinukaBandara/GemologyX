@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "A glossary of gemological terminology, from asterism to treatment.",
 
   alternates: { canonical: "/glossary" },
+  openGraph: { type: "website", title: "Gemstone Glossary", description: "A clear reference to gemological terminology used to describe, identify and study gemstones.", url: "/glossary" },
+  twitter: { card: "summary_large_image", title: "Gemstone Glossary", description: "A clear reference to gemological terminology used to describe, identify and study gemstones." },
 };
 
 export default function GlossaryPage() {
