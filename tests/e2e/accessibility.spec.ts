@@ -89,3 +89,13 @@ test("reduced-motion preference skips the full-screen site loader", async ({ pag
 
   await expect(page.locator(".gx-site-loader")).toBeHidden();
 });
+
+test("Sinhala guide content is identified with the correct language", async ({ page }) => {
+  await page.goto("/si/learn/blue-sapphire-care", { waitUntil: "domcontentloaded" });
+
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  const sinhalaContent = page.locator('[lang="si"]');
+  await expect(sinhalaContent).toBeVisible();
+  await expect(sinhalaContent.locator("h1")).toBeVisible();
+  await expect(sinhalaContent.locator("h1")).not.toBeEmpty();
+});
