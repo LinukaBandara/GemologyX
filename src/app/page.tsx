@@ -37,9 +37,27 @@ const pathways = [
   { icon: Ruler, title: "Work with practical tools", text: "Use measurement, carat conversion, gemstone size and hardness references.", href: "/tools", link: "Open the tool desk" },
 ];
 
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://gemologyx.com/#website",
+  url: "https://gemologyx.com/",
+  name: "GemologyX",
+  description:
+    "An educational reference for gemstone science, origins, treatments, identification and Sri Lankan gem heritage.",
+  inLanguage: ["en", "si"],
+};
+
 export default function HomePage() {
   return (
-    <main className="gx-pearl-home">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteStructuredData).replace(/</g, "\\u003c"),
+        }}
+      />
+      <main className="gx-pearl-home">
       <section className="gx-pearl-hero">
         <div className="gx-pearl-hero-inner container-page">
           <div className="gx-pearl-kicker"><span /> A REFERENCE FOR THE CURIOUS</div>
