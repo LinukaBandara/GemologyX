@@ -3320,3 +3320,37 @@ body .gx-article-content li { font-size:16px; line-height:1.85; }
   body .gx-mining-page .gx-mining-photo figcaption,
   body .gx-learning-library .gx-learning-image-caption { font-size:12px !important; }
 }
+
+
+/* Last pass for legacy shared controls and remaining regional photo labels. */
+body .gx-btn,
+body .nav-link,
+body .luxury-button,
+body .gx-regional-primary,
+body .gx-regional-secondary,
+body .gx-regional-link-list a,
+body .gx-learning-primary,
+body .gx-learning-text-link,
+body .gx-pearl-gem-gallery .gx-pearl-gem-art > span,
+body .gx-regional-hero-image figcaption,
+body .gx-sri-photo-feature figcaption,
+body .gx-sri-photo-banner figcaption,
+body .gx-learning-sinhala-image > span,
+body .gx-site-loader > span,
+body .site-loader {
+  font-size:14px !important;
+  line-height:1.6;
+}
+body .gx-eyebrow,
+body .luxury-eyebrow,
+body .gx-mining-page .gx-mining-note > span,
+body .gx-mining-page .gx-mining-photo-frame > span {
+  font-size:13px !important;
+  line-height:1.55;
+}
+body .gx-pearl-gem-gallery .gx-pearl-gem-art > span,
+body .gx-learning-sinhala-image > span { font-size:12px !important; }
+body .gx-regional-meta { font-size:12px !important; letter-spacing:.08em; }
+body .gx-regional-hero-image figcaption,
+body .gx-sri-photo-feature figcaption,
+body .gx-sri-photo-banner figcaption { font-size:12px !important; }
