@@ -239,3 +239,7 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 ## Sinhala guide photography coverage — tanzanite comparison and kunzite
 - `/si/learn/sapphire-vs-tanzanite`: blue-violet tanzanite crystal specimens — Parent Géry, public domain. The photograph illustrates tanzanite material only; it is not a side-by-side comparison with sapphire and does not establish a stone's identity or origin.
 - `/si/learn/kunzite-intro`: pink kunzite crystal showing colour variation along the crystal — Eurico Zimbres, CC BY-SA 2.5. The Commons description identifies the specimen as Brazilian; it is an illustrative kunzite specimen, not a Sri Lankan occurrence.
+
+## Sinhala gemstone profile photography coverage — quartz and turquoise
+- `/si/learn/quartz-family-intro`: a group of polished quartz varieties including amethyst, citrine, rose quartz, smoky quartz and milky quartz — Mauro Cateb, CC BY-SA 3.0. This is an illustrative selection, not an exhaustive taxonomy of quartz varieties.
+- `/si/learn/turquoise-intro`: sky-blue turquoise microcrystals on matrix from Lynch Station, Virginia, USA — Rob Lavinsky / iRocks.com, CC BY-SA 3.0. The photographed specimen is from the United States, not Sri Lanka; it illustrates turquoise mineral appearance only.
