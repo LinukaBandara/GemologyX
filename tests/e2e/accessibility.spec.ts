@@ -41,7 +41,7 @@ test("mobile navigation closes with Escape and exposes its expanded state", asyn
   await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toBeVisible();
 
   await page.keyboard.press("Escape");
-  await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toHaveCount(0);
+  await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toBeHidden();
   const closedMenuButton = page.getByRole("button", { name: "Open navigation" });
   await expect(closedMenuButton).toHaveAttribute("aria-expanded", "false");
   await expect(closedMenuButton).toBeFocused();
