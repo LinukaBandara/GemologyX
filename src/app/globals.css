@@ -1387,3 +1387,93 @@ html[data-theme="dark"] .gx-pearl-tags a:hover { background: #38232C; }
 html[data-theme="dark"] .gx-pearl-tags a,
 html[data-theme="dark"] .gx-pearl-tool-list,
 html[data-theme="dark"] .gx-pearl-tool-list a { border-color: #49313A; }
+
+/* ── Light-theme contrast + mobile-first readability pass ── */
+/* Keep secondary text readable against pearl and ivory surfaces. */
+html:not([data-theme="dark"]) .gx-pearl-home {
+  --gx-pearl-muted: #62575A;
+}
+html:not([data-theme="dark"]) .gx-pearl-intro,
+html:not([data-theme="dark"]) .gx-pearl-heading-aside p,
+html:not([data-theme="dark"]) .gx-pearl-path-heading > p,
+html:not([data-theme="dark"]) .gx-pearl-article p,
+html:not([data-theme="dark"]) .gx-pearl-sri-copy > p,
+html:not([data-theme="dark"]) .gx-pearl-path-card p,
+html:not([data-theme="dark"]) .gx-pearl-tools-inner > div:first-child > p,
+html:not([data-theme="dark"]) .gx-pearl-end > div > p {
+  color: #62575A;
+}
+html:not([data-theme="dark"]) .gx-pearl-kicker,
+html:not([data-theme="dark"]) .gx-pearl-topic,
+html:not([data-theme="dark"]) .gx-pearl-gem-detail,
+html:not([data-theme="dark"]) .gx-pearl-path-card > div,
+html:not([data-theme="dark"]) .gx-pearl-tool-list span,
+html:not([data-theme="dark"]) .gx-pearl-tool-list svg {
+  color: #704653;
+}
+html:not([data-theme="dark"]) .gx-pearl-index,
+html:not([data-theme="dark"]) .gx-pearl-proof span,
+html:not([data-theme="dark"]) .gx-pearl-disclosure,
+html:not([data-theme="dark"]) .gx-pearl-sri-mark > span,
+html:not([data-theme="dark"]) .gx-pearl-sri-mark > small {
+  color: #66595C;
+}
+html:not([data-theme="dark"]) .gx-pearl-secondary,
+html:not([data-theme="dark"]) .gx-pearl-heading-aside > a,
+html:not([data-theme="dark"]) .gx-pearl-read,
+html:not([data-theme="dark"]) .gx-pearl-path-card > b,
+html:not([data-theme="dark"]) .gx-pearl-tags a {
+  color: #641F35;
+}
+html:not([data-theme="dark"]) .gx-pearl-search input::placeholder {
+  color: #6F6264;
+  opacity: 1;
+}
+html:not([data-theme="dark"]) .gx-pearl-gem-art > span,
+html:not([data-theme="dark"]) .gx-pearl-article-art > span {
+  color: #60474E;
+}
+html:not([data-theme="dark"]) .site-header .nav-link,
+html:not([data-theme="dark"]) .site-header .gx-icon-btn {
+  color: #49313A;
+}
+html:not([data-theme="dark"]) .brand-lockup small {
+  color: #66565B;
+}
+
+/* Mobile-first legibility and comfortable touch targets. */
+@media (max-width: 640px) {
+  .gx-pearl-home { overflow-wrap: break-word; }
+  .gx-pearl-intro,
+  .gx-pearl-heading-aside p,
+  .gx-pearl-path-heading > p,
+  .gx-pearl-sri-copy > p,
+  .gx-pearl-tools-inner > div:first-child > p,
+  .gx-pearl-end > div > p {
+    font-size: .94rem;
+    line-height: 1.75;
+  }
+  .gx-pearl-article p,
+  .gx-pearl-path-card p {
+    font-size: .78rem;
+    line-height: 1.65;
+  }
+  .gx-pearl-topic,
+  .gx-pearl-gem-detail,
+  .gx-pearl-disclosure {
+    font-size: .68rem;
+    line-height: 1.55;
+    letter-spacing: .035em;
+  }
+  .gx-pearl-proof span { font-size: .68rem; }
+  .gx-pearl-search { min-height: 50px; }
+  .gx-pearl-search input { font-size: 16px; }
+  .gx-pearl-search button { width: 42px; height: 42px; }
+  .gx-pearl-primary { min-height: 48px; padding: .85rem 1rem; }
+  .gx-pearl-secondary,
+  .gx-pearl-heading-aside > a,
+  .gx-pearl-read,
+  .gx-pearl-path-card > b { min-height: 42px; }
+  .gx-pearl-tags a { min-height: 42px; padding: .7rem .75rem; }
+}
+
