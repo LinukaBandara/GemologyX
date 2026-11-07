@@ -101,3 +101,15 @@ Image-use caveats:
 - General microscope imagery illustrates professional examination, not a specific treatment result.
 - The Pelmadulla gravel-sorting photograph is regional industry context and is not labelled as Geuda.
 - Profile photographs illustrate the named gemstone specimen; they do not certify origin, treatment, quality or value.
+
+### Additional buying-guide image coverage
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/buying-at-gem-auction` | Gemmological microscope examination | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/buying-gems-from-photos` | Gemmological microscope examination; reinforces the limits of photo-only inspection | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/gemstone-buying-checklist` | Gemmological microscope examination | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/online-vs-local-gem-buying` | Gemmological microscope examination | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/rough-gem-questions` | Hand-sorting washed gem gravel near Pelmadulla; regional context | Ilyes Makria / Joalys · CC BY-SA 4.0 |
+
+The microscope photograph is contextual editorial imagery, not a substitute for in-person inspection or an independent gem laboratory report. The Pelmadulla photograph shows gem gravel sorting and is not presented as a photograph of any particular rough stone.
