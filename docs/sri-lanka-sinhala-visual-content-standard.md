@@ -44,6 +44,16 @@ This standard applies to the English Sri Lanka hub, the Sinhala learning hub, al
 ## Sinhala gemstone profile coverage
 Twelve individual profile guides now use the reusable ArticleLayout heroImage slot with subject-matched, credited images: alexandrite, amethyst, aquamarine, chrysoberyl, citrine, coral, garnet, opal, peridot, spinel, tourmaline and zircon. This is a focused first profile batch, not a claim that every Sinhala article is illustrated. Amber, emerald and topaz still need separately verified image references; remaining learning and practical guides are to be audited in later batches.
 
+## Additional verified visual reference
+- Ruby corundum crystal from Mogok, Myanmar: https://commons.wikimedia.org/wiki/File:Corundum-215474.jpg — Rob Lavinsky / iRocks.com, CC BY-SA 3.0. Original image: https://upload.wikimedia.org/wikipedia/commons/b/bb/Corundum-215474.jpg. The locality is Myanmar; do not describe it as Sri Lankan-mined ruby.
+
+## Sinhala guide photography coverage — second batch
+- Blue sapphire complete guide and colour-quality guide: Ratnapura-area sapphire crystal (James St. John, CC BY 2.0).
+- Sapphire lab report guide, rough sapphire inclusions guide and sapphire buying checklist: gemmological microscope examination (Sara Abey, CC BY-SA 4.0).
+- Ruby introduction and ruby-vs-garnet / ruby-vs-spinel comparisons: ruby corundum crystal from Mogok (Rob Lavinsky / iRocks.com, CC BY-SA 3.0).
+- Rough blue sapphire value guide: Ratnapura-area sapphire crystal (James St. John, CC BY 2.0).
+- Cutting weight-loss guide: Gintota gem cutting on a lap wheel (Ilyes Makria / Joalys, CC BY-SA 4.0).
+
 ## Current implementation coverage
 - Sri Lanka country hub: Sri Lanka landscape hero.
 - Sinhala learning hub: Sri Lanka landscape hero and Sinhala topic architecture.
