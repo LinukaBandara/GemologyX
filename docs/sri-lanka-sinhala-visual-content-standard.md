@@ -73,3 +73,31 @@ Twelve individual profile guides now use the reusable ArticleLayout heroImage sl
 - Use the shared gx-sri-photo-feature / gx-sri-photo-banner presentation classes for responsive, credited images.
 - Do not reuse the same image across unrelated topics just to satisfy a visual quota.
 - Keep source/credit information visible in both light and dark themes and on mobile.
+
+## November 2026 — treatment, buying, regional and profile image batch
+
+The following Sinhala learning routes now use the shared `ArticleLayout.heroImage` field. Each image includes a visible photographer/source credit and a link to its Wikimedia Commons file page.
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/heat-treatment-guide` | 60× microscope view of a heat-treated yellow sapphire with internal features | Unbreaking · CC0 1.0 |
+| `/si/learn/heated-sapphire-guide` | Same heat-treated sapphire microscope specimen | Unbreaking · CC0 1.0 |
+| `/si/learn/heated-vs-unheated-blue-sapphire` | Same heat-treated sapphire microscope specimen; illustrative only | Unbreaking · CC0 1.0 |
+| `/si/learn/heat-vs-diffusion-vs-filling` | Gemmological microscope examination | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/diffusion-treatment-guide` | Gemmological microscope examination; not a diffusion diagnosis | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/gemstone-treatment-disclosure` | Gemmological microscope examination | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/buying-geuda` | Hand-sorting washed gem gravel near Pelmadulla; regional trade context, not a Geuda specimen | Ilyes Makria / Joalys · CC BY-SA 4.0 |
+| `/si/learn/buying-rough-gemstones` | Ratnapura-area sapphire crystal | James St. John · CC BY 2.0 |
+| `/si/learn/amber-intro` | Amber specimen | Hannes Grobe · CC BY-SA 2.5 |
+| `/si/learn/emerald-intro` | Faceted emerald | Gaumania · CC0 1.0 |
+| `/si/learn/topaz-intro` | Topaz crystals on matrix | AutreTemps · CC BY-SA 4.0 |
+| `/si/learn/ratnapura-balangoda-gem-geology` | Ratnapura-area sapphire crystal | James St. John · CC BY 2.0 |
+| `/si/learn/sri-lanka-buying-day-tips` | Gemmological microscope examination | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/sri-lanka-gem-trade-intro` | Gem cutting on a lap wheel in Gintota | Ilyes Makria / Joalys · CC BY-SA 4.0 |
+| `/si/learn/sri-lanka-mining-licence-basics` | Gem pit shaft near Pelmadulla | Ilyes Makria / Joalys · CC BY-SA 4.0 |
+
+Image-use caveats:
+- The heat-treatment micrograph depicts one heat-treated yellow sapphire; it is not a universal diagnostic key and must not be presented as proof about another stone.
+- General microscope imagery illustrates professional examination, not a specific treatment result.
+- The Pelmadulla gravel-sorting photograph is regional industry context and is not labelled as Geuda.
+- Profile photographs illustrate the named gemstone specimen; they do not certify origin, treatment, quality or value.
