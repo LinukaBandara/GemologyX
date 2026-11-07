@@ -201,8 +201,7 @@ export const origins: Origin[] = [
       { label: "GIA: Australia opal fields expedition", url: "https://www.gia.edu/gia-news-research/australia-opal-fields-expedition" },
       { label: "GIA: Sapphire geographic origin determination", url: "https://www.gia.edu/gems-gemology/winter-2019-blue-sapphire-geographic-origin-determination" },
     ],
-  },,
-
+  },
   {
     slug: "thailand",
     name: "Thailand",
