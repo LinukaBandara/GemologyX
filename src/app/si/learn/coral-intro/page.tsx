@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="Coral (කොරල්) — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/1/17/Red_coral_gemstone.jpg",
+        alt: "Polished red precious coral cabochon",
+        credit: "Precious red coral cabochon — Rasmita Nayak, CC BY-SA 4.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Red_coral_gemstone.jpg",
+      }}
       crumbHref="/si/learn/pearl-intro"
       crumbLabel="Pearl හැඳින්වීම"
       lastReviewed="2026-10-24"
