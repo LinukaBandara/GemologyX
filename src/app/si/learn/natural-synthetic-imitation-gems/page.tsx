@@ -16,6 +16,7 @@ export default function Page() {
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
       crumbLabel="Natural vs lab-grown"
       lastReviewed="2026-11-02"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Comparison_chart.jpg", alt: "A comparison image showing a natural yellow sapphire crystal beside a synthetic yellow sapphire", credit: "Natural and synthetic yellow sapphire comparison — Laiyinann, CC0 1.0 (Wikimedia Commons).", sourceUrl: "https://commons.wikimedia.org/wiki/File:Comparison_chart.jpg" }}
       related={[
         { label: "Natural සහ lab-grown අතර වෙනස", href: "/si/learn/natural-vs-synthetic-gemstones" },
         { label: "Glass සහ මැණික් අතර වෙනස", href: "/si/learn/glass-vs-gemstone" },
