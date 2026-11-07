@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="මැණික්වල ඇතුළත ලක්ෂණ (Inclusions)"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg",
+        alt: "A pink sapphire examined under a gemmological microscope",
+        credit: "Gemmological microscopic examination — Sara Abey, CC BY-SA 4.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg",
+      }}
       crumbHref="/si/learn/rough-sapphire-inclusions"
       crumbLabel="රළු නිල්මැණික් inclusions"
       lastReviewed="2026-10-21"
