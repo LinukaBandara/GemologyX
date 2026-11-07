@@ -52,7 +52,10 @@ test("skip link is available to keyboard users", async ({ page }) => {
   await page.keyboard.press("Tab");
   const skipLink = page.getByRole("link", { name: "Skip to main content" });
   await expect(skipLink).toBeFocused();
-  await expect(page.locator("main#main-content")).toHaveAttribute("tabindex", "-1");
+  const main = page.locator("main#main-content");
+  await expect(main).toHaveAttribute("tabindex", "-1");
+  await skipLink.click();
+  await expect(main).toBeFocused();
 });
 
 
