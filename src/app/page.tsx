@@ -269,7 +269,7 @@ export default function HomePage() {
             <h2>Rooted in the island.<br /><em>Connected to the world.</em></h2>
             <p>Explore Sri Lanka’s gem regions, mining traditions, geological context, local trade language and export pathways—while learning to separate documented facts from trade claims.</p>
             <div className="gx-v2-sri-tags">
-              <Link href="/sri-lanka/regions/ratnapura">Ratnapura <ArrowUpRight size={13} /></Link>
+              <Link href="/origins/sri-lanka">Sri Lanka origins <ArrowUpRight size={13} /></Link>
               <Link href="/sri-lanka">Gem heritage <ArrowUpRight size={13} /></Link>
               <Link href="/sri-lanka-mining">Mining & environment <ArrowUpRight size={13} /></Link>
               <Link href="/sri-lanka-trade-export">Trade & export <ArrowUpRight size={13} /></Link>
