@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   description: "Learn about GemologyX, an educational reference for gemstones, gemology, and Sri Lankan gem knowledge.",
 
   alternates: { canonical: "/about" },
-  openGraph: { type: "website", title: "About GemologyX", description: "Learn about GemologyX, its educational purpose and approach to gemstone and gemology knowledge.", url: "/about" },
-  twitter: { card: "summary_large_image", title: "About GemologyX", description: "Learn about GemologyX, its educational purpose and approach to gemstone and gemology knowledge." },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "About GemologyX", description: "Learn about GemologyX, its educational purpose and approach to gemstone and gemology knowledge.", url: "/about" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "About GemologyX", description: "Learn about GemologyX, its educational purpose and approach to gemstone and gemology knowledge." },
 };
 
 export default function AboutPage() {
