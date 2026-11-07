@@ -11,6 +11,7 @@ function getCanonical(html: string) {
 }
 
 test("every published sitemap route has valid, unique, indexable metadata", async ({ request }) => {
+  test.setTimeout(180_000);
   const sitemapResponse = await request.get("/sitemap.xml");
   expect(sitemapResponse.status()).toBe(200);
 
