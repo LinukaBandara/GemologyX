@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function MiningLicensingPage() {
   return <article className="container-page gx-regional-subpage max-w-4xl py-12 md:py-16">
     <nav className="luxury-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/sri-lanka-mining">Sri Lanka Mining</Link><span>/</span><span>Licensing</span></nav>
     <header className="article-hero"><div className="luxury-eyebrow"><span /> OFFICIAL PROCESS GUIDE</div><h1 className="mt-5 font-serif text-4xl font-semibold leading-tight md:text-6xl">Gemstone Mining Licences in Sri Lanka</h1><p className="mt-5 max-w-3xl text-base leading-7 text-muted md:text-lg">How to find and verify official licensing information before undertaking gemstone-mining activity in Sri Lanka.</p></header>
+    <figure className="gx-sri-photo-banner"><Image src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Gem_pit_shaft_seen_from_above%2C_Pelmadulla%2C_Sri_Lanka_%282026%29.jpg" alt="Gem pit shaft viewed from above near Pelmadulla, Sri Lanka" width={1200} height={800} sizes="(max-width: 800px) 100vw, 1000px" /><figcaption><span>Gem pit context · Pelmadulla, Sri Lanka</span><a href="https://commons.wikimedia.org/wiki/File:Gem_pit_shaft_seen_from_above,_Pelmadulla,_Sri_Lanka_(2026).jpg" target="_blank" rel="noreferrer">Ilyes Makria / Joalys · CC BY-SA 4.0 · Wikimedia Commons</a></figcaption></figure>
     <div className="profile-content">
       <section><h2>Start with the current official procedure</h2><p>Mining-related requirements depend on the activity, site and circumstances. Do not rely on a general online summary as authorization to begin work. Review the National Gem and Jewellery Authority&apos;s current instructions and contact the authority to confirm what applies to the exact proposed activity and location.</p></section>
       <section><h2>Information to clarify before proceeding</h2><ul><li>What type of mining activity is proposed, and where is the site?</li><li>Which application, licence or other permission applies to that activity?</li><li>What documents, site information, consents or supporting approvals are required?</li><li>Are there conditions concerning equipment, land access, environmental protection or rehabilitation?</li><li>What are the current fees, processing steps, validity period and renewal requirements?</li><li>Which authority or qualified professional can clarify an uncertain requirement?</li></ul><p>This is a verification checklist, not a definitive list of legal requirements. The current official procedure takes precedence.</p></section>
