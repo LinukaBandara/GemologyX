@@ -9,7 +9,7 @@ import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export function generateStaticParams() { return allGemstones.map(({slug}) => ({slug})); }
 type Params = Promise<{slug:string}>;
-export async function generateMetadata({params}:{params:Params}):Promise<Metadata>{const {slug}=await params;const gem=allGemstones.find((g)=>g.slug===slug);return gem?{title:`${gem.name} Gemstone Guide`,description:gem.description,alternates:{canonical:`/gemstones/${slug}`},openGraph:{type:"article",title:`${gem.name} Gemstone Guide`,description:gem.description,url:`https://gemologyx.com/gemstones/${slug}`},twitter:{card:"summary_large_image",title:`${gem.name} Gemstone Guide`,description:gem.description}}:{}}
+export async function generateMetadata({params}:{params:Params}):Promise<Metadata>{const {slug}=await params;const gem=allGemstones.find((g)=>g.slug===slug);return gem?{title:`${gem.name} Gemstone Guide`,description:gem.description,alternates:{canonical:`/gemstones/${slug}`},openGraph:{type:"article", images: ["/gemologyx-social.svg"],title:`${gem.name} Gemstone Guide`,description:gem.description,url:`https://gemologyx.com/gemstones/${slug}`},twitter:{card:"summary_large_image", images: ["/gemologyx-social.svg"],title:`${gem.name} Gemstone Guide`,description:gem.description}}:{}}
 
 export default async function GemstonePage({params}:{params:Params}) {
   const {slug}=await params; const gem=allGemstones.find((g)=>g.slug===slug); if(!gem)notFound(); const detail=gem.detail;
