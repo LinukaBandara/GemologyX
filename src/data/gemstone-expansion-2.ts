@@ -145,7 +145,7 @@ export const expandedGemstonesTwo: Gemstone[] = [
     crystalSystem: "Trigonal",
     colors: ["Pale pink", "Rose pink"],
     transparency: "Translucent to opaque; uncommon faceted material may be transparent",
-    commonTreatments: ["Usually sold without enhancement; verify individual disclosure"],
+    commonTreatments: ["Occasional irradiation to intensify colour; verify individual disclosure"],
     description: "A pink quartz variety most often fashioned as beads, cabochons and carvings, with larger pieces showing its colour well.",
     detail: {
       whatIsIt: "Rose quartz is a pink variety of quartz. It is commonly found in massive form rather than as well-formed transparent crystals, and is widely cut as cabochons, beads, ornamental objects and carvings. Its identity as quartz is distinct from other pink gemstones that can look similar.",
@@ -153,7 +153,7 @@ export const expandedGemstonesTwo: Gemstone[] = [
       origins: "Rose quartz occurs in pegmatites and other geological settings in several countries. Deposits and material quality vary. Avoid inferring a particular locality from colour; provenance needs independent supporting information.",
       formation: "Rose quartz is a variety of quartz that typically occurs in massive material within pegmatites and related geological settings. Its pink colour is associated with microscopic inclusions or trace elements, depending on the material.",
       naturalVsSynthetic: "Glass, dyed materials and other pink stones can imitate rose quartz. Gemological properties and magnification help confirm identity, especially for faceted material or high-value pieces. A photograph or trade name alone is not enough.",
-      treatments: "Rose quartz is commonly sold without treatment, but individual material can be dyed or otherwise enhanced. Ask for disclosure and seek an independent report if the material is represented as unusually rare or valuable.",
+      treatments: "GIA notes that rose quartz is occasionally irradiated to intensify its colour. Ask for disclosure of any known enhancement; appearance alone cannot establish whether a particular stone has been treated.",
       inclusions: "Cloudy or fibrous internal features can contribute to rose quartz’s translucent appearance. Fractures and uneven colour may also occur. Evaluate how these features affect the finished object’s appearance and durability.",
       valueFactors: ["Attractive, even pink colour", "Translucency and internal appearance", "Cut, carving or bead workmanship", "Size, symmetry and polish", "Condition and absence of damaging fractures", "Treatment disclosure and accurate identification"],
       certification: "A report from a recognized laboratory can identify quartz and document relevant characteristics. Most ordinary rose quartz does not require a report, but independent identification may be useful for expensive, unusual or provenance-sensitive pieces.",
