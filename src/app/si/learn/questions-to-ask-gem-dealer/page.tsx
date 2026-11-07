@@ -20,6 +20,13 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 7"
       title="මැණික් වෙළෙන්දාගෙන් අසන්න ඕනේ ප්‍රශ්න"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Gem_cutting_on_a_lap_wheel%2C_Gintota%2C_Sri_Lanka_%282026%29.jpg",
+        alt: "A gem cutter working at a lap wheel in Gintota, Sri Lanka",
+        credit: "Ilyes Makria / Joalys · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg",
+      }}
+
       crumbHref="/si/learn/gemstone-buying-checklist"
       crumbLabel="මිලදී ගැනීමේ checklist"
       lastReviewed="2026-10-21"
