@@ -49,11 +49,11 @@ export function SriLankaSinhalaExplorer() {
         {filters.map((filter) => {
           const Icon = filter.icon;
           const selected = active === filter.id;
-          return <button key={filter.id} type="button" onClick={() => setActive(filter.id)} aria-pressed={selected} className={`gx-sinhala-filter inline-flex min-h-10 items-center gap-2 border px-3.5 py-2 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${selected ? "is-active" : ""}`}><Icon size={15} aria-hidden="true" />{filter.label}</button>;
+          return <button key={filter.id} type="button" onClick={() => setActive(filter.id)} aria-pressed={selected} className={`gx-sinhala-filter inline-flex min-h-10 items-center gap-2 border px-3.5 py-2 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${selected ? "is-active" : ""}`}><Icon size={18} aria-hidden="true" /><span>{filter.label}</span><span className="gx-sinhala-filter-count">{countFor(filter.id)}</span></button>;
         })}
       </div>
 
-      <p className="sr-only" aria-live="polite">{visibleGuides.length} ක්‍රියාකාරී මාර්ගෝපදේශ</p>
+      <div className="gx-sinhala-results-heading"><span>{active === "all" ? "සියලුම මාතෘකා" : filters.find((filter) => filter.id === active)?.label}</span><strong>{visibleGuides.length} මාර්ගෝපදේශ</strong></div><p className="sr-only" aria-live="polite">{visibleGuides.length} ක්‍රියාකාරී මාර්ගෝපදේශ</p>
       <div className="gx-sinhala-guide-grid mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {visibleGuides.map((guide, index) => (
           <Link key={guide.href} href={guide.href} className="gx-sinhala-guide group relative flex min-h-48 flex-col overflow-hidden border border-border bg-white p-5 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
