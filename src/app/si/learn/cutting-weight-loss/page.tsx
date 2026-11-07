@@ -21,6 +21,12 @@ export default function Page() {
       category="ශ්‍රී ලංකාවේ මැණික් කැපීම"
       readTime="මිනිත්තු 7"
       title="මැණික් කැපීමේදී බර අඩුවන්නේ ඇයි?"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Gem_cutting_on_a_lap_wheel%2C_Gintota%2C_Sri_Lanka_%282026%29.jpg",
+        alt: "A gem cutter working at a lap wheel in Gintota, Sri Lanka",
+        credit: "Gem cutting on a lap wheel in Gintota — Ilyes Makria / Joalys, CC BY-SA 4.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg",
+      }}
       crumbHref="/si/learn/sri-lanka-gem-cutting-training"
       crumbLabel="ශ්‍රී ලංකාවේ මැණික් කැපීම"
       lastReviewed="2026-11-06"
