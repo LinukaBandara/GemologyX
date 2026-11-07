@@ -20,6 +20,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 7"
       title="රළු නිල්මැණික් ගලක වටිනාකම තක්සේරු කිරීම"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/2/29/Sapphire_%28gem_gravel_mine%2C_Ratnapura_area%2C_Sri_Lanka%29_1_%2834857678855%29.jpg",
+        alt: "Blue corundum sapphire crystal associated with gem gravels in the Ratnapura area of Sri Lanka",
+        credit: "Ratnapura-area sapphire crystal — James St. John, CC BY 2.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Sapphire_(gem_gravel_mine,_Ratnapura_area,_Sri_Lanka)_1_(34857678855).jpg",
+      }}
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       lastReviewed="2026-11-06"
