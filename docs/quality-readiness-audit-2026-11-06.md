@@ -123,3 +123,12 @@ The 2026-11-06 audit's local build and crawl results remain historical results f
 - Compared all 26 navigation and footer destinations in the shared header/footer against App Router page routes, including dynamic route patterns: no missing destinations were found.
 - Added `npm run check:editorial-manifest` and `scripts/check-editorial-manifest.mjs`. CI now runs this consistency check after dependency installation and before ESLint, so future tracker/manifest drift is caught automatically.
 - These checks validate repository consistency and route references; they do not establish editorial approval, search indexing or live deployment health.
+
+### Accessibility and image-attribution follow-up — 2026-11-08
+
+- Added a keyboard-visible skip link before the shared site header and gave the root content landmark the `main-content` target with `tabIndex={-1}`.
+- Removed the homepage's nested `<main>` landmark; the homepage visual wrapper is now a `<div>` inside the root layout's single main landmark.
+- Added Escape-key handling to close the shared mobile navigation. The existing menu button retains its accessible name, `aria-expanded` state and `aria-controls` relationship.
+- Reviewed the 11 origin-page image records: each contains alternative text, a credit and a source field. Corrected the Jaipur gemstone-grinding photograph's credit and replaced its broad category link with the exact Commons file page. The file page identifies Gerd Eichmann as author and CC BY 4.0 as its licence; attribution is now explicit.
+- The repository contains 25 image assets (including SVG brand/UI assets). This is an inventory count, not a claim that every local image has completed provenance, visual-quality, responsive-loading or assistive-technology review.
+- Remaining accessibility work includes keyboard and screen-reader testing across templates, focus-order checks, contrast review, reduced-motion checks and manual testing at real mobile and desktop breakpoints.
