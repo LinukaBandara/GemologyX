@@ -136,3 +136,13 @@ The diamond image depicts a natural crystal specimen and is not a cut-grade or q
 | `/si/learn/fluorite-intro` | Deep purple fluorite on quartz | M. Schaap · CC BY-SA 4.0 |
 
 These are specimen illustrations, not Sri Lankan origin examples, certificates or quality grades. The source localities are retained accurately in the image alt text and captions.
+
+## November 2026 — Sri Lankan and specialist gemstone profile batch
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/padparadscha-intro` | Faceted pink-orange padparadscha sapphire | Alextryan · Public domain |
+| `/si/learn/star-sapphire-guide` | Blue star sapphire cabochon with six-ray asterism | Mitchell Gore · Public domain dedication |
+| `/si/learn/pearl-intro` | Black-lipped oyster shell displaying a natural pearl at the Robert Wan Pearl Museum | Wmpearl · CC0 1.0 |
+
+The padparadscha image is a specimen illustration and does not establish Sri Lankan origin, treatment status or a laboratory colour determination. The star sapphire image demonstrates asterism but does not establish natural origin or treatment status. The pearl image shows a natural pearl in a museum oyster specimen; it is not a commercial valuation example.
