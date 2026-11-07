@@ -230,3 +230,8 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 - `/si/learn/gemstone-inclusions-guide`: magnified blue sapphire showing an internal inclusion — Jan-Peter Geringer, CC BY-SA 4.0. This image illustrates one visible internal feature only; it is not a diagnostic report, treatment conclusion or proof of geographic origin.
 
 - `/si/learn/synthetic-sapphire-guide`: microscopic photograph of curved growth striations in a Verneuil synthetic colour-change sapphire — LucasFassari, CC BY-SA 4.0. This is a documented synthetic specimen and an example of one growth feature; it is not a universal identification shortcut or proof about another stone.
+
+## Sinhala guide photography coverage — sapphire value and material identity
+- `/si/learn/blue-sapphire-value-factors`: faceted blue sapphire photograph — Sapphiredge, CC BY-SA 3.0. This is a visual specimen example only; it is not a quality grade, origin statement, treatment disclosure or price reference.
+- `/si/learn/natural-synthetic-imitation-gems`: comparison image of a natural yellow sapphire crystal and a synthetic yellow sapphire — Laiyinann, CC0 1.0. It illustrates one natural-versus-synthetic comparison; it is not a diagnostic test or a complete guide to identifying all synthetic or imitation materials.
+- `/si/learn/rough-yellow-sapphire-value`: faceted oval yellow sapphire described by the photographer as a heated Ceylon sapphire of approximately one carat — Gemsphoto, CC BY-SA 3.0. The image is a cut-stone colour example, not rough material and not evidence of the price, origin, treatment or value of another stone.
