@@ -3411,7 +3411,7 @@ main :where(button,a,[role="button"],input[type="checkbox"],input[type="radio"])
   /* Prevent desktop multi-column grids from squeezing text and imagery. */
   main .grid[class*="grid-cols-"],
   main [class*="grid-cols-"] {
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: minmax(0,1fr);
   }
   main :where(.profile-top,.profile-content,.tool-workspace,.tool-layout,
     .gx-article-layout,.gx-regional-layout,.gx-mining-layout,
@@ -3548,5 +3548,25 @@ main :where(button,a,[role="button"],input[type="checkbox"],input[type="radio"])
   .quick-facts > div { grid-template-columns: 20px minmax(0,1fr); }
   .quick-facts > div p { grid-column: 2; }
   .footer-top { gap: 24px 12px; }
+  .gx-sinhala-filter-list { grid-template-columns: minmax(0,1fr); }
+}
+
+/* Deliberate compact two-column patterns; all other phone grids remain one column. */
+@media (max-width: 767px) {
+  .gx-home .home-highlights,
+  .gx-home .collection-grid,
+  .gx-home .learn-grid,
+  .gx-home .home-quicklinks > .container-page,
+  .gx-sinhala-filter-list,
+  .related-gems > div:last-child { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .gx-pearl-gem-gallery { grid-template-columns: minmax(0,1fr); grid-template-rows: auto; }
+  .gx-pearl-gem-gallery .gx-pearl-gem-card-1 { grid-row: auto; }
+  .gx-equipment-grid,.gx-origins-grid { grid-template-columns: minmax(0,1fr); }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  .gx-equipment-grid,.gx-origins-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 420px) {
+  .gx-home .home-quicklinks > .container-page { grid-template-columns: minmax(0,1fr); }
   .gx-sinhala-filter-list { grid-template-columns: minmax(0,1fr); }
 }
