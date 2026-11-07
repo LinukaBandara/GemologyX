@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   description: "Terms for using GemologyX’s educational gemstone information and online tools.",
 
   alternates: { canonical: "/terms" },
-  openGraph: { type: "website", title: "Terms of Use", description: "Terms governing access to and use of GemologyX educational content and tools.", url: "/terms" },
-  twitter: { card: "summary_large_image", title: "Terms of Use", description: "Terms governing access to and use of GemologyX educational content and tools." },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Terms of Use", description: "Terms governing access to and use of GemologyX educational content and tools.", url: "/terms" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Terms of Use", description: "Terms governing access to and use of GemologyX educational content and tools." },
 };
 
 export default function TermsPage() {
