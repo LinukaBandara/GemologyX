@@ -223,7 +223,7 @@ export const origins: Origin[] = [
     slug: "zambia",
     name: "Zambia",
     summary: "One of the world's best-known emerald sources, particularly the Kafubu and Kagem mining district.",
-    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Beryl-Quartz-279095.jpg", alt: "Emerald crystals in quartz matrix from the Kagem Emerald Mine, Zambia", credit: "Géry PARENT · CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Beryl-Quartz-279095.jpg" },
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Beryl-Quartz-279095.jpg", alt: "Emerald crystals in quartz matrix from the Kagem Emerald Mine, Zambia", credit: "Wikimedia Commons · see source file for licence", source: "https://commons.wikimedia.org/wiki/File:Beryl-Quartz-279095.jpg" },
     gemstones: ["Emerald", "Amethyst", "Aquamarine", "Tourmaline"],
     detail: {
       overview: "Zambia is a major modern source of emerald, with the Kafubu Emerald District and Kagem Emerald Mine among its best-known producing areas. Zambian emeralds are an important part of the international market.",
@@ -240,7 +240,7 @@ export const origins: Origin[] = [
     slug: "india",
     name: "India",
     summary: "A historic gemstone source and a major cutting, jewellery-making and trading centre, with Jaipur especially prominent.",
-    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Jaipur-Edelsteinschleiferei-01-2018-gje.jpg", alt: "Gemstone cutting workshop in Jaipur, India", credit: "Géry PARENT · CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/Category:Gemstone_cutting_in_Jaipur" },
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Jaipur-Edelsteinschleiferei-01-2018-gje.jpg", alt: "Gemstone cutting workshop in Jaipur, India", credit: "Wikimedia Commons · see source file for licence", source: "https://commons.wikimedia.org/wiki/Category:Gemstone_cutting_in_Jaipur" },
     gemstones: ["Ruby", "Sapphire", "Emerald", "Diamond", "Moonstone", "Garnet"],
     detail: {
       overview: "India has a long gemstone and jewellery history and remains a major centre for gemstone cutting, processing, jewellery manufacture and trade. Jaipur is especially well known for coloured-stone cutting and trading.",
