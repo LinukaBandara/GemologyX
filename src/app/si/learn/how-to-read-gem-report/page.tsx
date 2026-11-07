@@ -14,6 +14,13 @@ export default function Page() {
       category="ශ්‍රී ලංකාවේ මැණික් කර්මාන්තය"
       readTime="මිනිත්තු 8"
       title="ශ්‍රී ලංකාවේ මැණික් වාර්තා කියවීම"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg",
+        alt: "A pink sapphire being examined under a gemmological microscope",
+        credit: "Gemmological microscopic examination — Sara Abey · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg",
+      }}
+
       crumbHref="/si/learn/sri-lanka-gem-trade-intro"
       crumbLabel="ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාම"
       lastReviewed="2026-11-05"
