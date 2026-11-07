@@ -87,8 +87,17 @@ const availableTools = [
     icon: CircleDot,
   },
   {
-    slug: "gemstone-proportions",
+    slug: "gemstone-colour",
     number: "09",
+    name: "Gemstone colour science",
+    category: "Colour description",
+    description: "Explore hue, tone, saturation, pleochroism and colour zoning through an interactive study.",
+    detail: "Interactive colour reference",
+    icon: Palette,
+  },
+  {
+    slug: "gemstone-proportions",
+    number: "10",
     name: "Gemstone proportion calculator",
     category: "Measurement",
     description: "Calculate length-to-width ratio and a simple depth percentage.",
@@ -98,7 +107,6 @@ const availableTools = [
 ];
 
 const inDevelopment = [
-  { name: "Gemstone colour reference", detail: "Explore hue, tone and saturation with a consistent learning framework.", icon: Palette },
   { name: "Gemstone measurement guide", detail: "Learn the dimensions and proportions recorded during gem examination.", icon: Compass },
 ];
 
@@ -118,7 +126,7 @@ export default function ToolsPage() {
           Each tool is designed to make a specific part of gemstone study easier to understand.
         </p>
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted">
-          <span className="inline-flex items-center gap-2"><Gem size={15} className="text-[var(--gold)]" /> Nine tools available</span>
+          <span className="inline-flex items-center gap-2"><Gem size={15} className="text-[var(--gold)]" /> Ten tools available</span>
           <span>Educational and reference-led</span>
           <span>Designed for mobile and desktop</span>
         </div>
