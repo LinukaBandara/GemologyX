@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowRight, ArrowUpRight, CalendarDays, CircleDot, Gem, Layers3,
-  Ruler, Scale, Sparkles, Waves, Compass, Palette, Wrench,
+  Ruler, Scale, Sparkles, Waves, Compass, Palette,
 } from "lucide-react";
 
 export const metadata: Metadata = {
