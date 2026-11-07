@@ -68,3 +68,15 @@ test("theme toggle follows system preference and keeps the document theme in syn
   await expect(lightToggle).toHaveAttribute("aria-pressed", "false");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
 });
+
+
+test("search page does not force the mobile keyboard open on arrival", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/search", { waitUntil: "domcontentloaded" });
+
+  const searchInput = page.getByRole("searchbox", {
+    name: "Search gemstones, origins, glossary terms and guides",
+  });
+  await expect(searchInput).toBeVisible();
+  await expect(searchInput).not.toBeFocused();
+});
