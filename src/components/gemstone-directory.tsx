@@ -84,7 +84,7 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
 
       {/* Grid */}
       {filtered.length ? (
-        <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="gx-gemstone-card-grid mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((gem) => (
             <GemstoneCard key={gem.slug} gem={gem} />
           ))}
