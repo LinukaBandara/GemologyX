@@ -34,6 +34,8 @@ test("mobile navigation closes with Escape and exposes its expanded state", asyn
   await page.goto("/", { waitUntil: "domcontentloaded" });
 
   const menuButton = page.getByRole("button", { name: "Open navigation" });
+  await expect(menuButton).toHaveAttribute("aria-controls", "gx-mobile-navigation");
+  await expect(page.locator("#gx-mobile-navigation")).toBeHidden();
   await menuButton.click();
   await expect(menuButton).toHaveAttribute("aria-expanded", "true");
   await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toBeVisible();
