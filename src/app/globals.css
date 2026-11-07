@@ -3570,3 +3570,122 @@ main :where(button,a,[role="button"],input[type="checkbox"],input[type="radio"])
   .gx-home .home-quicklinks > .container-page { grid-template-columns: minmax(0,1fr); }
   .gx-sinhala-filter-list { grid-template-columns: minmax(0,1fr); }
 }
+
+
+/* Page-family mobile refinements: learning, regional guides, mining and imagery. */
+@media (max-width: 767px) {
+  .gx-learning-library .gx-learning-hero-inner,
+  .gx-learning-library .gx-learning-sinhala,
+  .gx-learning-library .gx-learning-featured {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) !important;
+    gap: 22px;
+  }
+  .gx-learning-library .gx-learning-hero { padding: 28px 18px 0; }
+  .gx-learning-library .gx-learning-hero-copy { padding: 12px 0 0; }
+  .gx-learning-library .gx-learning-hero h1 {
+    max-width: 11ch; font-size: clamp(2.8rem,12vw,4.3rem); line-height: .98;
+  }
+  .gx-learning-library .gx-learning-lede { max-width: 42rem; font-size: 16px; line-height: 1.8; }
+  .gx-learning-library .gx-learning-hero-visual {
+    width: 100%; min-height: 0; height: auto; aspect-ratio: 16 / 10; max-height: 390px;
+  }
+  .gx-learning-library .gx-learning-paths { padding: 48px 18px; }
+  .gx-learning-library .gx-learning-path-grid { grid-template-columns: minmax(0,1fr); }
+  .gx-learning-library .gx-learning-path { min-height: 0; padding: 22px 0; }
+  .gx-learning-library .gx-learning-path-links { grid-template-columns: minmax(0,1fr); }
+  .gx-learning-library .gx-learning-sinhala { margin: 0 18px 44px; }
+  .gx-learning-library .gx-learning-sinhala-image,
+  .gx-learning-library .gx-learning-featured-image {
+    width: 100%; min-height: 0; height: auto; aspect-ratio: 16 / 10; max-height: 360px;
+  }
+  .gx-learning-library .gx-learning-sinhala-copy,
+  .gx-learning-library .gx-learning-featured-copy { min-width: 0; padding: 24px 18px; }
+  .gx-learning-library .gx-learning-section-intro { display: block; }
+  .gx-learning-library .gx-learning-section-intro > p { margin-top: 12px; }
+  .gx-learning-library .gx-learning-stats { flex-wrap: wrap; gap: 12px 0; }
+  .gx-learning-library .gx-learning-stats > div { min-width: 0; flex: 1 1 30%; }
+
+  .gx-regional-hub .gx-regional-hero {
+    grid-template-columns: minmax(0,1fr); gap: 22px;
+    padding: 30px 0 38px;
+  }
+  .gx-regional-hub .gx-regional-hero-image {
+    width: 100%; min-height: 0; aspect-ratio: 16 / 10; max-height: 380px;
+  }
+  .gx-regional-hub .gx-regional-hero h1 {
+    font-size: clamp(2.55rem,11vw,4.4rem); line-height: 1;
+  }
+  .gx-regional-hub .gx-regional-lede { font-size: 16px; line-height: 1.9; }
+  .gx-regional-hub .gx-regional-intro {
+    grid-template-columns: minmax(0,1fr); gap: 12px; padding: 34px 0;
+  }
+  .gx-regional-hub .gx-regional-intro h2,
+  .gx-regional-hub .gx-regional-intro .gx-regional-kicker,
+  .gx-regional-hub .gx-regional-intro > p:last-child {
+    grid-column: 1; grid-row: auto;
+  }
+  .gx-regional-hub .gx-regional-sections { grid-template-columns: minmax(0,1fr); }
+  .gx-regional-hub .gx-regional-section {
+    grid-template-columns: 30px minmax(0,1fr); gap: 12px;
+  }
+  .gx-regional-hub .gx-regional-section-body { min-width: 0; }
+  .gx-regional-hub .gx-regional-resources { grid-template-columns: minmax(0,1fr); gap: 18px; }
+  .gx-regional-hub .gx-regional-actions { flex-wrap: wrap; }
+  .gx-regional-hub .gx-regional-actions > a { min-height: 46px; }
+
+  .gx-mining-page .gx-mining-intro { padding-top: 26px; }
+  .gx-mining-page .gx-mining-lede { font-size: 16px; line-height: 1.85; }
+  .gx-mining-page .gx-mining-facts { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .gx-mining-page .gx-mining-regions { grid-template-columns: minmax(0,1fr); }
+  .gx-mining-page .gx-mining-gallery { grid-template-columns: minmax(0,1fr); gap: 16px; }
+  .gx-mining-page .gx-mining-photo:first-child { grid-column: auto; }
+  .gx-mining-page .gx-mining-photo:first-child .gx-mining-photo-frame,
+  .gx-mining-page .gx-mining-photo-frame { aspect-ratio: 16 / 10; }
+  .gx-mining-page .gx-mining-methods { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .gx-mining-page .gx-mining-safety { grid-template-columns: minmax(0,1fr); }
+  .gx-mining-page .gx-mining-next > div:last-child { grid-template-columns: minmax(0,1fr); }
+  .gx-mining-page .gx-mining-photo img { object-fit: cover; }
+
+  .gx-article-page { padding-top: 26px; padding-bottom: 38px; }
+  .gx-article-page .gx-article-header { margin-top: 18px; padding-bottom: 24px; }
+  .gx-article-page .gx-article-header h1 {
+    max-width: 100%; font-size: clamp(2.1rem,9vw,3.3rem); line-height: 1.08;
+  }
+  .gx-article-page .gx-article-hero-photo {
+    width: 100%; margin: 22px 0 0; overflow: hidden;
+  }
+  .gx-article-page .gx-article-hero-photo img {
+    display: block; width: 100%; height: auto; max-height: 420px; object-fit: cover;
+  }
+  .gx-article-page .gx-article-hero-photo figcaption {
+    display: flex; flex-wrap: wrap; gap: 6px 12px; padding: 10px 12px;
+  }
+  .gx-article-page .gx-article-content { margin-top: 26px; gap: 24px; }
+  .gx-article-page .gx-article-content p,
+  .gx-article-page .gx-article-content li { font-size: 16px; line-height: 1.9; }
+  .gx-article-page-si .gx-article-content p,
+  .gx-article-page-si .gx-article-content li { font-size: 16px; line-height: 2; }
+  .gx-article-page .gx-article-related { margin-top: 32px; padding: 18px; }
+  .gx-article-page .gx-article-related a { min-height: 42px; }
+
+  .gx-equipment-grid > article { min-width: 0; }
+  .gx-equipment-grid > article > div:first-child { aspect-ratio: 16 / 11; }
+  .gx-equipment-grid > article > div:last-child { padding: 16px; }
+  .gx-equipment-grid h3 { font-size: 1.35rem; line-height: 1.15; }
+  .gx-equipment-grid img { object-fit: cover; }
+  .gx-origins-grid > a { min-width: 0; }
+  .gx-origins-grid > a > div:last-child { padding: 16px; }
+  .gx-origins-grid h2 { font-size: 1.6rem; line-height: 1.1; }
+  .gx-origins-grid img { object-fit: cover; }
+
+  .gx-article-page :where(.rounded-2xl,.rounded-xl) { max-width: 100%; }
+}
+@media (max-width: 420px) {
+  .gx-mining-page .gx-mining-facts { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .gx-mining-page .gx-mining-methods { grid-template-columns: minmax(0,1fr); }
+  .gx-mining-page .gx-mining-method,
+  .gx-mining-page .gx-mining-method + .gx-mining-method { padding: 16px 0; border-left: 0; }
+  .gx-mining-page .gx-mining-method + .gx-mining-method { border-top: 1px solid var(--mine-line); }
+  .gx-learning-library .gx-learning-stats > div { flex-basis: 45%; }
+}
