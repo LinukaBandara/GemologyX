@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
       crumbLabel="ස්වභාවික vs කෘත්‍රිම"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/4/41/Jadeite.jpg",
+        alt: "Rough jadeite specimen from the Kyalbajar region of Azerbaijan",
+        credit: "IbrZulya · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Jadeite.jpg",
+      }}
       related={[
         { label: "ප්‍රතිකාර හෙළි කිරීම", href: "/si/learn/gemstone-treatment-disclosure" },
         { label: "මැණික් පරීක්ෂණ වාර්තාව", href: "/si/learn/how-to-read-gem-report" },
