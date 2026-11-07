@@ -896,57 +896,187 @@ input[type="search"]::-webkit-search-cancel-button {
 .gx-v2-photo-credit{display:block;margin-top:.8rem;color:rgba(248,243,233,.42);font-size:.55rem;line-height:1.5;letter-spacing:.02em}
 
 
-/* GemologyX signature palette: midnight black + electric mineral blue */
-:root{--background:#02070A;--surface:#07131B;--foreground:#F3F8FB;--muted:#A7BAC5;--border:rgba(2,151,222,.22);--accent:#0297DE;--accent-strong:#027BB5;--accent-soft:rgba(2,151,222,.12);--gold:#0297DE;--gold-soft:rgba(2,151,222,.14)}
-.site-header{background:#02070A;border-bottom-color:rgba(2,151,222,.25)}
-.site-header .nav-link:hover,.site-header .gx-icon-btn:hover{color:#0297DE}
-.gx-home-v2{background:#02070A;color:#F3F8FB}
-.gx-home-v2 em{color:#0297DE}
-.gx-v2-hero,.gx-v2-hero-bottom{background:#02070A}
-.gx-v2-hero-glow{background:radial-gradient(ellipse at 78% 35%,rgba(2,151,222,.23),transparent 44%),linear-gradient(120deg,#02070A 0%,#06131C 64%,#071C29 100%)}
-.gx-v2-eyebrow,.gx-v2-eyebrow-dark{color:#0297DE}
-.gx-v2-eyebrow>span{background:#0297DE}
-.gx-v2-hero-copy h1 em,.gx-v2-section-heading-light h2 em{color:#0297DE}
-.gx-v2-button-gold{background:#0297DE;color:#02070A}
-.gx-v2-button-gold:hover,.gx-v2-search button:hover{background:#35B8F2}
-.gx-v2-search{border-color:rgba(2,151,222,.4);color:#0297DE}
-.gx-v2-search button{background:#0297DE;color:#02070A}
-.gx-v2-proof-row svg,.gx-v2-note-mark,.gx-v2-card-eyebrow,.gx-v2-card-read,.gx-v2-inline-link-light{color:#0297DE}
-.gx-v2-gem-section,.gx-v2-pathways-section{background:#061019;color:#F3F8FB}
-.gx-v2-section-heading h2,.gx-v2-sri-copy h2,.gx-v2-pathway-heading h2,.gx-v2-final-cta h2{color:#F3F8FB}
-.gx-v2-heading-aside p,.gx-v2-pathway-heading>p{color:#A7BAC5}
-.gx-v2-inline-link,.gx-v2-gem-meta span,.gx-v2-pathway-link{color:#0297DE}
-.gx-v2-gem-card{color:#F3F8FB}
-.gx-v2-gem-meta small,.gx-v2-image-disclosure{color:#8FA5B1}
-.gx-v2-gem-arrow{background:#02070A;color:#0297DE}
-.gx-v2-gem-card:hover .gx-v2-gem-arrow{background:#0297DE;color:#02070A}
-.gx-v2-editorial-section{background:#02070A}
-.gx-v2-editorial-card{background:#07131B;border-color:rgba(2,151,222,.2)}
-.gx-v2-editorial-card:hover{border-color:rgba(2,151,222,.65)}
-.gx-v2-sri-section,.gx-v2-final-cta{background:#07131B}
-.gx-v2-sri-art{background:radial-gradient(ellipse at 50% 50%,#073D59 0%,#052437 48%,#02070A 100%);color:#0297DE}
-.gx-v2-sri-orbit{border-color:rgba(2,151,222,.34)}
-.gx-v2-sri-gem{border-color:rgba(2,151,222,.6);background:radial-gradient(circle,#07547A,#061722 72%);box-shadow:0 0 75px rgba(2,151,222,.2)}
-.gx-v2-sri-coord,.gx-v2-sri-copy>p{color:#A7BAC5}
-.gx-v2-sri-art-caption{color:#0297DE}
-.gx-v2-sri-tags a{border-color:rgba(2,151,222,.3);color:#DCEAF1}
-.gx-v2-sri-tags a:hover{background:rgba(2,151,222,.1);color:#0297DE}
-.gx-v2-button-dark{background:#0297DE;color:#02070A}
-.gx-v2-sinhala-link{color:#C4D4DC}
-.gx-v2-pathway-grid,.gx-v2-pathway-card{border-color:rgba(2,151,222,.22)}
-.gx-v2-pathway-card{color:#F3F8FB}
-.gx-v2-pathway-card:hover{background:rgba(2,151,222,.08)}
-.gx-v2-pathway-top{color:#0297DE}
-.gx-v2-pathway-card p{color:#A7BAC5}
-.gx-v2-tools-band{background:#061722}
-.gx-v2-tools-inner h2{color:#F3F8FB}
-.gx-v2-tools-inner h2 em{color:#0297DE}
-.gx-v2-tools-inner>div:first-child>p{color:#A7BAC5}
-.gx-v2-tool-links{border-color:rgba(2,151,222,.3)}
-.gx-v2-tool-links a{color:#F3F8FB;border-color:rgba(2,151,222,.22)}
-.gx-v2-tool-links a>span,.gx-v2-tool-links a>svg{color:#0297DE}
-.gx-v2-final-cta h2{color:#F3F8FB}
-.gx-v2-final-cta>div>p{color:#A7BAC5}
-.gx-v2-text-link-dark{color:#DCEAF1}
-.gx-v2-photo-credit{color:rgba(220,234,241,.48)}
-@media(prefers-reduced-motion:reduce){.gx-home-v2 *,.gx-home-v2 *::before,.gx-home-v2 *::after{transition:none!important}}
+
+/* GemologyX signature identity — Ruby & Champagne */
+:root {
+  color-scheme: light;
+  --background: #F8F3EC;
+  --surface: #FFFCF8;
+  --foreground: #30242A;
+  --muted: #766A6C;
+  --border: #E8DCD7;
+  --accent: #641F35;
+  --accent-strong: #4C1428;
+  --accent-soft: #F2E5E7;
+  --gold: #C69B70;
+  --gold-soft: #F4E8D9;
+  --gx-ruby: #641F35;
+  --gx-ruby-deep: #4C1428;
+  --gx-ruby-dark: #32101F;
+  --gx-champagne: #C69B70;
+  --gx-champagne-light: #E5C9A8;
+  --gx-ivory: #F8F3EC;
+  --gx-paper: #FFFCF8;
+  --gx-ink: #30242A;
+  --gx-muted: #766A6C;
+  --gx-border: #E8DCD7;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #1C1117;
+  --surface: #281820;
+  --foreground: #F7F0EA;
+  --muted: #C0AEB0;
+  --border: #49313A;
+  --accent: #D49AAB;
+  --accent-strong: #E7B8C5;
+  --accent-soft: #3A202B;
+  --gold: #D5AD82;
+  --gold-soft: #38271F;
+  --gx-ruby: #8A304D;
+  --gx-ruby-deep: #641F35;
+  --gx-ruby-dark: #1C1117;
+  --gx-champagne: #D5AD82;
+  --gx-champagne-light: #E7C9A8;
+  --gx-ivory: #F7F0EA;
+  --gx-paper: #281820;
+  --gx-ink: #F7F0EA;
+  --gx-muted: #C0AEB0;
+  --gx-border: #49313A;
+}
+html, body { background: var(--background); color: var(--foreground); }
+.site-header {
+  color: var(--gx-ivory);
+  background: var(--gx-ruby-deep);
+  border-bottom: 1px solid rgba(198,155,112,.28);
+}
+.site-header .nav-link, .site-header .gx-icon-btn { color: rgba(255,250,246,.88); }
+.site-header .nav-link:hover, .site-header .gx-icon-btn:hover { color: var(--gx-champagne-light); }
+.brand-lockup small { color: rgba(255,250,246,.58); }
+.site-header .text-foreground { color: var(--gx-ivory); }
+.site-header .text-gold { color: var(--gx-champagne-light); }
+.site-header #mobile-navigation { background: var(--gx-ruby-deep); border-color: rgba(198,155,112,.25); }
+.site-header #mobile-navigation a { color: var(--gx-ivory); }
+.site-header #mobile-navigation a:hover { background: rgba(198,155,112,.13); }
+.gx-theme-toggle {
+  display: inline-grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid rgba(255,250,246,.22);
+  border-radius: 999px;
+  color: var(--gx-champagne-light);
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.gx-theme-toggle:hover { background: rgba(255,255,255,.1); border-color: var(--gx-champagne); transform: rotate(-8deg); }
+.site-footer { background: var(--gx-ruby-dark); border-top-color: rgba(198,155,112,.2); color: var(--gx-ivory); }
+.footer-brand-name > span:last-child { color: var(--gx-ivory); }
+.footer-brand-name > span:last-child span, .footer-gold-line { color: var(--gx-champagne); background: var(--gx-champagne); }
+.gx-home-v2 { background: var(--gx-ivory); color: var(--gx-ink); }
+.gx-home-v2 em { color: var(--gx-ruby); }
+.gx-v2-hero { background: var(--gx-ruby-dark); color: var(--gx-ivory); }
+.gx-v2-hero-glow { background: radial-gradient(ellipse at 78% 35%, rgba(198,155,112,.19), transparent 43%), linear-gradient(120deg,#32101F 0%,#4C1428 66%,#641F35 100%); }
+.gx-v2-eyebrow { color: var(--gx-champagne-light); }
+.gx-v2-eyebrow-dark { color: var(--gx-ruby); }
+.gx-v2-eyebrow > span { background: var(--gx-champagne); }
+.gx-v2-hero-copy h1 em, .gx-v2-section-heading-light h2 em { color: var(--gx-champagne-light); }
+.gx-v2-hero-lede { color: rgba(255,250,246,.78); }
+.gx-v2-button-gold { background: var(--gx-champagne); color: #32101F; }
+.gx-v2-button-gold:hover, .gx-v2-search button:hover { background: var(--gx-champagne-light); }
+.gx-v2-button-dark { background: var(--gx-ruby); color: var(--gx-ivory); }
+.gx-v2-text-link { color: var(--gx-ivory); }
+.gx-v2-search { border-color: rgba(229,201,168,.45); color: var(--gx-champagne-light); }
+.gx-v2-search input { color: white; }
+.gx-v2-search button { background: var(--gx-champagne); color: var(--gx-ruby-dark); }
+.gx-v2-proof-row { border-color: rgba(229,201,168,.2); }
+.gx-v2-proof-row span { color: rgba(255,250,246,.8); }
+.gx-v2-proof-row svg, .gx-v2-note-mark { color: var(--gx-champagne); }
+.gx-v2-hero-photo { background: #49313A; }
+.gx-v2-floating-note { background: var(--gx-paper); color: var(--gx-ink); }
+.gx-v2-note-mark { background: var(--gx-gold-soft); }
+.gx-v2-floating-note small { color: var(--gx-muted); }
+.gx-v2-gem-section, .gx-v2-pathways-section { background: var(--gx-ivory); color: var(--gx-ink); }
+.gx-v2-section-heading h2, .gx-v2-sri-copy h2, .gx-v2-pathway-heading h2, .gx-v2-final-cta h2 { color: var(--gx-ink); }
+.gx-v2-heading-aside p, .gx-v2-pathway-heading > p { color: var(--gx-muted); }
+.gx-v2-inline-link, .gx-v2-gem-meta span, .gx-v2-pathway-link { color: var(--gx-ruby); }
+.gx-v2-gem-card { color: var(--gx-ink); }
+.gx-v2-gem-image { background: #E6D9D2; }
+.gx-v2-gem-arrow { background: var(--gx-paper); color: var(--gx-ruby); }
+.gx-v2-gem-card:hover .gx-v2-gem-arrow { background: var(--gx-champagne); color: var(--gx-ruby-dark); }
+.gx-v2-gem-meta small, .gx-v2-image-disclosure { color: #897B7A; }
+.gx-v2-editorial-section { background: var(--gx-ruby-deep); color: var(--gx-ivory); }
+.gx-v2-section-heading-light h2 { color: var(--gx-ivory); }
+.gx-v2-section-heading-light .gx-v2-heading-aside p { color: rgba(255,250,246,.72); }
+.gx-v2-inline-link-light, .gx-v2-card-read { color: var(--gx-champagne-light); }
+.gx-v2-editorial-card { background: rgba(255,255,255,.045); border-color: rgba(229,201,168,.2); color: var(--gx-ivory); }
+.gx-v2-editorial-card:hover { border-color: rgba(229,201,168,.62); }
+.gx-v2-card-eyebrow { color: var(--gx-champagne); }
+.gx-v2-editorial-content p { color: rgba(255,250,246,.72); }
+.gx-v2-photo-credit { color: rgba(255,250,246,.52); }
+.gx-v2-sri-section { background: #EFE4D8; }
+.gx-v2-sri-art { background: radial-gradient(ellipse at 50% 50%,#8A4055 0%,#641F35 48%,#32101F 100%); color: var(--gx-champagne-light); }
+.gx-v2-sri-orbit { border-color: rgba(229,201,168,.34); }
+.gx-v2-sri-gem { border-color: rgba(229,201,168,.62); background: radial-gradient(circle,#8A4055,#32101F 72%); box-shadow: 0 0 75px rgba(198,155,112,.2); }
+.gx-v2-sri-coord { color: rgba(255,250,246,.72); }
+.gx-v2-sri-art-caption { color: var(--gx-champagne-light); }
+.gx-v2-sri-copy > p { color: #716265; }
+.gx-v2-sri-tags a { border-color: #D6C2B7; color: #56313D; }
+.gx-v2-sri-tags a:hover { background: #FFFCF8; }
+.gx-v2-sinhala-link { color: var(--gx-ruby); }
+.gx-v2-pathway-grid, .gx-v2-pathway-card { border-color: var(--gx-border); }
+.gx-v2-pathway-card { color: var(--gx-ink); }
+.gx-v2-pathway-card:hover { background: #F0E6DF; }
+.gx-v2-pathway-top { color: var(--gx-ruby); }
+.gx-v2-pathway-card p { color: var(--gx-muted); }
+.gx-v2-tools-band { background: #32101F; color: var(--gx-ivory); }
+.gx-v2-tools-inner h2 { color: var(--gx-ivory); }
+.gx-v2-tools-inner h2 em { color: var(--gx-champagne-light); }
+.gx-v2-tools-inner > div:first-child > p { color: rgba(255,250,246,.72); }
+.gx-v2-tool-links { border-color: rgba(229,201,168,.25); }
+.gx-v2-tool-links a { color: var(--gx-ivory); border-color: rgba(229,201,168,.2); }
+.gx-v2-tool-links a > span, .gx-v2-tool-links a > svg { color: var(--gx-champagne); }
+.gx-v2-final-cta { background: #EFE4D8; }
+.gx-v2-final-cta h2 { color: var(--gx-ink); }
+.gx-v2-final-cta > div > p { color: var(--gx-muted); }
+.gx-v2-text-link-dark { color: var(--gx-ruby); }
+
+/* Dark theme */
+html[data-theme="dark"] .gx-home-v2 { background: #1C1117; color: #F7F0EA; }
+html[data-theme="dark"] .gx-v2-hero { background: #1C1117; }
+html[data-theme="dark"] .gx-v2-hero-glow { background: radial-gradient(ellipse at 78% 35%,rgba(213,173,130,.16),transparent 43%),linear-gradient(120deg,#1C1117 0%,#32101F 65%,#4C1428 100%); }
+html[data-theme="dark"] .gx-v2-gem-section, html[data-theme="dark"] .gx-v2-pathways-section { background: #24151D; color: #F7F0EA; }
+html[data-theme="dark"] .gx-v2-section-heading h2, html[data-theme="dark"] .gx-v2-sri-copy h2, html[data-theme="dark"] .gx-v2-pathway-heading h2, html[data-theme="dark"] .gx-v2-final-cta h2 { color: #F7F0EA; }
+html[data-theme="dark"] .gx-v2-heading-aside p, html[data-theme="dark"] .gx-v2-pathway-heading > p { color: #C0AEB0; }
+html[data-theme="dark"] .gx-v2-inline-link, html[data-theme="dark"] .gx-v2-gem-meta span, html[data-theme="dark"] .gx-v2-pathway-link { color: #E2B5C2; }
+html[data-theme="dark"] .gx-v2-gem-card { color: #F7F0EA; }
+html[data-theme="dark"] .gx-v2-gem-image { background: #49313A; }
+html[data-theme="dark"] .gx-v2-gem-meta small, html[data-theme="dark"] .gx-v2-image-disclosure { color: #B9A8AA; }
+html[data-theme="dark"] .gx-v2-gem-arrow { background: #1C1117; color: #E2B5C2; }
+html[data-theme="dark"] .gx-v2-editorial-section { background: #1C1117; }
+html[data-theme="dark"] .gx-v2-sri-section, html[data-theme="dark"] .gx-v2-final-cta { background: #281820; }
+html[data-theme="dark"] .gx-v2-sri-art { background: radial-gradient(ellipse at 50% 50%,#8A4055 0%,#4C1428 48%,#1C1117 100%); }
+html[data-theme="dark"] .gx-v2-sri-copy > p { color: #C0AEB0; }
+html[data-theme="dark"] .gx-v2-sri-tags a { border-color: #62414D; color: #F1DCE0; }
+html[data-theme="dark"] .gx-v2-sri-tags a:hover { background: #38232C; }
+html[data-theme="dark"] .gx-v2-pathway-grid, html[data-theme="dark"] .gx-v2-pathway-card { border-color: #49313A; }
+html[data-theme="dark"] .gx-v2-pathway-card { color: #F7F0EA; }
+html[data-theme="dark"] .gx-v2-pathway-card:hover { background: #38232C; }
+html[data-theme="dark"] .gx-v2-pathway-card p { color: #C0AEB0; }
+html[data-theme="dark"] .gx-v2-tools-band { background: #160B10; }
+html[data-theme="dark"] .gx-v2-final-cta h2 { color: #F7F0EA; }
+html[data-theme="dark"] .gx-v2-final-cta > div > p { color: #C0AEB0; }
+html[data-theme="dark"] .gx-v2-text-link-dark { color: #E2B5C2; }
+html[data-theme="dark"] .gx-v2-photo-credit { color: rgba(241,220,224,.55); }
+html[data-theme="dark"] .site-header { background: #32101F; }
+html[data-theme="dark"] .site-footer { background: #160B10; }
+html[data-theme="dark"] .site-header #mobile-navigation { background: #32101F; }
+html[data-theme="dark"] .site-header #mobile-navigation a:hover { background: #49313A; }
+
+/* Theme-aware shared surfaces for interior pages */
+html[data-theme="dark"] body { background: #1C1117; color: #F7F0EA; }
+html[data-theme="dark"] .bg-background { background-color: #1C1117 !important; }
+html[data-theme="dark"] .bg-surface { background-color: #281820 !important; }
+html[data-theme="dark"] .text-foreground { color: #F7F0EA !important; }
+html[data-theme="dark"] .text-muted { color: #C0AEB0 !important; }
+html[data-theme="dark"] .border-border { border-color: #49313A !important; }
+html[data-theme="dark"] .bg-accent-soft { background-color: #3A202B !important; }
