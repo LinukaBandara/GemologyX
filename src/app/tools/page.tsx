@@ -1,88 +1,163 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, Scale, Ruler, CircleDot, Layers, Calendar } from "lucide-react";
+import {
+  ArrowRight, ArrowUpRight, CalendarDays, CircleDot, Gem, Layers3,
+  Ruler, Scale, Sparkles, Waves, Compass, Palette,
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Gemstone Tools",
+  title: "Gemology Tools & Calculators",
   description:
-    "Practical calculators and reference tools for gemstone weight, sizing, hardness, and birthstones.",
-
+    "Explore practical gemstone calculators and gemological reference tools for carat weight, measurements, ring sizes, hardness and birthstones.",
   alternates: { canonical: "/tools" },
 };
 
-const tools = [
+const availableTools = [
   {
     slug: "carat-to-gram",
-    name: "Carat ↔ Gram Converter",
-    blurb: "Convert between carats and grams using the fixed 1 ct = 0.2 g standard.",
+    number: "01",
+    name: "Carat & gram converter",
+    category: "Weight",
+    description: "Move between metric grams and the standard carat unit with an exact conversion.",
+    detail: "1 ct = 0.2 g",
     icon: Scale,
   },
   {
     slug: "gemstone-size",
-    name: "Gemstone Size Calculator",
-    blurb: "Estimate approximate carat weight from a stone’s dimensions and shape.",
+    number: "02",
+    name: "Gemstone size estimator",
+    category: "Measurement",
+    description: "Explore how a stone’s face-up dimensions and shape relate to an approximate weight.",
+    detail: "Dimensions in millimetres",
     icon: Ruler,
   },
   {
     slug: "ring-size",
-    name: "Ring Size Converter",
-    blurb: "Convert between US, UK, and EU ring sizing systems.",
+    number: "03",
+    name: "Ring size converter",
+    category: "Jewellery",
+    description: "Compare common US, UK and European ring-size references in one place.",
+    detail: "US · UK · EU",
     icon: CircleDot,
   },
   {
     slug: "mohs-hardness",
-    name: "Mohs Hardness Reference",
-    blurb: "The 1–10 hardness scale with common gemstone examples at each level.",
-    icon: Layers,
+    number: "04",
+    name: "Mohs hardness reference",
+    category: "Properties",
+    description: "Explore the ten reference minerals and the relative scratch resistance scale.",
+    detail: "Scale 1–10",
+    icon: Layers3,
   },
   {
     slug: "birthstones",
-    name: "Birthstone Finder",
-    blurb: "Traditional birthstones by month, with notes on regional variation.",
-    icon: Calendar,
+    number: "05",
+    name: "Birthstone finder",
+    category: "Reference",
+    description: "Discover commonly recognised birthstones by month, including traditional variations.",
+    detail: "12 months",
+    icon: CalendarDays,
   },
+];
+
+const inDevelopment = [
+  { name: "Specific gravity calculator", detail: "Understand relative density using a hydrostatic weighing method.", icon: Waves },
+  { name: "Refractive index reference", detail: "Compare published RI ranges and learn what a refractometer can tell you.", icon: Sparkles },
+  { name: "Gemstone colour reference", detail: "Explore hue, tone and saturation with a consistent learning framework.", icon: Palette },
+  { name: "Gemstone measurement guide", detail: "Learn the dimensions and proportions recorded during gem examination.", icon: Compass },
 ];
 
 export default function ToolsPage() {
   return (
-    <div className="container-page py-12 md:py-16">
-      <header className="border-b border-border pb-8">
-        <div className="gx-eyebrow"><span /> Practical Gemology</div>
-        <h1 className="mt-3 font-serif text-3xl font-semibold tracking-tight md:text-4xl">
-          Gemstone Tools
+    <main className="container-page py-10 md:py-16">
+      <header className="relative overflow-hidden border-b border-border pb-9 md:pb-12">
+        <div className="pointer-events-none absolute -right-8 -top-12 hidden h-64 w-64 rounded-full border border-[var(--gold)]/20 md:block" />
+        <div className="pointer-events-none absolute -right-1 top-0 hidden h-48 w-48 rounded-full border border-[var(--gold)]/20 md:block" />
+        <div className="gx-eyebrow"><span /> The GemologyX instrument room</div>
+        <p className="mt-5 text-xs font-medium uppercase tracking-[0.2em] text-muted">Practical tools · Clear methods · Better understanding</p>
+        <h1 className="mt-3 max-w-3xl font-serif text-4xl font-medium leading-[1.02] tracking-tight text-foreground md:text-6xl">
+          A clearer way to<br className="hidden sm:block" /> explore gemstones.
         </h1>
-        <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted md:text-base">
-          Simple, useful calculators for everyday gemstone questions. Results are estimates for reference only.
+        <p className="mt-5 max-w-2xl text-sm leading-7 text-muted md:text-base">
+          A growing collection of practical calculators and carefully explained gemological references.
+          Each tool is designed to make a specific part of gemstone study easier to understand.
         </p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted">
+          <span className="inline-flex items-center gap-2"><Gem size={15} className="text-[var(--gold)]" /> Five tools available</span>
+          <span>Educational and reference-led</span>
+          <span>Designed for mobile and desktop</span>
+        </div>
       </header>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {tools.map((t) => {
-          const Icon = t.icon;
-          return (
-            <Link
-              key={t.slug}
-              href={`/tools/${t.slug}`}
-              className="gx-card group flex flex-col p-6"
-            >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft text-accent">
-                <Icon size={18} />
-              </div>
-              <h2 className="font-serif text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
-                {t.name}
-              </h2>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{t.blurb}</p>
-              <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-accent">
-                Open tool <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </span>
-            </Link>
-          );
-        })}
-      </div>
+      <section className="pt-9 md:pt-12" aria-labelledby="available-tools">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">Explore the collection</p>
+            <h2 id="available-tools" className="mt-2 font-serif text-2xl font-medium text-foreground md:text-3xl">Available tools</h2>
+          </div>
+          <p className="max-w-xs text-xs leading-5 text-muted">Choose a tool to open its calculator or reference guide.</p>
+        </div>
 
-      <p className="mt-10 text-xs leading-relaxed text-muted">
-        These tools are educational references and are not a substitute for professional gemological measurement or laboratory testing.
-      </p>
-    </div>
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          {availableTools.map((tool) => {
+            const Icon = tool.icon;
+            return (
+              <Link
+                key={tool.slug}
+                href={`/tools/${tool.slug}`}
+                className="group flex min-h-[220px] flex-col border border-border bg-[var(--surface)] p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--gold)] hover:shadow-[0_14px_35px_rgba(35,25,20,0.07)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent md:p-6"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-serif text-sm text-muted">{tool.number}</span>
+                  <span className="grid h-10 w-10 place-items-center rounded-full border border-border text-accent transition-colors group-hover:border-[var(--gold)] group-hover:bg-[var(--gold-soft)]">
+                    <Icon size={18} strokeWidth={1.5} />
+                  </span>
+                </div>
+                <p className="mt-5 text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--gold)]">{tool.category}</p>
+                <h3 className="mt-2 font-serif text-xl font-medium leading-tight text-foreground group-hover:text-accent">{tool.name}</h3>
+                <p className="mt-2 flex-1 text-sm leading-6 text-muted">{tool.description}</p>
+                <div className="mt-5 flex items-center justify-between border-t border-border pt-4">
+                  <span className="text-[11px] text-muted">{tool.detail}</span>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-accent">Open tool <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></span>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="mt-14 border-y border-border py-8 md:mt-16 md:py-10" aria-labelledby="in-development">
+        <div className="grid gap-7 md:grid-cols-[0.8fr_1.2fr] md:gap-12">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">Expanding the instrument room</p>
+            <h2 id="in-development" className="mt-2 font-serif text-2xl font-medium text-foreground md:text-3xl">More ways to understand a gem.</h2>
+            <p className="mt-3 max-w-sm text-sm leading-6 text-muted">The next tools will focus on measurable gem properties and practical learning, with clear explanations of what each result can — and cannot — tell you.</p>
+          </div>
+          <div className="grid gap-0 sm:grid-cols-2">
+            {inDevelopment.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.name} className="flex gap-3 border-t border-border py-4 sm:px-3">
+                  <span className="mt-0.5 text-[var(--gold)]"><Icon size={18} strokeWidth={1.5} /></span>
+                  <div>
+                    <p className="font-serif text-base font-medium text-foreground">{item.name}</p>
+                    <p className="mt-1 text-xs leading-5 text-muted">{item.detail}</p>
+                    <p className="mt-2 text-[9px] font-semibold uppercase tracking-[0.16em] text-muted">In development</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <aside className="mt-8 flex flex-col gap-3 border border-border bg-[var(--surface)] p-5 sm:flex-row sm:items-center sm:justify-between md:p-6">
+        <div>
+          <p className="font-serif text-lg font-medium text-foreground">Use the result as a starting point.</p>
+          <p className="mt-1 max-w-2xl text-xs leading-5 text-muted">These tools support learning and preliminary reference. They do not replace calibrated instruments, a qualified gemmologist or a recognised gem laboratory.</p>
+        </div>
+        <Link href="/learn" className="inline-flex shrink-0 items-center gap-2 text-xs font-semibold text-accent hover:underline">Explore learning guides <ArrowRight size={14} /></Link>
+      </aside>
+    </main>
   );
 }
