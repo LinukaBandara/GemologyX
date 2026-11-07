@@ -293,7 +293,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "With hardness around 6.5–7.5, andalusite is suitable for carefully worn jewellery but can be damaged by hard knocks. Use mild soap, lukewarm water and a soft brush; avoid harsh chemicals and protect it from impact.",
       faqs: [{ question: "What is distinctive about andalusite’s colour?", answer: "Andalusite can show different colours from different viewing directions and may have cross-shaped colour zoning. The effect is a property of the material, not proof of locality." }],
     },
-    sources: [{ label: "GIA Gem Collection: Andalusite specimen from Sri Lanka", url: "https://www.gia.edu/doc/andalusite-34773.pdf" }],
+    sources: [{ label: "GIA: Andalusite specimen from Sri Lanka", url: "https://www.gia.edu/doc/andalusite-34773.pdf" }, { label: "GIA Gems & Gemology: Gem-Quality Andalusite from Brazil", url: "https://www.gia.edu/doc/SU09.pdf" }, { label: "International Gem Society: Andalusite", url: "https://www.gemsociety.org/article/andalusite-jewelry-and-gemstone-information/" }],
   },
   {
     slug: "apatite", name: "Apatite", category: "Semi-Precious", mineralFamily: "Apatite group", chemicalFormula: "Ca₅(PO₄)₃(F,Cl,OH)", hardness: "5", crystalSystem: "Hexagonal", colors: ["Blue", "Green", "Yellow", "Violet", "Colourless"], transparency: "Transparent to opaque", commonTreatments: ["Some material may be heated or otherwise enhanced; verify disclosure"], description: "A phosphate mineral found in vivid blue and green gem varieties, but softer than many jewellery stones.",
@@ -344,10 +344,10 @@ export const expandedGemstones: Gemstone[] = [
       inclusions: "Titanite may contain mineral inclusions, fractures and internal growth features. Because the material is relatively soft and can be brittle, fractures near facet junctions deserve particular attention.",
       valueFactors: ["Colour and transparency", "Strength of dispersion and overall visual appeal", "Cut quality and light return", "Carat weight and face-up appearance", "Fractures, durability and disclosure"],
       certification: "An independent gemological report can document identification and relevant observations. The report's scope should be checked, particularly if a seller makes a treatment or origin claim.",
-      care: "With hardness around 5–5.5 and relatively brittle behaviour, sphene is best suited to pendants, earrings or carefully protected rings. Avoid hard knocks and abrasive contact. Clean gently with mild soap and water; use ultrasonic or steam cleaning only if a gemologist familiar with the individual stone confirms it is suitable.",
+      care: "With hardness around 5–5.5 and relatively brittle behaviour, sphene is best suited to pendants, earrings or carefully protected rings. Avoid hard knocks and abrasive contact. Clean only with a soft brush, mild detergent and warm water; avoid ultrasonic and steam cleaners.",
       faqs: [{ question: "Why does sphene show colourful flashes?", answer: "Sphene, also called titanite, has high dispersion that can produce strong spectral flashes. Its modest hardness means it still needs protection from scratches and impact." }],
     },
-    sources: [{ label: "GIA Gems & Gemology: Yellow sphene (Summer 2025, p. 190)", url: "https://www.gia.edu/gems-gemology/summer-2025-microworld-soap-bubbles-in-yellow-sphene0" }],
+    sources: [{ label: "GIA Gems & Gemology: Yellow sphene (Summer 2025, p. 190)", url: "https://www.gia.edu/gems-gemology/summer-2025-microworld-soap-bubbles-in-yellow-sphene0" }, { label: "International Gem Society: Sphene (Titanite) Properties and Care", url: "https://www.gemsociety.org/article/sphene-jewelry-and-gemstone-information/" }],
   },
   {
     slug: "benitoite", name: "Benitoite", category: "Semi-Precious", mineralFamily: "Barium titanium silicate", chemicalFormula: "BaTiSi₃O₉", hardness: "6–6.5", crystalSystem: "Hexagonal", colors: ["Blue", "Violet-blue", "Colourless"], transparency: "Transparent to translucent", commonTreatments: ["Rare heat treatment documented; disclose any known enhancement"], description: "A rare blue gemstone known for strong dispersion and its association with a limited Californian source.",
