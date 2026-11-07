@@ -86,3 +86,33 @@ Do not apply for AdSense until the outstanding editorial, rights, privacy, and l
 - Reviewed GIA treatment/care references for pearl, kunzite and ametrine. Updated treatment and cleaning language to distinguish material-specific limits. The tracker records partial review, not completion; routes remain Draft.
 
 - Reviewed GIA treatment/care references for moonstone and sunstone. Updated durability wording, sunstone treatment context and direct care citations. Tracker records partial review only; visual and remaining claim review is outstanding.
+
+## Follow-up audit — 2026-11-08
+
+This follow-up records work present on `design/homepage-editorial-2026` at commit `e71b4042ad936ef0507a26fe6dad8a049779d9c5`. It does not retroactively change the scope or results of the 2026-11-06 local production audit above.
+
+### Additional implementation verified in the current branch
+
+- Added FAQPage JSON-LD to the FAQ page, generated from the rendered question data.
+- Added BreadcrumbList JSON-LD to the dynamic gemstone, origin, glossary, buying, treatment, cut and formation page templates.
+- Added BreadcrumbList JSON-LD to the Sri Lanka mining landing page and its licensing, methods and environment pages.
+- Added page-specific Open Graph and Twitter metadata to the seven dynamic content templates (gemstones, origins, glossary, buying, treatment, cut and formation).
+- Set an explicit Turbopack project root in `next.config.ts` to prevent Next.js from selecting the unrelated parent-directory lockfile as the project root.
+- Corrected selected gemstone educational copy, including synthetic-growth timing and the distinction between primary sapphire formation and secondary alluvial deposits.
+
+### Current CI status
+
+The latest workflow for this branch (run `42410255116`, commit `e71b4042ad936ef0507a26fe6dad8a049779d9c5`) failed at the dependency-install step. ESLint, production build, Playwright and dependency audit steps were skipped. The workflow job confirms the failure occurs before these checks execute.
+
+The known install error is a mismatch between `package.json` and the committed `package-lock.json`: the lockfile does not contain `@playwright/test@1.65.0`, `playwright@1.65.0` and `playwright-core@1.65.0`. The correct repair is to generate and commit the lockfile using npm on the project machine. Do not replace `npm ci` with `npm install` in CI or hand-edit a speculative lockfile.
+
+### Remaining release blockers
+
+- Re-run CI after the real lockfile is committed; no current-branch build or E2E pass is claimed by this follow-up.
+- Run a fresh production sitemap crawl and structured-data validation against the current branch output.
+- Complete claim-level source review for all gemstone profiles, origins, glossary entries and guides.
+- Complete image provenance/licensing and full mobile, desktop, keyboard and assistive-technology checks.
+- Resolve owner/editor attribution, contact delivery, legal jurisdiction and actual AI-use disclosures with the site owner; no personal or legal details have been invented.
+- Verify live production metadata, canonical URLs, robots, sitemap, analytics/consent and image delivery after deployment.
+
+The 2026-11-06 audit's local build and crawl results remain historical results for that audit scope, not proof that the newer branch has passed the same checks.
