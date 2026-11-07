@@ -4,6 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, MapPin } from "lucide-react";
 import { origins, getOriginBySlug } from "@/data/origins";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export function generateStaticParams(){return origins.map(o=>({slug:o.slug}));}
 type Params=Promise<{slug:string}>;
@@ -11,7 +12,9 @@ export async function generateMetadata({params}:{params:Params}):Promise<Metadat
 
 export default async function OriginPage({params}:{params:Params}){
  const {slug}=await params;const origin=getOriginBySlug(slug);if(!origin)notFound();const d=origin.detail;
- return <article className={`origin-page container-page max-w-4xl py-12 md:py-16 ${slug === "sri-lanka" ? "gx-regional-origin" : ""}`}>
+ return <>
+  <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Origins", url: "https://gemologyx.com/origins" }, { name: origin.name, url: `https://gemologyx.com/origins/${slug}` }]} />
+  <article className={`origin-page container-page max-w-4xl py-12 md:py-16 ${slug === "sri-lanka" ? "gx-regional-origin" : ""}`}>
   <nav className="luxury-breadcrumb"><Link href="/origins">Origins</Link><span>/</span><span>{origin.name}</span></nav>
   <header className="profile-hero origin-profile">
    <div className="origin-hero-mark"><MapPin size={25}/><span>ORIGIN</span></div>
@@ -28,5 +31,6 @@ export default async function OriginPage({params}:{params:Params}){
   </div>:<div className="profile-note">A full write-up on {origin.name}&apos;s gemstone geology and history is in editorial preparation.</div>}
   <div className="profile-disclaimer">Geographic origin can require specialist laboratory methods and cannot reliably be determined from appearance alone.</div>
   <Link href="/origins" className="luxury-back-link"><ArrowLeft size={14}/> Back to all origins</Link>
- </article>;
+  </article>
+ </>;
 }
