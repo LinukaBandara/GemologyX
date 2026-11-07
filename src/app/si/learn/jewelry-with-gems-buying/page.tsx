@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/gemstone-buying-checklist"
       crumbLabel="මිලදී ගැනීමේ checklist"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/4/45/Setting_a_topaz.JPG",
+        alt: "A jeweller using a ring mandrel to support a ring while setting a blue topaz",
+        credit: "Mauro Cateb · CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Setting_a_topaz.JPG",
+      }}
       related={[
         { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
         { label: "වෙළෙන්දාගෙන් අසන්න ඕනේ ප්‍රශ්න", href: "/si/learn/questions-to-ask-gem-dealer" },
