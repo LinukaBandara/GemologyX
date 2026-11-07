@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/gem-insurance-appraisal"
       crumbLabel="Insurance / appraisal"
       lastReviewed="2026-10-25"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/2/25/Gold_Finger-ring_Stone_Setting_Close-up_%28FindID_481452%29.jpg",
+        alt: "Historic gold finger ring with a blue stone in a bezel setting; the stone is described as possibly sapphire, not conclusively identified",
+        credit: "The Portable Antiquities Scheme / The Trustees of the British Museum · CC BY-SA 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gold_Finger-ring_Stone_Setting_Close-up_(FindID_481452).jpg",
+      }}
       related={[
         { label: "Insurance / appraisal", href: "/si/learn/gem-insurance-appraisal" },
         { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
