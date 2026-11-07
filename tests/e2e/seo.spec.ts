@@ -1,12 +1,12 @@
 import { expect, test } from "@playwright/test";
 
 function getMetaContent(html: string, name: string) {
-  const tag = html.match(new RegExp(`<meta\\b[^>]*name=["']${name}["'][^>]*>`, "i"))?.[0];
+  const tag = html.match(new RegExp(\`<meta\\b[^>]*name=["']\${name}["'][^>]*>\`, "i"))?.[0];
   return tag?.match(/content=["']([^"']*)["']/i)?.[1] ?? "";
 }
 
 function getCanonical(html: string) {
-  const tag = html.match(/<link\\b[^>]*rel=["']canonical["'][^>]*>/i)?.[0];
+  const tag = html.match(/<link\b[^>]*rel=["']canonical["'][^>]*>/i)?.[0];
   return tag?.match(/href=["']([^"']*)["']/i)?.[1] ?? "";
 }
 
@@ -15,7 +15,7 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
   expect(sitemapResponse.status()).toBe(200);
 
   const sitemap = await sitemapResponse.text();
-  const urls = [...sitemap.matchAll(/<loc>([^<]+)<\\/loc>/g)].map((match) => match[1]);
+  const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
   expect(urls.length).toBeGreaterThan(100);
   expect(new Set(urls).size).toBe(urls.length);
 
@@ -28,32 +28,32 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
         const pathname = new URL(url).pathname || "/";
         const response = await request.get(pathname);
         if (!response.ok()) {
-          return `${pathname}: HTTP ${response.status()}`;
+          return \`\${pathname}: HTTP \${response.status()}\`;
         }
 
         const html = await response.text();
-        const title = html.match(/<title>([^<]+)<\\/title>/i)?.[1]?.trim() ?? "";
+        const title = html.match(/<title>([^<]+)<\/title>/i)?.[1]?.trim() ?? "";
         const description = getMetaContent(html, "description");
         const canonical = getCanonical(html);
         const robots = getMetaContent(html, "robots");
         const xRobots = response.headers()["x-robots-tag"] ?? "";
-        const expectedCanonical = `https://gemologyx.com${pathname === "/" ? "/" : pathname}`;
+        const expectedCanonical = \`https://gemologyx.com\${pathname === "/" ? "/" : pathname}\`;
         const issues: string[] = [];
 
         if (!title) issues.push("missing title");
         if (!description) issues.push("missing meta description");
-        if (canonical !== expectedCanonical) issues.push(`canonical mismatch (${canonical || "missing"})`);
-        if (/noindex/i.test(`${robots} ${xRobots}`)) issues.push("published sitemap route is noindex");
+        if (canonical !== expectedCanonical) issues.push(\`canonical mismatch (\${canonical || "missing"})\`);
+        if (/noindex/i.test(\`\${robots} \${xRobots}\`)) issues.push("published sitemap route is noindex");
 
         const normalizedTitle = title.toLocaleLowerCase();
         const previousPath = seenTitles.get(normalizedTitle);
         if (previousPath && previousPath !== pathname) {
-          issues.push(`duplicate title also used by ${previousPath}`);
+          issues.push(\`duplicate title also used by \${previousPath}\`);
         } else if (title) {
           seenTitles.set(normalizedTitle, pathname);
         }
 
-        return issues.length ? `${pathname}: ${issues.join(", ")}` : null;
+        return issues.length ? \`\${pathname}: \${issues.join(", ")}\` : null;
       }),
     );
 
@@ -80,6 +80,6 @@ test("editorial draft routes stay noindex and outside the XML sitemap", async ({
     const response = await request.get(route);
     expect(response.status(), route).toBe(200);
     expect(response.headers()["x-robots-tag"] ?? "", route).toMatch(/noindex/i);
-    expect(sitemap, route).not.toContain(`https://gemologyx.com${route}`);
+    expect(sitemap, route).not.toContain(\`https://gemologyx.com\${route}\`);
   }
 });
