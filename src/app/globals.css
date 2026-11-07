@@ -2653,3 +2653,31 @@ html[data-theme="dark"] .gx-sri-photo-banner { border-color:var(--regional-line,
   .gx-sri-photo-banner img { height:210px; }
   .gx-sri-photo-feature figcaption,.gx-sri-photo-banner figcaption { align-items:flex-start; flex-direction:column; }
 }
+
+/* Sinhala terminology explorer: calm pearl surfaces instead of the old teal panel */
+.gx-sri-terms-si { --terms-ink:#30242A; --terms-muted:#746A6B; --terms-line:#E8DFD9; --terms-ruby:#762B43; --terms-paper:#FCFBF9; }
+.gx-sri-terms-si > .grid > div:first-child { background:#F7F3EE; color:var(--terms-ink); }
+.gx-sri-terms-si > .grid > div:first-child > div > p:first-child { color:var(--terms-ruby); }
+.gx-sri-terms-si > .grid > div:first-child h2 { color:var(--terms-ink); font-family:var(--font-sinhala),"Noto Sans Sinhala",sans-serif; font-size:1.55rem; line-height:1.6; }
+.gx-sri-terms-si > .grid > div:first-child > div > p:nth-of-type(2) { color:var(--terms-muted); line-height:1.95; }
+.gx-sri-terms-si > .grid > div:first-child label { border-color:var(--terms-line); border-radius:2px; background:#FCFBF9; }
+.gx-sri-terms-si > .grid > div:first-child label input { color:var(--terms-ink); }
+.gx-sri-terms-si > .grid > div:first-child label input::placeholder { color:#93878A; }
+.gx-sri-terms-si > .grid > div:first-child button { border-color:var(--terms-line); border-radius:2px; background:#FCFBF9; color:var(--terms-muted); }
+.gx-sri-terms-si > .grid > div:first-child button[aria-pressed="true"] { border-color:var(--terms-ruby); background:var(--terms-ruby); color:#fff; }
+.gx-sri-terms-si > .grid > div:first-child > div:last-child { border-color:var(--terms-line); background:#FCFBF9; color:var(--terms-muted); }
+.gx-sri-terms-si > .grid > div:last-child { background:#FCFBF9; }
+.gx-sri-terms-si > .grid > div:last-child article { border-color:var(--terms-line); background:#F7F3EE; }
+.gx-sri-terms-si > .grid > div:last-child article h4 { color:var(--terms-ink); font-family:var(--font-sinhala),"Noto Sans Sinhala",sans-serif; line-height:1.6; }
+.gx-sri-terms-si > .grid > div:last-child article p { color:var(--terms-muted); line-height:1.95; }
+.gx-sri-terms-si > .grid > div:last-child article .bg-\[\#f2f6f3\] { background:#FCFBF9; }
+.gx-sri-terms-si > .grid > div:last-child article a { color:var(--terms-ruby); }
+.gx-sri-terms-si > div:last-child { border-color:var(--terms-line); background:#F7F3EE; color:var(--terms-muted); }
+html[data-theme="dark"] .gx-sri-terms-si { --terms-ink:#F2E9E9; --terms-muted:#C1B1B5; --terms-line:#49353D; --terms-ruby:#E0AFC0; --terms-paper:#171116; }
+html[data-theme="dark"] .gx-sri-terms-si > .grid > div:first-child,
+html[data-theme="dark"] .gx-sri-terms-si > .grid > div:last-child,
+html[data-theme="dark"] .gx-sri-terms-si > div:last-child { background:#241A20; }
+html[data-theme="dark"] .gx-sri-terms-si > .grid > div:first-child label,
+html[data-theme="dark"] .gx-sri-terms-si > .grid > div:first-child > div:last-child,
+html[data-theme="dark"] .gx-sri-terms-si > .grid > div:last-child article { background:#171116; }
+html[data-theme="dark"] .gx-sri-terms-si > .grid > div:first-child label input { color:var(--terms-ink); }
