@@ -74,6 +74,7 @@ export function SiteFooter() {
 
         <div className="footer-credit">
           <span /> Knowledge · Science · Integrity <span />
+          <a href="https://ark-ii.studio" target="_blank" rel="noopener noreferrer" aria-label="Visit ARK II Studio website">Created by <strong>ARK II</strong></a>
         </div>
       </div>
     </footer>
