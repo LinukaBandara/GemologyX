@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -103,6 +104,7 @@ const totalGuides = categories.reduce((sum, category) => sum + category.links.le
 export default function LearnPage() {
   return (
     <main className="gx-learning-library">
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Learn Gemology", url: "https://gemologyx.com/learn" }]} />
       <section className="gx-learning-hero">
         <div className="gx-learning-hero-inner">
           <div className="gx-learning-hero-copy">
