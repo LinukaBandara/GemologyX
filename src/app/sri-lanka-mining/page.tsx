@@ -158,7 +158,7 @@ export default function SriLankaMiningPage() {
             {imageCredits.map((photo, index) => (
               <figure className="gx-mining-photo" key={photo.file}>
                 <div className="gx-mining-photo-frame">
-                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                  <Image src={photo.src} alt={photo.alt} fill unoptimized sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                   <span>0{index + 1}</span>
                 </div>
                 <figcaption><b>{photo.title}</b><p>{photo.caption}</p><small>Photo: {photo.author} · <a href={photo.file} target="_blank" rel="noreferrer">Image source & licence <ExternalLink size={11} /></a></small></figcaption>
