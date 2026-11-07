@@ -44,7 +44,7 @@ export function SriLankaGemTermsExplorer({ locale = "si" }: { locale?: "si" | "e
   };
 
   return (
-    <section aria-label={isSinhala ? "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ පද සෙවීම" : "Sri Lankan gem trade glossary"} className="mt-8 overflow-hidden rounded-[1.8rem] border border-[#dce5df] bg-[#f5f8f5] shadow-[0_26px_70px_-45px_rgba(33,61,52,.42)]">
+    <section aria-label={isSinhala ? "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ පද සෙවීම" : "Sri Lankan gem trade glossary"} className={`gx-sri-terms-explorer mt-8 overflow-hidden border border-border bg-white ${isSinhala ? "gx-sri-terms-si" : ""}`}>
       <figure className="gx-sri-photo-banner"><Image src="https://upload.wikimedia.org/wikipedia/commons/2/29/Sapphire_%28gem_gravel_mine%2C_Ratnapura_area%2C_Sri_Lanka%29_1_%2834857678855%29.jpg" alt="Blue sapphire crystal associated with Ratnapura gem gravels" width={813} height={1161} sizes="100vw" /><figcaption><span>ශ්‍රී ලංකාවේ මැණික් ද්‍රව්‍ය</span><a href="https://commons.wikimedia.org/wiki/File:Sapphire_(gem_gravel_mine,_Ratnapura_area,_Sri_Lanka)_1_(34857678855).jpg" target="_blank" rel="noreferrer">James St. John · CC BY 2.0 · Commons</a></figcaption></figure>\n      <div className="grid lg:grid-cols-[.78fr_1.22fr]">
         <div className="relative overflow-hidden bg-[#18374a] p-6 text-white sm:p-8 lg:p-10">
           <div className="absolute -right-10 -top-14 h-56 w-56 rounded-full border border-white/10" aria-hidden="true" />
