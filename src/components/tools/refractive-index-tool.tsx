@@ -5,19 +5,19 @@ import { Search, Info } from "lucide-react";
 import { ToolShell } from "@/components/tool-shell";
 
 const VALUES = [
-  { name: "Diamond", ri: "2.417", birefringence: "None", character: "Isotropic", note: "Above the range of a standard contact refractometer." },
-  { name: "Ruby / sapphire (corundum)", ri: "1.762–1.770", birefringence: "0.008", character: "Uniaxial", note: "Ruby and sapphire are colour varieties of the same mineral species." },
-  { name: "Chrysoberyl", ri: "1.746–1.755", birefringence: "0.008–0.010", character: "Biaxial", note: "Includes alexandrite and chrysoberyl cat’s-eye varieties." },
-  { name: "Spinel", ri: "1.718–1.720", birefringence: "None", character: "Isotropic", note: "A useful comparison with corundum; confirm with multiple tests." },
+  { name: "Diamond", ri: "2.417–2.419", birefringence: "None", character: "Isotropic", note: "Above the range of a standard contact refractometer." },
+  { name: "Ruby / sapphire (corundum)", ri: "1.762–1.778", birefringence: "0.008", character: "Uniaxial", note: "Ruby and sapphire are colour varieties of the same mineral species." },
+  { name: "Chrysoberyl", ri: "1.746–1.763", birefringence: "0.008–0.010", character: "Biaxial", note: "Includes alexandrite and chrysoberyl cat’s-eye varieties." },
+  { name: "Spinel", ri: "1.712–1.762", birefringence: "None", character: "Isotropic", note: "A useful comparison with corundum; confirm with multiple tests." },
   { name: "Garnet group", ri: "1.714–1.888", birefringence: "Usually none", character: "Usually isotropic", note: "The group spans several species; this broad range is not a single species value." },
   { name: "Tanzanite", ri: "1.691–1.700", birefringence: "0.009", character: "Biaxial", note: "A variety of zoisite with noticeable pleochroism." },
-  { name: "Peridot", ri: "1.654–1.690", birefringence: "0.035–0.038", character: "Biaxial", note: "Its relatively high birefringence can produce visible doubling in some views." },
-  { name: "Tourmaline", ri: "1.624–1.644", birefringence: "0.018–0.020", character: "Uniaxial", note: "Composition causes variation across the tourmaline group." },
-  { name: "Topaz", ri: "1.619–1.627", birefringence: "0.008–0.010", character: "Biaxial", note: "Published values can differ slightly with source and composition." },
-  { name: "Emerald / aquamarine (beryl)", ri: "1.577–1.583", birefringence: "0.005–0.009", character: "Uniaxial", note: "Emerald and aquamarine are varieties of beryl." },
+  { name: "Peridot", ri: "1.650–1.703", birefringence: "0.035–0.038", character: "Biaxial", note: "Its relatively high birefringence can produce visible doubling in some views." },
+  { name: "Tourmaline", ri: "1.614–1.666", birefringence: "0.018–0.020", character: "Uniaxial", note: "Composition causes variation across the tourmaline group." },
+  { name: "Topaz", ri: "1.609–1.643", birefringence: "0.008–0.010", character: "Biaxial", note: "Published values can differ slightly with source and composition." },
+  { name: "Emerald / aquamarine (beryl)", ri: "1.562–1.602", birefringence: "0.005–0.009", character: "Uniaxial", note: "Emerald and aquamarine are varieties of beryl." },
   { name: "Quartz (amethyst / citrine)", ri: "1.544–1.553", birefringence: "0.009", character: "Uniaxial", note: "Amethyst and citrine are varieties of quartz." },
   { name: "Moonstone (orthoclase)", ri: "1.518–1.526", birefringence: "0.005–0.008", character: "Biaxial", note: "Feldspar optical effects require careful interpretation." },
-  { name: "Opal", ri: "1.370–1.470", birefringence: "None", character: "Amorphous", note: "Hydrated silica; values vary with type and water content." },
+  { name: "Opal", ri: "1.370–1.520", birefringence: "None", character: "Amorphous", note: "Hydrated silica; values vary with type and water content." },
   { name: "Zircon (high type)", ri: "1.925–1.984", birefringence: "Up to 0.059", character: "Uniaxial", note: "Above the range of a standard contact refractometer." },
 ];
 
@@ -78,7 +78,7 @@ export default function RefractiveIndexReference() {
           <Info size={17} className="mt-0.5 shrink-0 text-[var(--gold)]" />
           <p className="text-xs leading-6 text-muted">Many standard gem refractometers have a practical upper limit around 1.81. Diamond, high-type zircon and other high-RI materials may be over the limit; an over-limit reading does not identify a stone by itself. Refractometer contact liquids and exposed stone surfaces also require suitable handling.</p>
         </div>
-        <p className="text-[10px] leading-5 text-muted">Reference basis: International Gem Society’s refractive-index and double-refraction reference; GIA gem facts as collated in published gem-reference tables. Values are rounded and intended for study, not certification.</p>
+        <p className="text-[10px] leading-5 text-muted">Reference basis: International Gem Society’s selected-gem refractive-index and double-refraction table (updated 3 April 2025), with common gem reference values. Group and variety ranges can be broad; values are rounded and intended for study, not certification.</p>
       </div>
     </ToolShell>
   );
