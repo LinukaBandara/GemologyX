@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   title: "Gemstone Mining Methods in Sri Lanka",
   description: "Understand the broad differences between pit, tunnel, alluvial and mechanized gemstone mining, including site-specific safety and environmental considerations.",
   alternates: { canonical: "/sri-lanka-mining/methods" },
+  openGraph: {
+    type: "article",
+    title: "Gemstone Mining Methods in Sri Lanka",
+    description: "Understand the broad differences between pit, tunnel, alluvial and mechanized gemstone mining, including site-specific safety and environmental considerations.",
+    url: "/sri-lanka-mining/methods",
+    images: [{ url: "/gemologyx-social.svg", width: 1200, height: 630, alt: "GemologyX — Gemstone Mining Methods in Sri Lanka" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gemstone Mining Methods in Sri Lanka",
+    description: "Understand the broad differences between pit, tunnel, alluvial and mechanized gemstone mining, including site-specific safety and environmental considerations.",
+    images: ["/gemologyx-social.svg"],
+  },
 };
 
 const sources = [
