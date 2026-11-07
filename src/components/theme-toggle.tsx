@@ -1,31 +1,58 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 type Theme = "light" | "dark";
 
+const THEME_KEY = "gemologyx-theme";
+const listeners = new Set<() => void>();
+
+function getThemeSnapshot(): Theme {
+  if (typeof window === "undefined") return "light";
+
+  const saved = window.localStorage.getItem(THEME_KEY);
+  if (saved === "dark" || saved === "light") return saved;
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+}
+
+function getServerThemeSnapshot(): Theme {
+  return "light";
+}
+
+function subscribeToTheme(callback: () => void): () => void {
+  listeners.add(callback);
+
+  const media = window.matchMedia("(prefers-color-scheme: dark)");
+  media.addEventListener("change", callback);
+  window.addEventListener("storage", callback);
+
+  return () => {
+    listeners.delete(callback);
+    media.removeEventListener("change", callback);
+    window.removeEventListener("storage", callback);
+  };
+}
+
+function publishThemeChange() {
+  listeners.forEach((listener) => listener());
+}
+
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("light");
-
-  useEffect(() => {
-    const saved = window.localStorage.getItem("gemologyx-theme");
-    const initial: Theme =
-      saved === "dark" || saved === "light"
-        ? saved
-        : window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light";
-
-    setTheme(initial);
-    document.documentElement.dataset.theme = initial;
-  }, []);
+  const theme = useSyncExternalStore(
+    subscribeToTheme,
+    getThemeSnapshot,
+    getServerThemeSnapshot,
+  );
 
   function toggleTheme() {
     const next: Theme = theme === "light" ? "dark" : "light";
     document.documentElement.dataset.theme = next;
-    window.localStorage.setItem("gemologyx-theme", next);
-    setTheme(next);
+    window.localStorage.setItem(THEME_KEY, next);
+    publishThemeChange();
   }
 
   return (
