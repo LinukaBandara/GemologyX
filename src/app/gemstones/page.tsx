@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     "Browse a reference directory of gemstones with mineral family, hardness, colour range, and key characteristics for each.",
 
   alternates: { canonical: "/gemstones" },
+  openGraph: { type: "website", title: "Gemstone Directory", description: "Browse gemstone profiles by mineral family, hardness, colour range and identifying characteristics.", url: "/gemstones" },
+  twitter: { card: "summary_large_image", title: "Gemstone Directory", description: "Browse gemstone profiles by mineral family, hardness, colour range and identifying characteristics." },
 };
 
 export default function GemstonesPage() {
