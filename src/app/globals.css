@@ -1926,3 +1926,48 @@ html[data-theme="dark"] .gx-pearl-gem-gallery .gx-pearl-gem-art > i { background
   .gx-pearl-gem-copy h3 { font-size: 1.25rem; }
   .gx-pearl-gem-copy .gx-pearl-gem-detail { font-size: 10px; }
 }
+
+
+/* Homepage editorial photography: journal and Sri Lanka feature */
+.gx-pearl-article-art {
+  position: relative;
+  aspect-ratio: 5 / 4;
+  min-height: 0;
+  overflow: hidden;
+  background: #F2ECE7;
+}
+.gx-pearl-article-art img {
+  object-fit: cover;
+  transition: transform .65s cubic-bezier(.2,.65,.3,1);
+}
+.gx-pearl-article:hover .gx-pearl-article-art img { transform: scale(1.035); }
+.gx-pearl-sri-mark {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.gx-pearl-sri-photo {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  background: #38232C;
+}
+.gx-pearl-sri-photo::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,rgba(20,12,16,.08) 25%,rgba(20,12,16,.7) 100%);
+  content: "";
+}
+.gx-pearl-sri-photo img { object-fit: cover; }
+.gx-pearl-sri-mark > span,
+.gx-pearl-sri-mark > small {
+  position: relative;
+  color: #fff !important;
+  text-shadow: 0 1px 12px rgba(0,0,0,.45);
+}
+html[data-theme="dark"] .gx-pearl-article-art { background: #38232C; }
+@media (max-width: 760px) {
+  .gx-pearl-article-art { aspect-ratio: 16 / 10; }
+  .gx-pearl-sri-mark { min-height: 260px; }
+}
