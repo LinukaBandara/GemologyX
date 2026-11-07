@@ -132,3 +132,13 @@ The 2026-11-06 audit's local build and crawl results remain historical results f
 - Reviewed the 11 origin-page image records: each contains alternative text, a credit and a source field. Corrected the Jaipur gemstone-grinding photograph's credit and replaced its broad category link with the exact Commons file page. The file page identifies Gerd Eichmann as author and CC BY 4.0 as its licence; attribution is now explicit.
 - The repository contains 25 image assets (including SVG brand/UI assets). This is an inventory count, not a claim that every local image has completed provenance, visual-quality, responsive-loading or assistive-technology review.
 - Remaining accessibility work includes keyboard and screen-reader testing across templates, focus-order checks, contrast review, reduced-motion checks and manual testing at real mobile and desktop breakpoints.
+
+### Gemstone reference coverage follow-up — 2026-11-08
+
+- Reviewed all four gemstone data collections: **39 unique profiles**, each with a detailed profile and at least two HTTPS references (117 reference links in total).
+- No duplicate gemstone slugs, missing detail blocks, empty source lists or non-HTTPS source URLs were found in the static data review.
+- Andalusite previously had one reference, a GIA collection specimen record. Added a GIA research article on gem-quality Brazilian andalusite and an International Gem Society reference to improve coverage of gem properties and pleochroism.
+- Sphene (titanite) previously had one GIA reference. Added an International Gem Society reference covering mineral properties and care. Tightened the care instructions to recommend a soft brush, mild detergent and warm water, and to avoid ultrasonic and steam cleaning.
+- Chrysoberyl now has a dedicated reference covering its varieties and properties in addition to the existing GIA references.
+- Added `scripts/check-gemstone-sources.mjs` and the `check:gemstone-sources` package script. CI runs this dependency-free check before `npm ci`; it checks profile detail blocks, minimum reference count, HTTPS URLs and duplicate slugs.
+- This is a source-coverage and structure check, not a complete verification of every sentence or a live HTTP check of all 117 reference URLs. Claim-by-claim fact checking remains necessary.
