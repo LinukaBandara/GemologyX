@@ -30,7 +30,7 @@ This standard applies to the English Sri Lanka hub, the Sinhala learning hub, al
 ## Current implementation coverage
 - Sri Lanka country hub: Sri Lanka landscape hero.
 - Sinhala learning hub: Sri Lanka landscape hero and Sinhala topic architecture.
-- Mining hub: documentary mining photographs with credits.
+- Mining hub and its methods, environment and licensing subpages: documentary mining photographs with credits.
 - Geology explorer: Ratnapura-area sapphire crystal photo plus conceptual deposit diagram.
 - Mining licence explorer: Pelmadulla gem pit photo plus clearly labelled conceptual document/land diagram.
 - Buying visit explorer: gemmological microscope examination photograph by Sara Abey plus checklist illustration.
