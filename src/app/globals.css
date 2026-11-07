@@ -2594,3 +2594,23 @@ html[data-theme="dark"] .gx-regional-origin {
   --regional-ink:#F2E9E9; --regional-muted:#C1B1B5; --regional-line:#49353D;
   --regional-ruby:#E0AFC0; --regional-surface:#241A20;
 }
+
+
+/* Scoped tokens make embedded Sinhala learning interactives inherit the same
+   regional palette without forcing global changes on the English encyclopedia. */
+.gx-sinhala-hub,.gx-article-page-si {
+  --background:#FCFBF9; --surface:#F7F3EE; --foreground:#30242A; --muted:#746A6B;
+  --border:#E8DFD9; --accent:#762B43; --accent-strong:#542033; --accent-soft:#F1E7E9;
+  --teal:#762B43; --teal-soft:#F1E7E9; --gold:#B9946C; --gold-soft:#F4EBDD;
+}
+.gx-sinhala-hub .bg-white,.gx-article-page-si .bg-white { background-color:var(--surface); }
+.gx-sinhala-hub .text-teal,.gx-article-page-si .text-teal { color:var(--regional-ruby); }
+.gx-sinhala-hub .bg-teal-soft,.gx-article-page-si .bg-teal-soft { background-color:var(--accent-soft); }
+.gx-sinhala-hub .border-border,.gx-article-page-si .border-border { border-color:var(--regional-line); }
+html[data-theme="dark"] .gx-sinhala-hub,html[data-theme="dark"] .gx-article-page-si {
+  --background:#171116; --surface:#241A20; --foreground:#F2E9E9; --muted:#C1B1B5;
+  --border:#49353D; --accent:#E0AFC0; --accent-strong:#F0C9D4; --accent-soft:#3A2830;
+  --teal:#E0AFC0; --teal-soft:#3A2830; --gold:#D2B18A; --gold-soft:#392D25;
+}
+html[data-theme="dark"] .gx-sinhala-hub .bg-white,
+html[data-theme="dark"] .gx-article-page-si .bg-white { background-color:var(--surface); }
