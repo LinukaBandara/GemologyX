@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 function getMetaContent(html: string, name: string) {
-  const tag = html.match(new RegExp("<meta\\b[^>]*name=[\\"']" + name + "[\\"'][^>]*>", "i"))?.[0];
+  const tag = html.match(new RegExp("<meta\\b[^>]*name=\"" + name + "\"[^>]*>", "i"))?.[0];
   return tag?.match(/content=["']([^"']*)["']/i)?.[1] ?? "";
 }
 
