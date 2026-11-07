@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
       crumbLabel="ස්වභාවික vs කෘත්‍රිම"
       lastReviewed="2026-10-21"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Cut_Emerald.jpg", alt: "A faceted green emerald loose gemstone", credit: "Gaumania · CC0 1.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Cut_Emerald.jpg" }}
       related={[
         { label: "Fracture filling", href: "/si/learn/fracture-filling-guide" },
         { label: "ප්‍රතිකාර හෙළි කිරීම", href: "/si/learn/gemstone-treatment-disclosure" },
