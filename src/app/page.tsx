@@ -25,9 +25,9 @@ const gemstones = [
 ];
 
 const articles = [
-  { no: "01", topic: "IDENTIFICATION", title: "Natural, synthetic or imitation?", text: "Understand the differences between geological origin, laboratory growth and look-alike materials—and why appearance alone is not enough.", href: "/learn/natural-vs-synthetic-gemstones", image: "/images/suranga/hero-gems.svg", alt: "Illustrative gemstone artwork" },
-  { no: "02", topic: "TREATMENTS", title: "What has been done to the stone?", text: "Explore common gemstone enhancements, disclosure and how treatment can affect care, durability and value.", href: "/learn/gemstone-treatments", image: "/images/suranga/pink-gem.svg", alt: "Illustrative pink gemstone artwork" },
-  { no: "03", topic: "BUYING WITH CONFIDENCE", title: "Learn to read a gem report", text: "Find out what a laboratory report can establish, what it cannot, and which details deserve a closer look.", href: "/learn/how-to-read-a-gemstone-report", image: "/images/suranga/green-gem.svg", alt: "Illustrative green gemstone artwork" },
+  { no: "01", topic: "IDENTIFICATION", title: "Natural, synthetic or imitation?", text: "Understand the differences between geological origin, laboratory growth and look-alike materials—and why appearance alone is not enough.", href: "/learn/natural-vs-synthetic-gemstones", image: "/images/homepage/04_gem_inspection_gemologist_examining_sapphire.png", alt: "Gemologist examining a sapphire during a professional gem identification session" },
+  { no: "02", topic: "TREATMENTS", title: "What has been done to the stone?", text: "Explore common gemstone enhancements, disclosure and how treatment can affect care, durability and value.", href: "/learn/gemstone-treatments", image: "/images/homepage/03_private_gem_atelier_inspection_setup_macro.png", alt: "Close-up of a professional gemstone inspection setup in a private gem atelier" },
+  { no: "03", topic: "BUYING WITH CONFIDENCE", title: "Learn to read a gem report", text: "Find out what a laboratory report can establish, what it cannot, and which details deserve a closer look.", href: "/learn/how-to-read-a-gemstone-report", image: "/images/homepage/gem report.jpg", alt: "Gemological report and gemstone inspection tools arranged on a work surface" },
 ];
 
 const pathways = [
@@ -104,7 +104,12 @@ export default function HomePage() {
 
       <section className="gx-pearl-sri">
         <div className="container-page gx-pearl-sri-inner">
-          <div className="gx-pearl-sri-mark"><div className="gx-pearl-sri-ring"><Gem size={58} strokeWidth={0.85} /></div><span>06° 41′ N&nbsp; / &nbsp;80° 23′ E</span><small>THE ISLAND OF GEMS</small></div>
+          <div className="gx-pearl-sri-mark">
+            <div className="gx-pearl-sri-photo">
+              <Image src="/images/homepage/Sri lanka.jpg" alt="Sri Lankan gem heritage and landscape" fill sizes="(max-width: 760px) 100vw, 38vw" />
+            </div>
+            <span>06° 41′ N&nbsp; / &nbsp;80° 23′ E</span><small>THE ISLAND OF GEMS</small>
+          </div>
           <div className="gx-pearl-sri-copy"><div className="gx-pearl-kicker"><span /> A SRI LANKAN GEM REFERENCE</div><h2>Rooted in the island.<br /><em>Connected to the world.</em></h2><p>Explore Sri Lanka’s gem regions, mining traditions, geological context, local trade language and export pathways—with a clear distinction between documented facts and trade claims.</p>
             <div className="gx-pearl-tags"><Link href="/origins/sri-lanka">Sri Lanka origins <ArrowUpRight /></Link><Link href="/sri-lanka">Gem heritage <ArrowUpRight /></Link><Link href="/sri-lanka-mining">Mining & environment <ArrowUpRight /></Link><Link href="/sri-lanka-trade-export">Trade & export <ArrowUpRight /></Link></div>
             <div className="gx-pearl-sri-actions"><Link href="/sri-lanka" className="gx-pearl-primary">Explore the Sri Lanka hub <ArrowUpRight size={16} /></Link><Link href="/si/learn" className="gx-pearl-secondary">සිංහල දැනුම් මධ්‍යස්ථානය <ArrowUpRight size={15} /></Link></div>
