@@ -68,7 +68,7 @@ export const gemstones: Gemstone[] = [
         { question: "Can every sapphire be cleaned in an ultrasonic cleaner?", answer: "No. Fracture-filled stones and stones with vulnerable inclusions or other treatments may be damaged by vibration or heat. When treatment is unknown, use mild soap, lukewarm water and a soft brush, or ask a jeweller familiar with the stone." },
       ],
     },
-    sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }, { label: "GIA — Sapphire Care and Cleaning", url: "https://www.gia.edu/sapphire-care-cleaning" }],
+    sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }, { label: "GIA — Synthetic Gem Materials and Growth Methods", url: "https://www.gia.edu/gem-synthetic" }, { label: "GIA — Sapphire Care and Cleaning", url: "https://www.gia.edu/sapphire-care-cleaning" }],
   },
   {
     slug: "ruby",
