@@ -344,10 +344,10 @@ export const expandedGemstones: Gemstone[] = [
       inclusions: "Titanite may contain mineral inclusions, fractures and internal growth features. Because the material is relatively soft and can be brittle, fractures near facet junctions deserve particular attention.",
       valueFactors: ["Colour and transparency", "Strength of dispersion and overall visual appeal", "Cut quality and light return", "Carat weight and face-up appearance", "Fractures, durability and disclosure"],
       certification: "An independent gemological report can document identification and relevant observations. The report's scope should be checked, particularly if a seller makes a treatment or origin claim.",
-      care: "With hardness around 5–5.5 and relatively brittle behaviour, sphene is best suited to pendants, earrings or carefully protected rings. Avoid hard knocks, abrasive contact, ultrasonic cleaners and steam; clean gently with mild soap and water.",
+      care: "With hardness around 5–5.5 and relatively brittle behaviour, sphene is best suited to pendants, earrings or carefully protected rings. Avoid hard knocks and abrasive contact. Clean gently with mild soap and water; use ultrasonic or steam cleaning only if a gemologist familiar with the individual stone confirms it is suitable.",
       faqs: [{ question: "Why does sphene show colourful flashes?", answer: "Sphene, also called titanite, has high dispersion that can produce strong spectral flashes. Its modest hardness means it still needs protection from scratches and impact." }],
     },
-    sources: [{ label: "GIA Gems & Gemology: Yellow sphene (Summer 2025, p. 190)", url: "https://www.gia.edu/doc/summer-2025-micro-world.pdf" }],
+    sources: [{ label: "GIA Gems & Gemology: Yellow sphene (Summer 2025, p. 190)", url: "https://www.gia.edu/gems-gemology/summer-2025-microworld-soap-bubbles-in-yellow-sphene0" }],
   },
   {
     slug: "benitoite", name: "Benitoite", category: "Semi-Precious", mineralFamily: "Barium titanium silicate", chemicalFormula: "BaTiSi₃O₉", hardness: "6–6.5", crystalSystem: "Hexagonal", colors: ["Blue", "Violet-blue", "Colourless"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A rare blue gemstone known for strong dispersion and its association with a limited Californian source.",
