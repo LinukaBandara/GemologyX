@@ -37,10 +37,10 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
   }, [gemstones, query, sort]);
 
   return (
-    <section aria-label="Search gemstone profiles" className="mt-8">
+    <section aria-label="Search gemstone profiles" className="gx-gemstone-directory mt-7 sm:mt-8">
       {/* Controls */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <label className="relative flex flex-1 items-center gap-2.5 rounded-full border border-border bg-white px-4 py-2.5 shadow-sm focus-within:border-[rgba(30,58,95,0.35)]">
+      <div className="gx-directory-controls flex flex-col gap-3 sm:flex-row sm:items-center">
+        <label className="gx-directory-search relative flex min-h-12 w-full flex-1 items-center gap-2.5 rounded-full border border-border bg-white px-4 py-2.5 shadow-sm focus-within:border-[rgba(30,58,95,0.35)]">
           <Search size={16} className="shrink-0 text-muted" aria-hidden="true" />
           <span className="sr-only">Search gemstones</span>
           <input
@@ -62,13 +62,13 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
           )}
         </label>
 
-        <label className="flex items-center gap-2 rounded-full border border-border bg-white px-3.5 py-2.5 text-sm shadow-sm">
+        <label className="gx-directory-sort flex min-h-12 w-full items-center justify-between gap-2 rounded-full border border-border bg-white px-3.5 py-2.5 text-sm shadow-sm sm:w-auto sm:justify-start">
           <SlidersHorizontal size={15} className="text-muted" aria-hidden="true" />
           <span className="sr-only">Sort gemstone profiles</span>
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value)}
-            className="border-0 bg-transparent text-sm outline-none"
+            className="min-h-10 max-w-full flex-1 border-0 bg-transparent text-sm outline-none sm:flex-none"
           >
             <option value="name">Name A–Z</option>
             <option value="hardness">Hardness: highest first</option>
