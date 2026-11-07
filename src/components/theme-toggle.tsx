@@ -1,7 +1,7 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 
 type Theme = "light" | "dark";
 
@@ -48,6 +48,10 @@ export function ThemeToggle() {
     getServerThemeSnapshot,
   );
 
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+  }, [theme]);
+
   function toggleTheme() {
     const next: Theme = theme === "light" ? "dark" : "light";
     document.documentElement.dataset.theme = next;
@@ -60,6 +64,7 @@ export function ThemeToggle() {
       type="button"
       className="gx-theme-toggle"
       onClick={toggleTheme}
+      aria-pressed={theme === "dark"}
       aria-label={theme === "light" ? "Switch to dark theme" : "Switch to light theme"}
       title={theme === "light" ? "Switch to dark theme" : "Switch to light theme"}
     >
