@@ -105,7 +105,7 @@ const totalGuides = categories.reduce((sum, category) => sum + category.links.le
 
 export default function LearnPage() {
   return (
-    <main className="gx-learning-library">
+    <div className="gx-learning-library">
       <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Learn Gemology", url: "https://gemologyx.com/learn" }]} />
       <section className="gx-learning-hero">
         <div className="gx-learning-hero-inner">
@@ -235,6 +235,6 @@ export default function LearnPage() {
         <p>Good gemology begins with careful observation — and the habit of asking better questions.</p>
         <span>GEMOLOGYX · LEARN WITH CLARITY</span>
       </footer>
-    </main>
+    </div>
   );
 }
