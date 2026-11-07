@@ -892,3 +892,5 @@ input[type="search"]::-webkit-search-cancel-button {
 @media(prefers-reduced-motion:reduce){
  .gx-home-v2 *, .gx-home-v2 *::before, .gx-home-v2 *::after{scroll-behavior:auto!important;transition:none!important}
 }
+
+.gx-v2-photo-credit{display:block;margin-top:.8rem;color:rgba(248,243,233,.42);font-size:.55rem;line-height:1.5;letter-spacing:.02em}
