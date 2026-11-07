@@ -223,3 +223,6 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 ## Sinhala guide photography coverage — material identity and clarity
 - `/si/learn/natural-vs-synthetic-gemstones`: faceted synthetic blue sapphire produced by the Verneuil process — James St. John, CC BY 2.0. It is explicitly one synthetic specimen, not a side-by-side comparison or proof that another visually similar stone is synthetic.
 - `/si/learn/gemstone-clarity-guide` and `/si/learn/fracture-filling-guide`: gemmological microscope examination — Sara Abey, CC BY-SA 4.0. The image is contextual only and does not show a confirmed filled fracture or establish the clarity/treatment of a stone discussed in the article.
+
+## Sinhala guide photography coverage — insurance and appraisal
+- `/si/learn/gem-insurance-appraisal`: a blue zircon ring being tested by a gemologist in Kolkata — Billjones94, CC BY-SA 4.0. This is an illustrative photograph of gem testing, not an insurance appraisal, valuation document, proof of the ring's value or an example of Sri Lankan origin.
