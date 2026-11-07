@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   title: "Environmental Impacts of Gem Mining in Sri Lanka",
   description: "Evidence-led overview of potential environmental impacts from gemstone mining in Sri Lanka, including erosion, sediment, vegetation disturbance, riverbanks and rehabilitation.",
   alternates: { canonical: "/sri-lanka-mining/environment" },
+  openGraph: {
+    type: "article",
+    title: "Environmental Impacts of Gem Mining in Sri Lanka",
+    description: "Evidence-led overview of potential environmental impacts from gemstone mining in Sri Lanka, including erosion, sediment, vegetation disturbance, riverbanks and rehabilitation.",
+    url: "/sri-lanka-mining/environment",
+    images: [{ url: "/gemologyx-social.svg", width: 1200, height: 630, alt: "GemologyX — Environmental Impacts of Gem Mining in Sri Lanka" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Environmental Impacts of Gem Mining in Sri Lanka",
+    description: "Evidence-led overview of potential environmental impacts from gemstone mining in Sri Lanka, including erosion, sediment, vegetation disturbance, riverbanks and rehabilitation.",
+    images: ["/gemologyx-social.svg"],
+  },
 };
 
 const sources = [
