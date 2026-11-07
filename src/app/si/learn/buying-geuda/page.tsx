@@ -25,6 +25,7 @@ export default function Page() {
       crumbHref="/si/learn/sri-lanka-gem-terms"
       crumbLabel="ශ්‍රී ලංකාවේ මැණික් පද"
       lastReviewed="2026-11-05"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/7/71/Hand-sorting_washed_gem_gravel,_Pelmadulla,_Sri_Lanka_%282026%29.jpg", alt: "Washed gem gravel being hand-sorted near Pelmadulla, Sri Lanka", credit: "Ilyes Makria / Joalys · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Hand-sorting_washed_gem_gravel,_Pelmadulla,_Sri_Lanka_(2026).jpg" }}
       related={[
         { label: "ශ්‍රී ලංකාවේ මැණික් පද", href: "/si/learn/sri-lanka-gem-terms" },
         { label: "තාප ප්‍රතිකාරය ගැන", href: "/si/learn/heat-treatment-guide" },
