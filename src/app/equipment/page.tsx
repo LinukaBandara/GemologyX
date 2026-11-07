@@ -174,9 +174,9 @@ export default function EquipmentPage() {
 
       <section className="mt-14 border-y border-border py-9 md:mt-16 md:py-11" aria-labelledby="lab-instruments">
         <div className="max-w-2xl">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">Beyond the workbench</p>
-          <h2 id="lab-instruments" className="mt-2 font-serif text-2xl font-medium text-foreground md:text-3xl">Specialist gem-testing instruments</h2>
-          <p className="mt-3 text-sm leading-6 text-muted">A professional identification process combines observations and appropriate tests. No single instrument confirms every gemstone identity or treatment.</p>
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">Next photo collection</p>
+          <h2 id="lab-instruments" className="mt-2 font-serif text-2xl font-medium text-foreground md:text-3xl">More instruments to document</h2>
+          <p className="mt-3 text-sm leading-6 text-muted">We are expanding this section with the same photo-first approach. Each additional instrument will get its own real photograph, verified source credit and practical explanation before it is added to the main gallery.</p>
         </div>
         <div className="mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
           {referenceInstruments.map((item) => {
