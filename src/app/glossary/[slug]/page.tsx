@@ -52,9 +52,27 @@ export default async function GlossaryTermPage({
     })
     .slice(0, 4);
 
+  const definedTermStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: term.term,
+    description: term.definition,
+    inDefinedTermSet: {
+      "@type": "DefinedTermSet",
+      name: "GemologyX Gemological Glossary",
+      url: "https://gemologyx.com/glossary",
+    },
+  };
+
   return (
     <>
       <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Glossary", url: "https://gemologyx.com/glossary" }, { name: term.term, url: `https://gemologyx.com/glossary/${term.slug}` }]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(definedTermStructuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <article className="container-page max-w-3xl py-12 md:py-16">
       <nav aria-label="Breadcrumb" className="luxury-breadcrumb">
         <Link href="/glossary">Glossary</Link>
