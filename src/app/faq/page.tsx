@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export const metadata: Metadata = {
   title: "Gemology Questions and Answers",
@@ -37,6 +38,7 @@ const faqStructuredData = {
 
 export default function FAQPage() {
   return <>
+    <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "FAQ", url: "https://gemologyx.com/faq" }]} />
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
