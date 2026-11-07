@@ -99,14 +99,45 @@ const equipment = [
     source: "https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg",
     license: "CC BY-SA 4.0",
   },
+  {
+    name: "Dichroscope optical diagram",
+    group: "Laboratory testing",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Dichroskop.png",
+    alt: "Technical cross-section diagram of a dichroscope optical instrument",
+    description: "A dichroscope presents two directional colour views side by side. It helps an examiner investigate pleochroism, but a diagram is shown here rather than a photograph of a modern handheld instrument.",
+    use: "Pleochroism examination",
+    credit: "Ra'ike",
+    source: "https://commons.wikimedia.org/wiki/File:Dichroskop.png",
+    license: "CC BY-SA 3.0",
+  },
+  {
+    name: "UV examination lamp",
+    group: "Laboratory testing",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/67/UV-lamp.jpg",
+    alt: "A UV lamp emitting ultraviolet light during an examination",
+    description: "A UV lamp is used to observe fluorescence responses under specified long-wave or short-wave ultraviolet illumination. The lamp shown is a general UV source, not a calibrated gem-testing model.",
+    use: "Fluorescence observation",
+    credit: "Tarvo Metspalu",
+    source: "https://commons.wikimedia.org/wiki/File:UV-lamp.jpg",
+    license: "CC BY-SA 3.0",
+  },
+  {
+    name: "Direct-vision spectroscope",
+    group: "Laboratory testing",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Direct_vision_spectroscope%2C_J._G._Hofmann%2C_Paris%2C_before_1871_-_Museu_da_Ci%C3%AAncia_da_Universidade_de_Coimbra_-_University_of_Coimbra_-_Coimbra%2C_Portugal_-_DSC09081.jpg",
+    alt: "Historical direct-vision spectroscope on a museum display stand",
+    description: "A spectroscope separates light into a spectrum so an examiner can study absorption features. This is a historical optical instrument displayed as a reference, not a current handheld gem spectroscope.",
+    use: "Spectral examination",
+    credit: "Daderot",
+    source: "https://commons.wikimedia.org/wiki/File:Direct_vision_spectroscope,_J._G._Hofmann,_Paris,_before_1871_-_Museu_da_Ci%C3%AAncia_da_Universidade_de_Coimbra_-_University_of_Coimbra_-_Coimbra,_Portugal_-_DSC09081.jpg",
+    license: "CC0 1.0",
+  },
 ];
 
 const referenceInstruments = [
   { name: "Polariscope", detail: "Helps investigate optical character and behaviour under crossed polarising filters.", icon: ScanEye },
-  { name: "Dichroscope", detail: "Separates directional colour views to help examine pleochroism.", icon: Gem },
-  { name: "Spectroscope", detail: "Shows selected absorption features in light transmitted by or reflected from a gem.", icon: BookOpen },
-  { name: "UV examination lamp", detail: "Reveals fluorescence responses; results must be interpreted cautiously.", icon: Sparkles },
-  { name: "Specific-gravity kit", detail: "Supports density measurements using a suitable hydrostatic method.", icon: Scale },
+  { name: "Polariscope", detail: "A key optical instrument for examining strain and optical character; a verified reusable image is still being sourced.", icon: ScanEye },
+  { name: "Specific-gravity kit", detail: "A gem-suitable hydrostatic balance setup; unrelated industrial hydrostatic testers are deliberately not shown as gem equipment.", icon: Scale },
   { name: "Stone papers, trays & holders", detail: "Help organise, protect and handle loose gemstones during trade and examination.", icon: Wrench },
 ];
 
@@ -169,6 +200,24 @@ export default function EquipmentPage() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="mt-14 grid gap-6 border-y border-border py-9 md:grid-cols-[1.1fr_0.9fr] md:items-center md:py-12" aria-labelledby="fluorescence-example">
+        <div className="relative aspect-[16/10] overflow-hidden bg-[#17151b]">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Fluorite_fluorescence.jpg"
+            alt="Fluorite specimen photographed in visible light and under ultraviolet illumination"
+            fill
+            sizes="(max-width: 768px) 100vw, 55vw"
+            className="object-cover"
+          />
+        </div>
+        <div>
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">An example of observation</p>
+          <h2 id="fluorescence-example" className="mt-2 font-serif text-2xl font-medium text-foreground md:text-3xl">Fluorescence under UV</h2>
+          <p className="mt-3 text-sm leading-6 text-muted">This fluorite specimen shows visible colour zoning alongside its response under ultraviolet illumination. Fluorescence varies by material, trace elements, wavelength and specimen history; it is not a stand-alone identity test.</p>
+          <p className="mt-4 text-[10px] leading-5 text-muted">Image: Masha Milshina · CC BY 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Fluorite_fluorescence.jpg" target="_blank" rel="noreferrer" className="underline decoration-[var(--gold)] underline-offset-2 hover:text-accent">Original image & licence</a></p>
         </div>
       </section>
 
