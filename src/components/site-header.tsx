@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Search, Menu, X, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const NAV = [
@@ -23,12 +23,16 @@ function isCurrent(pathname: string, href: string) {
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const menuToggleRef = useRef<HTMLButtonElement | null>(null);
 
   return (
     <header
       className="gx-site-header sticky top-0 z-50"
       onKeyDown={(event) => {
-        if (event.key === "Escape" && open) setOpen(false);
+        if (event.key === "Escape" && open) {
+          setOpen(false);
+          menuToggleRef.current?.focus();
+        }
       }}
     >
       <div className="gx-header-main">
@@ -76,6 +80,7 @@ export function SiteHeader() {
             </Link>
             <ThemeToggle />
             <button
+              ref={menuToggleRef}
               type="button"
               className="gx-menu-toggle"
               aria-label={open ? "Close navigation" : "Open navigation"}
