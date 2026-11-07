@@ -16,6 +16,7 @@ export default function Page() {
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
       crumbLabel="Natural vs lab-grown"
       lastReviewed="2026-11-02"
+      heroImage={{ src: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Curved_Striations_in_Synthetic_Color-Change_Sapphire.jpg/960px-Curved_Striations_in_Synthetic_Color-Change_Sapphire.jpg", alt: "Curved internal growth striations in a Verneuil synthetic colour-change sapphire, photographed under magnification", credit: "LucasFassari · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Curved_Striations_in_Synthetic_Color-Change_Sapphire.jpg" }}
       related={[
         { label: "Natural සහ synthetic අතර වෙනස", href: "/si/learn/natural-vs-synthetic-gemstones" },
         { label: "මැණික් පද reference", href: "/si/learn/natural-synthetic-imitation-gems" },
