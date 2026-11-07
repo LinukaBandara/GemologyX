@@ -350,20 +350,20 @@ export const expandedGemstones: Gemstone[] = [
     sources: [{ label: "GIA Gems & Gemology: Yellow sphene (Summer 2025, p. 190)", url: "https://www.gia.edu/gems-gemology/summer-2025-microworld-soap-bubbles-in-yellow-sphene0" }],
   },
   {
-    slug: "benitoite", name: "Benitoite", category: "Semi-Precious", mineralFamily: "Barium titanium silicate", chemicalFormula: "BaTiSi₃O₉", hardness: "6–6.5", crystalSystem: "Hexagonal", colors: ["Blue", "Violet-blue", "Colourless"], transparency: "Transparent to translucent", commonTreatments: ["Usually untreated; disclose any known enhancement"], description: "A rare blue gemstone known for strong dispersion and its association with a limited Californian source.",
+    slug: "benitoite", name: "Benitoite", category: "Semi-Precious", mineralFamily: "Barium titanium silicate", chemicalFormula: "BaTiSi₃O₉", hardness: "6–6.5", crystalSystem: "Hexagonal", colors: ["Blue", "Violet-blue", "Colourless"], transparency: "Transparent to translucent", commonTreatments: ["Rare heat treatment documented; disclose any known enhancement"], description: "A rare blue gemstone known for strong dispersion and its association with a limited Californian source.",
     detail: {
       whatIsIt: "Benitoite is a rare barium titanium silicate mineral best known as a blue faceted gemstone. It is notable for its optical properties and limited known gem-producing localities, but rarity alone does not determine the quality or value of an individual stone.",
       colorNotes: "Fine benitoite is often blue to violet-blue, while pale and colourless examples also occur. Colour saturation, transparency, cut, dispersion and the balance between brilliance and colour all affect appearance.",
       origins: "The best-known gem source is the Benitoite Gem Mine area in San Benito County, California, United States. Other occurrences have been reported, but gem-quality material is uncommon. A specific origin claim still requires appropriate supporting evidence.",
       formation: "Benitoite is associated with unusual sodium-rich hydrothermal deposits in California. Gem-quality crystals are rare, and a locality claim should be supported by provenance or specialist analysis.",
       naturalVsSynthetic: "Benitoite is a distinct mineral species and should not be identified from blue colour alone. Laboratory measurements and microscopic examination help separate it from other blue gemstones and simulants.",
-      treatments: "Benitoite is generally encountered without routine enhancement, but this should not be assumed for every specimen. Request disclosure of any known treatment and independent testing when the purchase value warrants it.",
+      treatments: "Most blue benitoite is not routinely treated, but GIA has documented rare heat-treated pale or colourless material that can become orange. Request disclosure of any known treatment and independent testing when the purchase value warrants it.",
       inclusions: "Crystals may show fractures, mineral inclusions and growth features. These can affect transparency, cutting yield and durability, particularly in stones with inclusions reaching the surface.",
       valueFactors: ["Blue colour and saturation", "Transparency and clarity", "Cut quality and visible dispersion", "Carat weight and rarity of fine material", "Condition and reliable identification"],
       certification: "Because benitoite is uncommon, independent identification is especially useful for significant purchases. Check that a report identifies the mineral species and that the report number matches the document.",
       care: "Benitoite has hardness around 6–6.5 and should be protected from scratches and sharp impacts. Use a protective setting for rings, store separately and clean gently with mild soap and water.",
       faqs: [{ question: "Is blue colour enough to identify benitoite?", answer: "No. Several gems can be blue. Benitoite is uncommon and should be identified through gemological testing, especially when a purchase price depends on the species." }],
     },
-    sources: [{ label: "GIA Gems & Gemology: Benitoite from California", url: "https://www.gia.edu/gems-gemology/fall-1997-benitoite-california-laurs" }, { label: "GIA Historical Reading List: Benitoite", url: "https://www.gia.edu/benitoite-reading-list" }],
+    sources: [{ label: "GIA Gems & Gemology: Benitoite from California", url: "https://www.gia.edu/gems-gemology/fall-1997-benitoite-california-laurs" }, { label: "GIA Historical Reading List: Benitoite", url: "https://www.gia.edu/benitoite-reading-list" }, { label: "GIA: Rare Orange Benitoite", url: "https://www.gia.edu/gems-gemology/summer-2022-lab-notes-rare-orange-benitoite" }],
   }
 ];
