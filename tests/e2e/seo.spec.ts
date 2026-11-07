@@ -40,6 +40,8 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
         const xRobots = response.headers()["x-robots-tag"] ?? "";
         const hasOgImage = /<meta\b[^>]*property="og:image"[^>]*>/i.test(html);
         const hasTwitterImage = /<meta\b[^>]*name="twitter:image"[^>]*>/i.test(html);
+        const mainLandmarks = (html.match(/<main\b/gi) ?? []).length;
+        const hasSkipLink = html.includes('href="#main-content"') && html.includes('id="main-content"');
         const expectedCanonical = "https://gemologyx.com" + (pathname === "/" ? "/" : pathname);
         const issues: string[] = [];
 
@@ -47,6 +49,8 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
         if (!description) issues.push("missing meta description");
         if (!hasOgImage) issues.push("missing Open Graph image");
         if (!hasTwitterImage) issues.push("missing Twitter image");
+        if (mainLandmarks !== 1) issues.push("expected exactly one main landmark, found " + mainLandmarks);
+        if (!hasSkipLink) issues.push("missing accessible skip link");
         if (/\|\s*GemologyX\s*\|\s*GemologyX/i.test(title)) issues.push("duplicated brand suffix");
         if (canonical !== expectedCanonical) issues.push("canonical mismatch (" + (canonical || "missing") + ")");
         if (/noindex/i.test(robots + " " + xRobots)) issues.push("published sitemap route is noindex");
