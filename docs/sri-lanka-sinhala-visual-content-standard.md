@@ -212,3 +212,10 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 - `/si/learn/uv-light-gem-myths`: fluorite specimen showing zoned fluorescence under ultraviolet illumination, from Dauria Nature Reserve, Russia — Masha Milshina, CC BY 4.0. It is a fluorescence example, not a Sri Lankan specimen or proof that UV alone identifies a gemstone.
 
 - `/si/learn/what-ceylon-means`: sapphire specimen documented from the Ratnapura gem-gravel mine area — James St. John, CC BY 2.0. This is a locality-context image only; the photographed specimen does not establish the origin of any other sapphire or substantiate a seller's origin claim.
+
+## Sinhala learning reference and tool-guide photography/diagram batch
+- `/si/learn/birthstones-guide`: twelve-colour birthstone illustration by wsnaccad, CC0 1.0. It is a visual overview only; birthstone traditions and month assignments vary by region and historical list.
+- `/si/learn/carat-vs-gram`: collapsible jeweller's balance scale with brass weights — W.carter, CC BY-SA 4.0. The scale illustrates weighing equipment; it is not a calibration certificate or a claim about a particular stone's weight.
+- `/si/learn/mohs-hardness-guide`: USGS Mohs hardness scale graphic, public domain; mineral photographs credited by USGS to the Smithsonian Institution. It is a reference graphic, not encouragement to scratch-test finished jewellery.
+- `/si/learn/gemstone-colour-guide`: tourmaline crystal specimen — GOKLuLe, CC BY-SA 3.0. It illustrates natural colour in one mineral family, not a universal grading chart or calibrated colour standard.
+- `/si/learn/gemstone-cut-shapes`: historic diagram of gemstone cuts and profiles by Internet Archive Book Images, marked on Commons as having no known copyright restrictions. Treat it as a historical explanatory diagram, not a modern grading standard.
