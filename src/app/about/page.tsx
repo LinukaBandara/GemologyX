@@ -25,6 +25,11 @@ export default function AboutPage() {
           resources, we aim to do so only where it is genuinely relevant to the topic at hand.
         </p>
         <p>
+          GemologyX is an independent educational project, not a gemological laboratory,
+          certifying body or government authority. References to external institutions do
+          not imply their endorsement or affiliation with this site.
+        </p>
+        <p>
           The English library covers general gemology topics. The dedicated Sinhala learning section
           focuses on Sri Lankan gemstones, places, terminology, trade, and reader needs. Coverage and
           review status vary by page; see our <a href="/editorial-standards" className="text-accent hover:text-accent-strong">editorial
