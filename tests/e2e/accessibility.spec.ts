@@ -40,7 +40,9 @@ test("mobile navigation closes with Escape and exposes its expanded state", asyn
 
   await page.keyboard.press("Escape");
   await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toHaveCount(0);
-  await expect(page.getByRole("button", { name: "Open navigation" })).toHaveAttribute("aria-expanded", "false");
+  const closedMenuButton = page.getByRole("button", { name: "Open navigation" });
+  await expect(closedMenuButton).toHaveAttribute("aria-expanded", "false");
+  await expect(closedMenuButton).toBeFocused();
 });
 
 test("skip link is available to keyboard users", async ({ page }) => {
