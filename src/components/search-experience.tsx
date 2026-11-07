@@ -87,7 +87,6 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
         <span className="sr-only">Search gemstones, origins, glossary terms and guides</span>
         <input
           type="search"
-          autoFocus
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Try sapphire, heat treatment, Ratnapura…"
