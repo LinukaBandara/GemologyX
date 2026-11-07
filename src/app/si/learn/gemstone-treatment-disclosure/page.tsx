@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/heat-treatment-guide"
       crumbLabel="Heat treatment"
       lastReviewed="2026-10-24"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg", alt: "A pink sapphire being examined under a gemmological microscope", credit: "Sara Abey · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg" }}
       related={[
         { label: "Heat treatment", href: "/si/learn/heat-treatment-guide" },
         { label: "Diffusion treatment", href: "/si/learn/diffusion-treatment-guide" },
