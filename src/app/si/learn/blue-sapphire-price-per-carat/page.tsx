@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Electronic_scales.jpg",
+        alt: "Electronic jewellery weighing scale",
+        credit: "Mauro Cateb · CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Electronic_scales.jpg",
+      }}
       related={[
         { label: "නිල්මැණිකක වටිනාකමට බලපාන කරුණු", href: "/si/learn/blue-sapphire-value-factors" },
         { label: "වර්ණය සහ ගුණාත්මකභාවය", href: "/si/learn/blue-sapphire-colour-quality" },
