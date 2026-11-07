@@ -34,7 +34,7 @@ const gemstoneCards = [
     href: "/gemstones/sapphire",
     image: "/images/gems/sapphire-crystals-montana-02.jpg",
     alt: "Natural rough sapphire crystals from the Smithsonian collection, Montana, USA",
-    caption: "Rough sapphire · Montana, USA",
+    caption: "Smithsonian · CC0 · Montana, USA",
     className: "gx-home-gem-sapphire",
   },
   {
@@ -43,7 +43,7 @@ const gemstoneCards = [
     href: "/gemstones/ruby",
     image: "/images/gems/ruby-gem-inclusions.jpg",
     alt: "Faceted ruby showing internal inclusions",
-    caption: "Ruby with visible inclusions",
+    caption: "Humanfeather · CC BY 3.0",
     className: "gx-home-gem-ruby",
   },
   {
@@ -52,7 +52,7 @@ const gemstoneCards = [
     href: "/gemstones/emerald",
     image: "/images/gems/emerald-cut-gem.jpg",
     alt: "Faceted green gemstone described by its source as an emerald",
-    caption: "Faceted green gemstone",
+    caption: "Gaumania · CC0 1.0",
     className: "gx-home-gem-emerald",
   },
   {
@@ -61,7 +61,7 @@ const gemstoneCards = [
     href: "/gemstones/amethyst",
     image: "/images/gems/amethyst-crystals.jpg",
     alt: "Close view of purple amethyst crystals",
-    caption: "Amethyst crystal cluster",
+    caption: "Lisa Ann Yount · CC0 1.0",
     className: "gx-home-gem-amethyst",
   },
 ];
@@ -75,7 +75,7 @@ const learningCards = [
       "Understand the differences between geological origin, laboratory growth and look-alike materials—and why appearance alone is not enough.",
     href: "/learn/natural-vs-synthetic-gemstones",
     image: "/images/gems/sapphire-crystals-montana-01.jpg",
-    alt: "Rough sapphire crystals shown in close-up",
+    alt: "Rough sapphire crystals from the Smithsonian collection, Montana, USA",
   },
   {
     number: "02",
@@ -85,7 +85,7 @@ const learningCards = [
       "Explore common gemstone enhancements, what disclosure means and how treatment can affect care, durability and value.",
     href: "/learn/gemstone-treatments",
     image: "/images/gems/ruby-gem-inclusions.jpg",
-    alt: "Close-up of a ruby with visible internal features",
+    alt: "Ruby photograph by Humanfeather, showing internal inclusions",
   },
   {
     number: "03",
@@ -95,7 +95,7 @@ const learningCards = [
       "Find out what a laboratory report can establish, what it cannot, and which details deserve a closer look before a purchase.",
     href: "/learn/how-to-read-a-gemstone-report",
     image: "/images/gems/emerald-cut-gem.jpg",
-    alt: "Faceted green gemstone photographed from above",
+    alt: "Faceted green gemstone described by its source as an emerald",
   },
 ];
 
@@ -247,7 +247,7 @@ export default function HomePage() {
                   <div className="gx-v2-card-eyebrow">{card.eyebrow}</div>
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>
-                  <span className="gx-v2-card-read">Read the guide <ArrowUpRight size={15} /></span>
+                  <small className="gx-v2-photo-credit">{card.credit}</small>\n                  <span className="gx-v2-card-read">Read the guide <ArrowUpRight size={15} /></span>
                 </div>
               </Link>
             ))}
