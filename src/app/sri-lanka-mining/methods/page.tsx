@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function MiningMethodsPage() {
       <h1 className="mt-5 font-serif text-4xl font-semibold leading-tight md:text-6xl">Gemstone Mining Methods in Sri Lanka</h1>
       <p className="mt-5 max-w-3xl text-base leading-7 text-muted md:text-lg">A high-level guide to common mining approaches, why methods differ by deposit, and the safety and environmental questions that must be considered.</p>
     </header>
+    <figure className="gx-sri-photo-banner"><Image src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Gem_pit_shaft_seen_from_above%2C_Pelmadulla%2C_Sri_Lanka_%282026%29.jpg" alt="Gem pit shaft viewed from above near Pelmadulla, Sri Lanka" width={1200} height={800} sizes="(max-width: 800px) 100vw, 1000px" /><figcaption><span>Gem pit context · Pelmadulla, Sri Lanka</span><a href="https://commons.wikimedia.org/wiki/File:Gem_pit_shaft_seen_from_above,_Pelmadulla,_Sri_Lanka_(2026).jpg" target="_blank" rel="noreferrer">Ilyes Makria / Joalys · CC BY-SA 4.0 · Wikimedia Commons</a></figcaption></figure>
     <div className="profile-content">
       <section><h2>There is no single method for every deposit</h2><p>Gem-bearing material occurs in different geological settings. The suitable approach depends on the deposit, local ground and water conditions, access, the scale of work and applicable permissions. A general article cannot determine which method is appropriate for a particular site.</p></section>
       <section><h2>Common approaches</h2><div className="mt-5 grid gap-4 sm:grid-cols-2">{methods.map((m) => <div key={m.title} className="rounded-xl border border-border bg-surface p-5"><h3 className="font-serif text-xl font-semibold">{m.title}</h3><p className="mt-3 text-sm leading-6 text-muted">{m.body}</p></div>)}</div></section>
