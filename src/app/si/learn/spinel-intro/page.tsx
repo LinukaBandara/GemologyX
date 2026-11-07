@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="Spinel (ස්පිනල්) — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/1/12/Spinel-200576.jpg",
+        alt: "Blue spinel crystals embedded in white quartz matrix",
+        credit: "Blue spinel crystals in quartz — Rob Lavinsky / iRocks.com, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Spinel-200576.jpg",
+      }}
       crumbHref="/si/learn/ruby-vs-spinel"
       crumbLabel="Ruby vs Spinel"
       lastReviewed="2026-10-21"
