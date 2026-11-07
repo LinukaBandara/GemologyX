@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -83,7 +84,7 @@ const questions = [
 
 export default function SriLankaMiningPage() {
   return (
-    <article className="gx-mining-page">
+    <article className="gx-mining-page"><BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com" }, { name: "Sri Lanka Mining", url: "https://gemologyx.com/sri-lanka-mining" }]} />
       <div className="container-page max-w-6xl py-9 md:py-14">
         <nav className="luxury-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Home</Link><span>/</span><span>Sri Lanka Mining</span>
