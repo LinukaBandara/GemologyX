@@ -50,3 +50,19 @@ test("skip link is available to keyboard users", async ({ page }) => {
   await expect(skipLink).toBeFocused();
   await expect(page.locator("main#main-content")).toHaveAttribute("tabindex", "-1");
 });
+
+
+test("theme toggle follows system preference and keeps the document theme in sync", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: "dark" });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+
+  const toggle = page.getByRole("button", { name: "Switch to light theme" });
+  await expect(toggle).toBeVisible();
+  await expect(toggle).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+
+  await toggle.click();
+  const lightToggle = page.getByRole("button", { name: "Switch to dark theme" });
+  await expect(lightToggle).toHaveAttribute("aria-pressed", "false");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+});
