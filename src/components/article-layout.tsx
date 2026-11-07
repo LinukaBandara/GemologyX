@@ -34,7 +34,9 @@ export function ArticleLayout({
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "https://gemologyx.com/" },
         { name: isSinhala ? "මැණික් දැනුම" : "Learn", url: `https://gemologyx.com${learnHref}` },
-        { name: crumbLabel, url: `https://gemologyx.com${crumbHref}` },
+        ...(crumbHref !== learnHref
+          ? [{ name: crumbLabel, url: `https://gemologyx.com${crumbHref}` }]
+          : []),
       ]} />
 
       {/* Breadcrumb */}
