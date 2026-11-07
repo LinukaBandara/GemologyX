@@ -1812,3 +1812,117 @@ main :where(article, .prose, [data-article-content]) h3 {
 .gx-loader-mark { width: 52px; height: 52px; object-fit: contain; }
 html[data-theme="dark"] .gx-site-loader { background: #1C1117; color: #E2B5C2; }
 html[data-theme="dark"] .gx-site-loader > span { color: #E2B5C2; }
+
+
+/* ── Gemstone Library: Suranga Gems editorial gallery ── */
+.gx-pearl-gem-gallery {
+  display: grid;
+  grid-template-columns: 1.18fr .82fr;
+  grid-template-rows: repeat(3, minmax(150px, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+.gx-pearl-gem-gallery .gx-pearl-gem-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(130px,.78fr);
+  min-width: 0;
+  min-height: 172px;
+  overflow: hidden;
+  border: 1px solid #E9E1DC;
+  background: #FFFFFF;
+  color: #30242A;
+  text-decoration: none;
+  transition: border-color .22s ease, transform .22s ease, box-shadow .22s ease;
+}
+.gx-pearl-gem-gallery .gx-pearl-gem-card:hover {
+  border-color: #C69B70;
+  box-shadow: 0 14px 34px rgba(48,36,42,.08);
+  transform: translateY(-3px);
+}
+.gx-pearl-gem-gallery .gx-pearl-gem-card-1 {
+  grid-row: 1 / 4;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(300px,1fr) auto;
+}
+.gx-pearl-gem-gallery .gx-pearl-gem-art {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #F4F0EC;
+}
+.gx-pearl-gem-gallery .gx-pearl-gem-card-1 .gx-pearl-gem-art { min-height: 360px; }
+.gx-pearl-gem-gallery .gx-pearl-gem-art img {
+  object-fit: cover;
+  transition: transform .65s cubic-bezier(.2,.65,.3,1);
+}
+.gx-pearl-gem-gallery .gx-pearl-gem-card:hover .gx-pearl-gem-art img { transform: scale(1.035); }
+.gx-pearl-gem-gallery .gx-pearl-gem-art > span {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  left: 15px;
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.72);
+  background: rgba(252,251,249,.9);
+  color: #641F35;
+  font-size: 10px;
+  letter-spacing: .08em;
+}
+.gx-pearl-gem-gallery .gx-pearl-gem-art > i {
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  background: #FCFBF9;
+  color: #641F35;
+  font-style: normal;
+  transition: background .2s ease,color .2s ease;
+}
+.gx-pearl-gem-gallery .gx-pearl-gem-card:hover .gx-pearl-gem-art > i { background: #641F35; color: #fff; }
+.gx-pearl-gem-copy { display: flex; min-width: 0; flex-direction: column; justify-content: center; padding: 20px 22px; }
+.gx-pearl-gem-note { color: #8A6B64; font-size: 9px; font-weight: 700; letter-spacing: .15em; line-height: 1.5; }
+.gx-pearl-gem-copy h3 { margin-top: 7px; color: #30242A; font-family: var(--font-cormorant),Georgia,serif; font-size: clamp(1.45rem,2.4vw,2.15rem); font-weight: 600; letter-spacing: -.025em; line-height: 1; }
+.gx-pearl-gem-copy .gx-pearl-gem-detail { margin-top: 9px; color: #6D6061; font-size: 12px; line-height: 1.5; }
+.gx-pearl-gem-gallery .gx-pearl-gem-card-1 .gx-pearl-gem-copy { min-height: 135px; padding: 23px 26px 25px; }
+.gx-pearl-gem-gallery .gx-pearl-gem-card-1 .gx-pearl-gem-copy h3 { font-size: clamp(2.1rem,4vw,3.2rem); }
+.gx-pearl-disclosure { max-width: 760px; margin-top: 18px; color: #716568; font-size: 11px; line-height: 1.7; }
+html[data-theme="dark"] .gx-pearl-gem-gallery .gx-pearl-gem-card { border-color: #49313A; background: #281820; color: #F7F0EA; }
+html[data-theme="dark"] .gx-pearl-gem-gallery .gx-pearl-gem-art { background: #38232C; }
+html[data-theme="dark"] .gx-pearl-gem-gallery .gx-pearl-gem-copy h3 { color: #F7F0EA; }
+html[data-theme="dark"] .gx-pearl-gem-gallery .gx-pearl-gem-note { color: #D5A9B5; }
+html[data-theme="dark"] .gx-pearl-gem-gallery .gx-pearl-gem-copy .gx-pearl-gem-detail,
+html[data-theme="dark"] .gx-pearl-disclosure { color: #C0AEB0; }
+html[data-theme="dark"] .gx-pearl-gem-gallery .gx-pearl-gem-art > span { background: rgba(40,24,32,.92); color: #F1DCE0; border-color: #62414D; }
+html[data-theme="dark"] .gx-pearl-gem-gallery .gx-pearl-gem-art > i { background: #281820; color: #E2B5C2; }
+@media (max-width: 760px) {
+  .gx-pearl-gem-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 10px; }
+  .gx-pearl-gem-gallery .gx-pearl-gem-card,
+  .gx-pearl-gem-gallery .gx-pearl-gem-card-1 { display: flex; flex-direction: column; min-height: 0; }
+  .gx-pearl-gem-gallery .gx-pearl-gem-card-1 { grid-column: 1 / -1; grid-row: auto; }
+  .gx-pearl-gem-gallery .gx-pearl-gem-art,
+  .gx-pearl-gem-gallery .gx-pearl-gem-card-1 .gx-pearl-gem-art { height: auto; min-height: 0; aspect-ratio: 1.18 / 1; }
+  .gx-pearl-gem-gallery .gx-pearl-gem-card-1 .gx-pearl-gem-art { aspect-ratio: 1.75 / 1; }
+  .gx-pearl-gem-copy,
+  .gx-pearl-gem-gallery .gx-pearl-gem-card-1 .gx-pearl-gem-copy { min-height: 112px; padding: 13px 13px 15px; }
+  .gx-pearl-gem-copy h3 { margin-top: 5px; font-size: clamp(1.35rem,5.8vw,1.8rem); }
+  .gx-pearl-gem-copy .gx-pearl-gem-detail { margin-top: 6px; font-size: 11px; }
+  .gx-pearl-gem-note { font-size: 8px; letter-spacing: .1em; }
+  .gx-pearl-gem-gallery .gx-pearl-gem-art > span { top: 9px; left: 9px; width: 28px; height: 28px; }
+  .gx-pearl-gem-gallery .gx-pearl-gem-art > i { right: 8px; bottom: 8px; width: 32px; height: 32px; }
+}
+@media (max-width: 380px) {
+  .gx-pearl-gem-gallery { gap: 8px; }
+  .gx-pearl-gem-copy,
+  .gx-pearl-gem-gallery .gx-pearl-gem-card-1 .gx-pearl-gem-copy { padding: 11px; }
+  .gx-pearl-gem-copy h3 { font-size: 1.25rem; }
+  .gx-pearl-gem-copy .gx-pearl-gem-detail { font-size: 10px; }
+}
