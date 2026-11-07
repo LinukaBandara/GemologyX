@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title: "Famous Gemstone Origins | GemologyX",
   description: "Explore the world's best-known gemstone sources and trading centres through photography, geology and gem history.",
   alternates: { canonical: "/origins" },
-  openGraph: { type: "website", title: "Famous Gemstone Origins", description: "Explore notable gemstone sources and trading centres through geology, photography and gem history.", url: "/origins" },
-  twitter: { card: "summary_large_image", title: "Famous Gemstone Origins", description: "Explore notable gemstone sources and trading centres through geology, photography and gem history." },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Famous Gemstone Origins", description: "Explore notable gemstone sources and trading centres through geology, photography and gem history.", url: "/origins" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Famous Gemstone Origins", description: "Explore notable gemstone sources and trading centres through geology, photography and gem history." },
 };
 
 export default function OriginsPage() {
