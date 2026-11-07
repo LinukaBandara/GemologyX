@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Sources and Citations",
   description: "How GemologyX uses references, distinguishes evidence from opinion and handles claims that need current verification.",
   alternates: { canonical: "/sources" },
+  openGraph: { type: "website", title: "GemologyX Sources and References", description: "Explore the gemological laboratories, authorities and references used across GemologyX educational guides.", url: "/sources" },
+  twitter: { card: "summary_large_image", title: "GemologyX Sources and References", description: "Explore the gemological laboratories, authorities and references used across GemologyX educational guides." },
 };
 
 const practices = [
