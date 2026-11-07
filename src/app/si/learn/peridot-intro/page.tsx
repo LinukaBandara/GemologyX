@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="Peridot (පෙරිඩොට්) — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/9/9f/P%C3%A9ridot_%28%3D_olivine%29_%28Pakistan%29_1.jpg",
+        alt: "Green peridot crystal specimen, a gem variety of olivine",
+        credit: "Peridot (olivine) crystal — Parent Géry, public domain (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:P%C3%A9ridot_(%3D_olivine)_(Pakistan)_1.jpg",
+      }}
       crumbHref="/si/learn/emerald-intro"
       crumbLabel="Emerald හැඳින්වීම"
       lastReviewed="2026-10-21"
