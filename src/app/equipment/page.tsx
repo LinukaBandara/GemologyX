@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description:
     "Explore the instruments, workshop tools and equipment used by gemmologists, gemstone dealers, cutters and jewellery professionals.",
   alternates: { canonical: "/equipment" },
-  openGraph: { type: "website", title: "Gem Industry Tools & Equipment", description: "Explore instruments, workshop tools and equipment used by gemmologists, gemstone dealers, cutters and jewellery professionals.", url: "/equipment" },
-  twitter: { card: "summary_large_image", title: "Gem Industry Tools & Equipment", description: "Explore instruments, workshop tools and equipment used by gemmologists, gemstone dealers, cutters and jewellery professionals." },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Gem Industry Tools & Equipment", description: "Explore instruments, workshop tools and equipment used by gemmologists, gemstone dealers, cutters and jewellery professionals.", url: "/equipment" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Gem Industry Tools & Equipment", description: "Explore instruments, workshop tools and equipment used by gemmologists, gemstone dealers, cutters and jewellery professionals." },
 };
 
 const equipment = [
