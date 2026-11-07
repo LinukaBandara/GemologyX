@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/gemstone-care-general"
       crumbLabel="මැණික් රැකවරණය"
       lastReviewed="2026-10-24"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/d/da/Lapis-lazuli_hg.jpg",
+        alt: "Raw lapis lazuli specimen with visible pyrite flecks from Afghanistan",
+        credit: "Hannes Grobe · CC BY-SA 2.5",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Lapis-lazuli_hg.jpg",
+      }}
       related={[
         { label: "මැණික් රැකවරණය", href: "/si/learn/gemstone-care-general" },
         { label: "ප්‍රතිකාර හෙළි කිරීම", href: "/si/learn/gemstone-treatment-disclosure" },
