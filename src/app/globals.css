@@ -3740,3 +3740,23 @@ main :where(button,a,[role="button"],input[type="checkbox"],input[type="radio"])
 }
 
 html[data-theme="dark"] { color-scheme: dark; }
+
+/* Gemstone profile note replaces generic, non-specific benefit claims. */
+.profile-benefits {
+  display: block;
+}
+
+.profile-benefits p {
+  max-width: 72ch;
+  margin: 0;
+  color: var(--foreground);
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+@media (max-width: 767px) {
+  .profile-benefits p {
+    font-size: 14px;
+  }
+}
