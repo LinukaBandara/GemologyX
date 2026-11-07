@@ -606,6 +606,22 @@ input[type="search"]::-webkit-search-cancel-button {
   font-weight: 700;
 }
 
+.footer-credit a {
+  color: rgba(255, 255, 255, 0.48);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+  color: #fff;
+}
+
+.footer-credit a:focus-visible {
+  outline: 1px solid var(--gold);
+  outline-offset: 4px;
+}
+
 @media (max-width: 767px) {
   .gx-index-link {
     grid-template-columns: 2.4rem 1fr;
