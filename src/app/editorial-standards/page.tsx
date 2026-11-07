@@ -43,6 +43,17 @@ export default function EditorialStandardsPage() {
           </p>
         </section>
         <section>
+          <h2 className="font-serif text-xl font-semibold text-accent-strong">AI-assisted tools and editorial responsibility</h2>
+          <p className="mt-2">
+            Some material may be developed with AI-assisted research organisation, drafting or editing.
+            AI output is not treated as scientific evidence or a substitute for authoritative references.
+            Technical claims should be checked against the cited gemological, academic or official sources.
+            GemologyX does not claim that its articles are written or approved by a gemological laboratory
+            or a credentialed gemologist. Review status varies across the library, and the full collection
+            has not completed source-to-claim verification.
+          </p>
+        </section>
+        <section>
           <h2 className="font-serif text-xl font-semibold text-accent-strong">Commercial interests</h2>
           <p className="mt-2">
             GemologyX is not a marketplace and does not sell gemstones through this site. If
