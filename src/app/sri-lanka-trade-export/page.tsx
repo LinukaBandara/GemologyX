@@ -34,7 +34,7 @@ const officialResources = [
 
 export default function SriLankaTradeExportPage() {
   return (
-    <article className="container-page max-w-5xl py-12 md:py-16">
+    <article className="container-page gx-regional-subpage gx-regional-trade max-w-5xl py-12 md:py-16">
       <nav className="luxury-breadcrumb" aria-label="Breadcrumb">
         <Link href="/">Home</Link><span>/</span><span>Sri Lanka Trade & Export</span>
       </nav>
