@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight, ArrowUpRight, BookOpen, Compass, Gem, Globe2,
-  Microscope, Ruler, ShieldCheck, Sparkles,
+  Microscope, Ruler, Search, ShieldCheck,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -46,7 +46,7 @@ export default function HomePage() {
           <h1>The world of gems,<br /><em>made clearer.</em></h1>
           <p className="gx-pearl-intro">Explore the science behind gemstones, the stories of their origins and the knowledge that helps you look closer.</p>
           <form action="/search" role="search" className="gx-pearl-search">
-            <Sparkles size={17} aria-hidden="true" />
+            <Search size={17} aria-hidden="true" />
             <label className="sr-only" htmlFor="gx-pearl-search-input">Search GemologyX</label>
             <input id="gx-pearl-search-input" name="q" placeholder="Search a gemstone, treatment or topic…" />
             <button type="submit" aria-label="Search GemologyX"><ArrowUpRight size={18} /></button>
