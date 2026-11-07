@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight, ArrowUpRight, CalendarDays, CircleDot, Gem, Layers3,
-  Ruler, Scale, Sparkles, Waves, Compass, Palette,
+  Ruler, Scale, Sparkles, Waves, Compass, Palette, Wrench,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -123,6 +124,29 @@ export default function ToolsPage() {
               </Link>
             );
           })}
+        </div>
+      </section>
+
+
+      <section className="mt-14 border-y border-border py-9 md:mt-16 md:py-11" aria-labelledby="industry-equipment">
+        <div className="grid gap-6 md:grid-cols-[0.85fr_1.15fr] md:items-end">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">The physical side of gemology</p>
+            <h2 id="industry-equipment" className="mt-2 font-serif text-2xl font-medium text-foreground md:text-3xl">Gem industry tools & equipment</h2>
+            <p className="mt-3 max-w-md text-sm leading-6 text-muted">Explore the real instruments used by gemstone dealers, cutters, gemmologists and jewellery workshops — with photographs and practical explanations.</p>
+            <Link href="/equipment" className="mt-5 inline-flex min-h-11 items-center gap-2 text-xs font-semibold text-accent hover:underline">Explore equipment guide <ArrowRight size={14} /></Link>
+          </div>
+          <Link href="/equipment" className="group grid grid-cols-3 gap-2" aria-label="Explore gem industry equipment photographs">
+            <div className="relative aspect-[4/5] overflow-hidden bg-[#eee9e1]">
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a0/A_jeweller%27s_loupe.jpg" alt="Jeweller’s loupe" fill sizes="(max-width: 768px) 33vw, 18vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div className="relative aspect-[4/5] overflow-hidden bg-[#eee9e1]">
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Modern_collapsible_balance_scale_for_jewellers_1.jpg" alt="Jeweller’s balance scale" fill sizes="(max-width: 768px) 33vw, 18vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div className="relative aspect-[4/5] overflow-hidden bg-[#eee9e1]">
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/9/99/Jewellery_soldering_equipment.jpg" alt="Jewellery soldering tools and torch" fill sizes="(max-width: 768px) 33vw, 18vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+          </Link>
         </div>
       </section>
 
