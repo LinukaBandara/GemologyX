@@ -28,11 +28,11 @@ export async function generateMetadata({
     openGraph: {
       title: `${term.term} | Gemology Glossary`,
       description: term.definition,
-      type: "article",
+      type: "article", images: ["/gemologyx-social.svg"],
       url: `https://gemologyx.com/glossary/${term.slug}`,
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary_large_image", images: ["/gemologyx-social.svg"],
       title: `${term.term} | Gemology Glossary`,
       description: term.definition,
     },
