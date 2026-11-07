@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, BookOpen } from "lucide-react";
 import { glossaryTerms, getGlossaryTermBySlug } from "@/data/glossary";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 type Params = Promise<{ slug: string }>;
 
@@ -52,7 +53,9 @@ export default async function GlossaryTermPage({
     .slice(0, 4);
 
   return (
-    <article className="container-page max-w-3xl py-12 md:py-16">
+    <>
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Glossary", url: "https://gemologyx.com/glossary" }, { name: term.term, url: `https://gemologyx.com/glossary/${term.slug}` }]} />
+      <article className="container-page max-w-3xl py-12 md:py-16">
       <nav aria-label="Breadcrumb" className="luxury-breadcrumb">
         <Link href="/glossary">Glossary</Link>
         <span>/</span>
@@ -113,6 +116,7 @@ export default async function GlossaryTermPage({
         GemologyX is an educational reference. A glossary definition is not a substitute
         for examination by a qualified gemologist or a laboratory report.
       </p>
-    </article>
+      </article>
+    </>
   );
 }
