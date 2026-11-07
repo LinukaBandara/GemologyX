@@ -275,7 +275,7 @@ export const expandedGemstones: Gemstone[] = [
       care: "Chrysoberyl's hardness of about 8.5 makes it durable for jewellery. Clean with mild soap, warm water and a soft brush. Avoid hard impacts and use additional caution with stones that have significant fractures or specialised settings.",
       faqs: [{ question: "Is every chrysoberyl an alexandrite?", answer: "No. Alexandrite is the rare colour-change variety of chrysoberyl. Other chrysoberyl can be yellow, green or brown and may show a cat’s-eye effect." }],
     },
-    sources: [{ label: "GIA Alexandrite and Chrysoberyl", url: "https://www.gia.edu/alexandrite" }, { label: "GIA chrysoberyl research", url: "https://www.gia.edu/gems-gemology/spring-2014-v-chrysoberyl-stone-sundberg" }],
+    sources: [{ label: "GIA Alexandrite and Chrysoberyl", url: "https://www.gia.edu/alexandrite" }, { label: "GIA Gems & Gemology: Chrysoberyl research", url: "https://www.gia.edu/gems-gemology/spring-2014-v-chrysoberyl-stone-sundberg" }, { label: "International Gem Society: Chrysoberyl properties and varieties", url: "https://www.gemsociety.org/article/chrysoberyl-jewelry-gemstone-information/" }],
   }
   ,
   {
