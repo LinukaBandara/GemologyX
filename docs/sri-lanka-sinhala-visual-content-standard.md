@@ -235,3 +235,7 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 - `/si/learn/blue-sapphire-value-factors`: faceted blue sapphire photograph — Sapphiredge, CC BY-SA 3.0. This is a visual specimen example only; it is not a quality grade, origin statement, treatment disclosure or price reference.
 - `/si/learn/natural-synthetic-imitation-gems`: comparison image of a natural yellow sapphire crystal and a synthetic yellow sapphire — Laiyinann, CC0 1.0. It illustrates one natural-versus-synthetic comparison; it is not a diagnostic test or a complete guide to identifying all synthetic or imitation materials.
 - `/si/learn/rough-yellow-sapphire-value`: faceted oval yellow sapphire described by the photographer as a heated Ceylon sapphire of approximately one carat — Gemsphoto, CC BY-SA 3.0. The image is a cut-stone colour example, not rough material and not evidence of the price, origin, treatment or value of another stone.
+
+## Sinhala guide photography coverage — tanzanite comparison and kunzite
+- `/si/learn/sapphire-vs-tanzanite`: blue-violet tanzanite crystal specimens — Parent Géry, public domain. The photograph illustrates tanzanite material only; it is not a side-by-side comparison with sapphire and does not establish a stone's identity or origin.
+- `/si/learn/kunzite-intro`: pink kunzite crystal showing colour variation along the crystal — Eurico Zimbres, CC BY-SA 2.5. The Commons description identifies the specimen as Brazilian; it is an illustrative kunzite specimen, not a Sri Lankan occurrence.
