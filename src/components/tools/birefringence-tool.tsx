@@ -40,7 +40,7 @@ export default function BirefringenceTool() {
           <div aria-live="polite" className="border border-[var(--gold)]/40 bg-[var(--gold-soft)] p-5 sm:p-6">
             <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted">Calculated birefringence (Δn)</p>
             <p className="mt-2 font-serif text-4xl text-foreground">{result.toFixed(3)}</p>
-            <p className="mt-2 text-xs leading-5 text-muted">{b.toFixed(3)} − {a.toFixed(3)} = {result.toFixed(3)}</p>
+            <p className="mt-2 text-xs leading-5 text-muted">{high} − {low} = {result.toFixed(3)}</p>
           </div>
         ) : (
           <p role="status" className="border border-border p-4 text-xs leading-6 text-muted">{invalid ? "Enter two positive readings, with the highest RI equal to or greater than the lowest." : "Enter both refractive-index readings to calculate their difference."}</p>
