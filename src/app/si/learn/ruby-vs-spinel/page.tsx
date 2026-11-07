@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="රතු මැණික් සහ රතු ස්පිනල් අතර වෙනස"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Corundum-215474.jpg",
+        alt: "Red ruby corundum crystal used as the ruby specimen in a ruby and spinel comparison guide",
+        credit: "Ruby corundum crystal — Rob Lavinsky / iRocks.com, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Corundum-215474.jpg",
+      }}
       crumbHref="/si/learn/spinel-intro"
       crumbLabel="Spinel හැඳින්වීම"
       lastReviewed="2026-10-24"
