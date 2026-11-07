@@ -159,3 +159,10 @@ The 2026-11-06 audit's local build and crawl results remain historical results f
 - Added a Playwright accessibility regression test confirming Sinhala guide content is wrapped in a `lang="si"` region while the root document language remains English. It also checks that the Sinhala region contains a non-empty visible page heading.
 - Extended the published-sitemap SEO test to flag any rendered `<img>` element without an `alt` attribute. This detects missing attributes; it does not judge whether each alt description is meaningful or whether an empty alt is appropriate for decorative imagery.
 - These checks are committed but remain unexecuted in CI until the committed package manifest and lockfile are brought back into sync. Manual screen-reader and descriptive-alt review are still required.
+
+### Navigation, heading and external-link checks — 2026-11-08
+
+- Added a browser regression test for desktop navigation: the navigation landmark is named, each link exposes an accessible name, and the current section is identified with `aria-current="page"`.
+- Extended the published-route HTML audit to require exactly one page-level H1 per route. This is a structural check; it does not assess whether the heading wording is useful or whether lower-level headings are logically nested.
+- Added a check for links opening a new tab: each must declare `noopener` or `noreferrer` in its `rel` attribute. This guards against reverse-tabnabbing on externally opened destinations.
+- These new browser checks are committed but await execution after the package-lock/manifest mismatch is resolved.
