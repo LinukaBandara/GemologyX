@@ -51,6 +51,7 @@ export default function SriLankaGemCuttingTrainingPage() {
       title="ශ්‍රී ලංකාවේ මැණික් කැපීම: ශිල්පය, සේවා සහ පුහුණු මාර්ග"
       crumbHref="/si/learn"
       crumbLabel="ශ්‍රී ලංකා සිංහල එකතුව"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Gem_cutting_on_a_lap_wheel%2C_Gintota%2C_Sri_Lanka_%282026%29.jpg", alt: "A gem cutter working at a lap wheel in Gintota, Sri Lanka", credit: "ගින්තොට මැණික් කැපීමේ වැඩමුළුව · Ilyes Makria / Joalys · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg" }}
       related={[
         { label: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාම", href: "/si/learn/sri-lanka-gem-trade-intro" },
         { label: "Geuda සහ රළු ගල් ගැනුම්", href: "/si/learn/buying-geuda" },
