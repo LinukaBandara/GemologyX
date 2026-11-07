@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { allGemstones } from "@/data/all-gemstones";
 import { GemstoneIllustration } from "@/components/gemstone-illustration";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
+import { GemstoneSpecimenGallery } from "@/components/gemstone-specimen-gallery";
 
 export function generateStaticParams() { return allGemstones.map(({slug}) => ({slug})); }
 type Params = Promise<{slug:string}>;
@@ -52,6 +53,7 @@ export default async function GemstonePage({params}:{params:Params}) {
     <nav className="profile-tabs"><div className="container-page">{[...sections.slice(0,6)].map(([id,title])=><a href={`#${id}`} key={id}>{title.replace(" and Characteristics","")}</a>)}</div></nav>
     <div className="container-page profile-body"><div className="profile-top"><div className="profile-stone">{image?<Image src={image} alt={`${gem.name} gemstone`} fill sizes="(max-width: 760px) 100vw, 34vw"/>:<div className="profile-illustration-surface"><GemstoneIllustration gem={gem} className="profile-fallback-art"/></div>}</div><section className="quick-facts"><h2>Quick Facts</h2>{facts.map(([label,value])=><div key={label}><span>◇</span><b>{label}</b><p>{value}</p></div>)}</section><aside className="on-page"><h2>On This Page</h2>{sections.map(([id,title])=><a href={`#${id}`} key={id}>{title}</a>)}{detail?.faqs?.length?<a href="#faqs">Frequently Asked Questions</a>:null}{gem.sources?.length?<a href="#sources">Sources and Further Reading</a>:null}</aside></div>
       <div className="profile-content"><div className="profile-article">{sections.map(([id,title,text])=><section id={id} key={id}><h2>{title}</h2>{Array.isArray(text)?<ul>{text.map((item)=><li key={item}>{item}</li>)}</ul>:<p>{text}</p>}</section>)}{detail?.faqs?.length ? <section id="faqs"><h2>Frequently Asked Questions</h2>{detail.faqs.map((item)=><div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}</section>:null}{gem.sources?.length ? <section id="sources"><h2>Sources and Further Reading</h2><ul>{gem.sources.map((source)=><li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a></li>)}</ul></section>:null}</div>{secondaryImage?<Image className="profile-secondary" src={secondaryImage} alt={secondaryAlt} width={700} height={420}/>:<div className="profile-secondary profile-secondary-art"><div className="profile-illustration-surface"><GemstoneIllustration gem={gem} className="profile-fallback-art"/></div></div>}</div>
+      <GemstoneSpecimenGallery slug={slug} name={gem.name} />
       <aside className="profile-benefits" aria-label="Gemstone information note">
         <p>Properties, treatment status and care needs can vary between individual stones. Use the linked references and an independent gemological examination when a purchase or identification decision matters.</p>
       </aside>
