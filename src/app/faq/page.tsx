@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   title: "Gemology Questions and Answers",
   description: "Straightforward answers to common questions about gemstone identification, treatments, reports, buying and Sri Lankan gem knowledge.",
   alternates: { canonical: "/faq" },
+  openGraph: { type: "website", title: "Gemology Questions and Answers", description: "Straightforward answers to common questions about gemstone identification, treatments, reports, buying and Sri Lankan gem knowledge.", url: "/faq" },
+  twitter: { card: "summary_large_image", title: "Gemology Questions and Answers", description: "Straightforward answers to common questions about gemstone identification, treatments, reports, buying and Sri Lankan gem knowledge." },
 };
 
 const questions = [
