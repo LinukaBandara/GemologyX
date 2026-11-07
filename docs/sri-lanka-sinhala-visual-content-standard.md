@@ -194,3 +194,7 @@ The balance-scale photograph documents a traditional jeweller's weighing instrum
 | `/si/learn/secondhand-jewelry-gems` | Medieval gold finger ring with a dark blue stone in a bezel setting, recorded in Cambridgeshire | The Portable Antiquities Scheme / The Trustees of the British Museum · CC BY-SA 2.0 |
 
 The ring-mandrel photograph documents a jeweller's setting process; it is not a step-by-step instruction. The sapphire ring is a jewellery example and does not establish the stone's origin, treatment, grade or value. The secondhand-jewellery image is a documented medieval archaeological find (c.1150–1500), not a modern resale listing; it is used to illustrate the importance of inspecting older settings and condition. Its description says the blue stone may most likely be sapphire, not that its identity is confirmed.
+
+## Sinhala guide photography coverage — practical buying and resale batch
+- `/si/learn/pawn-and-resale-reality`: historic gold finger ring with a blue bezel-set stone, from a Cambridgeshire archaeological find — The Portable Antiquities Scheme / The Trustees of the British Museum, CC BY-SA 2.0. The catalogue describes the stone as possibly sapphire; do not present its identity as confirmed or imply that the object represents a current resale price.
+- `/si/learn/negotiate-gem-price`: modern collapsible jeweller's balance scale with brass weights — W.carter, CC BY-SA 4.0. This illustrates weighing as one documented part of a transaction, not a valuation method or a guide to market price.
