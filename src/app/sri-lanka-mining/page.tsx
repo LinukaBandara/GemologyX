@@ -13,11 +13,27 @@ import {
   Waves,
 } from "lucide-react";
 
+const pageTitle = "Sri Lanka Gemstone Mining: Regions, Methods & Responsible Practice";
+const pageDescription =
+  "Explore Sri Lanka's gem-mining heritage, major gem fields, traditional and mechanized methods, illam gravel, worker safety, environmental responsibility and official NGJA resources.";
+
 export const metadata: Metadata = {
-  title: "Sri Lanka Gemstone Mining: Regions, Methods & Responsible Practice",
-  description:
-    "Explore Sri Lanka's gem-mining heritage, major gem fields, traditional and mechanized methods, illam gravel, worker safety, environmental responsibility and official NGJA resources.",
+  title: pageTitle,
+  description: pageDescription,
   alternates: { canonical: "/sri-lanka-mining" },
+  openGraph: {
+    type: "article",
+    title: pageTitle,
+    description: pageDescription,
+    url: "/sri-lanka-mining",
+    images: [{ url: "/gemologyx-social.svg", width: 1200, height: 630, alt: "GemologyX — Sri Lanka gemstone mining guide" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/gemologyx-social.svg"],
+  },
 };
 
 const regions = [
