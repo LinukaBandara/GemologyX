@@ -69,12 +69,12 @@ const equipment = [
 ];
 
 const referenceInstruments = [
-  { name: "Refractometer", detail: "Measures refractive index within the instrument’s working range.", icon: ScanEye },
-  { name: "Gemological microscope", detail: "Examines inclusions, surface features and internal characteristics.", icon: Microscope },
-  { name: "Polariscope & dichroscope", detail: "Help investigate optical behaviour and pleochroism.", icon: Gem },
-  { name: "Spectroscope & UV lamp", detail: "Reveal selected absorption and fluorescence responses.", icon: BookOpen },
-  { name: "Digital caliper", detail: "Records length, width and depth in millimetres.", icon: Ruler },
-  { name: "Specific-gravity kit", detail: "Supports density measurements using an appropriate method.", icon: Scale },
+  { name: "Polariscope", detail: "Helps investigate optical character and behaviour under crossed polarising filters.", icon: ScanEye },
+  { name: "Dichroscope", detail: "Separates directional colour views to help examine pleochroism.", icon: Gem },
+  { name: "Spectroscope", detail: "Shows selected absorption features in light transmitted by or reflected from a gem.", icon: BookOpen },
+  { name: "UV examination lamp", detail: "Reveals fluorescence responses; results must be interpreted cautiously.", icon: Sparkles },
+  { name: "Specific-gravity kit", detail: "Supports density measurements using a suitable hydrostatic method.", icon: Scale },
+  { name: "Stone papers, trays & holders", detail: "Help organise, protect and handle loose gemstones during trade and examination.", icon: Wrench },
 ];
 
 export default function EquipmentPage() {
