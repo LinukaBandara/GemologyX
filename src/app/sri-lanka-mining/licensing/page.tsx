@@ -15,7 +15,7 @@ const sources = [
 ];
 
 export default function MiningLicensingPage() {
-  return <article className="container-page max-w-4xl py-12 md:py-16">
+  return <article className="container-page gx-regional-subpage max-w-4xl py-12 md:py-16">
     <nav className="luxury-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/sri-lanka-mining">Sri Lanka Mining</Link><span>/</span><span>Licensing</span></nav>
     <header className="article-hero"><div className="luxury-eyebrow"><span /> OFFICIAL PROCESS GUIDE</div><h1 className="mt-5 font-serif text-4xl font-semibold leading-tight md:text-6xl">Gemstone Mining Licences in Sri Lanka</h1><p className="mt-5 max-w-3xl text-base leading-7 text-muted md:text-lg">How to find and verify official licensing information before undertaking gemstone-mining activity in Sri Lanka.</p></header>
     <div className="profile-content">
