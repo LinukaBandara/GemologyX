@@ -149,6 +149,7 @@ export default function HomePage() {
       </section>
 
       <section className="gx-pearl-end"><div className="container-page"><div className="gx-pearl-kicker"><span /> KEEP EXPLORING</div><h2>Curiosity is where<br /><em>understanding begins.</em></h2><p>Discover the science, explore the stories and build a more informed understanding of the world’s gemstones.</p><div><Link href="/gemstones" className="gx-pearl-primary">Enter the gemstone library <ArrowUpRight size={16} /></Link><Link href="/about" className="gx-pearl-secondary">About GemologyX <ArrowRight size={15} /></Link></div></div></section>
-    </main>
+      </main>
+    </>
   );
 }
