@@ -82,7 +82,7 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
 
   return (
     <section className="mt-8" aria-label="Search the GemologyX library">
-      <label className="flex items-center gap-3 rounded-2xl border border-border bg-white px-4 py-3.5 shadow-sm transition focus-within:border-accent focus-within:shadow-md md:px-5">
+      <label className="flex min-h-14 items-center gap-3 rounded-2xl border border-border bg-white px-4 py-3.5 shadow-sm transition focus-within:border-accent focus-within:shadow-md md:px-5">
         <Search size={19} className="shrink-0 text-accent" aria-hidden="true" />
         <span className="sr-only">Search gemstones, origins, glossary terms and guides</span>
         <input
@@ -91,7 +91,7 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Try sapphire, heat treatment, Ratnapura…"
-          className="min-w-0 flex-1 border-0 bg-transparent text-sm outline-none placeholder:text-muted md:text-base"
+          className="min-w-0 flex-1 border-0 bg-transparent text-base outline-none placeholder:text-muted"
         />
         {query && <button type="button" aria-label="Clear search" onClick={() => setQuery("")} className="rounded-full p-1 text-muted hover:bg-accent-soft hover:text-accent"><X size={17} /></button>}
         <kbd className="hidden rounded-md border border-border bg-background px-2 py-1 text-[0.65rem] text-muted sm:inline">LIVE</kbd>
