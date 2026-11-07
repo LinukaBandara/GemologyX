@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/amethyst-intro"
       crumbLabel="Amethyst හැඳින්වීම"
       lastReviewed="2026-10-24"
+heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pebbles_of_the_quartz_group.jpg", alt: "A group of polished quartz varieties including amethyst, citrine, rose quartz, smoky quartz and milky quartz", credit: "Pebbles of the quartz group — Mauro Cateb, CC BY-SA 3.0 (Wikimedia Commons).", sourceUrl: "https://commons.wikimedia.org/wiki/File:Pebbles_of_the_quartz_group.jpg" }}
       related={[
         { label: "Amethyst", href: "/si/learn/amethyst-intro" },
         { label: "Citrine", href: "/si/learn/citrine-intro" },
