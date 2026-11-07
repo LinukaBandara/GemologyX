@@ -165,28 +165,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="gx-v2-hero-visual">
-            <div className="gx-v2-hero-photo">
-              <Image
-                src="/images/suranga/hero-gems.svg"
-                alt="Original generated gemstone artwork from Suranga Gems"
-                fill
-                priority
-                sizes="(max-width: 900px) 100vw, 54vw"
-              />
-              <div className="gx-v2-photo-shade" />
-              <div className="gx-v2-photo-label">
-                <span>GEMSTONE ARTWORK · 001</span>
-                <strong>A world of colour and form</strong>
-                <small>Original generated artwork · Suranga Gems</small>
-              </div>
-            </div>
-            <div className="gx-v2-floating-note">
-              <span className="gx-v2-note-mark"><Gem size={17} /></span>
-              <span><strong>Beyond the sparkle</strong><small>Explore the science inside the stone.</small></span>
-            </div>
-            <div className="gx-v2-image-index">GEMOLOGYX / FIELD NOTES</div>
-          </div>
         </div>
         <div className="gx-v2-hero-bottom">
           <div className="container-page gx-v2-proof-row">
