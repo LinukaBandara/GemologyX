@@ -21,6 +21,13 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="Secondhand ආභරණ සහ මැණික් මිලදී ගැනීම"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Setting_a_small_ruby.JPG",
+        alt: "A jeweller setting a small ruby into a silver jewellery piece",
+        credit: "Setting a small ruby — Mauro Cateb · CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Setting_a_small_ruby.JPG",
+      }}
+
       crumbHref="/si/learn/jewelry-with-gems-buying"
       crumbLabel="මැණික් සහිත ආභරණ"
       lastReviewed="2026-10-25"
