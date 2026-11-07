@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
       crumbLabel="ස්වභාවික vs කෘත්‍රිම"
       lastReviewed="2026-10-24"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Amber_hg.jpg", alt: "A polished natural amber specimen showing warm translucent golden-brown resin", credit: "Hannes Grobe · CC BY-SA 2.5", sourceUrl: "https://commons.wikimedia.org/wiki/File:Amber_hg.jpg" }}
       related={[
         { label: "ස්වභාවික vs කෘත්‍රිම", href: "/si/learn/natural-vs-synthetic-gemstones" },
         { label: "මැණික් රැකවරණය", href: "/si/learn/gemstone-care-general" },
