@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Manrope, Noto_Sans_Sinhala } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -13,7 +13,7 @@ const sans = Manrope({
   display: "swap",
 });
 
-const serif = Cormorant_Garamond({
+const sinhala = Noto_Sans_Sinhala({\n  subsets: ["sinhala"],\n  weight: ["400", "500", "600", "700"],\n  variable: "--font-sinhala",\n  display: "swap",\n});\n\nconst serif = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
   style: ["normal", "italic"],
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable} h-full antialiased`}>
+    <html lang="en" className={`${sans.variable} ${serif.variable} ${sinhala.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <SiteLoader />
         <SiteHeader />
