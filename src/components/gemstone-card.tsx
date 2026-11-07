@@ -15,10 +15,6 @@ export function GemstoneCard({ gem }: { gem: Gemstone }) {
           backgroundImage: "radial-gradient(circle at 70% 30%, rgba(30,58,95,0.08), transparent 55%)"
         }} />
         <GemstoneIllustration gem={gem} />
-        <span className="absolute bottom-3 right-3 rounded-full bg-white/75 px-2 py-1 text-[0.55rem] uppercase tracking-wider text-muted backdrop-blur-sm">Illustration</span>
-        <span className="absolute left-3.5 top-3.5 border border-border/80 bg-white/80 px-2.5 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-muted backdrop-blur-sm">
-          {gem.category}
-        </span>
       </div>
 
       {/* Body */}
