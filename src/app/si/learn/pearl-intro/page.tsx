@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/amber-intro"
       crumbLabel="Amber හැඳින්වීම"
       lastReviewed="2026-10-24"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Black_lipped_oyster_with_natural_pearl%2C_Robert_Wan_Pearl_Museum.JPG",
+        alt: "Black-lipped oyster shell displaying a natural pearl at the Robert Wan Pearl Museum",
+        credit: "Wmpearl · CC0 1.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Black_lipped_oyster_with_natural_pearl,_Robert_Wan_Pearl_Museum.JPG",
+      }}
       related={[
         { label: "Amber හැඳින්වීම", href: "/si/learn/amber-intro" },
         { label: "Coral හැඳින්වීම", href: "/si/learn/coral-intro" },
