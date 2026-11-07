@@ -60,7 +60,7 @@ export const origins: Origin[] = [
     slug: "myanmar",
     name: "Myanmar",
     summary: "A historic source of ruby and jadeite, including the Mogok Valley.",
-    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Mogok_Township.jpg","alt":"Mogok, a historic ruby and sapphire-producing region in Myanmar","credit":"JimmyWinMGK · Wikimedia Commons","source":"https://commons.wikimedia.org/wiki/File:Mogok_Township.jpg"},
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Mogok_Township.jpg","alt":"Mogok, a historic ruby and sapphire-producing region in Myanmar","credit":"JimmyWinMGK · CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Mogok_Township.jpg"},
     gemstones: ["Ruby", "Sapphire", "Spinel", "Jadeite"],
     detail: {
       overview:
@@ -223,7 +223,7 @@ export const origins: Origin[] = [
     slug: "zambia",
     name: "Zambia",
     summary: "One of the world's best-known emerald sources, particularly the Kafubu and Kagem mining district.",
-    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Beryl-Quartz-279095.jpg", alt: "Emerald crystals in quartz matrix from the Kagem Emerald Mine, Zambia", credit: "Wikimedia Commons · see source file for licence", source: "https://commons.wikimedia.org/wiki/File:Beryl-Quartz-279095.jpg" },
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Beryl-Quartz-279095.jpg", alt: "Emerald crystals in quartz matrix from the Kagem Emerald Mine, Zambia", credit: "Rob Lavinsky / iRocks.com · CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Beryl-Quartz-279095.jpg" },
     gemstones: ["Emerald", "Amethyst", "Aquamarine", "Tourmaline"],
     detail: {
       overview: "Zambia is a major modern source of emerald, with the Kafubu Emerald District and Kagem Emerald Mine among its best-known producing areas. Zambian emeralds are an important part of the international market.",
