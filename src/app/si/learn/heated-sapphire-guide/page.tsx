@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       lastReviewed="2026-11-02"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/0/04/Inclusions_inside_heat-treated_sapphire.jpg", alt: "Microscope view of a yellow sapphire specimen showing internal features associated with heat treatment", credit: "Unbreaking · CC0 1.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Inclusions_inside_heat-treated_sapphire.jpg" }}
       related={[
         { label: "Heat treatment පිළිබඳ සම්පූර්ණ මාර්ගෝපදේශය", href: "/si/learn/heat-treatment-guide" },
         { label: "Heated සහ unheated නිල්මැණික්", href: "/si/learn/heated-vs-unheated-blue-sapphire" },
