@@ -21,6 +21,13 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 8"
       title="මැණික්වල කැරට් බර තේරුම් ගැනීම"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Modern_collapsible_balance_scale_for_jewellers_4.jpg",
+        alt: "A traditional jeweller's balance scale with brass weights in a wooden case",
+        credit: "Modern collapsible balance scale for jewellers — W.carter · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Modern_collapsible_balance_scale_for_jewellers_4.jpg",
+      }}
+
       crumbHref="/si/learn"
       crumbLabel="සිංහල මැණික් දැනුම"
       lastReviewed="2026-11-02"
