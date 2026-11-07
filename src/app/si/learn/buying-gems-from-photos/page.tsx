@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/online-vs-local-gem-buying"
       crumbLabel="Online vs දේශීය"
       lastReviewed="2026-10-25"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg", alt: "A pink sapphire being examined under a gemmological microscope", credit: "Sara Abey · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg" }}
       related={[
         { label: "Online vs දේශීය", href: "/si/learn/online-vs-local-gem-buying" },
         { label: "වංචා අවදානම්", href: "/si/learn/avoid-gemstone-scams" },
