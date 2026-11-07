@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GemologyX — The science, origin and story of gemstones",
+  title: "The science, origin and story of gemstones",
   description: "A considered guide to gemstones, gemological science, identification, treatments and Sri Lanka’s gem heritage. Explore clear, source-led English and Sinhala learning.",
   alternates: { canonical: "/" },
   openGraph: {
