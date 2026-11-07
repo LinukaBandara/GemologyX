@@ -66,7 +66,9 @@ test("homepage images that finished loading are not broken", async ({ page }) =>
   await page.goto("/", { waitUntil: "networkidle" });
   const brokenImages = await page.locator("img").evaluateAll((images) =>
     images
-      .filter((image) => image instanceof HTMLImageElement && image.complete && image.naturalWidth === 0)
+      .filter((image): image is HTMLImageElement =>
+        image instanceof HTMLImageElement && image.complete && image.naturalWidth === 0,
+      )
       .map((image) => image.currentSrc || image.src),
   );
   expect(brokenImages, `Broken homepage images: ${brokenImages.join(", ")}`).toEqual([]);
