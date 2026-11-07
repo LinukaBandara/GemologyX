@@ -25,7 +25,7 @@ export default function OriginsPage() {
         </p>
       </header>
 
-      <section aria-label="Famous gemstone origins" className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <section aria-label="Famous gemstone origins" className="gx-origins-grid mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {featuredOrigins.map((origin, index) => (
           <Link key={origin.slug} href={`/origins/${origin.slug}`} className="gx-card group overflow-hidden">
             {origin.image ? (
