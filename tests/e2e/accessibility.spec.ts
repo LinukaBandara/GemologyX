@@ -99,3 +99,20 @@ test("Sinhala guide content is identified with the correct language", async ({ p
   await expect(sinhalaContent.locator("h1")).toBeVisible();
   await expect(sinhalaContent.locator("h1")).not.toBeEmpty();
 });
+
+test("desktop navigation exposes named links and the current page", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/gemstones", { waitUntil: "domcontentloaded" });
+
+  const navigation = page.getByRole("navigation", { name: "Main navigation" });
+  await expect(navigation).toBeVisible();
+  const links = navigation.getByRole("link");
+  const count = await links.count();
+  expect(count).toBeGreaterThan(0);
+
+  for (let index = 0; index < count; index += 1) {
+    await expect(links.nth(index)).toHaveAccessibleName();
+  }
+
+  await expect(navigation.getByRole("link", { name: "Gemstones" })).toHaveAttribute("aria-current", "page");
+});
