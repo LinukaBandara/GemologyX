@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
@@ -21,7 +22,7 @@ export default async function TreatmentArticle({ params }: PageProps<"/learn/gem
   const index = treatmentGuides.findIndex((item) => item.slug === slug);
   if (index < 0) notFound();
   const guide = treatmentGuides[index];
-  return <main className="container-page py-10 md:py-16">
+  return <main className="container-page py-10 md:py-16"><BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Learn", url: "https://gemologyx.com/learn" }, { name: "Treatments", url: "https://gemologyx.com/learn/gemstone-treatments" }, { name: guide.title, url: `https://gemologyx.com/learn/gemstone-treatments/${guide.slug}` }]} />
     <nav aria-label="Breadcrumb" className="text-xs text-muted"><Link href="/learn" className="hover:text-accent">Learn</Link><span className="mx-2">/</span><Link href="/learn/gemstone-treatments" className="hover:text-accent">Treatments</Link><span className="mx-2">/</span><span>{guide.title}</span></nav>
     <header className="mt-8 max-w-3xl"><Link href="/learn/gemstone-treatments" className="inline-flex min-h-11 items-center gap-2 text-sm text-muted hover:text-accent"><ArrowLeft size={15}/> All treatment guides</Link><p className="mt-5 luxury-eyebrow"><span/> {guide.eyebrow}</p><h1 className="mt-3 font-serif text-4xl leading-tight sm:text-5xl">{guide.title}</h1><p className="mt-4 text-base leading-8 text-muted">{guide.summary}</p></header>
     <TreatmentExplorer guides={treatmentGuides.slice(index).concat(treatmentGuides.slice(0,index))}/>
