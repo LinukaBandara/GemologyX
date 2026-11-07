@@ -13,7 +13,14 @@ const sans = Manrope({
   display: "swap",
 });
 
-const sinhala = Noto_Sans_Sinhala({\n  subsets: ["sinhala"],\n  weight: ["400", "500", "600", "700"],\n  variable: "--font-sinhala",\n  display: "swap",\n});\n\nconst serif = Cormorant_Garamond({
+const sinhala = Noto_Sans_Sinhala({
+  subsets: ["sinhala"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sinhala",
+  display: "swap",
+});
+
+const serif = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
   style: ["normal", "italic"],
