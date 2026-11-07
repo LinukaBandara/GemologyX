@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/blue-sapphire-colour-quality"
       crumbLabel="නිල්මැණික් වර්ණය"
       lastReviewed="2026-10-25"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Tourmaline_sample.jpg",
+        alt: "Tourmaline crystal specimen showing natural gemstone colour",
+        credit: "GOKLuLe · CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Tourmaline_sample.jpg",
+      }}
       related={[
         { label: "නිල්මැණික් වර්ණය", href: "/si/learn/blue-sapphire-colour-quality" },
         { label: "නිල්මැණිකක වටිනාකම", href: "/si/learn/blue-sapphire-value-factors" },
