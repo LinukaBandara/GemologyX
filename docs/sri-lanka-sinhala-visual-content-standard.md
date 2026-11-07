@@ -113,3 +113,15 @@ Image-use caveats:
 | `/si/learn/rough-gem-questions` | Hand-sorting washed gem gravel near Pelmadulla; regional context | Ilyes Makria / Joalys · CC BY-SA 4.0 |
 
 The microscope photograph is contextual editorial imagery, not a substitute for in-person inspection or an independent gem laboratory report. The Pelmadulla photograph shows gem gravel sorting and is not presented as a photograph of any particular rough stone.
+
+## November 2026 — gemstone profile image batch 2
+
+The following additional Sinhala gemstone profiles now use the shared `ArticleLayout.heroImage` field with visible attribution and a Commons source link.
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/diamond-basics` | Natural diamond crystal specimen with scale bar | Tõnu Pani · CC BY 4.0 |
+| `/si/learn/moonstone-intro` | Moonstone feldspar specimen from Meetiyagoda, Sri Lanka | Géry PARENT · Public domain |
+| `/si/learn/lapis-lazuli-intro` | Raw lapis lazuli with pyrite from Afghanistan | Hannes Grobe · CC BY-SA 2.5 |
+
+The diamond image depicts a natural crystal specimen and is not a cut-grade or quality example. The Meetiyagoda feldspar image is identified by its Commons source as moonstone from Sri Lanka. The lapis lazuli image is from Afghanistan; it is not presented as Sri Lankan material.
