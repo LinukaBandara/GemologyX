@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -22,7 +23,7 @@ const methods = [
 ];
 
 export default function MiningMethodsPage() {
-  return <article className="container-page gx-regional-subpage max-w-4xl py-12 md:py-16">
+  return <article className="container-page gx-regional-subpage max-w-4xl py-12 md:py-16"><BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com" }, { name: "Sri Lanka Mining", url: "https://gemologyx.com/sri-lanka-mining" }, { name: "Methods", url: "https://gemologyx.com/sri-lanka-mining/methods" }]} />
     <nav className="luxury-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/sri-lanka-mining">Sri Lanka Mining</Link><span>/</span><span>Methods</span></nav>
     <header className="article-hero">
       <div className="luxury-eyebrow"><span /> MINING & GEOLOGY</div>
