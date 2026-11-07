@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/lapis-lazuli-intro"
       crumbLabel="Lapis lazuli"
       lastReviewed="2026-10-24"
+heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/9/98/Turquoise-47570.jpg", alt: "Sky-blue turquoise microcrystals occurring across a mineral matrix from Lynch Station, Virginia, USA", credit: "Turquoise specimen — Rob Lavinsky / iRocks.com, CC BY-SA 3.0 (Wikimedia Commons).", sourceUrl: "https://commons.wikimedia.org/wiki/File:Turquoise-47570.jpg" }}
       related={[
         { label: "Lapis lazuli", href: "/si/learn/lapis-lazuli-intro" },
         { label: "ප්‍රතිකාර හෙළි කිරීම", href: "/si/learn/gemstone-treatment-disclosure" },
