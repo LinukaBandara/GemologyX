@@ -58,9 +58,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable} ${sinhala.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-background focus:px-4 focus:py-3 focus:text-foreground focus:shadow-lg">Skip to main content</a>
         <SiteLoader />
         <SiteHeader />
-        <main className="min-w-0 flex-1">{children}</main>
+        <main id="main-content" tabIndex={-1} className="min-w-0 flex-1">{children}</main>
         <SiteFooter />
       </body>
     </html>
