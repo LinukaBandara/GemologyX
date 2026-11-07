@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title"><title id="title">GemologyX gemstone mark</title><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9bd83"/><stop offset=".48" stop-color="#4c7b8b"/><stop offset="1" stop-color="#142b46"/></linearGradient></defs><path d="M80 7 145 54 121 135 80 153 39 135 15 54Z" fill="#10243b"/><path d="M80 20 132 58 113 125 80 139 47 125 28 58Z" fill="url(#g)" stroke="#ead6ad" stroke-width="3"/><path d="m80 20 0 119M28 58h104M47 125l33-105 33 105M28 58l52 81 52-81" fill="none" stroke="#f7f1e5" stroke-opacity=".8" stroke-width="2.5"/><path d="M80 20 47 125h66Z" fill="#fff" fill-opacity=".12"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">GemologyX faceted ruby mark</title>
+  <desc id="desc">A precise faceted gemstone in ruby and champagne tones.</desc>
+  <path d="M27 8h42l20 24-13 43-28 13-28-13L7 32 27 8Z" fill="#641F35"/>
+  <path d="M27 8 7 32h82L69 8H27Z" fill="#8A304D"/>
+  <path d="m7 32 13 43 28 13V32H7Z" fill="#52182C"/>
+  <path d="m89 32-13 43-28 13V32h41Z" fill="#76263F"/>
+  <path d="M27 8h42l20 24H7L27 8Z" fill="none" stroke="#D9B98C" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="m7 32 13 43 28 13 28-13 13-43M48 32v56M27 8l21 24L69 8M7 32l41 56 41-56" fill="none" stroke="#E8D5B9" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M27 8 48 32 7 32M69 8 48 32h41" fill="none" stroke="#F1DFCA" stroke-width="1.4" opacity=".9"/>
+</svg>

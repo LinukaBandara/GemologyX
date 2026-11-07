@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="Citrine — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Quartz-131669.jpg",
+        alt: "Golden citrine quartz crystal specimen",
+        credit: "Citrine quartz specimen — Rob Lavinsky / iRocks.com, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Quartz-131669.jpg",
+      }}
       crumbHref="/si/learn/amethyst-intro"
       crumbLabel="Amethyst හැඳින්වීම"
       lastReviewed="2026-10-21"

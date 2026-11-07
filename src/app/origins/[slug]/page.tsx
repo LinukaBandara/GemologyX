@@ -10,7 +10,7 @@ export async function generateMetadata({params}:{params:Params}):Promise<Metadat
 
 export default async function OriginPage({params}:{params:Params}){
  const {slug}=await params;const origin=getOriginBySlug(slug);if(!origin)notFound();const d=origin.detail;
- return <article className="origin-page container-page max-w-4xl py-12 md:py-16">
+ return <article className={`origin-page container-page max-w-4xl py-12 md:py-16 ${slug === "sri-lanka" ? "gx-regional-origin" : ""}`}>
   <nav className="luxury-breadcrumb"><Link href="/origins">Origins</Link><span>/</span><span>{origin.name}</span></nav>
   <header className="profile-hero origin-profile">
    <div className="origin-hero-mark"><MapPin size={25}/><span>ORIGIN</span></div>

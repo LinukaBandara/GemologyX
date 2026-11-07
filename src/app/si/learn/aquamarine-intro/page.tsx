@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="Aquamarine (නීලවර්ණ) — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/4/40/Beryl_aquamarine.jpg",
+        alt: "Blue aquamarine beryl crystal embedded in pale quartz matrix",
+        credit: "Aquamarine beryl crystal in quartz — Eurico Zimbres, CC BY-SA 2.5 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Beryl_aquamarine.jpg",
+      }}
       crumbHref="/si/learn/emerald-intro"
       crumbLabel="Emerald හැඳින්වීම"
       lastReviewed="2026-10-21"

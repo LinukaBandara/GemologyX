@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { Check, ClipboardCheck, Eye, MapPin, NotebookPen, RotateCcw } from "lucide-react";
 
 const stages = [
@@ -69,7 +70,7 @@ export function SriLankaBuyingVisit() {
     <section aria-labelledby="buying-visit-title" className="overflow-hidden rounded-3xl border border-border bg-white shadow-sm">
       <div className="grid lg:grid-cols-[0.78fr_1.22fr]">
         <div className="relative flex min-h-64 items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_50%_40%,rgba(86,160,174,0.20),transparent_56%),linear-gradient(145deg,#edf6f5,#f6f2e9)] p-7">
-          <svg viewBox="0 0 360 270" role="img" aria-labelledby="visit-svg-title visit-svg-desc" className="h-auto w-full max-w-sm">
+          <figure className="gx-sri-photo-feature gx-sri-photo-feature-compact"><Image src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg" alt="A pink sapphire examined under a gemmological microscope" width={2560} height={1920} sizes="(max-width: 1024px) 100vw, 40vw" /><figcaption><span>මැණික් ගලක් පරීක්ෂා කිරීම</span><a href="https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg" target="_blank" rel="noreferrer">Sara Abey · CC BY-SA 4.0 · Wikimedia Commons</a></figcaption></figure>\n          <svg viewBox="0 0 360 270" role="img" aria-labelledby="visit-svg-title visit-svg-desc" className="h-auto w-full max-w-sm">
             <title id="visit-svg-title">මැණික් මිලදී ගැනීමේ සූදානම් ලැයිස්තුව</title>
             <desc id="visit-svg-desc">ගලක්, ලේඛන පත්‍රයක් සහ පරීක්ෂා කළ යුතු කරුණු පෙන්වන මුල් රූපමය නිදර්ශනයකි.</desc>
             <defs>

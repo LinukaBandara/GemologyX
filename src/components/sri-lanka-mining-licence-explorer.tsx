@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { ArrowRight, FileSearch, Landmark, MapPinned, ShieldCheck } from "lucide-react";
 
 const landTypes = [
@@ -66,7 +67,7 @@ export function SriLankaMiningLicenceExplorer() {
     <section className="overflow-hidden rounded-3xl border border-border bg-white shadow-sm" aria-labelledby="licence-explorer-title">
       <div className="grid lg:grid-cols-[0.8fr_1.2fr]">
         <div className="relative flex min-h-64 items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_45%_40%,rgba(74,151,157,0.23),transparent_58%),linear-gradient(145deg,#edf7f3,#f4f0e4)] p-6 md:p-8">
-          <svg viewBox="0 0 420 300" role="img" aria-labelledby="licence-svg-title licence-svg-desc" className="h-auto w-full max-w-md">
+          <figure className="gx-sri-photo-feature gx-sri-photo-feature-compact"><Image src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Gem_pit_shaft_seen_from_above%2C_Pelmadulla%2C_Sri_Lanka_%282026%29.jpg" alt="Gem pit shaft seen from above near Pelmadulla, Sri Lanka" width={1200} height={800} sizes="(max-width: 1024px) 100vw, 40vw" /><figcaption><span>පැල්මඩුල්ලේ මැණික් පතල් පරිසරය</span><a href="https://commons.wikimedia.org/wiki/File:Gem_pit_shaft_seen_from_above,_Pelmadulla,_Sri_Lanka_(2026).jpg" target="_blank" rel="noreferrer">Ilyes Makria / Joalys · CC BY-SA 4.0 · Commons</a></figcaption></figure>\n          <svg viewBox="0 0 420 300" role="img" aria-labelledby="licence-svg-title licence-svg-desc" className="h-auto w-full max-w-md">
             <title id="licence-svg-title">පතල් බලපත්‍රයට පෙර විමසිය යුතු දේ</title>
             <desc id="licence-svg-desc">ඉඩම් සටහනක්, ලේඛන ගොනුවක් සහ සලකුණු සහිත පරීක්ෂණ ලැයිස්තුවක් පෙන්වන සංකල්පීය SVG නිදර්ශනයකි; මෙය නිල බලපත්‍ර සිතියමක් නොවේ.</desc>
             <defs>
