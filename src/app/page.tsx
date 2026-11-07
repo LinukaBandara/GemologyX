@@ -2,317 +2,130 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowRight,
-  ArrowUpRight,
-  BookOpen,
-  Compass,
-  Gem,
-  Globe2,
-  Microscope,
-  Ruler,
-  ShieldCheck,
-  Sparkles,
+  ArrowRight, ArrowUpRight, BookOpen, Compass, Gem, Globe2,
+  Microscope, Ruler, ShieldCheck, Sparkles,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GemologyX — Understand the Science Behind Every Gem",
-  description:
-    "Explore gemstone science, identification, treatments, origins and Sri Lanka’s gem heritage through clear, source-led guides, practical tools and a growing gemstone reference library.",
+  title: "GemologyX — The science, origin and story of gemstones",
+  description: "A considered guide to gemstones, gemological science, identification, treatments and Sri Lanka’s gem heritage. Explore clear, source-led English and Sinhala learning.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "GemologyX — Understand the Science Behind Every Gem",
-    description:
-      "A thoughtful guide to gemstones, gemological science and Sri Lanka’s gem heritage.",
+    title: "GemologyX — The science, origin and story of gemstones",
+    description: "Explore gemstone science, identification, treatments and Sri Lanka’s gem heritage.",
     type: "website",
   },
 };
 
-const gemstoneCards = [
-  {
-    name: "Sapphire",
-    note: "Corundum · Mohs 9",
-    href: "/gemstones/sapphire",
-    image: "/images/suranga/blue-gem.svg",
-    alt: "Original generated blue gemstone artwork from Suranga Gems",
-    caption: "Original generated artwork · Suranga Gems",
-    className: "gx-home-gem-sapphire",
-  },
-  {
-    name: "Ruby",
-    note: "Red corundum · Mohs 9",
-    href: "/gemstones/ruby",
-    image: "/images/suranga/pink-gem.svg",
-    alt: "Original generated pink gemstone artwork from Suranga Gems",
-    caption: "Original generated artwork · Suranga Gems",
-    className: "gx-home-gem-ruby",
-  },
-  {
-    name: "Emerald",
-    note: "Beryl · Mohs 7.5–8",
-    href: "/gemstones/emerald",
-    image: "/images/suranga/green-gem.svg",
-    alt: "Original generated green gemstone artwork from Suranga Gems",
-    caption: "Original generated artwork · Suranga Gems",
-    className: "gx-home-gem-emerald",
-  },
-  {
-    name: "Golden Sapphire",
-    note: "Yellow corundum · Mohs 9",
-    href: "/gemstones/sapphire",
-    image: "/images/suranga/gold-gem.svg",
-    alt: "Original generated golden-yellow sapphire artwork from Suranga Gems",
-    caption: "Original generated artwork · Suranga Gems",
-    className: "gx-home-gem-amethyst",
-  },
+const gemstones = [
+  { name: "Sapphire", detail: "Corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/blue-gem.svg", alt: "Illustrative blue sapphire artwork" },
+  { name: "Ruby", detail: "Red corundum · Mohs 9", href: "/gemstones/ruby", image: "/images/suranga/pink-gem.svg", alt: "Illustrative ruby artwork" },
+  { name: "Emerald", detail: "Beryl · Mohs 7.5–8", href: "/gemstones/emerald", image: "/images/suranga/green-gem.svg", alt: "Illustrative emerald artwork" },
+  { name: "Golden sapphire", detail: "Yellow corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/gold-gem.svg", alt: "Illustrative golden sapphire artwork" },
 ];
 
-const learningCards = [
-  {
-    number: "01",
-    eyebrow: "IDENTIFICATION",
-    title: "Natural, synthetic or imitation?",
-    description:
-      "Understand the differences between geological origin, laboratory growth and look-alike materials—and why appearance alone is not enough.",
-    href: "/learn/natural-vs-synthetic-gemstones",
-    image: "/images/suranga/hero-gems.svg",
-    alt: "Original generated gemstone artwork from Suranga Gems",
-    credit: "Original generated artwork · Suranga Gems",
-  },
-  {
-    number: "02",
-    eyebrow: "TREATMENTS",
-    title: "What has been done to the stone?",
-    description:
-      "Explore common gemstone enhancements, what disclosure means and how treatment can affect care, durability and value.",
-    href: "/learn/gemstone-treatments",
-    image: "/images/suranga/pink-gem.svg",
-    alt: "Original generated pink gemstone artwork from Suranga Gems",
-    credit: "Original generated artwork · Suranga Gems",
-  },
-  {
-    number: "03",
-    eyebrow: "BUYING WITH CONFIDENCE",
-    title: "Learn to read a gem report",
-    description:
-      "Find out what a laboratory report can establish, what it cannot, and which details deserve a closer look before a purchase.",
-    href: "/learn/how-to-read-a-gemstone-report",
-    image: "/images/suranga/green-gem.svg",
-    alt: "Original generated green gemstone artwork from Suranga Gems",
-    credit: "Original generated artwork · Suranga Gems",
-  },
+const articles = [
+  { no: "01", topic: "IDENTIFICATION", title: "Natural, synthetic or imitation?", text: "Understand the differences between geological origin, laboratory growth and look-alike materials—and why appearance alone is not enough.", href: "/learn/natural-vs-synthetic-gemstones", image: "/images/suranga/hero-gems.svg", alt: "Illustrative gemstone artwork" },
+  { no: "02", topic: "TREATMENTS", title: "What has been done to the stone?", text: "Explore common gemstone enhancements, disclosure and how treatment can affect care, durability and value.", href: "/learn/gemstone-treatments", image: "/images/suranga/pink-gem.svg", alt: "Illustrative pink gemstone artwork" },
+  { no: "03", topic: "BUYING WITH CONFIDENCE", title: "Learn to read a gem report", text: "Find out what a laboratory report can establish, what it cannot, and which details deserve a closer look.", href: "/learn/how-to-read-a-gemstone-report", image: "/images/suranga/green-gem.svg", alt: "Illustrative green gemstone artwork" },
 ];
 
 const pathways = [
-  {
-    icon: Microscope,
-    title: "Identify & examine",
-    text: "Learn about inclusions, refractive index, hardness and the instruments used in gem testing.",
-    href: "/learn",
-    link: "Explore gemology",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Buy more carefully",
-    text: "Understand reports, treatments, seller questions and the limits of visual inspection.",
-    href: "/learn/buying-gemstones",
-    link: "Explore buying guides",
-  },
-  {
-    icon: Compass,
-    title: "Understand origin",
-    text: "Explore geological settings and why geographic origin requires specialist evidence.",
-    href: "/origins",
-    link: "Explore gem origins",
-  },
-  {
-    icon: Ruler,
-    title: "Use practical tools",
-    text: "Work with measurement, carat conversion, gemstone size and hardness references.",
-    href: "/tools",
-    link: "Open the tool desk",
-  },
+  { icon: Microscope, title: "Identify & examine", text: "Learn about inclusions, refractive index, hardness and the instruments used in gem testing.", href: "/learn", link: "Explore gemology" },
+  { icon: ShieldCheck, title: "Buy with confidence", text: "Understand reports, treatments, seller questions and the limits of visual inspection.", href: "/learn/buying-gemstones", link: "Explore buying guides" },
+  { icon: Compass, title: "Understand origin", text: "Explore geological settings and why geographic origin requires specialist evidence.", href: "/origins", link: "Explore gem origins" },
+  { icon: Ruler, title: "Work with practical tools", text: "Use measurement, carat conversion, gemstone size and hardness references.", href: "/tools", link: "Open the tool desk" },
 ];
 
 export default function HomePage() {
   return (
-    <main className="gx-home-v2">
-      <section className="gx-v2-hero">
-        <div className="gx-v2-hero-glow" aria-hidden="true" />
-        <div className="container-page gx-v2-hero-grid">
-          <div className="gx-v2-hero-copy">
-            <div className="gx-v2-eyebrow"><span /> THE SCIENCE · THE ORIGIN · THE GEM</div>
-            <h1>Look closer.<br /><em>Understand</em> more.</h1>
-            <p className="gx-v2-hero-lede">
-              A deeper guide to the world of gemstones—from mineral science and identification to treatments, origins and Sri Lanka’s remarkable gem heritage.
-            </p>
-            <div className="gx-v2-hero-actions">
-              <Link href="/gemstones" className="gx-v2-button gx-v2-button-gold">
-                Explore gemstones <ArrowUpRight size={16} />
-              </Link>
-              <Link href="/learn" className="gx-v2-text-link">
-                Start learning <ArrowRight size={15} />
-              </Link>
-            </div>
-            <form action="/search" className="gx-v2-search" role="search">
-              <Sparkles size={17} aria-hidden="true" />
-              <label className="sr-only" htmlFor="gx-home-search">Search GemologyX</label>
-              <input id="gx-home-search" name="q" placeholder="Search a gemstone, treatment or topic…" />
-              <button type="submit" aria-label="Search"><ArrowUpRight size={17} /></button>
-            </form>
-            <div className="gx-v2-hero-footnote">
-              <span>01 / REFERENCE</span>
-              <span>Clear explanations. Source-led learning.</span>
-            </div>
+    <main className="gx-pearl-home">
+      <section className="gx-pearl-hero">
+        <div className="gx-pearl-hero-inner container-page">
+          <div className="gx-pearl-kicker"><span /> A REFERENCE FOR THE CURIOUS</div>
+          <h1>The world of gems,<br /><em>made clearer.</em></h1>
+          <p className="gx-pearl-intro">Explore the science behind gemstones, the stories of their origins and the knowledge that helps you look closer.</p>
+          <form action="/search" role="search" className="gx-pearl-search">
+            <Sparkles size={17} aria-hidden="true" />
+            <label className="sr-only" htmlFor="gx-pearl-search-input">Search GemologyX</label>
+            <input id="gx-pearl-search-input" name="q" placeholder="Search a gemstone, treatment or topic…" />
+            <button type="submit" aria-label="Search GemologyX"><ArrowUpRight size={18} /></button>
+          </form>
+          <div className="gx-pearl-hero-links">
+            <Link href="/gemstones" className="gx-pearl-primary">Explore gemstones <ArrowUpRight size={16} /></Link>
+            <Link href="/learn" className="gx-pearl-secondary">Start learning <ArrowRight size={15} /></Link>
           </div>
-
+          <div className="gx-pearl-index"><span>GEMOLOGY · 01</span><span>Clear explanations. Source-led learning.</span></div>
         </div>
-        <div className="gx-v2-hero-bottom">
-          <div className="container-page gx-v2-proof-row">
-            <span><ShieldCheck size={16} /> Evidence before assumptions</span>
-            <span><Microscope size={16} /> Gemological fundamentals</span>
-            <span><Globe2 size={16} /> Global knowledge, Sri Lankan perspective</span>
-            <span><BookOpen size={16} /> English & Sinhala learning</span>
+        <div className="gx-pearl-proof">
+          <div className="container-page">
+            <span><ShieldCheck /> Evidence before assumptions</span>
+            <span><Microscope /> Gemological fundamentals</span>
+            <span><Globe2 /> Global knowledge, Sri Lankan perspective</span>
+            <span><BookOpen /> English & Sinhala learning</span>
           </div>
         </div>
       </section>
 
-      <section className="gx-v2-gem-section">
+      <section className="gx-pearl-section gx-pearl-library">
         <div className="container-page">
-          <div className="gx-v2-section-heading">
-            <div>
-              <div className="gx-v2-eyebrow gx-v2-eyebrow-dark"><span /> THE GEMSTONE LIBRARY</div>
-              <h2>Every stone has<br /><em>a story to tell.</em></h2>
-            </div>
-            <div className="gx-v2-heading-aside">
-              <p>Explore gemstone profiles through their mineral identity, colour, properties, treatments, origins and care.</p>
-              <Link href="/gemstones" className="gx-v2-inline-link">Browse the full directory <ArrowUpRight size={15} /></Link>
-            </div>
+          <div className="gx-pearl-heading">
+            <div><div className="gx-pearl-kicker"><span /> THE GEMSTONE LIBRARY</div><h2>Begin with<br /><em>the stone itself.</em></h2></div>
+            <div className="gx-pearl-heading-aside"><p>Explore profiles through mineral identity, colour, physical properties, treatments, origins and care.</p><Link href="/gemstones">Browse the gemstone directory <ArrowUpRight size={15} /></Link></div>
           </div>
-          <div className="gx-v2-gem-grid">
-            {gemstoneCards.map((gem, index) => (
-              <Link href={gem.href} className="gx-v2-gem-card" key={gem.name}>
-                <div className="gx-v2-gem-image">
-                  <Image src={gem.image} alt={gem.alt} fill sizes="(max-width: 640px) 48vw, (max-width: 1000px) 48vw, 25vw" />
-                  <span className="gx-v2-gem-number">0{index + 1}</span>
-                  <span className="gx-v2-gem-arrow"><ArrowUpRight size={17} /></span>
-                </div>
-                <div className="gx-v2-gem-meta"><span>{gem.note}</span><small>{gem.caption}</small></div>
-                <h3>{gem.name}</h3>
+          <div className="gx-pearl-gem-grid">
+            {gemstones.map((gem, i) => (
+              <Link href={gem.href} key={gem.name} className="gx-pearl-gem-card">
+                <div className="gx-pearl-gem-art"><Image src={gem.image} alt={gem.alt} fill sizes="(max-width: 640px) 46vw, 25vw" /><span>0{i + 1}</span><i><ArrowUpRight size={17} /></i></div>
+                <div className="gx-pearl-gem-detail">{gem.detail}</div><h3>{gem.name}</h3>
               </Link>
             ))}
           </div>
-          <p className="gx-v2-image-disclosure">Gemstone visuals are original generated artwork from Suranga Gems. They are illustrative and do not establish a stone’s identity, treatment, quality or geographic origin.</p>
+          <p className="gx-pearl-disclosure">Gemstone visuals are illustrative generated artwork. They do not establish a stone’s identity, treatment, quality or geographic origin.</p>
         </div>
       </section>
 
-      <section className="gx-v2-editorial-section">
+      <section className="gx-pearl-section gx-pearl-journal">
         <div className="container-page">
-          <div className="gx-v2-section-heading gx-v2-section-heading-light">
-            <div>
-              <div className="gx-v2-eyebrow"><span /> THE GEMOLOGY JOURNAL</div>
-              <h2>Knowledge that goes<br /><em>beneath the surface.</em></h2>
-            </div>
-            <div className="gx-v2-heading-aside">
-              <p>Start with the questions that matter: what is the material, what has changed it, and what can reliable evidence tell you?</p>
-              <Link href="/learn" className="gx-v2-inline-link gx-v2-inline-link-light">Explore all learning guides <ArrowUpRight size={15} /></Link>
-            </div>
+          <div className="gx-pearl-heading">
+            <div><div className="gx-pearl-kicker"><span /> THE GEMOLOGY JOURNAL</div><h2>Look beyond<br /><em>what you see.</em></h2></div>
+            <div className="gx-pearl-heading-aside"><p>Build a stronger understanding of gemstones through carefully structured guides and practical explanations.</p><Link href="/learn">Explore all learning guides <ArrowUpRight size={15} /></Link></div>
           </div>
-          <div className="gx-v2-editorial-grid">
-            {learningCards.map((card) => (
-              <Link href={card.href} key={card.number} className="gx-v2-editorial-card">
-                <div className="gx-v2-editorial-image">
-                  <Image src={card.image} alt={card.alt} fill sizes="(max-width: 700px) 100vw, 33vw" />
-                  <span>{card.number}</span>
-                </div>
-                <div className="gx-v2-editorial-content">
-                  <div className="gx-v2-card-eyebrow">{card.eyebrow}</div>
-                  <h3>{card.title}</h3>
-                  <p>{card.description}</p>
-                  <small className="gx-v2-photo-credit">{card.credit}</small>
-                  <span className="gx-v2-card-read">Read the guide <ArrowUpRight size={15} /></span>
-                </div>
+          <div className="gx-pearl-article-grid">
+            {articles.map(article => (
+              <Link href={article.href} key={article.no} className="gx-pearl-article">
+                <div className="gx-pearl-article-art"><Image src={article.image} alt={article.alt} fill sizes="(max-width: 700px) 100vw, 33vw" /><span>{article.no}</span></div>
+                <div className="gx-pearl-article-body"><div className="gx-pearl-topic">{article.topic}</div><h3>{article.title}</h3><p>{article.text}</p><span className="gx-pearl-read">Read the guide <ArrowUpRight size={15} /></span></div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="gx-v2-sri-section">
-        <div className="container-page gx-v2-sri-grid">
-          <div className="gx-v2-sri-art" aria-hidden="true">
-            <div className="gx-v2-sri-orbit gx-v2-sri-orbit-one" />
-            <div className="gx-v2-sri-orbit gx-v2-sri-orbit-two" />
-            <div className="gx-v2-sri-gem"><Gem size={76} strokeWidth={0.8} /></div>
-            <span className="gx-v2-sri-coord">06° 41′ N<br />80° 23′ E</span>
-            <span className="gx-v2-sri-art-caption">THE ISLAND OF GEMS</span>
-          </div>
-          <div className="gx-v2-sri-copy">
-            <div className="gx-v2-eyebrow gx-v2-eyebrow-dark"><span /> A SRI LANKAN GEM REFERENCE</div>
-            <h2>Rooted in the island.<br /><em>Connected to the world.</em></h2>
-            <p>Explore Sri Lanka’s gem regions, mining traditions, geological context, local trade language and export pathways—while learning to separate documented facts from trade claims.</p>
-            <div className="gx-v2-sri-tags">
-              <Link href="/origins/sri-lanka">Sri Lanka origins <ArrowUpRight size={13} /></Link>
-              <Link href="/sri-lanka">Gem heritage <ArrowUpRight size={13} /></Link>
-              <Link href="/sri-lanka-mining">Mining & environment <ArrowUpRight size={13} /></Link>
-              <Link href="/sri-lanka-trade-export">Trade & export <ArrowUpRight size={13} /></Link>
-            </div>
-            <div className="gx-v2-sri-bottom">
-              <Link href="/sri-lanka" className="gx-v2-button gx-v2-button-dark">Explore the Sri Lanka hub <ArrowUpRight size={16} /></Link>
-              <Link href="/si/learn" className="gx-v2-sinhala-link">සිංහල දැනුම් මධ්‍යස්ථානය <ArrowUpRight size={14} /></Link>
-            </div>
+      <section className="gx-pearl-sri">
+        <div className="container-page gx-pearl-sri-inner">
+          <div className="gx-pearl-sri-mark"><div className="gx-pearl-sri-ring"><Gem size={58} strokeWidth={0.85} /></div><span>06° 41′ N&nbsp; / &nbsp;80° 23′ E</span><small>THE ISLAND OF GEMS</small></div>
+          <div className="gx-pearl-sri-copy"><div className="gx-pearl-kicker"><span /> A SRI LANKAN GEM REFERENCE</div><h2>Rooted in the island.<br /><em>Connected to the world.</em></h2><p>Explore Sri Lanka’s gem regions, mining traditions, geological context, local trade language and export pathways—with a clear distinction between documented facts and trade claims.</p>
+            <div className="gx-pearl-tags"><Link href="/origins/sri-lanka">Sri Lanka origins <ArrowUpRight /></Link><Link href="/sri-lanka">Gem heritage <ArrowUpRight /></Link><Link href="/sri-lanka-mining">Mining & environment <ArrowUpRight /></Link><Link href="/sri-lanka-trade-export">Trade & export <ArrowUpRight /></Link></div>
+            <div className="gx-pearl-sri-actions"><Link href="/sri-lanka" className="gx-pearl-primary">Explore the Sri Lanka hub <ArrowUpRight size={16} /></Link><Link href="/si/learn" className="gx-pearl-secondary">සිංහල දැනුම් මධ්‍යස්ථානය <ArrowUpRight size={15} /></Link></div>
           </div>
         </div>
       </section>
 
-      <section className="gx-v2-pathways-section">
+      <section className="gx-pearl-section gx-pearl-paths">
         <div className="container-page">
-          <div className="gx-v2-pathway-heading">
-            <div>
-              <div className="gx-v2-eyebrow gx-v2-eyebrow-dark"><span /> FIND YOUR NEXT STEP</div>
-              <h2>Explore with <em>purpose.</em></h2>
-            </div>
-            <p>Whether you are learning the basics or researching a specific stone, follow a path built around what you need to understand.</p>
-          </div>
-          <div className="gx-v2-pathway-grid">
-            {pathways.map(({ icon: Icon, title, text, href, link }, index) => (
-              <Link href={href} key={title} className="gx-v2-pathway-card">
-                <div className="gx-v2-pathway-top"><span>0{index + 1}</span><Icon size={21} /></div>
-                <h3>{title}</h3>
-                <p>{text}</p>
-                <span className="gx-v2-pathway-link">{link} <ArrowUpRight size={15} /></span>
-              </Link>
-            ))}
-          </div>
+          <div className="gx-pearl-heading gx-pearl-path-heading"><div><div className="gx-pearl-kicker"><span /> FIND YOUR NEXT STEP</div><h2>Explore with <em>purpose.</em></h2></div><p>Whether you are learning the basics or researching a specific stone, follow a path built around what you need to understand.</p></div>
+          <div className="gx-pearl-path-grid">{pathways.map(({ icon: Icon, title, text, href, link }, i) => <Link href={href} key={title} className="gx-pearl-path-card"><div><span>0{i + 1}</span><Icon size={20} /></div><h3>{title}</h3><p>{text}</p><b>{link} <ArrowUpRight size={15} /></b></Link>)}</div>
         </div>
       </section>
 
-      <section className="gx-v2-tools-band">
-        <div className="container-page gx-v2-tools-inner">
-          <div>
-            <div className="gx-v2-eyebrow"><span /> THE PRACTICAL DESK</div>
-            <h2>Put the knowledge<br /><em>to work.</em></h2>
-            <p>Use simple reference tools alongside your learning. Calculators and charts are educational aids—not substitutes for gemological testing.</p>
-          </div>
-          <div className="gx-v2-tool-links">
-            <Link href="/tools/carat-to-gram"><span>01</span><strong>Carat to gram converter</strong><ArrowUpRight size={16} /></Link>
-            <Link href="/tools/gemstone-size"><span>02</span><strong>Gemstone size guide</strong><ArrowUpRight size={16} /></Link>
-            <Link href="/tools/mohs-hardness"><span>03</span><strong>Mohs hardness reference</strong><ArrowUpRight size={16} /></Link>
-            <Link href="/tools"><span>04</span><strong>All tools & calculators</strong><ArrowUpRight size={16} /></Link>
-          </div>
+      <section className="gx-pearl-tools">
+        <div className="container-page gx-pearl-tools-inner"><div><div className="gx-pearl-kicker"><span /> THE PRACTICAL DESK</div><h2>Knowledge,<br /><em>put to work.</em></h2><p>Use reference tools alongside your learning. Calculators and charts are educational aids—not substitutes for gemological testing.</p></div>
+          <div className="gx-pearl-tool-list"><Link href="/tools/carat-to-gram"><span>01</span><strong>Carat to gram converter</strong><ArrowUpRight /></Link><Link href="/tools/gemstone-size"><span>02</span><strong>Gemstone size guide</strong><ArrowUpRight /></Link><Link href="/tools/mohs-hardness"><span>03</span><strong>Mohs hardness reference</strong><ArrowUpRight /></Link><Link href="/tools"><span>04</span><strong>All tools & calculators</strong><ArrowUpRight /></Link></div>
         </div>
       </section>
 
-      <section className="gx-v2-final-cta">
-        <div className="container-page gx-v2-final-cta-inner">
-          <div className="gx-v2-eyebrow gx-v2-eyebrow-dark"><span /> START EXPLORING</div>
-          <h2>The more you know,<br /><em>the more you see.</em></h2>
-          <p>Explore the science, discover the stories and build a more informed understanding of the world’s gemstones.</p>
-          <div className="gx-v2-hero-actions">
-            <Link href="/gemstones" className="gx-v2-button gx-v2-button-dark">Enter the gemstone library <ArrowUpRight size={16} /></Link>
-            <Link href="/about" className="gx-v2-text-link gx-v2-text-link-dark">About GemologyX <ArrowRight size={15} /></Link>
-          </div>
-        </div>
-      </section>
+      <section className="gx-pearl-end"><div className="container-page"><div className="gx-pearl-kicker"><span /> KEEP EXPLORING</div><h2>Curiosity is where<br /><em>understanding begins.</em></h2><p>Discover the science, explore the stories and build a more informed understanding of the world’s gemstones.</p><div><Link href="/gemstones" className="gx-pearl-primary">Enter the gemstone library <ArrowUpRight size={16} /></Link><Link href="/about" className="gx-pearl-secondary">About GemologyX <ArrowRight size={15} /></Link></div></div></section>
     </main>
   );
 }
