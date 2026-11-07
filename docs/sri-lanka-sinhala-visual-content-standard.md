@@ -146,3 +146,17 @@ These are specimen illustrations, not Sri Lankan origin examples, certificates o
 | `/si/learn/pearl-intro` | Black-lipped oyster shell displaying a natural pearl at the Robert Wan Pearl Museum | Wmpearl · CC0 1.0 |
 
 The padparadscha image is a specimen illustration and does not establish Sri Lankan origin, treatment status or a laboratory colour determination. The star sapphire image demonstrates asterism but does not establish natural origin or treatment status. The pearl image shows a natural pearl in a museum oyster specimen; it is not a commercial valuation example.
+
+
+## November 2026 — practical Sinhala identification, reporting, care and trade batch
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/identify-sapphire` | Pink sapphire examined under a gemmological microscope | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/how-to-read-gem-report` | Gemmological microscope examination of a pink sapphire | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/fake-lab-reports` | Gemmological microscope examination of a pink sapphire | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/gemstone-cleaning-methods` | A jeweller brushing a silver jewellery chain in soapy water | W.carter / Ann-Sophie Qvarnström · CC BY-SA 4.0 |
+| `/si/learn/gemstone-care-general` | A jeweller brushing a silver jewellery chain in soapy water | W.carter / Ann-Sophie Qvarnström · CC BY-SA 4.0 |
+| `/si/learn/sri-lanka-dealer-types` | Gem cutter working at a lap wheel in Gintota, Sri Lanka | Ilyes Makria / Joalys · CC BY-SA 4.0 |
+
+The microscope photograph depicts a pink sapphire being examined; it is contextual gemological examination photography, not a sample laboratory report and not proof of the identity, treatment or origin of any other stone. The cleaning photograph depicts a silver chain, not a gemstone-specific cleaning test. It is used only to illustrate a gentle jewellery-cleaning setting; the guide text must continue to state that cleaning methods depend on the identified gem, treatments and setting. The Gintota photograph documents lapidary work and illustrates one role in the Sri Lankan trade chain; it does not represent every dealer or trading location.
