@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Gem, Scale, ScanEye, Wrench } from "lucide-react";
@@ -143,6 +144,7 @@ const referenceInstruments = [
 export default function EquipmentPage() {
   return (
     <main className="container-page py-9 md:py-14">
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Gemology Equipment", url: "https://gemologyx.com/equipment" }]} />
       <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-muted">
         <Link href="/tools" className="hover:text-accent">Tools & instruments</Link>
         <span>/</span>
