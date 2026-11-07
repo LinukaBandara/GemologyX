@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { allGemstones } from "@/data/all-gemstones";
 import { GemstoneIllustration } from "@/components/gemstone-illustration";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export function generateStaticParams() { return allGemstones.map(({slug}) => ({slug})); }
 type Params = Promise<{slug:string}>;
@@ -44,7 +45,9 @@ export default async function GemstonePage({params}:{params:Params}) {
   const secondaryImage=slug==="sapphire"?"/images/suranga/gold-gem.svg":image;
   const secondaryAlt=slug==="sapphire"?"Yellow sapphire, a yellow colour variety of corundum":"A closer view of the gemstone";
   const subtitle = `${gem.mineralFamily} · Mohs hardness ${gem.hardness}`;
-  return <article className="profile-page">
+  return <>
+    <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Gemstones", url: "https://gemologyx.com/gemstones" }, { name: gem.name, url: `https://gemologyx.com/gemstones/${slug}` }]} />
+    <article className="profile-page">
     <section className={`profile-hero profile-hero-${slug}`}><div className="profile-backdrop">{image?<Image src={image} alt={`${gem.name} gemstone`} fill priority sizes="100vw"/>:<div className="profile-illustration-surface"><GemstoneIllustration gem={gem} className="profile-fallback-art"/></div>}</div><div className="container-page profile-hero-inner"><div className="profile-crumb"><Link href="/">Home</Link><span>›</span><Link href="/gemstones">Gemstones</Link><span>›</span>{gem.name}</div><h1>{gem.name}</h1><p>{subtitle}</p></div></section>
     <nav className="profile-tabs"><div className="container-page">{[...sections.slice(0,6)].map(([id,title])=><a href={`#${id}`} key={id}>{title.replace(" and Characteristics","")}</a>)}</div></nav>
     <div className="container-page profile-body"><div className="profile-top"><div className="profile-stone">{image?<Image src={image} alt={`${gem.name} gemstone`} fill sizes="(max-width: 760px) 100vw, 34vw"/>:<div className="profile-illustration-surface"><GemstoneIllustration gem={gem} className="profile-fallback-art"/></div>}</div><section className="quick-facts"><h2>Quick Facts</h2>{facts.map(([label,value])=><div key={label}><span>◇</span><b>{label}</b><p>{value}</p></div>)}</section><aside className="on-page"><h2>On This Page</h2>{sections.map(([id,title])=><a href={`#${id}`} key={id}>{title}</a>)}{detail?.faqs?.length?<a href="#faqs">Frequently Asked Questions</a>:null}{gem.sources?.length?<a href="#sources">Sources and Further Reading</a>:null}</aside></div>
@@ -54,5 +57,6 @@ export default async function GemstonePage({params}:{params:Params}) {
       </aside>
       <section className="related-gems"><div className="related-heading"><h2>Related Gemstones</h2><Link href="/gemstones">Explore More <ArrowRight size={14}/></Link></div><div>{related.map((item)=><Link key={item.slug} href={`/gemstones/${item.slug}`}><div className={`related-thumb related-${item.slug}`}><span>✦</span></div><b>{item.name}</b><small>{item.description.slice(0,58)}…</small></Link>)}</div></section>
     </div><section className="profile-quote"><div className="container-page"><span>Gemstones are not just treasures, but a connection<br/>between the Earth’s history and our own.</span><strong>GemologyX</strong></div></section>
-  </article>;
+    </article>
+  </>;
 }
