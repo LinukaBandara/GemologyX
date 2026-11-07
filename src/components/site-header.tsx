@@ -25,7 +25,12 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="gx-site-header sticky top-0 z-50">
+    <header
+      className="gx-site-header sticky top-0 z-50"
+      onKeyDown={(event) => {
+        if (event.key === "Escape" && open) setOpen(false);
+      }}
+    >
       <div className="gx-header-main">
         <div className="gx-header-inner container-page">
           <Link
