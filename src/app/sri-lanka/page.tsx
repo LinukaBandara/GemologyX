@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "Sri Lanka Gemstone Heritage, Mining & Trade",
   description: "Explore Sri Lanka's gemstone origins, mining regions, gem trade, cutting, certification and local knowledge through the GemologyX country guide.",
   alternates: { canonical: "/sri-lanka" },
-  openGraph: { type: "website", title: "Sri Lanka Gemstone Heritage, Mining & Trade", description: "Explore Sri Lanka's gemstone origins, mining regions, gem trade, cutting, certification and local knowledge.", url: "/sri-lanka" },
-  twitter: { card: "summary_large_image", title: "Sri Lanka Gemstone Heritage, Mining & Trade", description: "Explore Sri Lanka's gemstone origins, mining regions, gem trade, cutting, certification and local knowledge." },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Sri Lanka Gemstone Heritage, Mining & Trade", description: "Explore Sri Lanka's gemstone origins, mining regions, gem trade, cutting, certification and local knowledge.", url: "/sri-lanka" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Sri Lanka Gemstone Heritage, Mining & Trade", description: "Explore Sri Lanka's gemstone origins, mining regions, gem trade, cutting, certification and local knowledge." },
 };
 
 const sections = [
