@@ -3127,10 +3127,30 @@ body [class~="text-xs"] {
   font-size:14px !important;
   line-height:1.55;
 }
-body [class*="text-[0."] {
+body [class*="text-[10px]"],
+body [class*="text-[11px]"],
+body [class*="text-[12px]"] {
   font-size:13px !important;
   line-height:1.55;
 }
+body [class*="kicker"],
+body [class*="eyebrow"],
+body [class*="overline"],
+body [class*="caption"],
+body [class*="meta"],
+body [class*="detail"],
+body [class*="note"],
+body [class*="disclosure"],
+body [class*="credit"],
+body [class*="crumb"],
+body [class*="breadcrumb"],
+body [class*="topic"],
+body [class*="index"],
+body [class*="read"] {
+  font-size:13px !important;
+  line-height:1.6;
+}
+body [class*="stats"] span { font-size:13px !important; line-height:1.6; }
 body small,
 body figcaption,
 body .footer-column-title,
