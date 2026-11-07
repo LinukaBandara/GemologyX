@@ -25,7 +25,7 @@ export function GemstoneIllustration({ gem, className = "" }: { gem: Gemstone; c
       viewBox="0 0 220 160"
       className={`h-32 w-44 drop-shadow-[0_14px_16px_rgba(15,28,46,0.16)] transition-transform duration-300 group-hover:scale-105 ${className}`}
       role="img"
-      aria-label={`Abstract color illustration for ${gem.name}; not a specimen photograph`}
+      aria-label={`Decorative gemstone colour graphic for ${gem.name}; not a specimen photograph`}
     >
       <defs>
         <linearGradient id={id} x1="0" y1="0" x2="1" y2="1">
