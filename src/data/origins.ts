@@ -16,7 +16,8 @@ export const origins: Origin[] = [
   {
     slug: "sri-lanka",
     name: "Sri Lanka",
-    summary: "A long-established gem-producing region, historically known as Ceylon.",
+    summary: "A long-established gem-producing region, historically known as Ceylon.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Sapphire_(gem_gravel_mine,_Ratnapura_area,_Sri_Lanka)_1_(34857678855).jpg","alt":"Blue sapphire crystal from gem gravels attributed to the Ratnapura area, Sri Lanka","credit":"James St. John · CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Sapphire_(gem_gravel_mine,_Ratnapura_area,_Sri_Lanka)_1_(34857678855).jpg"}
     gemstones: ["Sapphire", "Ruby", "Alexandrite", "Spinel", "Garnet", "Tourmaline", "Cat's eye chrysoberyl"],
     detail: {
       overview:
@@ -36,7 +37,8 @@ export const origins: Origin[] = [
   {
     slug: "madagascar",
     name: "Madagascar",
-    summary: "A major modern source of sapphire, ruby and a wide range of coloured gemstones.",
+    summary: "A major modern source of sapphire, ruby and a wide range of coloured gemstones.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Ilakaka-02.JPG","alt":"Gem prospectors at Ilakaka, Madagascar","credit":"Wayne77 · CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Ilakaka-02.JPG"}
     gemstones: ["Sapphire", "Ruby", "Tourmaline", "Garnet", "Aquamarine"],
     detail: {
       overview:
@@ -56,7 +58,8 @@ export const origins: Origin[] = [
   {
     slug: "myanmar",
     name: "Myanmar",
-    summary: "A historic source of ruby and jadeite, including the Mogok Valley.",
+    summary: "A historic source of ruby and jadeite, including the Mogok Valley.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Mogok_Township.jpg","alt":"Mogok, a historic ruby and sapphire-producing region in Myanmar","credit":"JimmyWinMGK · Wikimedia Commons","source":"https://commons.wikimedia.org/wiki/File:Mogok_Township.jpg"}
     gemstones: ["Ruby", "Sapphire", "Spinel", "Jadeite"],
     detail: {
       overview:
@@ -76,7 +79,8 @@ export const origins: Origin[] = [
   {
     slug: "kashmir",
     name: "Kashmir",
-    summary: "Source of a historic, now largely depleted sapphire deposit prized for its velvety blue colour.",
+    summary: "Source of a historic, now largely depleted sapphire deposit prized for its velvety blue colour.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Corundum-256940.jpg","alt":"Sapphire crystal specimen","credit":"Wikimedia Commons · locality identified as Ratnapura, Sri Lanka","source":"https://commons.wikimedia.org/wiki/File:Corundum-256940.jpg"}
     gemstones: ["Sapphire"],
     detail: {
       overview:
@@ -96,7 +100,8 @@ export const origins: Origin[] = [
   {
     slug: "colombia",
     name: "Colombia",
-    summary: "The leading historical source of fine emerald, particularly from the Muzo and Chivor regions.",
+    summary: "The leading historical source of fine emerald, particularly from the Muzo and Chivor regions.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Emerald_crystal_muzo_colombia.jpg","alt":"Emerald crystal from Muzo, Colombia","credit":"M.M. · CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Emerald_crystal_muzo_colombia.jpg"}
     gemstones: ["Emerald"],
     detail: {
       overview:
@@ -116,7 +121,8 @@ export const origins: Origin[] = [
   {
     slug: "tanzania",
     name: "Tanzania",
-    summary: "Source of tanzanite as well as ruby, sapphire, tsavorite garnet and spinel.",
+    summary: "Source of tanzanite as well as ruby, sapphire, tsavorite garnet and spinel.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Zoïsite_(Tanzanite).jpg","alt":"Rough and cut tanzanite from the Merelani Hills, Tanzania","credit":"Didier Descouens · CC BY 3.0","source":"https://commons.wikimedia.org/wiki/File:Zoïsite_(Tanzanite).jpg"}
     gemstones: ["Tanzanite", "Ruby", "Sapphire", "Tsavorite garnet", "Spinel"],
     detail: {
       overview:
@@ -136,7 +142,8 @@ export const origins: Origin[] = [
   {
     slug: "mozambique",
     name: "Mozambique",
-    summary: "A significant modern ruby-producing country, alongside other coloured gemstones.",
+    summary: "A significant modern ruby-producing country, alongside other coloured gemstones.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Montepuez_(4872098500).jpg","alt":"Landscape in the Montepuez area of Mozambique","credit":"Wikimedia Commons · see source file for licence","source":"https://commons.wikimedia.org/wiki/File:Montepuez_(4872098500).jpg"}
     gemstones: ["Ruby", "Sapphire", "Tourmaline", "Garnet"],
     detail: {
       overview:
@@ -156,7 +163,8 @@ export const origins: Origin[] = [
   {
     slug: "brazil",
     name: "Brazil",
-    summary: "A major source of aquamarine, tourmaline, topaz, and other coloured gemstones.",
+    summary: "A major source of aquamarine, tourmaline, topaz, and other coloured gemstones.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Topaze_Brésil.jpg","alt":"Imperial topaz from Ouro Preto, Minas Gerais, Brazil","credit":"Wikimedia Commons · see source file for licence","source":"https://commons.wikimedia.org/wiki/File:Topaze_Brésil.jpg"}
     gemstones: ["Aquamarine", "Tourmaline", "Topaz", "Emerald", "Amethyst"],
     detail: {
       overview:
@@ -176,7 +184,8 @@ export const origins: Origin[] = [
   {
     slug: "australia",
     name: "Australia",
-    summary: "Known for sapphire and for its black and boulder opal fields.",
+    summary: "Known for sapphire and for its black and boulder opal fields.",,
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Opalenoire.jpg","alt":"Black opal from Lightning Ridge, New South Wales, Australia","credit":"Didier Descouens · see source file for licence","source":"https://commons.wikimedia.org/wiki/File:Opalenoire.jpg"}
     gemstones: ["Sapphire", "Opal"],
     detail: {
       overview:
