@@ -183,6 +183,7 @@ export default function EquipmentPage() {
                   src={item.image}
                   alt={item.alt}
                   fill
+                  unoptimized
                   sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.025]"
                 />
@@ -208,6 +209,7 @@ export default function EquipmentPage() {
             src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Fluorite_fluorescence.jpg"
             alt="Fluorite specimen photographed in visible light and under ultraviolet illumination"
             fill
+            unoptimized
             sizes="(max-width: 768px) 100vw, 55vw"
             className="object-cover"
           />
