@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ExternalLink, FileCheck2, Globe2, Scale, ShieldCheck } from "lucide-react";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export const metadata: Metadata = {
   title: "Sri Lanka Gemstone Trade & Export: Official Resources",
@@ -36,6 +37,7 @@ const officialResources = [
 export default function SriLankaTradeExportPage() {
   return (
     <article className="container-page gx-regional-subpage gx-regional-trade max-w-5xl py-12 md:py-16">
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Sri Lanka Trade & Export", url: "https://gemologyx.com/sri-lanka-trade-export" }]} />
       <nav className="luxury-breadcrumb" aria-label="Breadcrumb">
         <Link href="/">Home</Link><span>/</span><span>Sri Lanka Trade & Export</span>
       </nav>
