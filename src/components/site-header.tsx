@@ -94,8 +94,7 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {open && (
-        <div id="gx-mobile-navigation" className="gx-mobile-navigation">
+      <div id="gx-mobile-navigation" className="gx-mobile-navigation" hidden={!open}>
           <div className="container-page gx-mobile-navigation-inner">
             <Link
               href="/search"
@@ -125,8 +124,7 @@ export function SiteHeader() {
             </nav>
             <p className="gx-mobile-nav-note">A considered reference to the world of gemstones.</p>
           </div>
-        </div>
-      )}
+      </div>
     </header>
   );
 }
