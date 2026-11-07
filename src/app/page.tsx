@@ -18,10 +18,10 @@ export const metadata: Metadata = {
 };
 
 const gemstones = [
-  { name: "Sapphire", detail: "Corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/blue-gem.svg", alt: "Illustrative blue sapphire artwork" },
-  { name: "Ruby", detail: "Red corundum · Mohs 9", href: "/gemstones/ruby", image: "/images/suranga/pink-gem.svg", alt: "Illustrative ruby artwork" },
-  { name: "Emerald", detail: "Beryl · Mohs 7.5–8", href: "/gemstones/emerald", image: "/images/suranga/green-gem.svg", alt: "Illustrative emerald artwork" },
-  { name: "Golden sapphire", detail: "Yellow corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/gold-gem.svg", alt: "Illustrative golden sapphire artwork" },
+  { name: "Sapphire", detail: "Corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/blue-gem.svg", alt: "Blue sapphire visual from the Suranga Gems collection", note: "THE BLUE OF CEYLON", number: "01" },
+  { name: "Ruby", detail: "Red corundum · Mohs 9", href: "/gemstones/ruby", image: "/images/suranga/pink-gem.svg", alt: "Ruby visual from the Suranga Gems collection", note: "THE RED VARIETY", number: "02" },
+  { name: "Emerald", detail: "Beryl · Mohs 7.5–8", href: "/gemstones/emerald", image: "/images/suranga/green-gem.svg", alt: "Emerald visual from the Suranga Gems collection", note: "THE GREEN BERYL", number: "03" },
+  { name: "Golden sapphire", detail: "Yellow corundum · Mohs 9", href: "/gemstones/sapphire", image: "/images/suranga/gold-gem.svg", alt: "Golden sapphire visual from the Suranga Gems collection", note: "A GOLDEN CORUNDUM", number: "04" },
 ];
 
 const articles = [
@@ -73,15 +73,15 @@ export default function HomePage() {
             <div><div className="gx-pearl-kicker"><span /> THE GEMSTONE LIBRARY</div><h2>Begin with<br /><em>the stone itself.</em></h2></div>
             <div className="gx-pearl-heading-aside"><p>Explore profiles through mineral identity, colour, physical properties, treatments, origins and care.</p><Link href="/gemstones">Browse the gemstone directory <ArrowUpRight size={15} /></Link></div>
           </div>
-          <div className="gx-pearl-gem-grid">
+          <div className="gx-pearl-gem-gallery">
             {gemstones.map((gem, i) => (
-              <Link href={gem.href} key={gem.name} className="gx-pearl-gem-card">
-                <div className="gx-pearl-gem-art"><Image src={gem.image} alt={gem.alt} fill sizes="(max-width: 640px) 46vw, 25vw" /><span>0{i + 1}</span><i><ArrowUpRight size={17} /></i></div>
-                <div className="gx-pearl-gem-detail">{gem.detail}</div><h3>{gem.name}</h3>
+              <Link href={gem.href} key={gem.name} className={`gx-pearl-gem-card gx-pearl-gem-card-${i + 1}`}>
+                <div className="gx-pearl-gem-art"><Image src={gem.image} alt={gem.alt} fill sizes="(max-width: 640px) 48vw, (max-width: 980px) 46vw, 34vw" /><span>{gem.number}</span><i><ArrowUpRight size={18} /></i></div>
+                <div className="gx-pearl-gem-copy"><div className="gx-pearl-gem-note">{gem.note}</div><h3>{gem.name}</h3><div className="gx-pearl-gem-detail">{gem.detail}</div></div>
               </Link>
             ))}
           </div>
-          <p className="gx-pearl-disclosure">Gemstone visuals are illustrative generated artwork. They do not establish a stone’s identity, treatment, quality or geographic origin.</p>
+          <p className="gx-pearl-disclosure">Visuals from the Suranga Gems collection, presented for editorial illustration. Gem identity, treatment, quality and geographic origin require appropriate gemological evidence.</p>
         </div>
       </section>
 
