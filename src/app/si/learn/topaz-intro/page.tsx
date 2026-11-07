@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/yellow-sapphire-vs-topaz"
       crumbLabel="පුෂ්පරාග vs Topaz"
       lastReviewed="2026-10-21"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Topaz_stone.jpg", alt: "Blue topaz crystals on a mineral matrix specimen", credit: "AutreTemps · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Topaz_stone.jpg" }}
       related={[
         { label: "පුෂ්පරාග vs Topaz", href: "/si/learn/yellow-sapphire-vs-topaz" },
         { label: "Heat treatment", href: "/si/learn/heat-treatment-guide" },
