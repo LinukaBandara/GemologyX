@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Info, Palette, RotateCcw } from "lucide-react";
+import { Info, RotateCcw } from "lucide-react";
 import { ToolShell } from "@/components/tool-shell";
 
 const HUES = [
