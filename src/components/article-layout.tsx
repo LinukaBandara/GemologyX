@@ -29,7 +29,7 @@ export function ArticleLayout({
   const isSinhala = crumbHref.startsWith("/si/");
   const learnHref = isSinhala ? "/si/learn" : "/learn";
   return (
-    <article lang={isSinhala ? "si" : undefined} className={`container-page gx-article-page max-w-4xl py-10 md:py-14 ${isSinhala ? "gx-article-page-si" : "gx-article-page-en"}`}>
+    <article lang={isSinhala ? "si" : undefined} className={`container-page gx-article-page mx-auto min-w-0 max-w-4xl py-7 sm:py-9 md:py-14 ${isSinhala ? "gx-article-page-si" : "gx-article-page-en"}`}>
       {/* Breadcrumb */}
       <nav className="flex flex-wrap items-center gap-2 text-sm text-muted">
         <Link href={learnHref} className="hover:text-accent transition-colors">{isSinhala ? "මැණික් දැනුම" : "Learn"}</Link>
