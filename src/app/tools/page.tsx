@@ -115,7 +115,7 @@ const inDevelopment = [
 
 export default function ToolsPage() {
   return (
-    <main className="container-page py-10 md:py-16">
+    <div className="container-page py-10 md:py-16">
       <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Gemology Tools", url: "https://gemologyx.com/tools" }]} />
       <header className="relative overflow-hidden border-b border-border pb-9 md:pb-12">
         <div className="pointer-events-none absolute -right-8 -top-12 hidden h-64 w-64 rounded-full border border-[var(--gold)]/20 md:block" />
@@ -228,6 +228,6 @@ export default function ToolsPage() {
         </div>
         <Link href="/learn" className="inline-flex shrink-0 items-center gap-2 text-xs font-semibold text-accent hover:underline">Explore learning guides <ArrowRight size={14} /></Link>
       </aside>
-    </main>
+    </div>
   );
 }
