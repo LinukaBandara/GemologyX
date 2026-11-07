@@ -80,3 +80,10 @@ test("search page does not force the mobile keyboard open on arrival", async ({ 
   await expect(searchInput).toBeVisible();
   await expect(searchInput).not.toBeFocused();
 });
+
+test("reduced-motion preference skips the full-screen site loader", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+
+  await expect(page.locator(".gx-site-loader")).toBeHidden();
+});
