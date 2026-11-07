@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/gemstone-gift-buying"
       crumbLabel="තෑග්ගක් මිලදී ගැනීම"
       lastReviewed="2026-10-25"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/1/11/Birthstones.svg",
+        alt: "Illustration of a traditional set of twelve birthstone colours and gemstones",
+        credit: "wsnaccad · CC0 1.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Birthstones.svg",
+      }}
       related={[
         { label: "තෑග්ගක් මිලදී ගැනීම", href: "/si/learn/gemstone-gift-buying" },
         { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
