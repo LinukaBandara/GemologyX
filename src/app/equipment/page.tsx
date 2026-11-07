@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, BookOpen, Gem, Microscope, Ruler, Scale, ScanEye, Wrench } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, BookOpen, Gem, Scale, ScanEye, Sparkles, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Gem Industry Tools & Equipment",
