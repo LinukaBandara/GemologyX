@@ -3689,3 +3689,53 @@ main :where(button,a,[role="button"],input[type="checkbox"],input[type="radio"])
   .gx-mining-page .gx-mining-method + .gx-mining-method { border-top: 1px solid var(--mine-line); }
   .gx-learning-library .gx-learning-stats > div { flex-basis: 45%; }
 }
+
+
+/* Mobile refinements for origin profiles, comparison galleries and tool imagery. */
+@media (max-width: 767px) {
+  .origin-page { padding-top: 26px; padding-bottom: 40px; }
+  .origin-page .origin-profile {
+    display: flex; min-height: 0; height: auto; flex-direction: column;
+    align-items: flex-start; gap: 14px; padding: 22px 18px 24px;
+  }
+  .origin-page .origin-hero-mark { display: flex; align-items: center; gap: 9px; }
+  .origin-page .profile-hero-copy { width: 100%; margin: 0; }
+  .origin-page .profile-hero-copy h1 {
+    margin-top: 10px; font-size: clamp(2.5rem,11vw,3.8rem); line-height: 1;
+  }
+  .origin-page .profile-hero-copy p { margin-top: 10px; font-size: 16px; line-height: 1.75; }
+  .origin-page figure { margin-block: 22px; }
+  .origin-page figure img { display: block; width: 100%; height: auto; }
+  .origin-page figure figcaption { align-items: flex-start; font-size: 13px; line-height: 1.6; }
+  .origin-page .origin-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .origin-page .origin-content { display: grid; grid-template-columns: minmax(0,1fr); gap: 0; }
+  .origin-page .origin-content section { min-width: 0; padding: 18px 0; }
+  .origin-page .origin-content h2 { font-size: 1.6rem; line-height: 1.15; }
+  .origin-page .origin-content p,.origin-page .origin-content li { font-size: 16px; line-height: 1.85; }
+  .origin-page .profile-disclaimer { margin-top: 22px; padding: 16px; font-size: 14px; line-height: 1.7; }
+
+  .gx-tools-equipment-preview { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 7px; }
+  .gx-tools-equipment-preview > div { aspect-ratio: 1 / 1.15; }
+  .gx-tools-equipment-preview img { object-fit: cover; }
+  .gx-tool-card-grid { grid-template-columns: minmax(0,1fr); }
+  .gx-gemstone-directory .gx-directory-search { min-height: 54px; }
+  .gx-gemstone-directory .gx-directory-sort { min-height: 52px; }
+  .gx-gemstone-directory .gx-directory-sort select { min-height: 42px; font-size: 16px; }
+  .gx-gemstone-directory .gx-directory-search input { min-height: 42px; font-size: 16px; }
+  .gx-gemstone-directory .gx-gemstone-card-grid { grid-template-columns: minmax(0,1fr); }
+  .gx-gemstone-directory .gx-gemstone-card-grid > a { min-width: 0; }
+  .gx-gemstone-directory .gx-gemstone-card-grid > a > div:first-child { min-height: 205px; }
+
+  .gx-specimen-gallery { min-width: 0; }
+  .gx-specimen-gallery figure { min-width: 0; }
+  .gx-specimen-gallery figure button { min-height: 0; aspect-ratio: 4 / 3; }
+  .gx-specimen-gallery figcaption { padding: 14px; }
+  .gx-specimen-gallery [role="dialog"] { padding: 12px; }
+  .gx-specimen-gallery [role="dialog"] > div { max-width: 100%; }
+  .gx-specimen-gallery [role="dialog"] img { object-fit: contain; }
+}
+@media (max-width: 380px) {
+  .origin-page .origin-profile { padding-inline: 15px; }
+  .gx-tools-equipment-preview { gap: 5px; }
+  .gx-tools-equipment-preview > div { aspect-ratio: 1 / 1.25; }
+}
