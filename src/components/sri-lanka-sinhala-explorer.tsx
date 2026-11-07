@@ -33,6 +33,8 @@ const filters = [
 export function SriLankaSinhalaExplorer() {
   const [active, setActive] = useState<(typeof filters)[number]["id"]>("all");
   const visibleGuides = active === "all" ? guides : guides.filter((guide) => guide.group === active);
+  const countFor = (id: (typeof filters)[number]["id"]) =>
+    id === "all" ? guides.length : guides.filter((guide) => guide.group === id).length;
 
   return (
     <section aria-labelledby="sri-lanka-guide-list-title" className="gx-sinhala-explorer mt-12">
