@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { ArrowLeft, ArrowUpRight, Clock3, Calendar, Languages } from "lucide-react";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export function ArticleLayout({
   category,
@@ -30,6 +31,13 @@ export function ArticleLayout({
   const learnHref = isSinhala ? "/si/learn" : "/learn";
   return (
     <article lang={isSinhala ? "si" : undefined} className={`container-page gx-article-page mx-auto min-w-0 max-w-4xl py-7 sm:py-9 md:py-14 ${isSinhala ? "gx-article-page-si" : "gx-article-page-en"}`}>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "https://gemologyx.com/" },
+        { name: isSinhala ? "මැණික් දැනුම" : "Learn", url: `https://gemologyx.com${learnHref}` },
+        { name: crumbLabel, url: `https://gemologyx.com${crumbHref}` },
+        { name: title, url: `https://gemologyx.com${crumbHref}` },
+      ]} />
+
       {/* Breadcrumb */}
       <nav className="flex flex-wrap items-center gap-2 text-sm text-muted">
         <Link href={learnHref} className="hover:text-accent transition-colors">{isSinhala ? "මැණික් දැනුම" : "Learn"}</Link>
