@@ -21,7 +21,7 @@ const methods = [
 ];
 
 export default function MiningMethodsPage() {
-  return <article className="container-page max-w-4xl py-12 md:py-16">
+  return <article className="container-page gx-regional-subpage max-w-4xl py-12 md:py-16">
     <nav className="luxury-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/sri-lanka-mining">Sri Lanka Mining</Link><span>/</span><span>Methods</span></nav>
     <header className="article-hero">
       <div className="luxury-eyebrow"><span /> MINING & GEOLOGY</div>
