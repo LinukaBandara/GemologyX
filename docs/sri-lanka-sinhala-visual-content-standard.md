@@ -219,3 +219,7 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 - `/si/learn/mohs-hardness-guide`: USGS Mohs hardness scale graphic, public domain; mineral photographs credited by USGS to the Smithsonian Institution. It is a reference graphic, not encouragement to scratch-test finished jewellery.
 - `/si/learn/gemstone-colour-guide`: tourmaline crystal specimen — GOKLuLe, CC BY-SA 3.0. It illustrates natural colour in one mineral family, not a universal grading chart or calibrated colour standard.
 - `/si/learn/gemstone-cut-shapes`: historic diagram of gemstone cuts and profiles by Internet Archive Book Images, marked on Commons as having no known copyright restrictions. Treat it as a historical explanatory diagram, not a modern grading standard.
+
+## Sinhala guide photography coverage — material identity and clarity
+- `/si/learn/natural-vs-synthetic-gemstones`: faceted synthetic blue sapphire produced by the Verneuil process — James St. John, CC BY 2.0. It is explicitly one synthetic specimen, not a side-by-side comparison or proof that another visually similar stone is synthetic.
+- `/si/learn/gemstone-clarity-guide` and `/si/learn/fracture-filling-guide`: gemmological microscope examination — Sara Abey, CC BY-SA 4.0. The image is contextual only and does not show a confirmed filled fracture or establish the clarity/treatment of a stone discussed in the article.
