@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, BookOpen, FileCheck2, Gem, MapPinned, Pickaxe, ShieldCheck } from "lucide-react";
@@ -19,6 +20,7 @@ const sections = [
 export default function SriLankaHubPage() {
   return (
     <main className="gx-regional-hub gx-sri-lanka-hub">
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Sri Lanka", url: "https://gemologyx.com/sri-lanka" }]} />
       <div className="container-page">
         <nav className="gx-regional-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Sri Lanka</span></nav>
         <header className="gx-regional-hero">
