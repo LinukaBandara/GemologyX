@@ -160,3 +160,14 @@ The padparadscha image is a specimen illustration and does not establish Sri Lan
 | `/si/learn/sri-lanka-dealer-types` | Gem cutter working at a lap wheel in Gintota, Sri Lanka | Ilyes Makria / Joalys · CC BY-SA 4.0 |
 
 The microscope photograph depicts a pink sapphire being examined; it is contextual gemological examination photography, not a sample laboratory report and not proof of the identity, treatment or origin of any other stone. The cleaning photograph depicts a silver chain, not a gemstone-specific cleaning test. It is used only to illustrate a gentle jewellery-cleaning setting; the guide text must continue to state that cleaning methods depend on the identified gem, treatments and setting. The Gintota photograph documents lapidary work and illustrates one role in the Sri Lankan trade chain; it does not represent every dealer or trading location.
+
+
+## November 2026 — laboratory and dealer-question follow-up
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/gem-lab-report-details` | Pink sapphire examined under a gemmological microscope | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/gem-labs-overview` | Pink sapphire examined under a gemmological microscope | Sara Abey · CC BY-SA 4.0 |
+| `/si/learn/questions-to-ask-gem-dealer` | Gem cutter working at a lap wheel in Gintota, Sri Lanka | Ilyes Makria / Joalys · CC BY-SA 4.0 |
+
+The laboratory photograph is contextual examination imagery, not a depiction of a particular laboratory, certificate or report. The Gintota lapidary photograph illustrates one part of the local gem value chain and is not presented as a dealer portrait.
