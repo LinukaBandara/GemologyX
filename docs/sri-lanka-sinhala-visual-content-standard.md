@@ -27,6 +27,23 @@ This standard applies to the English Sri Lanka hub, the Sinhala learning hub, al
 - Gemmological microscopic examination: https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg — Sara Abey, CC BY-SA 4.0.
 - Kandy gem-cutting workshop: https://commons.wikimedia.org/wiki/File:Sri_Lanka-Gem_cutting.jpg — Ji-Elle, CC BY-SA 3.0.
 
+## Additional gemstone profile image references (7 November 2026)
+- Alexandrite, colour-change specimen under two lighting conditions: https://commons.wikimedia.org/wiki/File:Alexandrite.jpg — Vzb83, CC BY-SA 2.5.
+- Amethyst quartz specimen: https://commons.wikimedia.org/wiki/File:Quartz_Amethyst.jpg — Eric Hunt, CC BY-SA 2.5.
+- Aquamarine beryl crystal in quartz: https://commons.wikimedia.org/wiki/File:Beryl_aquamarine.jpg — Eurico Zimbres, CC BY-SA 2.5.
+- Chrysoberyl crystal from Balangoda: https://commons.wikimedia.org/wiki/File:Chrysoberyl-163995.jpg — Rob Lavinsky / iRocks.com, CC BY-SA 3.0.
+- Citrine quartz specimen: https://commons.wikimedia.org/wiki/File:Quartz-131669.jpg — Rob Lavinsky / iRocks.com, CC BY-SA 3.0.
+- Precious red coral cabochon: https://commons.wikimedia.org/wiki/File:Red_coral_gemstone.jpg — Rasmita Nayak, CC BY-SA 4.0.
+- Garnet mineral specimen in a museum collection: https://commons.wikimedia.org/wiki/File:Garnet_mineral.JPG — Geologicharka, CC BY-SA 3.0.
+- Rough precious opal with play-of-colour: https://commons.wikimedia.org/wiki/File:Coober_Pedy_Opal.jpg — Dpulitzer, CC BY-SA 3.0.
+- Peridot (olivine) crystal: https://commons.wikimedia.org/wiki/File:P%C3%A9ridot_(%3D_olivine)_(Pakistan)_1.jpg — Parent Géry, public domain.
+- Blue spinel crystals in quartz: https://commons.wikimedia.org/wiki/File:Spinel-200576.jpg — Rob Lavinsky / iRocks.com, CC BY-SA 3.0.
+- Tourmaline crystal specimen: https://commons.wikimedia.org/wiki/File:Tourmaline_sample.jpg — GOKLuLe, CC BY-SA 3.0.
+- Zircon crystal from Mogok: https://commons.wikimedia.org/wiki/File:Zircon-289024.jpg — Rob Lavinsky / iRocks.com, CC BY-SA 3.0.
+
+## Sinhala gemstone profile coverage
+Twelve individual profile guides now use the reusable ArticleLayout heroImage slot with subject-matched, credited images: alexandrite, amethyst, aquamarine, chrysoberyl, citrine, coral, garnet, opal, peridot, spinel, tourmaline and zircon. This is a focused first profile batch, not a claim that every Sinhala article is illustrated. Amber, emerald and topaz still need separately verified image references; remaining learning and practical guides are to be audited in later batches.
+
 ## Current implementation coverage
 - Sri Lanka country hub: Sri Lanka landscape hero.
 - Sinhala learning hub: Sri Lanka landscape hero and Sinhala topic architecture.
