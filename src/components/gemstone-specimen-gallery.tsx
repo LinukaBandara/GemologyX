@@ -70,7 +70,7 @@ export function GemstoneSpecimenGallery({ slug, name }: { slug: string; name: st
   if (!gallery) return null;
 
   return (
-    <section className="mt-8 sm:mt-10" aria-labelledby={`${slug}-specimen-gallery-title`}>
+    <section className="gx-specimen-gallery mt-8 sm:mt-10" aria-labelledby={`${slug}-specimen-gallery-title`}>
       <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border pb-4">
         <div>
           <p className="gx-eyebrow"><span /> SPECIMEN GALLERY</p>
