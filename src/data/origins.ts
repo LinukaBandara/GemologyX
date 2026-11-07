@@ -240,7 +240,7 @@ export const origins: Origin[] = [
     slug: "india",
     name: "India",
     summary: "A historic gemstone source and a major cutting, jewellery-making and trading centre, with Jaipur especially prominent.",
-    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Jaipur-Edelsteinschleiferei-01-2018-gje.jpg", alt: "Gemstone cutting workshop in Jaipur, India", credit: "Wikimedia Commons · see source file for licence", source: "https://commons.wikimedia.org/wiki/Category:Gemstone_cutting_in_Jaipur" },
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Jaipur-Edelsteinschleiferei-01-2018-gje.jpg", alt: "Gemstone grinding in a workshop in Jaipur, India", credit: "Gerd Eichmann · CC BY 4.0", source: "https://commons.wikimedia.org/wiki/File:Jaipur-Edelsteinschleiferei-01-2018-gje.jpg" },
     gemstones: ["Ruby", "Sapphire", "Emerald", "Diamond", "Moonstone", "Garnet"],
     detail: {
       overview: "India has a long gemstone and jewellery history and remains a major centre for gemstone cutting, processing, jewellery manufacture and trade. Jaipur is especially well known for coloured-stone cutting and trading.",
