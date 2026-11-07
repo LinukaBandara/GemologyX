@@ -19,6 +19,12 @@ export default function Page() {
       crumbHref="/si/learn/carat-weight-guide"
       crumbLabel="කැරට් බර මාර්ගෝපදේශය"
       lastReviewed="2026-11-02"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Modern_collapsible_balance_scale_for_jewellers_3.jpg",
+        alt: "Collapsible jeweller's balance scale with brass weights in a fitted wooden case",
+        credit: "W.carter · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Modern_collapsible_balance_scale_for_jewellers_3.jpg",
+      }}
       related={[
         { label: "කැරට් බර තේරුම් ගැනීම", href: "/si/learn/carat-weight-guide" },
         { label: "නිල්මැණික් කැරට් මිල", href: "/si/learn/blue-sapphire-price-per-carat" },
