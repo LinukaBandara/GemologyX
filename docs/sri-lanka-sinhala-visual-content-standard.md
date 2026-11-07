@@ -171,3 +171,13 @@ The microscope photograph depicts a pink sapphire being examined; it is contextu
 | `/si/learn/questions-to-ask-gem-dealer` | Gem cutter working at a lap wheel in Gintota, Sri Lanka | Ilyes Makria / Joalys · CC BY-SA 4.0 |
 
 The laboratory photograph is contextual examination imagery, not a depiction of a particular laboratory, certificate or report. The Gintota lapidary photograph illustrates one part of the local gem value chain and is not presented as a dealer portrait.
+
+
+## November 2026 — carat weight and buyer-protection guides
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/carat-weight-guide` | Traditional jeweller's balance scale with brass weights in a wooden case | W.carter · CC BY-SA 4.0 |
+| `/si/learn/avoid-gemstone-scams` | Pink sapphire examined under a gemmological microscope | Sara Abey · CC BY-SA 4.0 |
+
+The balance-scale photograph documents a traditional jeweller's weighing instrument; it is not presented as a modern calibrated digital carat balance. The microscope image illustrates careful gem examination, not a guarantee against fraud or a substitute for independent laboratory verification.
