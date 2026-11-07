@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Star-Saphire.jpg",
+        alt: "Blue star sapphire cabochon displaying six-ray asterism",
+        credit: "Mitchell Gore · Public domain dedication",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Star-Saphire.jpg",
+      }}
       related={[
         { label: "නිල්මැණික් වර්ණය සහ ගුණාත්මකභාවය", href: "/si/learn/blue-sapphire-colour-quality" },
         { label: "නිල්මැණික් හඳුනාගැනීම", href: "/si/learn/identify-sapphire" },
