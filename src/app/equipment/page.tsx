@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, BookOpen, Gem, Scale, ScanEye, Sparkles, Wrench } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Gem, Scale, ScanEye, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Gem Industry Tools & Equipment",
@@ -135,7 +135,6 @@ const equipment = [
 ];
 
 const referenceInstruments = [
-  { name: "Polariscope", detail: "Helps investigate optical character and behaviour under crossed polarising filters.", icon: ScanEye },
   { name: "Polariscope", detail: "A key optical instrument for examining strain and optical character; a verified reusable image is still being sourced.", icon: ScanEye },
   { name: "Specific-gravity kit", detail: "A gem-suitable hydrostatic balance setup; unrelated industrial hydrostatic testers are deliberately not shown as gem equipment.", icon: Scale },
   { name: "Stone papers, trays & holders", detail: "Help organise, protect and handle loose gemstones during trade and examination.", icon: Wrench },
