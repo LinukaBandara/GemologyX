@@ -2570,3 +2570,27 @@ html[data-theme="dark"] .gx-regional-subpage aside { background:var(--regional-s
   .gx-regional-subpage .profile-content,.gx-regional-trade .profile-content { grid-template-columns:1fr; }
   .gx-regional-subpage .article-hero h1 { font-size:clamp(2.7rem,12vw,4rem); }
 }
+
+
+/* Sri Lanka origin atlas profile */
+.gx-regional-origin {
+  --regional-ink:#30242A; --regional-muted:#746A6B; --regional-line:#E8DFD9;
+  --regional-ruby:#762B43; --regional-surface:#F7F3EE;
+}
+.gx-regional-origin .luxury-breadcrumb a,
+.gx-regional-origin .luxury-back-link { color:var(--regional-ruby); }
+.gx-regional-origin .origin-hero-mark { color:var(--regional-ruby); border-color:var(--regional-line); background:var(--regional-surface); }
+.gx-regional-origin .profile-hero { border-bottom:1px solid var(--regional-line); }
+.gx-regional-origin .profile-hero h1 {
+  color:var(--regional-ink); font-family:var(--font-cormorant),Georgia,serif;
+  font-size:clamp(3rem,6vw,5.5rem); font-weight:500; letter-spacing:-.04em;
+}
+.gx-regional-origin .profile-hero p { color:var(--regional-muted); line-height:1.9; }
+.gx-regional-origin .origin-tags span { border-color:var(--regional-line); border-radius:2px; background:var(--regional-surface); color:var(--regional-ruby); }
+.gx-regional-origin .origin-content section { border-color:var(--regional-line); }
+.gx-regional-origin .origin-content h2 { color:var(--regional-ink); font-family:var(--font-cormorant),Georgia,serif; }
+.gx-regional-origin .origin-content p,.gx-regional-origin .origin-content li { color:var(--regional-muted); line-height:1.9; }
+html[data-theme="dark"] .gx-regional-origin {
+  --regional-ink:#F2E9E9; --regional-muted:#C1B1B5; --regional-line:#49353D;
+  --regional-ruby:#E0AFC0; --regional-surface:#241A20;
+}
