@@ -151,3 +151,5 @@ The 2026-11-06 audit's local build and crawl results remain historical results f
 - Existing reduced-motion CSS preferences were confirmed in the global stylesheet. This is source inspection, not a full assistive-technology audit.
 - Local specimen image records include source, credit and licence fields. Their attribution text is displayed in the gallery; the original source records remain linked from the viewer.
 - Remaining work: run the new Playwright checks in a production build, verify the local image files and their licence records against the original source pages, and complete manual screen-reader/focus/contrast testing.
+
+- Added the companion [image provenance register](./image-provenance-register.md). It separates six locally stored specimen photographs with recorded credits/licences/source pages from homepage, Suranga collection and decorative SVG assets whose original creator or permission still needs owner confirmation. No unverified asset is described as licensed or original.
