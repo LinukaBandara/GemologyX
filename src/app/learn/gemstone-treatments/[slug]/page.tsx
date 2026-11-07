@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: PageProps<"/learn/gemstone-tr
   const guide = treatmentGuides.find((item) => item.slug === slug);
   if (!guide) return {};
   const title = `${guide.title}: Gemstone Treatment Guide`;
-  return { title, description: guide.summary, alternates: { canonical: `/learn/gemstone-treatments/${guide.slug}` }, openGraph: { type: "article", title, description: guide.summary, url: `https://gemologyx.com/learn/gemstone-treatments/${guide.slug}` }, twitter: { card: "summary_large_image", title, description: guide.summary } };
+  return { title, description: guide.summary, alternates: { canonical: `/learn/gemstone-treatments/${guide.slug}` }, openGraph: { type: "article", images: ["/gemologyx-social.svg"], title, description: guide.summary, url: `https://gemologyx.com/learn/gemstone-treatments/${guide.slug}` }, twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title, description: guide.summary } };
 }
 
 export default async function TreatmentArticle({ params }: PageProps<"/learn/gemstone-treatments/[slug]">) {
