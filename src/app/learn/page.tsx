@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description:
     "Explore practical gemology guides, gemstone science, buying knowledge and Sri Lankan gem industry insights in English and Sinhala.",
   alternates: { canonical: "/learn" },
+  openGraph: { type: "website", title: "Learn Gemology", description: "Explore practical gemology guides, gemstone science, buying knowledge and Sri Lankan gem industry insights.", url: "/learn" },
+  twitter: { card: "summary_large_image", title: "Learn Gemology", description: "Explore practical gemology guides, gemstone science, buying knowledge and Sri Lankan gem industry insights." },
 };
 
 const sinhalaGuides = [
