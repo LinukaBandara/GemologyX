@@ -3082,3 +3082,39 @@ html[data-theme="dark"] .gx-sinhala-guide:hover { background:#2A2026; }
   .gx-sinhala-guide h3 { font-size:16px; }
   .gx-sinhala-guide p { font-size:13.5px; }
 }
+
+
+/* Final audit pass: lift legacy micro-copy across older page families to readable minimums. */
+[class*="text-[0."] { font-size:max(13px,1em) !important; line-height:1.55; }
+.gx-mining-hub :where(.gx-mining-facts small,.gx-mining-region-number,.gx-mining-region small,.gx-mining-photo figcaption p,.gx-mining-photo figcaption small,.gx-mining-method > span,.gx-mining-licence-links > a small,.gx-mining-research > a > span,.gx-mining-research p,.gx-mining-editorial-note b,.gx-mining-editorial-note p) { font-size:13px !important; line-height:1.7 !important; }
+.gx-mining-hub .gx-mining-region p,.gx-mining-hub .gx-mining-method p { font-size:14px !important; line-height:1.8 !important; }
+.gx-regional-subpage :where(.luxury-breadcrumb,.article-hero .luxury-eyebrow,.profile-content > section h3,.profile-content > section p,.profile-content > section li,.gx-regional-section-top span,.gx-regional-section-body > p,.gx-regional-note p,.gx-regional-note small,.gx-regional-resource-links a,.gx-regional-resource-links a span,.gx-regional-resource-footnote,.gx-regional-language-switch a) { font-size:13px !important; line-height:1.8; }
+.gx-sinhala-hub .gx-sinhala-principles p,.gx-sinhala-hub .gx-regional-resources > div:first-child > p:last-child { font-size:14px !important; line-height:2 !important; }
+.gx-sinhala-hub .gx-regional-resource-links a { font-size:14px; line-height:1.7; }
+.gx-sinhala-hub .gx-regional-resource-links a span { font-size:12px; }
+.gx-sinhala-hub .gx-regional-resource-footnote { font-size:12px !important; line-height:1.7; }
+.gx-learning-library .gx-learning-kicker,.gx-learning-library .gx-learning-eyebrow { font-size:11px; }
+.gx-learning-library .gx-learning-stats span,.gx-learning-library .gx-learning-image-caption,.gx-learning-library .gx-learning-hero-foot,.gx-learning-library .gx-learning-footer span { font-size:12px; }
+.gx-learning-library .gx-learning-path .gx-learning-eyebrow,.gx-learning-library .gx-learning-sinhala-copy .gx-learning-eyebrow { font-size:11px; }
+.gx-learning-library .gx-learning-sinhala-list strong { font-size:14px; line-height:1.9; }
+.gx-learning-library .gx-learning-more-sinhala a,.gx-learning-library .gx-learning-featured-links a { font-size:13px; }
+.gx-sinhala-results-heading {
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  margin-top:26px; padding:13px 2px; border-bottom:1px solid var(--regional-line);
+  color:var(--regional-muted); font-family:var(--font-sinhala),sans-serif;
+  font-size:13px; line-height:1.7;
+}
+.gx-sinhala-results-heading strong { color:var(--regional-ruby); font-size:13px; font-weight:750; }
+.gx-sinhala-filter-count {
+  display:inline-grid; min-width:25px; height:25px; place-items:center;
+  margin-left:auto; border:1px solid var(--regional-line); border-radius:50%;
+  color:var(--regional-muted); font-family:var(--font-sans); font-size:12px;
+  font-variant-numeric:tabular-nums;
+}
+.gx-sinhala-filter.is-active .gx-sinhala-filter-count { border-color:rgba(255,255,255,.45); color:#fff; }
+html[data-theme="dark"] .gx-sinhala-results-heading { border-color:#49353D; color:#C1B1B5; }
+html[data-theme="dark"] .gx-sinhala-filter-count { border-color:#65505A; color:#E8DDE0; }
+@media(max-width:760px) {
+  .gx-sinhala-results-heading { margin-top:20px; }
+  .gx-sinhala-filter-count { min-width:23px; height:23px; }
+}
