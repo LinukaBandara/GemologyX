@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { ReactNode } from "react";
 import { ArrowLeft, ArrowUpRight, Clock3, Calendar, Languages } from "lucide-react";
 
@@ -12,6 +13,7 @@ export function ArticleLayout({
   related,
   lastReviewed,
   languageLink,
+  heroImage,
 }: {
   category: string;
   readTime: string;
@@ -22,6 +24,7 @@ export function ArticleLayout({
   related?: { label: string; href: string }[];
   lastReviewed?: string;
   languageLink?: { href: string; label: string };
+  heroImage?: { src: string; alt: string; credit: string; sourceUrl?: string };
 }) {
   const isSinhala = crumbHref.startsWith("/si/");
   const learnHref = isSinhala ? "/si/learn" : "/learn";
@@ -44,6 +47,12 @@ export function ArticleLayout({
           {title}
         </h1>
 
+        {heroImage && (
+          <figure className="gx-sri-photo-banner gx-article-hero-photo">
+            <Image src={heroImage.src} alt={heroImage.alt} width={1200} height={720} sizes="(max-width: 860px) 100vw, 860px" />
+            <figcaption><span>{heroImage.credit}</span>{heroImage.sourceUrl && <a href={heroImage.sourceUrl} target="_blank" rel="noreferrer">Image source and licence</a>}</figcaption>
+          </figure>
+        )}
         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-muted">
           <span className="inline-flex items-center gap-1.5">
             <Clock3 size={14} /> {readTime}
