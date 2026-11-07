@@ -1336,3 +1336,54 @@ html[data-theme="dark"] .site-header #mobile-navigation a{color:#F7F0EA}
  .gx-pearl-sri-actions{align-items:flex-start;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){.gx-pearl-home *{transition:none!important;scroll-behavior:auto!important}}
+
+
+/* ── Pearl Editorial refinement: brighter, more consistent business identity ── */
+.gx-pearl-home {
+  --gx-pearl-bg: #FCFBF9;
+  --gx-pearl-paper: #FFFFFF;
+  --gx-pearl-soft: #F8F6F3;
+  --gx-pearl-line: #EAE4DE;
+  --gx-pearl-ink: #30242A;
+  --gx-pearl-muted: #766A6C;
+  background: #FCFBF9;
+}
+.gx-pearl-hero { background: #FCFBF9; }
+.gx-pearl-proof { background: #F8F6F3; border-color: #EAE4DE; }
+.gx-pearl-library, .gx-pearl-paths, .gx-pearl-end { background: #FCFBF9; }
+.gx-pearl-journal { background: #F8F6F3; border-color: #EAE4DE; }
+.gx-pearl-sri { background: #FCFBF9; }
+.gx-pearl-sri-mark {
+  background: linear-gradient(145deg, #FFFFFF 0%, #F8F5F1 100%);
+  border-color: #EAE4DE;
+}
+.gx-pearl-tools { background: #F8F6F3; border-color: #EAE4DE; }
+.gx-pearl-gem-art { background: linear-gradient(145deg, #F8F6F3, #F0EBE6); }
+.gx-pearl-article { background: #FFFFFF; border-color: #EAE4DE; }
+.gx-pearl-article-art { background: #F0EBE6; }
+.gx-pearl-path-card:hover { background: #F8F6F3; }
+.gx-pearl-tags a { border-color: #E5DAD3; }
+.gx-pearl-tags a:hover { background: #FFFFFF; }
+.gx-pearl-tool-list { border-color: #E5DAD3; }
+.gx-pearl-tool-list a { border-color: #E5DAD3; }
+.site-header { background: #FCFBF9; border-bottom-color: #EAE4DE; }
+
+/* Keep the light experience genuinely pearl-white while preserving a rich dark theme. */
+html[data-theme="dark"] .gx-pearl-home { background: #1C1117; }
+html[data-theme="dark"] .gx-pearl-hero,
+html[data-theme="dark"] .gx-pearl-library,
+html[data-theme="dark"] .gx-pearl-paths,
+html[data-theme="dark"] .gx-pearl-end,
+html[data-theme="dark"] .gx-pearl-sri { background: #1C1117; }
+html[data-theme="dark"] .gx-pearl-proof,
+html[data-theme="dark"] .gx-pearl-journal,
+html[data-theme="dark"] .gx-pearl-tools { background: #24151D; }
+html[data-theme="dark"] .gx-pearl-sri-mark { background: linear-gradient(145deg, #38232C, #281820); }
+html[data-theme="dark"] .gx-pearl-gem-art,
+html[data-theme="dark"] .gx-pearl-article-art { background: #38232C; }
+html[data-theme="dark"] .gx-pearl-article { background: #281820; }
+html[data-theme="dark"] .gx-pearl-path-card:hover,
+html[data-theme="dark"] .gx-pearl-tags a:hover { background: #38232C; }
+html[data-theme="dark"] .gx-pearl-tags a,
+html[data-theme="dark"] .gx-pearl-tool-list,
+html[data-theme="dark"] .gx-pearl-tool-list a { border-color: #49313A; }
