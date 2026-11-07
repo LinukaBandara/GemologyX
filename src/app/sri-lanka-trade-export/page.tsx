@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ExternalLink, FileCheck2, Globe2, Scale, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -49,6 +50,10 @@ export default function SriLankaTradeExportPage() {
           This guide helps traders, buyers and researchers find official procedures, interpret
           published statistics and ask better questions about provenance and disclosure.
         </p>
+        <figure className="gx-sri-photo-banner gx-sri-trade-photo">
+          <Image src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Gem_cutting_on_a_lap_wheel%2C_Gintota%2C_Sri_Lanka_%282026%29.jpg" alt="Gem cutter working on a lap wheel in Gintota, Sri Lanka" width={2160} height={3840} sizes="(max-width: 800px) 100vw, 900px" />
+          <figcaption><span>මැණික් කැපීමේ ශිල්පය · ගින්තොට, ශ්‍රී ලංකාව</span><a href="https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg" target="_blank" rel="noreferrer">Ilyes Makria / Joalys · CC BY-SA 4.0 · Wikimedia Commons</a></figcaption>
+        </figure>
         <div className="mt-7 flex flex-wrap gap-3">
           <a className="luxury-button luxury-button-primary" href="#official-procedures">Official procedures <ArrowRight size={16} /></a>
           <a className="luxury-button luxury-button-secondary" href="#trade-checklist">Trade checklist</a>
