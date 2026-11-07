@@ -228,3 +228,5 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 - `/si/learn/gem-insurance-appraisal`: a blue zircon ring being tested by a gemologist in Kolkata — Billjones94, CC BY-SA 4.0. This is an illustrative photograph of gem testing, not an insurance appraisal, valuation document, proof of the ring's value or an example of Sri Lankan origin.
 
 - `/si/learn/gemstone-inclusions-guide`: magnified blue sapphire showing an internal inclusion — Jan-Peter Geringer, CC BY-SA 4.0. This image illustrates one visible internal feature only; it is not a diagnostic report, treatment conclusion or proof of geographic origin.
+
+- `/si/learn/synthetic-sapphire-guide`: microscopic photograph of curved growth striations in a Verneuil synthetic colour-change sapphire — LucasFassari, CC BY-SA 4.0. This is a documented synthetic specimen and an example of one growth feature; it is not a universal identification shortcut or proof about another stone.
