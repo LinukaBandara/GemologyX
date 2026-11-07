@@ -45,6 +45,13 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
           .length;
         const mainLandmarks = (html.match(/<main\b/gi) ?? []).length;
         const h1Count = (html.match(/<h1\b/gi) ?? []).length;
+        const unsafeNewTabLinks = [...html.matchAll(/<a\b([^>]*)>/gi)]
+          .filter((match) => /\btarget=["']_blank["']/i.test(match[1]))
+          .filter((match) => {
+            const rel = match[1].match(/\brel=["']([^"']*)["']/i)?.[1] ?? "";
+            return !/\b(?:noopener|noreferrer)\b/i.test(rel);
+          })
+          .length;
         const hasSkipLink = html.includes('href="#main-content"') && html.includes('id="main-content"');
         const expectedCanonical = "https://gemologyx.com" + (pathname === "/" ? "/" : pathname);
         const issues: string[] = [];
@@ -55,6 +62,7 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
         if (!hasTwitterImage) issues.push("missing Twitter image");
         if (imagesWithoutAlt > 0) issues.push(imagesWithoutAlt + " image(s) missing an alt attribute");
         if (h1Count !== 1) issues.push("expected exactly one page-level H1, found " + h1Count);
+        if (unsafeNewTabLinks > 0) issues.push(unsafeNewTabLinks + " new-tab link(s) missing noopener/noreferrer");
         if (mainLandmarks !== 1) issues.push("expected exactly one main landmark, found " + mainLandmarks);
         if (!hasSkipLink) issues.push("missing accessible skip link");
         if (/\|\s*GemologyX\s*\|\s*GemologyX/i.test(title)) issues.push("duplicated brand suffix");
