@@ -134,7 +134,7 @@ export default function ToolsPage() {
             <p className="mt-3 max-w-sm text-sm leading-6 text-muted">The next tools will focus on measurable gem properties and practical learning, with clear explanations of what each result can — and cannot — tell you.</p>
           </div>
           <div className="grid gap-0 sm:grid-cols-2">
-            {inDevelopment.map((item, index) => {
+            {inDevelopment.map((item) => {
               const Icon = item.icon;
               return (
                 <div key={item.name} className="flex gap-3 border-t border-border py-4 sm:px-3">
