@@ -16,6 +16,12 @@ export default function Page() {
       crumbHref="/si/learn/natural-synthetic-imitation-gems"
       crumbLabel="මැණික් වෙළෙඳ පද"
       lastReviewed="2026-11-02"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Synthetic_sapphire_1.jpg",
+        alt: "A faceted synthetic blue sapphire manufactured by the Verneuil flame-fusion process",
+        credit: "James St. John · CC BY 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Synthetic_sapphire_1.jpg",
+      }}
       related={[
         { label: "Natural, synthetic සහ imitation පද", href: "/si/learn/natural-synthetic-imitation-gems" },
         { label: "Synthetic sapphire ගැන", href: "/si/learn/synthetic-sapphire-guide" },
