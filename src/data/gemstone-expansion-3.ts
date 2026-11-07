@@ -175,7 +175,7 @@ export const expandedGemstonesThree: Gemstone[] = [
     crystalSystem: "Quartz aggregate",
     colors: ["Golden brown", "Yellow-brown", "Blue-grey (hawk’s-eye)"],
     transparency: "Opaque to semitranslucent",
-    commonTreatments: ["Ask about dyeing or other enhancement in unusually vivid material"],
+    commonTreatments: ["Bleaching or heat treatment may occur; verify individual disclosure"],
     description: "A chatoyant quartz material with a moving silky band of light, usually polished as cabochons, beads and decorative objects.",
     detail: {
       whatIsIt: "Tiger’s-eye is a chatoyant variety of quartz containing aligned fibrous inclusions derived from amphibole minerals. Light reflected from the fibres creates a moving band called chatoyancy. The trade name describes the optical appearance and material, not an independent quartz species.",
