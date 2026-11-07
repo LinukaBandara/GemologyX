@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -16,7 +17,7 @@ const sources = [
 ];
 
 export default function MiningEnvironmentPage() {
-  return <article className="container-page gx-regional-subpage max-w-4xl py-12 md:py-16">
+  return <article className="container-page gx-regional-subpage max-w-4xl py-12 md:py-16"><BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com" }, { name: "Sri Lanka Mining", url: "https://gemologyx.com/sri-lanka-mining" }, { name: "Environment", url: "https://gemologyx.com/sri-lanka-mining/environment" }]} />
     <nav className="luxury-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/sri-lanka-mining">Sri Lanka Mining</Link><span>/</span><span>Environment</span></nav>
     <header className="article-hero"><div className="luxury-eyebrow"><span /> ENVIRONMENT & REHABILITATION</div><h1 className="mt-5 font-serif text-4xl font-semibold leading-tight md:text-6xl">Environmental Impacts of Gem Mining in Sri Lanka</h1><p className="mt-5 max-w-3xl text-base leading-7 text-muted md:text-lg">What research from selected Sri Lankan locations says about land, water and habitats—and why rehabilitation needs to be planned and monitored.</p></header>
     <figure className="gx-sri-photo-banner"><Image src="https://upload.wikimedia.org/wikipedia/commons/7/71/Hand-sorting_washed_gem_gravel%2C_Pelmadulla%2C_Sri_Lanka_%282026%29.jpg" alt="Washed gem-bearing gravel being sorted by hand near Pelmadulla, Sri Lanka" width={1200} height={800} sizes="(max-width: 800px) 100vw, 1000px" /><figcaption><span>Hand-sorting washed gem gravel · Pelmadulla</span><a href="https://commons.wikimedia.org/wiki/File:Hand-sorting_washed_gem_gravel,_Pelmadulla,_Sri_Lanka_(2026).jpg" target="_blank" rel="noreferrer">Ilyes Makria / Joalys · CC BY-SA 4.0 · Wikimedia Commons</a></figcaption></figure>
