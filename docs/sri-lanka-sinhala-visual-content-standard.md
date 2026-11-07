@@ -202,3 +202,7 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 - `/si/learn/blue-sapphire-red-flags`: pink sapphire under gemmological microscope — Sara Abey, CC BY-SA 4.0. The image illustrates professional examination context only; it does not prove the identity, treatment, origin or quality of any stone discussed in the guide.
 
 - `/si/learn/blue-sapphire-price-per-carat`: electronic jewellery weighing scale — Mauro Cateb, CC BY-SA 3.0. This supports the discussion of recorded weight only; it is not evidence of a sapphire's identity, quality or price.
+
+## Sinhala guide photography coverage — travel and jewellery purchase
+- `/si/learn/travel-with-gemstones`: fitted historical jewellery case with a hinged lid and compartment tray from the Auckland Museum collection — Auckland Museum Collections, CC BY 2.0. It illustrates organised jewellery storage, not a modern travel-security product or guarantee.
+- `/si/learn/jewelry-with-gems-buying`: jeweller using a ring mandrel while setting a blue topaz — Mauro Cateb, CC BY-SA 3.0. This illustrates jewellery setting work; it is not a guide to workmanship quality or a claim about a specific retail item.
