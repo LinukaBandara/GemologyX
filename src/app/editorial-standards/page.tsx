@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   description: "How GemologyX selects sources, checks technical claims, updates content, and handles commercial interests.",
 
   alternates: { canonical: "/editorial-standards" },
+  openGraph: { type: "website", title: "GemologyX Editorial Standards", description: "How GemologyX selects sources, checks technical claims, updates content and handles commercial interests.", url: "/editorial-standards" },
+  twitter: { card: "summary_large_image", title: "GemologyX Editorial Standards", description: "How GemologyX selects sources, checks technical claims, updates content and handles commercial interests." },
 };
 
 export default function EditorialStandardsPage() {
