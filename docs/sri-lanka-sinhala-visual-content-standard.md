@@ -125,3 +125,14 @@ The following additional Sinhala gemstone profiles now use the shared `ArticleLa
 | `/si/learn/lapis-lazuli-intro` | Raw lapis lazuli with pyrite from Afghanistan | Hannes Grobe · CC BY-SA 2.5 |
 
 The diamond image depicts a natural crystal specimen and is not a cut-grade or quality example. The Meetiyagoda feldspar image is identified by its Commons source as moonstone from Sri Lanka. The lapis lazuli image is from Afghanistan; it is not presented as Sri Lankan material.
+
+## November 2026 — gemstone profile image batch 3
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/tanzanite-intro` | Tanzanite crystal specimen | Géry PARENT · Public domain |
+| `/si/learn/morganite-intro` | Morganite beryl crystal from Minas Gerais, Brazil | Géry PARENT · Public domain |
+| `/si/learn/jade-intro` | Rough jadeite specimen from Kyalbajar region, Azerbaijan | IbrZulya · CC BY-SA 4.0 |
+| `/si/learn/fluorite-intro` | Deep purple fluorite on quartz | M. Schaap · CC BY-SA 4.0 |
+
+These are specimen illustrations, not Sri Lankan origin examples, certificates or quality grades. The source localities are retained accurately in the image alt text and captions.
