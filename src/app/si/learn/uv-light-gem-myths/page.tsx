@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/identify-sapphire"
       crumbLabel="නිල්මැණික් හඳුනාගැනීම"
       lastReviewed="2026-10-25"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Fluorite_fluorescence.jpg",
+        alt: "Fluorite specimen displaying different zones of visible colour and fluorescence under ultraviolet illumination; specimen from Dauria Nature Reserve, Russia",
+        credit: "Masha Milshina · CC BY 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Fluorite_fluorescence.jpg",
+      }}
       related={[
         { label: "නිල්මැණික් හඳුනාගැනීම", href: "/si/learn/identify-sapphire" },
         { label: "ස්වභාවික vs කෘත්‍රිම", href: "/si/learn/natural-vs-synthetic-gemstones" },
