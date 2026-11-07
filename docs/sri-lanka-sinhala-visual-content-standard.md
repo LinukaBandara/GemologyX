@@ -206,3 +206,7 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 ## Sinhala guide photography coverage — travel and jewellery purchase
 - `/si/learn/travel-with-gemstones`: fitted historical jewellery case with a hinged lid and compartment tray from the Auckland Museum collection — Auckland Museum Collections, CC BY 2.0. It illustrates organised jewellery storage, not a modern travel-security product or guarantee.
 - `/si/learn/jewelry-with-gems-buying`: jeweller using a ring mandrel while setting a blue topaz — Mauro Cateb, CC BY-SA 3.0. This illustrates jewellery setting work; it is not a guide to workmanship quality or a claim about a specific retail item.
+
+## Sinhala guide photography coverage — laboratory evidence and UV
+- `/si/learn/gem-certification-myths`, `/si/learn/glass-vs-gemstone` and `/si/learn/origin-opinion-vs-guarantee`: gemmological microscope examination — Sara Abey, CC BY-SA 4.0. This is contextual evidence of professional examination only; it does not certify any stone, prove a material identity or establish geographic origin.
+- `/si/learn/uv-light-gem-myths`: fluorite specimen showing zoned fluorescence under ultraviolet illumination, from Dauria Nature Reserve, Russia — Masha Milshina, CC BY 4.0. It is a fluorescence example, not a Sri Lankan specimen or proof that UV alone identifies a gemstone.
