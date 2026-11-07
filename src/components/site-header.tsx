@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { useState } from "react";
 
 const NAV = [
@@ -36,6 +37,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Link href="/search" aria-label="Search GemologyX" className="gx-icon-btn">
             <Search size={16} />
           </Link>
