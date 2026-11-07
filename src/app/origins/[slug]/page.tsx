@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, MapPin } from "lucide-react";
 import { origins, getOriginBySlug } from "@/data/origins";
@@ -16,6 +17,7 @@ export default async function OriginPage({params}:{params:Params}){
    <div className="origin-hero-mark"><MapPin size={25}/><span>ORIGIN</span></div>
    <div className="profile-hero-copy"><div className="luxury-eyebrow"><span/> GEOLOGICAL ATLAS</div><h1>{origin.name}</h1><p>{origin.summary}</p></div>
   </header>
+  {origin.image && <figure className="my-8 overflow-hidden rounded-2xl border border-border bg-surface"><div className="relative aspect-[16/9] w-full"><Image src={origin.image.src} alt={origin.image.alt} fill unoptimized sizes="(max-width: 768px) 100vw, 768px" className="object-cover" /></div><figcaption className="flex flex-wrap items-center justify-between gap-2 px-4 py-3 text-sm text-muted"><span>{origin.image.alt}</span><a href={origin.image.source} target="_blank" rel="noreferrer" className="underline underline-offset-4">Photo: {origin.image.credit}</a></figcaption></figure>}
   {origin.gemstones&&<div className="origin-tags">{origin.gemstones.map(g=><span key={g}>{g}</span>)}</div>}
   {d?<div className="profile-content origin-content">
    <section><h2>Overview</h2><p>{d.overview}</p></section>
