@@ -24,6 +24,7 @@ This standard applies to the English Sri Lanka hub, the Sinhala learning hub, al
 - Pelmadulla hand-sorted gem gravel: https://commons.wikimedia.org/wiki/File:Hand-sorting_washed_gem_gravel,_Pelmadulla,_Sri_Lanka_(2026).jpg — Ilyes Makria / Joalys, CC BY-SA 4.0.
 - Gintota gem cutting on a lap wheel: https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg — Ilyes Makria / Joalys, CC BY-SA 4.0.
 - Ratnapura-area sapphire crystal: https://commons.wikimedia.org/wiki/File:Sapphire_(gem_gravel_mine,_Ratnapura_area,_Sri_Lanka)_1_(34857678855).jpg — James St. John, CC BY 2.0.
+- Gemmological microscopic examination: https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg — Sara Abey, CC BY-SA 4.0.
 - Kandy gem-cutting workshop: https://commons.wikimedia.org/wiki/File:Sri_Lanka-Gem_cutting.jpg — Ji-Elle, CC BY-SA 3.0.
 
 ## Current implementation coverage
@@ -32,7 +33,7 @@ This standard applies to the English Sri Lanka hub, the Sinhala learning hub, al
 - Mining hub: documentary mining photographs with credits.
 - Geology explorer: Ratnapura-area sapphire crystal photo plus conceptual deposit diagram.
 - Mining licence explorer: Pelmadulla gem pit photo plus clearly labelled conceptual document/land diagram.
-- Buying visit explorer: GemologyX sapphire inspection photograph plus checklist illustration.
+- Buying visit explorer: gemmological microscope examination photograph by Sara Abey plus checklist illustration.
 - Trade journey: Gintota lapidary photograph plus process diagram.
 - Gem terminology explorer: Ratnapura-area sapphire specimen photo.
 - Trade/export guide: Gintota lapidary photograph.
