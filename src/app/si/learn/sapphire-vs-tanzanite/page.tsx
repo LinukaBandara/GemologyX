@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/tanzanite-intro"
       crumbLabel="Tanzanite හැඳින්වීම"
       lastReviewed="2026-10-25"
+heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Tanzanite_%28Tanzanie%29.jpg", alt: "Natural blue-violet tanzanite crystal specimens", credit: "Tanzanite crystals — Parent Géry, public domain (Wikimedia Commons).", sourceUrl: "https://commons.wikimedia.org/wiki/File:Tanzanite_(Tanzanie).jpg" }}
       related={[
         { label: "Tanzanite හැඳින්වීම", href: "/si/learn/tanzanite-intro" },
         { label: "නිල්මැණික් මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },
