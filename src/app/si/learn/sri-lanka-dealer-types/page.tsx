@@ -21,6 +21,13 @@ export default function Page() {
       category="ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාම"
       readTime="මිනිත්තු 7"
       title="ශ්‍රී ලංකාවේ මැණික් වෙළෙන්දන් සහ සේවා භූමිකා"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Gem_cutting_on_a_lap_wheel%2C_Gintota%2C_Sri_Lanka_%282026%29.jpg",
+        alt: "A gem cutter working at a lap wheel in Gintota, Sri Lanka",
+        credit: "Ilyes Makria / Joalys · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg",
+      }}
+
       crumbHref="/si/learn/sri-lanka-gem-trade-intro"
       crumbLabel="ශ්‍රී ලංකාවේ මැණික් වෙළෙඳ ගමන"
       lastReviewed="2026-11-05"
