@@ -894,3 +894,59 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .gx-v2-photo-credit{display:block;margin-top:.8rem;color:rgba(248,243,233,.42);font-size:.55rem;line-height:1.5;letter-spacing:.02em}
+
+
+/* GemologyX signature palette: midnight black + electric mineral blue */
+:root{--background:#02070A;--surface:#07131B;--foreground:#F3F8FB;--muted:#A7BAC5;--border:rgba(2,151,222,.22);--accent:#0297DE;--accent-strong:#027BB5;--accent-soft:rgba(2,151,222,.12);--gold:#0297DE;--gold-soft:rgba(2,151,222,.14)}
+.site-header{background:#02070A;border-bottom-color:rgba(2,151,222,.25)}
+.site-header .nav-link:hover,.site-header .gx-icon-btn:hover{color:#0297DE}
+.gx-home-v2{background:#02070A;color:#F3F8FB}
+.gx-home-v2 em{color:#0297DE}
+.gx-v2-hero,.gx-v2-hero-bottom{background:#02070A}
+.gx-v2-hero-glow{background:radial-gradient(ellipse at 78% 35%,rgba(2,151,222,.23),transparent 44%),linear-gradient(120deg,#02070A 0%,#06131C 64%,#071C29 100%)}
+.gx-v2-eyebrow,.gx-v2-eyebrow-dark{color:#0297DE}
+.gx-v2-eyebrow>span{background:#0297DE}
+.gx-v2-hero-copy h1 em,.gx-v2-section-heading-light h2 em{color:#0297DE}
+.gx-v2-button-gold{background:#0297DE;color:#02070A}
+.gx-v2-button-gold:hover,.gx-v2-search button:hover{background:#35B8F2}
+.gx-v2-search{border-color:rgba(2,151,222,.4);color:#0297DE}
+.gx-v2-search button{background:#0297DE;color:#02070A}
+.gx-v2-proof-row svg,.gx-v2-note-mark,.gx-v2-card-eyebrow,.gx-v2-card-read,.gx-v2-inline-link-light{color:#0297DE}
+.gx-v2-gem-section,.gx-v2-pathways-section{background:#061019;color:#F3F8FB}
+.gx-v2-section-heading h2,.gx-v2-sri-copy h2,.gx-v2-pathway-heading h2,.gx-v2-final-cta h2{color:#F3F8FB}
+.gx-v2-heading-aside p,.gx-v2-pathway-heading>p{color:#A7BAC5}
+.gx-v2-inline-link,.gx-v2-gem-meta span,.gx-v2-pathway-link{color:#0297DE}
+.gx-v2-gem-card{color:#F3F8FB}
+.gx-v2-gem-meta small,.gx-v2-image-disclosure{color:#8FA5B1}
+.gx-v2-gem-arrow{background:#02070A;color:#0297DE}
+.gx-v2-gem-card:hover .gx-v2-gem-arrow{background:#0297DE;color:#02070A}
+.gx-v2-editorial-section{background:#02070A}
+.gx-v2-editorial-card{background:#07131B;border-color:rgba(2,151,222,.2)}
+.gx-v2-editorial-card:hover{border-color:rgba(2,151,222,.65)}
+.gx-v2-sri-section,.gx-v2-final-cta{background:#07131B}
+.gx-v2-sri-art{background:radial-gradient(ellipse at 50% 50%,#073D59 0%,#052437 48%,#02070A 100%);color:#0297DE}
+.gx-v2-sri-orbit{border-color:rgba(2,151,222,.34)}
+.gx-v2-sri-gem{border-color:rgba(2,151,222,.6);background:radial-gradient(circle,#07547A,#061722 72%);box-shadow:0 0 75px rgba(2,151,222,.2)}
+.gx-v2-sri-coord,.gx-v2-sri-copy>p{color:#A7BAC5}
+.gx-v2-sri-art-caption{color:#0297DE}
+.gx-v2-sri-tags a{border-color:rgba(2,151,222,.3);color:#DCEAF1}
+.gx-v2-sri-tags a:hover{background:rgba(2,151,222,.1);color:#0297DE}
+.gx-v2-button-dark{background:#0297DE;color:#02070A}
+.gx-v2-sinhala-link{color:#C4D4DC}
+.gx-v2-pathway-grid,.gx-v2-pathway-card{border-color:rgba(2,151,222,.22)}
+.gx-v2-pathway-card{color:#F3F8FB}
+.gx-v2-pathway-card:hover{background:rgba(2,151,222,.08)}
+.gx-v2-pathway-top{color:#0297DE}
+.gx-v2-pathway-card p{color:#A7BAC5}
+.gx-v2-tools-band{background:#061722}
+.gx-v2-tools-inner h2{color:#F3F8FB}
+.gx-v2-tools-inner h2 em{color:#0297DE}
+.gx-v2-tools-inner>div:first-child>p{color:#A7BAC5}
+.gx-v2-tool-links{border-color:rgba(2,151,222,.3)}
+.gx-v2-tool-links a{color:#F3F8FB;border-color:rgba(2,151,222,.22)}
+.gx-v2-tool-links a>span,.gx-v2-tool-links a>svg{color:#0297DE}
+.gx-v2-final-cta h2{color:#F3F8FB}
+.gx-v2-final-cta>div>p{color:#A7BAC5}
+.gx-v2-text-link-dark{color:#DCEAF1}
+.gx-v2-photo-credit{color:rgba(220,234,241,.48)}
+@media(prefers-reduced-motion:reduce){.gx-home-v2 *,.gx-home-v2 *::before,.gx-home-v2 *::after{transition:none!important}}
