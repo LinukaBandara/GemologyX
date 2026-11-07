@@ -2369,16 +2369,16 @@ html[data-theme="dark"] .gx-mining-page .gx-mining-photo-frame { background: #38
 /* Sinhala: locally available Sinhala typefaces first, generous leading,
    comfortable line lengths and no forced English-style letter spacing. */
 .gx-sinhala-hub, .gx-article-page-si {
-  font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   letter-spacing:0;
 }
 .gx-sinhala-hub .gx-regional-hero h1 {
-  font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   font-size:clamp(2.25rem,4.8vw,4.5rem); font-weight:700;
   letter-spacing:0; line-height:1.35;
 }
 .gx-sinhala-hub .gx-regional-lede {
-  font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   font-size:15px; line-height:2.05;
 }
 .gx-sinhala-hub .gx-regional-kicker { letter-spacing:.08em; }
@@ -2387,7 +2387,7 @@ html[data-theme="dark"] .gx-mining-page .gx-mining-photo-frame { background: #38
 .gx-sinhala-hub .gx-regional-section-body h2,
 .gx-sinhala-hub .gx-regional-resources h2,
 .gx-sinhala-hub .gx-sinhala-principles h2 {
-  font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   font-weight:700; letter-spacing:0; line-height:1.5;
 }
 .gx-sinhala-hub .gx-regional-intro > p:last-child,
@@ -2426,13 +2426,13 @@ html[data-theme="dark"] .gx-mining-page .gx-mining-photo-frame { background: #38
 /* Sinhala guide explorer */
 .gx-sinhala-explorer { padding-top:10px; }
 .gx-sinhala-explorer .gx-eyebrow { color:var(--regional-ruby); }
-.gx-sinhala-explorer h2 { color:var(--regional-ink); font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif; font-size:clamp(1.35rem,2.8vw,1.9rem); font-weight:700; line-height:1.55; letter-spacing:0; }
+.gx-sinhala-explorer h2 { color:var(--regional-ink); font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif; font-size:clamp(1.35rem,2.8vw,1.9rem); font-weight:700; line-height:1.55; letter-spacing:0; }
 .gx-sinhala-explorer-heading > div > p:last-child { max-width:680px; line-height:1.95; }
 .gx-sinhala-explorer-heading > span { border-color:var(--regional-line); border-radius:2px; background:var(--regional-surface); color:var(--regional-ruby); }
 .gx-sinhala-filter-list { gap:8px; }
 .gx-sinhala-filter {
   border-color:var(--regional-line); border-radius:2px; background:transparent;
-  color:var(--regional-muted); font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  color:var(--regional-muted); font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   font-size:11px; line-height:1.6;
 }
 .gx-sinhala-filter:hover,.gx-sinhala-filter.is-active { border-color:var(--regional-ruby); background:var(--regional-ruby); color:#fff; }
@@ -2444,12 +2444,12 @@ html[data-theme="dark"] .gx-mining-page .gx-mining-photo-frame { background: #38
 .gx-sinhala-guide:hover { transform:none; border-color:var(--regional-champagne); background:var(--regional-surface); box-shadow:none; }
 .gx-sinhala-guide-rule { position:absolute; top:0; left:0; width:28px; height:2px; background:var(--regional-champagne); }
 .gx-sinhala-guide h3 {
-  font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   font-size:15px; font-weight:700; line-height:1.65; letter-spacing:0;
 }
-.gx-sinhala-guide p { font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif; font-size:12px; line-height:1.95; }
+.gx-sinhala-guide p { font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif; font-size:12px; line-height:1.95; }
 .gx-sinhala-guide > div span:first-child { border-radius:2px; background:var(--regional-surface); color:var(--regional-ruby); }
-.gx-sinhala-guide > span:last-child { font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif; font-size:11px; }
+.gx-sinhala-guide > span:last-child { font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif; font-size:11px; }
 
 .gx-article-page { max-width:900px; }
 .gx-article-header { padding-bottom:28px; border-color:var(--regional-line); }
@@ -2460,19 +2460,19 @@ html[data-theme="dark"] .gx-mining-page .gx-mining-photo-frame { background: #38
 .gx-article-related { border-color:var(--regional-line); border-radius:2px; background:var(--regional-surface); }
 .gx-article-page-si { max-width:860px; }
 .gx-article-page-si .gx-article-header h1 {
-  font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   font-size:clamp(1.8rem,4vw,2.5rem); font-weight:750; letter-spacing:0; line-height:1.55;
 }
 .gx-article-page-si .gx-article-content {
-  font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   font-size:15px; line-height:2.05; letter-spacing:0;
 }
 .gx-article-page-si .gx-article-content h2,
 .gx-article-page-si .gx-article-content h3 {
-  font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
+  font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif;
   font-weight:700; letter-spacing:0; line-height:1.65;
 }
-.gx-article-page-si .gx-article-related { font-family:"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif; }
+.gx-article-page-si .gx-article-related { font-family:var(--font-sinhala),"Noto Sans Sinhala","Iskoola Pota","Abhaya Libre",sans-serif; }
 .gx-article-page-si .gx-article-related > p { line-height:1.8; }
 html[data-theme="dark"] .gx-regional-hub {
   --regional-paper:#171116; --regional-surface:#241A20; --regional-ink:#F2E9E9;
