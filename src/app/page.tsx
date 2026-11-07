@@ -32,36 +32,36 @@ const gemstoneCards = [
     name: "Sapphire",
     note: "Corundum · Mohs 9",
     href: "/gemstones/sapphire",
-    image: "/images/gems/sapphire-crystals-montana-02.jpg",
-    alt: "Natural rough sapphire crystals from the Smithsonian collection, Montana, USA",
-    caption: "Smithsonian · CC0 · Montana, USA",
+    image: "/images/suranga/blue-gem.svg",
+    alt: "Original generated blue gemstone artwork from Suranga Gems",
+    caption: "Original generated artwork · Suranga Gems",
     className: "gx-home-gem-sapphire",
   },
   {
     name: "Ruby",
     note: "Red corundum · Mohs 9",
     href: "/gemstones/ruby",
-    image: "/images/gems/ruby-gem-inclusions.jpg",
-    alt: "Ruby photograph by Humanfeather, showing internal inclusions",
-    caption: "Humanfeather · CC BY 3.0",
+    image: "/images/suranga/pink-gem.svg",
+    alt: "Original generated pink gemstone artwork from Suranga Gems",
+    caption: "Original generated artwork · Suranga Gems",
     className: "gx-home-gem-ruby",
   },
   {
     name: "Emerald",
     note: "Beryl · Mohs 7.5–8",
     href: "/gemstones/emerald",
-    image: "/images/gems/emerald-cut-gem.jpg",
-    alt: "Faceted green gemstone described by its source as an emerald",
-    caption: "Gaumania · CC0 1.0",
+    image: "/images/suranga/green-gem.svg",
+    alt: "Original generated green gemstone artwork from Suranga Gems",
+    caption: "Original generated artwork · Suranga Gems",
     className: "gx-home-gem-emerald",
   },
   {
     name: "Amethyst",
     note: "Quartz · Mohs 7",
     href: "/gemstones/amethyst",
-    image: "/images/gems/amethyst-crystals.jpg",
-    alt: "Close view of amethyst crystals; locality is not recorded in the source",
-    caption: "Lisa Ann Yount · CC0 1.0",
+    image: "/images/suranga/gold-gem.svg",
+    alt: "Original generated golden gemstone artwork from Suranga Gems",
+    caption: "Original generated artwork · Suranga Gems",
     className: "gx-home-gem-amethyst",
   },
 ];
@@ -74,9 +74,9 @@ const learningCards = [
     description:
       "Understand the differences between geological origin, laboratory growth and look-alike materials—and why appearance alone is not enough.",
     href: "/learn/natural-vs-synthetic-gemstones",
-    image: "/images/gems/sapphire-crystals-montana-01.jpg",
+    image: "/images/suranga/hero-gems.svg",
     alt: "Rough sapphire crystals from the Smithsonian collection, Montana, USA",
-    credit: "Smithsonian Open Access · CC0",
+    credit: "Original generated artwork · Suranga Gems",
   },
   {
     number: "02",
@@ -85,9 +85,9 @@ const learningCards = [
     description:
       "Explore common gemstone enhancements, what disclosure means and how treatment can affect care, durability and value.",
     href: "/learn/gemstone-treatments",
-    image: "/images/gems/ruby-gem-inclusions.jpg",
-    alt: "Ruby photograph by Humanfeather, showing internal inclusions",
-    credit: "Humanfeather · CC BY 3.0",
+    image: "/images/suranga/pink-gem.svg",
+    alt: "Original generated pink gemstone artwork from Suranga Gems",
+    credit: "Original generated artwork · Suranga Gems",
   },
   {
     number: "03",
@@ -96,9 +96,9 @@ const learningCards = [
     description:
       "Find out what a laboratory report can establish, what it cannot, and which details deserve a closer look before a purchase.",
     href: "/learn/how-to-read-a-gemstone-report",
-    image: "/images/gems/emerald-cut-gem.jpg",
-    alt: "Faceted green gemstone described by its source as an emerald",
-    credit: "Gaumania · CC0 1.0",
+    image: "/images/suranga/green-gem.svg",
+    alt: "Original generated green gemstone artwork from Suranga Gems",
+    credit: "Original generated artwork · Suranga Gems",
   },
 ];
 
@@ -168,17 +168,17 @@ export default function HomePage() {
           <div className="gx-v2-hero-visual">
             <div className="gx-v2-hero-photo">
               <Image
-                src="/images/gems/sapphire-crystals-montana-01.jpg"
-                alt="Rough sapphire crystals from the Smithsonian National Museum of Natural History collection, Montana, USA"
+                src="/images/suranga/hero-gems.svg"
+                alt="Original generated gemstone artwork from Suranga Gems"
                 fill
                 priority
                 sizes="(max-width: 900px) 100vw, 54vw"
               />
               <div className="gx-v2-photo-shade" />
               <div className="gx-v2-photo-label">
-                <span>SPECIMEN STUDY · 001</span>
-                <strong>Sapphire in its natural form</strong>
-                <small>Smithsonian collection · Montana, USA · CC0</small>
+                <span>GEMSTONE ARTWORK · 001</span>
+                <strong>A world of colour and form</strong>
+                <small>Original generated artwork · Suranga Gems</small>
               </div>
             </div>
             <div className="gx-v2-floating-note">
@@ -223,7 +223,7 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-          <p className="gx-v2-image-disclosure">Photographs are identified by their source records. A specimen image illustrates the material shown; it does not establish the identity, treatment, quality or origin of another gemstone.</p>
+          <p className="gx-v2-image-disclosure">Gemstone visuals are original generated artwork from Suranga Gems. They are illustrative and do not establish a stone’s identity, treatment, quality or geographic origin.</p>
         </div>
       </section>
 
@@ -250,7 +250,7 @@ export default function HomePage() {
                   <div className="gx-v2-card-eyebrow">{card.eyebrow}</div>
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>
-                  <small className="gx-v2-photo-credit">{card.credit}</small>\n                  <small className="gx-v2-photo-credit">{card.credit}</small>
+                  <small className="gx-v2-photo-credit">{card.credit}</small>
                   <span className="gx-v2-card-read">Read the guide <ArrowUpRight size={15} /></span>
                 </div>
               </Link>
