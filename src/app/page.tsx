@@ -42,7 +42,7 @@ const gemstoneCards = [
     note: "Red corundum · Mohs 9",
     href: "/gemstones/ruby",
     image: "/images/gems/ruby-gem-inclusions.jpg",
-    alt: "Faceted ruby showing internal inclusions",
+    alt: "Ruby photograph by Humanfeather, showing internal inclusions",
     caption: "Humanfeather · CC BY 3.0",
     className: "gx-home-gem-ruby",
   },
@@ -60,7 +60,7 @@ const gemstoneCards = [
     note: "Quartz · Mohs 7",
     href: "/gemstones/amethyst",
     image: "/images/gems/amethyst-crystals.jpg",
-    alt: "Close view of purple amethyst crystals",
+    alt: "Close view of amethyst crystals; locality is not recorded in the source",
     caption: "Lisa Ann Yount · CC0 1.0",
     className: "gx-home-gem-amethyst",
   },
@@ -76,6 +76,7 @@ const learningCards = [
     href: "/learn/natural-vs-synthetic-gemstones",
     image: "/images/gems/sapphire-crystals-montana-01.jpg",
     alt: "Rough sapphire crystals from the Smithsonian collection, Montana, USA",
+    credit: "Smithsonian Open Access · CC0",
   },
   {
     number: "02",
@@ -86,6 +87,7 @@ const learningCards = [
     href: "/learn/gemstone-treatments",
     image: "/images/gems/ruby-gem-inclusions.jpg",
     alt: "Ruby photograph by Humanfeather, showing internal inclusions",
+    credit: "Humanfeather · CC BY 3.0",
   },
   {
     number: "03",
@@ -96,6 +98,7 @@ const learningCards = [
     href: "/learn/how-to-read-a-gemstone-report",
     image: "/images/gems/emerald-cut-gem.jpg",
     alt: "Faceted green gemstone described by its source as an emerald",
+    credit: "Gaumania · CC0 1.0",
   },
 ];
 
@@ -175,7 +178,7 @@ export default function HomePage() {
               <div className="gx-v2-photo-label">
                 <span>SPECIMEN STUDY · 001</span>
                 <strong>Sapphire in its natural form</strong>
-                <small>Smithsonian collection · Montana, USA</small>
+                <small>Smithsonian collection · Montana, USA · CC0</small>
               </div>
             </div>
             <div className="gx-v2-floating-note">
@@ -247,7 +250,8 @@ export default function HomePage() {
                   <div className="gx-v2-card-eyebrow">{card.eyebrow}</div>
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>
-                  <small className="gx-v2-photo-credit">{card.credit}</small>\n                  <span className="gx-v2-card-read">Read the guide <ArrowUpRight size={15} /></span>
+                  <small className="gx-v2-photo-credit">{card.credit}</small>\n                  <small className="gx-v2-photo-credit">{card.credit}</small>
+                  <span className="gx-v2-card-read">Read the guide <ArrowUpRight size={15} /></span>
                 </div>
               </Link>
             ))}
