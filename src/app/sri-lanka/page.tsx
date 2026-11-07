@@ -21,7 +21,7 @@ const sections = [
 
 export default function SriLankaHubPage() {
   return (
-    <main className="gx-regional-hub gx-sri-lanka-hub">
+    <div className="gx-regional-hub gx-sri-lanka-hub">
       <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Sri Lanka", url: "https://gemologyx.com/sri-lanka" }]} />
       <div className="container-page">
         <nav className="gx-regional-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Sri Lanka</span></nav>
@@ -67,6 +67,6 @@ export default function SriLankaHubPage() {
         </section>
         <section className="gx-regional-disclaimer"><ShieldCheck size={18} /><p>GemologyX is an educational reference. Information about mining, licensing, safety and export is a starting point for research—not legal, operational or professional advice. Confirm current requirements with the relevant Sri Lankan authority.</p></section>
       </div>
-    </main>
+    </div>
   );
 }
