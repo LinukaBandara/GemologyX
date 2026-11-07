@@ -17,7 +17,7 @@ export default function OriginsPage() {
   const featuredOrigins = origins.filter((origin) => origin.slug !== "kashmir");
 
   return (
-    <main className="container-page py-12 md:py-16">
+    <div className="container-page py-12 md:py-16">
       <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Gemstone Origins", url: "https://gemologyx.com/origins" }]} />
       <header className="mx-auto max-w-3xl border-b border-border pb-9 text-center">
         <div className="gx-eyebrow justify-center"><span /> WORLD GEMSTONE ATLAS</div>
@@ -56,6 +56,6 @@ export default function OriginsPage() {
       <p className="mx-auto mt-10 max-w-3xl text-center text-sm leading-relaxed text-muted">
         Kashmir is covered as a historic sapphire-producing region within the atlas, rather than presented as a country. A gemstone’s appearance alone cannot establish its geographic origin.
       </p>
-    </main>
+    </div>
   );
 }
