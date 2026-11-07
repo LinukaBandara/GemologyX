@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/topaz-intro"
       crumbLabel="Topaz හැඳින්වීම"
       lastReviewed="2026-10-24"
+heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/5/56/YellowTopaz.jpeg", alt: "A yellow topaz cut in a kite-shaped step-cut style", credit: "Yellow topaz — Pithecanthropus4152, CC BY-SA 4.0 (Wikimedia Commons).", sourceUrl: "https://commons.wikimedia.org/wiki/File:YellowTopaz.jpeg" }}
       related={[
         { label: "Topaz හැඳින්වීම", href: "/si/learn/topaz-intro" },
         { label: "Citrine හැඳින්වීම", href: "/si/learn/citrine-intro" },
