@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
   ArrowRight,
   Gem,
@@ -57,7 +58,7 @@ export function SriLankaTradeJourney() {
     <section className="overflow-hidden rounded-3xl border border-border bg-[#10283d] text-white" aria-labelledby="trade-journey-title">
       <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
         <div className="relative flex min-h-64 items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_50%_45%,rgba(89,175,191,0.24),transparent_55%)] p-6 md:p-9">
-          <svg viewBox="0 0 600 340" role="img" aria-labelledby="trade-svg-title trade-svg-desc" className="h-auto w-full max-w-xl">
+          <figure className="gx-sri-photo-feature"><Image src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Gem_cutting_on_a_lap_wheel%2C_Gintota%2C_Sri_Lanka_%282026%29.jpg" alt="A gem cutter working at a lap wheel in Gintota, Sri Lanka" width={2160} height={3840} sizes="(max-width: 1024px) 100vw, 45vw" /><figcaption><span>ගල් කැපීමේ ශිල්පය · ගින්තොට</span><a href="https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg" target="_blank" rel="noreferrer">Ilyes Makria / Joalys · CC BY-SA 4.0 · Commons</a></figcaption></figure>\n          <svg viewBox="0 0 600 340" role="img" aria-labelledby="trade-svg-title trade-svg-desc" className="h-auto w-full max-w-xl">
             <title id="trade-svg-title">ශ්‍රී ලංකාවේ මැණික් කර්මාන්ත සම්බන්ධතා</title>
             <desc id="trade-svg-desc">රළු ගල්, වෙළෙඳාම, කැපීම, පරීක්ෂාව සහ අලෙවිය සම්බන්ධ කරන සංකල්පීය රූප සටහනකි. සෑම ගලක්ම එකම අනුපිළිවෙළක් අනුගමනය කරන බවක් නොපෙන්වයි.</desc>
             <defs>
