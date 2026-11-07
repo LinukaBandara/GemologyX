@@ -21,6 +21,13 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="ආභරණ Setting වර්ග — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/4/45/Setting_a_topaz.JPG",
+        alt: "A jeweller using a ring mandrel while setting a blue topaz in a ring",
+        credit: "Setting a topaz — Mauro Cateb · CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Setting_a_topaz.JPG",
+      }}
+
       crumbHref="/si/learn/jewelry-with-gems-buying"
       crumbLabel="මැණික් සහිත ආභරණ"
       lastReviewed="2026-10-25"
