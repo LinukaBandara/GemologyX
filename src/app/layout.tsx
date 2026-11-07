@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gemologyx.com"),
   title: {
     default: "GemologyX — The Digital Guide to Gemstones",
-    template: "%s | GemologyX",
+    template: "%s",
   },
   description:
     "Explore gemstone characteristics, origins, treatments, certification, buying knowledge and practical tools — all in one place.",
