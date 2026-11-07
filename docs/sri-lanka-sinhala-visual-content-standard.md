@@ -243,3 +243,5 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 ## Sinhala gemstone profile photography coverage — quartz and turquoise
 - `/si/learn/quartz-family-intro`: a group of polished quartz varieties including amethyst, citrine, rose quartz, smoky quartz and milky quartz — Mauro Cateb, CC BY-SA 3.0. This is an illustrative selection, not an exhaustive taxonomy of quartz varieties.
 - `/si/learn/turquoise-intro`: sky-blue turquoise microcrystals on matrix from Lynch Station, Virginia, USA — Rob Lavinsky / iRocks.com, CC BY-SA 3.0. The photographed specimen is from the United States, not Sri Lanka; it illustrates turquoise mineral appearance only.
+
+- `/si/learn/yellow-sapphire-vs-topaz`: yellow topaz in a kite-shaped step cut — Pithecanthropus4152, CC BY-SA 4.0. This illustrates the topaz side of the comparison only; it is not a side-by-side identification reference or proof of the identity of another yellow stone.
