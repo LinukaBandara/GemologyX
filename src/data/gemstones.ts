@@ -342,14 +342,14 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic aquamarine exists but is not commercially significant in the market; most aquamarine sold is natural, with treatment status (heat) being the more relevant question for buyers.",
       treatments:
-        "Heat treatment to remove greenish or yellowish undertones and produce a purer blue is standard practice and widely accepted; it is generally considered permanent and does not require ongoing disclosure at the point of sale in the same way fracture filling does, though reputable sellers still disclose it.",
+        "Heat treatment may be used to reduce greenish or yellowish undertones and produce a purer blue. Buyers should ask for clear written disclosure of known treatments and review any laboratory report; disclosure requirements and trade practices vary by market and jurisdiction.",
       inclusions:
         "Aquamarine typically forms with fewer visible inclusions than emerald, and eye-clean material is relatively common, which is part of why oiling or resin filling is rarely needed.",
       valueFactors: ["Colour saturation (deeper blue generally more valuable)", "Clarity", "Cut quality", "Carat weight"],
       certification:
         "A laboratory report on aquamarine documents identity, weight, colour, clarity, and treatment status (typically confirming heat treatment or its absence).",
       care:
-        "Aquamarine measures 7.5–8 on the Mohs scale. Warm soapy water is always a safe cleaning method. Ultrasonic or steam cleaning is usually safe only when the stone has no liquid inclusions or fractures; fracture-filled aquamarine should be cleaned only with warm soapy water. Avoid heat exposure.",
+        "Aquamarine measures 7.5–8 on the Mohs scale. For routine care, use lukewarm water, mild soap and a soft brush or cloth, after checking for damage or vulnerable settings. Ultrasonic or steam cleaning may be suitable for some stones but should be avoided when fractures, liquid inclusions, filling or other vulnerabilities are present; when uncertain, choose gentle hand cleaning and ask a jeweller.",
       faqs: [
         { question: "Is aquamarine related to emerald?", answer: "Yes. Both are varieties of beryl. Aquamarine is blue to blue-green, while emerald is green and coloured by chromium and/or vanadium." },
         { question: "Can I assume a blue aquamarine is untreated?", answer: "No. Heat treatment is used on some aquamarine to reduce greenish tones. Ask the seller to disclose known treatment and consult a report when it matters." },
