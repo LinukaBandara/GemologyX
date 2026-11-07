@@ -141,7 +141,7 @@ export default function ToolsPage() {
           <p className="max-w-xs text-xs leading-5 text-muted">Choose a tool to open its calculator or reference guide.</p>
         </div>
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="gx-tool-card-grid mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {availableTools.map((tool) => {
             const Icon = tool.icon;
             return (
