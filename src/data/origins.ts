@@ -201,6 +201,58 @@ export const origins: Origin[] = [
       { label: "GIA: Australia opal fields expedition", url: "https://www.gia.edu/gia-news-research/australia-opal-fields-expedition" },
       { label: "GIA: Sapphire geographic origin determination", url: "https://www.gia.edu/gems-gemology/winter-2019-blue-sapphire-geographic-origin-determination" },
     ],
+  },,
+
+  {
+    slug: "thailand",
+    name: "Thailand",
+    summary: "A major global centre for ruby and sapphire trading, treatment and cutting, especially around Chanthaburi and Bangkok.",
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Mining_in_Thailand.jpg", alt: "Historic gemstone-related lapidary work in rural Thailand", credit: "Joethon · Public domain", source: "https://commons.wikimedia.org/wiki/File:Mining_in_Thailand.jpg" },
+    gemstones: ["Ruby", "Blue sapphire", "Yellow sapphire", "Spinel"],
+    detail: {
+      overview: "Thailand is internationally important not only for its own gemstone deposits but also as a trading, treatment and cutting centre. Chanthaburi has a long association with ruby and sapphire, while Bangkok is a major hub for the international coloured-stone trade.",
+      geology: "Ruby and sapphire deposits in eastern Thailand are associated with basalt-related gem fields in provinces including Chanthaburi and Trat. The wider Thai-Cambodian border region has historically produced corundum, although production and mining activity have changed over time.",
+      history: "Chanthaburi developed as a renowned gem market after ruby and sapphire discoveries in the region. Thai expertise in heat treatment, cutting and trading helped establish the country as a central meeting point for the global coloured-gem industry.",
+      misconceptions: "A gemstone sold, cut or treated in Thailand is not necessarily mined there. Trade location, treatment location and geological origin are separate facts and should not be confused."
+    },
+    sources: [
+      { label: "GIA: Gemstone geographic origin research", url: "https://www.gia.edu/gems-gemology" },
+      { label: "Chanthaburi Gem Market background", url: "https://www.travelfish.org/sight_profile/thailand/eastern_thailand/chanthaburi/chanthaburi/1601" }
+    ]
+  },
+  {
+    slug: "zambia",
+    name: "Zambia",
+    summary: "One of the world's best-known emerald sources, particularly the Kafubu and Kagem mining district.",
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Beryl-Quartz-279095.jpg", alt: "Emerald crystals in quartz matrix from the Kagem Emerald Mine, Zambia", credit: "Wikimedia Commons · see source file for licence", source: "https://commons.wikimedia.org/wiki/File:Beryl-Quartz-279095.jpg" },
+    gemstones: ["Emerald", "Amethyst", "Aquamarine", "Tourmaline"],
+    detail: {
+      overview: "Zambia is a major modern source of emerald, with the Kafubu Emerald District and Kagem Emerald Mine among its best-known producing areas. Zambian emeralds are an important part of the international market.",
+      geology: "The Kafubu emerald deposits occur in a complex metamorphic setting where beryllium-bearing fluids interacted with chromium- and vanadium-bearing rocks, creating conditions for emerald formation.",
+      history: "Commercial emerald production in the Kafubu area expanded during the late twentieth century, and Zambia became one of the leading sources of emerald on the world market.",
+      misconceptions: "Zambian emeralds are not automatically darker or better than emeralds from other origins. Colour, clarity, treatment, cut and individual quality vary substantially from stone to stone."
+    },
+    sources: [
+      { label: "GIA: Emerald sources and geographic origin", url: "https://www.gia.edu/emerald" },
+      { label: "Kagem Emerald Mine specimens", url: "https://commons.wikimedia.org/wiki/Category:Kagem_Emerald_Mine" }
+    ]
+  },
+  {
+    slug: "india",
+    name: "India",
+    summary: "A historic gemstone source and a major cutting, jewellery-making and trading centre, with Jaipur especially prominent.",
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Jaipur-Edelsteinschleiferei-01-2018-gje.jpg", alt: "Gemstone cutting workshop in Jaipur, India", credit: "Wikimedia Commons · see source file for licence", source: "https://commons.wikimedia.org/wiki/Category:Gemstone_cutting_in_Jaipur" },
+    gemstones: ["Ruby", "Sapphire", "Emerald", "Diamond", "Moonstone", "Garnet"],
+    detail: {
+      overview: "India has a long gemstone and jewellery history and remains a major centre for gemstone cutting, processing, jewellery manufacture and trade. Jaipur is especially well known for coloured-stone cutting and trading.",
+      geology: "India has varied gem-bearing geological regions, including historic diamond fields and deposits of garnet, beryl varieties, corundum and other gemstones. Kashmir is a historic sapphire-producing region in the northwestern Himalaya.",
+      history: "Gemstones have been part of Indian craft, adornment and trade for millennia. Jaipur developed into a major coloured-gem processing and trading centre, connecting rough stones with international jewellery markets.",
+      misconceptions: "A gemstone cut or traded in Jaipur is not necessarily mined in India. Cutting centre, seller location and geological origin must be distinguished."
+    },
+    sources: [
+      { label: "GIA: Gemstones and geographic origin resources", url: "https://www.gia.edu/gemstones" },
+      { label: "Gemstone cutting in Jaipur", url: "https://commons.wikimedia.org/wiki/Category:Gemstone_cutting_in_Jaipur" }
+    ]
   },
 ];
 
