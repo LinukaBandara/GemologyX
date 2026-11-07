@@ -181,3 +181,16 @@ The laboratory photograph is contextual examination imagery, not a depiction of 
 | `/si/learn/avoid-gemstone-scams` | Pink sapphire examined under a gemmological microscope | Sara Abey · CC BY-SA 4.0 |
 
 The balance-scale photograph documents a traditional jeweller's weighing instrument; it is not presented as a modern calibrated digital carat balance. The microscope image illustrates careful gem examination, not a guarantee against fraud or a substitute for independent laboratory verification.
+
+
+## November 2026 — jewellery design, durability, gifting and secondhand guides
+
+| Route | Image subject | Credit / licence |
+|---|---|---|
+| `/si/learn/jewelry-setting-types` | A jeweller using a ring mandrel while setting a blue topaz in a ring | Mauro Cateb · CC BY-SA 3.0 |
+| `/si/learn/ring-vs-pendant-durability` | Sapphire set in a gold ring | Ian Rosenberg Jeweller · CC BY-SA 4.0 |
+| `/si/learn/gemstone-gift-buying` | Sapphire and gold ring product photograph | Ian Rosenberg Jeweller · CC BY-SA 4.0 |
+| `/si/learn/blue-sapphire-care` | Sapphire set in a gold ring | Ian Rosenberg Jeweller · CC BY-SA 4.0 |
+| `/si/learn/secondhand-jewelry-gems` | Medieval gold finger ring with a dark blue stone in a bezel setting, recorded in Cambridgeshire | The Portable Antiquities Scheme / The Trustees of the British Museum · CC BY-SA 2.0 |
+
+The ring-mandrel photograph documents a jeweller's setting process; it is not a step-by-step instruction. The sapphire ring is a jewellery example and does not establish the stone's origin, treatment, grade or value. The secondhand-jewellery image is a documented medieval archaeological find (c.1150–1500), not a modern resale listing; it is used to illustrate the importance of inspecting older settings and condition. Its description says the blue stone may most likely be sapphire, not that its identity is confirmed.
