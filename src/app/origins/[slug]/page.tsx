@@ -8,7 +8,7 @@ import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export function generateStaticParams(){return origins.map(o=>({slug:o.slug}));}
 type Params=Promise<{slug:string}>;
-export async function generateMetadata({params}:{params:Params}):Promise<Metadata>{const {slug}=await params;const origin=getOriginBySlug(slug);return origin?{title:origin.name,description:origin.summary,alternates:{canonical:`/origins/${slug}`}}:{};}
+export async function generateMetadata({params}:{params:Params}):Promise<Metadata>{const {slug}=await params;const origin=getOriginBySlug(slug);return origin?{title:origin.name,description:origin.summary,alternates:{canonical:`/origins/${slug}`},openGraph:{type:"article",title:origin.name,description:origin.summary,url:`https://gemologyx.com/origins/${slug}`},twitter:{card:"summary_large_image",title:origin.name,description:origin.summary}}:{};}
 
 export default async function OriginPage({params}:{params:Params}){
  const {slug}=await params;const origin=getOriginBySlug(slug);if(!origin)notFound();const d=origin.detail;
