@@ -210,3 +210,5 @@ The ring-mandrel photograph documents a jeweller's setting process; it is not a 
 ## Sinhala guide photography coverage — laboratory evidence and UV
 - `/si/learn/gem-certification-myths`, `/si/learn/glass-vs-gemstone` and `/si/learn/origin-opinion-vs-guarantee`: gemmological microscope examination — Sara Abey, CC BY-SA 4.0. This is contextual evidence of professional examination only; it does not certify any stone, prove a material identity or establish geographic origin.
 - `/si/learn/uv-light-gem-myths`: fluorite specimen showing zoned fluorescence under ultraviolet illumination, from Dauria Nature Reserve, Russia — Masha Milshina, CC BY 4.0. It is a fluorescence example, not a Sri Lankan specimen or proof that UV alone identifies a gemstone.
+
+- `/si/learn/what-ceylon-means`: sapphire specimen documented from the Ratnapura gem-gravel mine area — James St. John, CC BY 2.0. This is a locality-context image only; the photographed specimen does not establish the origin of any other sapphire or substantiate a seller's origin claim.
