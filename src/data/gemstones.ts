@@ -51,7 +51,7 @@ export const gemstones: Gemstone[] = [
       origins:
         "Sapphire is mined in a number of countries, including Sri Lanka, Madagascar, Myanmar, Kashmir (historically), and various sites in East Africa and Australia. Geographic origin can sometimes be determined by a gemological laboratory through trace-element and inclusion analysis, but this is a specialist laboratory determination — it is not something that can be reliably read from a stone's appearance alone.",
       formation:
-        "Sapphire forms as corundum in several geological environments, including metamorphic rocks and gem-bearing alluvial deposits. The conditions and trace elements present during growth influence its colour and inclusions.",
+        "Sapphire crystallizes as corundum in primary magmatic or metamorphic geological settings. Weathering and erosion can later release crystals from their host rocks and concentrate them in secondary deposits, including alluvial placers such as those found in Sri Lanka. The conditions and trace elements present during crystal growth influence its colour and inclusions.",
       naturalVsSynthetic:
         "Synthetic sapphire has the same chemical composition and crystal structure as natural sapphire but is grown in a laboratory. Common methods include flame fusion and flux growth; growth time depends on the method, and some flux-grown crystals can take many months or up to a year. Laboratory growth is distinct from the geological processes that form natural sapphire. Synthetic sapphire is common in industrial applications (such as watch crystals) as well as in some jewellery, and should always be disclosed as synthetic when sold. Distinguishing natural from synthetic material generally requires examination by a trained gemologist using magnification and, in some cases, advanced laboratory equipment — it is not reliably done by eye.",
       treatments:
@@ -68,7 +68,7 @@ export const gemstones: Gemstone[] = [
         { question: "Can every sapphire be cleaned in an ultrasonic cleaner?", answer: "No. Fracture-filled stones and stones with vulnerable inclusions or other treatments may be damaged by vibration or heat. When treatment is unknown, use mild soap, lukewarm water and a soft brush, or ask a jeweller familiar with the stone." },
       ],
     },
-    sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }, { label: "GIA — Synthetic Gem Materials and Growth Methods", url: "https://www.gia.edu/gem-synthetic" }, { label: "GIA — Sapphire Care and Cleaning", url: "https://www.gia.edu/sapphire-care-cleaning" }],
+    sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }, { label: "GIA — Synthetic Gem Materials and Growth Methods", url: "https://www.gia.edu/gem-synthetic" }, { label: "GIA — Geology of Corundum and Emerald Gem Deposits", url: "https://www.gia.edu/gems-gemology/winter-2019-geology-of-corundum-and-emerald-gem-deposits" }, { label: "GIA — Sapphire Care and Cleaning", url: "https://www.gia.edu/sapphire-care-cleaning" }],
   },
   {
     slug: "ruby",
