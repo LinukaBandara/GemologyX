@@ -21,6 +21,13 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="මැණික් තෑග්ගක් මිලදී ගන්නා විට"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Ian_Rosenberg_Jeweller_-_Sapphire_and_gold_ring.JPG",
+        alt: "A sapphire set in a gold ring photographed on a blue display box",
+        credit: "Sapphire and gold ring — Ian Rosenberg Jeweller · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ian_Rosenberg_Jeweller_-_Sapphire_and_gold_ring.JPG",
+      }}
+
       crumbHref="/si/learn/gemstone-buying-checklist"
       crumbLabel="මිලදී ගැනීමේ checklist"
       lastReviewed="2026-10-25"
