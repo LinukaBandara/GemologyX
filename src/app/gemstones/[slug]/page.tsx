@@ -14,7 +14,7 @@ export async function generateMetadata({params}:{params:Params}):Promise<Metadat
 export default async function GemstonePage({params}:{params:Params}) {
   const {slug}=await params; const gem=allGemstones.find((g)=>g.slug===slug); if(!gem)notFound(); const detail=gem.detail;
   const facts: [string, string][] = [
-    ["Mineral family", gem.mineralFamily],
+    ["Material family", gem.mineralFamily],
     ...(gem.chemicalFormula ? [["Chemical formula", gem.chemicalFormula] as [string, string]] : []),
     ["Hardness (Mohs)", gem.hardness],
     ...(gem.crystalSystem ? [["Crystal system", gem.crystalSystem] as [string, string]] : []),
