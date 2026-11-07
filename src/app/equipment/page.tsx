@@ -1,0 +1,174 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowLeft, ArrowUpRight, BookOpen, Gem, Microscope, Ruler, Scale, ScanEye, Wrench } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Gem Industry Tools & Equipment",
+  description:
+    "Explore the instruments, workshop tools and equipment used by gemmologists, gemstone dealers, cutters and jewellery professionals.",
+  alternates: { canonical: "/equipment" },
+};
+
+const equipment = [
+  {
+    name: "10× jeweller’s loupe",
+    group: "Inspection & handling",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/A_jeweller%27s_loupe.jpg",
+    alt: "A folding jeweller’s loupe held open in a hand",
+    description: "A compact magnifier used to examine facet junctions, surface features, inclusions and signs that deserve closer investigation.",
+    use: "First-look inspection",
+    credit: "Billjones94",
+    source: "https://commons.wikimedia.org/wiki/File:A_jeweller%27s_loupe.jpg",
+    license: "CC BY-SA 4.0",
+  },
+  {
+    name: "Gemstone tweezers",
+    group: "Inspection & handling",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/09/Tweezers_with_rose_cut_diamond_1.jpg",
+    alt: "A rose-cut diamond held carefully between metal gemstone tweezers",
+    description: "Fine-tipped tweezers help hold and orient small loose stones during inspection. Choose a suitable tip and handle gems gently to avoid slipping or damage.",
+    use: "Stone handling",
+    credit: "W.carter",
+    source: "https://commons.wikimedia.org/wiki/File:Tweezers_with_rose_cut_diamond_1.jpg",
+    license: "CC BY-SA 4.0",
+  },
+  {
+    name: "Jeweller’s balance scale",
+    group: "Measurement & weighing",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Modern_collapsible_balance_scale_for_jewellers_1.jpg",
+    alt: "A traditional jeweller’s balance scale with metal pans and a fitted weight set",
+    description: "A balance is used to compare mass. Modern gem businesses commonly use calibrated electronic balances with suitable readability and capacity for the stones being weighed.",
+    use: "Mass measurement",
+    credit: "W.carter",
+    source: "https://commons.wikimedia.org/wiki/File:Modern_collapsible_balance_scale_for_jewellers_1.jpg",
+    license: "CC BY-SA 4.0",
+  },
+  {
+    name: "Jewellery torch & soldering setup",
+    group: "Workshop & fabrication",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/99/Jewellery_soldering_equipment.jpg",
+    alt: "Jewellery workshop soldering equipment including a small torch and hand tools",
+    description: "Jewellery torches are used by trained bench professionals for controlled heating and metalwork. Torch selection depends on the metal, task, fuel system and workshop safety setup.",
+    use: "Bench fabrication",
+    credit: "Mauro Cateb",
+    source: "https://commons.wikimedia.org/wiki/File:Jewellery_soldering_equipment.jpg",
+    license: "CC BY-SA 3.0",
+  },
+  {
+    name: "Gem cutting & polishing lap",
+    group: "Workshop & fabrication",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Gem_cutting_on_a_lap_wheel%2C_Gintota%2C_Sri_Lanka_%282026%29.jpg",
+    alt: "A Sri Lankan gem cutter working a stone against a rotating lap wheel",
+    description: "A lap wheel supports grinding and polishing stages in lapidary work. The lap, abrasive, speed and process are selected for the material and the stage of cutting.",
+    use: "Lapidary cutting",
+    credit: "Ilyes Makria / Joalys",
+    source: "https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg",
+    license: "CC BY-SA 4.0",
+  },
+];
+
+const referenceInstruments = [
+  { name: "Refractometer", detail: "Measures refractive index within the instrument’s working range.", icon: ScanEye },
+  { name: "Gemological microscope", detail: "Examines inclusions, surface features and internal characteristics.", icon: Microscope },
+  { name: "Polariscope & dichroscope", detail: "Help investigate optical behaviour and pleochroism.", icon: Gem },
+  { name: "Spectroscope & UV lamp", detail: "Reveal selected absorption and fluorescence responses.", icon: BookOpen },
+  { name: "Digital caliper", detail: "Records length, width and depth in millimetres.", icon: Ruler },
+  { name: "Specific-gravity kit", detail: "Supports density measurements using an appropriate method.", icon: Scale },
+];
+
+export default function EquipmentPage() {
+  return (
+    <main className="container-page py-9 md:py-14">
+      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-muted">
+        <Link href="/tools" className="hover:text-accent">Tools & instruments</Link>
+        <span>/</span>
+        <span aria-current="page" className="text-foreground">Industry equipment</span>
+      </nav>
+
+      <header className="relative mt-7 overflow-hidden border-b border-border pb-9 md:mt-10 md:pb-12">
+        <div className="gx-eyebrow"><span /> The working gem trade</div>
+        <p className="mt-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">A visual field guide to the tools of the industry</p>
+        <h1 className="mt-3 max-w-3xl font-serif text-4xl font-medium leading-[1.02] tracking-tight text-foreground md:text-6xl">
+          The instruments<br className="hidden sm:block" /> behind every stone.
+        </h1>
+        <p className="mt-5 max-w-2xl text-sm leading-7 text-muted md:text-base">
+          Explore the everyday equipment used to inspect, measure, handle, cut and work with gemstones.
+          From a simple loupe to specialist laboratory instruments, each tool has a specific purpose and limitations.
+        </p>
+        <div className="mt-7 flex flex-wrap gap-5 text-xs text-muted">
+          <span className="inline-flex items-center gap-2"><Gem size={15} className="text-[var(--gold)]" /> Gem trade essentials</span>
+          <span className="inline-flex items-center gap-2"><Wrench size={15} className="text-[var(--gold)]" /> Workshop equipment</span>
+          <span>Photographic references with credits</span>
+        </div>
+      </header>
+
+      <section className="pt-9 md:pt-12" aria-labelledby="equipment-gallery">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">Explore by photograph</p>
+            <h2 id="equipment-gallery" className="mt-2 font-serif text-2xl font-medium text-foreground md:text-3xl">Tools of the trade</h2>
+          </div>
+          <p className="max-w-sm text-xs leading-5 text-muted">Select a category to understand what the equipment does and where it fits into professional work.</p>
+        </div>
+
+        <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+          {equipment.map((item, index) => (
+            <article key={item.name} className="group flex min-w-0 flex-col border border-border bg-[var(--surface)]">
+              <div className="relative aspect-[5/4] overflow-hidden bg-[#eee9e1]">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.025]"
+                />
+                <span className="absolute left-3 top-3 bg-[var(--surface)]/95 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.14em] text-accent">{item.group}</span>
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--gold)]">0{index + 1} / Equipment</span>
+                <h3 className="mt-2 font-serif text-xl font-medium text-foreground">{item.name}</h3>
+                <p className="mt-2 flex-1 text-sm leading-6 text-muted">{item.description}</p>
+                <p className="mt-4 border-t border-border pt-3 text-[10px] font-medium uppercase tracking-[0.12em] text-muted">{item.use}</p>
+                <p className="mt-3 text-[10px] leading-5 text-muted">
+                  Image: {item.credit} · {item.license} · <a href={item.source} target="_blank" rel="noreferrer" className="underline decoration-[var(--gold)] underline-offset-2 hover:text-accent">Original image & licence</a>
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-14 border-y border-border py-9 md:mt-16 md:py-11" aria-labelledby="lab-instruments">
+        <div className="max-w-2xl">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">Beyond the workbench</p>
+          <h2 id="lab-instruments" className="mt-2 font-serif text-2xl font-medium text-foreground md:text-3xl">Specialist gem-testing instruments</h2>
+          <p className="mt-3 text-sm leading-6 text-muted">A professional identification process combines observations and appropriate tests. No single instrument confirms every gemstone identity or treatment.</p>
+        </div>
+        <div className="mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+          {referenceInstruments.map((item) => {
+            const Icon = item.icon;
+            return (
+              <div key={item.name} className="flex gap-3 border-t border-border py-4">
+                <span className="mt-0.5 text-[var(--gold)]"><Icon size={18} strokeWidth={1.5} /></span>
+                <div>
+                  <h3 className="font-serif text-base font-medium text-foreground">{item.name}</h3>
+                  <p className="mt-1 text-xs leading-5 text-muted">{item.detail}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <aside className="mt-8 border border-border bg-[var(--surface)] p-5 md:p-7">
+        <p className="font-serif text-xl font-medium text-foreground">Equipment is only as useful as the method behind it.</p>
+        <p className="mt-2 max-w-3xl text-sm leading-6 text-muted">This guide is educational, not a buying endorsement or a substitute for instrument manuals and professional training. Torch work, cutting machinery, chemicals and laboratory equipment require appropriate training and safety procedures.</p>
+        <div className="mt-5 flex flex-wrap gap-4">
+          <Link href="/tools" className="inline-flex min-h-11 items-center gap-2 text-xs font-semibold text-accent hover:underline"><ArrowLeft size={14} /> Back to calculators</Link>
+          <Link href="/learn" className="inline-flex min-h-11 items-center gap-2 text-xs font-semibold text-accent hover:underline">Explore learning guides <ArrowUpRight size={14} /></Link>
+        </div>
+      </aside>
+    </main>
+  );
+}
