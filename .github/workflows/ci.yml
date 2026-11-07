@@ -43,7 +43,7 @@ jobs:
       - name: Install Chromium for Playwright
         run: npx playwright install --with-deps chromium
 
-      - name: Run responsive and SEO end-to-end tests
+      - name: Run responsive, SEO and internal-link tests
         run: npm run test:e2e
 
       - name: Audit production dependencies
