@@ -116,3 +116,10 @@ The known install error is a mismatch between `package.json` and the committed `
 - Verify live production metadata, canonical URLs, robots, sitemap, analytics/consent and image delivery after deployment.
 
 The 2026-11-06 audit's local build and crawl results remain historical results for that audit scope, not proof that the newer branch has passed the same checks.
+
+### Repository consistency checks — 2026-11-08
+
+- Compared `docs/page-readiness-tracker.csv` with `src/data/draft-routes.ts`: all 76 Draft routes match exactly; no duplicate routes, missing manifest entries or extra manifest entries were found.
+- Compared all 26 navigation and footer destinations in the shared header/footer against App Router page routes, including dynamic route patterns: no missing destinations were found.
+- Added `npm run check:editorial-manifest` and `scripts/check-editorial-manifest.mjs`. CI now runs this consistency check after dependency installation and before ESLint, so future tracker/manifest drift is caught automatically.
+- These checks validate repository consistency and route references; they do not establish editorial approval, search indexing or live deployment health.
