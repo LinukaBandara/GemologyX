@@ -3118,3 +3118,185 @@ html[data-theme="dark"] .gx-sinhala-filter-count { border-color:#65505A; color:#
   .gx-sinhala-results-heading { margin-top:20px; }
   .gx-sinhala-filter-count { min-width:23px; height:23px; }
 }
+
+
+/* Comprehensive small-type audit — readable floors across every page family.
+   Decorative hierarchy is preserved; metadata, captions and supporting copy are not microtype. */
+body .text-xs,
+body [class~="text-xs"] {
+  font-size:14px !important;
+  line-height:1.55;
+}
+body [class*="text-[0."] {
+  font-size:13px !important;
+  line-height:1.55;
+}
+body small,
+body figcaption,
+body .footer-column-title,
+body .footer-link,
+body .footer-bottom,
+body .footer-credit,
+body .gx-brand-tagline,
+body .gx-nav-link,
+body .gx-header-search,
+body .gx-mobile-nav-link,
+body .gx-mobile-search,
+body .gx-mobile-nav-note {
+  font-size:13px !important;
+  line-height:1.6;
+}
+body .gx-brand-tagline { font-size:11px !important; letter-spacing:.08em; }
+body .gx-nav-link,
+body .gx-header-search,
+body .gx-mobile-nav-link,
+body .gx-mobile-search { font-size:14px !important; }
+body .site-footer .footer-link { font-size:14px !important; color:rgba(255,255,255,.72); }
+body .site-footer .footer-column-title { font-size:13px !important; }
+body .site-footer .footer-bottom,
+body .site-footer .footer-credit { font-size:13px !important; }
+
+/* Gemstone directory cards and profile navigation */
+body .gx-pearl-gem-note,
+body .gx-pearl-gem-detail,
+body .gx-pearl-disclosure,
+body .profile-crumb,
+body .profile-tabs a,
+body .quick-facts>div b,
+body .quick-facts>div p,
+body .on-page a,
+body .related-gems>div:last-child small {
+  font-size:13px !important;
+  line-height:1.6;
+}
+body .gx-pearl-gem-note { font-size:12px !important; }
+body .gx-pearl-gem-detail { font-size:14px !important; }
+body .gx-pearl-disclosure { font-size:13px !important; }
+
+/* Mining hub: facts, region metadata, captions, method labels and resource links */
+body .gx-mining-page .gx-mining-overline,
+body .gx-mining-page .gx-mining-facts small,
+body .gx-mining-page .gx-mining-facts > div > span,
+body .gx-mining-page .gx-mining-region-number,
+body .gx-mining-page .gx-mining-region small,
+body .gx-mining-page .gx-mining-photo figcaption,
+body .gx-mining-page .gx-mining-photo figcaption p,
+body .gx-mining-page .gx-mining-photo figcaption small,
+body .gx-mining-page .gx-mining-method > span,
+body .gx-mining-page .gx-mining-licence-links > a b,
+body .gx-mining-page .gx-mining-licence-links > a small,
+body .gx-mining-page .gx-mining-research > a > span,
+body .gx-mining-page .gx-mining-next > div:last-child a,
+body .gx-mining-page .gx-mining-editorial-note b,
+body .gx-mining-page .gx-mining-editorial-note p {
+  font-size:13px !important;
+  line-height:1.65 !important;
+}
+body .gx-mining-page .gx-mining-heading > p,
+body .gx-mining-page .gx-mining-region p,
+body .gx-mining-page .gx-mining-safety li,
+body .gx-mining-page .gx-mining-licence-links > a small,
+body .gx-mining-page .gx-mining-editorial-note p {
+  font-size:14px !important;
+  line-height:1.8 !important;
+}
+body .gx-mining-page .gx-mining-facts b { font-size:18px; }
+body .gx-mining-page .luxury-button { font-size:13px !important; }
+
+/* Sri Lanka regional hubs and regional guide pages */
+body .gx-regional-hub .luxury-breadcrumb,
+body .gx-regional-hub .luxury-eyebrow,
+body .gx-regional-hub .gx-regional-kicker,
+body .gx-regional-hub .gx-regional-meta,
+body .gx-regional-hub .gx-regional-section-top span,
+body .gx-regional-hub .gx-regional-resource-footnote,
+body .gx-regional-hub .gx-regional-language-switch a,
+body .gx-regional-subpage .luxury-breadcrumb,
+body .gx-regional-subpage .luxury-eyebrow,
+body .gx-regional-subpage .gx-regional-section-top span,
+body .gx-regional-subpage .gx-regional-resource-footnote {
+  font-size:13px !important;
+  line-height:1.7 !important;
+}
+body .gx-regional-hub .gx-regional-section-body > p,
+body .gx-regional-hub .gx-regional-note p,
+body .gx-regional-hub .gx-regional-resource-links a,
+body .gx-regional-subpage .profile-content > section p,
+body .gx-regional-subpage .profile-content > section li,
+body .gx-regional-subpage .gx-regional-section-body > p,
+body .gx-regional-subpage .gx-regional-note p,
+body .gx-regional-subpage .gx-regional-resource-links a {
+  font-size:14px !important;
+  line-height:1.85 !important;
+}
+body .gx-regional-hub .gx-regional-resource-links a span,
+body .gx-regional-subpage .gx-regional-resource-links a span {
+  font-size:12px !important;
+}
+
+/* English learning library: readable labels, pathway descriptions and photo credits */
+body .gx-learning-library .gx-learning-kicker,
+body .gx-learning-library .gx-learning-eyebrow,
+body .gx-learning-library .gx-learning-stats span,
+body .gx-learning-library .gx-learning-image-caption,
+body .gx-learning-library .gx-learning-hero-foot,
+body .gx-learning-library .gx-learning-path .gx-learning-eyebrow,
+body .gx-learning-library .gx-learning-path-description,
+body .gx-learning-library .gx-learning-path-links a,
+body .gx-learning-library .gx-learning-sinhala-copy .gx-learning-eyebrow,
+body .gx-learning-library .gx-learning-sinhala-cta,
+body .gx-learning-library .gx-learning-sinhala-list strong,
+body .gx-learning-library .gx-learning-more-sinhala a,
+body .gx-learning-library .gx-learning-featured-copy > p,
+body .gx-learning-library .gx-learning-featured-links a,
+body .gx-learning-library .gx-learning-footer span {
+  font-size:13px !important;
+  line-height:1.7 !important;
+}
+body .gx-learning-library .gx-learning-path-description,
+body .gx-learning-library .gx-learning-section-intro > p,
+body .gx-learning-library .gx-learning-featured-copy > p,
+body .gx-learning-library .gx-learning-sinhala-lede {
+  font-size:14px !important;
+  line-height:1.9 !important;
+}
+body .gx-learning-library .gx-learning-image-caption,
+body .gx-learning-library .gx-learning-hero-foot { letter-spacing:.04em; }
+
+/* Sinhala guide cards and resource details */
+body .gx-sinhala-hub .gx-sinhala-principles p,
+body .gx-sinhala-hub .gx-regional-resources > div:first-child > p:last-child,
+body .gx-sinhala-hub .gx-regional-resource-links a,
+body .gx-sinhala-hub .gx-regional-resource-footnote,
+body .gx-sinhala-guide p,
+body .gx-sinhala-guide > span:last-child {
+  font-size:14px !important;
+  line-height:1.95 !important;
+}
+body .gx-sinhala-guide > div span:first-child,
+body .gx-sinhala-filter-count { font-size:12px !important; }
+body .gx-sinhala-filter { font-size:14px !important; }
+body .gx-sinhala-filter-count { font-family:var(--font-manrope),sans-serif; }
+
+/* Article components, tool breadcrumbs and compact reference labels */
+body .gx-article-page .gx-eyebrow,
+body .gx-article-page .gx-article-related > p,
+body .gx-article-page figcaption,
+body .gx-article-page nav,
+body .gx-article-page .gx-article-meta,
+body .tool-shell nav,
+body .tool-shell .gx-eyebrow {
+  font-size:13px !important;
+  line-height:1.65 !important;
+}
+body .gx-article-content { font-size:16px; line-height:1.85; }
+body .gx-article-content p,
+body .gx-article-content li { font-size:16px; line-height:1.85; }
+@media(max-width:640px) {
+  body .gx-article-content,
+  body .gx-article-content p,
+  body .gx-article-content li { font-size:16px; line-height:1.85; }
+  body .gx-pearl-disclosure,
+  body .gx-mining-page .gx-mining-photo figcaption,
+  body .gx-learning-library .gx-learning-image-caption { font-size:12px !important; }
+}
