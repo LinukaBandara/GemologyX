@@ -175,7 +175,7 @@ export default function EquipmentPage() {
           <p className="max-w-sm text-xs leading-5 text-muted">Select a category to understand what the equipment does and where it fits into professional work.</p>
         </div>
 
-        <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="gx-equipment-grid mt-6 grid gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-3">
           {equipment.map((item, index) => (
             <article key={item.name} className="group flex min-w-0 flex-col border border-border bg-[var(--surface)]">
               <div className="relative aspect-[5/4] overflow-hidden bg-[#eee9e1]">
