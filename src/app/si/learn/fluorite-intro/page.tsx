@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/mohs-hardness-guide"
       crumbLabel="Mohs දෘඪතාව"
       lastReviewed="2026-10-24"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/7/77/Deep_purple_fluorite_on_quartz.jpg",
+        alt: "Deep purple fluorite specimen on quartz",
+        credit: "M. Schaap · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Deep_purple_fluorite_on_quartz.jpg",
+      }}
       related={[
         { label: "Mohs දෘඪතාව", href: "/si/learn/mohs-hardness-guide" },
         { label: "මැණික් රැකවරණය", href: "/si/learn/gemstone-care-general" },
