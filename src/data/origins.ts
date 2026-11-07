@@ -3,6 +3,7 @@ export interface Origin {
   name: string;
   summary: string;
   gemstones?: string[];
+  image?: { src: string; alt: string; credit: string; source: string };
   sources: { label: string; url: string }[];
   detail?: {
     overview: string;
