@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="Alexandrite — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Alexandrite.jpg",
+        alt: "Alexandrite crystal shown under daylight and a different artificial light source",
+        credit: "Alexandrite crystal under two lighting conditions — Vzb83, CC BY-SA 2.5 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Alexandrite.jpg",
+      }}
       crumbHref="/si/learn/chrysoberyl-intro"
       crumbLabel="Chrysoberyl හැඳින්වීම"
       lastReviewed="2026-10-24"
