@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/questions-to-ask-gem-dealer"
       crumbLabel="වෙළෙන්දාගෙන් අසන්න ඕනේ ප්‍රශ්න"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Modern_collapsible_balance_scale_for_jewellers_1.jpg",
+        alt: "Modern collapsible jeweller's balance scale with brass weights in a wooden case",
+        credit: "W.carter · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Modern_collapsible_balance_scale_for_jewellers_1.jpg",
+      }}
       related={[
         { label: "වෙළෙන්දාගෙන් අසන්න ඕනේ ප්‍රශ්න", href: "/si/learn/questions-to-ask-gem-dealer" },
         { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
