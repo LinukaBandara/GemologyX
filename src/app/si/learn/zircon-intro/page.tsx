@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="Zircon (සර්කන්) — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Zircon-289024.jpg",
+        alt: "Transparent olive-green zircon crystal from Mogok, Myanmar",
+        credit: "Zircon crystal — Rob Lavinsky / iRocks.com, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Zircon-289024.jpg",
+      }}
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
       crumbLabel="ස්වභාවික vs කෘත්‍රිම"
       lastReviewed="2026-10-24"
