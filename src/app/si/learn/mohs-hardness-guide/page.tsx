@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/gemstone-care-general"
       crumbLabel="මැණික් රැකවරණය"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/Final_Mohs%20Hardness_R.%20Lugo.jpg",
+        alt: "USGS Mohs hardness scale illustration showing ten reference minerals from talc to diamond",
+        credit: "USGS · Public Domain; mineral photographs credited to the Smithsonian Institution",
+        sourceUrl: "https://www.usgs.gov/media/images/mohs-hardness-scale",
+      }}
       related={[
         { label: "මැණික් රැකවරණය", href: "/si/learn/gemstone-care-general" },
         { label: "නිල්මැණික් රැකවරණය", href: "/si/learn/blue-sapphire-care" },
