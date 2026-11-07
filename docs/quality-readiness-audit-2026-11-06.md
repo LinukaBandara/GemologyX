@@ -142,3 +142,12 @@ The 2026-11-06 audit's local build and crawl results remain historical results f
 - Chrysoberyl now has a dedicated reference covering its varieties and properties in addition to the existing GIA references.
 - Added `scripts/check-gemstone-sources.mjs` and the `check:gemstone-sources` package script. CI runs this dependency-free check before `npm ci`; it checks profile detail blocks, minimum reference count, HTTPS URLs and duplicate slugs.
 - This is a source-coverage and structure check, not a complete verification of every sentence or a live HTTP check of all 117 reference URLs. Claim-by-claim fact checking remains necessary.
+
+### Interactive specimen imagery and keyboard accessibility — 2026-11-08
+
+- Connected the existing credited specimen galleries to gemstone profile pages. The component was present in the repository but was not previously rendered by the profile template; the sapphire, ruby, emerald, amethyst and tourmaline profiles now expose their documented specimen images.
+- Improved the image-viewer dialog: opening it moves focus to the close button; Tab and Shift+Tab remain within the dialog; Escape closes it; arrow keys change the displayed specimen; and closing returns focus to the image button that opened it.
+- Added Playwright coverage for specimen viewer keyboard operation, mobile-navigation Escape handling and the keyboard skip link.
+- Existing reduced-motion CSS preferences were confirmed in the global stylesheet. This is source inspection, not a full assistive-technology audit.
+- Local specimen image records include source, credit and licence fields. Their attribution text is displayed in the gallery; the original source records remain linked from the viewer.
+- Remaining work: run the new Playwright checks in a production build, verify the local image files and their licence records against the original source pages, and complete manual screen-reader/focus/contrast testing.
