@@ -26,7 +26,7 @@ export function ArticleLayout({
   const isSinhala = crumbHref.startsWith("/si/");
   const learnHref = isSinhala ? "/si/learn" : "/learn";
   return (
-    <article lang={isSinhala ? "si" : undefined} className="container-page max-w-3xl py-10 md:py-14">
+    <article lang={isSinhala ? "si" : undefined} className={`container-page gx-article-page max-w-4xl py-10 md:py-14 ${isSinhala ? "gx-article-page-si" : "gx-article-page-en"}`}>
       {/* Breadcrumb */}
       <nav className="flex flex-wrap items-center gap-2 text-sm text-muted">
         <Link href={learnHref} className="hover:text-accent transition-colors">{isSinhala ? "මැණික් දැනුම" : "Learn"}</Link>
@@ -35,7 +35,7 @@ export function ArticleLayout({
       </nav>
 
       {/* Hero */}
-      <header className="mt-6 border-b border-border pb-8">
+      <header className="gx-article-header mt-6 border-b border-border pb-8">
         <div className="gx-eyebrow">
           <span /> {category}
         </div>
@@ -62,13 +62,13 @@ export function ArticleLayout({
       </header>
 
       {/* Content */}
-      <div className="prose-content mt-9 min-w-0 space-y-7 text-[0.95rem] leading-[1.75] text-foreground/90 md:text-base">
+      <div className="prose-content gx-article-content mt-9 min-w-0 space-y-7 text-[0.95rem] leading-[1.75] text-foreground/90 md:text-base">
         {children}
       </div>
 
       {/* Related */}
       {related && related.length > 0 && (
-        <div className="mt-12 rounded-2xl border border-border bg-white p-6">
+        <div className="gx-article-related mt-12 rounded-2xl border border-border bg-white p-6">
           <p className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-accent">
             {isSinhala ? "තවදුරටත් කියවන්න" : "Continue exploring"}
           </p>
