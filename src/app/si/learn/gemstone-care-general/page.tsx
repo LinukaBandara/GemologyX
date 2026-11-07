@@ -20,6 +20,13 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="මැණික් රැකවරණය — සාමාන්‍ය මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/6/64/Cleaning_silver_jewelry_1_%283%29.jpg",
+        alt: "A jeweller gently brushing a silver jewellery chain in a bowl of soapy water; a general jewellery-cleaning demonstration",
+        credit: "Cleaning silver jewelry — W.carter / Ann-Sophie Qvarnström · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Cleaning_silver_jewelry_1_(3).jpg",
+      }}
+
       crumbHref="/si/learn/blue-sapphire-care"
       crumbLabel="නිල්මැණික් රැකවරණය"
       lastReviewed="2026-11-06"
