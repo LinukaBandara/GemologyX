@@ -29,6 +29,7 @@ export async function generateMetadata({
       title: `${term.term} | Gemology Glossary`,
       description: term.definition,
       type: "article",
+      url: `https://gemologyx.com/glossary/${term.slug}`,
     },
   };
 }
