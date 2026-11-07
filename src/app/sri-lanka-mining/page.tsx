@@ -6,7 +6,6 @@ import {
   ExternalLink,
   FileCheck2,
   Gem,
-  Leaf,
   MapPin,
   Pickaxe,
   ShieldCheck,
@@ -93,11 +92,11 @@ export default function SriLankaMiningPage() {
         <header className="gx-mining-intro">
           <div className="luxury-eyebrow"><span /> THE SRI LANKA FIELD GUIDE</div>
           <p className="gx-mining-overline">GEOLOGY · HERITAGE · RESPONSIBLE PRACTICE</p>
-          <h1>Where the island's gemstones begin.</h1>
+          <h1>Where the island&apos;s gemstones begin.</h1>
           <p className="gx-mining-lede">
             From the historic gem fields of Ratnapura to the deposits of Elahera and
             the Uva region, discover the landscapes, people, geology and questions
-            behind Sri Lanka's gemstone-mining industry.
+            behind Sri Lanka&apos;s gemstone-mining industry.
           </p>
           <div className="gx-mining-actions">
             <a className="luxury-button luxury-button-primary" href="#regions">Explore gem regions <ArrowRight size={16} /></a>
@@ -115,7 +114,7 @@ export default function SriLankaMiningPage() {
             <p className="gx-mining-kicker">A LIVING INDUSTRY</p>
             <h2>A gem heritage shaped by geology and generations.</h2>
             <p>
-              Sri Lanka's reputation for coloured gemstones is connected to ancient
+              Sri Lanka&apos;s reputation for coloured gemstones is connected to ancient
               geological processes and a long-established network of miners, traders,
               cutters and jewellers. Mining is the first stage of a much wider journey:
               recovered material is sorted, traded, cut, sometimes treated, examined
@@ -136,7 +135,7 @@ export default function SriLankaMiningPage() {
 
         <section id="regions" className="gx-mining-section gx-mining-region-section">
           <div className="gx-mining-heading">
-            <div><p className="gx-mining-kicker">THE ISLAND'S GEM FIELDS</p><h2>Where gemstone mining takes place</h2></div>
+            <div><p className="gx-mining-kicker">THE ISLAND&apos;S GEM FIELDS</p><h2>Where gemstone mining takes place</h2></div>
             <p>Explore the best-known producing areas recognised in industry and geological references.</p>
           </div>
           <div className="gx-mining-regions">
@@ -147,7 +146,7 @@ export default function SriLankaMiningPage() {
               </div>
             ))}
           </div>
-          <p className="gx-mining-source-line">Regional overview based on the <a href="https://ngja.gov.lk/gems/gemstone-mining-industry/" target="_blank" rel="noreferrer">National Gem and Jewellery Authority's industry information <ExternalLink size={12} /></a>.</p>
+          <p className="gx-mining-source-line">Regional overview based on the <a href="https://ngja.gov.lk/gems/gemstone-mining-industry/" target="_blank" rel="noreferrer">National Gem and Jewellery Authority&apos;s industry information <ExternalLink size={12} /></a>.</p>
         </section>
 
         <section className="gx-mining-section">
@@ -201,7 +200,7 @@ export default function SriLankaMiningPage() {
               material. Deposit characteristics vary, and geological interpretation
               should be based on evidence from the relevant locality.
             </p>
-            <a href="https://www.gia.edu/doc/Sri-Lanka-The-Gem-Island.pdf" target="_blank" rel="noreferrer">Explore GIA's Sri Lanka gem geology overview <ExternalLink size={14} /></a>
+            <a href="https://www.gia.edu/doc/Sri-Lanka-The-Gem-Island.pdf" target="_blank" rel="noreferrer">Explore GIA&apos;s Sri Lanka gem geology overview <ExternalLink size={14} /></a>
           </div>
         </section>
 
