@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description:
     "A source-led guide to Sri Lanka's gemstone trade and export research, including NGJA procedures, export documentation questions, official statistics and responsible buyer due diligence.",
   alternates: { canonical: "/sri-lanka-trade-export" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Sri Lanka Gemstone Trade & Export: Official Resources", description: "A source-led guide to Sri Lanka's gemstone trade and export research, official procedures and responsible buyer due diligence.", url: "/sri-lanka-trade-export" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Sri Lanka Gemstone Trade & Export: Official Resources", description: "A source-led guide to Sri Lanka's gemstone trade and export research, official procedures and responsible buyer due diligence." },
 };
 
 const officialResources = [
