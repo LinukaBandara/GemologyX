@@ -51,6 +51,15 @@ const availableTools = [
     icon: Layers3,
   },
   {
+    slug: "birthstones",
+    number: "05",
+    name: "Birthstone finder",
+    category: "Reference",
+    description: "Discover commonly recognised birthstones by month, including traditional variations.",
+    detail: "12 months",
+    icon: CalendarDays,
+  },
+  {
     slug: "specific-gravity",
     number: "06",
     name: "Specific gravity calculator",
@@ -60,18 +69,35 @@ const availableTools = [
     icon: Waves,
   },
   {
-    slug: "birthstones",
-    number: "05",
-    name: "Birthstone finder",
-    category: "Reference",
-    description: "Discover commonly recognised birthstones by month, including traditional variations.",
-    detail: "12 months",
-    icon: CalendarDays,
+    slug: "refractive-index",
+    number: "07",
+    name: "Refractive index reference",
+    category: "Optical properties",
+    description: "Search typical RI ranges, birefringence and optical character for gemstones.",
+    detail: "Searchable gem reference",
+    icon: Sparkles,
+  },
+  {
+    slug: "birefringence",
+    number: "08",
+    name: "Birefringence calculator",
+    category: "Optical properties",
+    description: "Calculate the difference between maximum and minimum RI readings.",
+    detail: "Δn = n(high) − n(low)",
+    icon: CircleDot,
+  },
+  {
+    slug: "gemstone-proportions",
+    number: "09",
+    name: "Gemstone proportion calculator",
+    category: "Measurement",
+    description: "Calculate length-to-width ratio and a simple depth percentage.",
+    detail: "Dimensions in mm",
+    icon: Compass,
   },
 ];
 
 const inDevelopment = [
-  { name: "Refractive index reference", detail: "Compare published RI ranges and learn what a refractometer can tell you.", icon: Sparkles },
   { name: "Gemstone colour reference", detail: "Explore hue, tone and saturation with a consistent learning framework.", icon: Palette },
   { name: "Gemstone measurement guide", detail: "Learn the dimensions and proportions recorded during gem examination.", icon: Compass },
 ];
@@ -92,7 +118,7 @@ export default function ToolsPage() {
           Each tool is designed to make a specific part of gemstone study easier to understand.
         </p>
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted">
-          <span className="inline-flex items-center gap-2"><Gem size={15} className="text-[var(--gold)]" /> Six tools available</span>
+          <span className="inline-flex items-center gap-2"><Gem size={15} className="text-[var(--gold)]" /> Nine tools available</span>
           <span>Educational and reference-led</span>
           <span>Designed for mobile and desktop</span>
         </div>
