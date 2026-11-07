@@ -9,7 +9,7 @@ import {
 export const metadata: Metadata = {
   title: "Gemology Tools & Calculators",
   description:
-    "Explore practical gemstone calculators and gemological reference tools for carat weight, measurements, ring sizes, hardness and birthstones.",
+    "Explore practical gemstone calculators and gemological reference tools for carat weight, measurements, ring sizes, hardness, birthstones and specific gravity.",
   alternates: { canonical: "/tools" },
 };
 
@@ -51,6 +51,15 @@ const availableTools = [
     icon: Layers3,
   },
   {
+    slug: "specific-gravity",
+    number: "06",
+    name: "Specific gravity calculator",
+    category: "Physical properties",
+    description: "Estimate relative density from mass in air and apparent mass in water.",
+    detail: "Hydrostatic method",
+    icon: Waves,
+  },
+  {
     slug: "birthstones",
     number: "05",
     name: "Birthstone finder",
@@ -62,7 +71,6 @@ const availableTools = [
 ];
 
 const inDevelopment = [
-  { name: "Specific gravity calculator", detail: "Understand relative density using a hydrostatic weighing method.", icon: Waves },
   { name: "Refractive index reference", detail: "Compare published RI ranges and learn what a refractometer can tell you.", icon: Sparkles },
   { name: "Gemstone colour reference", detail: "Explore hue, tone and saturation with a consistent learning framework.", icon: Palette },
   { name: "Gemstone measurement guide", detail: "Learn the dimensions and proportions recorded during gem examination.", icon: Compass },
@@ -84,7 +92,7 @@ export default function ToolsPage() {
           Each tool is designed to make a specific part of gemstone study easier to understand.
         </p>
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted">
-          <span className="inline-flex items-center gap-2"><Gem size={15} className="text-[var(--gold)]" /> Five tools available</span>
+          <span className="inline-flex items-center gap-2"><Gem size={15} className="text-[var(--gold)]" /> Six tools available</span>
           <span>Educational and reference-led</span>
           <span>Designed for mobile and desktop</span>
         </div>
