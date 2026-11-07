@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="Amethyst (නීලකාන්ත) — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Quartz_Amethyst.jpg",
+        alt: "Purple amethyst quartz crystal cluster",
+        credit: "Amethyst quartz specimen — Eric Hunt, CC BY-SA 2.5 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Quartz_Amethyst.jpg",
+      }}
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
       crumbLabel="ස්වභාවික vs කෘත්‍රිම"
       lastReviewed="2026-10-21"
