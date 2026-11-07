@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowRight, ArrowUpRight, BookOpen, Compass, Gem, Globe2,
+  ArrowRight, ArrowUpRight, BookOpen, Compass, Globe2,
   Microscope, Ruler, Search, ShieldCheck,
 } from "lucide-react";
 
