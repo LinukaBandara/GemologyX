@@ -3375,8 +3375,8 @@ main :where(input,select,textarea) { max-width: 100%; }
 main :where(button,a,[role="button"],input[type="checkbox"],input[type="radio"]) {
   touch-action: manipulation;
 }
-.container-page { width: min(100% - 48px, 1240px); margin-inline: auto; }
-.site-footer .container-page { width: min(100% - 48px, 1240px); }
+.container-page { width: min(calc(100% - 48px), 1240px); margin-inline: auto; }
+.site-footer .container-page { width: min(calc(100% - 48px), 1240px); }
 
 /* Tablet: remove cramped multi-column compositions before they break. */
 @media (max-width: 1024px) {
