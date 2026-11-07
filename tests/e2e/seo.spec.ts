@@ -38,8 +38,8 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
         const canonical = getCanonical(html);
         const robots = getMetaContent(html, "robots");
         const xRobots = response.headers()["x-robots-tag"] ?? "";
-        const hasOgImage = /<meta\\b[^>]*property="og:image"[^>]*>/i.test(html);
-        const hasTwitterImage = /<meta\\b[^>]*name="twitter:image"[^>]*>/i.test(html);
+        const hasOgImage = /<meta\b[^>]*property="og:image"[^>]*>/i.test(html);
+        const hasTwitterImage = /<meta\b[^>]*name="twitter:image"[^>]*>/i.test(html);
         const expectedCanonical = "https://gemologyx.com" + (pathname === "/" ? "/" : pathname);
         const issues: string[] = [];
 
@@ -47,7 +47,7 @@ test("every published sitemap route has valid, unique, indexable metadata", asyn
         if (!description) issues.push("missing meta description");
         if (!hasOgImage) issues.push("missing Open Graph image");
         if (!hasTwitterImage) issues.push("missing Twitter image");
-        if (/\\|\\s*GemologyX\\s*\\|\\s*GemologyX/i.test(title)) issues.push("duplicated brand suffix");
+        if (/\|\s*GemologyX\s*\|\s*GemologyX/i.test(title)) issues.push("duplicated brand suffix");
         if (canonical !== expectedCanonical) issues.push("canonical mismatch (" + (canonical || "missing") + ")");
         if (/noindex/i.test(robots + " " + xRobots)) issues.push("published sitemap route is noindex");
 
