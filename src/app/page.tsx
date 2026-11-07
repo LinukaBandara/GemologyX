@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     title: "GemologyX — The science, origin and story of gemstones",
     description: "Explore gemstone science, identification, treatments and Sri Lanka’s gem heritage.",
     type: "website",
+    url: "https://gemologyx.com/",
+    images: ["/gemologyx-social.svg"],
   },
   twitter: {
     card: "summary_large_image",
