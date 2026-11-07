@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   title: "Gemstone Mining Licences in Sri Lanka: Official Guidance",
   description: "Where to find official Sri Lankan gemstone mining licence information and what to verify before starting work. Not legal advice.",
   alternates: { canonical: "/sri-lanka-mining/licensing" },
+  openGraph: {
+    type: "article",
+    title: "Gemstone Mining Licences in Sri Lanka: Official Guidance",
+    description: "Where to find official Sri Lankan gemstone mining licence information and what to verify before starting work. Not legal advice.",
+    url: "/sri-lanka-mining/licensing",
+    images: [{ url: "/gemologyx-social.svg", width: 1200, height: 630, alt: "GemologyX — Gemstone Mining Licences in Sri Lanka: Official Guidance" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gemstone Mining Licences in Sri Lanka: Official Guidance",
+    description: "Where to find official Sri Lankan gemstone mining licence information and what to verify before starting work. Not legal advice.",
+    images: ["/gemologyx-social.svg"],
+  },
 };
 
 const sources = [
