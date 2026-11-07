@@ -36,6 +36,7 @@ export default function SriLankaMiningLicenceBasicsPage() {
       crumbHref="/si/learn"
       crumbLabel="ශ්‍රී ලංකා මැණික් දැනුම"
       lastReviewed="2026-11-05"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Gem_pit_shaft_seen_from_above%2C_Pelmadulla%2C_Sri_Lanka_%282026%29.jpg", alt: "A gem pit shaft seen from above near Pelmadulla, Sri Lanka", credit: "Ilyes Makria / Joalys · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Gem_pit_shaft_seen_from_above,_Pelmadulla,_Sri_Lanka_(2026).jpg" }}
       related={[
         { label: "පරිසරය සහ මහජන වගකීම්", href: "/si/learn/sri-lanka-gem-mining-safety-environment" },
         { label: "රත්නපුර/බලංගොඩ භූවිද්‍යාව", href: "/si/learn/ratnapura-balangoda-gem-geology" },
