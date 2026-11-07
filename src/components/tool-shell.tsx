@@ -14,7 +14,7 @@ export function ToolShell({
   note?: string;
 }) {
   return (
-    <main className="container-page max-w-5xl py-8 md:py-14">
+    <main className="tool-shell container-page mx-auto max-w-5xl py-6 sm:py-8 md:py-14">
       <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-muted">
         <Link href="/tools" className="transition-colors hover:text-accent">Tools</Link>
         <span aria-hidden="true">/</span>
@@ -31,8 +31,8 @@ export function ToolShell({
         </p>
       </header>
 
-      <section aria-label={`${title} workspace`} className="mt-7 grid gap-5 lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-7">
-        <div className="min-w-0 border border-border bg-[var(--surface)] p-5 shadow-[0_12px_35px_rgba(35,25,20,0.045)] sm:p-7 md:p-8">
+      <section aria-label={`${title} workspace`} className="tool-shell-workspace mt-6 grid min-w-0 grid-cols-1 gap-4 sm:mt-7 sm:gap-5 lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-7">
+        <div className="min-w-0 border border-border bg-[var(--surface)] p-4 shadow-[0_12px_35px_rgba(35,25,20,0.045)] sm:p-6 md:p-8">
           {children}
         </div>
         <aside className="flex flex-col gap-4">
