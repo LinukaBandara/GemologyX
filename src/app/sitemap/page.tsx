@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Site Map",
   description: "Browse the GemologyX gemstone encyclopedia, learning guides, Sri Lanka hub, tools, glossary and site information.",
   alternates: { canonical: "/sitemap" },
-  openGraph: { type: "website", title: "Site Map", description: "Browse the GemologyX gemstone encyclopedia, learning guides, Sri Lanka hub, tools, glossary and site information.", url: "/sitemap" },
-  twitter: { card: "summary_large_image", title: "Site Map", description: "Browse the GemologyX gemstone encyclopedia, learning guides, Sri Lanka hub, tools, glossary and site information." },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Site Map", description: "Browse the GemologyX gemstone encyclopedia, learning guides, Sri Lanka hub, tools, glossary and site information.", url: "/sitemap" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Site Map", description: "Browse the GemologyX gemstone encyclopedia, learning guides, Sri Lanka hub, tools, glossary and site information." },
 };
 
 const sections = [
