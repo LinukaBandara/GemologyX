@@ -2614,3 +2614,42 @@ html[data-theme="dark"] .gx-sinhala-hub,html[data-theme="dark"] .gx-article-page
 }
 html[data-theme="dark"] .gx-sinhala-hub .bg-white,
 html[data-theme="dark"] .gx-article-page-si .bg-white { background-color:var(--surface); }
+
+/* Documentary photography used by Sri Lanka interactive learning experiences */
+.gx-sri-photo-feature,.gx-sri-photo-banner {
+  position:relative; overflow:hidden; margin:0;
+  border:1px solid var(--regional-line,#E8DFD9); background:var(--regional-surface,#F7F3EE);
+}
+.gx-sri-photo-feature { width:100%; max-width:100%; }
+.gx-sri-photo-feature img {
+  display:block; width:100%; height:clamp(150px,22vw,230px);
+  object-fit:cover; object-position:center 48%;
+}
+.gx-sri-photo-feature-compact img { height:clamp(130px,18vw,185px); }
+.gx-sri-photo-feature figcaption,.gx-sri-photo-banner figcaption {
+  display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:5px 12px;
+  padding:9px 12px; color:var(--regional-muted,#746A6B);
+  background:var(--regional-surface,#F7F3EE); font-size:9px; line-height:1.6;
+}
+.gx-sri-photo-feature figcaption span,.gx-sri-photo-banner figcaption span { color:var(--regional-ink,#30242A); font-weight:650; }
+.gx-sri-photo-feature figcaption a,.gx-sri-photo-banner figcaption a { color:var(--regional-ruby,#762B43); text-decoration:underline; text-underline-offset:3px; }
+.gx-sri-photo-banner { display:grid; grid-template-columns:minmax(0,1fr); margin:28px 0; }
+.gx-sri-photo-banner img {
+  display:block; width:100%; height:clamp(190px,32vw,360px);
+  object-fit:cover; object-position:center 48%;
+}
+.gx-sri-photo-banner figcaption { padding:11px 14px; }
+.gx-sri-trade-photo img { object-position:center 42%; }
+.gx-sinhala-hub .gx-sri-photo-feature figcaption,
+.gx-sinhala-hub .gx-sri-photo-banner figcaption {
+  font-family:var(--font-sinhala),"Noto Sans Sinhala",sans-serif;
+  font-size:10px; line-height:1.8;
+}
+html[data-theme="dark"] .gx-sri-photo-feature,
+html[data-theme="dark"] .gx-sri-photo-banner { border-color:var(--regional-line,#49353D); }
+@media(max-width:640px) {
+  .gx-sri-photo-feature img { height:180px; }
+  .gx-sri-photo-feature-compact img { height:145px; }
+  .gx-sri-photo-banner img { height:210px; }
+  .gx-sri-photo-feature figcaption,.gx-sri-photo-banner figcaption { align-items:flex-start; flex-direction:column; }
+}
