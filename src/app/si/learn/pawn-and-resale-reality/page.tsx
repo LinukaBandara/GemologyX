@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Pawn සහ නැවත විකිණීමේ යථාර්ථය | GemologyX",
+  title: "Pawn සහ නැවත විකිණීමේ යථාර්ථය",
   description:
     "Why resale and pawn offers are often far below retail — and how to think about exit value.",
+
+  alternates: { canonical: "/si/learn/pawn-and-resale-reality" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් සමඟ ගමන් කිරීම | GemologyX",
+  title: "මැණික් සමඟ ගමන් කිරීම",
   description:
     "ගුවන් ගමන්, ආරක්ෂාව, ලේඛන, හානි අවදානම් — මැණික් / ආභරණ රැගෙන යන විට.",
+
+  alternates: { canonical: "/si/learn/travel-with-gemstones" },
 };
 
 export default function Page() {

@@ -3,9 +3,11 @@ import { ArticleLayout, ArticleSection, QuickAnswer } from "@/components/article
 import { CaratConverter } from "@/components/carat-converter";
 
 export const metadata: Metadata = {
-  title: "මැණික් කැරට් සහ ග්‍රෑම් පරිවර්තකය | GemologyX",
+  title: "මැණික් කැරට් සහ ග්‍රෑම් පරිවර්තකය",
   description:
     "Carat (ct) සහ gram (g) අතර මැණික් බර පරිවර්තනය කිරීමට නොමිලේ interactive calculator එකක්.",
+
+  alternates: { canonical: "/si/learn/carat-vs-gram" },
 };
 
 export default function Page() {

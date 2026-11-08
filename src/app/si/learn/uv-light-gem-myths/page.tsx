@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "UV Light සහ මැණික් — මිත්‍යා | GemologyX",
+  title: "UV Light සහ මැණික් — මිත්‍යා",
   description:
     "What UV fluorescence can and cannot prove about gem identity and treatments.",
+
+  alternates: { canonical: "/si/learn/uv-light-gem-myths" },
 };
 
 export default function Page() {

@@ -6,11 +6,14 @@ import {
   PracticalChecklist,
   Misconceptions,
 } from "@/components/article-layout";
+import { CeylonClaimExplainer } from "@/components/ceylon-claim-explainer";
 
 export const metadata: Metadata = {
-  title: "ශ්‍රී ලංකාවේ නිල්මැණික් ගැන මූලික දැනුම | GemologyX",
+  title: "ශ්‍රී ලංකාවේ නිල්මැණික් ගැන මූලික දැනුම",
   description:
     "ශ්‍රී ලාංකික නිල්මැණික් පිළිබඳ වර්ණය, වෙළෙඳ නාම, මූලාරම්භ ප්‍රකාශ සහ ස්වාධීන පරීක්ෂණ ගැන හැඳින්වීමක්.",
+
+  alternates: { canonical: "/si/learn/sri-lankan-blue-sapphire" },
 };
 
 export default function Page() {
@@ -21,7 +24,7 @@ export default function Page() {
       title="ශ්‍රී ලංකාවේ නිල්මැණික් ගැන මූලික දැනුම"
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
-      lastReviewed="2026-10-21"
+      lastReviewed="2026-11-05"
       related={[
         { label: "නිල්මැණික් සම්පූර්ණ මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },
         { label: "නිල්මැණිකක වටිනාකමට බලපාන කරුණු", href: "/si/learn/blue-sapphire-value-factors" },
@@ -29,7 +32,7 @@ export default function Page() {
         { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
       ]}
     >
-      <QuickAnswer>
+      <QuickAnswer locale="si">
         <p>
           “Ceylon sapphire” යනු ශ්‍රී ලංකාව සමඟ සම්බන්ධ නිල්මැණික් සඳහා වෙළෙඳපොළේ
           භාවිත වන නාමයකි. ලේබලයක් හෝ විකුණුම්කරුගේ වාචික ප්‍රකාශයක් පමණක් නිශ්චිත
@@ -54,6 +57,8 @@ export default function Page() {
         </p>
       </ArticleSection>
 
+      <CeylonClaimExplainer />
+
       <ArticleSection heading="මූලාරම්භය තහවුරු කිරීම">
         <p>
           නිශ්චිත මූලාරම්භයක් මිලදී ගැනීමට වැදගත් නම්, ඒ ගැන අදහසක් ලබාදෙන
@@ -71,6 +76,7 @@ export default function Page() {
       </ArticleSection>
 
       <PracticalChecklist
+        locale="si"
         items={[
           "“Ceylon / Sri Lanka” ප්‍රකාශය ලිඛිතව තියෙනවාද?",
           "මූලාරම්භය සනාථ කරන වාර්තාවක් හෝ සාක්ෂි තියෙනවාද?",
@@ -81,6 +87,7 @@ export default function Page() {
       />
 
       <Misconceptions
+        locale="si"
         items={[
           "ලේබලයේ ‘Ceylon’ ලියා තිබීම = මූලාරම්භය තහවුරු — නැහැ.",
           "පෙනුමෙන් ශ්‍රී ලංකා මූලාරම්භය හඳුනාගත හැකියි — නැහැ.",
@@ -95,6 +102,14 @@ export default function Page() {
           සුරකින්න. මෙම ලිපිය කිසිදු ගලකට නිශ්චිත මූලාරම්භයක් හෝ මිලක් සහතික
           නොකරයි.
         </p>
+      </ArticleSection>
+
+      <ArticleSection heading="තවදුරටත් කියවීමට මූලාශ්‍ර">
+        <ul className="space-y-3 text-sm">
+          <li><a className="font-medium text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent" href="https://www.gia.edu/sapphire/buyers-guide" target="_blank" rel="noreferrer">GIA: Sapphire Buyer’s Guide</a><p className="mt-1 text-muted">නිල්මැණික් වාර්තා, හඳුනාගැනීම සහ ප්‍රතිකාර පිළිබඳ මූලික තොරතුරු.</p></li>
+          <li><a className="font-medium text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent" href="https://www.gia.edu/gems-gemology/winter-2019-blue-sapphire-geographic-origin-determination" target="_blank" rel="noreferrer">GIA Gems &amp; Gemology: Blue sapphire origin determination</a><p className="mt-1 text-muted">විවිධ ප්‍රදේශවල නිල්මැණික්වල සාක්ෂි එකිනෙකට සමාන විය හැකි ආකාරය පිළිබඳ පර්යේෂණය.</p></li>
+          <li><a className="font-medium text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent" href="https://www.srilankabusiness.com/gem-diamond-and-jewellery/about-sri-lanka-gems/sri-lanka-gemstones.html" target="_blank" rel="noreferrer">Sri Lanka Export Development Board: Sri Lanka gemstones</a><p className="mt-1 text-muted">ශ්‍රී ලංකාවේ මැණික් සහ මැණික් කර්මාන්තය පිළිබඳ වෙළෙඳ මණ්ඩල තොරතුරු.</p></li>
+        </ul>
       </ArticleSection>
     </ArticleLayout>
   );

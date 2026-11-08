@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleLayout, ArticleSection, QuickAnswer, PracticalChecklist, Misconceptions } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Natural, Synthetic, Imitation සහ Assembled මැණික් පද | GemologyX",
+  title: "Natural, Synthetic, Imitation සහ Assembled මැණික් පද",
   description: "මැණික් වෙළෙඳාමේ natural, laboratory-grown, synthetic, imitation, composite සහ treated යන පද පැහැදිලි කරන reference guide.",
   alternates: { canonical: "/si/learn/natural-synthetic-imitation-gems" },
 };

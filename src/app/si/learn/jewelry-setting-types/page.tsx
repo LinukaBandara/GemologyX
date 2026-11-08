@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "ආභරණ Setting වර්ග | GemologyX",
+  title: "ආභරණ Setting වර්ග",
   description:
     "Prong, bezel, channel, pave — setting වර්ග, ආරක්ෂාව සහ මැණික් රැකවරණයට බලපෑම.",
+
+  alternates: { canonical: "/si/learn/jewelry-setting-types" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් Insurance සහ Appraisal | GemologyX",
+  title: "මැණික් Insurance සහ Appraisal",
   description:
     "Insurance appraisal යනු කුමක්ද, lab report සමඟ වෙනස, replacement value සහ ගැනුම්කරුවන් දැනගත යුතු කරුණු.",
+
+  alternates: { canonical: "/si/learn/gem-insurance-appraisal" },
 };
 
 export default function Page() {

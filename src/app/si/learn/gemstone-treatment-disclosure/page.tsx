@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් ප්‍රතිකාර තොරතුරු හෙළි කිරීම | GemologyX",
+  title: "මැණික් ප්‍රතිකාර තොරතුරු හෙළි කිරීම",
   description:
     "මැණික්වල ප්‍රතිකාර තත්ත්වය, විකුණුම්කරුගේ ප්‍රකාශ සහ වාර්තා — ගැනුම්කරුවන් දැනගත යුතු කරුණු.",
+
+  alternates: { canonical: "/si/learn/gemstone-treatment-disclosure" },
 };
 
 export default function Page() {

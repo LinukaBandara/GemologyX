@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Fluorite — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Fluorite — මූලික මාර්ගෝපදේශය",
   description:
     "Fluorite යනු කුමක්ද, වර්ණ විවිධත්වය, අඩු දෘඪතාව, රැකවරණය සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/fluorite-intro" },
 };
 
 export default function Page() {

@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Morganite — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Morganite — මූලික මාර්ගෝපදේශය",
   description:
     "Morganite යනු කුමක්ද, රෝස පැහැය, heat treatment, beryl පවුල සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/morganite-intro" },
 };
 
 export default function Page() {

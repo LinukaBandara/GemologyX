@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Disclaimer",
   description: "GemologyX provides educational information and tools; it is not a substitute for professional gemological examination.",
+
+  alternates: { canonical: "/disclaimer" },
 };
 
 export default function DisclaimerPage() {

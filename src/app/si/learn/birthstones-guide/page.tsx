@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Birthstones (උපන් මාස මැණික්) | GemologyX",
+  title: "Birthstones (උපන් මාස මැණික්)",
   description:
     "Traditional / modern birthstone lists, durability, alternatives සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/birthstones-guide" },
 };
 
 export default function Page() {

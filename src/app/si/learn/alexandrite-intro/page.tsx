@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Alexandrite — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Alexandrite — මූලික මාර්ගෝපදේශය",
   description:
     "Alexandrite යනු කුමක්ද, colour-change, chrysoberyl පවුල, synthetic සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/alexandrite-intro" },
 };
 
 export default function Page() {

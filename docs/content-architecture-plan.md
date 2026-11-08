@@ -1,37 +1,24 @@
-# GemologyX Content Architecture & Expansion Plan
+# GemologyX Content Architecture Notes
 
-> Planning baseline checked against `seo/technical-foundation` at commit `f319da29604a033dcd0162067478e7e07c93f8a8`. This is a roadmap, not a claim that the planned pages already exist.
+> The current delivery order, language scope, completion gates and milestones live in [`1000-page-completion-programme.md`](1000-page-completion-programme.md). This file keeps the reusable page archetypes and editorial constraints. Its original 174-URL baseline and 354-URL target below have been superseded.
 
 ## 1. Current URL baseline
 
-The App Router tree contains 134 `page.tsx` files. Three are dynamic templates and therefore do not each represent a single final URL:
+The current branch contains 143 `page.tsx` files. Three are dynamic templates and therefore do not each represent a single final URL:
 
-- `/gemstones/[slug]` — 20 gemstone records
+- `/gemstones/[slug]` — 25 gemstone records
 - `/origins/[slug]` — 9 origin records
-- `/glossary/[term]` — 14 glossary records
+- `/glossary/[slug]` — 50 glossary records
 
-Other page files: 100 Sinhala learning pages, 9 English learning pages, 6 tools pages, 4 Sri Lanka mining pages, plus 15 other/static routes (including the three dynamic templates counted above in the 134).
+The route files include 105 Sinhala learning pages (including the dedicated `/si/learn` Sri Lanka hub) and 9 English learning pages. The successful production build on 2026-11-05 generated a sitemap with 223 URLs after expanding data-backed entries and excluding `/search`.
 
-Concrete URL estimate: 134 - 3 + 20 + 9 + 14 = **174**. Recheck after any data/route changes.
+These counts describe source routes and records, not content quality, language-scope review or indexed pages. The English library is global and English-first; the dedicated Sinhala section covers Sri Lanka-specific topics. Older Sinhala routes remain under scope review and are not automatically part of the local section.
 
 ## 2. Expansion target
 
-The agreed expansion target is **180 additional content records/pages**, bringing the planning target to approximately **354 concrete URLs** (174 baseline + 180 additions). This is a target, not a publishing quota. A page is only approved for publication when it has a distinct search intent, sufficient original value, reliable sourcing, and a suitable layout.
+The older 180-addition / 354-URL target is retired. Use the full staged architecture and quality gates in [`1000-page-completion-programme.md`](1000-page-completion-programme.md). The 1,202-page architecture is a ceiling, not a publishing quota. Count each reader need once; do not create a Sinhala translation of every English topic. Track each route's language scope and any older Sinhala page's inclusion status separately.
 
-| Content group | Existing baseline | Planned additions | Target |
-|---|---:|---:|---:|
-| Gemstone profiles | 20 | 80 | 100 |
-| Identification & testing | Existing coverage to audit | 15 | 15 new |
-| Treatments & enhancement | Existing coverage to audit | 10 | 10 new |
-| Mining & geology | Existing coverage to audit | 15 | 15 new |
-| Buying, selling & valuation | Existing coverage to audit | 12 | 12 new |
-| Rough gemstones & lapidary | Existing coverage to audit | 10 | 10 new |
-| Certification & laboratories | Existing coverage to audit | 8 | 8 new |
-| Sri Lankan gem industry & export | Existing coverage to audit | 12 | 12 new |
-| Gemstone care & jewellery | Existing coverage to audit | 8 | 8 new |
-| Interactive tools & reference resources | 6 tool page files currently | 10 | 10 new |
-
-The 180 additions are planned content units. Whether a unit becomes a standalone URL, a data-driven profile, or a section merged into an existing page will be decided during the overlap audit. Do not inflate the URL count by creating near-duplicate pages.
+Existing pages must be audited before deciding whether a roadmap topic needs a new URL, data-backed record, interactive feature or a section in a stronger page. Do not inflate counts with near-duplicates or translations that have not been independently edited.
 
 ## 3. Page layout system
 
@@ -56,7 +43,7 @@ Use the existing `ArticleLayout` and `ToolShell` as foundations, not universal t
 - Do not claim that colour, appearance, a phone photo or a simple home test proves identity, treatment or geographic origin.
 - For prices and legal/export guidance, show jurisdiction/date/context and link to authoritative sources; avoid unsupported fixed-price claims.
 - Sinhala pages should use clear natural Sinhala while retaining necessary English gemological terms and explaining them.
-- English and Sinhala pages count as separate URLs only when each is a genuinely useful, independently written page. Do not auto-create duplicate translations just to increase page count.
+- Global reference coverage is English-first. The dedicated Sinhala section must contain only Sri Lanka-specific content, independently written and reviewed for local readers. Do not treat translation coverage as a page-count goal.
 - Include meaningful internal links, page-specific metadata, canonical URLs and accurate sitemap coverage.
 - Add diagrams, photographs, tables and tools only when they materially improve understanding; avoid decorative filler.
 - Record sources and review dates for claims that can change.
@@ -80,4 +67,4 @@ Publish only completed pages. Verify rendered routes, metadata, canonical/hrefla
 
 ## 6. Repository safety
 
-The technical SEO work is currently on PR #11 (`seo/technical-foundation`). Keep this content roadmap on that branch for review. Do not merge PR #11 or deploy changes without explicit approval.
+Work is tracked on `content/complete-and-expand-1000`. Follow [`1000-page-completion-programme.md`](1000-page-completion-programme.md) for batch order and release gates. Do not merge or deploy without the owner's explicit approval.

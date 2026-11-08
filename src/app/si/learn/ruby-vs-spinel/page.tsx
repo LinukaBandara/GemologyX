@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "රතු මැණික් සහ රතු ස්පිනල් අතර වෙනස | GemologyX",
+  title: "රතු මැණික් සහ රතු ස්පිනල් අතර වෙනස",
   description:
     "Ruby (corundum) සහ red spinel අතර ඛනිජ වෙනස, සමාන පෙනුම සහ හඳුනාගැනීමේ සීමා.",
+
+  alternates: { canonical: "/si/learn/ruby-vs-spinel" },
 };
 
 export default function Page() {

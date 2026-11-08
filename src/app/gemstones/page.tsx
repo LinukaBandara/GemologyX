@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Gemstone Directory",
   description:
     "Browse a reference directory of gemstones with mineral family, hardness, colour range, and key characteristics for each.",
+
+  alternates: { canonical: "/gemstones" },
 };
 
 export default function GemstonesPage() {

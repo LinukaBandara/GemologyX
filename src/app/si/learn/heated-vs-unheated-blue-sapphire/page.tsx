@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Heated vs Unheated Blue Sapphire: වෙනස සහ මිලදී ගැනීම | GemologyX",
+  title: "Heated vs Unheated Blue Sapphire: වෙනස සහ මිලදී ගැනීම",
   description:
     "Heated සහ unheated blue sapphire අතර treatment වෙනස, lab report wording, වටිනාකම සහ මිලදී ගැනීමේදී පරීක්ෂා කළ යුතු කරුණු.",
+
+  alternates: { canonical: "/si/learn/heated-vs-unheated-blue-sapphire" },
 };
 
 export default function Page() {

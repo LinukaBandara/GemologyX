@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   title: "Gemstone Glossary",
   description:
     "A glossary of gemological terminology, from asterism to treatment.",
+
+  alternates: { canonical: "/glossary" },
 };
 
 export default function GlossaryPage() {

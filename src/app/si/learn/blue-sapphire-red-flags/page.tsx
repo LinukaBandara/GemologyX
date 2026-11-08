@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් මිලදී ගැනීමේදී red flags | GemologyX",
+  title: "නිල්මැණික් මිලදී ගැනීමේදී red flags",
   description:
     "නිල්මැණික් ගනුදෙනුවලදී සැලකිලිමත් විය යුතු අනතුරු ඇඟවීම් — අතිශය සහතික, පීඩනය, ලේඛන නොමැතිකම සහ සැක සහිත මිල.",
+
+  alternates: { canonical: "/si/learn/blue-sapphire-red-flags" },
 };
 
 export default function Page() {

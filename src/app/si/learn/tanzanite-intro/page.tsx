@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Tanzanite — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Tanzanite — මූලික මාර්ගෝපදේශය",
   description:
     "Tanzanite යනු කුමක්ද, වර්ණය, heat treatment, දෘඪතාව සහ මිලදී ගැනීමේදී සැලකිලිමත් විය යුතු දේ.",
+
+  alternates: { canonical: "/si/learn/tanzanite-intro" },
 };
 
 export default function Page() {

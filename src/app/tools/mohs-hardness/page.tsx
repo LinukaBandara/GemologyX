@@ -4,6 +4,8 @@ import { ToolShell } from "@/components/tool-shell";
 export const metadata: Metadata = {
   title: "Mohs Hardness Reference",
   description: "The Mohs hardness scale from 1 to 10, with common mineral and gemstone examples at each level.",
+
+  alternates: { canonical: "/tools/mohs-hardness" },
 };
 
 const SCALE = [

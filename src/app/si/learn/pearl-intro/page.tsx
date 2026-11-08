@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Pearl (මුතු) — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Pearl (මුතු) — මූලික මාර්ගෝපදේශය",
   description:
     "Natural vs cultured pearls, imitations, රැකවරණය සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/pearl-intro" },
 };
 
 export default function Page() {

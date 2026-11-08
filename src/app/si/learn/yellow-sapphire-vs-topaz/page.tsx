@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "පුෂ්පරාග සහ කහ ටොපාස් අතර වෙනස | GemologyX",
+  title: "පුෂ්පරාග සහ කහ ටොපාස් අතර වෙනස",
   description:
     "කහ sapphire (පුෂ්පරාග) සහ yellow topaz අතර ඛනිජ වෙනස, සමාන පෙනුම සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/yellow-sapphire-vs-topaz" },
 };
 
 export default function Page() {

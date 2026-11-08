@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Quartz පවුල — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Quartz පවුල — මූලික මාර්ගෝපදේශය",
   description:
     "Quartz family: amethyst, citrine, rose quartz, smoky, rock crystal — වර්ණ, treatments සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/quartz-family-intro" },
 };
 
 export default function Page() {

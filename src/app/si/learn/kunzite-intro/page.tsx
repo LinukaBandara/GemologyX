@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Kunzite — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Kunzite — මූලික මාර්ගෝපදේශය",
   description:
     "Kunzite යනු කුමක්ද, රෝස පැහැය, light sensitivity, දෘඪතාව සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/kunzite-intro" },
 };
 
 export default function Page() {

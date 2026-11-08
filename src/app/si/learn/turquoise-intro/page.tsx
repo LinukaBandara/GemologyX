@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Turquoise — මූලික මාර්ගෝපදේශය | GemologyX",
+  title: "Turquoise — මූලික මාර්ගෝපදේශය",
   description:
     "Turquoise යනු කුමක්ද, treatments (stabilized / dyed), රැකවරණය සහ මිලදී ගැනීමේ උපදෙස්.",
+
+  alternates: { canonical: "/si/learn/turquoise-intro" },
 };
 
 export default function Page() {

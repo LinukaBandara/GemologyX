@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "Heat vs Diffusion vs Filling | GemologyX",
+  title: "Heat vs Diffusion vs Filling",
   description:
     "Heat treatment, diffusion, fracture filling — වෙනස, disclosure සහ ගැනුම්කරුවන් අසන්න ඕනේ දේ.",
+
+  alternates: { canonical: "/si/learn/heat-vs-diffusion-vs-filling" },
 };
 
 export default function Page() {

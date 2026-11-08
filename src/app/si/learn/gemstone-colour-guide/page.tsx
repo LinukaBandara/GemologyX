@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් වර්ණය තේරුම් ගැනීම | GemologyX",
+  title: "මැණික් වර්ණය තේරුම් ගැනීම",
   description:
     "Hue, tone, saturation — මැණික් වර්ණය විස්තර කරන ආකාරය සහ මිලදී ගැනීමේදී බලන්න ඕනේ දේ.",
+
+  alternates: { canonical: "/si/learn/gemstone-colour-guide" },
 };
 
 export default function Page() {

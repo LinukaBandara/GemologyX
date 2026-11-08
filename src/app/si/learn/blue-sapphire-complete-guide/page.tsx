@@ -9,9 +9,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "නිල්මැණික් සම්පූර්ණ මාර්ගෝපදේශය | GemologyX",
+  title: "නිල්මැණික් සම්පූර්ණ මාර්ගෝපදේශය",
   description:
     "නිල්මැණික් හඳුනාගැනීම, වර්ණය, වටිනාකම, ප්‍රතිකාර, රළු ගල්, පරීක්ෂණ වාර්තා සහ ආරක්ෂිත මිලදී ගැනීම ගැන සිංහල මාර්ගෝපදේශ එකම තැනකින්.",
+
+  alternates: { canonical: "/si/learn/blue-sapphire-complete-guide" },
 };
 
 const guides = [

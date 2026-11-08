@@ -8,9 +8,11 @@ import {
 } from "@/components/article-layout";
 
 export const metadata: Metadata = {
-  title: "මැණික් කැපුම් හැඩ (Cut Shapes) | GemologyX",
+  title: "මැණික් කැපුම් හැඩ (Cut Shapes)",
   description:
     "Round, oval, cushion, emerald cut, cabochon ආදිය — cut vs shape සහ මිලදී ගැනීමේදී බලන්න ඕනේ දේ.",
+
+  alternates: { canonical: "/si/learn/gemstone-cut-shapes" },
 };
 
 export default function Page() {

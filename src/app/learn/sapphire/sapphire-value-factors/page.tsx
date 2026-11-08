@@ -4,6 +4,8 @@ import { ArticleLayout, ArticleSection } from "@/components/article-layout";
 export const metadata: Metadata = {
   title: "What Makes a Sapphire Valuable?",
   description: "The main factors gemologists and dealers weigh when assessing sapphire value: colour, clarity, cut, carat, treatment, and origin.",
+
+  alternates: { canonical: "/learn/sapphire/sapphire-value-factors" },
 };
 
 export default function Page() {
