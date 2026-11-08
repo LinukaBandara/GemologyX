@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/rough-blue-sapphire-value"
       crumbLabel="රළු නිල්මැණික් වටිනාකම"
       lastReviewed="2026-11-06"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/9/90/Yellow_sapphire_oval_gemstone.JPG", alt: "A faceted oval yellow sapphire described by its photographer as a heated Ceylon sapphire of about one carat", credit: "Yellow sapphire oval gemstone — Gemsphoto, CC BY-SA 3.0 (Wikimedia Commons).", sourceUrl: "https://commons.wikimedia.org/wiki/File:Yellow_sapphire_oval_gemstone.JPG" }}
       related={[
         { label: "රළු නිල්මැණික් වටිනාකම", href: "/si/learn/rough-blue-sapphire-value" },
         { label: "රළු ගල් — අසන්න ඕනේ ප්‍රශ්න", href: "/si/learn/rough-gem-questions" },

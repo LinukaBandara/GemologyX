@@ -1,0 +1,121 @@
+import { expect, test } from "@playwright/test";
+
+test("specimen image viewer supports keyboard navigation and returns focus", async ({ page }) => {
+  await page.goto("/gemstones/sapphire", { waitUntil: "domcontentloaded" });
+
+  const openButton = page.getByRole("button", {
+    name: "Enlarge image 1: Rough blue, green and yellow sapphire crystals from Montana",
+  });
+  await expect(openButton).toBeVisible();
+  await openButton.click();
+
+  const dialog = page.getByRole("dialog", { name: "Sapphire specimen image viewer" });
+  const closeButton = dialog.getByRole("button", { name: "Close image viewer" });
+  await expect(dialog).toBeVisible();
+  await expect(closeButton).toBeFocused();
+  await expect(dialog.getByText("1 / 2")).toBeVisible();
+
+  await page.keyboard.press("ArrowRight");
+  await expect(dialog.getByText("2 / 2")).toBeVisible();
+  await expect(dialog.getByText("A closer view of selected crystals from the same Montana collection.")).toBeVisible();
+
+  await page.keyboard.press("Shift+Tab");
+  await expect(dialog.getByRole("button", { name: "Next image" })).toBeFocused();
+  await page.keyboard.press("Tab");
+  await expect(closeButton).toBeFocused();
+
+  await page.keyboard.press("Escape");
+  await expect(dialog).toHaveCount(0);
+  await expect(openButton).toBeFocused();
+});
+
+test("mobile navigation closes with Escape and exposes its expanded state", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+
+  const menuButton = page.getByRole("button", { name: "Open navigation" });
+  await expect(menuButton).toHaveAttribute("aria-controls", "gx-mobile-navigation");
+  await expect(page.locator("#gx-mobile-navigation")).toBeHidden();
+  await menuButton.click();
+  await expect(menuButton).toHaveAttribute("aria-expanded", "true");
+  await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toBeVisible();
+
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toBeHidden();
+  const closedMenuButton = page.getByRole("button", { name: "Open navigation" });
+  await expect(closedMenuButton).toHaveAttribute("aria-expanded", "false");
+  await expect(closedMenuButton).toBeFocused();
+});
+
+test("skip link is available to keyboard users", async ({ page }) => {
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  await page.keyboard.press("Tab");
+  const skipLink = page.getByRole("link", { name: "Skip to main content" });
+  await expect(skipLink).toBeFocused();
+  const main = page.locator("main#main-content");
+  await expect(main).toHaveAttribute("tabindex", "-1");
+  await skipLink.click();
+  await expect(main).toBeFocused();
+});
+
+
+test("theme toggle follows system preference and keeps the document theme in sync", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: "dark" });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+
+  const toggle = page.getByRole("button", { name: "Switch to light theme" });
+  await expect(toggle).toBeVisible();
+  await expect(toggle).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+
+  await toggle.click();
+  const lightToggle = page.getByRole("button", { name: "Switch to dark theme" });
+  await expect(lightToggle).toHaveAttribute("aria-pressed", "false");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+});
+
+
+test("search page does not force the mobile keyboard open on arrival", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/search", { waitUntil: "domcontentloaded" });
+
+  const searchInput = page.getByRole("searchbox", {
+    name: "Search gemstones, origins, glossary terms and guides",
+  });
+  await expect(searchInput).toBeVisible();
+  await expect(searchInput).not.toBeFocused();
+});
+
+test("reduced-motion preference skips the full-screen site loader", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+
+  await expect(page.locator(".gx-site-loader")).toBeHidden();
+});
+
+test("Sinhala guide content is identified with the correct language", async ({ page }) => {
+  await page.goto("/si/learn/blue-sapphire-care", { waitUntil: "domcontentloaded" });
+
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  const sinhalaContent = page.locator('[lang="si"]');
+  await expect(sinhalaContent).toBeVisible();
+  await expect(sinhalaContent.locator("h1")).toBeVisible();
+  await expect(sinhalaContent.locator("h1")).not.toBeEmpty();
+});
+
+test("desktop navigation exposes named links and the current page", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/gemstones", { waitUntil: "domcontentloaded" });
+
+  const navigation = page.getByRole("navigation", { name: "Main navigation" });
+  await expect(navigation).toBeVisible();
+  const links = navigation.getByRole("link");
+  const count = await links.count();
+  expect(count).toBeGreaterThan(0);
+
+  for (let index = 0; index < count; index += 1) {
+    await expect(links.nth(index)).toHaveAccessibleName(/.+/);
+  }
+
+  await expect(navigation.getByRole("link", { name: "Gemstones" })).toHaveAttribute("aria-current", "page");
+});

@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/gemstone-care-general"
       crumbLabel="මැණික් රැකවරණය"
       lastReviewed="2026-10-25"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Box%2C_jewellery_%2851369557639%29.jpg",
+        alt: "A fitted jewellery case with a hinged lid, lined compartments and removable tray from the Auckland Museum collection",
+        credit: "Auckland Museum Collections · CC BY 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Box,_jewellery_(51369557639).jpg",
+      }}
       related={[
         { label: "මැණික් රැකවරණය", href: "/si/learn/gemstone-care-general" },
         { label: "Insurance / appraisal", href: "/si/learn/gem-insurance-appraisal" },

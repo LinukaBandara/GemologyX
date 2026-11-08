@@ -3,6 +3,7 @@ export interface Origin {
   name: string;
   summary: string;
   gemstones?: string[];
+  image?: { src: string; alt: string; credit: string; source: string };
   sources: { label: string; url: string }[];
   detail?: {
     overview: string;
@@ -17,6 +18,7 @@ export const origins: Origin[] = [
     slug: "sri-lanka",
     name: "Sri Lanka",
     summary: "A long-established gem-producing region, historically known as Ceylon.",
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Gem_pit_shaft_seen_from_above,_Pelmadulla,_Sri_Lanka_(2026).jpg","alt":"Timber-lined artisanal gem-mine shaft near Pelmadulla, Ratnapura District, Sri Lanka","credit":"Ilyes Makria / Joalys · CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Gem_pit_shaft_seen_from_above,_Pelmadulla,_Sri_Lanka_(2026).jpg"},
     gemstones: ["Sapphire", "Ruby", "Alexandrite", "Spinel", "Garnet", "Tourmaline", "Cat's eye chrysoberyl"],
     detail: {
       overview:
@@ -37,6 +39,7 @@ export const origins: Origin[] = [
     slug: "madagascar",
     name: "Madagascar",
     summary: "A major modern source of sapphire, ruby and a wide range of coloured gemstones.",
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Ilakaka-02.JPG","alt":"Gem prospectors at Ilakaka, Madagascar","credit":"Wayne77 · CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Ilakaka-02.JPG"},
     gemstones: ["Sapphire", "Ruby", "Tourmaline", "Garnet", "Aquamarine"],
     detail: {
       overview:
@@ -57,6 +60,7 @@ export const origins: Origin[] = [
     slug: "myanmar",
     name: "Myanmar",
     summary: "A historic source of ruby and jadeite, including the Mogok Valley.",
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Mogok_Township.jpg","alt":"Mogok, a historic ruby and sapphire-producing region in Myanmar","credit":"JimmyWinMGK · CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Mogok_Township.jpg"},
     gemstones: ["Ruby", "Sapphire", "Spinel", "Jadeite"],
     detail: {
       overview:
@@ -97,6 +101,7 @@ export const origins: Origin[] = [
     slug: "colombia",
     name: "Colombia",
     summary: "The leading historical source of fine emerald, particularly from the Muzo and Chivor regions.",
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A9ryl_var._%C3%A9meraude_sur_gangue_(Muzo_Mine_Boyaca_-_Colombie).jpg","alt":"Emerald-bearing beryl crystals in matrix from the Muzo Mine, Colombia","credit":"Géry PARENT · CC0 1.0","source":"https://commons.wikimedia.org/wiki/File:B%C3%A9ryl_var._%C3%A9meraude_sur_gangue_(Muzo_Mine_Boyaca_-_Colombie).jpg"},
     gemstones: ["Emerald"],
     detail: {
       overview:
@@ -117,6 +122,7 @@ export const origins: Origin[] = [
     slug: "tanzania",
     name: "Tanzania",
     summary: "Source of tanzanite as well as ruby, sapphire, tsavorite garnet and spinel.",
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Preparing_to_go_down_the_mineshaft_to_search_for_Tanzanite.jpg","alt":"Miners preparing to descend a mineshaft in Tanzania in search of tanzanite","credit":"Africraigs · CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Preparing_to_go_down_the_mineshaft_to_search_for_Tanzanite.jpg"},
     gemstones: ["Tanzanite", "Ruby", "Sapphire", "Tsavorite garnet", "Spinel"],
     detail: {
       overview:
@@ -137,6 +143,7 @@ export const origins: Origin[] = [
     slug: "mozambique",
     name: "Mozambique",
     summary: "A significant modern ruby-producing country, alongside other coloured gemstones.",
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Corindon_var._saphir_(44_mm)_(Mozambique)_1.JPG","alt":"Sapphire corundum crystals from Mozambique","credit":"Géry PARENT · CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Corindon_var._saphir_(44_mm)_(Mozambique)_1.JPG"},
     gemstones: ["Ruby", "Sapphire", "Tourmaline", "Garnet"],
     detail: {
       overview:
@@ -157,6 +164,7 @@ export const origins: Origin[] = [
     slug: "brazil",
     name: "Brazil",
     summary: "A major source of aquamarine, tourmaline, topaz, and other coloured gemstones.",
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Tourmaline-121182.jpg","alt":"Vivid pink rubellite tourmaline from the Santa Rosa Mine, Minas Gerais, Brazil","credit":"Géry PARENT · CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Tourmaline-121182.jpg"},
     gemstones: ["Aquamarine", "Tourmaline", "Topaz", "Emerald", "Amethyst"],
     detail: {
       overview:
@@ -177,6 +185,7 @@ export const origins: Origin[] = [
     slug: "australia",
     name: "Australia",
     summary: "Known for sapphire and for its black and boulder opal fields.",
+    image: {"src":"https://commons.wikimedia.org/wiki/Special:FilePath/Smoko_in_the_mine.jpg","alt":"An opal miner taking a break inside a mine at Lightning Ridge, home of Australian black opal","credit":"Shane Aurousseau · CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Smoko_in_the_mine.jpg"},
     gemstones: ["Sapphire", "Opal"],
     detail: {
       overview:
@@ -192,6 +201,57 @@ export const origins: Origin[] = [
       { label: "GIA: Australia opal fields expedition", url: "https://www.gia.edu/gia-news-research/australia-opal-fields-expedition" },
       { label: "GIA: Sapphire geographic origin determination", url: "https://www.gia.edu/gems-gemology/winter-2019-blue-sapphire-geographic-origin-determination" },
     ],
+  },
+  {
+    slug: "thailand",
+    name: "Thailand",
+    summary: "A major global centre for ruby and sapphire trading, treatment and cutting, especially around Chanthaburi and Bangkok.",
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Thai_Gem_Cutting.jpg", alt: "Thai commercial gemstone cutting and lapidary work", credit: "Joethon · Public domain", source: "https://commons.wikimedia.org/wiki/File:Thai_Gem_Cutting.jpg" },
+    gemstones: ["Ruby", "Blue sapphire", "Yellow sapphire", "Spinel"],
+    detail: {
+      overview: "Thailand is internationally important not only for its own gemstone deposits but also as a trading, treatment and cutting centre. Chanthaburi has a long association with ruby and sapphire, while Bangkok is a major hub for the international coloured-stone trade.",
+      geology: "Ruby and sapphire deposits in eastern Thailand are associated with basalt-related gem fields in provinces including Chanthaburi and Trat. The wider Thai-Cambodian border region has historically produced corundum, although production and mining activity have changed over time.",
+      history: "Chanthaburi developed as a renowned gem market after ruby and sapphire discoveries in the region. Thai expertise in heat treatment, cutting and trading helped establish the country as a central meeting point for the global coloured-gem industry.",
+      misconceptions: "A gemstone sold, cut or treated in Thailand is not necessarily mined there. Trade location, treatment location and geological origin are separate facts and should not be confused."
+    },
+    sources: [
+      { label: "GIA: Gemstone geographic origin research", url: "https://www.gia.edu/gems-gemology" },
+      { label: "Chanthaburi Gem Market background", url: "https://www.travelfish.org/sight_profile/thailand/eastern_thailand/chanthaburi/chanthaburi/1601" }
+    ]
+  },
+  {
+    slug: "zambia",
+    name: "Zambia",
+    summary: "One of the world's best-known emerald sources, particularly the Kafubu and Kagem mining district.",
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Beryl-Quartz-279095.jpg", alt: "Emerald crystals in quartz matrix from the Kagem Emerald Mine, Zambia", credit: "Rob Lavinsky / iRocks.com · CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Beryl-Quartz-279095.jpg" },
+    gemstones: ["Emerald", "Amethyst", "Aquamarine", "Tourmaline"],
+    detail: {
+      overview: "Zambia is a major modern source of emerald, with the Kafubu Emerald District and Kagem Emerald Mine among its best-known producing areas. Zambian emeralds are an important part of the international market.",
+      geology: "The Kafubu emerald deposits occur in a complex metamorphic setting where beryllium-bearing fluids interacted with chromium- and vanadium-bearing rocks, creating conditions for emerald formation.",
+      history: "Commercial emerald production in the Kafubu area expanded during the late twentieth century, and Zambia became one of the leading sources of emerald on the world market.",
+      misconceptions: "Zambian emeralds are not automatically darker or better than emeralds from other origins. Colour, clarity, treatment, cut and individual quality vary substantially from stone to stone."
+    },
+    sources: [
+      { label: "GIA: Emerald sources and geographic origin", url: "https://www.gia.edu/emerald" },
+      { label: "Kagem Emerald Mine specimens", url: "https://commons.wikimedia.org/wiki/Category:Kagem_Emerald_Mine" }
+    ]
+  },
+  {
+    slug: "india",
+    name: "India",
+    summary: "A historic gemstone source and a major cutting, jewellery-making and trading centre, with Jaipur especially prominent.",
+    image: { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Jaipur-Edelsteinschleiferei-01-2018-gje.jpg", alt: "Gemstone grinding in a workshop in Jaipur, India", credit: "Gerd Eichmann · CC BY 4.0", source: "https://commons.wikimedia.org/wiki/File:Jaipur-Edelsteinschleiferei-01-2018-gje.jpg" },
+    gemstones: ["Ruby", "Sapphire", "Emerald", "Diamond", "Moonstone", "Garnet"],
+    detail: {
+      overview: "India has a long gemstone and jewellery history and remains a major centre for gemstone cutting, processing, jewellery manufacture and trade. Jaipur is especially well known for coloured-stone cutting and trading.",
+      geology: "India has varied gem-bearing geological regions, including historic diamond fields and deposits of garnet, beryl varieties, corundum and other gemstones. Kashmir is a historic sapphire-producing region in the northwestern Himalaya.",
+      history: "Gemstones have been part of Indian craft, adornment and trade for millennia. Jaipur developed into a major coloured-gem processing and trading centre, connecting rough stones with international jewellery markets.",
+      misconceptions: "A gemstone cut or traded in Jaipur is not necessarily mined in India. Cutting centre, seller location and geological origin must be distinguished."
+    },
+    sources: [
+      { label: "GIA: Gemstones and geographic origin resources", url: "https://www.gia.edu/gemstones" },
+      { label: "Gemstone cutting in Jaipur", url: "https://commons.wikimedia.org/wiki/Category:Gemstone_cutting_in_Jaipur" }
+    ]
   },
 ];
 

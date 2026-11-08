@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export const metadata: Metadata = {
   title: "Gemology Questions and Answers",
   description: "Straightforward answers to common questions about gemstone identification, treatments, reports, buying and Sri Lankan gem knowledge.",
   alternates: { canonical: "/faq" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Gemology Questions and Answers", description: "Straightforward answers to common questions about gemstone identification, treatments, reports, buying and Sri Lankan gem knowledge.", url: "/faq" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Gemology Questions and Answers", description: "Straightforward answers to common questions about gemstone identification, treatments, reports, buying and Sri Lankan gem knowledge." },
 };
 
 const questions = [
@@ -22,11 +25,33 @@ const questions = [
   { q: "Where can I find Sri Lanka mining and export information?", a: "Start with the Sri Lanka hub for context, then follow its mining, licensing and trade links to the relevant official resources. Requirements can change, so confirm current rules with the responsible authority before acting.", links: [{ label: "Sri Lanka hub", href: "/sri-lanka" }, { label: "Mining guide", href: "/sri-lanka-mining" }, { label: "Trade and export", href: "/sri-lanka-trade-export" }] },
 ];
 
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: questions.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
+
 export default function FAQPage() {
-  return <div className="container-page max-w-4xl py-12 md:py-16">
+  return <>
+    <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "FAQ", url: "https://gemologyx.com/faq" }]} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(faqStructuredData).replace(/</g, "\\u003c"),
+      }}
+    />
+    <div className="container-page max-w-4xl py-12 md:py-16">
     <nav className="luxury-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>FAQ</span></nav>
     <header className="border-b border-border pb-8"><div className="gx-eyebrow"><span /> QUICK ANSWERS</div><h1 className="mt-3 font-serif text-3xl font-semibold tracking-tight md:text-4xl">Gemology questions, answered</h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted md:text-base">Clear starting points for common gemstone questions. Follow the linked guides for more detail, and use qualified gemological or official sources when a decision depends on a definitive result or current requirements.</p></header>
     <div className="mt-8 space-y-4">{questions.map((item) => <section key={item.q} className="gx-card p-5 md:p-6"><h2 className="font-serif text-xl font-semibold">{item.q}</h2><p className="mt-3 text-sm leading-6 text-muted">{item.a}</p><ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2">{item.links.map((link) => <li key={link.href}><Link className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:text-accent-strong" href={link.href}>{link.label}<ArrowUpRight size={14} /></Link></li>)}</ul></section>)}</div>
     <p className="mt-8 text-sm text-muted">Have a correction or question suggestion? The <Link className="font-medium text-accent underline" href="/contact">contact page</Link> explains how to prepare it and notes that submissions are not available yet.</p>
-  </div>;
+    </div>
+  </>;
 }

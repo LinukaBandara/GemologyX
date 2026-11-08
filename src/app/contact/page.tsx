@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   description: "How to prepare a correction or source suggestion for GemologyX.",
 
   alternates: { canonical: "/contact" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Contact GemologyX", description: "How to prepare a correction or source suggestion for GemologyX.", url: "/contact" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Contact GemologyX", description: "How to prepare a correction or source suggestion for GemologyX." },
 };
 
 export default function ContactPage() {

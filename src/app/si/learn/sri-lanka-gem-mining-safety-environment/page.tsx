@@ -23,6 +23,7 @@ export default function SriLankaGemMiningSafetyEnvironmentPage() {
       title="ශ්‍රී ලංකාවේ මැණික් පතල්: පරිසරය සහ වගකීම්"
       crumbHref="/si/learn"
       crumbLabel="ශ්‍රී ලංකා සිංහල එකතුව"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Timbered_gallery_of_a_gem_pit%2C_Pelmadulla%2C_Sri_Lanka_%282026%29.jpg", alt: "Timbered underground gallery in a gem pit near Pelmadulla", credit: "පැල්මඩුල්ලේ මැණික් පතලක ආධාරක සහිත භූගත මාර්ගය · Ilyes Makria / Joalys · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Timbered_gallery_of_a_gem_pit,_Pelmadulla,_Sri_Lanka_(2026).jpg" }}
       lastReviewed="2026-11-05"
       related={[
         { label: "රත්නපුර සහ බලංගොඩ භූවිද්‍යාව", href: "/si/learn/ratnapura-balangoda-gem-geology" },

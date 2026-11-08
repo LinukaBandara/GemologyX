@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/gemstone-treatment-disclosure"
       crumbLabel="ප්‍රතිකාර හෙළි කිරීම"
       lastReviewed="2026-11-02"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/0/04/Inclusions_inside_heat-treated_sapphire.jpg", alt: "Microscope view of a yellow sapphire specimen showing internal features associated with heat treatment", credit: "Unbreaking · CC0 1.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Inclusions_inside_heat-treated_sapphire.jpg" }}
       related={[
         { label: "ප්‍රතිකාර තොරතුරු හෙළි කිරීම", href: "/si/learn/gemstone-treatment-disclosure" },
         { label: "Heated සහ unheated නිල්මැණික්", href: "/si/learn/heated-vs-unheated-blue-sapphire" },

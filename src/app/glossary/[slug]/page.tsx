@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, BookOpen } from "lucide-react";
 import { glossaryTerms, getGlossaryTermBySlug } from "@/data/glossary";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 type Params = Promise<{ slug: string }>;
 
@@ -27,7 +28,13 @@ export async function generateMetadata({
     openGraph: {
       title: `${term.term} | Gemology Glossary`,
       description: term.definition,
-      type: "article",
+      type: "article", images: ["/gemologyx-social.svg"],
+      url: `https://gemologyx.com/glossary/${term.slug}`,
+    },
+    twitter: {
+      card: "summary_large_image", images: ["/gemologyx-social.svg"],
+      title: `${term.term} | Gemology Glossary`,
+      description: term.definition,
     },
   };
 }
@@ -51,8 +58,28 @@ export default async function GlossaryTermPage({
     })
     .slice(0, 4);
 
+  const definedTermStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: term.term,
+    description: term.definition,
+    inDefinedTermSet: {
+      "@type": "DefinedTermSet",
+      name: "GemologyX Gemological Glossary",
+      url: "https://gemologyx.com/glossary",
+    },
+  };
+
   return (
-    <article className="container-page max-w-3xl py-12 md:py-16">
+    <>
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Glossary", url: "https://gemologyx.com/glossary" }, { name: term.term, url: `https://gemologyx.com/glossary/${term.slug}` }]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(definedTermStructuredData).replace(/</g, "\\u003c"),
+        }}
+      />
+      <article className="container-page max-w-3xl py-12 md:py-16">
       <nav aria-label="Breadcrumb" className="luxury-breadcrumb">
         <Link href="/glossary">Glossary</Link>
         <span>/</span>
@@ -113,6 +140,7 @@ export default async function GlossaryTermPage({
         GemologyX is an educational reference. A glossary definition is not a substitute
         for examination by a qualified gemologist or a laboratory report.
       </p>
-    </article>
+      </article>
+    </>
   );
 }

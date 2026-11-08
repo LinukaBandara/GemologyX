@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/gemstone-buying-checklist"
       crumbLabel="මිලදී ගැනීමේ checklist"
       lastReviewed="2026-10-21"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg", alt: "A pink sapphire being examined under a gemmological microscope", credit: "Sara Abey · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg" }}
       related={[
         { label: "මැණික් මිලදී ගැනීමේ checklist", href: "/si/learn/gemstone-buying-checklist" },
         { label: "වෙළෙන්දාගෙන් අසන්න ඕනේ ප්‍රශ්න", href: "/si/learn/questions-to-ask-gem-dealer" },

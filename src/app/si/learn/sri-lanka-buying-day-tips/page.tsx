@@ -23,6 +23,7 @@ export default function Page() {
       crumbHref="/si/learn"
       crumbLabel="ශ්‍රී ලංකා මැණික් දැනුම"
       lastReviewed="2026-11-05"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg", alt: "A pink sapphire being examined under a gemmological microscope", credit: "Sara Abey · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg" }}
       related={[
         { label: "වෙළෙන්දාගේ භූමිකා", href: "/si/learn/sri-lanka-dealer-types" },
         { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },

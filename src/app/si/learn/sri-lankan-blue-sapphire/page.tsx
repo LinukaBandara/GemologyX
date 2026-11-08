@@ -24,6 +24,7 @@ export default function Page() {
       title="ශ්‍රී ලංකාවේ නිල්මැණික් ගැන මූලික දැනුම"
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/2/29/Sapphire_%28gem_gravel_mine%2C_Ratnapura_area%2C_Sri_Lanka%29_1_%2834857678855%29.jpg", alt: "Blue corundum crystal attributed to gem gravels in the Ratnapura area", credit: "රත්නපුර ප්‍රදේශයේ මැණික් බොරළු වලින් ආරෝපිත නිල් corundum · James St. John · CC BY 2.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Sapphire_(gem_gravel_mine,_Ratnapura_area,_Sri_Lanka)_1_(34857678855).jpg" }}
       lastReviewed="2026-11-05"
       related={[
         { label: "නිල්මැණික් සම්පූර්ණ මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },

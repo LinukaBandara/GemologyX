@@ -21,6 +21,14 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="Secondhand ආභරණ සහ මැණික් මිලදී ගැනීම"
+
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/2/25/Gold_Finger-ring_Stone_Setting_Close-up_%28FindID_481452%29.jpg",
+        alt: "A medieval gold finger ring with a dark blue stone in a bezel setting, recorded by the Portable Antiquities Scheme",
+        credit: "Gold Finger-ring Stone Setting Close-up — The Portable Antiquities Scheme / The Trustees of the British Museum · CC BY-SA 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gold_Finger-ring_Stone_Setting_Close-up_(FindID_481452).jpg",
+      }}
+
       crumbHref="/si/learn/jewelry-with-gems-buying"
       crumbLabel="මැණික් සහිත ආභරණ"
       lastReviewed="2026-10-25"

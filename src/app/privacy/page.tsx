@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   description: "How GemologyX handles information when you browse this educational website.",
 
   alternates: { canonical: "/privacy" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Privacy Policy", description: "Read the GemologyX privacy policy and understand how site data and visitor information are handled.", url: "/privacy" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Privacy Policy", description: "Read the GemologyX privacy policy and understand how site data and visitor information are handled." },
 };
 
 export default function PrivacyPage() {

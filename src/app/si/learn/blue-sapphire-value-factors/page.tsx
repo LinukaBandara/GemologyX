@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       lastReviewed="2026-10-21"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sapphire_Gem.jpg", alt: "A faceted blue sapphire photographed against a light background", credit: "Sapphire Gem — Sapphiredge, CC BY-SA 3.0 (Wikimedia Commons).", sourceUrl: "https://commons.wikimedia.org/wiki/File:Sapphire_Gem.jpg" }}
       related={[
         { label: "නිල්මැණික් සම්පූර්ණ මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },
         { label: "නිල්මැණික් වර්ණය සහ ගුණාත්මකභාවය", href: "/si/learn/blue-sapphire-colour-quality" },

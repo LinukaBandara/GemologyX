@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   description: "GemologyX provides educational information and tools; it is not a substitute for professional gemological examination.",
 
   alternates: { canonical: "/disclaimer" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Educational Disclaimer", description: "Important limits on GemologyX educational information, gemstone identification, valuation and professional advice.", url: "/disclaimer" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Educational Disclaimer", description: "Important limits on GemologyX educational information, gemstone identification, valuation and professional advice." },
 };
 
 export default function DisclaimerPage() {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 import { GlossaryBrowser } from "@/components/glossary-browser";
 
 export const metadata: Metadata = {
@@ -7,11 +8,14 @@ export const metadata: Metadata = {
     "A glossary of gemological terminology, from asterism to treatment.",
 
   alternates: { canonical: "/glossary" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Gemstone Glossary", description: "A clear reference to gemological terminology used to describe, identify and study gemstones.", url: "/glossary" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Gemstone Glossary", description: "A clear reference to gemological terminology used to describe, identify and study gemstones." },
 };
 
 export default function GlossaryPage() {
   return (
     <div className="container-page py-12 md:py-16">
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Gemstone Glossary", url: "https://gemologyx.com/glossary" }]} />
       <header className="border-b border-border pb-8">
         <div className="gx-eyebrow"><span /> Gemological Reference</div>
         <h1 className="mt-3 font-serif text-3xl font-semibold tracking-tight md:text-4xl">

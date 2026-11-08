@@ -24,8 +24,9 @@ export default function Page() {
       <ArticleSection heading="What 'synthetic' actually means">
         <p>
           In gemology, a synthetic gemstone has essentially the same chemical composition and
-          crystal structure as its natural counterpart — but it was grown in a laboratory over
-          hours or weeks, rather than forming geologically over millions of years. This is
+          crystal structure as its natural counterpart, but it was grown in a laboratory rather
+          than formed through natural geological processes. Growth time varies substantially with
+          the material and method, so there is no single laboratory-growth timeframe. This is
           different from an imitation, which merely looks similar but has a different composition
           (such as glass imitating emerald).
         </p>

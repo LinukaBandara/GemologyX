@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { ReactNode } from "react";
 import { ArrowLeft, ArrowUpRight, Clock3, Calendar, Languages } from "lucide-react";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export function ArticleLayout({
   category,
@@ -12,6 +14,7 @@ export function ArticleLayout({
   related,
   lastReviewed,
   languageLink,
+  heroImage,
 }: {
   category: string;
   readTime: string;
@@ -22,11 +25,20 @@ export function ArticleLayout({
   related?: { label: string; href: string }[];
   lastReviewed?: string;
   languageLink?: { href: string; label: string };
+  heroImage?: { src: string; alt: string; credit: string; sourceUrl?: string };
 }) {
   const isSinhala = crumbHref.startsWith("/si/");
   const learnHref = isSinhala ? "/si/learn" : "/learn";
   return (
-    <article lang={isSinhala ? "si" : undefined} className="container-page max-w-3xl py-10 md:py-14">
+    <article lang={isSinhala ? "si" : undefined} className={`container-page gx-article-page mx-auto min-w-0 max-w-4xl py-7 sm:py-9 md:py-14 ${isSinhala ? "gx-article-page-si" : "gx-article-page-en"}`}>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "https://gemologyx.com/" },
+        { name: isSinhala ? "මැණික් දැනුම" : "Learn", url: `https://gemologyx.com${learnHref}` },
+        ...(crumbHref !== learnHref
+          ? [{ name: crumbLabel, url: `https://gemologyx.com${crumbHref}` }]
+          : []),
+      ]} />
+
       {/* Breadcrumb */}
       <nav className="flex flex-wrap items-center gap-2 text-sm text-muted">
         <Link href={learnHref} className="hover:text-accent transition-colors">{isSinhala ? "මැණික් දැනුම" : "Learn"}</Link>
@@ -35,7 +47,7 @@ export function ArticleLayout({
       </nav>
 
       {/* Hero */}
-      <header className="mt-6 border-b border-border pb-8">
+      <header className="gx-article-header mt-6 border-b border-border pb-8">
         <div className="gx-eyebrow">
           <span /> {category}
         </div>
@@ -44,6 +56,12 @@ export function ArticleLayout({
           {title}
         </h1>
 
+        {heroImage && (
+          <figure className="gx-sri-photo-banner gx-article-hero-photo">
+            <Image src={heroImage.src} alt={heroImage.alt} width={1200} height={720} sizes="(max-width: 860px) 100vw, 860px" />
+            <figcaption><span>{heroImage.credit}</span>{heroImage.sourceUrl && <a href={heroImage.sourceUrl} target="_blank" rel="noreferrer">Image source and licence</a>}</figcaption>
+          </figure>
+        )}
         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-muted">
           <span className="inline-flex items-center gap-1.5">
             <Clock3 size={14} /> {readTime}
@@ -62,13 +80,13 @@ export function ArticleLayout({
       </header>
 
       {/* Content */}
-      <div className="prose-content mt-9 min-w-0 space-y-7 text-[0.95rem] leading-[1.75] text-foreground/90 md:text-base">
+      <div className="prose-content gx-article-content mt-9 min-w-0 space-y-7 text-[0.95rem] leading-[1.75] text-foreground/90 md:text-base">
         {children}
       </div>
 
       {/* Related */}
       {related && related.length > 0 && (
-        <div className="mt-12 rounded-2xl border border-border bg-white p-6">
+        <div className="gx-article-related mt-12 rounded-2xl border border-border bg-white p-6">
           <p className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-accent">
             {isSinhala ? "තවදුරටත් කියවන්න" : "Continue exploring"}
           </p>

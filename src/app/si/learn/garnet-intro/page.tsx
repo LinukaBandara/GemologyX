@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="Garnet (ගානට්) — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Garnet_mineral.JPG",
+        alt: "Garnet mineral specimen displayed in a museum collection",
+        credit: "Garnet mineral specimen — Geologicharka, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Garnet_mineral.JPG",
+      }}
       crumbHref="/si/learn/ruby-vs-garnet"
       crumbLabel="Ruby vs Garnet"
       lastReviewed="2026-10-21"

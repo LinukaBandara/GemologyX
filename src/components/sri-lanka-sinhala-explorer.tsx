@@ -33,10 +33,12 @@ const filters = [
 export function SriLankaSinhalaExplorer() {
   const [active, setActive] = useState<(typeof filters)[number]["id"]>("all");
   const visibleGuides = active === "all" ? guides : guides.filter((guide) => guide.group === active);
+  const countFor = (id: (typeof filters)[number]["id"]) =>
+    id === "all" ? guides.length : guides.filter((guide) => guide.group === id).length;
 
   return (
-    <section aria-labelledby="sri-lanka-guide-list-title" className="mt-12">
-      <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+    <section aria-labelledby="sri-lanka-guide-list-title" className="gx-sinhala-explorer mt-12">
+      <div className="gx-sinhala-explorer-heading flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="gx-eyebrow"><span /> ශ්‍රී ලංකාවට අදාළ සිංහල මාර්ගෝපදේශ</p>
           <h2 id="sri-lanka-guide-list-title" className="mt-2 font-serif text-2xl font-semibold tracking-tight md:text-3xl">ඔබට අවශ්‍ය මාතෘකාව තෝරන්න</h2>
@@ -45,19 +47,19 @@ export function SriLankaSinhalaExplorer() {
         <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-white px-3.5 py-2 text-xs font-medium text-muted"><BadgeCheck size={14} className="text-teal" aria-hidden="true" /> සිංහල · ශ්‍රී ලංකාව කේන්ද්‍ර කරගත්</span>
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label="මාතෘකා අනුව පෙරහන් කරන්න">
+      <div className="gx-sinhala-filter-list mt-6 flex flex-wrap gap-2" role="group" aria-label="මාතෘකා අනුව පෙරහන් කරන්න">
         {filters.map((filter) => {
           const Icon = filter.icon;
           const selected = active === filter.id;
-          return <button key={filter.id} type="button" onClick={() => setActive(filter.id)} aria-pressed={selected} className={`inline-flex min-h-10 items-center gap-2 rounded-full border px-3.5 py-2 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${selected ? "border-accent bg-accent text-white" : "border-border bg-white text-foreground hover:border-accent/50"}`}><Icon size={15} aria-hidden="true" />{filter.label}</button>;
+          return <button key={filter.id} type="button" onClick={() => setActive(filter.id)} aria-pressed={selected} className={`gx-sinhala-filter inline-flex min-h-10 items-center gap-2 border px-3.5 py-2 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${selected ? "is-active" : ""}`}><Icon size={18} aria-hidden="true" /><span>{filter.label}</span><span className="gx-sinhala-filter-count">{countFor(filter.id)}</span></button>;
         })}
       </div>
 
-      <p className="sr-only" aria-live="polite">{visibleGuides.length} ක්‍රියාකාරී මාර්ගෝපදේශ</p>
-      <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="gx-sinhala-results-heading"><span>{active === "all" ? "සියලුම මාතෘකා" : filters.find((filter) => filter.id === active)?.label}</span><strong>{visibleGuides.length} මාර්ගෝපදේශ</strong></div><p className="sr-only" aria-live="polite">{visibleGuides.length} ක්‍රියාකාරී මාර්ගෝපදේශ</p>
+      <div className="gx-sinhala-guide-grid mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {visibleGuides.map((guide, index) => (
-          <Link key={guide.href} href={guide.href} className="group relative flex min-h-48 flex-col overflow-hidden rounded-2xl border border-border bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
-            <div className="absolute -right-7 -top-8 h-28 w-28 rotate-12 rounded-[2rem] border border-teal/15 bg-teal-soft/60 transition-transform group-hover:rotate-6" aria-hidden="true" />
+          <Link key={guide.href} href={guide.href} className="gx-sinhala-guide group relative flex min-h-48 flex-col overflow-hidden border border-border bg-white p-5 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+            <span className="gx-sinhala-guide-rule" aria-hidden="true" />
             <div className="relative flex items-center justify-between gap-3">
               <span className="rounded-full bg-background px-2.5 py-1 text-[0.68rem] font-semibold text-accent">{guide.tag}</span>
               <span className="text-xs tabular-nums text-muted">{String(index + 1).padStart(2, "0")}</span>

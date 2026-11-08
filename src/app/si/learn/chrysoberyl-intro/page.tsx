@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="Chrysoberyl — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chrysoberyl-163995.jpg",
+        alt: "Honey-brown twinned chrysoberyl crystal from Balangoda, Sri Lanka",
+        credit: "Chrysoberyl crystal from Balangoda, Sri Lanka — Rob Lavinsky / iRocks.com, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Chrysoberyl-163995.jpg",
+      }}
       crumbHref="/si/learn/alexandrite-intro"
       crumbLabel="Alexandrite හැඳින්වීම"
       lastReviewed="2026-10-24"

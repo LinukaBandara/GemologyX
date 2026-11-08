@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="Opal — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/0/01/Coober_Pedy_Opal.jpg",
+        alt: "Rough precious opal displaying vivid play-of-colour",
+        credit: "Rough precious opal from Coober Pedy — Dpulitzer, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Coober_Pedy_Opal.jpg",
+      }}
       crumbHref="/si/learn/gemstone-care-general"
       crumbLabel="මැණික් රැකවරණය"
       lastReviewed="2026-10-21"

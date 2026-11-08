@@ -86,3 +86,85 @@ Do not apply for AdSense until the outstanding editorial, rights, privacy, and l
 - Reviewed GIA treatment/care references for pearl, kunzite and ametrine. Updated treatment and cleaning language to distinguish material-specific limits. The tracker records partial review, not completion; routes remain Draft.
 
 - Reviewed GIA treatment/care references for moonstone and sunstone. Updated durability wording, sunstone treatment context and direct care citations. Tracker records partial review only; visual and remaining claim review is outstanding.
+
+## Follow-up audit — 2026-11-08
+
+This follow-up records work present on `design/homepage-editorial-2026` at commit `e71b4042ad936ef0507a26fe6dad8a049779d9c5`. It does not retroactively change the scope or results of the 2026-11-06 local production audit above.
+
+### Additional implementation verified in the current branch
+
+- Added FAQPage JSON-LD to the FAQ page, generated from the rendered question data.
+- Added BreadcrumbList JSON-LD to the dynamic gemstone, origin, glossary, buying, treatment, cut and formation page templates.
+- Added BreadcrumbList JSON-LD to the Sri Lanka mining landing page and its licensing, methods and environment pages.
+- Added page-specific Open Graph and Twitter metadata to the seven dynamic content templates (gemstones, origins, glossary, buying, treatment, cut and formation).
+- Set an explicit Turbopack project root in `next.config.ts` to prevent Next.js from selecting the unrelated parent-directory lockfile as the project root.
+- Corrected selected gemstone educational copy, including synthetic-growth timing and the distinction between primary sapphire formation and secondary alluvial deposits.
+
+### Current CI status
+
+The latest workflow for this branch (run `42410255116`, commit `e71b4042ad936ef0507a26fe6dad8a049779d9c5`) failed at the dependency-install step. ESLint, production build, Playwright and dependency audit steps were skipped. The workflow job confirms the failure occurs before these checks execute.
+
+The known install error is a mismatch between `package.json` and the committed `package-lock.json`: the lockfile does not contain `@playwright/test@1.65.0`, `playwright@1.65.0` and `playwright-core@1.65.0`. The correct repair is to generate and commit the lockfile using npm on the project machine. Do not replace `npm ci` with `npm install` in CI or hand-edit a speculative lockfile.
+
+### Remaining release blockers
+
+- Re-run CI after the real lockfile is committed; no current-branch build or E2E pass is claimed by this follow-up.
+- Run a fresh production sitemap crawl and structured-data validation against the current branch output.
+- Complete claim-level source review for all gemstone profiles, origins, glossary entries and guides.
+- Complete image provenance/licensing and full mobile, desktop, keyboard and assistive-technology checks.
+- Resolve owner/editor attribution, contact delivery, legal jurisdiction and actual AI-use disclosures with the site owner; no personal or legal details have been invented.
+- Verify live production metadata, canonical URLs, robots, sitemap, analytics/consent and image delivery after deployment.
+
+The 2026-11-06 audit's local build and crawl results remain historical results for that audit scope, not proof that the newer branch has passed the same checks.
+
+### Repository consistency checks — 2026-11-08
+
+- Compared `docs/page-readiness-tracker.csv` with `src/data/draft-routes.ts`: all 76 Draft routes match exactly; no duplicate routes, missing manifest entries or extra manifest entries were found.
+- Compared all 26 navigation and footer destinations in the shared header/footer against App Router page routes, including dynamic route patterns: no missing destinations were found.
+- Added `npm run check:editorial-manifest` and `scripts/check-editorial-manifest.mjs`. CI now runs this consistency check after dependency installation and before ESLint, so future tracker/manifest drift is caught automatically.
+- These checks validate repository consistency and route references; they do not establish editorial approval, search indexing or live deployment health.
+
+### Accessibility and image-attribution follow-up — 2026-11-08
+
+- Added a keyboard-visible skip link before the shared site header and gave the root content landmark the `main-content` target with `tabIndex={-1}`.
+- Removed the homepage's nested `<main>` landmark; the homepage visual wrapper is now a `<div>` inside the root layout's single main landmark.
+- Added Escape-key handling to close the shared mobile navigation. The existing menu button retains its accessible name, `aria-expanded` state and `aria-controls` relationship.
+- Reviewed the 11 origin-page image records: each contains alternative text, a credit and a source field. Corrected the Jaipur gemstone-grinding photograph's credit and replaced its broad category link with the exact Commons file page. The file page identifies Gerd Eichmann as author and CC BY 4.0 as its licence; attribution is now explicit.
+- The repository contains 25 image assets (including SVG brand/UI assets). This is an inventory count, not a claim that every local image has completed provenance, visual-quality, responsive-loading or assistive-technology review.
+- Remaining accessibility work includes keyboard and screen-reader testing across templates, focus-order checks, contrast review, reduced-motion checks and manual testing at real mobile and desktop breakpoints.
+
+### Gemstone reference coverage follow-up — 2026-11-08
+
+- Reviewed all four gemstone data collections: **39 unique profiles**, each with a detailed profile and at least two HTTPS references (117 reference links in total).
+- No duplicate gemstone slugs, missing detail blocks, empty source lists or non-HTTPS source URLs were found in the static data review.
+- Andalusite previously had one reference, a GIA collection specimen record. Added a GIA research article on gem-quality Brazilian andalusite and an International Gem Society reference to improve coverage of gem properties and pleochroism.
+- Sphene (titanite) previously had one GIA reference. Added an International Gem Society reference covering mineral properties and care. Tightened the care instructions to recommend a soft brush, mild detergent and warm water, and to avoid ultrasonic and steam cleaning.
+- Chrysoberyl now has a dedicated reference covering its varieties and properties in addition to the existing GIA references.
+- Added `scripts/check-gemstone-sources.mjs` and the `check:gemstone-sources` package script. CI runs this dependency-free check before `npm ci`; it checks profile detail blocks, minimum reference count, HTTPS URLs and duplicate slugs.
+- This is a source-coverage and structure check, not a complete verification of every sentence or a live HTTP check of all 117 reference URLs. Claim-by-claim fact checking remains necessary.
+
+### Interactive specimen imagery and keyboard accessibility — 2026-11-08
+
+- Connected the existing credited specimen galleries to gemstone profile pages. The component was present in the repository but was not previously rendered by the profile template; the sapphire, ruby, emerald, amethyst and tourmaline profiles now expose their documented specimen images.
+- Improved the image-viewer dialog: opening it moves focus to the close button; Tab and Shift+Tab remain within the dialog; Escape closes it; arrow keys change the displayed specimen; and closing returns focus to the image button that opened it.
+- Added Playwright coverage for specimen viewer keyboard operation, mobile-navigation Escape handling and the keyboard skip link.
+- Existing reduced-motion CSS preferences were confirmed in the global stylesheet. This is source inspection, not a full assistive-technology audit.
+- Local specimen image records include source, credit and licence fields. Their attribution text is displayed in the gallery; the original source records remain linked from the viewer.
+- Remaining work: run the new Playwright checks in a production build, verify the local image files and their licence records against the original source pages, and complete manual screen-reader/focus/contrast testing.
+
+- Added the companion [image provenance register](./image-provenance-register.md). It separates six locally stored specimen photographs with recorded credits/licences/source pages from homepage, Suranga collection and decorative SVG assets whose original creator or permission still needs owner confirmation. No unverified asset is described as licensed or original.
+
+### Bilingual and image-accessibility regression checks — 2026-11-08
+
+- Added a Playwright accessibility regression test confirming Sinhala guide content is wrapped in a `lang="si"` region while the root document language remains English. It also checks that the Sinhala region contains a non-empty visible page heading.
+- Extended the published-sitemap SEO test to flag any rendered `<img>` element without an `alt` attribute. This detects missing attributes; it does not judge whether each alt description is meaningful or whether an empty alt is appropriate for decorative imagery.
+- These checks are committed but remain unexecuted in CI until the committed package manifest and lockfile are brought back into sync. Manual screen-reader and descriptive-alt review are still required.
+
+### Navigation, heading and external-link checks — 2026-11-08
+
+- Added a browser regression test for desktop navigation: the navigation landmark is named, each link exposes an accessible name, and the current section is identified with `aria-current="page"`.
+- Extended the published-route HTML audit to require exactly one page-level H1 per route. This is a structural check; it does not assess whether the heading wording is useful or whether lower-level headings are logically nested.
+- Added a check for links opening a new tab: each must declare `noopener` or `noreferrer` in its `rel` attribute. This guards against reverse-tabnabbing on externally opened destinations.
+- These new browser checks are committed but await execution after the package-lock/manifest mismatch is resolved.
+
+- Reviewed durability/care sources for chrysoberyl, andalusite and apatite. The apatite treatment-frequency claim lacked adequate stone-specific support in the checked sources and is explicitly flagged as unverified rather than presented as fact. Tracker records partial review; no page was promoted.

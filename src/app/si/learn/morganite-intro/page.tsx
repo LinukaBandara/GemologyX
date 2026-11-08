@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/aquamarine-intro"
       crumbLabel="Aquamarine හැඳින්වීම"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/8/80/Morganite_%28Br%C3%A9sil%29.jpg",
+        alt: "Pink morganite beryl crystal from Minas Gerais, Brazil",
+        credit: "Géry PARENT · Public domain",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Morganite_(Brésil).jpg",
+      }}
       related={[
         { label: "Aquamarine හැඳින්වීම", href: "/si/learn/aquamarine-intro" },
         { label: "Emerald හැඳින්වීම", href: "/si/learn/emerald-intro" },

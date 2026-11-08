@@ -14,6 +14,13 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="Gem Lab Report එකක ප්‍රධාන Fields හඳුනාගැනීම"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg",
+        alt: "A pink sapphire being examined under a gemmological microscope",
+        credit: "Gemmological microscopic examination — Sara Abey · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg",
+      }}
+
       crumbHref="/si/learn/how-to-read-gem-report"
       crumbLabel="වාර්තාවක් කියවීම"
       lastReviewed="2026-11-02"

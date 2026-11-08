@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/opal-intro"
       crumbLabel="Opal හැඳින්වීම"
       lastReviewed="2026-10-24"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/2/28/Feldspar_8.jpg",
+        alt: "Moonstone feldspar specimen from Meetiyagoda, Sri Lanka",
+        credit: "Géry PARENT · Public domain",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Feldspar_8.jpg",
+      }}
       related={[
         { label: "Opal හැඳින්වීම", href: "/si/learn/opal-intro" },
         { label: "මැණික් රැකවරණය", href: "/si/learn/gemstone-care-general" },

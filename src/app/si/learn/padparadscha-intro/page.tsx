@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/2/24/Padparadscha_sapphire.jpg",
+        alt: "Faceted padparadscha sapphire showing a vivid pink-orange colour",
+        credit: "Alextryan · Public domain",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Padparadscha_sapphire.jpg",
+      }}
       related={[
         { label: "නිල්මැණික් සම්පූර්ණ මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },
         { label: "වර්ණය සහ ගුණාත්මකභාවය", href: "/si/learn/blue-sapphire-colour-quality" },

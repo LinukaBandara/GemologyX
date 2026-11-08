@@ -5,6 +5,7 @@ import { SearchExperience } from "@/components/search-experience";
 export const metadata: Metadata = {
   title: "Search GemologyX",
   description: "Search gemstone profiles, origins, gemological terminology and selected educational guides.",
+  robots: { index: false, follow: true },
 };
 
 type SearchPageProps = {

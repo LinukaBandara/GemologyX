@@ -16,7 +16,7 @@ export function GlossaryBrowser() {
 
   return (
     <>
-      <label className="relative mt-6 flex w-full max-w-xl items-center gap-3 rounded-full border border-border bg-white px-4 py-3 shadow-sm focus-within:border-accent">
+      <label className="relative mt-6 flex min-h-14 w-full max-w-xl items-center gap-3 rounded-full border border-border bg-white px-4 py-3 shadow-sm focus-within:border-accent">
         <Search size={17} className="shrink-0 text-muted" aria-hidden="true" />
         <span className="sr-only">Search glossary terms and definitions</span>
         <input
@@ -24,7 +24,7 @@ export function GlossaryBrowser() {
           placeholder="Search a term or definition…"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          className="w-full border-0 bg-transparent text-sm outline-none placeholder:text-muted"
+          className="w-full min-w-0 border-0 bg-transparent text-base outline-none placeholder:text-muted"
         />
       </label>
 

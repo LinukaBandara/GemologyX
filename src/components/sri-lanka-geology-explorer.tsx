@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Layers3, MapPinned, Waves } from "lucide-react";
 
 const regions = {
@@ -63,7 +64,7 @@ export function SriLankaGeologyExplorer() {
         <div className="relative min-h-[300px] overflow-hidden border-t border-border bg-[linear-gradient(180deg,#eff8f6_0%,#f8f5ec_52%,#e9e0ca_100%)] p-5 md:min-h-[380px] md:p-7 lg:border-l lg:border-t-0">
           <div className="absolute left-0 right-0 top-[15%] h-px bg-white/80" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0 h-[31%] bg-[linear-gradient(180deg,#c9b18b,#a88e68)]" aria-hidden="true" />
-          <svg viewBox="0 0 640 340" className="absolute inset-0 h-full w-full" role="img" aria-labelledby="deposit-profile-title deposit-profile-desc" preserveAspectRatio="xMidYMid meet">
+          <figure className="gx-sri-photo-feature"><Image src="https://upload.wikimedia.org/wikipedia/commons/2/29/Sapphire_%28gem_gravel_mine%2C_Ratnapura_area%2C_Sri_Lanka%29_1_%2834857678855%29.jpg" alt="Blue corundum sapphire crystal attributed to gem gravels in the Ratnapura area" width={813} height={1161} sizes="(max-width: 1024px) 100vw, 45vw" /><figcaption><span>රත්නපුර ප්‍රදේශයට ආරෝපිත නිල් corundum ස්ඵටිකයක්</span><a href="https://commons.wikimedia.org/wiki/File:Sapphire_(gem_gravel_mine,_Ratnapura_area,_Sri_Lanka)_1_(34857678855).jpg" target="_blank" rel="noreferrer">James St. John · CC BY 2.0 · Commons</a></figcaption></figure>\n          <svg viewBox="0 0 640 340" className="absolute inset-0 h-full w-full" role="img" aria-labelledby="deposit-profile-title deposit-profile-desc" preserveAspectRatio="xMidYMid meet">
             <title id="deposit-profile-title">ද්විතීයික මැණික් තැන්පතු පිළිබඳ සංකල්පමය පැතිකඩ</title>
             <desc id="deposit-profile-desc">කඳු බෑවුමකින් ද්‍රව්‍ය පහළට ගමන් කර දිය පහර අසල තැන්පත් වීම දක්වන, පරිමාණයට නොවන නිදර්ශනයකි.</desc>
             <path d="M0 185 94 154l77-38 67 18 57 48 63 11 42 57 57 10 54 19 42 0v77H0z" fill="#789b82" />

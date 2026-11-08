@@ -51,9 +51,9 @@ export const gemstones: Gemstone[] = [
       origins:
         "Sapphire is mined in a number of countries, including Sri Lanka, Madagascar, Myanmar, Kashmir (historically), and various sites in East Africa and Australia. Geographic origin can sometimes be determined by a gemological laboratory through trace-element and inclusion analysis, but this is a specialist laboratory determination — it is not something that can be reliably read from a stone's appearance alone.",
       formation:
-        "Sapphire forms as corundum in several geological environments, including metamorphic rocks and gem-bearing alluvial deposits. The conditions and trace elements present during growth influence its colour and inclusions.",
+        "Sapphire crystallizes as corundum in primary magmatic or metamorphic geological settings. Weathering and erosion can later release crystals from their host rocks and concentrate them in secondary deposits, including alluvial placers such as those found in Sri Lanka. The conditions and trace elements present during crystal growth influence its colour and inclusions.",
       naturalVsSynthetic:
-        "Synthetic sapphire has the same chemical composition and crystal structure as natural sapphire but is grown in a laboratory, typically by flame-fusion or flux-growth methods, over a period of hours to weeks rather than geological time. Synthetic sapphire is common in industrial applications (such as watch crystals) as well as in some jewellery, and should always be disclosed as synthetic when sold. Distinguishing natural from synthetic material generally requires examination by a trained gemologist using magnification and, in some cases, advanced laboratory equipment — it is not reliably done by eye.",
+        "Synthetic sapphire has the same chemical composition and crystal structure as natural sapphire but is grown in a laboratory. Common methods include flame fusion and flux growth; growth time depends on the method, and some flux-grown crystals can take many months or up to a year. Laboratory growth is distinct from the geological processes that form natural sapphire. Synthetic sapphire is common in industrial applications (such as watch crystals) as well as in some jewellery, and should always be disclosed as synthetic when sold. Distinguishing natural from synthetic material generally requires examination by a trained gemologist using magnification and, in some cases, advanced laboratory equipment — it is not reliably done by eye.",
       treatments:
         "Heat treatment is a common and generally accepted sapphire enhancement when accurately disclosed. GIA notes that many sapphires on the market have undergone treatment, but prevalence varies by source and material. Less common treatments include beryllium diffusion, which introduces colour-causing elements into corundum. Fracture filling is much less common in sapphire than in ruby and can substantially change durability. Treatment status affects value; read a laboratory report within its stated findings and scope.",
       inclusions:
@@ -68,7 +68,7 @@ export const gemstones: Gemstone[] = [
         { question: "Can every sapphire be cleaned in an ultrasonic cleaner?", answer: "No. Fracture-filled stones and stones with vulnerable inclusions or other treatments may be damaged by vibration or heat. When treatment is unknown, use mild soap, lukewarm water and a soft brush, or ask a jeweller familiar with the stone." },
       ],
     },
-    sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }, { label: "GIA — Sapphire Care and Cleaning", url: "https://www.gia.edu/sapphire-care-cleaning" }],
+    sources: [{ label: "GIA — Sapphire and Corundum", url: "https://www.gia.edu/sapphire/buyers-guide" }, { label: "GIA — Sapphire Quality Factors", url: "https://www.gia.edu/sapphire-quality-factor" }, { label: "GIA — Synthetic Gem Materials and Growth Methods", url: "https://www.gia.edu/gem-synthetic" }, { label: "GIA — Geology of Corundum and Emerald Gem Deposits", url: "https://www.gia.edu/gems-gemology/winter-2019-geology-of-corundum-and-emerald-gem-deposits" }, { label: "GIA — Sapphire Care and Cleaning", url: "https://www.gia.edu/sapphire-care-cleaning" }],
   },
   {
     slug: "ruby",
@@ -342,14 +342,14 @@ export const gemstones: Gemstone[] = [
       naturalVsSynthetic:
         "Synthetic aquamarine exists but is not commercially significant in the market; most aquamarine sold is natural, with treatment status (heat) being the more relevant question for buyers.",
       treatments:
-        "Heat treatment to remove greenish or yellowish undertones and produce a purer blue is standard practice and widely accepted; it is generally considered permanent and does not require ongoing disclosure at the point of sale in the same way fracture filling does, though reputable sellers still disclose it.",
+        "Heat treatment may be used to reduce greenish or yellowish undertones and produce a purer blue. Buyers should ask for clear written disclosure of known treatments and review any laboratory report; disclosure requirements and trade practices vary by market and jurisdiction.",
       inclusions:
         "Aquamarine typically forms with fewer visible inclusions than emerald, and eye-clean material is relatively common, which is part of why oiling or resin filling is rarely needed.",
       valueFactors: ["Colour saturation (deeper blue generally more valuable)", "Clarity", "Cut quality", "Carat weight"],
       certification:
         "A laboratory report on aquamarine documents identity, weight, colour, clarity, and treatment status (typically confirming heat treatment or its absence).",
       care:
-        "Aquamarine measures 7.5–8 on the Mohs scale. Warm soapy water is always a safe cleaning method. Ultrasonic or steam cleaning is usually safe only when the stone has no liquid inclusions or fractures; fracture-filled aquamarine should be cleaned only with warm soapy water. Avoid heat exposure.",
+        "Aquamarine measures 7.5–8 on the Mohs scale. For routine care, use lukewarm water, mild soap and a soft brush or cloth, after checking for damage or vulnerable settings. Ultrasonic or steam cleaning may be suitable for some stones but should be avoided when fractures, liquid inclusions, filling or other vulnerabilities are present; when uncertain, choose gentle hand cleaning and ask a jeweller.",
       faqs: [
         { question: "Is aquamarine related to emerald?", answer: "Yes. Both are varieties of beryl. Aquamarine is blue to blue-green, while emerald is green and coloured by chromium and/or vanadium." },
         { question: "Can I assume a blue aquamarine is untreated?", answer: "No. Heat treatment is used on some aquamarine to reduce greenish tones. Ask the seller to disclose known treatment and consult a report when it matters." },

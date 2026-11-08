@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/natural-vs-synthetic-gemstones"
       crumbLabel="ස්වභාවික vs කෘත්‍රිම"
       lastReviewed="2026-10-25"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Diamond_crystal%2C_0%2C7_ct.jpg",
+        alt: "Natural diamond crystal specimen photographed with a scale bar",
+        credit: "Tõnu Pani · CC BY 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Diamond_crystal,_0,7_ct.jpg",
+      }}
       related={[
         { label: "ස්වභාවික vs කෘත්‍රිම", href: "/si/learn/natural-vs-synthetic-gemstones" },
         { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },

@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="මැණික්වල ඇතුළත ලක්ෂණ (Inclusions)"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/2/28/Blue_sapphire.jpg",
+        alt: "A blue sapphire photographed under magnification, showing an internal inclusion",
+        credit: "Blue sapphire with an inclusion — Jan-Peter Geringer, CC BY-SA 4.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Blue_sapphire.jpg",
+      }}
       crumbHref="/si/learn/rough-sapphire-inclusions"
       crumbLabel="රළු නිල්මැණික් inclusions"
       lastReviewed="2026-10-21"

@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/how-to-read-gem-report"
       crumbLabel="වාර්තාවක් කියවීම"
       lastReviewed="2026-10-25"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/4/47/An_authentic_Blue_Zircon_ring_being_tested_by_a_gemologist_in_Kolkata.jpg", alt: "A gemologist testing a blue zircon ring in Kolkata", credit: "Billjones94 · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:An_authentic_Blue_Zircon_ring_being_tested_by_a_gemologist_in_Kolkata.jpg" }}
       related={[
         { label: "වාර්තාවක් කියවීම", href: "/si/learn/how-to-read-gem-report" },
         { label: "Labs මූලික", href: "/si/learn/gem-labs-overview" },

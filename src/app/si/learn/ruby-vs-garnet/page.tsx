@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 5"
       title="රතු මැණික් (Ruby) සහ ගානට් (Garnet) අතර වෙනස"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Corundum-215474.jpg",
+        alt: "Red ruby corundum crystal used as the ruby specimen in a ruby and garnet comparison guide",
+        credit: "Ruby corundum crystal — Rob Lavinsky / iRocks.com, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Corundum-215474.jpg",
+      }}
       crumbHref="/si/learn/ruby-vs-spinel"
       crumbLabel="Ruby vs Spinel"
       lastReviewed="2026-10-21"

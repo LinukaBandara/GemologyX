@@ -1,39 +1,72 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen, FileCheck2, Gem, Map, Pickaxe, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, BookOpen, FileCheck2, Gem, MapPinned, Pickaxe, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Sri Lanka Gem Hub",
-  description: "Explore Sri Lanka's gemstone origins, mining, regional gem knowledge, trade and export through the GemologyX reference hub.",
+  title: "Sri Lanka Gemstone Heritage, Mining & Trade",
+  description: "Explore Sri Lanka's gemstone origins, mining regions, gem trade, cutting, certification and local knowledge through the GemologyX country guide.",
   alternates: { canonical: "/sri-lanka" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Sri Lanka Gemstone Heritage, Mining & Trade", description: "Explore Sri Lanka's gemstone origins, mining regions, gem trade, cutting, certification and local knowledge.", url: "/sri-lanka" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Sri Lanka Gemstone Heritage, Mining & Trade", description: "Explore Sri Lanka's gemstone origins, mining regions, gem trade, cutting, certification and local knowledge." },
 };
 
 const sections = [
-  { icon: Gem, number: "01", title: "Gemstone origins", description: "Learn about Sri Lankan gem materials and the limits of geographic origin claims.", links: [{ label: "Sri Lanka origin profile", href: "/origins/sri-lanka" }, { label: "Gemstone directory", href: "/gemstones" }] },
-  { icon: Pickaxe, number: "02", title: "Mining and environment", description: "A practical overview of mining approaches, safety considerations, environmental questions and official resources.", links: [{ label: "Mining in Sri Lanka", href: "/sri-lanka-mining" }, { label: "Mining methods", href: "/sri-lanka-mining/methods" }, { label: "Environment", href: "/sri-lanka-mining/environment" }, { label: "Licensing resources", href: "/sri-lanka-mining/licensing" }] },
-  { icon: FileCheck2, number: "03", title: "Trade and export", description: "Follow the mine-to-market context and find pointers to official export guidance.", links: [{ label: "Trade and export guide", href: "/sri-lanka-trade-export" }, { label: "Read a gem report", href: "/learn/how-to-read-a-gemstone-report" }] },
-  { icon: BookOpen, number: "04", title: "Local gem knowledge", description: "Explore English and Sinhala guides about local terminology, buying and the people and processes in Sri Lanka’s gem trade.", links: [{ label: "Sri Lanka trade terms · English", href: "/learn/sri-lanka-gem-terms" }, { label: "ශ්‍රී ලංකාවේ මැණික් පද · සිංහල", href: "/si/learn/sri-lanka-gem-terms" }, { label: "Sri Lankan gem trade · සිංහල", href: "/si/learn/sri-lanka-gem-trade-intro" }, { label: "Dealer types · සිංහල", href: "/si/learn/sri-lanka-dealer-types" }, { label: "Buying day tips · සිංහල", href: "/si/learn/sri-lanka-buying-day-tips" }] },
+  { number: "01", icon: Gem, title: "Gemstone origins", description: "Understand Sri Lankan gem materials, geological context and what a geographic-origin opinion can—and cannot—establish.", links: [{ label: "Sri Lanka origin profile", href: "/origins/sri-lanka" }, { label: "Gemstone directory", href: "/gemstones" }] },
+  { number: "02", icon: Pickaxe, title: "Mining landscapes", description: "Explore gem-bearing regions, traditional and mechanised mining contexts, worker safety and environmental responsibility.", links: [{ label: "Mining overview", href: "/sri-lanka-mining" }, { label: "Mining methods", href: "/sri-lanka-mining/methods" }, { label: "Environment", href: "/sri-lanka-mining/environment" }, { label: "Licensing", href: "/sri-lanka-mining/licensing" }] },
+  { number: "03", icon: FileCheck2, title: "Trade, cutting & export", description: "Follow the journey from rough material to cutting, documentation, laboratory reports and official export guidance.", links: [{ label: "Trade and export", href: "/sri-lanka-trade-export" }, { label: "Read a gem report", href: "/learn/how-to-read-a-gemstone-report" }] },
+  { number: "04", icon: BookOpen, title: "Local knowledge", description: "Explore local terminology, buying practices and the people and specialist roles involved in the Sri Lankan gem trade.", links: [{ label: "Trade terms · English", href: "/learn/sri-lanka-gem-terms" }, { label: "මැණික් පද · සිංහල", href: "/si/learn/sri-lanka-gem-terms" }, { label: "ශ්‍රී ලංකාවේ මැණික් වෙළෙඳාම", href: "/si/learn/sri-lanka-gem-trade-intro" }, { label: "Buying in Sri Lanka · සිංහල", href: "/si/learn/sri-lanka-buying-day-tips" }] },
 ];
 
 export default function SriLankaHubPage() {
   return (
-    <div className="container-page py-12 md:py-16">
-      <nav className="luxury-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Sri Lanka</span></nav>
-      <header className="article-hero">
-        <div className="luxury-eyebrow"><span /> FLAGSHIP COUNTRY HUB</div>
-        <h1 className="mt-5 max-w-4xl font-serif text-4xl font-semibold leading-tight tracking-tight md:text-6xl">Sri Lanka and its gem heritage</h1>
-        <p className="mt-5 max-w-3xl text-base leading-7 text-muted md:text-lg">A guided entry to GemologyX&apos;s Sri Lanka coverage: gemstone origins, mining, environment, trade and practical local knowledge. Each section links to a focused reference or guide.</p>
-        <div className="mt-7 flex flex-wrap gap-3"><Link className="luxury-button luxury-button-primary" href="/origins/sri-lanka">Explore Sri Lanka&apos;s gem origins <ArrowRight size={16} /></Link><Link className="luxury-button luxury-button-secondary" href="/sri-lanka-mining">Mining overview</Link></div>
-      </header>
-      <div className="mt-10 grid gap-5 md:grid-cols-2">
-        {sections.map(({ icon: Icon, number, title, description, links }) => <section key={number} className="gx-card p-6 md:p-7">
-          <div className="flex items-center gap-3"><span className="text-xs font-bold tracking-widest text-gold">{number}</span><Icon size={19} className="text-accent" /><h2 className="font-serif text-xl font-semibold">{title}</h2></div>
-          <p className="mt-3 text-sm leading-6 text-muted">{description}</p>
-          <ul className="mt-5 flex flex-wrap gap-2">{links.map((link) => <li key={link.href}><Link className="inline-flex items-center gap-1 rounded-full border border-border px-3 py-2 text-xs font-medium text-accent hover:bg-accent-soft" href={link.href}>{link.label}<ArrowRight size={13} /></Link></li>)}</ul>
-        </section>)}
+    <div className="gx-regional-hub gx-sri-lanka-hub">
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Sri Lanka", url: "https://gemologyx.com/sri-lanka" }]} />
+      <div className="container-page">
+        <nav className="gx-regional-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Sri Lanka</span></nav>
+        <header className="gx-regional-hero">
+          <div className="gx-regional-hero-copy">
+            <p className="gx-regional-kicker"><span /> GEMOLOGYX FIELD GUIDE · SRI LANKA</p>
+            <h1>Sri Lanka, through its gem heritage.</h1>
+            <p className="gx-regional-lede">A considered guide to the island’s gem-bearing landscapes, remarkable materials, mining communities and the knowledge that connects them to the wider world.</p>
+            <div className="gx-regional-actions">
+              <Link className="gx-regional-primary" href="/origins/sri-lanka">Explore gem origins <ArrowUpRight size={16} /></Link>
+              <Link className="gx-regional-secondary" href="/sri-lanka-mining">Discover mining in Sri Lanka</Link>
+            </div>
+            <div className="gx-regional-meta"><span>01 / COUNTRY GUIDE</span><span>GEOLOGY · PEOPLE · TRADE</span></div>
+          </div>
+          <figure className="gx-regional-hero-image">
+            <Image src="/images/homepage/Sri lanka.jpg" alt="Landscape photograph representing Sri Lanka" fill priority sizes="(max-width: 800px) 100vw, 48vw" />
+            <figcaption>THE ISLAND OF GEMS <span>SRI LANKA</span></figcaption>
+          </figure>
+        </header>
+
+        <section className="gx-regional-intro" aria-labelledby="regional-intro-title">
+          <p className="gx-regional-kicker"><span /> A PLACE, MANY STORIES</p>
+          <h2 id="regional-intro-title">More than a gemstone origin.</h2>
+          <p>Sri Lanka’s gem story is shaped by ancient geology, regional knowledge, skilled cutting, trading relationships and changing standards of responsible practice. Explore each subject in its own context rather than reducing the island’s heritage to a single stone or slogan.</p>
+        </section>
+
+        <section className="gx-regional-sections" aria-label="Explore Sri Lanka topics">
+          {sections.map(({ number, icon: Icon, title, description, links }) => (
+            <article className="gx-regional-section" key={number}>
+              <div className="gx-regional-section-top"><span>{number}</span><Icon size={20} strokeWidth={1.5} /></div>
+              <div className="gx-regional-section-body">
+                <h2>{title}</h2>
+                <p>{description}</p>
+                <div className="gx-regional-link-list">{links.map((link) => <Link href={link.href} key={link.href}>{link.label}<ArrowUpRight size={14} /></Link>)}</div>
+              </div>
+            </article>
+          ))}
+        </section>
+
+        <section className="gx-regional-note">
+          <MapPinned size={20} strokeWidth={1.5} />
+          <div><h2>Geographic origin needs evidence.</h2><p>A gemstone’s appearance, seller description or place of purchase does not independently prove its geographic origin. Origin opinions require appropriate gemological examination and must be interpreted within the limits of the available evidence.</p></div>
+        </section>
+        <section className="gx-regional-disclaimer"><ShieldCheck size={18} /><p>GemologyX is an educational reference. Information about mining, licensing, safety and export is a starting point for research—not legal, operational or professional advice. Confirm current requirements with the relevant Sri Lankan authority.</p></section>
       </div>
-      <aside className="mt-8 flex gap-3 rounded-xl border border-border bg-white p-5 text-sm leading-6 text-muted"><Map size={18} className="mt-1 shrink-0 text-accent" /><p>Gem origin opinions require appropriate gemological examination; a stone&apos;s appearance or a seller&apos;s description alone does not establish geographic origin. For rules that can change, consult the relevant official source directly.</p></aside>
-      <div className="mt-8 flex items-start gap-3 rounded-xl bg-teal-soft p-5 text-sm leading-6 text-foreground"><ShieldCheck size={18} className="mt-1 shrink-0 text-teal" /><p>GemologyX is an educational reference. Our mining and export pages are starting points for research, not legal, safety or operational advice.</p></div>
     </div>
   );
 }

@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/carat-weight-guide"
       crumbLabel="කැරට් බර"
       lastReviewed="2026-10-25"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Gemstone_cuts.jpg",
+        alt: "Historic diagram of gemstone outlines and cutting styles including brilliant, step and cabochon cuts",
+        credit: "Internet Archive Book Images · No known copyright restrictions",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemstone_cuts.jpg",
+      }}
       related={[
         { label: "කැරට් බර", href: "/si/learn/carat-weight-guide" },
         { label: "නිල්මැණිකක වටිනාකම", href: "/si/learn/blue-sapphire-value-factors" },

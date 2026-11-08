@@ -25,6 +25,12 @@ export default function Page() {
       crumbHref="/si/learn/sri-lankan-blue-sapphire"
       crumbLabel="ශ්‍රී ලංකා නිල්මැණික්"
       lastReviewed="2026-11-05"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/2/29/Sapphire_%28gem_gravel_mine%2C_Ratnapura_area%2C_Sri_Lanka%29_1_%2834857678855%29.jpg",
+        alt: "Sapphire specimen documented from the Ratnapura gem gravel mine area of Sri Lanka",
+        credit: "James St. John · CC BY 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Sapphire_(gem_gravel_mine,_Ratnapura_area,_Sri_Lanka)_1_(34857678855).jpg",
+      }}
       related={[
         { label: "ශ්‍රී ලංකා නිල්මැණික්", href: "/si/learn/sri-lankan-blue-sapphire" },
         { label: "මූලාරම්භ මතය සහ සහතිකය අතර වෙනස", href: "/si/learn/origin-opinion-vs-guarantee" },

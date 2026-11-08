@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/gemstone-inclusions-guide"
       crumbLabel="Inclusions"
       lastReviewed="2026-10-25"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg",
+        alt: "A pink sapphire being examined under a gemmological microscope",
+        credit: "Sara Abey · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg",
+      }}
       related={[
         { label: "Inclusions මාර්ගෝපදේශය", href: "/si/learn/gemstone-inclusions-guide" },
         { label: "නිල්මැණිකක වටිනාකම", href: "/si/learn/blue-sapphire-value-factors" },

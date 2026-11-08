@@ -24,6 +24,12 @@ export default function Page() {
       crumbHref="/si/learn/blue-sapphire-complete-guide"
       crumbLabel="නිල්මැණික් මාර්ගෝපදේශය"
       lastReviewed="2026-10-21"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tanzanite_1%28Tanzanie%29.jpg",
+        alt: "Tanzanite crystal specimen photographed on a dark background",
+        credit: "Géry PARENT · Public domain",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Tanzanite_1(Tanzanie).jpg",
+      }}
       related={[
         { label: "නිල්මැණික් මාර්ගෝපදේශය", href: "/si/learn/blue-sapphire-complete-guide" },
         { label: "Heat treatment", href: "/si/learn/heat-treatment-guide" },

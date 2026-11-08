@@ -5,17 +5,13 @@ import { Search, SlidersHorizontal, X } from "lucide-react";
 import { GemstoneCard } from "@/components/gemstone-card";
 import type { Gemstone } from "@/data/gemstones";
 
-const categories = ["All", "Precious", "Semi-Precious", "Organic"] as const;
-
 export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<(typeof categories)[number]>("All");
   const [sort, setSort] = useState("name");
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase();
     return gemstones
-      .filter((gem) => category === "All" || gem.category === category)
       .filter((gem) => {
         if (!normalized) return true;
         const searchable = [
@@ -38,13 +34,13 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
         }
         return a.name.localeCompare(b.name);
       });
-  }, [gemstones, query, category, sort]);
+  }, [gemstones, query, sort]);
 
   return (
-    <section aria-label="Search gemstone profiles" className="mt-8">
+    <section aria-label="Search gemstone profiles" className="gx-gemstone-directory mt-7 sm:mt-8">
       {/* Controls */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <label className="relative flex flex-1 items-center gap-2.5 rounded-full border border-border bg-white px-4 py-2.5 shadow-sm focus-within:border-[rgba(30,58,95,0.35)]">
+      <div className="gx-directory-controls flex flex-col gap-3 sm:flex-row sm:items-center">
+        <label className="gx-directory-search relative flex min-h-12 w-full flex-1 items-center gap-2.5 rounded-full border border-border bg-white px-4 py-2.5 shadow-sm focus-within:border-[rgba(30,58,95,0.35)]">
           <Search size={16} className="shrink-0 text-muted" aria-hidden="true" />
           <span className="sr-only">Search gemstones</span>
           <input
@@ -66,13 +62,13 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
           )}
         </label>
 
-        <label className="flex items-center gap-2 rounded-full border border-border bg-white px-3.5 py-2.5 text-sm shadow-sm">
+        <label className="gx-directory-sort flex min-h-12 w-full items-center justify-between gap-2 rounded-full border border-border bg-white px-3.5 py-2.5 text-sm shadow-sm sm:w-auto sm:justify-start">
           <SlidersHorizontal size={15} className="text-muted" aria-hidden="true" />
           <span className="sr-only">Sort gemstone profiles</span>
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value)}
-            className="border-0 bg-transparent text-sm outline-none"
+            className="min-h-10 max-w-full flex-1 border-0 bg-transparent text-sm outline-none sm:flex-none"
           >
             <option value="name">Name A–Z</option>
             <option value="hardness">Hardness: highest first</option>
@@ -80,31 +76,15 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
         </label>
       </div>
 
-      {/* Filters */}
-      <div className="mt-4 flex flex-wrap items-center gap-2" aria-label="Filter by category">
-        {categories.map((item) => (
-          <button
-            key={item}
-            type="button"
-            onClick={() => setCategory(item)}
-            className={
-              category === item
-                ? "rounded-full bg-accent px-3.5 py-1.5 text-xs font-semibold text-white"
-                : "rounded-full border border-border bg-white px-3.5 py-1.5 text-xs font-medium text-muted hover:border-[rgba(30,58,95,0.3)] hover:text-accent"
-            }
-            aria-pressed={category === item}
-          >
-            {item}
-          </button>
-        ))}
-        <p className="ml-auto text-xs text-muted" aria-live="polite">
+      <div className="mt-4 flex items-center justify-end">
+        <p className="text-sm text-muted" aria-live="polite">
           <strong className="text-foreground">{filtered.length}</strong> of {gemstones.length} profiles
         </p>
       </div>
 
       {/* Grid */}
       {filtered.length ? (
-        <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="gx-gemstone-card-grid mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((gem) => (
             <GemstoneCard key={gem.slug} gem={gem} />
           ))}
@@ -116,13 +96,12 @@ export function GemstoneDirectory({ gemstones }: { gemstones: Gemstone[] }) {
           </div>
           <h2 className="font-serif text-lg font-semibold">No matching gemstones</h2>
           <p className="mt-1 text-sm text-muted">
-            Try a different spelling, colour, mineral family or category.
+            Try a different gemstone name, colour, mineral family or treatment.
           </p>
           <button
             type="button"
             onClick={() => {
               setQuery("");
-              setCategory("All");
             }}
             className="gx-btn gx-btn-secondary mt-5"
           >

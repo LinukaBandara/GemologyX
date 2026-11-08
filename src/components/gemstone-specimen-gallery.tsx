@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, ExternalLink, X } from "lucide-react";
 
 type SpecimenImage = {
@@ -55,14 +55,49 @@ const galleries: Record<string, { title: string; note: string; images: SpecimenI
 export function GemstoneSpecimenGallery({ slug, name }: { slug: string; name: string }) {
   const gallery = galleries[slug];
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
+  const dialogRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (!gallery || activeIndex === null) return;
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setActiveIndex(null);
-      if (event.key === "ArrowRight") setActiveIndex((current) => current === null ? null : (current + 1) % gallery.images.length);
-      if (event.key === "ArrowLeft") setActiveIndex((current) => current === null ? null : (current + gallery.images.length - 1) % gallery.images.length);
+    if (!gallery) return;
+    if (activeIndex === null) {
+      triggerRef.current?.focus();
+      return;
     }
+
+    closeButtonRef.current?.focus();
+
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setActiveIndex(null);
+      }
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        setActiveIndex((current) => current === null ? null : (current + 1) % gallery.images.length);
+      }
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        setActiveIndex((current) => current === null ? null : (current + gallery.images.length - 1) % gallery.images.length);
+      }
+      if (event.key === "Tab") {
+        const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])',
+        );
+        if (!focusable?.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    }
+
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [activeIndex, gallery]);
@@ -70,7 +105,7 @@ export function GemstoneSpecimenGallery({ slug, name }: { slug: string; name: st
   if (!gallery) return null;
 
   return (
-    <section className="mt-8 sm:mt-10" aria-labelledby={`${slug}-specimen-gallery-title`}>
+    <section className="gx-specimen-gallery mt-8 sm:mt-10" aria-labelledby={`${slug}-specimen-gallery-title`}>
       <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border pb-4">
         <div>
           <p className="gx-eyebrow"><span /> SPECIMEN GALLERY</p>
@@ -82,7 +117,7 @@ export function GemstoneSpecimenGallery({ slug, name }: { slug: string; name: st
       <div className={`mt-5 grid gap-4 ${gallery.images.length > 1 ? "sm:grid-cols-2" : "sm:grid-cols-[minmax(0,1fr)_minmax(220px,0.7fr)]"}`}>
         {gallery.images.map((image, index) => (
           <figure key={image.src} className="overflow-hidden rounded-2xl border border-border bg-white shadow-[0_10px_32px_rgba(15,28,46,0.05)]">
-            <button type="button" onClick={() => setActiveIndex(index)} aria-label={`Enlarge image ${index + 1}: ${image.alt}`} className="group relative block aspect-[4/3] w-full overflow-hidden bg-[#f4f1eb] text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-accent">
+            <button type="button" onClick={(event) => { triggerRef.current = event.currentTarget; setActiveIndex(index); }} aria-label={`Enlarge image ${index + 1}: ${image.alt}`} className="group relative block aspect-[4/3] w-full overflow-hidden bg-[#f4f1eb] text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-accent">
               <Image src={image.src} alt={image.alt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.025]" />
               <span className="absolute bottom-3 right-3 rounded-full bg-white/95 px-3 py-1.5 text-xs font-medium text-foreground shadow-sm">View larger</span>
             </button>
@@ -96,8 +131,8 @@ export function GemstoneSpecimenGallery({ slug, name }: { slug: string; name: st
       </div>
 
       {activeIndex !== null && (
-        <div role="dialog" aria-modal="true" aria-label={`${name} specimen image viewer`} className="fixed inset-0 z-[100] flex items-center justify-center bg-[#07111f]/95 p-4 md:p-10" onMouseDown={(event) => { if (event.target === event.currentTarget) setActiveIndex(null); }}>
-          <button type="button" onClick={() => setActiveIndex(null)} aria-label="Close image viewer" className="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"><X size={21} /></button>
+        <div ref={dialogRef} role="dialog" aria-modal="true" aria-label={`${name} specimen image viewer`} className="fixed inset-0 z-[100] flex items-center justify-center bg-[#07111f]/95 p-4 md:p-10" onMouseDown={(event) => { if (event.target === event.currentTarget) setActiveIndex(null); }}>
+          <button ref={closeButtonRef} type="button" onClick={() => setActiveIndex(null)} aria-label="Close image viewer" className="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"><X size={21} /></button>
           {gallery.images.length > 1 && <button type="button" onClick={() => setActiveIndex((activeIndex + gallery.images.length - 1) % gallery.images.length)} aria-label="Previous image" className="absolute left-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 md:left-8"><ChevronLeft size={24} /></button>}
           <div className="relative w-full max-w-5xl" onMouseDown={(event) => event.stopPropagation()}>
             <div className="relative aspect-[4/3] max-h-[75vh] w-full overflow-hidden rounded-xl bg-white/5"><Image src={gallery.images[activeIndex].src} alt={gallery.images[activeIndex].alt} fill sizes="90vw" className="object-contain" priority /></div>

@@ -21,6 +21,12 @@ export default function Page() {
       category="සිංහල මැණික් දැනුම"
       readTime="මිනිත්තු 6"
       title="Tourmaline — මූලික මාර්ගෝපදේශය"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Tourmaline_sample.jpg",
+        alt: "Dark tourmaline crystal specimen",
+        credit: "Tourmaline specimen — GOKLuLe, CC BY-SA 3.0 (Wikimedia Commons).",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Tourmaline_sample.jpg",
+      }}
       crumbHref="/si/learn/garnet-intro"
       crumbLabel="Garnet හැඳින්වීම"
       lastReviewed="2026-10-21"

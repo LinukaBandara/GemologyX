@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Manrope, Noto_Sans_Sinhala } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -10,6 +10,13 @@ const sans = Manrope({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-manrope",
+  display: "swap",
+});
+
+const sinhala = Noto_Sans_Sinhala({
+  subsets: ["sinhala"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sinhala",
   display: "swap",
 });
 
@@ -25,7 +32,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gemologyx.com"),
   title: {
     default: "GemologyX — The Digital Guide to Gemstones",
-    template: "%s | GemologyX",
+    template: "%s",
   },
   description:
     "Explore gemstone characteristics, origins, treatments, certification, buying knowledge and practical tools — all in one place.",
@@ -49,11 +56,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable} h-full antialiased`}>
+    <html lang="en" className={`${sans.variable} ${serif.variable} ${sinhala.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-background focus:px-4 focus:py-3 focus:text-foreground focus:shadow-lg">Skip to main content</a>
         <SiteLoader />
         <SiteHeader />
-        <main className="min-w-0 flex-1">{children}</main>
+        <main id="main-content" tabIndex={-1} className="min-w-0 flex-1">{children}</main>
         <SiteFooter />
       </body>
     </html>

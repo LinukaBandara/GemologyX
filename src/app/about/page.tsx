@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   description: "Learn about GemologyX, an educational reference for gemstones, gemology, and Sri Lankan gem knowledge.",
 
   alternates: { canonical: "/about" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "About GemologyX", description: "Learn about GemologyX, its educational purpose and approach to gemstone and gemology knowledge.", url: "/about" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "About GemologyX", description: "Learn about GemologyX, its educational purpose and approach to gemstone and gemology knowledge." },
 };
 
 export default function AboutPage() {
@@ -21,6 +23,11 @@ export default function AboutPage() {
           GemologyX is not a jewellery store or a marketplace. We do not sell gemstones directly,
           and our content is not designed to sell any particular product. Where we mention external
           resources, we aim to do so only where it is genuinely relevant to the topic at hand.
+        </p>
+        <p>
+          GemologyX is an independent educational project, not a gemological laboratory,
+          certifying body or government authority. References to external institutions do
+          not imply their endorsement or affiliation with this site.
         </p>
         <p>
           The English library covers general gemology topics. The dedicated Sinhala learning section

@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn"
       crumbLabel="ශ්‍රී ලංකා මැණික් දැනුම"
       lastReviewed="2026-11-05"
+      heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Gem_cutting_on_a_lap_wheel%2C_Gintota%2C_Sri_Lanka_%282026%29.jpg", alt: "A gem cutter working at a lap wheel in Gintota, Sri Lanka", credit: "Ilyes Makria / Joalys · CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Gem_cutting_on_a_lap_wheel,_Gintota,_Sri_Lanka_(2026).jpg" }}
       related={[
         { label: "වෙළෙන්දාගේ භූමිකා", href: "/si/learn/sri-lanka-dealer-types" },
         { label: "කැපීම සහ පුහුණුව", href: "/si/learn/sri-lanka-gem-cutting-training" },

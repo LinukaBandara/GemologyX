@@ -24,6 +24,7 @@ export default function Page() {
       crumbHref="/si/learn/morganite-intro"
       crumbLabel="Morganite හැඳින්වීම"
       lastReviewed="2026-10-24"
+heroImage={{ src: "https://upload.wikimedia.org/wikipedia/commons/7/70/Kunzite.jpeg", alt: "A pink kunzite crystal showing colour variation along its length", credit: "Kunzite crystal — Eurico Zimbres, CC BY-SA 2.5 (Wikimedia Commons).", sourceUrl: "https://commons.wikimedia.org/wiki/File:Kunzite.jpeg" }}
       related={[
         { label: "Morganite හැඳින්වීම", href: "/si/learn/morganite-intro" },
         { label: "මැණික් රැකවරණය", href: "/si/learn/gemstone-care-general" },

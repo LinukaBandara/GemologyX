@@ -4,11 +4,14 @@ import { ArrowUpRight } from "lucide-react";
 import { allGemstones } from "@/data/all-gemstones";
 import { origins } from "@/data/origins";
 import { glossaryTerms } from "@/data/glossary";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld";
 
 export const metadata: Metadata = {
   title: "Site Map",
   description: "Browse the GemologyX gemstone encyclopedia, learning guides, Sri Lanka hub, tools, glossary and site information.",
   alternates: { canonical: "/sitemap" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "Site Map", description: "Browse the GemologyX gemstone encyclopedia, learning guides, Sri Lanka hub, tools, glossary and site information.", url: "/sitemap" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "Site Map", description: "Browse the GemologyX gemstone encyclopedia, learning guides, Sri Lanka hub, tools, glossary and site information." },
 };
 
 const sections = [
@@ -26,6 +29,7 @@ function LinkList({ links }: { links: { label: string; href: string }[] }) {
 
 export default function SiteMapPage() {
   return <div className="container-page py-12 md:py-16">
+    <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gemologyx.com/" }, { name: "Site map", url: "https://gemologyx.com/sitemap" }]} />
     <header className="border-b border-border pb-8"><div className="gx-eyebrow"><span /> EXPLORE GEMOLOGYX</div><h1 className="mt-3 font-serif text-3xl font-semibold tracking-tight md:text-4xl">Site map</h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted md:text-base">Browse the main hubs and reference collections. Entries in the directories are generated from the site&apos;s gemstone, origin and glossary data.</p></header>
     <div className="mt-8 grid gap-4 lg:grid-cols-2">{sections.map((section) => <section key={section.title} className="gx-card p-5 md:p-6"><h2 className="font-serif text-xl font-semibold">{section.title}</h2><p className="mt-1 text-sm text-muted">{section.description}</p><LinkList links={section.links}/></section>)}</div>
     <div className="mt-10 grid gap-5 lg:grid-cols-3">

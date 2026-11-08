@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   description: "How GemologyX selects sources, checks technical claims, updates content, and handles commercial interests.",
 
   alternates: { canonical: "/editorial-standards" },
+  openGraph: { type: "website", images: ["/gemologyx-social.svg"], title: "GemologyX Editorial Standards", description: "How GemologyX selects sources, checks technical claims, updates content and handles commercial interests.", url: "/editorial-standards" },
+  twitter: { card: "summary_large_image", images: ["/gemologyx-social.svg"], title: "GemologyX Editorial Standards", description: "How GemologyX selects sources, checks technical claims, updates content and handles commercial interests." },
 };
 
 export default function EditorialStandardsPage() {
@@ -38,6 +40,17 @@ export default function EditorialStandardsPage() {
             changes over time. The full library has not yet completed an editorial and factual review;
             a page being live does not mean every statement has been independently verified. Readers
             should check linked sources and seek professional advice where a decision depends on it.
+          </p>
+        </section>
+        <section>
+          <h2 className="font-serif text-xl font-semibold text-accent-strong">AI-assisted tools and editorial responsibility</h2>
+          <p className="mt-2">
+            Some material may be developed with AI-assisted research organisation, drafting or editing.
+            AI output is not treated as scientific evidence or a substitute for authoritative references.
+            Technical claims should be checked against the cited gemological, academic or official sources.
+            GemologyX does not claim that its articles are written or approved by a gemological laboratory
+            or a credentialed gemologist. Review status varies across the library, and the full collection
+            has not completed source-to-claim verification.
           </p>
         </section>
         <section>

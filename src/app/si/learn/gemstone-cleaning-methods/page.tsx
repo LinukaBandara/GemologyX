@@ -20,6 +20,13 @@ export default function Page() {
       category="මැණික් රැකවරණය"
       readTime="මිනිත්තු 7"
       title="මැණික් සහිත ආභරණ ආරක්ෂිතව පිරිසිදු කරන්නේ කෙසේද?"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/6/64/Cleaning_silver_jewelry_1_%283%29.jpg",
+        alt: "A jeweller gently brushing a silver jewellery chain in a bowl of soapy water; a general jewellery-cleaning demonstration",
+        credit: "Cleaning silver jewelry — W.carter / Ann-Sophie Qvarnström · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Cleaning_silver_jewelry_1_(3).jpg",
+      }}
+
       crumbHref="/si/learn/gemstone-care-general"
       crumbLabel="මැණික් රැකවරණය"
       lastReviewed="2026-11-06"

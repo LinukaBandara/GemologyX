@@ -16,6 +16,12 @@ export default function Page() {
       crumbHref="/si/learn/natural-synthetic-imitation-gems"
       crumbLabel="මැණික් වෙළෙඳ පද"
       lastReviewed="2026-11-02"
+      heroImage={{
+        src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gemmological_microscopic_examination.jpg",
+        alt: "A pink sapphire being examined under a gemmological microscope",
+        credit: "Sara Abey · CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Gemmological_microscopic_examination.jpg",
+      }}
       related={[
         { label: "Natural, synthetic සහ imitation පද", href: "/si/learn/natural-synthetic-imitation-gems" },
         { label: "වංචා අවදානම් හඳුනාගැනීම", href: "/si/learn/avoid-gemstone-scams" },
