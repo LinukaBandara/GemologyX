@@ -166,3 +166,5 @@ The 2026-11-06 audit's local build and crawl results remain historical results f
 - Extended the published-route HTML audit to require exactly one page-level H1 per route. This is a structural check; it does not assess whether the heading wording is useful or whether lower-level headings are logically nested.
 - Added a check for links opening a new tab: each must declare `noopener` or `noreferrer` in its `rel` attribute. This guards against reverse-tabnabbing on externally opened destinations.
 - These new browser checks are committed but await execution after the package-lock/manifest mismatch is resolved.
+
+- Reviewed durability/care sources for chrysoberyl, andalusite and apatite. The apatite treatment-frequency claim lacked adequate stone-specific support in the checked sources and is explicitly flagged as unverified rather than presented as fact. Tracker records partial review; no page was promoted.

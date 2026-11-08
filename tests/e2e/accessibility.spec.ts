@@ -114,7 +114,7 @@ test("desktop navigation exposes named links and the current page", async ({ pag
   expect(count).toBeGreaterThan(0);
 
   for (let index = 0; index < count; index += 1) {
-    await expect(links.nth(index)).toHaveAccessibleName();
+    await expect(links.nth(index)).toHaveAccessibleName(/.+/);
   }
 
   await expect(navigation.getByRole("link", { name: "Gemstones" })).toHaveAttribute("aria-current", "page");
